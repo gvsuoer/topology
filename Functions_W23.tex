@@ -1,0 +1,1269 @@
+\achapter{2}{Functions}\label{sec:functions}
+
+
+\vspace*{-17 pt}
+\framebox{
+\parbox{\dimexpr\linewidth-3\fboxsep-3\fboxrule}
+{\begin{fqs}
+\item What is a function?
+\item What is the domain of a function?
+\item What is the difference between the range and codomain of a function?
+\item What does it mean for a function to be an injection? A surjection?
+\item When and how is the composite of two functions defined?
+\item When and how is the inverse of a function defined?
+\item What do we mean by the image and inverse image of a set under a function?
+\item What properties relate images and inverse images of sets and set unions?  
+\end{fqs}}}
+
+\vspace*{13 pt}
+
+\csection{Introduction}
+
+Many topological properties are defined using continuous functions. We will focus on continuity later -- for now we review some important concepts related to functions. Much of this should be familiar, but some might be new. 
+
+First we present the basic definitions. Much of our previous work has probably been with functions that map from the reals to the reals, but we will be considering functions form a more general perspective. We start with a formal definition of a function. 
+
+\begin{definition} \label{def:function} A \textbf{function}\index{function} $f$ from a nonempty set $A$ to a set $B$ is a collection of ordered pairs $(a,b)$ so that 
+\begin{itemize}
+\item for each $a \in A$ there is a pair $(a,b)$ in $f$, and 
+\item if $(a,b)$ and $(a,b')$ are in $f$, then $b=b'$.  
+\end{itemize}
+\end{definition}
+
+Note that the first property is an existence property -- that if $a \in A$ then there is an element $b$ in $B$ that matches up with $a$. This first property also says that every element in $A$ is used, or that every element in $A$ is paired with an element in $B$, and the element in $B$ depends on the element in $A$ that is chosen. The second property is a uniqueness one -- that there is only one element $b$ in $B$ that is paired with a given element $a$ in $A$. 
+
+We generally use an alternate notation for a function. If $(a,b)$ is an element of a function $f$, we write
+\[f(a)=b,\]
+and in this way we think of $f$ as a mapping from the set $A$ to the set $B$. We indicate that $f$ is a mapping from set $A$ to set $B$ with the notation
+\[f : A \to B.\]
+If $f$ maps the element $a \in A$ to the element $b \in B$ we also use the notation 
+\[f : a \mapsto b.\]
+
+There is some familiar terminology and notation associated with functions. Let $f$ be a function from a set $A$ to a set $B$. 
+\begin{itemize}
+\item The set $A$ is called the \textbf{domain}\index{function!domain} of $f$, and we write $\text{dom}(f) = A$.
+\item The set $B$ is called the \textbf{codomain}\index{function!codomain} of $f$, and we write $\text{codom}(f) = B$. 
+\item The subset $\{f(a) \mid a \in A\}$ of $B$ is called the \textbf{range}\index{function!range} of $f$, which we denote by $\text{range}(f)$. 
+\item If $a \in A$, then $f(a)$ is the \textbf{image}\index{image of an element} of $a$ under $f$. Since each $a$ in $A$ is paired with a unique $b \in B$, there is only one image of $a$ under $f$. That is why it is appropriate to use the work ``the" when referring to the image of an element. 
+\item If $b \in B$ and $b = f(a)$ for some $a \in A$, then $a$ is called a \textbf{preimage}\index{preimage of an element} of $b$. For a given $b \in B$, there may be many different preimages of $b$, no preimages of $b$, or just one preimage of $b$. It can be instructive to construct examples of each situation. The fact that a preimage of an element $b$ may not be unique is the reason we use the word ``a" when referring to a preimage. 
+\end{itemize}
+
+Knowing the domains and codomains is very important when working with functions, and we will pay a lot of attention to these sets. 
+
+We have likely been exposed to one-to-one and onto function in our past mathematical experiences. One-to-one functions (or injections) and onto functions (or surjections) are special types of functions and we present their definitions here.
+
+\begin{definition} Let $f$ be a function from a set $A$ to a set $B$. 
+\begin{enumerate}
+\item The function $f$ is an \textbf{injection}\index{function!injection} if, whenever $(a,b)$ and $(a',b)$ are in $f$, then $a=a'$. Alternatively, using the function notation, $f$ is an injection if $f(a)=f(a')$ implies $a=a'$. 
+\item The function $f$ is a \textbf{surjection}\index{function!surjection} if, whenever $b \in B$, then there is an $a \in A$ so that $(a,b)$ is in $f$.  Alternatively, using the function notation, $f$ is a surjection if for each $b \in B$ there exists an $a \in A$ so that $f(a)=b$. 
+\item The function $f$ is a \textbf{bijection}\index{function!bijection} if $f$ is both an injection and a surjection. 
+\end{enumerate}
+\end{definition}
+
+\begin{pa} We often define functions with rules, but functions can also be defined by tables or graphs. We will work with functions defined by rules in this activity. The goal of this activity is to illustrate why the domain and the codomain are just as important as the rule defining the outputs when want to determine if a function is one-to-one and/or onto. As an example, let $f(x) = x^2+1$. (Note that $f$ is the function and $f(x)$ is the image of $x$ under $f$.)  Notice that
+\[f(2) = 5 \text{ and } f(-2) = 5.\]
+This observation is enough to prove that the function $f$ is not an injection since we can see that there exist two different inputs that produce the same output.
+
+Since $f(x) = x^2 + 1$, we know that $f(x) \geq 1$ for all $x \in \R$. This implies that the function $f$ is not a surjection. For example, $-2$ is in the codomain of $f$ and $f(x) \neq -2$ for all $x$ in the domain of $f$.
+\be
+\item We can change the domain of a function so that the function is defined on a subset of the original domain. Such a function is called a restriction.
+
+\begin{definition} Let $f$ be a function from a set $A$ to a set $B$ and let $C$ be a subset of $A$. The \textbf{restriction}\index{function!restriction} of $f$ to $C$ is the function $F: C \to B$ satisfying
+\[F(c) = f(c) \text{ for all } c \in C.\]
+\end{definition}
+
+A notation used for the restriction is also $F = f\mid_C$. We also call $f$ an \emph{extension} of $F$. 
+
+Let $f: \R \to \R$ be defined by $f(x) = x^2+1$, and let $h = f \mid_{\R^+}$, where $\R^+$ is the set of positive real numbers. So $h$ has the same codomain as $f$, but a different domain. 
+	\ba
+	\item Show that $h$ is an injection.
+
+	\item Is $h$ a surjection? Justify your conclusion.
+
+	\ea
+
+\item Let $T = \{y \in \R \mid y \geq 1\}$, and let $F: \R \to T$ be defined by $F(x) = f(x)$. Notice that the function $F$ uses the same formula as the function $f$ and has the same domain as $f$, but has a different codomain than $f$.
+	\ba
+	\item Explain why $F$ is not an injection.
+
+	\item Is $F$ a surjection? Justify your conclusion.
+
+	\ea
+
+\item Let $\R^*= \{x \in \R \mid x \geq 0\}$. Define $g : \R^* \to T$ by $g(x) = x^2 + 1$. 
+	\ba
+	\item Prove or disprove: the function $g$ is an injection.  
+
+	\item Prove or disprove: the function $g$ is a surjection.
+
+	\ea
+
+\ee
+
+\end{pa}
+
+\begin{comment}
+
+\ActivitySolution
+\be
+\item Let $h = f \mid_\R^+$, where $\R^+$ is the set of positive real numbers. 
+	\ba
+	\item Suppose $h(x) = h(y)$ for some $x, y \in \R^+$. Then $x^2+1 = y^2 + 1$ or $x^2 = y^2$. Since $x$ and $y$ are positive, this implies that $x = y$ and $h$ is an injection.
+
+	\item The answer is no. Since $h(x) = x^2 + 1 \geq 1$, there is no input into $h$ that produces the output $0$.
+	
+	\ea
+
+\item Let $T = \{y \in \R \mid y \geq 1\}$, and let $F: \R \to T$ be defined by $F(x) = f(x)$. 
+	\ba
+	\item Note that $F(-1) = 2 = F(1)$. Since $-1 \neq 1$ it follows that $F$ is not an injection.
+
+	\item Yes, $F$ is a surjection. to see why, let $y \in T$. Then $y \geq 1$ so $y - 1 \geq 0$. Thus, $x = \sqrt{y-1}$ is a real number and $F(x) = (\sqrt{y-1})^2 + 1 = y$. Therefore, $F$ is a surjection.  	
+	
+	\ea
+
+\item Let $\R^*= \{x \in \R \mid x \geq 0\}$. Define $g : \R^* \to T$ by $g(x) = x^2 + 1$. 
+	\ba
+	\item  Suppose $g(x) = g(y)$ for some $x, y \in \R^*$. Then $x^2+1 = y^2 + 1$ or $x^2 = y^2$. Since $x$ and $y$ are nonnegative, this implies that $x = y$ and $g$ is an injection.
+	
+	\item Let $y \in T$. Then $y \geq 1$ so $y - 1 \geq 0$. Thus, $x = \sqrt{y-1}$ is a nonnegative real number and $g(x) = (\sqrt{y-1})^2 + 1 = y$. Therefore, $g$ is a surjection.  
+	\ea
+
+\ee
+
+\end{comment}
+
+In our preview activity, the same mathematical formula was used to determine the outputs for the functions. However:
+\begin{itemize}
+\item One of the functions was neither an injection nor a surjection. 
+\item One of the functions was not an injection but was a surjection.
+\item One of the functions was an injection but was not a surjection.
+\item One of the functions was both an injection and a surjection.
+\end{itemize}
+This illustrates the important fact that whether a function is injective or surjective not only depends on the formula that defines the output of the function but also on the domain and codomain of the function.
+
+An important special function that is always an injection and surjection is the \emph{identity} function\index{function!identity} on a set. If $A$ is a set, the identity function on $A$ is denoted as $i_A$, and $i_A(a) = a$ for every $a \in A$. 
+
+\csection{Composites of Functions}
+
+In our past mathematical experiences, we have often added and multiplied functions together (e.g., if $f(x) = x^2$ and $g(x) = x+1$ map from $\R$ to $\R$, then $(fg)(x) = x^2(x+1)$ and $(f+g)(x) = x^2+(x+1)$).  In topology, we generally don't care about any algebraic structure a set might have, so we will move away from sums and products, and focus on compositions of functions.  
+
+The basic idea of function composition is that, when possible, the output of a function $f$ is used as the input of a function $g$. The resulting function can be referred to as ``$f$ followed by $g$" and is called the composite of $f$ with $g$. The notation we use is $g \circ f$ (note the order -- $f$ is applied first). For example, if
+\[f(x) = 3x^2 + 2 \text{ and } g(x) = \sin(x),\]
+both mapping $\R$ to $\R$, then we can compute $(g \circ f)(x)$ as follows:
+\[(g \circ f)(x) = g(f(x)) = g(3x^2 + 2) = \sin\left(3x^2 + 2\right).\]
+In this case, $f(x)$, the output of the function $f$, was used as the input for the function $g$. This idea motivates the formal definition of the composition of two functions.
+
+\begin{definition} Let $A$, $B$, and $C$ be nonempty sets, and let $f : A \to B$ and $g : B \to C$ be functions. The \textbf{composite}\index{composition of functions} of $f$ and $g$ is the function $g \circ f : A \to C$ defined by
+\[(g \circ f)(x) = g(f(x))\]
+for all $x \in A$
+\end{definition}
+We refer to the function $g \circ f$ as a composite function, and we read $(g \circ f)(x)$ as ``$g$ of $f$" of $x$.
+
+\begin{activity} \label{act:functions_1} Let $A = \{1, 2, 3\}$, $B = \{a, b, c, d\}$, and $C = \{\alpha, \beta, \gamma\}$. Define $f : A \to B$, $g : A \to B$, and $h : B \to C$ by
+\[f(1) = b, \ f(2) = c, \  f(3) = a,\]
+\[g(1) = d, \ g(2) = c, \  g(3) = d, \text{ and }\]
+\[h(a) = \gamma, \ h(b) = \alpha, \ h(c) = \beta,  \ h(d) = \alpha.\]
+\ba
+\item Find the images of the elements in $A$ under the function $h \circ f$.
+
+\item Find the images of the elements in $A$ under the function $h \circ g$.
+
+\item Are any of $f$, $g$, and $h$ injections? Are any of $f$, $g$, and $h$ surjections?
+
+\item Is $h \circ f$ an injection? Is $h \circ f$ a surjection? Explain.
+
+\item Is $h \circ g$ an injection? Is $h \circ g$ a surjection? Explain.
+
+\ea
+
+\end{activity}
+
+\begin{comment}
+
+\ActivitySolution
+
+\ba
+\item Applying the rules for $f$ and $h$ gives us 
+\begin{align*}
+(h \circ f)(1) &= h(f(1)) = h(b) = \alpha \\
+(h \circ f)(2) &= h(f(2)) =  h(c) = \beta \\
+(h \circ f)(3) &= h(f(3)) = h(a) = \gamma.
+\end{align*}
+
+\item Applying the rules for $g$ and $h$ gives us
+\begin{align*}
+(h \circ g)(1) &= h(g(1)) = h(d) = \alpha \\
+(h \circ g)(2) &= h(g(2)) = h(c) = \beta \\
+(h \circ g)(3) &= h(g(3)) = h(d) = \alpha.
+\end{align*}
+
+\item By the definition of $f$, we can see that each element in $B$ has at most one preimage. So $f$ is an injection. The fact that $g(1) = g(3) = d$ shows that $g$ is not an injection. Similarly, $h(a) = h(d) = \alpha$, so $h$ is not an injection. 
+
+The element $d$ in $B$ has no preimage in $A$ under $f$, so $f$ is not a surjection. Similarly, the element $a$ in $B$ has no preimage under $g$, so $g$ isn't a surjection. Each element in $C$ has at least one preimage in $B$ under $h$, so $h$ is a surjection. 
+
+
+\item Since $(h \circ f)(x)$ is always different than $(h \circ f)(y)$ when $x \neq y$, we see that $h \circ f$ is an injection. We can also see by inspection that the images of the elements in $A$ under $h \circ f$ produce all of the elements of $C$, so $h \circ f$ is a surjection.
+
+\item Since $(h \circ g)(1) = \alpha = (h \circ g)(3)$, we see that $h \circ g$ is not an injection. It is also the case there there is no input to $h \circ g$ that produces the output $\gamma$, so $h \circ g$ is not a surjection.
+
+\ea
+
+\end{comment}
+
+In Activity \ref{act:functions_1}, we asked questions about whether certain composite functions were injections and/or surjections. In mathematics, it is typical to explore whether certain properties of an object transfer to related objects. In particular, we might want to know whether or not the composite of two injective functions is also an injection. (Of course, we could ask a similar question for surjections.)  These questions are explored in the next activity.
+
+\begin{activity} \label{act:composition2}
+Let the sets $A$, $B$, $C$, and $D$ be as follows:
+\[A = \{ a, b, c \}, \quad B = \{p, q, r\}, \quad C = \{u, v, w, x \}, \quad \text{and} \quad D = \{u, v \}.\]
+\ba
+  \item Construct a function $f : A \to B$ that is an injection and a function $g : B \to C$ that is an injection.  In this case, is the composite function $g \circ f : A \to C$ an injection?  Explain.
+
+    \item Construct a function $f : A \to B$ that is a surjection and a function $g : B \to D$ that is a surjection.  In this case, is the composite function $g \circ f : A \to D$ a surjection?  Explain.
+
+  \item Construct a function $f : A \to B$ that is a bijection and a function $g : B \to A$ that is a bijection.  In this case, is the composite function $g \circ f : A \to A$ a bijection?  Explain.
+
+\ea
+\end{activity}
+
+\begin{comment}
+
+\ActivitySolution
+
+\ba
+  \item Define $f$ and $g$ by 
+  \[f(a) = p, \ f(b) = q, \ f(c) = r  \ \text{ and } \ g(p) = u, \ g(q) = v,  \ g(r) = w.\]
+  So both $f$ and $g$ are injections. Notice that 
+  \[(g \circ f)(a) = u, \ (g \circ f)(b) = v, \ \text{ and } \ (g \circ f)(c) = w,\]
+  so $g \circ f : A \to C$ is also an injection.
+
+    \item Define $f$ and $g$ by 
+  \[f(a) = p, \ f(b) = q, \ f(c) = r  \ \text{ and } \ g(p) = u, \ g(q) = v,  \ g(r) = u.\]
+  So both $f$ and $g$ are surjections. Notice that 
+  \[(g \circ f)(a) = u, \ (g \circ f)(b) = v, \ \text{ and } \ (g \circ f)(c) = u,\]
+  so $g \circ f : A \to D$ is also a surjection.
+
+  \item Define $f$ and $g$ by 
+  \[f(a) = p, \ f(b) = q, \ f(c) = r  \ \text{ and } \ g(p) = c, \ g(q) = b,  \ g(r) = a.\]
+  So both $f$ and $g$ are bijections. Notice that 
+  \[(g \circ f)(a) = c, \ (g \circ f)(b) = b, \ \text{ and } \ (g \circ f)(c) = a,\]
+  so $g \circ f : A \to A$ is also a bijection.
+
+\ea
+
+\end{comment}
+
+In Activity~\ref{act:composition2}, we explored some properties of composite functions related to injections, surjections, and bijections.  The following theorem summarizes the results that these explorations were intended to illustrate.  
+
+\begin{theorem} \label{thm:compositefunctions} Let  $A$, $B$, and  $C$  be nonempty sets, and assume that $f : A \to B$ and 
+$g : B \to C$.
+
+\begin{enumerate}
+\item If  $f$  and  $g$  are both injections, then  $(g \circ f) : A \to C$  is an injection. 
+\label{thm:compositefunctions1}
+
+\item If  $f$  and  $g$  are both surjections, then  $(g \circ f) : A \to C$  is a surjection. \label{thm:compositefunctions2}
+
+\item If  $f$  and  $g$  are both bijections, then  $(g \circ f) : A \to C$  is a bijection. \label{thm:compositefunctions3}
+\end{enumerate}
+\end{theorem}
+
+
+
+
+\begin{activity} ~
+	\ba
+	\item Prove part (1) of Theorem \ref{thm:compositefunctions}.
+		
+	\item Prove part (2) of Theorem \ref{thm:compositefunctions}.
+		
+	\item Why is the proof of part (3) of  Theorem \ref{thm:compositefunctions} a direct consequence of parts (1) and (2)?
+		
+	\ea
+\end{activity}
+
+
+\begin{comment}
+
+\ActivitySolution
+
+	\ba
+	\item Let  $A$, $B$, and  $C$  be nonempty sets, and assume that  $f: A \to B$  and  $g: B \to C$  are both injections.  We will prove that  $g \circ f: A \to C$  is an injection. 
+	
+Suppose $(g \circ f)(x) = (g \circ f)(y)$ for some $x$ and $y$ in $A$. Then $g(f(x)) = g(f(y))$. The fact that $g$ is an injection means that $f(x) = f(y)$. Now the fact that $f$ is an injection implies that $x=y$. Thus, $g \circ f$ is an injection. 
+		
+	\item Let  $A$, $B$, and  $C$  be nonempty sets, and assume that  $f: A \to B$  and  $g: B \to C$  are both surjections.  We will prove that  $g \circ f: A \to C$  is a surjection.
+
+Let  $c$ be an arbitrary element of  $C$.  We will prove there exists an $a \in A$ such that 
+$( g \circ f ) ( a ) = c$.  Since  $g: B \to C$  is a surjection, it follows that there exists a  $b \in B$  such that  $g( b ) = c$.
+Now $b \in B$  and   $f: A \to B$  is a surjection.  Hence, there exists an  $a \in A$  such that  $f( a ) = b$. We now  see that
+\begin{align*}
+  ( {g \circ f} )( a ) &= g\left( {f( a )} \right) \\ 
+                       &= g( b ) \\ 
+                       &= c. \\ 
+\end{align*} 
+
+We have therefore shown that for every  $c \in C$, there exists an  $a \in A$  such that  $( {g \circ f} )( a ) = c$.  This proves that  $g \circ f$  is a surjection. 
+
+	
+	\item Suppose that $f$ and $g$ are both bijections. The fact that $f$ and $g$ are both injections implies that $g \circ f$ is an injection by part (1). The fact that $f$ and $g$ are both surjections implies that $g \circ f$ is a surjection by part (2). So $g \circ f$ is a bijection. 
+		
+	\ea
+
+\end{comment}
+
+\csection{Inverse Functions} 
+
+Now that we have studied composite functions, we will move on to consider another important idea: the inverse of a function. In previous mathematics courses, you probably learned that the exponential function (with base $e$) and the natural logarithm functions are inverses of each other.  You may have seen this relationship expressed as follows:
+\begin{center}
+For each $x \in \R$ with $x > 0$ and for each $y \in \R$, \\
+$y = \ln(x)$  if and only if  $x = e^y$.
+\end{center}
+Notice that $x$ is the input and $y$ is the output for the natural logarithm function if and only if $y$ is the input and $x$ is the output for the exponential function.  In essence, the inverse function (in this case, the exponential function) reverses the action of the original function (in this case, the natural logarithm function).  In terms of ordered pairs (input-output pairs), this means that if  $( {x, y} )$ is an ordered pair for a function, then  $( {y, x} )$ is an ordered pair for its inverse.  The idea of reversing the roles of the first and second coordinates is the basis for our definition of the inverse of a function.
+
+\begin{definition}
+Let  $f : A \to B$  be a function.  The \textbf{inverse}\index{function!inverse} of
+  $f$\!, denoted by  $f^{ - 1} $,
+\label{sym:finverse} is the set of ordered pairs 
+\[f^{ - 1}  = \left\{ { {( {b, a} ) \in B \times A} \mid ( {a, b} ) \in f} \right\}.\]
+\end{definition}
+
+Notice that this definition does not state that  $f^{-1} $  is a function.  Rather, $f^{-1}$ is simply a subset of  $B \times A$.  In Activity \ref{prog:exploringinverse}, we will explore the conditions under which the inverse of a function  $f: A \to B$ is itself a function from  $B$ to $A$.
+
+\begin{activity} \label{prog:exploringinverse} 
+Let  $A = \left\{ {a, b, c} \right\}$, $B = \left\{ {a,b,c,d} \right\}$, and 
+$C = \left\{ {p, q, r} \right\}$.  Define
+\begin{center}
+\begin{tabular}{c  c  c}
+$f: A \to C$ by ~~~~~&~~~~~  $g: A \to C$ by ~~~~~&~~~~~  $h: B \to C$ by \\
+\hspace{-0.2in}$f( a ) = r $  &  \hspace{0.1in}$g( a ) = p $  &  \hspace{0.4in}$h( a ) = p $ \\
+\hspace{-0.2in}$f( b ) = p $  &  \hspace{0.1in}$g( b ) = q $  &  \hspace{0.4in}$h( b ) = q $ \\
+\hspace{-0.2in}$f( c ) = q $  &  \hspace{0.1in}$g( c ) = p $  &  \hspace{0.4in}$h( c ) = r $ \\
+                          &                            &  \hspace{0.4in}$h( d ) = q $
+\end{tabular}
+\end{center}
+	\ba
+
+	\item Determine the inverse of each function as a set of ordered pairs.
+
+	\item 
+		\begin{enumerate}[i.] 
+		\item Is  $f^{ - 1} $ a function from  $C$  to  $A$?  Explain.
+
+		\item Is  $g^{ - 1} $ a function from  $C$  to  $A$?  Explain.
+
+		\item Is  $h^{ - 1} $  a function from  $C$  to  $B$?  Explain.
+
+		\end{enumerate}
+
+
+
+	\item \label{A:exploringinverse3} Make a conjecture about what conditions on a function  $F: S \to T$ will ensure that its inverse is a function  from  $T$  to  $S$.
+
+	\ea
+\end{activity}
+
+
+\begin{comment}
+
+\ActivitySolution
+
+	\ba
+
+	\item We reverse each ordered pair to obtain the ordered pairs for the inverse. So 
+	\[f^{-1} = \{(r,a), (p,b), (q,c)\}, \ g^{-1} = \{(p,a), (q,b), (p,c)\}, \ h^{-1} = \{(p,a), (q,b), (r,c), (q,d)\}.\]
+
+	\item 
+		\begin{enumerate}[i.] 
+		\item Since $f^{-1}$ contains no ordered pairs with the same first coordinate, $f^{-1}$ defines a function. 
+
+		\item The fact that $(p,a)$ and $(p,c)$ are in $g^{-1}$ means that $g^{-1}$ is not a function. 
+
+		\item Since $(q,b)$ and $(q,d)$ are in $h^{ - 1} $, $h^{-1}$ is not a function.Explain.
+
+		\end{enumerate}
+
+	\item Suppose $f$ is a function from $A$ to $B$. For $f^{-1}$ to define a function, there can be no ordered pairs of the form $(a,b)$ and $(c,b)$ in $f$. That is, if $(x,y)$ and $(w,y)$ are in $f$, then $x=w$. If $f^{-1}$ is to be a function from $B$ to $A$, then for each $b \in B$ there must exist a pair $(a,b) \in f$. In other words, for $f^{-1}$ to be a function from $B$ to $A$, then $f$ has to be both an injection and a surjection. 
+
+	\ea
+
+\end{comment}
+
+The result of the Activity \ref{prog:exploringinverse} should have been the following theorem.
+
+\begin{theorem} \label{T:inverseandbijection}
+Let  $A$  and  $B$  be nonempty sets, and let  $f: A \to B$.  The inverse of  $f$ is a function from  $B$  to  $A$  if and only if  $f$  is a bijection.  
+\end{theorem}
+
+The proof of Theorem \ref{T:inverseandbijection} is outlined in the following activity. 
+
+\begin{activity} Theorem \ref{T:inverseandbijection} is a biconditional statement, so we need to prove both directions. Let  $A$  and  $B$  be nonempty sets, and let  $f: A \to B$.
+	\ba
+	\item Assume that  $f$  is a bijection. We will prove that $f^{-1}$ is a function, that is that $f^{-1} $ satisfies the conditions of Definition~\ref{def:function}. 
+		\begin{enumerate}[i.]
+		\item Let $b \in B$. What property does $f$ have that ensures that $(b,a) \in f^{-1}$ for some $a \in A$? What conclusion can we draw about $f^{-1}$? 
+
+		\item Now let $b \in B$, $a_1 , a_2  \in A$ and assume that  
+\[( {b, a_1 } ) \in f^{ - 1} \text{ and } ( {b, a_2 } ) \in f^{-1}.\]
+What does this tell us about elements that must be in $f$? What property of $f$ ensures that $a_1=a_2$? What conclusion can we draw about $f^{-1}$? 
+
+		\end{enumerate}
+		
+	\item Now assume that  $f^{-1} $  is a function from $B$ to $A$. We will prove that $f$ is a bijection.
+			\begin{enumerate}[i.]
+			\item What does it take to prove that $f$ is an injection? Use the fact that $f^{-1}$ is a function to prove that $f$ is an injection.
+						
+			\item What does it take to prove that $f$ is a surjection? Use the fact that $f^{-1}$ is a function to prove that $f$ is a surjection.
+						
+			\end{enumerate}
+			
+		\ea
+\end{activity}
+
+
+\begin{comment}
+
+\ActivitySolution
+
+\ba
+\item 
+	\begin{enumerate}[i.]
+	\item Since $f$  is a surjection,  there exists an $a \in A$  such that  $f( a ) = b$.  This implies that  
+$( {a, b} ) \in f$ and hence that  $( {b, a} ) \in f^{ - 1} $.  Thus, each element of  $B$  is the first coordinate of an ordered pair in  $f^{ - 1} $.  
+
+	\item We must now prove  that each element of  $B$  is the first coordinate of exactly one ordered pair in  $f^{ - 1} $.  So let  $b \in B$, $a_1 , a_2  \in A$
+ and assume that  
+\[( {b, a_1 } ) \in f^{ - 1} \text{ and } ( {b, a_2 } ) \in f^{ - 1} .\]
+This means that  $( {a_1 , b} ) \in f$ and  $( {a_2 , b} ) \in f$. Since  $f$  is a bijection, $f$ is by definition an injection, and we can conclude that  $a_1  = a_2 $.  This proves that  $b$  is the first element of only one ordered pair in  $f^{ - 1} $.  Consequently, we have proved that  $f^{ - 1} $  satisfies the conditions of Definition~\ref{def:function} and hence  $f^{ - 1} $  is a function from  $B$  to  $A$.
+
+	\end{enumerate}
+	
+\item 
+	\begin{enumerate}[i.]
+	\item To prove that  $f$  is an injection, we will assume that  $a_1 , a_2  \in A$ and that $f( {a_1 } ) = f( {a_2 } )$, and we must show that  $a_1  = a_2 $.  If we let  $b = f( {a_1 } ) = f( {a_2 } )$, we can conclude that
+\[( {a_1 , b} ) \in f \text{ and }( {a_2 , b} ) \in f.\]
+But this means that  
+\[( {b, a_1 } ) \in f^{ - 1} \text{ and }( {b, a_2 } ) \in f^{ - 1}. \]
+Since we have assumed that  $f^{ - 1} $ is a function, we can conclude that  $a_1  = a_2 $.  Hence,  $f$  is an injection.
+
+	\item Now to prove that  $f$  is a surjection, we will choose an arbitrary $b \in B$ and show that there exists an  $a \in A$ such that  $f( a ) = b$.  Since  $f^{ - 1} $  is a function,  $b$  must be the first coordinate of some ordered pair in  $f^{ - 1} $.  Consequently, there exists an  
+$a \in A$  such that
+\[( {b, a} ) \in f^{ - 1} .\]
+Now this implies that  $( {a, b} ) \in f$, and so $f( a ) = b$.  This proves that  $f$  is a surjection.  Since we have also proved that  $f$  is an injection, we can conclude that  $f$  is a bijection, as desired.
+
+	\end{enumerate}
+\ea
+
+\end{comment}
+
+In the situation where  $f: A \to B$  is a bijection and  $f^{-1} $ is a function from  $B$  to  $A$, we can write  $f^{-1} : B \to A$.  In this case, we frequently say that $f$  is an \textbf{invertible function},  and we usually do not use the ordered pair representation for either  $f$  or  $f^{-1} $.  Instead of writing  $( {a, b} ) \in f$, we write  $f( a ) = b$, and instead of writing  $( {b, a} ) \in f^{-1} $, we write  $f^{-1} ( b ) = a$.  Using the fact that  $( {a, b} ) \in f$  if and only if  $( {b, a} ) \in f^{-1} $, we can now write  $f( a ) = b$  if and only if  $f^{-1} ( b ) = a$.   Theorem~\ref{T:inversenotation} formalizes this observation.
+
+\begin{theorem}  \label{T:inversenotation}
+Let  $A$  and  $B$  be nonempty sets, and let  $f: A \to B$  be a bijection.  Then 
+$f^{ - 1} : B \to A$ is a function, and for every  $a \in A$ and $b \in B$,
+\[f( a ) = b  \text{ if and only if } f^{ - 1} ( b ) = a.\]
+\end{theorem}
+
+The next result provide useful information about inverse functions.  The proofs are left for Exercise (\ref{ex:inverse_composite}). 
+
+\begin{corollary} \label{C:inversecomposition}
+Let  $A$  and  $B$  be nonempty sets, and let  $f: A \to B$  be a bijection.  Then
+\begin{enumerate}
+\item For every $x$ in $A$, $\left( f^{ - 1}  \circ f \right)(x) = x$.
+\label{C:inversecomposition1}
+\item For every $y$ in $B$, $\left( f \circ f^{ - 1}\right)(y) = y$.
+\label{C:inversecomposition2}
+\end{enumerate}
+\end{corollary}
+
+The next question to address is what we can say about a composition of bijections. In particular, if $f: A \to B$  and  $g: B \to C$  are both bijections, then $f^{ - 1} : B \to A$  and  $g^{ - 1} : C \to B$ are both functions. Must it be the case that $g \circ f$ is invertible and, if so, what is $(g \circ f)^{-1}$? 
+
+\begin{activity} \label{act:comp_inverse} Let $f: A \to B$  and  $g: B \to C$ both be bijections. 
+	\ba
+	\item Why do we know that $g \circ f$ is invertible?
+	
+	\item Now we determine the inverse of $g \circ f$. We might be tempted to think that $(g \circ f)^{-1}$ is $g^{-1} \circ f^{-1}$, but this composite is not defined because $g^{-1}$ maps $B$ to $C$ and $f^{-1}$ maps $B$ to $A$. However, $f^{_1} \circ g^{-1}$ is defined. To prove that $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$, we need to prove that two functions are equal. How do we prove that two functions are equal? 
+
+	\item Suppose $c \in C$.
+		\begin{enumerate}[i.]
+		\item What tells us that there is a $b \in B$ so that $g(b) = c$?
+		
+		\item What tells us that there is an $a \in A$ so that $f(a) = b$?
+	
+		\item What element is $(g \circ f)^{-1}(c)$? Why?
+	
+		\item What element is $f^{-1}(b)$? Why? What element is $g^{-1}(c)$? Why?
+		
+		\item What element is $(f^{-1} \circ g^{-1})(c)$? Why? What can we conclude about $(g \circ f)^{-1}$ and $f^{-1} \circ g^{-1}$? Explain.
+
+		\end{enumerate}
+	\ea
+	
+\end{activity}
+
+
+\begin{comment}
+
+\ActivitySolution
+
+\ba
+\item Theorem~\ref{thm:compositefunctions} tells us that $g \circ f: A \to C$  is a bijection, and hence invertible. Note that $( {g \circ f} )^{ - 1} : C \to A$.  
+
+\item To prove that $ ({g \circ f} )^{ - 1} =  ( {f^{ - 1}  \circ g^{ - 1} } )$, we need to show that 
+\[( {g \circ f} )^{ - 1} ( c ) = ( {f^{ - 1}  \circ g^{ - 1} } )( c )\]
+for every $c \in C$. 
+
+\item Suppose $c \in C$. 
+	\begin{enumerate}[i.]
+	\item Let $c \in C$. Since the function  $g$  is a surjection, there exists a  $b \in B$ such that $g(b) = c$. 
+	
+	\item Since  $f$  is a surjection, there exists an  $a \in A$  such that $f(a) = b$. 
+
+	\item We then have $(g \circ f)(a) = g(f(a)) = g(b) = c$, so $a = (g \circ f)^{-1}(c)$. 
+	
+	\item By definition, $f^{-1}(b) = a$ and $g^{-1}(c) = b$. 
+	
+	\item It follows that  
+	\[\left(f^{-1} \circ g^{-1}\right)(c) = f^{-1}\left(g^{-1}(c)\right) = f^{-1}(b) = a.\]
+	
+	\item Since 
+	\[ (g \circ f)^{-1}(c)  = a = \left(f^{-1} \circ g^{-1}\right)(c),\]
+	we conclude that $(g \circ f)^{-1}(c)  =  \left(f^{-1} \circ g^{-1}\right)(c)$ for every $c \in C$. Consequently, $(g \circ f)^{-1}  =  f^{-1} \circ g^{-1}$. 
+
+	\end{enumerate}
+\ea
+
+\end{comment}
+
+The result of Activity \ref{act:comp_inverse} is contained in the next theorem.
+
+\begin{theorem} \label{compositionofbijections}
+Let $f: A \to B$  and  $g: B \to C$  be bijections.  Then  $g \circ f$  is a bijection and  
+$( {g \circ f} )^{ - 1}  = f^{ - 1}  \circ g^{ - 1} $.
+\end{theorem}
+
+\csection{Functions and Sets}
+
+We conclude this section with a connection between subsets and functions. A bit of notation first. If $f$ is a function from a set $X$ to a set $Y$, and if $A$ is a subset of $X$ and $B$ is a subset of $Y$, we define $f(A)$ and $f^{-1}(B)$ as 
+\[f(A) = \{f(a) \mid a \in C\},\]
+and 
+\[f^{-1}(B) = \{a \in A \mid f(a) \in B\}.\]
+We call $f(A)$ the image of the set $A$ under $f$ and $f^{-1}(B)$ is the preimage of the set $B$ under $f$. Note that $f^{-1}(B)$ is defined for any function, not just invertible functions. So it is important to recognize that the use of the notation $f^{-1}(B)$ does not imply that $f$ is invertible. 
+
+When we work with continuous functions in later sections, we will need to understand how a function behaves with respect to subsets. One result is in the following lemma. 
+
+\begin{lemma} \label{lem:functions_subsets} Let $f : X \to Y$ be a function and let $\{A_{\alpha}\}$ be a collection of subsets of $X$ for $\alpha$ in some indexing set $I$, and $\{B_{\beta}\}$ be a collection of subsets of $Y$ for $\beta$ in some indexing set $J$. Then
+\begin{enumerate}
+\item $f\left(\bigcup_{\alpha \in I} A_{\alpha}\right) = \bigcup_{\alpha \in I} f(A_{\alpha})$ and
+\item $f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right) = \bigcup_{\beta \in J} f^{-1}(B_{\beta})$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof} Let $f : X \to Y$ be a function and let $\{A_{\alpha}\}$ be a collection of subsets of $X$ for $\alpha$ in some indexing set $I$. To prove part 1, we demonstrate the containment in both directions. 
+
+Let $b \in f\left(\bigcup_{\alpha \in I} A_{\alpha}\right)$. Then $b = f(a)$ for some $a \in \bigcup_{\alpha \in I} A_{\alpha}$. It follows that $a \in A_{\rho}$ for some $\rho \in I$. Thus, $b \in f(A_{\rho}) \subseteq \bigcup_{\alpha \in I} f(A_{\alpha})$. We conclude that $f\left(\bigcup_{\alpha \in I} A_{\alpha}\right) \subseteq \bigcup_{\alpha \in I} f(A_{\alpha})$. 
+
+Now let $b \in \bigcup_{\alpha \in I} f(A_{\alpha})$. Then $b \in f(A_{\rho})$ for some $\rho \in I$. Since $A_{\rho} \subseteq \bigcup_{\alpha \in I} A_{\alpha}$, it follows that $b \in f\left(\bigcup_{\alpha \in I} A_{\alpha}\right)$. Thus, $\bigcup_{\alpha \in I} f(A_{\alpha}) \subseteq f\left(\bigcup_{\alpha \in I} A_{\alpha}\right)$. The two containments prove part 1.
+
+For part 2, we again demonstrate the containments in both directions. Let $a \in f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right)$. Then $f(a) \in \bigcup_{\beta \in J} B_{\beta}$. So there exists $\mu \in J$ such that $f(a) \in B_{\mu}$. This implies that $a \in f^{-1}(B_{\mu}) \subseteq \bigcup_{\beta \in J} f^{-1}(B_{\beta})$. We conclude that $f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right) \subseteq \bigcup_{\beta \in J} f^{-1}(B_{\beta})$. 
+
+For the reverse containment, let $a \in \bigcup_{\beta \in J} f^{-1}(B_{\beta})$. Then $a \in f^{-1}(B_{\mu})$ for some $\mu \in J$. Thus, $f(a) \in B_{\mu} \subseteq \bigcup_{\beta \in J} B_{\beta}$.  So $a \in f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right)$. Thus, $\bigcup_{\beta \in J} f^{-1}(B_{\beta}) \subseteq f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right)$. The two containments verify part 2. 
+\end{proof}
+
+At this point it is reasonable to ask if Lemma \ref{lem:functions_subsets} would still hold if we replace unions with intersections. We leave that question for Exercise (\ref{ex:intersection_image}). 
+
+Another result is contained in the next activity.
+
+\begin{activity} Let $X$, $Y$, and $Z$ be sets, and let $f: X \to Y$ and $g: Y \to Z$ be functions. Let $C$ be a subset of $Z$. There is a relationship between $(g \circ f)^{-1}(C)$ and $f^{-1}(g^{-1}(C))$. Find and prove this relationship.
+
+\end{activity}
+
+\begin{comment}
+
+\ActivitySolution We will show that $(g \circ f)^{-1}(C)=f^{-1}(g^{-1}(C))$. Let $x \in (g \circ f)^{-1}(C)$. Then $(g \circ f)(x) \in C$. So $g(f(x)) \in C$ and $f(x) \in g^{-1}(C)$. From this it follows that $x \in f^{-1}(g^{-1}(C))$. So $(g \circ f)^{-1}(C) \subseteq f^{-1}(g^{-1}(C))$. 
+
+Now assume that $x \in f^{-1}(g^{-1}(C))$. Then $f(x) \in g^{-1}(C)$. We then have $g(f(x)) \in C$ or $(g \circ f)(x) \in C$. Thus, $x \in (g \circ f)^{-1}(C)$ and $f^{-1}(g^{-1}(C)) \subseteq (g \circ f)^{-1}(C)$. The two containments demonstrate that $f^{-1}(g^{-1}(C)) = (g \circ f)^{-1}(C)$.
+
+\end{comment}
+
+\csection{The Cardinality of a Set}
+
+How big is a set? When a set is finite, we can count the number of elements in the set and answer the question directly. When a set is infinite, the question is a little more complicated. For example, how big is $\Z$? How big is $\Q$? Since $\Z$ is a subset of $\Q$, we might think that $\Q$ contains more elements than $\Z$. But $\Z$ is infinite and how many more elements can we have than infinity? We won't answer that question in this section, but it is an interesting one to consider. 
+
+If two finite sets have the same number of elements, then it should seem natural to say that the sets are of the same size. How do we extend this to infinite sets? If two finite sets have the same number of elements, then we can pair each element in one set with exactly one element in the other. This is exactly what a bijection does.  So a set with $n$ elements can be paired with the set $\{1, 2, \ldots, n\}$, where $n$ is a positive integer. This is how we can define a finite set. 
+
+\begin{definition} A set $A$ is a \textbf{finite} set\index{finite set} if $A = \emptyset$ or there is a bijection $f$ mapping $A$ to the set $\{1,2,3, \ldots, n\}$ for some positive integer $n$. 
+\end{definition}
+
+In the case that $A = \emptyset$, we say that $A$ has \emph{cardinality} $0$, and if there is a bijection from $A$ to the set $\{1,2, \ldots, n\}$, we say that $A$ has cardinality $n$.  If there is no positive integer $n$ such that there is a bijection from set $A$ to $\{1,2, \ldots, n\}$ we say that $A$ is an \emph{infinite} set and say that $A$ has infinite cardinality. We use the word \emph{cardinality} instead of number of elements because we can't actually count the number of elements in an infinite set. We denote the cardinality of the set (the number of elements in the set) $A$ by $|A|$. It is left to the homework to show that if $A$ and $B$ are sets with $|A|=n$ and $|B| = m$, then $n=m$ if and only if there is a bijection $f: A \to B$. This tells us that cardinality is well defined. Since composites of bijections are bijections with inverses that are bijections, if there is a bijection from set $A$ to $\{1,2, \ldots, n\}$ and a bijection from a set $B$ to $\{1,2, \ldots, n\}$ for some positive integer $n$, then there is a bijection between $A$ and $B$. Using this idea, we say that two sets (either finite or infinite) have the same cardinality\index{cardinality of a set} if there is a bijection between the sets. We will discuss cardinality in more detail a bit later. 
+
+\csection{Summary}
+Important ideas that we discussed in this section include the following.
+\begin{itemize}
+\item A function $f$ from a nonempty set $A$ to a set $B$ is a collection of ordered pairs $(a,b)$ so that for each $a \in A$ there is a pair $(a,b)$ in $f$, and if $(a,b)$ and $(a,b')$ are in $f$, then $b=b'$.  If $f$ is a function we use the notation $f(a) = b$ to indicate that $(a,b) \in f$. 
+\item If $f$ is a function from $A$ to $B$, the set $A$ is the domain of the function.
+\item If $f$ is a function from $A$ to $B$, the set $B$ is the codomain of the function. The set 
+\[\{f(a) \mid a \in A\}\]
+ is the range of the function. So the range of a function is a subset of the codomain.  
+\item A function $f$ from a set $A$ to a set $B$ is an injection if, whenever $f(a) = f(a')$ for $a$, $a' \in A$, then $a = a'$. The function $f$ is a surjection if, whenever $b \in B$, then there is an $a \in A$ so that $f(a)=b$. 
+\item If $f$ is a function from a set $A$ to a set $B$ and if $g$ is a function from $B$ to a set $C$, then the composite $g \circ f$ is a function from $A$ to $C$ defined by $(g \circ f)(a) = g(f(a))$ for every $a \in A$. 
+\item A function $f$ from a set $A$ to a set $B$ is a bijection if $f$ is both a surjection and injection. When $f$ is a bijection from $A$ to $B$, then $f$ has an inverse $f^{-1}$ defined by $f^{-1}(b) = a$ when $f(a) = b$. 
+\item If $f$ is a function from a set $A$ to a set $B$, and if $C$ is a subset of $A$, then image of $C$ under $f$ is the set 
+\[f(C) = \{f(c) \mid c \in C\},\]
+and if $D$ is a subset of $Y$, the inverse image of $D$ is the set 
+\[f^{-1}(D) = \{a \in A \mid f(a) \in D\}.\]
+\item Important properties that relate images and inverse images of sets and set unions are the following. If $f$ is a function from a set $X$ to a set $Y$, and if $\{A_{\alpha}\}$ is a collection of subsets of $X$ for $\alpha$ in some indexing set $I$, and $\{B_{\beta}\}$ be a collection of subsets of $Y$ for $\beta$ in some indexing set $J$, then  
+\begin{enumerate}[i.]
+\item $f\left(\bigcup_{\alpha \in I} A_{\alpha}\right) = \bigcup_{\alpha \in I} f(A_{\alpha})$ and
+\item $f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right) = \bigcup_{\beta \in J} f^{-1}(B_{\beta})$.
+\end{enumerate}
+\end{itemize}
+
+\csection{Exercises}
+\be
+
+\item 
+	\ba
+	\item Find a function $f: \R \to \R$ such that each element in the codomain has exactly one preimage. 
+
+	\item Find a function $f: \R \to \R$ such that each element in the codomain has at least two preimages.
+	
+	\item Find a function $f: \R \to \R$ such that each element has exactly two preimages. 
+	
+	\item Find a function $f: \R \to \R$ such that there is an element in the codomain that has exactly three preimages and another element in the codomain that as exactly two preminages.
+
+	
+	\item Find a function $f: \R \to \R$ such that there is an element in the codomain that has infinitely many preimages. 	
+	\ea
+
+
+\begin{comment}
+
+\ExerciseSolution
+
+	\ba
+	\item Let $f: \R \to \R$ be the identity function. Then $f$ is a bijection and so  each element in the codomain is the image of exactly one element in the domain. 
+	
+	\item Let $f : \R \to \R$ be defined by 
+	\[f(x) = \begin{cases} \ln(|x|) &\text{ if } x \neq 0 \\ 0 &\text{ if } x = 0 \end{cases}\]
+	as illustrated in Figure \ref{F:Exercise_2_1_b}.
+
+If $y$ is in $\R$, then both $e^y$ and $-e^{y}$ are preimages of $y$. Note that $0$ is also a preimage of $0$. 
+\begin{figure}[h]
+\begin{center}
+\resizebox{!}{2.0in}{\includegraphics{Exercise_2_1_b.eps}}
+\caption{A function with all output having at least two preimages.} 
+\label{F:Exercise_2_1_b}
+\end{center}
+\end{figure}
+
+	\item Let $f(x) = x-k$ when $2k < x \leq 2k+2$ for every integer $k$. So, for example, $f(x) = x+2$ when $-4 < x \leq -2$ and $f(x)=x$ when $0 < x \leq 2$. 
+If $y$ is in $\R$, then $y$ is in $(2k, 2k+1]$ for some integer $k$. Then both $y+(k-1)$ and $y+k$ are preimages of $y$ as illustrated in Figure \ref{F:Exercise_2_1_c}.
+\begin{figure}[h]
+\begin{center}
+\resizebox{!}{2.0in}{\includegraphics{Exercise_2_1_c.eps}}
+\caption{A function with all output having exactly two preimages.} 
+\label{F:Exercise_2_1_c}
+\end{center}
+\end{figure}
+	
+	
+	\item Let $f: \R \to \R$ be defined by $f(x) = x^3-9x$ as shown in Figure \ref{F:Exercise_2_1_d}. The preimage of $0$ is $\{-3,0,3\}$ and the preimage of $-6\sqrt{3}$ is $\{-2\sqrt{3},\sqrt{3}\}$. 
+\begin{figure}[h]
+\begin{center}
+\resizebox{!}{2.0in}{\includegraphics{Exercise_2_1_d.eps}}
+\caption{A function with one output having exactly two preimages and one with three preimages.} 
+\label{F:Exercise_2_1_d}
+\end{center}
+\end{figure}
+	
+	\item  Let $f: \R \to \R$ be defined by $f(x) = \sin(x)$. The preimage of $0$ is $\{\pi k \mid k \in \Z\}$.  
+		
+	\ea
+	
+\end{comment}
+
+\item \label{exer:forexample} For each of the following functions, determine if the function is an injection, a surjection, a bijection, or none of these. Remember to be careful about the domain and range in each case. Justify all of your conclusions.
+\ba
+\item $F:\mathbb{R} \to \mathbb{R}$  defined by  $F( x ) = 5x + 3$, for all  $x \in \mathbb{R}$  
+
+\item $G:\Z \to \Z$  defined by  $G( x ) = 5x + 3$, for all  $x \in \Z$
+
+\item $f: ( \R \setminus \left\{ 4 \right\} ) \to \R$ defined  by $f ( x ) = \dfrac{3x}{x - 4}$, for all 
+          $x \in \left( \R \setminus\{ 4 \} \right)$  
+
+\item $g: ( \R \setminus \left\{ 4 \right\} ) \to ( \R \setminus \left\{ 3 \right\} )$ defined by $g ( x ) = \dfrac{3x}{x - 4}$,  for all $x \in \left( \R \setminus \{ 4 \} \right)$   
+
+\item $h: \R \to \R_{\geq 0}$ defined by $h(x) = x^2$ for every $x \in \R$, where $\R_{\geq 0} = \{x \in \R \mid x \geq 0\}$
+
+\item $k: \R_{\geq 0} \to \R_{\geq 0}$ defined by $k(x) = x^2$ for every $x \in \R_{\geq 0}$
+
+
+\ea
+
+\begin{comment}
+
+\ExerciseSolution
+
+\ba
+\item First we show that $F$ is an injection. Suppose $x_1, x_2 \in \R$ with $F(x_1) = F(x_2)$. Then $5x_1+3 = 5x_2+3$. Subtracting $3$ from both sides and cancelling the $5$ shows that $x_1 = x_2$. Thus, $F$ is an injection.
+
+Next we show that $F$ is a surjection. Let $y \in \R$. Let $x = \frac{y-3}{5}$. Then $x \in \R$ and 
+\[F(x) = F\left(\frac{y-3}{5}\right) = 5\left(\frac{y-3}{5}\right) + 3 = (y-3) + 3 = y,\]
+so $F$ is a surjection. Since $F$ is both an injection and a surjection, we conclude that $F$ is a bijection. 
+
+\item First we show that $G$ is an injection. Suppose $x_1, x_2 \in \Z$ with $G(x_1) = G(x_2)$. Then $5x_1+3 = 5x_2+3$. Subtracting $3$ from both sides and cancelling the $5$ shows that $x_1 = x_2$. Thus, $G$ is an injection.
+
+In order for $G$ to be a surjection there would have to be an integer $x$ such that $G(x) = 0$. But if $G() = 0$, then $5x+3 = 0$ and so $5x = -3$. But this implies that the integer $5$ divides the integer $3$ in $\Z$, which is impossible. So $G$ is not a surjection and $G$ is not a bijection. 
+
+\item Suppose $x_1, x_2 \in \R \setminus \{4\}$ with $f(x_1) = f(x_2)$. Then 
+\begin{align*}
+\frac{3x_1}{x_1 - 4} &=  \frac{3x_2}{x_2 - 4} \\
+3x_1(x_2-4) &=  3x_2(x_1-4) \\
+3x_1x_2 - 12x_1 &= 3x_1x_2 - 12x_2 \\
+-12x_1 &= -12x_2 \\
+x_1 &= x_2.
+\end{align*}
+So $f$ is an injection. 
+
+In order for $f$ to be a surjection, it must be the case that there is a real number $x$ not equal to $4$ such that $f(x) = 3$. But then 
+\begin{align*}
+\frac{3x}{x-4} &= 3 \\
+3x &= 3(x-4) \\
+3x &= 3x-12 \\
+0 &= -12,
+\end{align*}
+which is impossible. We conclude that $f$ is not a surjection and $f$ is not a bijection.  
+
+
+\item From the previous part we know that $g(x) \neq 3$ for every $x$, so $g$ maps into $\R \setminus \{3\}$. Suppose $x_1, x_2 \in \R \setminus \{4\}$ with $g(x_1) = g(x_2)$. Then 
+\begin{align*}
+\frac{3x_1}{x_1 - 4} &=  \frac{3x_2}{x_2 - 4} \\
+3x_1(x_2-4) &=  3x_2(x_1-4) \\
+3x_1x_2 - 12x_1 &= 3x_1x_2 - 12x_2 \\
+-12x_1 &= -12x_2 \\
+x_1 &= x_2.
+\end{align*}
+So $g$ is an injection. 
+
+To show that $g$ is a surjection, let $y \in \R \setminus \{3\}$. Let $x = \frac{4y}{y-3}$. Then 
+\[g(y) = \frac{3\frac{4y}{y-3}}{\frac{4y}{y-3} - 4} = \frac{12y}{4y - 4(y-3)} = \frac{12y}{12} = y.\]
+Thus, $g$ is a surjection and also a bijection.   
+
+\item Since $h(-1) = 1 = h(1)$, we conclude that $h$ is not an injection. To show that $h$ is a surjection, let $y \in \R_{\geq 0}$. Then $\sqrt{y} \in \R$ and $h(\sqrt{y}) = y$. Thus, $h$ is surjection but not a bijection. 
+
+\item Different from the previous part, we will show that $k$ is an injection. Let $x_1, x_2 \in \R_{\geq 0}$ and assume that $k(x_1) = k(x_2)$. Then $x_1^2 = x_2^2$. The fact that neither $x_1$ nor $x_2$ is negative implies that $x_1 = x_2$ and $k$ is an injection. To show that $k$ is a surjection, let $y \in \R_{\geq 0}$. Then $\sqrt{y} \in \R_{\geq 0}$ and $k(\sqrt{y}) = y$. Thus, $k$ is surjection and a bijection.  $k: \R_{\geq 0} \to \R_{\geq 0}$ defined by $k(x) = x^2$ for every $x \in \R_{\geq 0}$
+
+
+\ea
+
+
+\end{comment}
+
+
+
+\item Let $A = \{1,2,3,4,5,6,7,8,9,10\}$ and let $B = \{a,b,c,d,e,g\}$, and define $f:A \to B$ as given in Table \ref{T:Sec_2_fn_example}.
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{c|cccccccccc}
+$x$	&1&2&3&4&5&6&7&8&9&10 \\
+$f(x)$ &$c$&$d$&$a$&$g$&$a$&$c$&$e$&$d$&$c$&$a$ 
+\end{tabular}
+\caption{A function from $A$ to $B$.}
+\label{T:Sec_2_fn_example}
+\end{center}
+\end{table}
+	\ba
+	\item If $f$ an injection? Is $f$ a surjection? Explain.
+	
+	\item Find a largest subset $C$ of $A$ (largest in the number of elements of $C$) such that $f|_C$ is an injection. 
+	
+	\item Find a subset $D$ of $B$ such that $f$ is a surjection.
+	
+	\item Find subsets $X$ of $A$ and $Y$ of $B$ such that $f|_X : X \to Y$ is a bijection. 
+	
+	\ea
+	
+\begin{comment}
+\ExerciseSolution
+	\ba
+	\item Since $f(1) = f(6) = c$, we conclude that $f$ is not an injection. There is no preimage of $b$ in B$, so $f$ is not a surjection.
+	
+	\item We need each output to be the preimage of exactly one input. This will be the case if $C = \{1,2,3,4,7\}$. 
+	
+	\item In this case we need $D$ to be the set of all outputs of $f$. So $D = \{a,c,d,e,g\}$. 
+	
+	\item We can use the set $C$ from (b) and the set $D$ from (c). 
+		
+	\ea
+
+
+\end{comment}
+
+
+\item Let $A$ and $B$ be sets, both of which have at least two distinct members. 
+\ba
+\item Illustrate a subset $X \subset A \times B$ that is the Cartesian product of a subset of $A$ with a subset of $B$.
+
+\item Show that there is a subset $W \subset A \times B$ that is not the Cartesian product of a subset of $A$ with a subset of $B$. [Thus, not every subset of a Cartesian product is the Cartesian product of a pair of subsets.]
+
+\ea
+
+\begin{comment}
+
+\ExerciseSolution 
+
+\ba
+
+\item Let $A = \{1,2\}$ and $B = \{3,4\}$. Then $\{1\} \times \{2\} = \{1,2\}$ is a subset of $A \times B$ that is of the form $X \times Y$ with $X \subset A$ and $Y \subset B$.   
+
+\item Let $A$ and $B$ be sets, both of which have at least two distinct members. Let $a_1$ and $a_2$ be distinct elements of $A$ and $b_1$, $b_2$ distinct elements of $B$. Let $W = \{(a_1,b_2), (a_2, b_1)\}$. Since the elements of $W$ are ordered pairs of elements, first from $A$, then from $B$, it follows that $W \subset A \times B$. To show that $W$ is not a Cartesian product of a subset of $A$ with a subset of $B$, we proceed by contradiction and suppose that $W = A' \times B'$ for some subsets $A'$ of $A$ and $B'$ of $B$. Since $(a_1, b_2)$ and $(a_2, b_1)$ are in $W$, it follows that $a_1, a_2 \in A'$ and $b_1, b_2 \in B'$. But then $(a_2, b_2) \in A' \times B'$. The fact that $(a_2,b_2) \notin W$ contradicts the fact that $W = A' \times B'$. We conclude that the assumption that led us to this contradiction is false, and that $W$ is is not the Cartesian product of a subset of $A$ with a subset of $B$. 
+
+\ea
+
+\end{comment}
+
+\item The cardinality of a finite set is defined to be the number of elements of that set. We denote the cardinality of a set $A$ as $|A|$.  Let $A$ and $B$ be sets with $|A| = n$ and $|B| = m$ for some positive integers $m$ and $n$. Prove that there is a bijection $f: A \to B$ if and only if $n = m$. 
+
+\begin{comment}
+
+\ExerciseSolution Assume $A$ and $B$ are finite sets with $n$ and $m$ elements, respectively. First we prove that if $f : A \to B$ is a bijection, then $n = m$. So assume there is a bijection $f: A \to B$. We proceed by contradiction and assume that $n \neq m$. Let $B = \{b_1, b_2, \ldots, b_m\}$. Since $n \neq m$, there are two cases to consider.
+\begin{description}
+\item[Case 1: $n>m$] Since $f$ is a surjection, for each $i$ between $1$ and $m$ there exists $a_i \in A$ such that $f(a_i) = b_i$. If $a_i = a_j$ for some $i$ and $j$, then $b_i = f(a_i) = f(a_j) = b_j$, which implies that $i=j$. So the  $a_i$ are all distinct. Now $\{a_1, a_2, \ldots, a_m\} \subseteq A$, and $|A| = n >m$, so there is an element $a_{m+1} \in A$ with $a_{m+1} \neq a_i$ for $1 \leq i \leq m$. Thus, $f(a_{m+1}) \in B$ means that $f(a_{m+1}) = b_j$ for some $1 \leq j \leq m$. But then $f(a_{m+1}) = f(a_j)$. Since $f$ is an injection, this implies that $a_{m+1} = a_j$, a contradiction. We conclude that $n$ is not larger than $m$.  
+\item[Case 2: $m>n$] Again, since $f$ is a surjection, for each $i$ between $1$ and $m$ there exists $a_i \in A$ such that $f(a_i) = b_i$. As in Case 1, the $a_i$ are all distinct. But then $\{a_1, a_2, \ldots, a_m\} \subseteq A$, and $|A| \geq m > n$, which is a contradiction. Thus, $m$ cannot exceed $n$.  
+\end{description}
+We are left, therefore, with the conclusion that $n=m$.
+
+Now we prove that if $n = m$, then there is a bijection $f: A \to B$. So assume $n = m$. Let $A = \{a_1, a_2, \ldots, a_n\}$ and $B = \{b_1, b_2, \ldots, b_n\}$. Define $f : A \to B$ by $f(a_i) = b_i$ for $1 \leq i \leq n$.  We will show that $f$ is a bijection. First we prove that $f$ is an injection. Suppose $f(a_i) = f(a_j)$ for some $1 \leq i, j \leq n$. Then $b_i = b_j$ which implies $i=j$. Thus, $f$ is an injection. By definition, $f$ is a surjection. Therefore, $f$ is a bijection. 
+
+\end{comment}
+
+\item Let $X$ and $Y$ be sets and let $f: X \to Y$ be a function.
+\ba
+\item  Let $A$ be a subset of $X$. Show that $A \subseteq f^{-1}(f(A))$. Make an example to show that in general, $A \neq f^{-1}(f(A))$. (Hint: To show that the sets are not equal, consider sets $X$ and $Y$ with two elements.) 
+
+\item Let $B$ be a subset of $Y$. Show that $f(f^{-1}(B)) \subseteq B$. Make an example to show that in general, $f(f^{-1}(B)) \neq B$. (Hint: To show that the sets are not equal, consider sets $X$ and $Y$ with two elements.) 
+
+\item  Prove that $f$ is a surjection if and only if $f(f^{-1}(B)) = B$ for every subset $B$ of $Y$.
+
+\item Prove that $f$ is an injection if and only if $f^{-1}(f(A)) = A$ for every subset $A$ of $X$.
+
+\ea
+
+\begin{comment}
+
+\ExerciseSolution 
+
+\ba
+
+\item Let $A$ be a subset of $X$. Let $a \in A$. Then $f(a) \in f(A)$. This means that $a \in f^{-1}(f(A))$.  Thus,  $A \subseteq f^{-1}(f(A))$. 
+
+To demonstrate that we do not always obtain an equality, let $X = \{x_1, x_2\}$ and $Y = \{y_1, y_2\}$, and let $f:X \to Y$ be defined by $f(x) = y_1$ for every $x \in X$. Then
+\[f^{-1}(f(\{x_1\})) = f^{-1}(\{y_1\}) = \{x_1, x_2\} \neq \{x_1\}.\]
+
+\item Let $B$ be a subset of $Y$ and let $b \in f(f^{-1}(B))$. Then there is an element $x \in f^{-1}(B)$ such that $b = f(x)$. But since $x \in f^{-1}(B)$, we have that $f(x) \in B$. Thus, $b \in B$ and $f(f^{-1}(B)) \subseteq B$.
+
+To demonstrate that we do not always obtain an equality, let $X = \{x_1, x_2\}$ and $Y = \{y_1, y_2\}$, and let $f:X \to Y$ be defined by $f(x) = y_1$ for every $x \in X$. Then
+\[f(f^{-1}(Y)) = f(X) = \{y_1\} \neq Y.\]
+
+\item For one direction, assume that $f$ is a surjection. Let $B$ be a subset of $Y$. We will show that $f(f^{-1}(B)) = B$. From part (b) we know that $f(f^{-1}(B)) \subseteq B$, so we only need to show that $B \subseteq f(f^{-1}(B))$. Let $b \in B$. Since $f$ is a surjection, there is an element $x \in X$ such that $f(x) = b$. The fact that $f(x) = b \in B$ means that $x \in f^{-1}(B)$. Thus, $b = f(x) \in f(f^{-1}(B))$. We conclude that  $f(f^{-1}(B)) = B$.
+
+Now we assume that $f(f^{-1}(B)) = B$ for every subset $B$ of $Y$ and show that $f$ is a surjection. Let $y \in Y$. Since $f(f^{-1}(Y)) = Y$, we have that there exists $x \in f^{-1}(Y)$ such that $f(x) = y$. Thus, $f$ is a surjection. 
+
+\item We assume that $f$ is an injection and that $A$ is a subset of $Y$. We show that $f^{-1}(f(A)) = A$.  By part (a) we know that $A \subseteq f^{-1}(f(A))$, so we only need to demonstrate that $f^{-1}(f(A)) \subseteq A$. Let $a \in f^{-1}(f(A))$. Then $f(a) \in f(A)$. This implies that there is an element $x \in A$ such that $f(x) = f(a)$. The fact that $f$ is an injection then shows that $a = x \in A$. Thus, $f^{-1}(f(A)) \subseteq A$ and $f^{-1}(f(A)) = A$.
+
+Now assume that $f^{-1}(f(A))= A$ for every subset $A$ of $X$. We will prove that $f$ is an injection. Suppose $x_1$ and $x_2$ are in $X$ with $f(x_1) = f(x_2)$.  Then $x_1 \in f^{-1}(f(\{x_2\})$. By hypothesis, $f^{-1}(f(\{x_2\}) = \{x_2\}$. So $x_1 = x_2$ and $f$ is an injection.
+
+\ea
+
+\end{comment}
+
+\item \label{ex:intersection_image} Let $f : X \to Y$ be a function and let $\{A_{\alpha}\}$ be a collection of subsets of $X$ for $\alpha$ in some indexing set $I$, and $\{B_{\beta}\}$ be a collection of subsets of $Y$ for $\beta$ in some indexing set $J$. Prove or disprove each of the following. If a statement is not true, is either containment true? Prove your answers.
+\ba
+\item $f\left(\bigcap_{\alpha \in I} A_{\alpha}\right) = \bigcap_{\alpha \in I} f(A_{\alpha})$ 
+\item $f^{-1}\left(\bigcap_{\beta \in J} B_{\beta}\right) = \bigcap_{\beta \in J} f^{-1}(B_{\beta})$
+\ea
+
+\begin{comment}
+
+\ExerciseSolution Let $f : X \to Y$ be a function and let $\{A_{\alpha}\}$ be a collection of subsets of $X$ for $\alpha$ in some indexing set $I$. 
+
+\ba
+
+\item Let $X = \{a,b,c\}$ and define $f: X \to X$ by $f(a)=a$, $f(b) = a$, and $f(c) = c$. Let $A_1 = \{a\}$ and $A_2 = \{b\}$. Then $f(A_1 \cap A_2) = f(\emptyset) = \emptyset$ while $f(A_1) \cap f(A_2) = \{a\}$. So the first statement is not true. However, it is true that $f\left(\bigcap_{\alpha \in I} A_{\alpha}\right) \subseteq \bigcap_{\alpha \in I} f(A_{\alpha})$. To see why, let $b \in f\left(\bigcap_{\alpha \in I} A_{\alpha}\right)$. Then $b = f(a)$ for some $a \in \bigcap_{\alpha \in I} A_{\alpha}$. It follows that $a \in A_{\rho}$ for every $\rho \in I$. Thus, $b = f(a) \in f(A_{\rho})$ for every $\rho \in I$ and $b \in \bigcap_{\alpha \in I} f(A_{\alpha})$. We conclude that $f\left(\bigcap_{\alpha \in I} A_{\alpha}\right) \subseteq \bigcap_{\alpha \in I} f(A_{\alpha})$. 
+
+\item This statement is true. We demonstrate the containments in both directions. Let $a \in f^{-1}\left(\bigcap_{\beta \in J} B_{\beta}\right)$. Then $f(a) \in \bigcap_{\beta \in J} B_{\beta}$. So $f(a) \in B_{\mu}$ for every $\mu \in J$ and $a \in f^{-1}(B_{\mu})$ for every $\mu \in J$. Thus, $a \in \bigcap_{\beta \in J} f^{-1}(B_{\beta})$. We conclude that $f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right) \subseteq \bigcup_{\beta \in J} f^{-1}(B_{\beta})$. 
+
+For the reverse containment, let $a \in \bigcap_{\beta \in J} f^{-1}(B_{\beta})$. Then $a \in f^{-1}(B_{\mu})$ for every $\mu \in J$. Thus, $f(a) \in B_{\mu}$ for every $\mu \in J$ and $f(a) \in \bigcap_{\beta \in J} B_{\beta}$.  So $a \in f^{-1}\left(\bigcap_{\beta \in J} B_{\beta}\right)$. Thus, $\bigcap_{\beta \in J} f^{-1}(B_{\beta}) \subseteq f^{-1}\left(\bigcap_{\beta \in J} B_{\beta}\right)$. The two containments verify the equality. 
+
+\ea
+
+\end{comment}
+
+
+
+\item \label{ex:inverse_composite} Let  $A$  and  $B$  be nonempty sets, and let  $f: A \to B$  be a bijection. Prove that 
+	\ba
+
+	\item For every $x$ in $A$, $\left( f^{-1}  \circ f \right)(x) = x$.
+
+	\item For every $y$ in $B$, $\left( f \circ f^{-1}\right)(y) = y$.
+
+	\ea
+	
+\begin{comment}
+
+\ExerciseSolution
+
+\ba
+
+\item Let $x \in A$ and let $f(x) = y$.  By Theorem~\ref{T:inversenotation}, we can conclude that  $f^{-1}(y) = x$.  Therefore,
+\[(f^{-1} \circ f)(x) = f^{-1}(f(x)) = f^{-1}(y) = x.\]
+
+\item Let $y \in B$. Since $f$ is a bijection, there is a unique $x \in A$ such that $f(x) = y$. Theorem~\ref{T:inversenotation} tells us that $f^{-1}(y) = x$. So 
+\[(f \circ f^{-1})(y) = f(f^{-1}(y)) = f(x) = y.\]
+
+\ea
+
+\end{comment}
+
+\item \label{ex:inverse_composite_sets} Let $R$, $S$, and $T$ be sets, and let $g: R \to S$ and $h : S \to T$ be functions.  Let $O$ be a subset of $T$.  Show that $(h \circ g)^{-1}(O) = g^{-1}(h^{-1}(O)$.  
+
+
+\begin{comment}
+
+\ExerciseSolution First let $x \in (h \circ g)^{-1}(O)$. Then $(h \circ g)(x) \in O$. It follows that $h(g(x)) \in O$. So $g(x) \in h^{-1}(O)$. From this we have $x \in g^{-1}(h^{-1}(O))$. We conclude that $(h \circ g)^{-1}(O) \subseteq g^{-1}(h^{-1}(O))$. 
+
+Now suppose that $x \in g^{-1}(h^{-1}(O))$. Then $g(x) \in h^{-1}(O)$. From this we have that $h(g(x)) \in O$. Thus, $(h \circ g)(x) \in O$ and $x \in (h \circ g)^{-1}(O)$. We conclude that $g^{-1}(h^{-1}(O)) \subseteq (h \circ g)^{-1}(O)$. The two containments confirm the equality $(h \circ g)^{-1}(O) = g^{-1}(h^{-1}(O)$. 
+
+\end{comment}
+
+
+
+\item Let $X_1$ and $X_2$ be nonempty sets, and let $X = X_1 \times X_2$. Define $\pi_i :X  \to X_i$ by $\pi_i(x) = x_i$, where $x = (x_1,x_2)$. We call $\pi_i$ the \emph{projection} of $X$ onto $X_i$.  Let $Y_1$ and $Y_2$ be nonempty sets, and let $Y = Y_1 \times Y_2$.  Assume that for each $i$ there is a function $f_i : X_i \to Y_i$. For example, let $X_i = \{i,i+1\}$ and $Y_i = \{-i, -i-1\}$. We could then define $f_i$ by $f_i(x) = -x$ for $i$ either $1$ or $2$. 
+\ba
+\item Prove that $\pi_i$ is a surjection for each $i$.
+\item Prove that there is a unique function $f: X \to Y$ such that $\pi_i \circ f = f_i \circ \pi_i$ for each $i$. (Note that one of the $\pi_i$ maps $X$ to $X_i$ and the other maps $Y$ to $Y_i$.)
+
+\item The function $f$ from part (b) is denoted as $f = f_1 \times f_2$. Let $Z_1$ and $Z_2$ be two nonempty sets, and let $Z = Z_1 \times Z_2$. Assume that there are functions $g_i : Y_i \to Z_i$ for each $i$. Show that 
+\[\left(g_1 \times g_2\right) \circ \left(f_1 \times f_2\right) = (g_1 \circ f_1) \times (g_2 \circ f_2).\]
+
+\item Suppose that each $f_i$ has an inverse $h_i$. Show that $\left(f_1 \times f_2\right)^{-1} = h_1 \times h_1$. 
+
+\ea
+
+\begin{comment}
+
+\ExerciseSolution
+\ba
+\item Let $t_1 \in X_1$ and $t_2 \in X_2$. Then $\pi_1((t_1,t_2)) = t_1$ and $\pi_2((t_1,t_2)) = t_2$. So each $\pi_i$ is a surjection. 
+
+\item Let $x = (x_j)$ be in $X$. Since $f_i$ maps $X_i$ to $Y_i$, we know that $f_i(x_i) \in Y_i$.  Define $f: X \to Y$ by $f(x) = (f_i(x_i))$. Then
+\[(\pi_i \circ f)(x) = \pi_i(f(x)) = \pi_i((f_j(x_j))) = f_i(x_i) \text{ and } (f_i \circ \pi_i)(x) = f_i(\pi_i(x)) = f_i(x_i),\]
+so $\pi_i \circ f = f_i \circ \pi_i$.
+
+To prove uniqueness, suppose there is another function $F : X \to Y$ with $\pi_i \circ F = f_i \circ \pi_i$ for each $i$.  Let $t = (t_1, t_2) \in X$ and let $F(t) = F((t_1,t_2)) = (s_1,s_2)$ in $Y$. Then 
+\[(\pi_i \circ F)(t) = \pi_i(F(t)) = \pi_i(s_1,s_2) = s_i\]
+and
+\[(f_i \circ \pi_i)(t) = f_i(\pi_i(t)) = f_i (t_i).\]
+So $s_i = f_i(t_i)$ for each $i$ and $F(t) = (s_1,s_2) = (f_1(t_1), f_2(t_2)) = f(t)$. Therefore $F = f$ and the function $f$ is unique.
+
+\item Let $x = (x_1,x_2)$ be in $X$. Then
+\begin{align*}
+\left[\left(g_1 \times g_2\right) \circ \left(f_1 \times f_2\right)]\right](x) &= \left(g_1 \times g_2\right)\left( \left(f_1 \times f_2\right)(x)\right) \\
+	&= \left(g_1 \times g_2\right)((f_1(x_1), f_2(x_2))) \\
+	&= (g_1(f_1(x_1)), g_2(f_2(x_2))) \\
+	&= ((g_1 \circ f_1)(x_1), (g_2 \circ f_2)(x_2)) \\
+	&= ((g_1 \circ f_1) \times (g_2 \circ f_2))(x).
+\end{align*}
+So $\left(g_1 \times g_2\right) \circ \left(f_1 \times f_2\right) = (g_1 \circ f_1) \times (g_2 \circ f_2)$.
+
+\item Let $x = (x_1,x_2)$ be in $X$ and $y = (y_1,y_2)$ be in $Y$. The result of part (b) shows that 
+\[\left[\left(h_1 \times h_2\right) \circ \left(f_1 \times f_2\right)\right](x) = (h_1(f_1(x_1)), h_2(f_2(x_2))) = (x_1,x_2) = x\]
+and
+\[\left[\left(f_1 \times f_2\right) \circ \left(h_1 \times h_2\right)]\right](y) = (f_1(h_1(y_1)), f_2(h_2(y_2))) = (y_1,y_2) = y,\]
+So $\left(h_1 \times h_2\right) \circ \left(f_1 \times f_2\right)$ is the identity on $X$ and $\left(f_1 \times f_2\right) \circ \left(h_1 \times h_2\right)$ is the identity on $Y$. This verifies that $\left(f_1 \times f_2\right)^{-1} = h_1 \times h_2$. 
+
+\ea
+
+\end{comment}
+
+
+
+\item Let $\N$ be the set of positive integers. Define $f:\N \to \Z$ as follows: For each $n \in \N$, let
+\[f(n) = \frac{1 + (-1)^n (2n - 1)}{4}.\]
+Is the function $f$ an injection?  Is the function $f$ a surjection?  Justify your conclusions. (Hint: Start by calculating several outputs for the function before you attempt to write a proof.  In exploring whether or not the function is an injection, it might be a good idea to use cases based on whether the inputs are even or odd.  In exploring whether $f$ is a surjection, consider using cases based on whether the output is positive or less than or equal to zero.)
+
+\begin{comment}
+
+\ExerciseSolution Suppose that $k$ and $m$ are natural numbers and $f(k) = f(m)$. Then
+\begin{align*}
+\frac{1 + (-1)^k (2k - 1)}{4} &= \frac{1 + (-1)^m (2m - 1)}{4} \\
+1 + (-1)^k (2k - 1) &= 1 + (-1)^m (2m - 1) \\
+(-1)^k (2k - 1) &= (-1)^m (2m - 1).
+\end{align*}
+Notice that $k$ and $m$ are both at least $1$, so $2k-1$ and $2m-1$ are positive. In order to have an equality, it follows that $k$ and $m$ must have the same parity. Now we consider cases.
+\begin{description}
+\item[$k$ and $m$ are both even:] In this case $(-1)^k = (-1)^m = 1$ and we then have $2k-1 = 2m-1$ or $k = m$. 
+\item[$k$ and $m$ are both odd:] In this case $(-1)^k = (-1)^m = -1$ and we then have $-(2k-1) = -(2m-1)$ or $k = m$. 
+\end{description}
+Therefore, $f$ is an injection.
+
+To show that $f$ is a surjection, let $s \in \Z$.  First notice that $f(1) = 0$, so $0$ is in the range of $f$. Again we consider cases.
+\begin{description}
+\item[$s$ is positive:] In this case we have 
+\[f(2s) = \frac{1+(-1)^{2s}(4s-1)}{4} =  \frac{1+(4s-1)}{4} = \frac{4s}{4} = s.\]
+\item[$s$ is negative:] In this case we have 
+\[f(1-2s) = \frac{1+(-1)^{1-2s}(2(1-2s)-1}{4} =  \frac{1-(1-4s)}{4} = \frac{4s}{4} = s.\]
+\end{description}
+We conclude that $f$ is a surjection. 
+
+
+\end{comment}
+
+\item An operation $*$ on a set $S$ is a function from $S \times S$ to $S$ that assigns to the pair $(x,y) \in S \times S$ the element $x*y$ in $S$. For example, addition of integers can be defined as a function 
+$f : \Z \times \Z \to \Z$ that maps the pair $(a,b)\in \Z \times \Z$ to the integer $f(a,b) = a+b$.
+		\ba
+		\item Is the function $f$ an injection?  Justify your conclusion.
+                 \item Is the function $f$ a surjection?  Justify your conclusion.
+		\ea
+
+\begin{comment}
+
+\ExerciseSolution The function $f$ is not a surjection since $f((2,3)) = 2+3 = 5 = 4 + 1 = f((4,1))$. To determine if $f$ is a surjection, let $m \in \Z$. Then $f((m-1,1)) = (m-1)+1 = m$, so $f$ is a surjection.
+
+\end{comment}
+
+
+\item Let $A$, $B$, and $C$ be sets and let $f : A \to B$ and $g : B \to C$ be functions.
+		\ba
+		\item Is it true that if $g \circ f$ is an injection, then both $f$ and $g$ are injections? If the answer is no, are there any conditions that $f$ or $g$ must satisfy if $g \circ f$ an injection? Prove your answers.
+		\item Is it true that if $g \circ f$ is a surjection, then both $f$ and $g$ are surjections? If the answer is no, are there any conditions that $f$ or $g$ must satisfy if $f \circ g$ a surjection? Prove your answers.  
+		\ea
+		
+\begin{comment}
+
+\ExerciseSolution
+
+\ba
+
+\item Let $A = C = \{1,2\}$ and $B = \{1,2,3\}$. Let $f: A \to B$ be defined by $f(x) = x$ and let $g: B \to C$ be defined by $g(1)=1$, $g(2) = 2$, and $g(3) = 2$. Then $(g \circ f)(1) = 1$ and $(g \circ f)(2) = 2$, so $g \circ f$ is an injection. However, since $g(2) = g(3)$, the function $g$ is not an injection.  
+
+This example illustrates the general idea that if $g \circ f$ is an injection, then $f$ is an injection. To see why, suppose $g \circ f$ is an injection and let $x_1$ and $x_2$ be in $A$ such that $f(x_1) = f(x_2)$. Applying $g$ to both sides gives us $(g \circ f)(x_1) = (g \circ f)(x_2)$. But then the fact that $g \circ f$ is an injection implies that $x_1 = x_2$. Thus, $f$ is an injection. 
+
+\item Let $A = \{1,2\} = C$, and $B = \{1,2,3\}$. Let $f: A \to B$ be defined by $f(x) = x$ and let $g: B \to C$ be defined by $g(1)=1$, $g(2) = 2$, and $g(3) = 2$. Then $(g \circ f)(1) = 1$ and $(g \circ f)(2) = 2$, so $g \circ f$ is a surjection. However, since there is no $x \in A$ with $f(x) = 3$, the function $f$ is not a surjection.  
+
+This example illustrates the general idea that if $g \circ f$ is a surjection, then $g$ is a surjection. To see why, suppose $g \circ f$ is a surjection and let $z \in C$. The fact that $g \circ f$ is a surjection means that there is an element $x \in A$ with $(g \circ f)(x) = z$. It follows that $g(f(x)) = z$ and so $g$ is a surjection. 
+
+\ea
+
+\end{comment}
+
+\item 
+	\ba
+	\item Is composition of functions a commutative operation? Prove your answer.
+	\item Is composition of functions an associative operation? Prove your answer. 
+	\ea
+
+\begin{comment}
+
+\ExerciseSolution
+
+\ba
+
+\item The answer is no. Let $f: \R \to \R$ be defined by $f(x) = 2x+1$ and let $g : \R \to \R$ be defined by $g(x) = x-1$. Then 
+\[(f \circ g)(1) = f(g(1)) = f(0) = 1 \text{ while } (g \circ f)(1) = g(f(1)) = g(3) = 2.\]
+So $f \circ g \neq g \circ f$. 
+
+\item The answer is yes. Let $A$, $B$, $C$, and $D$ be sets and let $f: A \to B$, $g: B \to C$, and $h : C \to D$ be functions. Let $x \in A$. Then 
+\begin{align*}
+((f \circ g) \circ h)(x) &= (f \circ g)(h(x)) \\
+	&= f(g(h(x))) \\
+	&= f(g \circ h)(x)) \\
+	&= (f \circ (g \circ h))(x).
+\end{align*}
+So $(f \circ g) \circ h = f \circ (g \circ h)$ and composition of functions is associative.
+
+\ea
+
+
+\end{comment}
+
+
+\item 
+\ba
+\item Define $f: \Z_5 \to \Z_5$ by $f\left( [x] \right) = \left[x^2 + 4 \right]$ for all $[x] \in \Z_5$.  Write the inverse of $f$ as a set of ordered pairs, and explain why $f^{-1}$ is not a function.
+
+\item Define $g: \Z_5 \to \Z_5$ by $g\left( [x] \right) = \left[x^3 + 4 \right]$ for all $[x] \in \Z_5$.  Write the inverse of $g$ as a set of ordered pairs, and explain why $g^{-1}$ is a function.
+
+\item Is it possible to write a formula for $g^{-1}\left( [y] \right)$, where $[y] \in \Z_5$?  The answer to this question depends on whether or not it is possible to define a cube root of elements of $\Z_5$.  Recall that for a real number $x$, we define the cube root of $x$ to be the real number $y$ such that $y^3 = x$.  That is,
+
+\begin{center}
+$y = \sqrt[3]{x}$ if and only if $y^3 = x$.
+\end{center}
+
+Using this idea, is it possible to define the cube root of each element of $\Z_5$?  If so, what is 
+$\sqrt[3]{[0]}$, $\sqrt[3]{[1]}$, $\sqrt[3]{[2]}$, $\sqrt[3]{[3]}$, and $\sqrt[3]{[4]}$.
+
+\item Now answer the question posed at the beginning of part~(c).  If possible, determine a formula for $g^{-1}\left([y] \right)$ where $g^{-1}: \Z_5 \to \Z_5$.
+\ea
+
+\begin{comment}
+
+\ExerciseSolution
+
+\ba
+\item As a set of ordered pairs, $f = \{(([0],[4]), ([1],[0]), ([2], [3]), ([3],[3]), ([4], [0])\}$. The inverse of $f$ is then $\{([4],[0]), ([0], [1]), ([3], [2]), ([3],[3]), ([0], [4])\}$. The inverse is not a function because both $([3], [2])$ and $([3],[3])$ are in $f^{-1}$. 
+
+\item As a set of ordered pairs, $g = \{(([0],[4]), ([1],[0]), ([2], [2]), ([3],[1]), ([4], [3])\}$. The inverse of $g$ is then $\{([4],[0]), ([0], [1]), ([2], [2]), ([1],[3]), ([3], [4])\}$. Since there are no distinct ordered pairs in $g^{-1}$ with the same first entry, we see that $g^{-1}$ is a function.
+
+\item Evaluating $g^3$ for every input gives us 
+\begin{center}
+\begin{tabular}{l|cccccc}
+$[x]$			&$[0]$	&$[1]$	&$[2]$	&$[3]$	&$[4]$ \\
+$[x]^3$		&$[0]$	&$[1]$	&$[3]$	&$[2]$	&$[4]$ \\
+\end{tabular}
+\end{center}
+Therefore,
+\[\sqrt[3]{[0]} = [0],  \sqrt[3]{[1]} = [1], \sqrt[3]{[2]}=[3], \sqrt[3]{[3]} = [2], \text{ and } \sqrt[3]{[4]} = [4].\]
+
+\item Algebraically, $g^{-1}([y]) = [x]$ if $[y^3 + 4] = [x]$. Solving for $y$ yields $[y] = \sqrt[3]{[x-4]}$. So $g^{-1}([y]) = \sqrt[3]{[y-4]}$. We can compare with the collection of ordered pairs in part (b):
+\begin{align*}
+g^{-1}([0]) &= \sqrt[3]{[-4]} = \sqrt[3]{[1]} = [1] \\
+g^{-1}([1]) &= \sqrt[3]{[-3]} = \sqrt[3]{[2]} = [3] \\
+g^{-1}([2]) &= \sqrt[3]{[-2]} = \sqrt[3]{[3]} = [2] \\
+g^{-1}([3]) &= \sqrt[3]{[-1]} = \sqrt[3]{[4]} = [4] \\
+g^{-1}([4]) &= \sqrt[3]{[0]} =  [0]
+\end{align*}
+as expected.
+
+\ea
+
+
+\end{comment}
+
+\item Let $A$ be the set of all functions $f:[a,b] \to \R$ that are continuous on $[a,b]$ (use your memory of continuous functions from calculus for this problem). Let $B$ be the subset of $A$ consisting of all functions possessing a continuous derivative on $[a,b]$. Let $C$ be the subset of $B$ consisting of all functions whose value at $a$ is 0. 
+\ba
+\item 
+	\begin{enumerate}[i.]
+	\item Give an example of a function that is in $A$ and not in $B$ with $[a,b] = [-1,1]$. 
+	\item Give an example of a function that is in $B$ but not in $C$ with $[a,b] = [-1,1]$. 
+	\item Give an example of a function that is in $C$ with $[a,b] = [-1,1]$.
+	\end{enumerate}
+ 
+\item Let $d:B \to A$ be defined by 
+\[d(f) = f'.\]
+Is the function $d$ invertible? Justify your response.
+
+\item To each function $f \in A$, let $h(f)$ be the function defined by 
+\[(h(f))(x) = \int_a^x f(t) \, dt\]
+for $x \in [a,b]$.
+	\begin{enumerate}[i.]
+	\item Verify that $h$ maps $A$ to $C$. 
+	
+	\item Show that $h$ is invertible by finding a function $g : C \to A$ such that $g$ and $h$ are inverse functions. 
+	\end{enumerate}
+
+\ea
+
+\begin{comment}
+
+\ExerciseSolution 
+
+\ba
+\item 
+	\begin{enumerate}[i.]
+	\item The standard example of a continuous function without a derivative is $f(x) = |x|$. This function does not have a derivative at $x=0$. 
+	\item Since the derivative of $f(x) = x^2$ is $f'(x) = 2x$ and $f(-1) = 1$, the function $f$ is in $B$ but not in $C$.  
+	\item An example would be $f(x) = x^2-1$. 
+	\end{enumerate}
+	
+\item The function $d$ is not invertible because $d$ is not an injection. Let $f: [a,b] \to \R$ and $g : [a,b] \to \R$ be defined by $f(x) = x$ and $g(x) = x+1$ for all $x \in [a,b]$. Both $f$ and $g$ have continuous (constant) derivatives, and so $f, g \in B$. Note that $f(0) \neq g(0)$, so $f \neq g$. However, $d(f)(x) = 1 = d(g)(x)$ for every $x \in [a,b]$, so $d(f) = d(g)$. This shows that $d$ is not an injection and is therefore not invertible.
+
+\item Now we consider the function $h$. 
+	\begin{enumerate}[i.]
+	\item Let $f \in A$. By the FUNdamental Theorem of Calculus we know that 
+\[\frac{d h(f)}{dx} = \frac{d}{dx} \int_a^x f(t) \, dt = f(x),\]
+so $h(f)$ has a continuous derivative on $[a,b]$. Since $\int_a^x  f(t) \, dt$ is a function of $x$ whose output is a real number for any $x \in [a,b]$, we see that $h$ maps $f$ to a continuous function on $[a,b]$. Finally, $f(a) = \int_a^a f(t) \, dt = 0$, and so $h(f) \in C$. Thus, $h$ maps $A$ to $C$.  
+
+	\item Define $d|_C: C \to A$ as the restriction of $d$ to $C$, that is $d|_C$ is the function that associates with each function in $C$ its derivative. Note that if $f \in C$, then 
+\[(d|_C(h(f)))(x) = \frac{d}{dx}((h(f))(x)) = \frac{d}{dx} \int_a^x f(t) \, dt = f(x).\]
+Also, since $f(a)=0$ we have 
+\[h((d|_C(f))(x)) = \int_a^x f'(t) \, dt = f(x) - f(a) = f(x).\]
+So $h(f)=k$ if and only if $d|_C(k) = f$. This shows that $h$ and $d|_C$ are inverses of each other.      
+
+	\end{enumerate}
+
+\ea
+
+\end{comment}
+
+
+
+
+\item For each of the following, answer true if the statement is always true. If the statement is only sometimes true or never true, answer false and provide a concrete example to illustrate that the statement is false. If a statement is true, explain why. 
+	\ba
+	\item If $A$ is a subset of $X$, then $A \subseteq f^{-1}(f(A))$.
+	
+	\item If $A$ is a subset of $X$, then $f^{-1}(f(A)) \subseteq A$.
+
+	\item  If $B$ is a subset of $Y$, then $B \subseteq f(f^{-1}(B))$.
+	
+	\item If $B$ is a subset of $Y$, then $f(f^{-1}(B)) \subseteq B$.
+
+	\item If $A_1$ and $A_2$ are subsets of $X$ with $A_1 \subseteq A_2$, then $f(A_1) \subseteq f(A_2)$.
+		
+	\item If $B_1$ and $B_2$ are subsets of $Y$ with $B_1 \subseteq B_2$, then $f^{-1}(B_1) \subseteq f^{-1}(B_2)$.
+	
+	\item If $B_1$ and $B_2$ are subsets of $Y$ with $B_1 \subseteq B_2$, then $f^{-1}(B_2) \subseteq f^{-1}(B_1)$.
+	
+	\item If $A_1$ and $A_2$ are subsets of $X$, then $f(A_1 \cup A_2) = f(A_1) \cup f(A_2)$.
+	
+	\item If $B_1$ and $B_2$ are subsets of $Y$, then $f^{-1}(B_1 \cup B_2) = f^{-1}(B_1) \cup f^{-1}(B_2)$.	
+	
+	\item If $A_1$ and $A_2$ are subsets of $X$, then $f(A_1 \cap A_2) = f(A_1) \cap f(A_2)$.
+	
+	\item If $B_1$ and $B_2$ are subsets of $Y$, then $f^{-1}(B_1 \cap B_2) = f^{-1}(B_1) \cap f^{-1}(B_2)$.	
+	
+	\item If $A_1$ and $A_2$ are subsets of $X$, then $f(A_1 \setminus A_2) = f(A_1) \setminus f(A_2)$.
+
+	\item If $B_1$ and $B_2$ are subsets of $Y$, then $f^{-1}(B_1 \setminus B_2) = f^{-1}(B_1) \setminus f^{-1}(B_2)$.	
+
+	\ea
+
+\begin{comment}
+	
+\ExerciseSolution
+	\ba
+	\item This statement is true. Let $a \in A$. Then $f(a) \in f(A)$ and so $a \in f^{-1}(f(A))$. 
+	
+	\item This statement is false. Let $X = \{1,2\} = Y$ and let $f: X \to Y$ be defined by $f(x) = 1$. Let $A = \{1\}$. Then $f(A) = \{1\}$ and $f^{-1}(f(A)) = X \neq A$. 
+
+	\item This statement is false. Let $X = \{1,2\} = Y$ and let $f: X \to Y$ be defined by $f(x) = 1$. Let $B = \{1,2\}$. Then $f^{-1}(B) = \{1,2\}$ and $f(f^{-1}(B) = \{1\} \neq B$. 
+		
+	\item This statement is true. Let $b \in f(f^{-1}(B))$. Then there is an $a \in f^{-1}(B)$ such that $f(a) = b$. Since $a \in f^{-1}(B)$, we know that $f(a) \in B$. Thus, $b \in B$. 
+
+	\item This statement is true. Let $b \in f(A_1)$. Then there is an element $a \in A_1$ such that $f(a) = b$. Since $A_1 \subseteq A_2$, we also have $a \in A_2$. So $b \in f(A_2)$. 
+		
+	\item This statement is true. Let $y \in f^{-1}(B_1)$. Then $f(y) \in B_1 \subseteq B_2$, so $y \in f^{-1}(B_2)$. 
+		
+	\item This statement is false. Let $X = \{1,2,3\}$, $f: X \to X$ by $f(x) = 1$, $B_1 = \{2\}$, and $B_2 = \{1,2\}$. Then $f_{-1}(B_1) = \emptyset$ while $f^{-1}(B_2) = X$. 
+	
+	\item This statement is true. Let $y \in f(A_1 \cup A_2)$. Then there is an $x \in (A_1 \cup A_2)$ such that $f(x) = y$. Either $x \in A_1$ or $x \in A_2$. If $x \in A_1$, then $y = f(x) \in f(A_1)$ and $y \in f(A_1) \cup f(A_2)$. If $x \in A_2$, then $y = f(x) \in f(A_2)$ and $y \in f(A_1) \cup f(A_2)$. So $f(A_1 \cup A_2) \subseteq f(A_1) \cup f(A_2)$. Now suppose $y \in f(A_1) \cup f(A_2)$. Then $y \in f(A_1)$ or $y \in f(A_2)$. If $y \in f(A_1)$, then there is an $x \in A_1 \subseteq (A_1 \cup A_2)$ such that $f(x) = y$. If $y \in f(A_2)$, then there is an $x \in A_2 \subseteq (A_1 \cup A_2)$ such that $f(x) = y$. In either case, $y \in f(A_1 \cup A_2)$. So $f(A_1) \cup f(A_2 \subseteq f(A_1 \cup A_2)$. We conclude that $f(A_1 \cup A_2) = f(A_1) \cup f(A_2)$.
+	
+	\item This statement is true. Let $x \in f^{-1}(B_1 \cup B_2)$. Then $f(x) \in (B_1 \cup B_2)$. If $f(x) \in B_1$, then $x \in f^{-1}(B_1) \subseteq f^{-1}(B_1) \cup f^{-1}(B_2)$ and if $f(x) \in B_2$, then $x \in f^{-1}(B_2) \subseteq f^{-1}(B_1) \cup f^{-1}(B_2)$. In either case, $x \in  f^{-1}(B_1) \cup f^{-1}(B_2)$. Now suppose that $x \in f^{-1}(B_1) \cup f^{-1}(B_2)$. Then $x \in f^{-1}(B_1)$ or $x \in f^{-1}(B_2)$. If  $x \in f^{-1}(B_1)$, then $f(x) \in B_1 \subseteq (B_1 \cup B_2)$. If $x \in f^{-1}(B_2)$, then $f(x) \in B_2 \subseteq (B_1 \cup B_2)$. Since $f(x) \in (B_1 \cup B_2)$ we conclude that $x \in f^{-1}(B_1 \cup B_2)$	
+	
+	\item This statement is false. Let $X = \{1,2,3\}$, $f: X \to X$ defined by $f(1)=2$, $f(2) = f(3) = 3$, $A_1 = \{1,2\}$, and $A_2 = \{1,3\}$. Then $f(A_1) \cap f(A_2) = \{2,3\}$ but $f(A_1 \cap A_2) = f(\{1\}) = \{2\}$. However, it is true that $f(A_1 \cap A_2)  \subseteq (f(A_1) \cap f(A_2))$. To see why, let $y \in f(A_1 \cap A_2)$. Then there exists $x \in (A_1 \cap A_2)$ such that $f(x) = y$. Now $x \in A_1$ and $x \in A_2$, so $y = f(x) \in f(A_1)$ and $y = f(x) \in f(A_2)$. Thus, $y \in (f(A_1) \cap f(A_2))$. 
+	
+	\item This statement is false. Let $X = \{1,2,3\}$, $f: X \to X$ defined by $f(1)=2$, $f(2) = f(3) = 3$, $B_1 = \{1,2\}$, and $B_2 = \{2,3\}$. Then $f^{-1}(B_1) \cap f^{-1}(B_2) = \{2\}$ but $f^{-1}(B_1 \cap B_2) = f^{-1}(\{2\}) = \emptyset$. However, it is true that $f^{-1}(B_1 \cap B_2)  \subseteq f^{-1}(B_1) \cap f^{-1}(B_2))$. To see why, let $x \in f^{-1}(B_1 \cap B_2) $. Then $f(x) \in (B_1 \cap B_2)$. So $f(x) \in B_1$ and $f(x) \in B_2$. So $x \in f^{-1}(B_1)$ and $x \in f^{-1}(B_2)$, which implies that $x \in f^{-1}(B_1) \cap f^{-1}(B_2)$.   
+	
+	\item This statement is false. Let $X = \{1,2,3\}$, $f: X \to X$ defined by $f(1) = f(2) = f(3) = 1$, $A_1 = \{1,2\}$, and $A_2 = \{2,3\}$. Then $f(A_1 \setminus A_2) = f(\{1\}) = 1$ while $f(A_1) \setminus f(A_2) = \{1\} \setminus \{1\} = \emptyset$. However, it is true that $f(A_1) \setminus f(A_2) \subseteq f(A_1 \setminus A_2)$. To see why, let $y \in (f(A_1) \setminus f(A_2))$. Then $y \in f(A_1)$ but $y \notin f(A_2)$. Since $y \in f(A_1)$, there exists $x \in A_1$ such that $f(x) = y$. But $y \notin f(A_2)$, so $x \notin A_2$. Thus, $x \in (A_1 \setminus A_2)$ and $y \in f(A_1 \setminus A_2)$. 
+	
+	\item This statement is false. Let $X = \{1,2,3\}$, $f: X \to X$ defined by $f(1) = f(2) = f(3) = 1$, $B_1 = \{1,2\}$, and $B_2 = \{1,3\}$. Then $f^{-1}(B_1 \setminus B_2) = f^{-1}(\{1\}) = X$ while $(f^{-1}(B_1) \setminus f^{-1}(B_2)) = X \setminus X = \emptyset$. It is true, however, that  $(f^{-1}(B_1) \setminus f^{-1}(B_2)) \subseteq f^{-1}(B_1 \setminus B_2) $. To see why, let $x \in (f^{-1}(B_1) \setminus f^{-1}(B_2))$. Then $x \in f^{-1}(B_1)$ but $x \notin f^{-1}(B_2)$. So $f(x) \in B_1$ but $f(x) \notin B_2$. This implies that $f(x) \in (B_1 \setminus B_2)$, or that $x \in f^{-1}(B_1 \setminus B_2)$.   
+	\ea
+
+\end{comment}
+
+\ee
+
+

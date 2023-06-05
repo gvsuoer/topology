@@ -1,0 +1,639 @@
+\achapter{5}{The Greatest Lower Bound}\label{sec:glb}
+
+
+\vspace*{-17 pt}
+\framebox{
+\parbox{\dimexpr\linewidth-3\fboxsep-3\fboxrule}
+{\begin{fqs}
+\item What is a lower bound and a greatest lower bound of a subset of $\R$? 
+\item What is an upper bound and a least upper bound of a subset of $\R$? 
+\item How is a greatest lower bound used to define the distance from a point to a set? Why is it necessary to use a greatest lower bound?
+\end{fqs}}}
+
+\vspace*{13 pt}
+
+\csection{Introduction}
+
+The real numbers have a special property that allows us to, among other things, define the distance between a point and a set in a metric space. It also allows us to define distances between subsets of certain types of metric spaces, which creates a whole new metric space whose elements are the subsets of the metric space. We will examine that property of the real numbers in this activity. 
+
+We begin by considering the problem of defining the distance between a real number and an interval in $\R$ with the Euclidean metric $d_E$ defined by 
+\[d_E(x,y) = | x-y |.\]
+Let $x = 1$ and let $A$ be the closed interval $[-1,0]$. It is natural to suggest that the distance between the point $x$ and the set $A$, denoted $d_E(x,A)$, should be the distance from the point $x$ to the point in $A$ closest to $x$. So in this case we would say 
+\[d(x,A) = d(x,[-1,0]) = d_E(x,0) = 1.\]
+This might lead us to suggest that the distance from a point $x$ to a set $A$, denoted by $d(x,A)$ is the minimum distance from the point to any point in the set, or $d(x,A) = \min\{d_E(x,a) \mid a \in A\}$. 
+
+What if we changed the set $A$ to be the open interval $(-1,0)$? What then should $d(x,A)$ be, or should this distance even exist? If we think of the distance between a point and a set as measuring how far we have to travel from the point until we reach the set, then in the case of $x=1$ and $A=(-1,0)$, as soon as we travel a distance more than 1 from $x$ in the direction of $A$, we reach the set $A$. So we might intuitively say that $d_E(x,(-1,0)) = 1$ as well. But we cannot define this distance as a distance from $x$ to a point in $A$ since $0 \notin A$. We need a different way to formulate the notion of a distance from a point to a set.
+
+In a case like this, with $x=1$ and $A = (-1,0)$, we can examine the set $T=\{d_E(x,a) \mid a \in A\}$ and notice some facts about this set. For example, the set $T$ is a subset of the nonnegative real numbers. Also, in this example there are no numbers in $T$ that are smaller than 1. Because of this property, we will call the number 1 a \emph{lower bound} for $T$. More generally,
+
+
+
+\begin{definition} Let $S$ be a nonempty subset of $\R$. A \textbf{lower bound}\index{lower bound} for $S$ is a real number $m$ such that $m \leq s$ for all $s \in S$. 
+\end{definition}
+
+If a subset $S$ of $\R$ has a lower bound, we say that $S$ is \emph{bounded below}. So the set $T = \{d_E(1,a) \mid a \in (-1,0)\}$ is bounded below by 1. The set $T$ is also bounded below by 0.5 and 0. In fact, any number less than 1 is a lower bound for $T$. The critical idea, though, is that no number larger than 1 is a lower bound for $T$. Because of this we call 1 a \emph{greatest lower bound} of $T$. More generally,
+
+\begin{definition} Let $S$ be a nonempty subset of $\R$ that is bounded below. A \textbf{greatest lower bound}\index{greatest lower bound} for $S$ is a real number $m$ such that 
+\begin{enumerate}
+\item $m$ is a lower bound for $S$ and
+\item if $k$ is a lower bound for $S$, then $m \geq k$. 
+\end{enumerate}
+\end{definition}
+
+A greatest lower bound is also called an \emph{infimum}\index{infimum}. We might now use this idea of a greatest lower bound to define the distance between $1$ and $A = (-1,0)$ as the greatest lower bound of the set $\{d_E(1,a) \mid a \in (-1,0)\}$. However, there are questions we need to address before we can do so. One question is whether or not every nonempty subset of $\R$ that is bounded below has an infimum. The answer to this question is yes, and we will take this result as an axiom of the real number system (often called the \emph{completeness axiom}). 
+
+\begin{pa} ~
+\be
+\item Does every subset of $\R$ have a lower bound? Explain. (When a subset of $\R$ has a lower bound we say that the set is \emph{bounded below}.)
+
+\item Which of the following subsets $S$ of $\R$ are bounded below? If the set is bounded below, what is its infimum? 
+	\begin{enumerate}[i.]
+	\item $S = \{x \mid 3x^2-12x+3 < 0\}$
+
+	\item $S = \{3x^3-1 \mid x \in \R\}$
+
+	\item $S = \{2^r+3^s \mid r, s \in \Z^+\}$
+
+	\end{enumerate}
+	
+\item How would you define a least upper bound of a subset $S$ of $\R$?
+
+\ee
+
+
+\end{pa}
+
+\begin{comment}
+
+\ActivitySolution
+
+\be
+\item  The answer is no. The set $\Z$ has no lower bound, and neither does the interval $(-\infty, 0]$. 
+
+\item Which of the following subsets $S$ of $\R$ are bounded below? If the set is bounded below, what is its infimum? Assume the Euclidean metric throughout.
+	\begin{enumerate}[i.]
+	\item  Since $p(x)=3x^2-12x+3$ is a parabola that opens up, the values of $x$ that make $p(x) < 0$ will occur on a bounded interval. The intercepts of $p$ are found to be $x = 2 \pm \sqrt{3}$ via the quadratic formula. Since $p(0)<0$, $p(x)$ will be negative on the interval $(2-\sqrt{3}, 2+\sqrt{3})$. So $S$ is bounded below by its infimum $2 - \sqrt{3}$. 
+
+	\item  We know that $\lim_{x \to -\infty} 3x^3-1 = -\infty$, so the set $S$ is not bounded below. 
+
+	\item  Since $2^r+3^s >0$ for any real numbers $r$ and $s$, the set $S$ is bounded below by 0. Both $2^r$ and $3^s$ increase as $r$ and $s$ increase, so the smallest value of $2^r+3^s$ occurs when $r$ and $s$ are as small as they can be. This happens when $r = s = 1$. So the infimum of $S$ is $2^1+3^1 = 5$. 
+
+	\end{enumerate}
+	
+\item  A subset $S$ of $\R$ is \emph{bounded above} if there is a real number $y$ such that $y \geq x$ for all $x \in S$. Such an element $y$ is an \emph{upper bound} for $S$. A least upper bound should be defined in a way similar to the infimum:
+
+\begin{definition} Let $S$ be a nonempty subset of $\R$ that is bounded above. A \textbf{least upper bound} for $S$ is a real number $M$ such that 
+\begin{enumerate}
+\item $M$ is an upper bound for $S$ (that is, $M \geq s$ for all $s \in S$) and
+\item if $k$ is an upper bound for $s$, then $M \leq k$. 
+\end{enumerate}
+\end{definition}
+
+\ee
+
+\end{comment}
+
+
+\csection{The Distance from a Point to a Set}
+
+Metrics are used to establish separation between objects. Topological spaces can be placed into different categories based on how well certain types of sets can be separated. We have defined metrics as measuring distances between points in a metric space, and in this activity we extend that idea to measure the distance between a point and a subset in a metric space. However, there are two questions we need to address before we can do so. The first we mentioned in our preview activity. We will assume the \emph{completeness axiom} of the reals, that is that any subset of $\R$ that is bounded below always has a greatest lower bound. The second question is whether or not a greatest lower bound is unique. 
+
+\begin{activity} Let $S$ be a subset of $\R$ that is bounded below, and assume that $S$ has a greatest lower bound. In this activity we will show that the infimum of $S$ is unique. 
+\ba
+\item What method can we use to prove that there is only one greatest lower bound for $S$?
+
+\item Suppose $m$ and $m'$ are both greatest lower bounds for $S$. Why are $m$ and $m'$ both lower bounds for $S$?
+
+\item What two things does the second property of a greatest lower bound tell us about the relationship between $m$ and $m'$?  
+
+\item Why must the greatest lower bound of $S$ be unique?
+
+\ea
+
+\end{activity}
+
+\begin{comment}
+
+\ActivitySolution
+
+\ba
+\item We assume that there are two greatest lower bounds for $S$ and show that they are equal. 
+
+\item Suppose $m$ and $m'$ are both greatest lower bounds for $S$. By definition, every greatest lower bound is also a lower bound. 
+
+\item Since $m$ is a lower bound for $S$ and $m'$ is a greatest lower bound for $S$, it follows that $m \leq m'$. Similarly, $m'$ is a lower bound for $S$ and $m$ is a greatest lower bound for $S$ so $m' \leq m$.  
+
+\item The two inequalities $m \leq m'$ and $m' \leq m$ show that $m = m'$ and so there is only one greatest lower bound of $S$.
+
+\ea
+
+
+\end{comment}
+
+With the existence and uniqueness of greatest lower bounds considered, we can now say that any nonempty subset $S$ of $\R$ that is bounded below has a unique greatest lower bound. We use the notation $\glb(S)$ (or $\inf(S)$ for \emph{infimum} of $S$) for the greatest lower bound of $S$. There is also a \emph{least upper bound}\index{least upper bound} ($\lub(S)$, or $\sup(S)$ for \emph{supremum}\index{supremum}) of a subset $S$ of $\R$ that is bounded above. 
+
+Now we can formally define the distance between a point and a subset in a metric space.
+ 
+\begin{definition} Let $(X,d)$ be a metric space, let $x \in X$, and let $A$ be a nonempty subset of $X$. The \textbf{distance from $x$ to $A$} is
+\[\inf\{d(x,a) \mid a \in A\}.\]
+\end{definition}
+
+We denote the distance from $x$ to $A$ by $d(x,A)$. When calculating these distances, it must be understood what the underlying metric is. 
+
+\begin{activity} There are a couple of facts about the distance between a point and a set that we examine in this activity. Let $(X,d)$ be a metric space, let $x \in X$, and let $A$ be a nonempty subset of $X$
+\ba
+\item Why must $d(x,A)$ exist?  
+
+\item If $d(x,A) = 0$, must $x \in A$? 
+
+\ea
+
+\end{activity}
+
+\begin{comment}
+
+\ActivitySolution
+
+\ba
+\item Since $d(x,y) \geq 0$, the set $\{d(x,a) \mid a \in A\}$ is bounded below by $0$. Since $A$ is not empty, the set $\{d(x,a) \mid a \in A\}$ is also not empty. So $\inf\{d(x,a) \mid a \in A\}$ exists. 
+
+\item The answer is no. Let $A = (0,1)$ in $\R$ using the Euclidean metric. Then $d(1,A) = 0$, but $1 \notin A$. 
+
+\ea
+
+\end{comment}
+
+
+
+\csection{Summary}
+Important ideas that we discussed in this section include the following.
+\begin{itemize}
+
+\item  A lower bound or a nonempty subset $S$ of $\R$ that is bounded below is a real number $m$ such that $m \leq s$ for all $s \in S$. A greatest lower bound (or infimum) for a nonempty subset $S$ of $\R$ that is bounded below is a real number $m$ such that 
+\begin{enumerate}[i.]
+\item $m$ is a lower bound for $S$ and
+\item if $k$ is a lower bound for $S$, then $m \geq k$. 
+\end{enumerate}
+\item An upper bound for a nonempty subset $S$ of $\R$ that is bounded above is a real number $M$ such that $M \geq s$ for all $s \in S$. A least upper bound (or supremum) for a nonempty subset $S$ of $\R$ that is bounded above is a real number $M$ such that 
+\begin{enumerate}[i.]
+\item $M$ is an upper bound for $S$ and
+\item if $k$ is an upper bound for $s$, then $M \leq k$. 
+\end{enumerate}
+
+\item The distance from a point $x$ to a set $A$ in a metric space $(X,d)$ is $d(x,A) = \inf \{d(x,a) \mid a \in A\}$. There may be no point $a \in A$ such that $d(x,A) = d(x,a)$, so it is necessary to use an infimum to define this distance.
+
+\end{itemize}
+
+\csection{Exercises}
+
+\be
+
+\item Let $S$ be a nonempty subset of $\R$ that is bounded below. Let $a \in \R$, and define $a+S$ to be $a+S = \{a+s \mid s \in S\}$. 
+\ba
+	\item Explain why $a+\inf(S)$ is a lower bound for $a+S$. Explain why $a+S$ has an infimum. 
+	
+ 	\item Let $b$ be a lower bound for $a+S$. Show that $a + \inf(S) \geq b$. Then explain why $a+\inf(S) = \inf(a+S)$.   
+
+\ea
+
+\begin{comment}
+
+\ExerciseSolution
+
+\ba
+
+\item Since $\inf(S) \leq s$ for all $s \in S$, it follows that $a+\inf(S) \leq a+s$ for all $s \in S$. Therefore, $a+\inf(S)$ is a lower bound for $a+S$. 
+
+\item Let $b$ be a lower bound for $a+S$. Suppose to the contrary that $b > a+\inf(S)$. Then $b-a > \inf(S)$. So $b-a$ cannot be a lower bound for $S$. Thus, there is an element $s \in S$ such that $b-a > s$. But then $b > a+s$, which contradicts the fact that $b$ is a lower bound for $a+S$. We conclude that $a+\inf(S)$ is a lower bound for $a+S$ from part (a) and $a+\inf(S)$ is greater than or equal to any other lower bound for $a+S$. Thus, $a+\inf(S) = \inf(a+S)$. 
+
+\ea
+
+\end{comment}
+
+\item \label{ex:GLB_between} Let $S$ be a nonempty subset of $\R$.
+\ba
+\item Assume that $S$ is bounded above, and let $t = \sup(S)$. Show that for every $r < t$, there is a number $s \in S$ such that $r < s \leq t$. 
+
+\item Assume that $S$ is bounded below, and let $t = \inf(S)$. Show that for every $r > t$, there is a number $s \in S$ such that $t \leq s < r$.
+
+\ea
+
+\begin{comment}
+
+\ExerciseSolution 
+
+\ba
+
+\item Let $r < t$. Suppose to the contrary that no such $s$ exists. Since $t$ is an upper bound for $S$, we know that there is no element $s \in S$ with $s > t$. If there is also no element $s \in S$ with $r < s \leq t$, then it must be the case that $r \geq s$ for every $s \in S$. In other words, $r$ is an upper bound for $S$. But this contradicts the fact that $t$ is the least upper bound for $S$. We conclude that there must be an element $s \in S$ with $r < s \leq t$. 
+
+\item Let $r > t$. Suppose to the contrary that no such $s$ exists. Since $t$ is a lower bound for $S$, we know that there is no element $s \in S$ with $s < t$. If there is also no element $s \in S$ with $t \leq s < r$, then it must be the case that $r \leq s$ for every $s \in S$. In other words, $r$ is a lower bound for $S$. But this contradicts the fact that $t$ is the greatest lower bound for $S$. We conclude that there must be an element $s \in S$ with $t \leq s < r$. 
+
+\ea
+
+\end{comment}
+
+\item Let $A$ and $B$ be nonempty subsets of $\R$ that are bounded above and below. Let $A+B = \{a+b \mid a \in A, b \in B\}$. 
+
+\ba
+
+\item Follow the steps below to show that $\sup(A+B) = \sup(A) + \sup(B)$.
+	\begin{enumerate}[i.]
+	\item Let $x = \sup(A)$ and $y = \sup(B)$. Show that $x+y$ is an upper bound for $A+B$. 
+	
+	\item The previous part shows that $A+B$ is bounded above and so has a supremum. Let $z = \sup(A+B)$. Explain why $z \leq x+y$. 
+	
+	\item To show that $z = x+y$ we have to prove that $z$ cannot be strictly less than $x+y$. Suppose to the contrary that $z < x+y$. Let $\epsilon = x+y-z$. Use the result of Exercise \ref{ex:GLB_between} to arrive at a contradiction.
+	
+	\end{enumerate}
+
+\item Prove that $\inf(A+B) = \inf(A) + \inf(B)$.
+
+\item Prove or disprove: $\sup(A \cup B) = \max\{\sup(A), \sup(B)\}$
+
+\item Prove or disprove: $\inf(A \cup B) = \min\{\inf(A), \inf(B)\}$
+
+\ea
+
+\begin{comment}
+
+\ExerciseSolution
+
+\ba
+
+\item Let $x = \sup(A)$ and $y = \sup(B)$. 
+
+	\begin{enumerate}[i.]
+	
+	\item If $a \in A$ and $b \in B$, then $a+b \leq x+y$ and so $x+y$ is an upper bound for $A+B$. 
+	
+	\item Thus, $A+B$ has a supremum. Let $z = \sup(A+B)$. Then $z \leq x+y$ since $z$ is the least upper bound for $A+B$. 
+	
+	\item Let $\epsilon = x+y-z$. Then $\epsilon > 0$ and so Exercise \ref{ex:GLB_between} tells us that there exist elements $a \in A$ and $b \in B$ such that $x-\frac{\epsilon}{2} < a \leq x$ and $y-\frac{\epsilon}{2} < b \leq y$. Then $a+b \in A+B$ and 
+	\[a+b > x+y - \epsilon = x+y-(x+y-z) = z = \sup(A+B).\]
+	But this is impossible, so we conclude that $z = x+y$. 
+	
+	\end{enumerate}
+
+\item Let $x = \inf(A)$ and $y = \inf(B)$. If $a \in A$ and $b \in B$, then $a+b \geq x+y$ and so $x+y$ is a lower bound for $A+B$. 
+Thus, $A+B$ has an infimum. Let $z = \inf(A+B)$. Then $z \geq x+y$ since $z$ is the greatest lower bound for $A+B$. To show that $z = x+y$ we proceed by contradiction and assume that $z > x+y$. Let $\epsilon = z-(x+y)$. Then $\epsilon > 0$ and so Exercise \ref{ex:GLB_between} tells us that there exist elements $a \in A$ and $b \in B$ such that $x \leq a < x+\frac{\epsilon}{2}$ and $y \leq b < y+\frac{\epsilon}{2}$. Then $a+b \in A+B$ and 
+	\[a+b < x+y + \epsilon = x+y+(z-(x+y)) = z = \inf(A+B).\]
+	But this is impossible, so we conclude that $z = x+y$. 
+
+\item We prove this statement to be true. Let $x = \sup(A)$ and $y = \sup(B)$, and assume without loss of generality that $x \leq y$. Let $w \in A \cup B$. Then $w \in A$ or $w \in B$. If $w \in A$, then $w \leq x \leq y$ and if $w \in B$, then $w \leq y$. So $y$ is an upper bound for $A \cup B$. Thus, $A \cup B$ has a supremum. Let $z = \sup(A \cup B)$. Since $z$ is the least upper bound of $A \cup B$, it follows that $z \leq y$. To prove that $z = y$, proceed by contradiction and assume that $z < y$. Then Exercise \ref{ex:GLB_between} shows that there is an element $b \in B$ such that $z < b \leq y$. But $b \in A \cup B$ and so we must have $z \geq b$, a contradiction. We conclude that $z = y$.  
+
+\item We prove this statement to be true. Let $x = \inf(A)$ and $y = \inf(B)$, and assume without loss of generality that $x \leq y$. Let $w \in A \cup B$. Then $w \in A$ or $w \in B$. If $w \in A$ then $w \geq x$ and if $w \in B$ then $w \geq y \geq x$.  So $x$ is a lower bound for $A \cup B$. Thus, $A \cup B$ has an infimum. Let $z = \inf(A \cup B)$. Since $z$ is the greatest lower bound of $A \cup B$, it follows that $z \geq x$. To prove that $z = x$, proceed by contradiction and assume that $z > x$. Then Exercise \ref{ex:GLB_between} shows that there is an element $a \in A$ such that $x \leq a < z$. But $a \in A \cup B$ and so we must have $z \leq a$, a contradiction. We conclude that $z = x$. 
+
+\ea
+
+\end{comment}
+
+\item \label{ex:GLB_function_sup_metric} Let $X = C[a,b]$, the set of continuous functions from $\R$ to $\R$ on an interval $[a,b]$. Define $d: X \times X \to \R$ by \[d(f,g) = \sup\{|f(x)-g(x)| \mid x \in [a,b]\}.\]
+
+
+\ba
+\item What is $d(x^2,1-2x)$ on $[0,1]$? 
+
+\item Prove that $d$ is a metric on $X$. Describe in geometric terms how this metric measures the distance between functions $f$ and $g$. (This metric is called the \emph{supremum metric} or the \emph{uniform metric} on $X$.  
+
+\ea
+
+\begin{comment}
+
+\ExerciseSolution
+
+\ba
+
+\item Consider the function $h$ defined by $h(x) = |f(x)-g(x)| = |x^2-2x+1| = |(x-1)^2|$ on $[0,1]$. The function $h$ has a maximum value of $1$ at the input of $x=0$ on $[0,1]$. So $d(x^2,1-2x) = 1$. 
+
+\item Let $a$ and $b$ be real numbers with $a < b$. Let $f, g \in C([a,b])$. By definition we have $d(f,g) \geq 0$. Also
+\[d(f,g) = \sup_{x \in [a,b]}\{|f(x)-g(x)|\} = \sup_{x \in [a,b]}\{|g(x)-f(x)|\} = d(g,f).\]
+
+If $f=g$, then $f(x) = g(x)$ for all $x \in [a,b]$. As a result, $d(f,g) = \sup_{x \in [a,b]}\{|f(x)-g(x)|\} = \sup\{0\} = 0$. Conversely, suppose that $d(f,g) = 0$. Then $\sup_{x \in [a,b]}\{|f(x)-g(x)|\} = 0$ which implies that $|f(x) - g(x)| = 0$ for all $x \in [a,b]$. But this means that $f(x) = g(x)$ for all $x \in [a,b]$ and so $f = g$.
+
+Finally, we address the triangle inequality. Let $h \in C[a,b]$. Then 
+\begin{align*}
+d(f,h) &= \sup_{x \in [a,b]}\{|f(x)-h(x)|\} \\
+	&= \sup_{x \in [a,b]}\{|(f(x)-g(x)) + (g(x)-h(x))|\} \\
+	&\leq \sup_{x \in [a,b]}  \{|(f(x)-g(x))|\} + \sup_{x \in [a,b]}  \{|(g(x)-h(x))|\} \\
+	&= d(f,g) + d(g,h).
+\end{align*}
+
+\ea
+
+\end{comment}
+
+\item \label{ex:GLB_Archimedean} In this exercise we prove the \emph{Archimedean property} of the natural numbers. Note that the set of natural numbers, denoted $\N$ or $\Z^+$, is the set of all positive integers. 
+
+\begin{theorem}[The Archimedean Property.]\index{Archimedean property} Given any real number $x$, there exists a natural number $N$ such that $N > x$. 
+\end{theorem}
+
+Let $x$ be a real number. 
+\ba
+\item Suppose that there is no positive integer $N$ such that $N > x$. Explain how we can conclude that $\Z^+$ is bounded above. 
+
+\item Assuming that $\Z^+$ is bounded above, explain why $\Z^+$ must have a least upper bound $M$. 
+
+\item Explain why $M$ cannot be a least upper bound for $\Z^+$. Explain why this proves the Archimedean property. 
+
+
+
+\ea
+
+\begin{comment}
+
+\ExerciseSolution
+
+\ba
+
+\item If there is no positive integer $N$ such that $N > x$, then $x$ is an upper bound for $\Z^+$. 
+
+\item The fact that $1 \in \Z^+$ means that $\Z^+$ is not empty. Since $\Z+$ is not empty and bounded above, it follows that $\Z^+$ has a least upper bound $M$.
+
+\item Let $M' = \lfloor M \rfloor$, that is $M'$ is the largest integer less than $M$. (Think of truncating the decimal expansion of $M$ at the units place -- $\lfloor 3.14 \rfloor = 3$, for example). Since $M$ is the largest integer less than $M$, it follows that $M < M'+1$. But $M'+1$ is a positive integer larger than $M$, so $M$ can't be an upper bound for $\Z^+$. This contradiction shows that there must be a positive integer $N$ such that $N > x$.
+\ea
+
+\end{comment}
+
+\item \label{ex:GLB_Archimedean_2} In this exercise we prove two statements that are equivalent to the Archimedean property (see Exercise (\ref{ex:GLB_Archimedean})). One of the statements is the following theorem:
+
+\begin{theorem} \label{thm:Archimedean_2} Given real numbers $x$ and $y$ with $x > 0$, there exists a natural number $N$ such that $Nx > y$. 
+\end{theorem}
+
+\ba
+
+\item Let $x$ and $y$ be real numbers with $x > 0$. 
+
+	\begin{enumerate}[i.]
+	\item Show that if the Archimedean property is true, then so is Theorem \ref{thm:Archimedean_2}. 
+
+	\item Show that if Theorem \ref{thm:Archimedean_2} is true, then so is the Archimedean property.  Conclude that Theorem \ref{thm:Archimedean_2} is equivalent to the Archimedean property.
+	
+	\end{enumerate}
+	
+\item A second statement that is equivalent to the Archimedean property is the following.
+
+\begin{theorem} \label{thm:Archimedean_3} If $x$ is a positive real number, then there exists a positive integer $N$ such that $\frac{1}{N} < x$. 
+\end{theorem}
+
+Prove that Theorem \ref{thm:Archimedean_3} is equivalent to the Archimedean property. 
+\ea
+
+\begin{comment}
+
+\ExerciseSolution
+
+\ba
+
+\item 
+	\begin{enumerate}[i.]
+	\item Let $z = \frac{y}{x}$. The Archimedean property shows that there is a positive integer $N$ such that $N > z - \frac{y}{x}$. Since $x > 0$ it follows that $Nx > y$. 
+
+	\item The Archimedean property follows from Theorem \ref{thm:Archimedean_2} by letting $x = 1$. 
+
+	\end{enumerate}
+	
+\item  First we show that the Archimedean property implies Theorem \ref{thm:Archimedean_3}. Let $x$ be a positive number, and let $y = \frac{1}{x}$. By the Archimedean property, there exists a positive integer $N$ such that $N > y = \frac{1}{x}$. But then $\frac{1}{N} < x$. 
+
+Now we show that Theorem \ref{thm:Archimedean_3} implies the Archimedean property. Let $x$ be a real number. If $x < 0$, then we can choose $N = 1$. If $x > 0$, then $\frac{1}{x}$ is a positive real number. Theorem \ref{thm:Archimedean_3} shows that there is a positive integer $N$ such that $\frac{1}{N} < \frac{1}{x}$. It follows that $N > x$, verifying the Archimedean property.    
+
+\ea
+
+\end{comment}
+
+\item \label{ex:GLB_rational} We can use greatest lower bounds to prove the following theorem.
+
+\begin{theorem} Given any two distinct real numbers $x$ and $y$, there is a rational number that lies between them.
+\end{theorem}
+
+This theorem tells us an important fact -- that the rational numbers are what is called \emph{dense} in the set of real numbers. We prove this theorem in this exercise. Let $x$ and $y$ be real numbers and assume $x < y$. By the Archimedean property of the natural numbers (see Exercises \ref{ex:GLB_Archimedean} and \ref{ex:GLB_Archimedean_2}), there is a positive integer $n$ such that $n(y-x) > 1$. Let $S = \{k \in \Z \mid k > nx \}$. 
+\ba
+\item Show that $S$ is bounded below in $\R$.
+
+\item Explain why $S$ contains an integer $m$ such that if $q \in \Z$ with $q < m$, then $q \leq nx$.  It may be helpful to use the Well-Ordering Principle that states
+\begin{center} Every subset of the integers that is bounded below contains its infimum. \end{center}
+(The Well-Ordering Principle is one of many axioms that are equivalent to the Principle of Mathematical Induction. These principles are taken as axioms and are assumed to be true.)
+
+\item Explain why $m > nx$ and $m-1 \leq nx$. Use these inequalities, along with $n(y-x) > 1$, to show that $nx < m < ny$. Then find a rational number that is strictly between $x$ and $y$.  
+
+\ea
+
+
+\begin{comment}
+
+\ExerciseSolution
+
+\ba
+\item The real number $nx$ is a lower bound for $S$ in $\R$. That is, if $q \in \Z$ with $q < nx$, then $q \notin S$. 
+
+\item We now know that $S$ is bounded below. To show that $S$ has an infimum, we need to show that $S$ is not empty. This is again by the Archimedean property of $\Z$ -- that $\Z$ is unbounded above. Since $S$ is a nonempty set that is bounded below, $S$ has an infimum $m$. The Well-Ordering Principle then shows that $m \in S$. 
+
+\item Since $m \in S$, we have $m > nx$ by definition. The fact that $m-1 < m$ and that $m$ is the greatest lower bound of $S$ implies that $m-1 \notin S$. So $m-1 \leq nx$ and $m \leq nx + 1$. 
+Recall that $n(y-x) > 1$, so $ny > nx+1$ and we have 
+\[m \leq nx +1 < ny.\]
+Combining the inequalities $nx < m$ and $m < ny$ gives us 
+\[nx<m < ny.\]
+Since $n > 0$, we can divide all parts of the last inequality to obtain
+\[x < \frac{m}{n} < y,\]
+and we have demonstrated the existence of a rational number strictly between $x$ and $y$. 
+
+\ea
+
+\end{comment}
+
+\item Show that every open ball in $(\R^2,d_E)$ contains a point $x = (x_1,x_2)$ with both $x_1$ and $x_2$ rational.
+
+\begin{comment}
+
+\ExerciseSolution Let $a = (a_1,a_2)$ and $B = B(a,r)$ for some real number $r > 0$.  Let $s = \frac{r}{\sqrt{2}}$. Exercise \ref{ex:GLB_rational} shows that there is a rational number between any two real numbers, so let $x_1$ be a rational number between $a_1$ and $a_1+s$ and let $x_2$ be a rational number between $a_2$ and $a_2+s$. Let $x = (x_1,x_2)$. We will show that $x$ is in $B$. 
+
+By construction we have $|a_1-x_1| < s$ and $|a_2-x_2| < s$. Calculating the distance between $a$ and $x$ gives us 
+\begin{align*}
+d_E(a,x) &= \sqrt{(a_1-x_1)^2 + (a_2-x_2)^2} \\
+	&= \sqrt{|a_1-x_1|^2 + |a_2-x_2|^2} \\
+	&< \sqrt{s^2+s^2} \\
+	&= \sqrt{\frac{r^2}{2} + \frac{r^2}{2}} \\
+	&= \sqrt{r^2} \\
+	&= r.
+\end{align*}
+Since $d_E(a,x) < r$, we have that $x \in B$. 
+
+\end{comment}
+
+\item We are familiar with solving the quadratic equation $x^2-2 = 0$ to obtain the solutions $\pm \sqrt{2}$. But do we really know that the number $\sqrt{2}$ exists? We address that question in this exercise and demonstrate the existence of the number $\sqrt{2}$ using the greatest lower bound. 
+\ba
+
+\item To begin, let $S = \{x \in \R^+ \mid x^2 > 2\}$. Explain why $S$ must have a greatest lower bound $m$. 
+
+\item In what follows we demonstrate that $m^2 = 2$, which makes $m = \sqrt{2}$. We consider the cases $m^2 < 2$ and $m^2 > 2$. 
+	\begin{enumerate}[i.]
+	\item Suppose $m^2 < 2$. Show that there is a positive integer $n$ such that 
+	\[\left(m+\frac{1}{n}\right)^2~<~2.\]
+	Explain why this also cannot happen.
+	
+	\item Suppose $m^2 > 2$. Show that there is a positive integer $n$ such that 
+	\[\left(m-\frac{1}{n}\right)^2~>~2.\] 
+	Explain why this also cannot happen.
+
+	\end{enumerate}
+
+\item Explain how we have demonstrated the existence of $\sqrt{2}$.
+\ea
+
+
+\begin{comment}
+
+\ExerciseSolution
+
+\ba
+
+\item Certainly $S$ is bounded below by $0$. Since $3^2 = 9 > 2$, it follows that $3 \in S$ and $S$ is not empty. Since $S$ is a nonempty subset of $\R$ that is bounded below, $S$ has a greatest lower bound $m$. 
+
+\item 
+	\begin{enumerate}[i.]
+	\item Suppose $m^2 < 2$. Then the real number $y = \frac{2-m^2}{2}$ is positive. By the Archimedean property there is a positive integer $n_1$ such that $n_1 > \frac{2m}{y}$ and there exists a positive integer $n_2$ such that $n_2 > \frac{1}{\sqrt{y}}$. Let $n = \max\{n_1,n_2\}$. Then 
+	\begin{align*}
+	n &> \frac{2m}{y} \\
+	y &> \frac{2m}{n}
+	\end{align*}
+	and
+	\begin{align*}
+	n &> \frac{1}{\sqrt{y}} \\
+	\frac{1}{n} &< \sqrt{y} \\
+	\frac{1}{n^2} &< y.
+	\end{align*}
+We now have 
+\[\left(m+\frac{1}{n}\right)^2 = m^2 + \frac{2m}{n} + \frac{1}{n^2} < m^2 + 2y = m^2 + 2\left(\frac{2-m^2}{2}\right) = 2\]
+and so $m+\frac{1}{n}$ is a lower bound for $S$. But $m+\frac{1}{n} > m$, which contradicts the fact that $m$ is the greatest lower bound for $S$. We conclude that $m^2 \geq 2$. 	
+	
+	\item Now suppose $m^2 > 2$.	Then $m^2 - 2 > 0$. There is a positive integer $n$ such that $n > \frac{2m}{m^2-2}$. Then $\frac{1}{n} < \frac{m^2-2}{2m}$ and $-\frac{1}{n} > -\frac{m^2-2}{2m}$. So 
+\[\left(m-\frac{1}{n}\right)^2 = m^2 - \frac{2m}{n} + \frac{1}{n^2} > m^2 - \frac{2m}{n} >  m^2 - 2m\left(\frac{m^2-2}{2m}\right) = 2.\]
+But then $m-\frac{1}{n}$ is in $S$ while $m-\frac{1}{n}$ is less than $m$. This contradicts the fact that $m$ is a lower bound for $S$. 	
+	
+	\end{enumerate}
+
+\item Since we eliminated the cases $m^2 > 2$ and $m^2 < 2$, the only conclusion we can draw is that $m^2 = 2$. Since $m > 0$, we conclude that $m = \sqrt{2}$. 
+
+\ea
+
+\end{comment}
+
+\item \label{ex:GLB_irrational} Similar to Exercise \ref{ex:GLB_rational} we can prove the following theorem.
+
+\begin{theorem} Given any two distinct real numbers $x$ and $y$, there is an irrational number that lies between them.
+\end{theorem}
+
+\ba
+
+\item The first step is to demonstrate the existence of an irrational number. We will do that by proving that $\sqrt{2}$ is irrational. Proceed by contradiction and assume that $\sqrt{2}$ is a rational number. That is, $\sqrt{2} = \frac{r}{s}$ for some positive integers $r$ and $s$ such that $r$ and $s$ have no positive common factors other than 1. 
+
+	\begin{enumerate}[i.]
+	\item Explain why $r^2=2s^2$. Since $2$ is prime, it follows that $2$ divides $r$. 
+	
+	\item Show that $2$ divides $s$. Explain how this proves that $\sqrt{2}$ is an irrational number.
+	
+	\end{enumerate}
+
+\item Let $x$ and $y$ be distinct real numbers. Show that there exists an integer $q$ and a positive integer $N$ such that $z=\frac{q\sqrt{2}}{2^N}$ is an irrational number between $x$ and $y$. (Hint: Consider the approach in Exercise \ref{ex:GLB_rational} .)
+
+
+\ea
+
+\begin{comment}
+
+\ExerciseSolution
+
+\ba
+\item
+	\begin{enumerate}[i.]
+	\item Multiplying both sides of $\sqrt{2} = \frac{r}{s}$ shows that $\sqrt{2}s = r$. Squaring both sides gives us $2s^2 = r^2$. Thus, $2$ divides $r$. 
+	
+	\item Since $2$ divides $r$, we have $r = 2t$ for some integer $t$. Then $2s^2 = (2t)^2 = 4t^2$. Cancelling the $2$s on both sides gives us $s^2 = 2t^2$. Thus $2$ divides $s$. But this contradicts the fact that $r$ and $s$ have no positive common factors other than $1$. We conclude that $\sqrt{2}$ must be irrational. 
+	
+	\end{enumerate}
+	
+\item Let $x$ be a positive real number, and let $y = \frac{x}{\sqrt{2}}$. By Exercise \ref{ex:GLB_Archimedean_2} there exists a positive integer $N$ such that $\frac{1}{N} < y = \frac{x}{\sqrt{2}}$. It follows that $\frac{\sqrt{2}}{N} < x$. 
+
+\item Let $x$ and $y$ be distinct real numbers with $x < y$. Then there is a positive integer $N$ such that $N > \frac{\sqrt{2}}{y-x}$, or $\frac{N}{\sqrt{2}}(y-x) > 1$. Let $S = \left\{k \in \Z \mid k > \frac{N}{\sqrt{2}}x \right\}$. The real number $\frac{N}{\sqrt{2}}x$ is a lower bound for $S$ in $\R$. That is, if $q \in \Z$ with $q < \frac{N}{\sqrt{2}}x$, then $q \notin S$. To show that $S$ has an infimum, we need to show that $S$ is not empty. This is again by the Archimedean property of $\Z$ -- that $\Z$ is unbounded above. Since $S$ is a nonempty set that is bounded below, $S$ has an infimum $m$. The Well-Ordering Principle then shows that $m \in S$. Since $m \in S$, we have $m > \frac{N}{\sqrt{2}}x$ by definition. The fact that $m-1 < m$ and that $m$ is the greatest lower bound of $S$ implies that $m-1 \notin S$. So $m-1 \leq \frac{N}{\sqrt{2}}x$ and $m \leq \frac{N}{\sqrt{2}}x + 1$. 
+Recall that $\frac{N}{\sqrt{2}}(y-x) > 1$, so $\frac{N}{\sqrt{2}}y > \frac{N}{\sqrt{2}}x+1$ and we have 
+\[m \leq \frac{N}{\sqrt{2}}x +1 < \frac{N}{\sqrt{2}}y.\]
+Combining the inequalities $\frac{N}{\sqrt{2}}x < m$ and $m < \frac{N}{\sqrt{2}}y$ gives us 
+\[\frac{N}{\sqrt{2}}x < m < \frac{N}{\sqrt{2}}y.\]
+Since $\frac{N}{\sqrt{2}} > 0$, we can divide all parts of the last inequality by $\frac{N}{\sqrt{2}}$ to obtain
+\[x < \frac{\sqrt{2}}{N} < y,\]
+and so $\frac{\sqrt{2}}{N}$ is strictly between $x$ and $y$. All that remains is to demonstrate that $\frac{\sqrt{2}}{N}$ is an irrational number. If not, then $\frac{\sqrt{2}}{N} = \frac{u}{v}$ for some integers $u$ and $v$. But then $\sqrt{2} = \frac{Nu}{v}$ which implies that $\sqrt{2}$ is a rational number, which it is not. We conclude that $\frac{\sqrt{2}}{N}$ is an irrational number. 
+
+\ea
+
+
+\end{comment}
+
+\item \label{ex:GLB_triangle} Let $(X,d)$ be a metric space and $A$ a nonempty subset of $X$. For $x,y \in X$, prove that $d(x,A) \leq d(x,y) + d(y,A)$.
+
+\begin{comment}
+
+\ExerciseSolution Let $(X,d)$ be a metric space and $A$ a nonempty subset of $X$. Let $x$ and $y$ be elements of $X$, and let $a \in A$. By definition, we know that 
+\[d(x,A) \leq d(x,a).\]
+The triangle inequality then gives us 
+\[d(x,A) \leq d(x,a) \leq d(x,y) + d(y,a).\]
+So $d(y,a) \geq d(x,A) - d(x,y)$. Thus, $d(x,A) - d(x,y)$ is a lower bound for the set $\{d(y,a) \mid a \in A\}$. Since we know that $d(y,A)~=~\inf_{a \in A} \{d(y,a)\}$ is the greatest lower bound for the set $\{d(y,a) \mid a \in A\}$, it follows that  
+\[d(y,A) \geq d(x,A) - d(x,y)\]
+or
+\[d(x,A) \leq d(x,y) + d(y,A).\]
+
+
+\end{comment}
+
+\item Prove that if $(X,d)$ is a metric space and $B$ and $C$ are nonempty subsets of $X$, then 
+\[d(a, B \cup C) = \min\{d(a,B), d(a,C)\}\]
+for every $a \in X$. 
+
+\begin{comment}
+
+\ExerciseSolution Recall that $d(a,B \cup C) = \inf\{d(a,x) \mid x \in B \cup C\}$. Without loss of generality, assume that $d(a,B) \leq d(a,C)$. We will show that $d(a, B \cup C) = d(a,B)$. First we show that $d(a,B)$ is a lower bound for $\{d(a,x) \mid x \in B \cup C\}$. Let $x \in B \cup C$. Then $x \in B$ or $x \in C$. If $x \in B$, then by definition $d(a,B) \leq d(a,x)$. If $x \in C$, then $d(a,B) \leq d(a,C) \leq d(a,x)$. Thus, $d(a,B)$ is a lower bound for $\{d(a,x) \mid x \in B \cup C\}$. 
+
+Now we demonstrate that $d(a,B)$ is greater than or equal to any other lower bound for $\{d(a,x) \mid x \in B \cup C\}$. Let $m$ be a lower bound for $\{d(a,x) \mid x \in B \cup C\}$ and assume to the contrary that $m > d(a,B) = \inf\{d(a,b) \mid b \in B\}$. Then there must exist an element $b \in B$ with $m > d(a,b)$. But $b \in B \cup C$ and so $m \leq d(a,b)$, a contradiction. We conclude that $d(a,B)$ is a lower bound for $\{d(a,x) \mid x \in B \cup C\}$ and is greater than or equal to any other lower bound for $\{d(a,x) \mid x \in B \cup C\}$. It follows that $d(a,B) = d(a, B \cup C)$.  
+
+\end{comment}	
+
+ 
+\item For each of the following, answer true if the statement is always true. If the statement is only sometimes true or never true, answer false and provide a concrete example to illustrate that the statement is false. If a statement is true, explain why.  Throughout, let $S$ and $T$ be bounded subsets of $\R$ (a subset of $\R$ is bounded if it is both bounded above and bounded below).
+	\ba
+	\item Any nonempty subset of $S$ is bounded.
+
+	\item  If $S + T = \{s+t \mid s \in S, t \in T\}$, then $\sup(S + T) = \max\{\sup(S), \sup(T)\}.$ 
+
+	\item  Let $S + T = \{s+t \mid s \in S, t \in T\}$, then $\inf(S + T) = \min\{\inf(S), \inf(T)\}$. 
+	
+	\item If $U$ is a nonempty subset of $S$, then $\sup(U) \leq \sup(S)$.
+	
+	\item If $U$ is a nonempty subset of $S$, then $\inf(S) \leq \inf(U)$.
+
+	\item If $A$ is a subset of $\R$ and $x \in \R$ with $d(x,A) = 0$, then $x \in A$.
+	
+	\ea
+
+\begin{comment}
+
+\ExerciseSolution
+
+\ba
+
+\item This statement is false. Let $S = (-1,1)$ and $T = (0,2)$. Then $\sup(S) = 1$, $\sup(T) = 2$, and $\sup(S \cap T) = 1$. 
+
+\item This statement is false. Let $S = (-1,1)$ and $T = (0,2)$. Then $\inf(S) = -1$, $\inf(T) = 0$, and $\inf(S \cap T) = 0$. 
+
+	
+\item This statement is true. Let $m_S = \inf(S)$, $m_T = \inf(T)$, and $M = \inf(S+T)$. Let $x \in S+T$. Then $x = s+t$ for some $s \in S$ and $t \in T$. So $x = s+t \geq m_S + m_T$ and it follows that $m_S + m_T$ is a lower bound for $S+T$. The fact that $m$ is the greatest lower bound for $S+T$ implies that $M \geq m_S + m_T$.
+	
+\item This statement is true. Let $U$ be a nonempty subset of $S$, and let $M_U = \sup(U)$ and $M_S = \sup(S)$. Since $U \subseteq S$, we know that $M_S$ is an upper bound for $U$. By the definition of a least upper bound, it follows that $M_U \leq M_S$. 
+
+\item This statement is true. Let $U$ be a nonempty subset of $S$, and let $m_U = \inf(U)$ and $m_S = \inf(S)$. Since $U \subseteq S$, we know that $m_S$ is a lower bound for $U$. By the definition of a greatest lower bound, it follows that $m_S \leq m_U$. 
+
+\item This statement is false. Let $A = (0,1)$ and $x = 0$. Then $d(x,A) = 0$ but $x \notin A$. 
+
+		
+	\ea
+
+\end{comment}
+
+\ee

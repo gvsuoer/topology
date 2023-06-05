@@ -1,0 +1,398 @@
+\achapter{9}{Equivalent Metric Spaces}\label{sec:equivalent_metric_spaces}
+
+
+\vspace*{-17 pt}
+\framebox{\hspace*{3 pt}
+\parbox{4.7 in}{\begin{fqs}
+\item 
+
+\end{fqs}} \hspace*{3 pt}}
+
+\vspace*{13 pt}
+
+\csection{Introduction}
+
+We have seen that we can make a set into a metric space with different metrics. For example, the spaces $(\R^2, d_E)$, $(\R^2, d_T)$, $(\R^2, d_M)$, and $(\R^2, d)$ are all metric spaces, where $d_E$ is the Euclidean metric, $d_T$ the taxicab metric, $d_M$ the max metric, and $d$ the discrete metric. But are these metric spaces really ``different" metric spaces? What do we mean by ``different"? 
+
+
+\begin{pa} ~
+\be
+\item We might consider two metric spaces $(X, d_X)$ and $(Y, d_Y)$ to be equivalent if we can find a bijection between the two sets $X$ and $Y$ that preserves the metric properties. That is, find a bijective function $f : X \to Y$ such that $d_X(a,b) = d_Y(f(a), f(b))$ for all $a,b \in X$. In other words, $f$ preserves distances. 
+	\ba
+	\item Let $X = ((0,1), d_X)$ and $Y = ((0,2), d_Y)$, with both $d_X$ and $d_Y$ the Euclidean metric. Is it possible to find a bijection $f : X \to Y$ that preserves the metric properties? Explain. 
+	
+\item Now let $X = ((0,1), d_X)$ and $Y = ((0,2), d_Y)$, where $d_X$ is defined by $d_X(a,b) = 2 | a-b |$ and $d_Y = d_E$. You may assume that $d_X$ is a metric. Is it possible to find a bijection $f : X \to Y$ that preserves the metric properties? Explain. 
+
+	\ea
+
+%\vspace{0.1in} 
+
+%A function that preserves distances in metric spaces is given a special name. 
+
+%\begin{definition} A function $f$ from a metric space $(X,d_X)$ to a metric space $Y, d_Y)$ is an \textbf{isometry}\index{isometry} if $f$ is a bijection and 
+%\[d_Y(f(a),f(b)) = d_X(a,b)\]
+%for all $a, b \in X$. 
+%\end{definition}
+
+%If there is an isometry between two metric spaces, we say that the spaces are \emph{metrically equivalent}\index{metrically equivalent}. Metric equivalence is a very strong type of equivalence -- the existence of an isometry does not allow for much flexibility. So from a topological perspective, we really want to consider a different type of equivalence -- one that allows us to stretch and bend spaces while not fundamentally changing the open sets.  
+
+%\vspace{0.1in}
+
+\item Preserving the metric properties of two spaces is a very strong condition. If a function exists that preserves distances, we way that the metric spaces are \emph{metrically equivalent}\index{metrically equivalent}. From the topological perspective that we will take later, we want a relationship that allows for more flexibility -- one that is not in terms of a metric but rather in terms of open sets. If we don't insist on preserving the metric properties, we can allow for stretching and bending of open sets without fundamentally changing the open sets. Let us return to the example of $X = ((0,1), d_X)$ and $Y = ((0,2), d_Y)$, with both $d_X$ and $d_Y$ the Euclidean metric. Let $f : X \to Y$ be defined by $f(x) = 2x$. 
+	\ba
+	\item Let $B_X$ be an open ball in $X$. Is $f(B_X)$ an open ball in $Y$? Explain.
+
+	\item Let $B_Y$ be an open ball in $Y$. Is $f^{-1}(B_Y)$ an open ball in $X$? Explain.
+
+	\item Critique this statement: ``The function $f$ provides a one-to-one correspondence between the open sets in $X$ and the open sets in $Y$." (Hint: Use Lemma \ref{lem:functions_subsets}.) 	
+	
+	\ea
+
+
+
+%It is continuous functions that preserve open sets, so the definition of topological equivalence is in terms of continuity.
+
+%\begin{definition} \label{def:MS_topological_equivalence} Two metric spaces $(X,d_X)$ and $(Y,d_Y)$ are \textbf{topologically equivalent}\index{topologically equivalent} if there is a continuous bijection $f : X \to Y$ such that $f^{-1}$ is also continuous.  
+%\end{definition}
+
+%\vspace{0.1in}
+
+\item If we have a one-to-one correspondence between the open sets in $X$ and the open sets in $Y$, even without preserving distances, we say that the metric spaces are \emph{topologically equivalent}. This allows us to stretch or contract open sets and still consider them as essential the same sets.  Give an example of two different metric spaces that are topologically equivalent. 
+
+\ee
+
+\end{pa}
+
+\begin{comment}
+
+\ActivitySolution
+\be
+	\ba
+	\item The answer is no. Suppose to the contrary that there is a bijective function $f: (0,1) \to (0,2)$ so that 
+\[d_X(a,b) = d_Y(f(a), f(b))\]
+for all $a,b \in X$. Let $u, v \in Y$. The surjectivity of $f$ implies that there exists $a,b \in X$ such that $f(a) = u$ and $f(b) = v$. Then
+\[| u - v | = | f(a) - f(b) | = | a-b| \leq 1.\]
+So $| u-v | \leq 1$ for all $u, v \in Y$. But $1.75$ and $0.25$ are in $Y$ and 
+\[| 1.75-0.25 | = 1.5 > 1.\]
+So no such function can exist. 
+
+
+\item  The answer is yes. Let $f:X \to Y$ be defined by $f(x) = 2x$. We will show that $f$ is an injection. Let $a_1, a_2 \in X$ and assume $f(a_1) = f(a_2)$. Then $2a_1 = 2a_2$ from which it follows that $a_1 = a_2$. So $f$ is an injection. Let $y \in Y$. Then $0 < y < 2$. So $0 < \frac{y}{2} < 1$ and $\frac{y}{2} \in X$. Since 
+\[f\left(\frac{y}{2}\right) = 2\left(\frac{y}{2}\right) = y,\]
+we see that $f$ is a surjection. Thus, $f$ is a bijection. 
+
+Finally, let $a, b \in X$. Then
+\[d_Y(f(a),f(b)) = | 2a-2b | = 2| a-b | = d_X(a,b).\]
+So $f$ preserves distances. 
+
+
+	\ea
+
+\item Let us return to the example of $X = ((0,1), d_X)$ and $Y = ((0,2), d_Y)$, with both $d_X$ and $d_Y$ the Euclidean metric. Let $f : X \to Y$ be defined by $f(x) = 2x$. 
+	\ba
+	\item The answer is yes. Let $B_X$ be an open ball in $X$. Then $B_X$ has the form $B_X = (a,b)$ for some $0 \leq a< b \leq 1$. So $0 \leq 2a < 2b \leq 2$. Note that $f(B_X) = (2a, 2b)$ and so $f(B_X)$ is an open ball in $Y$. 
+
+	\item The answer is yes. Let $B_Y$ be an open ball in $Y$. Then $B_Y$ has the form $B_Y = (u,v)$ for some $0 \leq u < v \leq 2$. So $0 \leq \frac{u}{2} < \frac{v}{2} \leq 1$. Note that $f^{-1}(B_Y) = \left(\frac{u}{2}, \frac{v}{2}\right)$ and so $f^{-1}(B_Y)$ is an open ball in $X$. 
+
+
+	\item  This is a valid statement. The correspondence in parts (a) and (b) show that $f$ provides a one-to-one correspondence between open balls in $X$ and open balls in $Y$. If $O_X$ is an open set in $X$, then $O_X$ is a union of open balls. So $O_X = \bigcup_{\alpha \in I} B_{\alpha}$, where $B_{\alpha}$ is an open ball in $X$ for each $\alpha$ in some indexing set $I$. Since
+\[f(O_X) =  f\left( \bigcup_{\alpha \in I} B_{\alpha} \right) = \bigcup_{\alpha \in I} f(B_{\alpha}),\]
+by the lemma, $f$ provides a matching of open sets in $X$ with the union of the corresponding open balls in $Y$. The second part of the lemma shows that $f^{_1}$ provides a similar matching in the revers direction. So the function $f$ provides a one-to-one correspondence between the open sets in $X$ and the open sets in $Y$. 
+
+	\ea
+
+
+\item  We created an example in problem 3 with $X = ((0,1), d_E)$ and $Y = ((0,2), d_E)$, where $f : X \to Y$ defined by $f(x) = 2x$ provides the equivalence.  
+
+\ee
+
+\end{comment}
+
+\csection{Metric Equivalence}
+
+As metric spaces, the metrics determine the open balls and the open sets. If we consider the two spaces $(\R^2, d_E)$ and $(\R^2, d_M)$, we see the the open balls look different in these spaces. However, if we could find a bijection $f$ from $(\R^2, d_E)$ to $(\R^2, d_M)$ that respects distances, that is 
+\[d_E(x,y) = d_M(f(x), f(y))\]
+for all $x, y \in \R^2$, then distances are preserved and distance properties in $(\R^2, d_E)$ can be transferred to $(\R^2, d_M)$ via $f$. If $f^{-1}$ preserved distances as well, then the two metric spaces $(\R^2, d_E)$ and $(\R^2, d_M)$ would basically be the same. This is the idea behind metric equivalence as we saw in our preview activity.
+
+\begin{definition} \label{def:MS_metric_equivalence} Two metric spaces $(X,d_X)$ and $(Y,d_Y)$ are \textbf{metrically equivalent}\index{metrically equivalent} if there is a bijection $f : X \to Y$ such that 
+\begin{align*}
+d_X(x,y) &= d_Y(f(x),f(y)) \\
+d_Y(u,v) &= d_X(f^{-1}(u), f^{-1}(v))
+\end{align*}
+for all $x,y \in X$ and $u,v \in Y$. 
+\end{definition}
+
+Any function $f$ that preserves distances (like the one in Definition \ref{def:MS_metric_equivalence}) is called an \emph{isometry}. 
+
+\begin{definition} A function $f$ from a metric space $(X,d_X)$ to a metric space $(Y, d_Y)$ is an \textbf{isometry}\index{isometry} if $f$ is a bijection and 
+\begin{equation} \label{eq:distance_preserving} 
+d_Y(f(a),f(b)) = d_X(a,b)
+\end{equation}
+for all $a, b \in X$. 
+\end{definition}
+
+Definition \ref{def:MS_metric_equivalence} requires that both $f$ and $f^{-1}$ preserve distances. However, if $f : X \to Y$  is a bijection from a metric space $(X,d_X)$ to a metric space $(Y,d_Y)$ that is also an isometry, then it is reasonable to think that $f^{-1}$ might also be an isometry. We investigate that in our next activity.
+
+\begin{activity} Let $(X,d_X)$ and $(Y,d_Y)$ be metric spaces, and let $f: X \to Y$ be a bijection and an isometry. Let $u, v \in Y$.
+\ba
+\item Why must there exist $a,b \in X$ so that $f(a) = u$ and $f(b) = v$?
+
+\item Explain why $d_X(f^{-1}(u), f^{-1}(v)) = d_Y(u,v)$. 
+
+\item  Explain how we have proved the following theorem.
+
+\begin{theorem} Metric spaces $(X,d_X)$ and $(Y,d_Y)$ are metrically equivalent if and only if there exists a bijection $f: X \to Y$ such that $d_X(x,y) = d_Y(f(x), f(y))$ for all $x,y \in X$. 
+\end{theorem}
+
+\ea
+
+\end{activity}
+
+\begin{comment}
+
+\ActivitySolution
+
+\ba
+\item Since $f$ is a bijection, $f$ is a surjection. So there exist $a,b \in X$ so that $f(a) = u$ and $f(b) = v$.
+
+\item The fact that $f$ is an isometry means that 
+\[d_X(f^{-1}(u), f^{-1}(v)) = d_Y(f(f^{-1}(u)), f(f^{-1}(v))) = d_Y(u,v).\] 
+
+\item  The forward implication is the definition, and the reverse implication is proved in parts (a) and (b).  
+
+\ea
+
+\end{comment}
+
+Metric equivalence is a strong type of equivalence. To see examples of metrically equivalent spaces, we will use the following lemma.
+
+\begin{lemma} Let $(X,d)$ be a metric space and let $k$ be a positive real number. Then the function $kd : X \times X \to \R$ defined by
+\[(kd)(x,y) = kd(x,y)\]
+for all $x,y \in X$ is a metric on $X$.
+\end{lemma}
+
+The proof is straightforward and is left to the reader. 
+
+\begin{comment}
+\begin{proof} Let $(X,d)$ be a metric space and let $k$ be a positive real number. Define $kd : X \times X \to \R$ by
+\[(kd)(x,y) = kd(x,y)\]
+for all $x,y \in X$. Let $x,y, z \in X$. Since $k > 0$ and $d(x,y) \geq 0$, we have  
+\[(kd)(x,y) = kd(x,y) \geq 0.\]
+Note also that if $x \neq y$ we have $d(x,y) > 0$ and so 
+\[(kd)(x,y) = kd(x,y) > 0.\]
+In addition, 
+\[(kd)(x,x) = kd(x,x) = 0.\]
+So $(kd)(x,y) \geq 0$ with equality if and only if $x=y$. 
+
+The symmetry of $kd$ follows from the symmetry of $d$:
+\[(kd)(x,y) = kd(x,y) = kd(y,x) = (kd)(y,x).\]
+
+The only property left to verify is the triangle inequality. Now
+\[(kd)(x,y) = kd(x,y) \leq k[d(x,z) + d(z,y)] = kd(x,z) + kd(z,y) = (kd)(x,z) + (kd)(z,y).\]
+We conclude that $kd$ is a metric on $X$.
+\end{proof}
+\end{comment}
+
+
+\begin{activity} ~
+\ba
+\item Let $(X,d_X) = ([0,1], 90d_E)$ and $(Y,d_Y) = ([10,100], d_E)$. Define $f: \R \to \R$ by $f(x) = 90x+10$. Show that $f$ is an isometry that makes $(X,d_X)$ and $(Y,d_Y)$ metrically equivalent spaces. 
+
+\item Let $(X,d_X) = ([0,1], kd_E)$ for some $k \in \R$, and let $(Y,d_Y) = ([a,b], d_E)$ for some $a<b$ in $\R$. Find a value of $k$ so that $(X, d_X)$ and $(Y, d_Y)$ are metrically equivalent.
+
+  \ea
+  
+\end{activity}
+
+\begin{comment}
+
+\ActivitySolution
+
+\ba
+\item  Let $0 \leq x \leq 1$. Then $10 = 90(0)+10 \leq 90x+10 \leq 90(1)+10 = 100$, so $f$ maps $X$ into $Y$. Since $f$ is an increasing linear function, $f$ is injective. Let $y \in Y$. Then $10 \leq y \leq 100$ and $0 \leq \frac{y-10}{90} \leq 1$. So $x = \frac{y-10}{90} \in X$ and $f(x) = y$. Thus, $f$ is a surjection. The only thing that remains is to demonstrate that $f$ is an isometry. Let $a,b \in X$. Then
+\[d_Y(f(a), f(b)) = d_Y(90a+10, 90b+10) = | (90a+10) - (90b+10) | = 90| a-b | = d_X(a,b).\]
+Therefore, $(X,d_X)$ is metrically equivalent to $(Y,d_Y)$. 
+
+\item  Let $k=b-a$, and define $f: \R \to \R$ by $f(x) = (b-a)x + a$. Let $0 \leq x \leq 1$. Then $a = f(0) \leq f(x) \leq f(1) = b$, so $f$ maps $X$ into $Y$. Since $f$ is an increasing linear function, $f$ is injective. Let $y \in Y$. Then $a \leq y \leq b$ and $0 \leq \frac{y-a}{b-a} \leq 1$. So $x = \frac{y-a}{b-a} \in X$ and $f(x) = y$. Thus, $f$ is a surjection. The only thing that remains is to demonstrate that $f$ is an isometry. Let $r,s \in X$. Then
+\[d_Y(f(r), f(s)) = d_Y((b-a)r+a, (b-a)s+a) = | [(b-a)r+a] - [(b-a)s+a] | = (b-a) | r-s | = d_X(r,s).\]
+Therefore, $(X,d_X)$ is metrically equivalent to $(Y,d_Y)$. 
+
+\end{comment}
+
+  \ea
+
+\end{comment}
+
+
+
+Distance preserving functions are special kinds of functions. The fact that an isometry preserves distances means that it should preserve separation of points and open balls. The next activity makes this clear.
+
+
+
+\begin{activity} \label{act:isometry} Let $f$ be a distance preserving function (that is, a function that satisfies (\ref{eq:distance_preserving} ))from the metric space $(X,d_X)$ to the metric space $(Y,d_Y)$.
+\ba
+\item Let $a_1, a_2 \in X$. If $f(a_1)=f(a_2)$, what can we say about $d_X(a_1,a_2)$? What does this tell us about $f$?
+
+
+
+\item Let $a\in X$ and let $\epsilon > 0$ be given. Use the fact that $f$ preserves distance to show that $f$ is continuous at $a$. 
+
+
+
+\ea
+
+\end{activity} 
+
+
+
+The results of Activity \ref{act:isometry} are summarized in the following lemma.
+
+
+
+\begin{lemma} If $f$ is a distance preserving function from the metric space $(X,d_X)$ to the metric space $(Y,d_Y)$, then 
+\begin{enumerate}
+\item $f$ is an injection
+\item $f$ is continuous.
+\end{enumerate}
+\end{lemma}
+
+
+\begin{comment}
+\begin{proof} Let $f$ be an isometry from the metric space $(X,d_X)$ to the metric space $(Y,d_Y)$. We first prove that $f$ is an injection. Let $a_1, a_2 \in X$ and assume $f(a_1) = f(a_2)$. Then 
+\[0 = d_Y(f(a_1),f(a_2)) = d_X(a_1,a_2),\]
+which implies $a=b$. Thus, $f$ is an injection.
+
+Now we prove that $f$ is continuous. Let $a \in X$, and let $\epsilon > 0$ be given. Let $\delta = \epsilon$. If $x \in X$ so that $d_X(x,a) < \delta$, then
+\[d_Y(f(x), f(a)) = d_X(x,a) < \delta = \epsilon.\]
+Therefore, $f$ is a continuous function from $X$ to $Y$. 
+\end{proof}
+\end{comment}
+
+
+\csection{Topological Equivalence}
+ 
+The fact that metric equivalence is defined using an isometry makes metric equivalence a very strong type of equivalence. Most importantly, metric equivalence does not allow for any but the most rigid types of deformations of one set into another that we discussed at the beginning of the semester. To allow for non-rigid deformations, we need a more flexible concept of equivalence. 
+
+Let us return to the metric spaces $(\R^2, d_E)$ and $(\R^2, d_M)$ for a moment. We can easily deform the open ball $B_E(a; \epsilon)$ in $(\R^2, d_E)$ into the open ball $B_M(a; \epsilon)$, although not with an isometry. As we discussed in our first Preview Activity, when one set can be deformed into another, we consider the two sets to be equivalent from a topological perspective. Such a deformation has to be a bijective continuous function whose inverse is also continuous. So if $f$ is a continuous bijection function that deforms open balls in $(\R^2, d_E)$ to look like the open balls in $(\R^2, d_M)$ so that $f^{-1}$ is also continuous, then there is a one-to-one correspondence between the open balls in the two metric spaces. This also provides a one-to-one correspondence between open sets in the two spaces. Since we can define many properties in terms of open sets, the two metric spaces will share those properties. This leads to the next definition.
+
+
+
+\begin{definition} \label{def:MS_topological_equivalence} Two metric spaces $(X,d_X)$ and $(Y,d_Y)$ are \textbf{topologically equivalent} if there is a continuous bijection $f : X \to Y$ such that $f^{-1}$ is also continuous.  
+\end{definition}
+
+
+
+Note that metric equivalence implies topological equivalence, but the reverse is not necessarily true. The function $f$ (or $f^{-1}$) in Definition \ref{def:MS_topological_equivalence} is called a \emph{homeomorphism}, and if there is a homeomorphism from $(X,d_X)$ to $(Y,d_Y)$ we say that the metric spaces $(X,d_X)$ and $(Y,d_Y)$ are \emph{homeomorphic} metric spaces. 
+
+It can be difficult to show directly that two metric spaces are homeomorphic, but there are ways to make the process easier. If $f$ is a homeomorphism from the metric space $(\R^2, d_E)$ to the metric space $(\R^2, d_M)$, the continuity of $f$ ensures a smooth deformation from $\R^2$ to $\R^2$. In terms of the metrics, this means that distances cannot get distorted too much -- in fact, the amount distances are distorted should be bounded. In other words, we might expect that there is a constant $K$ so that $d_E(x,y) \leq K d_M(f(x), f(y))$ for any $x, y \in \R^2$. The next theorem tells us that this is a sufficient condition for topological equivalence when we work in the same underlying space. 
+
+
+
+\begin{theorem} Let $X$ be a set on which two metrics $d$ and $d'$ are defined. If there exist positive constants $K$ and $K'$ so that 
+\begin{align*}
+d'(x,y) &\leq K d(x,y) \\
+d(x,y) &\leq K' d'(x,y)
+\end{align*}
+for all $x,y \in X$, then $(X,d)$ is topologically equivalent to $(X,d')$.  
+\end{theorem}
+
+\begin{proof} Let $X$ be a set on which two metrics $d$ and $d'$ are defined. Suppose there exist positive constants $K$ and $K'$ so that 
+\begin{align*}
+d'(x,y) &\leq K d(x,y) \\
+d(x,y) &\leq K' d'(x,y)
+\end{align*}
+for all $x,y \in X$. Let $i_X : (X,d) \to (X,d')$ be the identity mapping. That is, $i_X(x)=x$ for all $x \in X$. We will prove that $i_X$ is a homeomorphism. We know that $i_X$ is a bijection, so we only need verify that $i_X$ and $i_X^{-1}$ are continuous. Let $\epsilon > 0$ be given, and let $a \in X$. Let $\delta = \frac{\epsilon}{K}$. Suppose $x \in X$ so that $d(x,a) < \delta$. Then 
+\[d'(i_X(x), i_X(a)) = d'(x,a) \leq Kd(x,a) < K\delta = K\left(\frac{\epsilon}{K}\right) = \epsilon.\]
+Thus, $i_X$ is continuous. The same argument shows that $i_X^{-1}$ is also continuous. Therefore, $i_X$ is a homeomorphism between $(X,d)$ and $(X,d')$. 
+\end{proof}
+
+
+
+
+\begin{activity} ~
+\ba
+\item Are $(\R^2,d_T)$ and $(\R^2, d_M)$ topologically equivalent? Explain.
+
+
+\begin{comment}
+
+Let $x = (x_1,x_2)$ and $y=(y_1,y_2)$ be in $\R^2$. Notice that 
+\[d_M(x,y) = \max\{| x_1-y_1 |, | x_2-y_2 |\} \leq | x_1-y_1 | + | x_2-y_2 | = d_T(x,y).\]
+Also,
+\[d_T(x,y) = | x_1-y_1 | + | x_2-y_2 | \leq 2\max\{| x_1-y_1 |, | x_2-y_2 |\} = 2d_M(x,y).\]
+So $(\R^2,d_T)$ and $(\R^2, d_M)$ are topologically equivalent. 
+
+\end{comment}
+
+\item Are $(\R^2,d_E)$ and $(\R^2, d_T)$ topologically equivalent? Explain.
+
+
+\begin{comment}
+
+Let $x = (x_1,x_2)$ and $y=(y_1,y_2)$ be in $\R^2$. Notice that 
+\[d_E(x,y) = \sqrt{(x_1-y_1)^2 + (x_2-y_2)^2} \leq \sqrt{(x_1-y_1)^2} + \sqrt{(x_2-y_2)^2} =  | x_1-y_1 | + | x_2-y_2 | \leq d_T(x,y).\]
+Also,
+\[d_T(x,y) = | x_1-y_1 | + | x_2-y_2 | = \sqrt{(x_1-y_1)^2} + \sqrt{(x_2-y_2)^2} \leq \sqrt{(x_1-y_1)^2+(x_2-y_2)^2} + \sqrt{(x_1-y_1)^2+(x_2-y_2)^2} = 2d_E(x,y).\]
+So $(\R^2,d_T)$ and $(\R^2, d_T)$ are topologically equivalent. 
+
+\end{comment}
+
+\item Do you expect that $(\R^2,d_E)$ and $(\R^2, d_M)$ are topologically equivalent. Explain without doing any calculations or comparisons.
+
+
+
+ 
+\ea
+
+\end{activity}
+
+
+
+\csection{Relations}
+We use the word ``equivalent" deliberately when talking about metric or topological equivalence. Recall that equivalence is a word used with relations, and that a relation is a way to compare two elements from a set. We are familiar with many relations on sets, ``$<$", ``$=$", ``$\geq$" on the integers, for example.  
+
+
+
+\begin{definition} A \emph{relation} on a set $S$ is a subset $R$ of $S \times S$.
+\end{definition}
+
+
+
+For example, the subset $R = \{(a,a) : a \in \Z \}$ of $\Z \times \Z$ is the relation we call equals. If $R$ is a relation on a set $S$, we usually suppress the set notation and write $a \sim b$ if $(a,b) \in R$ and say that $a$ is related to $b$. In this case we often refer to $\sim$ as the relation instead of the set $R$. Sometimes we use familiar symbols for special relations. For example, we write $a = b$ if $(a,b) \in R = \{(a,a) : a \in \Z \}$.
+
+When discussing relations, there are three specific properties that we consider.
+
+\begin{itemize}
+\item A relation $\sim$ on a set $S$ is \emph{reflexive} if $a \sim a$ for all $a \in S$.
+\item A relation $\sim$ on a set $S$ is \emph{symmetric} if whenever $a \sim b$ in $S$ we also have $b \sim a$.
+\item A relation $\sim$ on a set $S$ is \emph{transitive} if whenever $a \sim b$ and $b \sim c$ in $S$ we also have $a \sim c$.
+\end{itemize}
+
+When we use the word ``equivalence", we are referring to an equivalence relation.
+
+
+
+\begin{definition} An \textbf{equivalence relation} is a relation on a set that is reflexive, symmetric, and transitive.  
+\end{definition}
+
+
+
+\begin{activity} ~
+\ba
+\item Explain why metric equivalence is an equivalence relation.
+
+
+
+\item Explain why topological equivalence is an equivalence relation.
+
+
+
+\ea
+
+\end{activity}
+
+
+
+Equivalence relations are important because an equivalence relation on a set $S$ partitions the set into a disjoint union of equivalence classes. Since topological equivalence is an equivalence relation, we can treat the metric spaces that are topologically equivalent to each other as being essentially the same space from a topological perspective. We will discuss  this idea again when we study topological spaces. 
+
+

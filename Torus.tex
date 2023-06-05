@@ -1,0 +1,99 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{graphicx}
+%\usepackage{wrapfig}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{wasysym}
+\usepackage{epstopdf}
+
+% Set margins and page style
+
+\setlength{\oddsidemargin}{-.5 in}
+\setlength{\evensidemargin}{-.4 in}
+\setlength{\textwidth}{7.3 in}
+\setlength{\topmargin}{-0.5 in}
+\setlength{\textheight}{9.0 in}
+
+\pagestyle{empty} \setlength{\parindent}{0 pt}
+
+\newcommand{\ls}{\vspace{1in}}
+\newcommand{\ms}{\vspace{1.5in}}
+\newcommand{\bs}{\vspace{2in}}
+\newcommand{\vs}{\vspace{12pt}}
+\newcommand{\defn}{\noindent \textbf{Definition. }}
+\newcommand{\thm}{\noindent \textbf{Theorem. }}
+\newcommand{\notation}{\noindent \textbf{Notation. }}
+\newcommand{\con}{\noindent \textbf{Connections. }}
+\newcommand{\ter}{\noindent \textbf{Terminology. }}
+\newcommand{\interp}{\noindent \textbf{Interpretations. }}
+\newcommand{\Dom}{\text{Dom}}
+\newcommand{\solution}{\noindent \textbf{Solution. }}
+%\newcommand{\bsq}{\hfill $\ddot\smile$}
+\newcommand{\bsq}{\hfill $\smiley$}
+\newcommand{\ds}{\displaystyle}
+
+\newcounter{cnt2}
+\newenvironment{alphalist}{\vspace*{-3 pt}\begin{list}{(\alph{cnt2})}{\usecounter{cnt2}
+\setlength{\leftmargin}{.5 in}\setlength{\labelwidth}{.25
+in}\setlength{\itemsep}{5 pt}}}{\end{list}}
+\newcommand{\ba}{\begin{alphalist}}
+\newcommand{\ea}{\end{alphalist}}
+
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+% Standard commands
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepgfplotslibrary{colormaps}
+\pgfplotsset{compat=1.6}
+
+\pgfplotsset{
+	%	compat=newest
+	colormap={mycolormap}{color=(lightgray) color=(white) color=(lightgray)}
+}
+
+\pgfplotsset{compat=1.13}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{tikzpicture}
+	\begin{axis}[
+		axis equal image,
+		hide axis,
+		z buffer = sort,
+		view = {122}{30},
+		scale = 1.5
+	]
+		\addplot3[
+			surf,
+			shader = faceted interp,
+			samples = 40,
+			samples y = 80,
+			domain = 0:2*pi,
+			domain y = 0.35:2*pi-0.35,
+%			domain y = 0:2*pi,
+			colormap name = mycolormap,
+			thin,
+		](
+			{(3+sin(deg(\x)))*cos(deg(\y))},
+			{(3+sin(deg(\x)))*sin(deg(\y))},
+			{cos(deg(\x))}
+		);
+	\end{axis}
+\end{tikzpicture}
+
+\end{document}
+

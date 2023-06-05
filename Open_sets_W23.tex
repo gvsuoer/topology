@@ -1,0 +1,715 @@
+\achapter{8}{Open Sets in Metric Spaces}\label{sec:open_sets}
+
+
+\vspace*{-17 pt}
+\framebox{
+\parbox{\dimexpr\linewidth-3\fboxsep-3\fboxrule}
+{\begin{fqs}
+\item What is an open set in a metric space?
+\item What is an interior point of a subset of a metric space? How are interior points related to open sets?
+\item What is the interior of a set? How is the interior of a set related to open sets?
+\item How can we use open sets to determine the continuity of a function?
+\item What important properties do open sets have in relation to unions and intersections?
+\end{fqs}}}
+
+\vspace*{13 pt}
+
+\csection{Introduction}
+
+Consider the interval $(a,b)$ in $\R$ using the Euclidean metric. If $m = \frac{a+b}{2}$, then $(a,b) = B\left(m,\frac{b-a}{2}\right)$, so every open interval is an open ball. As an open ball, an open interval $(a,b)$ is a neighborhood of each of its points. This is the foundation for the definition of an open set in a metric space. 
+
+Recall that we defined a subset $N$ of $X$ to be neighborhood of point $a$ in a metric space $(X,d)$ if $N$ contains an open ball $B(a, \epsilon)$ for some $\epsilon > 0$. We saw that every open ball is a neighborhood of each of its points, and we will now extend that idea to define an \emph{open set} in a metric space.
+
+\begin{definition} A subset $O$ of a metric space $X$ is an \textbf{open set}\index{open set in a metric space} if $O$ is a neighborhood of each of its points.
+\end{definition}
+
+So, by definition, any open ball is an open set. Also by definition, open sets are neighborhoods of each of their points. Open sets are different than non-open sets. For example, $(0,1)$ is an open set in $\R$ using the Euclidean metric, but $[0,1)$ is not. The reason $[0,1)$ is not an open set is that there is no open ball centered at $0$ that is entirely contained in $[0,1)$. So $0$ has a different property than the other points in $[0,1)$. The set $[0,1)$ is a neighborhood of each of the points in $(0,1)$, but is not a neighborhood of $0$. We can think of the points in $(0,1)$ as being in the interior of the set $[0,1)$. This leads to the next definition. 
+
+\begin{definition} Let $A$ be a subset of a metric space $X$. A point $a \in A$ is an \textbf{interior point}\index{interior point in a subset of a metric space} of $A$ if $A$ is a neighborhood of $a$.
+\end{definition}
+
+As we will soon see, open sets can be characterized in terms of interior points. 
+
+\begin{pa} ~
+\be
+\item Determine if the set $A$ is an open set in the metric space $(X,d)$. Explain your reasoning.
+	\ba
+	\item $X = \R$, $d = d_E$, the Euclidean metric, $A = [0,0.5)$.
+
+	\item $X = \{x \in \R \mid 0 \leq x \leq 1\}$, $d = d_E$, the Euclidean metric, $A = [0,0.5)$. Assume that the Euclidean metric is a metric on $X$. 
+
+	\item $X = \{a,b,c,d\}$, $d$ is the discrete metric defined by 
+\[d(x,y) = \begin{cases} 0 &\text{if } x = y \\ 1 &\text{if } x \neq y, \end{cases}\]
+and $A = \{a,b\}$. 
+
+	\ea
+
+\item ~
+	\ba
+	\item What are the interior points of the following sets in $(\R, d_E)$? Explain. 
+	\[(0,1) \ \ \ (0,1] \ \ \ [0,1) \ \ \ [0,1].\]
+
+	\item Let $A = \{0, 1, 2\}$ in $(\R, d_E)$. What are the interior points of $A$? Explain.
+	
+	\item Let $\Q$ be the set of rational numbers in $(\R, d_E)$. What are the interior points of $\Q$? Explain.
+	
+	\ea
+\ee
+
+\end{pa}
+
+\begin{comment}
+
+\ActivitySolution
+
+\be
+\item Determine if the set $A$ is an open set in the metric space $(X,d)$. Explain your reasoning.
+	\ba
+	\item The set $A$ is not an open set in $X$. Note that $0 \in A$, but the open ball of radius $\epsilon$ in $\R$ centered at $0$ has the form $(-\epsilon, \epsilon)$. So not open ball in $\R$ centered at $0$ is entirely contained in $A$. Thus, $A$ is not a neighborhood of $0$ and $A$ is not an open set.  
+
+	\item  The set $A$ is an open set in $X$. Note that every open ball in $X$ must be contained in $X$. So the open ball of radius $0.25$ in $X$ centered at $0$ has the form $[0, 0.25)$, which is entirely contained in $A$. If $a$ is any point of $A$ other than $0$, then the open ball centered at $a$ of radius $\min\{a, 0.5-a\}$ is contained in $A$. So $A$ is a neighborhood of each of its points and $A$ is an open set. 
+
+	\item  Notice that if $x \in X$, then $B(x, 0.5) = \{x\}$. So $A$ contains the open balls $B(a, 0.5)$ and $B(b, 0.5)$. Thus, $A$ is a neighborhood of each of its points and $A$ is an open set. 
+
+	\ea
+
+\item ~
+	\ba
+	\item  If $0 < a < 1$, then each of these sets contains the ball $B(a, \min\{a, 1-a\})$. So every point in $(0,1)$ is an interior point of each set. Note that any open ball $B(0,r)$ contains $-\frac{r}{2}$ and any open ball $B(1,r)$ contains the point $1+\frac{r}{2}$. These points are not in any of the sets, so $0$ and $1$ are not interior points of any of these sets.
+
+	\item Let $r > 0$. Since $B(0,r)$ contains $\min\left\{0.25, \frac{r}{2}\right\}$, $B(1,r)$ contains $\min\left\{1.25, 1+\frac{r}{2}\right\}$, and $B(2,r)$ contains $\min\left\{2.25, 2+\frac{r}{2}\right\}$, we see that no point in $A$ is an interior point of $A$. 
+	
+	\item  Let $q \in \Q$, and let $r > 0$. If $r$ is irrational, the ball $B(q,r)$ contains the irrational number $q+\frac{r}{2}$. If $r$ is rational, then the ball $B(q,r)$ contains the irrational number $q+\frac{r}{2\pi}$. In either case, the ball $B(q,r)$ contains a number that is not in $\Q$. Thus, no point of $\Q$ is an interior point of $\Q$.  
+	
+	\ea
+\ee
+
+
+\end{comment}
+
+
+\csection{Open Sets}
+
+Open sets are vitally important in topology. In fact, we will see later that every topological space is completely defined by its open sets. Recall that an open ball is an open set. There are other subsets that every metric space contains, and we might ask if they are open or not.  
+
+\begin{activity} Let $X$ be a metric space.
+\ba
+\item Is $\emptyset$ an open set in $X$? Explain.
+
+\item Is $X$ an open set in $X$? Explain.
+
+\ea
+
+\end{activity}
+
+\begin{comment}
+
+\ActivitySolution
+
+\ba
+\item Since $\emptyset$ contains no points, it follows that $\emptyset$ is a neighborhood of each of its points. So $\emptyset$ is an open set. 
+
+\item Let $a \in X$. For any $\epsilon > 0$, the ball $B(a,\epsilon)$ is a subset of $X$. Thus, $X$ is a neighborhood of each of its points and $X$ is an open set in $X$. 
+
+\ea
+
+\end{comment}
+
+
+We have defined open balls, and open balls are the canonical examples of open sets. In fact, as the following theorem shows, the open balls determine the open sets.
+
+\begin{theorem} \label{thm:OS_1} Let $X$ be a metric space. A subset $O$ of $X$ is open if and only if $O$ is a union of open balls.
+\end{theorem}
+
+\begin{proof} Let $X$ be a metric space and $O$ a subset of $X$. To prove this biconditional statement we first assume that $O$ is an open set and demonstrate that $O$ is a union of open balls. Let $a \in O$. Since $O$ is open, there exists $\epsilon_a > 0$ so that $B(a, \epsilon_a) \subseteq O$. We will show that 
+\[O = \bigcup_{a \in O} B(a, \epsilon_a).\]
+By the way we chose $\epsilon_a$, $B(a, \epsilon_a) \subseteq O$ for every $a \in O$. So $\bigcup_{a \in O} B(a, \epsilon_a) \subseteq O$. For the reverse containment, let $x \in O$. Then $x \in B(x, \epsilon_x)$ and so $x \in \bigcup_{a \in O} B(a, \epsilon_a)$. Thus, $O \subseteq \bigcup_{a \in O} B(a, \epsilon_a)$. We conclude that $O$ is a union of open balls if $O$ is an open set.
+
+The proof of the converse is left for the following activity.
+\end{proof}
+
+
+\begin{activity} Let $X$ be a metric space. To prove the remaining implication of Theorem \ref{thm:OS_1}, assume that a subset $O$ of $X$ is a union of open balls. 
+\ba
+\item What do we need to show to prove that $O$ is an open set?
+
+\item Let $x \in O$. Why is there an open ball $B$ in $O$ that contains $x$?
+
+\item Complete the proof to show that $O$ is an open set.
+
+\ea
+
+\end{activity}
+
+\begin{comment}
+
+\ActivitySolution
+\ba
+\item We need to show that $O$ is a neighborhood of each of its points. 
+
+\item Let $x \in O$. Since $O$ is a union of open balls, there must be an open ball $B$ in $O$ that contains $x$.  
+
+\item Since every ball is a neighborhood of each of its points, there exists $\epsilon > 0$ such that $B(x, \epsilon) \subseteq B \subseteq O$. Thus, $O$ is a neighborhood of each of its points and is therefore an open set.
+
+\ea
+
+\end{comment}
+
+Theorem \ref{thm:OS_1} tells us that every open set is made up of open balls, so the open balls generate all open sets much like a basis of a vector space in linear algebra generates all of the elements of the vector space. For this reason we call the set of open balls in a metric space a \emph{basis} for the open sets of the metric space. We will discuss this idea in more detail in a subsequent section.
+
+\csection{Unions and Intersections of Open Sets}
+
+Once we have defined open sets we might wonder about what happens if we take a union or intersection of open sets. 
+
+\begin{activity} \label{act:Open_union} ~
+\ba
+\item Let $A = (-2,1)$ and $B = (-1,2)$ in $(\R, d_E)$. 
+	\begin{enumerate}[i.]
+	\item Is $A \cup B$ open? Explain.
+		
+	\item Is $A \cap B$ open? Explain.
+		
+	\end{enumerate}
+	
+\item Let $X = \R$ with the Euclidean metric. Let $A_n = \left(1-\frac{1}{n}, 1+\frac{1}{n}\right)$ for each $n \in \Z^+$.
+	\begin{enumerate}[i.]
+	\item What is $\bigcup_{n \geq 1} A_n$? A proof is not necessary.
+			
+	\item Is $\bigcup_{n \geq 1} A_n$ open in $\R$? Explain.
+	
+	\item What is $\bigcap_{n \geq 1} A_n$? A proof is not necessary.
+			
+	\item Is $\bigcap_{n \geq 1} A_n$ open in $\R$? Explain.
+		
+	\end{enumerate}
+
+\ea
+
+\end{activity}
+
+\begin{comment}
+
+\ActivitySolution
+
+\ba
+\item Let $A = (-2,1)$ and $B = (-1,2)$ in $(\R, d_E)$. 
+	\begin{enumerate}[i.]
+	\item Let $a \in A \cup B$. Then $a \in (-2,1)$ or $a \in (-1,2)$. These open intervals are open balls, and so are neighborhoods of each of their points. Thus, $A \cup B$ is a neighborhood of each of its points. 
+		
+	\item In this case we have $A \cap B = (-1,1)$. Since $(-1,1)$ is an open ball, $(-1,1)$ is a neighborhood of each of its points. Thus, $A \cap B$ is a neighborhood of each of its points and $A \cap B$ is an open set. 
+		
+	\end{enumerate}
+	
+\item Let $X = \R$ with the Euclidean metric. Let $A_n = \left(1-\frac{1}{n}, 1+\frac{1}{n}\right)$ for each $n \in \Z^+$.
+	\begin{enumerate}[i.]
+	\item When $n = 1$ the interval is $(0,2)$. All intervals for $n > 1$ are contained in $(0,2)$, so $\bigcup_{n \geq 1} A_n = (0,2)$.
+			
+	\item Since $\bigcup_{n \geq 1} A_n$ is an open ball, it is also an open set $\R$? 
+	
+	\item Each interval $\left(1-\frac{1}{n}, 1+\frac{1}{n}\right)$ contains 1. However, we can make $n$ larger enough so that any integer not equal to 1 is not in $\left(1-\frac{1}{n}, 1+\frac{1}{n}\right)$. So $\bigcap_{n \geq 1} A_n = \{1\}$. 
+			
+	\item There is no open ball of positive radius contained in $\bigcap_{n \geq 1} A_n$, so $\bigcap_{n \geq 1} A_n$ is not open in $\R$.
+		
+	\end{enumerate}
+	
+
+\ea
+
+\end{comment}
+
+Activity \ref{act:Open_union} demonstrates that an arbitrary intersection of open sets is not necessarily open. However, there are some things we can say about unions and intersections of open sets.
+
+\begin{theorem} Let $X$ be a metric space.
+\begin{enumerate}
+\item Any union of open sets in $X$ is an open set in $X$.
+\item Any finite intersection of open sets in $X$ is an open set in $X$. 
+\end{enumerate}
+\end{theorem}
+
+\begin{proof} Let $X$ be a metric space. To prove part 1, assume that $\{O_{\alpha}\}$ is a collection of open sets in $X$ for $\alpha$ in some indexing set $I$ and let $O = \bigcup_{\alpha \in I} O_{\alpha}$. By Theorem \ref{thm:OS_1}, we know that $O_{\alpha}$ is a union of open balls for each $\alpha \in I$. Combining all of these open balls together shows that $O$ is a union of open balls and is therefore an open set by Theorem \ref{thm:OS_1}. 
+
+For part 2, assume that $O_1$, $O_2$, $\ldots$, $O_n$ are open sets in $X$ for some $n \in \Z^+$. To show that $O = \bigcap_{k=1}^n O_k$ is an open set, we will show that $O$ is a neighborhood of each of its points. Let $x \in O$. Then $x \in O_k$ for each $1 \leq k \leq n$. Let $k$ be between 1 and $n$. Since $O_k$ is open, we know that $O_k$ is a neighborhood of each of its points. So there exists $\epsilon_k > 0$ such that $B(x, \epsilon_k) \subseteq O_k$. Since there are only finitely many values of $k$, let $\epsilon = \min\{\epsilon_k \mid 1 \leq k \leq n\}$. Then $B(x, \epsilon) \subseteq B(x, \epsilon_k)$ for each $k$ and so $B(x, \epsilon) \subseteq \bigcap_{k=1}^n O_k = O$. Therefore, $O$ is a neighborhood of each of its points and $O$ is an open set.
+\end{proof}
+
+
+\csection{Continuity and Open Sets}
+Recall that we showed that a function $f$ from a metric space $(X,d_X)$ to a metric space $(Y,d_Y)$ is continuous if and only if $f^{-1}(N)$ is a neighborhood of $a \in X$ whenever $N$ is a neighborhood of $f(a)$ in $Y$. We can now provide another characterization of continuous functions in terms of open sets. This is the characterization that will serve as our definition of continuity in topological spaces.
+
+\begin{theorem} \label{thm:Open_continuity} Let $f$ be a function from a metric space $(X,d_X)$ to a metric space $(Y,d_Y)$. Then $f$ is continuous if and only if $f^{-1}(O)$ is an open set in $X$ whenever $O$ is an open set in $Y$.  
+\end{theorem}
+
+\begin{proof} Let $(X, d_X)$ and $(Y,d_Y)$ be metric spaces, and let $f : X \to Y$ be a function. To prove this biconditional statement we need to prove both implications. First assume that $f$ is a continuous function. We must show that $f^{-1}(O)$ is an open set in $X$ for every open set $O$ in $Y$. So let $O$ be an open set in $Y$. To demonstrate that $f^{-1}(O)$ is open in $X$, we will show that $f^{-1}(O)$ is a neighborhood of each of its points. Let $a \in f^{-1}(O)$. Then $f(a) \in O$. Now $O$ is an open set, so there is an open ball $B(f(a), \epsilon)$ around $f(a)$ that is entirely contained in $O$. Since $B(f(a), \epsilon)$ is a neighborhood of $f(a)$, we know that $f^{-1}(B(f(a), \epsilon))$ is a neighborhood of $a$. Thus, there exists $\delta > 0$ so that $B(a, \delta) \subseteq f^{-1}(B(f(a), \epsilon))$. Now $f(B(a, \delta)) \subseteq B(f(a), \epsilon) \subseteq O$, and so $B(a, \delta) \subseteq f^{-1}(O)$. We conclude that $f^{-1}(O)$ is a neighborhood of each of its points and is therefore an open set in $X$.
+
+The proof of the reverse implication is left for the next activity.
+\end{proof}
+
+
+\begin{activity} Let $f$ be a function from a metric space $(X,d_X)$ to a metric space $(Y,d_Y)$. 
+\ba
+\item What assumption do we make to prove the remaining implication of Theorem \ref{thm:Open_continuity}? What do we need to demonstrate to prove the conclusion?
+
+\item Let $a \in X$, and let $N$ be a neighborhood of $f(a)$ in $Y$. Why does there exist an $\epsilon > 0$ so that $B(f(a), \epsilon) \subseteq N$.
+
+\item What does our hypothesis tell us about $f^{-1}(B(f(a), \epsilon))$ in $X$?
+
+\item Why is $f^{-1}(N)$ a neighborhood of $a$? How does this show that $f$ is a continuous function? 
+
+\ea
+
+\end{activity}
+
+\begin{comment}
+
+\ActivitySolution
+
+\ba
+\item We assume that $f^{-1}(O)$ is an open set in $X$ whenever $O$ is an open set in $Y$. We need to show that for any $a \in X$, $f^{-1}(N)$ is a neighborhood of $a$ whenever $N$ is a neighborhood of $f(a)$. 
+
+\item By definition of a neighborhood, there exists an $\epsilon > 0$ so that $B(f(a), \epsilon) \subseteq N$.
+
+\item Now $B(f(a), \epsilon)$ is an open set in $Y$, so $f^{-1}(B(f(a), \epsilon))$ is an open set in $X$ by hypothesis.
+
+\item  Every open set is a neighborhood of each of its points, and $a \in f^{-1}(B(f(a), \epsilon))$, so there exists $\delta > 0$ such that $B(a, \delta) \subseteq f^{-1}(B(f(a), \epsilon))$. Now $f(B(a, \delta)) \subseteq B(f(a), \epsilon) \subseteq N$, so $B(a, \delta) \subseteq f^{-1}(N)$. We conclude that $f^{-1}(N)$ is a neighborhood of $a$ and so $f$ is a continuous function. 
+
+\ea
+
+\end{comment}
+
+Recall that every open set is a union of open balls, so we can simplify proofs of continuous functions in metric spaces by working only with open balls instead of arbitrary open sets. The next activity provides the details.
+
+\begin{activity} \label{act:continuity_balls} In this activity we prove the following corollary to Theorem \ref{thm:Open_continuity}.
+
+\begin{corollary} \label{cor:continuity_balls} A function $f$ from a metric space $(X,d_X)$ to a metric space $(Y,d_Y)$ is continuous if and only if $f^{-1}(B)$ is open in $X$ whenever $B$ is an open ball in $Y$.
+\end{corollary}
+
+To set up the proof, let $(X,d_X)$ and $(Y,d_Y)$ be metric spaces, and let $f: X \to Y$ be a function.
+
+	\ba
+
+	\item Since the corollary is a biconditional statement, we need to prove both implications. First, assume that $f$ is continuous. Use Theorem \ref{thm:Open_continuity} to explain why $f^{-1}(B)$ is open in $X$ whenever $B$ is an open ball in $Y$. 
+
+\item For the remaining implication, assume that $f^{-1}(B)$ is an open set in $X$ for any open ball $B$ in $Y$. To show that $f$ is a continuous function, we will use Theorem \ref{thm:Open_continuity} and show that $f^{-1}(O)$ is open in $X$ whenever $O$ is an open set in $Y$. So let $O$ be an open set in $Y$. 
+	\begin{enumerate}[i.]
+	\item What does Theorem \ref{thm:OS_1} tell us about $O$. 
+	
+	\item Recall that Lemma \ref{lem:functions_subsets} tells us that if $\{B_{\beta}\}$ is a collection of subsets of $Y$ for $\beta$ in some indexing set $J$, then \[f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right) = \bigcup_{\beta \in J} f^{-1}(B_{\beta}).\]
+ Use Lemma \ref{lem:functions_subsets} to show that $f^{-1}(O)$ is open in $X$ and conclude that $f$ is a continuous function. 
+ 
+ 	\end{enumerate}
+
+	\ea
+	
+\end{activity}
+
+\begin{comment}
+
+\ActivitySolution
+
+\ba
+
+\item Since $B$ is an open set and $f$ is continuous, Theorem shows that $f^{-1}(B)$ is an open set in $X$.
+
+\item 
+	\begin{enumerate}[i.]
+	\item Theorem \ref{thm:OS_1} tells us that $O = \bigcup_{t \in I}B(t, \alpha_t)$ is a union of open balls in $Y$ for $t$ in some indexing set $I$. 
+	
+	\item By Lemma \ref{lem:functions_subsets} we have 
+\[f^{-1}(O) = f^{-1}\left( \bigcup_{t \in I} B(t, \alpha_t) \right) = \bigcup_{t \in I} f^{-1}(B(t, \alpha_t)).\]
+By hypothesis, $f^{-1}(B(t, \alpha_t)$ is an open set in $X$. Therefore, $f^{-1}(O)$ is a union of open sets in $X$ and so $f^{-1}(O)$ is open in $X$. We conclude that $f$ is a continuous function. 
+
+	\end{enumerate}
+
+\ea
+
+\end{comment}
+
+\begin{example} \label{exp:linear_continuous}  As an example of Corollary \ref{cor:continuity_balls}, we prove that the square function from $\R$ to $\R$ is a continuous function. Let $X = \R$ with the Euclidean metric $d_E$, and let $f: X \to X$ be defined by $f(x) = x^2$. We will show that $f$ is a continuous function by verifying that $f^{-1}(B)$ is open in $X$ for every open ball $B$ in $X$. Let $B = B(b,\beta) = (b-\beta, b+\beta)$ be an open ball in $X$. Let $B' = B(b,\beta) \cap (\R^+ \cup \{0\})$. We consider cases.
+\begin{itemize}
+\item Suppose that $B' = \emptyset$. Then $f^{-1}(B) = \emptyset$ and $f^{-1}(B)$ is open in $X$.  
+\item Suppose that $B' = [0, b+\beta)$. Then $f^{-1}(B) = (-\sqrt{b+\beta}, \sqrt{b+\beta})$ and $f^{-1}(B)$ is open in $X$. 
+\item The final case is $B' = (b-\beta, b+\beta)$. Then 
+\[f^{-1}(B) = (-\sqrt{b+\beta}, -\sqrt{b-\beta}) \cup (\sqrt{b-\beta}, \sqrt{b+\beta})\]
+and $f^{-1}(B)$ is open in $X$. \end{itemize}
+Since the inverse image of every open ball is an open set, we conclude that $f$ is a continuous function.
+\end{example}
+
+
+\csection{The Interior of a Set}
+
+Open sets can be characterized in terms of their interior points. By definition, every open set is a neighborhood of each of its points, so every point of an open set $O$ is an interior point of $O$. Conversely, if every point of a set $O$ is an interior point, then $O$ is a neighborhood of each of its points and is open. This argument is summarized in the next theorem. 
+
+\begin{theorem} Let $X$ be a metric space. A subset $O$ of $X$ is open if and only if every point of $O$ is an interior point of $O$. 
+\end{theorem}
+
+The collection of interior points in a set form a subset of that set, called the \emph{interior} of the set.
+
+\begin{definition} The \textbf{interior}\index{interior of a set} of a subset $A$ of a metric space $X$ is the set
+\[\Int(A) = \{a \in A \mid a \text{ is an interior point of } A\}.\]
+\end{definition}
+
+\begin{activity} Determine $\Int(A)$ for each of the sets $A$.
+\ba
+\item $A = (0,1]$ in $(\R, d_E)$
+
+\item $A = [0,1]$ in $(\R, d_E)$
+
+\item $A = \{-2\} \cup [0,5] \cup \{7,8,9\}$ in $(\R,d_E)$
+
+\ea
+\end{activity}
+
+\begin{comment}
+
+\ActivitySolution
+\ba
+\item The interior of $A$ is the set $(0,1)$. 
+
+\item The interior of $A$ is the set $(0,1)$. 
+
+\item There are no open ball containing $-2$, $7$, $8$, or $9$ that is entirely contained in $A$. So the interior of $A$ is the set $(0,5)$. 
+
+\ea
+
+\end{comment}
+
+One might expect that the interior of a set is an open set. This is true, but we can say even more. As Theorem \ref{thm:Interior_MS} will show, if $A$ is a subset of a metric space $X$, not only is $\Int(A)$ an open set, but every open set that is contained in $A$ is a subset of $\Int(A)$. So $\Int(A)$ is the largest, in the sense of containment, open subset of $X$ that contains $A$. 
+
+\begin{theorem} \label{thm:Interior_MS} Let $(X,d)$ be a metric space, and let $A$ be a subset of $X$. Then interior of $A$ is the largest open subset of $X$ contained in $A$.  
+\end{theorem}
+
+\begin{proof} Let $(X,d)$ be a metric space, and let $A$ be a subset of $X$. We need to prove that $\Int(A)$ is an open set in $X$, and that $\Int(A)$ is the largest open subset of $X$ contained in $A$. First we demonstrate that $\Int(A)$ is an open set. Let $a \in \Int(A)$. Then $a$ is an interior point of $A$, so $A$ is a neighborhood of $a$. This implies that there exists an $\epsilon > 0$ so that $B(a, \epsilon) \subseteq A$. But $B(a, \epsilon)$ is a neighborhood of each of its points, so every point in $B(a, \epsilon)$ is an interior point of $A$. It follows that $B(a, \epsilon) \subseteq \Int(A)$. Thus, $\Int(A)$ is a neighborhood of each of its points and, consequently, $\Int(A)$ is an open set. 
+
+The proof that $\Int(A)$ is the largest open subset of $X$ contained in $A$ is left for the next activity.
+\end{proof}
+
+\begin{activity} Let $(X,d)$ be a metric space, and let $A$ be a subset of $X$. 
+\ba
+\item What will we have to show to prove that $\Int(A)$ is the largest open subset of $X$ contained in $A$?
+
+\item Suppose that $O$ is an open subset of $X$ that is contained in $A$, and let $x \in O$. What does the fact that $O$ is open tell us?
+
+\item Complete the proof that $O \subseteq \Int(A)$.
+
+\ea
+
+\end{activity}
+
+
+\begin{comment}
+
+\ActivitySolution
+
+\ba
+\item We need to prove that any open subset of $X$ that is contained in $A$ is a subset of $\Int(A)$.
+
+\item The fact that $O$ is an open set tells us that there exists an open ball $B$ centered at $x$ that is contained in $O$. 
+
+\item Then $B \subseteq A$ and $A$ is a neighborhood of $x$. So $x \in \Int(A)$. Therefore, $O \subseteq \Int(A)$ and $\Int(A)$ is the largest open subset of $X$ contained in $A$. 
+
+\ea
+
+\end{comment}
+
+One consequence of Theorem \ref{thm:Interior_MS} is the following.
+
+\begin{corollary} A subset $O$ of a metric space $X$ is open if and only if $O = \Int(O)$. 
+\end{corollary}
+ 
+The proof is left for Exercise (\ref{ex:O_int_O}).
+
+\csection{Summary}
+Important ideas that we discussed in this section include the following.
+\begin{itemize}
+\item A subset $O$ of a metric space $(X,d)$ is an open set if $O$ is a neighborhood of each of its points. Alternatively, $O$ is open if $O$ is a union of open balls.
+\item A point $a$ in a subset $A$ of a metric space $(X,d)$ is an interior point of $A$ if $A$ is a neighborhood of $a$. A set $O$ is open if every point of $O$ is an interior point of $O$. 
+\item The interior of a set is the set of all interior points of the set. The interior of a set $A$ in a metric space $X$ is the largest open subset of $X$ contained in $A$. A set is open if and only if the set is equal to its interior. 
+\item A function $f$ from a metric space $X$ to a metric space $Y$ is continuous if $f^{-1}(O)$ is open in $X$ whenever $O$ is open in $Y$. 
+\item Any union of open sets is open, while any finite intersection of open sets is open.
+\end{itemize}
+
+\csection{Exercises}
+
+\be
+
+\item Let $d$ be the discrete metric. Let $(X,d)$ be a metric space. 
+	\ba
+	
+	\item Show that every subset of $X$ is open.
+		
+	\item Let $(Y, d_Y)$ be a metric space. Prove that every function $f: X \to Y$ is continuous. 
+	
+	\item Is it also true that every function $f: Y \to X$ is continuous? If yes, prove your answer. If no, find a counterexample. 
+
+	\ea
+	
+\begin{comment}
+
+\ExerciseSolution
+
+	\ba
+	\item Let $A$ be a subset of $X$ and let $a \in A$. Then $B(a, 1) = \{a\} \subset A$, and so $A$ is a neighborhood of each of its points. Therefore, $A$ is open. 
+
+	\item Now let $f : X \to Y$ be a function. Let $O$ be an open subset of $Y$. Since every subset of $X$ is open (using the discrete metric), we see that $f^{-1}(O)$ is an open set in $X$, and $f$ is continuous. So every function $f: X \to Y$ is continuous if $X$ has the discrete metric. 
+
+	\item This statement is not true. Let $X = Y = \R$, with the discrete metric on $X$ and the Euclidean metric on $Y$. Let $f : Y \to X$ be the identity function: $f(y) = y$ for all $y \in Y$. The set $\{0\}$ is open in $X$, but $f^{-1}(O) = \{0\}$ is not an open set in $Y$ because $\{0\}$ is not a neighborhood of $0$  
+		\ea
+	
+\end{comment}
+
+
+
+\item \label{ex:O_int_O} Prove that a subset $O$ of a metric space $X$ is open if and only if $O = \Int(O)$. 
+
+\begin{comment}
+
+\ExerciseSolution Suppose $O$ is open. We show that $O = \Int(O)$. By definition, $\Int(O) \subseteq O$, so we only need to show that $O \subseteq \Int(O)$. Let $x \in O$. Since $O$ is open, there is an open ball $B$ that contains $x$ that is a subset of $O$. Thus, $O$ is a neighborhood of $x$ and so $x \in \Int(O)$. We conclude that $O = \Int(O)$. 
+
+Now suppose that $O = \Int(O)$. To show that $O$ is open, we demonstrate that $O$ is a neighborhood of each of its points. Let $x \in O$. Then $x \in \Int(O)$ and $x$ is an interior point of $O$. This means that $O$ is a neighborhood of $x$ and so $O$ is a neighborhood of each of its points. This shows that $O$ is open. 
+
+\end{comment}
+
+\item Let $A$ and $B$ be subsets of a metric space $X$ with $A \subseteq B$. Prove or disprove the following.
+\ba
+
+\item  $\Int(A) \subseteq \Int(B)$
+
+\item $\Int(\Int(A)) = \Int(A)$
+
+\ea
+
+\begin{comment}
+
+\ExerciseSolution
+
+\ba
+
+\item Let $x \in \Int(A)$. Then there exists $r > 0$ such that $B = B(a,r) \subseteq A \subseteq(B)$. So $x \in \Int(B)$ and $\Int(A) \subseteq \Int(B)$.
+
+\item Since $\Int(A)$ is an open set, it is equal to its interior. Therefore, $\Int(\Int(A)) = \Int(A)$.
+
+\ea
+
+
+\end{comment}
+
+
+\item Let $a, b \in \R$ with $a < b$. Show that the set $(a,b]$ in $(\R, d_E)$ is not an open set. 
+
+\begin{comment}
+
+\ExerciseSolution Consider the point $b$. Any open ball $B(b,r)$ with $r > 0$ contains the point $b+\frac{r}{2}$, which is not in $(a,b]$. So $b \notin \Int((a,b])$ and $(a,b]$ is not an open set. 
+
+\end{comment}
+
+\item Let $A = \{(x,y) \in \R^2 \mid 1 < x < 3, 0 < y < 1\}$. 
+
+\ba
+\item Is $A$ an open set in $(\R^2, d_E)$? Prove your answer. 
+
+\item Is $A$ an open set in $(\R^2, d_T)$? Prove your answer. 
+
+\item Is $A$ an open set in $(\R^2, d_M)$? Prove your answer. 
+
+\ea
+
+\begin{comment}
+
+\ExerciseSolution
+
+\ba
+\item The answer is yes. Let $a = (x,y)$ in $A$ and let $r = \min\{|x-1|, |x-3|, |y|, |y-1|\}$. If $z = (z_1,z_2) \in B(a,r)$, then 
+\[|x-z_1| = \sqrt{(x-z_1)^2} \leq \sqrt{(x-z_1)^2 + (y-z_2)^2} = d_E(a,z) < r\] 
+and
+\[|y-z_2| = \sqrt{(y-z_1)^2} \leq \sqrt{(x-z_1)^2 + (y-z_2)^2} = d_E(a,z) < r.\]
+Since $r \leq |x-1|$ and $r \leq |x-3|$, it follows that $z_1$ is closer to $x$ than either 1 or 3. That is, $1 < z_1 < 3$. Similarly, $r < |y|$ and $r < |y-1|$ implies that $0 < z_2 < 1$. So $B(a,r) \subseteq A$ and $a$ is an interior point of $A$. We conclude that $A$ is an open set. 
+
+\item The answer is yes. Let $a = (x,y)$ in $A$ and let $r = \min\{|x-1|, |x-3|, |y|, |y-1|\}$. If $z = (z_1,z_2) \in B(a,r)$, then 
+\[|x-z_1| = \leq |x-z_1| + |y-z_2| = d_T(a,z) < r\] 
+and
+\[|y-z_2|  \leq |x-z_1| + |y-z_2| = d_T(a,z) < r.\]
+Since $r \leq |x-1|$ and $r \leq |x-3|$, it follows that $z_1$ is closer to $x$ than either 1 or 3. That is, $1 < z_1 < 3$. Similarly, $r < |y|$ and $r < |y-1|$ implies that $0 < z_2 < 1$. So $B(a,r) \subseteq A$ and $a$ is an interior point of $A$. We conclude that $A$ is an open set.  
+
+\item The answer is yes. Let $a = (x,y)$ in $A$ and let $r = \min\{|x-1|, |x-3|, |y|, |y-1|\}$. If $z = (z_1,z_2) \in B(a,r)$, then 
+\[|x-z_1| = \leq \max\{|x-z_1|, |y-z_2|\} = d_M(a,z) < r\] 
+and
+\[|y-z_2|  \leq \max\{|x-z_1|, |y-z_2|\} = d_M(a,z) < r.\]
+Since $r \leq |x-1|$ and $r \leq |x-3|$, it follows that $z_1$ is closer to $x$ than either 1 or 3. That is, $1 < z_1 < 3$. Similarly, $r < |y|$ and $r < |y-1|$ implies that $0 < z_2 < 1$. So $B(a,r) \subseteq A$ and $a$ is an interior point of $A$. We conclude that $A$ is an open set.  
+
+\ea
+
+\end{comment}
+
+
+\item Let $S$ be a finite set of points in $\R^2$. Is the set $\R^2 \setminus A$ an open set in $(\R^2, d_E)$? Prove your answer.
+
+\begin{comment}
+
+\ExerciseSolution The answer is yes. Let $S = \{s_1, s_2, \ldots, s_k\}$ for some positive integer $k$. Let $a \in \R^2 \setminus A$ and let $r = \min\{d_E(a,s_1), d_E(a,s_2), \ldots, d_E(a,s_k)\}$. Since $d_E(a,s_i) \geq r$ for each $i$, it follows that $B(a,r) \subseteq \R^2 \setminus S$. So $a$ is an interior point of $\R^2 \setminus S$ and $\R^2 \setminus S$ is an open set.  
+
+\end{comment} 
+
+\item Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces and let $f: X \to Y$ be a function. Prove that $f$ is continuous if and only if $f^{-1}(\Int(B)) \subseteq \Int(f^{-1}(B))$ for every subset $B$ of $Y$.
+
+\begin{comment}
+
+\ExerciseSolution First suppose that $f$ is continuous. Let $B$ be a subset of $Y$. The fact that $\Int(B)$ is a subset of $B$ implies that $f^{-1}(\Int(B)) \subseteq f^{-1}(B)$. Now $\Int(B)$ is an open set in $Y$, so $f^{-1}(\Int(B))$ is open in $X$. Thus, every point in $f^{-1}(\Int(B))$ is in $\Int(f^{-1}(B))$ and it follows that $f^{-1}(\Int(B)) \subseteq \Int(f^{-1}(B))$.
+
+Now assume that $f^{-1}(\Int(B)) \subseteq \Int(f^{-1}(B))$ for every subset $B$ of $Y$. Let $O$ be an open set in $Y$. Then $O = \Int(O)$ and so $f^{-1}(O) = f^{-1}(\Int(O)) \subseteq \Int(f^{-1}(O))$. Now $\Int(f^{-1}(O)) \subseteq f^{-1}(O)$, so we conclude that  
+$f^{-1}(O) = \Int(f^{-1}(O))$. Therefore, $f^{-1}(O)$ is an open set and $f$ is a continuous function.
+
+\end{comment}
+
+
+\item Consider the metric space $(Q,d)$, where $d : Q \times Q \to \R$ is defined by 
+\[d\left(\frac{a}{b}, \frac{u}{v}\right) = \max\{| a-u |, | b-v |\}\]
+(The fact that $d$ is a metric is the topic of Exercise \ref{ex:MS_Q_metric} on \pageref{ex:MS_Q_metric}.) Describe the open ball $B(q,2)$ in $Q$ if $q = \frac{2}{5}$.
+
+\begin{comment}
+
+\ExerciseSolution The element $\frac{u}{v}$ in $Q$ is in $B(q,2)$ if 
+\[d\left(\frac{2}{5}, \frac{u}{v}\right) = \max\{|a-u|, |b-v|\} < 2.\]
+So $|2-u|< 2$ and $|5-v|< 2$. This makes $0 < u < 4$ and $3 < v < 7$. But $u$ and $v$ are integers with no common factors, so
+\[B(q,2) = \left\{\frac{1}{4}, \frac{1}{4}, \frac{1}{6}, \frac{2}{5}, \frac{3}{4}, \frac{3}{5} \right\}.\] 
+
+\end{comment}
+
+\item Let $(X,d)$ be a metric space and let $x_1$ and $x_2$ be distinct points in $X$. Prove that there are open sets $O_1$ containing $x_1$ and $O_2$ containing $x_2$ such that $O_1 \cap O_2 = \emptyset$. (This shows that we can separate points in metric spaces with open sets. Separation properties are important in topology.)
+
+\begin{comment}
+
+\ExerciseSolution Let $(X,d)$ be a metric space and let $x_1$ and $x_2$ be distinct points in $X$. Let $r = \frac{d(x_1,x_2)}{2}$. We know that the open balls $O_1 = B(x_1,r)$ and $O_2 = B(x_2,r)$ are neighborhoods of $x_1$ and $x_2$, respectively. Now we show that $O_1 \cap O_2 = \emptyset$. Suppose $x \in O_1 \cap O_2$. Then $d(x,x_1) < r$ and $d(x_2,x) < r$. This makes
+\[d(x_1,x_2) \leq d(x_1,x) + d(x,x_2) < r+r = d(x_1,x_2).\]
+This contradiction shows that $O_1 \cap O_2 = \emptyset$. 
+
+\end{comment}
+
+\item \label{ex:linear_continuous} Let $X = \R$ with the Euclidean metric $d_E$, and let $Y = \R$ with the metric $d$ defined by $d(x,y) = \frac{|x-y|}{|x-y|+1}$ (that $d$ is a metric is the subject of Exercise (\ref{ex:1_over_1_plus_t_metric}) on \pageref{ex:1_over_1_plus_t_metric}).  Let $a$ and $b$ be real numbers and let $f:\R \to \R$ be defined by $f(x) = ax+b$. That is, $f$ is an arbitrary linear function from $\R$ to $\R$.
+
+\ba
+
+\item Describe the open balls in $(Y, d)$.  That is, if $a$ is a real number and $\delta$ is a positive real number, what is the specific set of points in $B(a, \delta)$ in $Y$?
+
+\item Is $f$ from $X$ to $Y$ continuous for any real numbers $a$ and $b$? Prove your answer.
+
+\item Is $f$ from $Y$ to $X$ continuous for any real numbers $a$ and $b$? Prove your answer.
+
+\ea
+
+\begin{comment}
+
+\ExerciseSolution 
+
+\ba
+
+\item Let $c \in \R$ and let $\delta$ be a positive real number. Notice that for any real numbers $x$ and $y$ we have $|x-y|< 1 + |x-y|$, so $d(x,y) =  \frac{|x-y|}{|x-y|+1} < 1$. So if $\delta \geq 1$, then $B(c,\delta) = \R$. If $\delta < 1$, then $d(c,x) < \delta$ implies that 
+\begin{align*}
+\frac{|x-c|}{|x-c|+1} &< \delta \\
+|x-c| &< \delta(|x-c|+1) \\
+|x-c|(1-\delta) &< \delta \\
+|x-c| &< \frac{\delta}{1-\delta}.
+\end{align*}
+So $B(c, \delta)$ is the interval $\left(c-\frac{\delta}{1-\delta}, c+\frac{\delta}{1-\delta} \right)$ in $\R$. 
+
+\item Let $B = B(c,\delta)$ be an open ball in $Y$. By part (a), $B(c, \delta) = \left(c-\frac{\delta}{1-\delta}, c+\frac{\delta}{1-\delta} \right)$, which is an open ball in $X$. So $f^{-1}(B)$ is open in $X$ and $f$ is a continuous function. 
+
+\item Let $B = B(t,\delta) = (t-\delta, t+\delta)$ be an open ball in $X$. The fact that $f$ is a bijection implies that $f^{-1}(t-\delta, t+\delta)$ is the interval $I$ in $\R$ with endpoints $\frac{t+b-\delta}{a}$ and $\frac{t+b+\delta}{a}$ and length $2\frac{\delta}{|a|}$. 
+
+We will write $I$ as a union of open balls in $Y$. Let $n \in \Z^+$ such that $\frac{\delta}{n|a|} < 1$. Let $\alpha= \frac{2 \delta}{n|a|+2\delta}$. Let $\beta = \frac{\alpha}{1-\alpha}$. Then 
+\begin{align*}
+n \beta &= n\left(\frac{\alpha}{1-\alpha}\right) \\
+	&= n\frac{\frac{2 \delta}{n|a|+2\delta}}{1-\frac{2 \delta}{n|a|+2\delta}} \\
+	&= n\left(\frac{2\delta}{n|a| + 2\delta - 2 \delta}\right) \\
+	&= \frac{2\delta}{|a|}.
+\end{align*}
+
+We consider the cases $a< 0$ and $a> 0$. Assume $a < 0$. Then $I = f^{-1}(B) = \left( \frac{t+\delta+b}{a}, \frac{t-\delta+b}{a} \right)$. To make the notation easier, let $r = \frac{t+\delta+b}{a}$ and $s = \frac{t-\delta+b}{a}$. For k from $1$ to $n-1$, let $c_k = r+k\beta$.  That is, $c_1 = r+\beta$, $c_2 = r+2 \beta$, $\ldots$, $c_{n-1} = r+(n-1) \beta$. Since $n \beta = 2\frac{\delta}{|a|}$, we have $s = r+n\beta = c_{n-1}+ \beta$. For $k$ from $1$ to $n-1$ let $J_k = (c_k - \beta, c_k + \beta) = \left(c_k - \frac{\alpha}{1-\alpha},  c_k + \frac{\alpha}{1-\alpha} \right) = B(c_k, \alpha)$ in $Y$ by part (a). By construction, $B(c_k, \alpha) \subset I$ for every $k$. If $x \in I$, then $r < x < s$. So there exists a positive integer $m$ such that $r+m \beta \leq x < r+(m+1) \beta$. Thus, $x \in (c_m-\beta, c_m+\beta) = B(c_m, \alpha)$. We conclude that $I = \bigcup_{1 \leq k \leq n-1} B(c_k, \alpha)$, and $f^{-1}(B)$ is open in $Y$. The case when $a > 0$ proceeds in the same manner, with $r = \frac{t-\delta+b}{a}$ and $s = \frac{t+\delta+b}{a}$. Therefore, $f^{-1}(B)$ is an open set in $Y$ and $f$ is a continuous function.
+
+\ea
+
+\end{comment}
+ 
+\item Let $f: \R^2 \to \R$ be defined by $f((x,y)) = x$. Assume that we use the max metric $d_M$ on $\R^2$ and the Euclidean metric $d_E$ on $\R$. Use Theorem  to determine if $f$ a continuous function. Prove your conjecture. 	
+
+\begin{comment}
+
+\ExerciseSolution Let $B = (a-\delta, a+\delta)$ be an open ball in $\R$. Now $f^{-1}((a-\delta, a+\delta))$ is the set $A = (a-\delta, a+\delta) \times \R$ in $\R^2$. To show that $f^{-1}(B)$ is open in $\R^2$, we will demonstrate that $A$ is an open set in $\R^2$ with the max metric.
+
+To simplify the notation, we will prove that $(a,b) \times \R$ is a union of open balls for any real numbers $a$ and $b$ with $a < b$. Let $\alpha = \frac{b-a}{2}$and let $c = \frac{b+a}{2}$. If $z = (z_1, z_2) \in \R^2$, recall that the open ball $B(z, \delta)$ in $\R^2$ with the max metric has the form 
+\[B(z, \delta) = \{(x,y) \mid \max\{|x-z_1|, |y-z_2|\} < \delta \}.\]
+If $y \in \R$, let $B_{y} = B((c,y),\alpha)$ in $\R^2, d_M)$. We will demonstrate that $\bigcup_{y \in \R} B_y = (a,b) \times \R$. 
+
+Let $z = (z_1,z_2) \in \bigcup_{y \in \R} B_y$. Then there is a $t \in \R$ such that $z \in \bigcup_{t \in \R} B_t$. This implies that $|t-c| < \alpha$, or that $t \in (a,b)$. Thus, $z \in (a,b) \times \R$. 
+
+Now let $w = (w_1, w_2)$ be in $(a,b) \times \R$. Then $w_1 \in (a,b)$ and $w_2 \in \R$. Since $w_1 \in (a,b)$, we have that $|w_1 - c| < \alpha$. So $w \in B_((w_1,w_2), \alpha)$. We conclude that $(a,b) \times \R = \bigcup_{y \in \R} B_y$. Therefore, $f^{-1}(B)$ is open in $\R^2$ with the max metric and $f$ is continuous.  
+
+\end{comment}
+
+
+\item For each of the following, answer true if the statement is always true. If the statement is only sometimes true or never true, answer false and provide a concrete example to illustrate that the statement is false. If a statement is true, explain why. 
+
+	\ba
+	
+	\item If $A$ and $B$ are nonempty subsets of a metric space $X$, then $\Int(A \cup B) \subseteq \Int(A) \cup \Int(B)$.
+
+	\item If $A$ and $B$ are nonempty subsets of a metric space $X$, then $\Int(A) \cup \Int(B) \subseteq  \Int(A \cup B)$.
+
+	\item If $A$ and $B$ are nonempty subsets of a metric space $X$, then $\Int(A \cap B) \subseteq \Int(A) \cap \Int(B)$.
+
+	\item If $A$ and $B$ are nonempty subsets of a metric space $X$, then $\Int(A) \cap \Int(B) \subseteq  \Int(A \cap B)$.
+
+	\item Every subset of an open set in a metric space $(X,d)$ is open in $X$.
+
+	\item A subset $O$ of $\R^2$ is open under the Euclidean metric $d_E$ if and only if $O$ is open under the taxicab metric $d_T$.
+	
+	\item Let X = $[0,1] \cup [2,3]$ endowed with the Euclidean metric. Then $[0, 1]$ is an open subset of $X$. 
+
+
+		
+	\ea
+
+\begin{comment}
+
+\ExerciseSolution
+
+\ba
+
+\item This statement is false. Let $A = (0,2)$ and $B = [2,3)$ in $(\R, d_E)$. Then $\Int(A \cup B) = (0,3)$ while $\Int(A) \cup \Int(B) = (0,2) \cup (2,3)$. 
+
+\item This statement is true. Let $x \in \Int(A) \cup \Int(B)$. Then $x \in \Int(A)$ or $x \in \Int(B)$. If $x \in \Int(A)$, there is an open ball $C$ that contains $x$ that is a subset of $A$. Since $A \subset A \cup B$, we know that $C \subset A \cup B$ and $x \in \Int(A \cup B)$.  Similarly, if $x \in \Int(B)$, there is an open ball $C$ that contains $x$ that is a subset of $B$. Since $B \subset A \cup B$, we know that $C \subset A \cup B$ and $x \in \Int(A \cup B)$.
+
+\item This statement is true. Suppose $x \in \Int(A \cap B)$.  Then there is an open ball $C$ contained in $A \cap B$ such that $x \in C$. But $C \subset A$ and $C \subset B$, so $x \in \Int(A) \cap \Int(B)$.
+
+\item This statement is true. Suppose $x \in \Int(A) \cap \Int(B)$. Then there are open balls $B_1 = B(x,r_1)$ and $B_2 = B(x, r_2)$ such that $B_1 \subseteq A$ and $B_2 \subseteq B$. Let $r = \min\{r_1, r_2\}$. Then $B_0 = B(x,r) \subseteq B_1 \subseteq A$ and $B_0 \subseteq B_2 \subseteq B$. Thus, $x \in \Int(A \cap B)$.
+
+
+	\item This statement is false. The set $(-1,2)$ is an open ball in $(\R, d_E)$, but the point $0$ is not an interior point of $[0,1]$ in $\R$, and so $[0,1]$ is not an open set in $\R$. 
+	 
+	\item This statement is true. What it boils down to is that we can find a taxicab ball in every Euclidean ball and we can find a Euclidean ball in every taxicab ball, as illustrated in Figure \ref{F:Taxicab_Euclidean}.	
+\begin{figure}[h]
+\begin{center}
+\resizebox{!}{1.25in}{\includegraphics{Euclidean_Taxicab.eps}} \hspace{0.5in} \resizebox{!}{1.25in}{\includegraphics{Taxicab_Euclidean.eps}}
+\caption{Balls inside balls.}
+\label{F:Taxicab_Euclidean}
+\end{center}
+\end{figure}
+%\includegraphics[trim=left bottom right top, clip]{file}
+To formally verify this statement, suppose $O$ is open in $(\R^2, d_E)$. Let $x = (x_1,x_2) \in O$. Since $O$ is open, there is an $\epsilon > 0$ such that $B_E = B(x,\epsilon) \subseteq O$ using the metric $d_E$. Let $\delta = \frac{\epsilon}{2}$, and let $B_T$ be the ball centered at $x$ of radius $\delta$ in the taxicab metric. Note that if $y = (y_1,y_2) \in B_T$, then 
+	\[\sqrt{(x_i-y_i)^2} = |x_i - y_i| \leq |x_1-y_1| + |x_2-y_2| = d_T(y,x) < \delta\]
+	for $i$ either $1$ or $2$. From this we have 
+	\[d_E(x,y) = \sqrt{(x_1-y_1)^2 + (x_2-y_2)^2} \leq \sqrt{(x_1-y_1)^2} + \sqrt{(x_2-y_2)^2} < 2\delta = \epsilon.\]
+	So $B_T \subseteq B_E \subseteq O$ and $O$ is a neighborhood of $x$ in the taxicab metric. This makes $O$ open in $(\R^2, d_T)$. 
+
+Conversely, suppose $O$ is open in $(\R^2, d_T)$. Let $x = (x_1,x_2) \in O$. Since $O$ is open, there is an $\epsilon > 0$ such that $B_T = B(x,\epsilon) \subseteq O$ using the metric $d_T$. Let $\delta = \frac{\epsilon}{2}$, and let $B_E$ be the ball centered at $x$ of radius $\delta$ in the Euclidean metric. Note that if $y = (y_1,y_2) \in B_E$, then 
+	\[|x_i - y_i| = \sqrt{(x_i-y_i)^2} \leq  \sqrt{(x_1-y_1)^2 + (x_2-y_2)^2} = d_E(x,y) < \delta\]
+	for $i$ either $1$ or $2$. From this we have 
+	\[d_T(x,y) = |x_1-y_1| + |x_2-y_2| = < 2\delta = \epsilon.\]
+	So $B_E \subseteq B_T \subseteq O$ and $O$ is a neighborhood of $x$ in the Euclidean metric. This makes $O$ open in $(\R^2, d_E)$. 	
+
+	\item This statement is true. For any point $a$ in $(0,1)$, the ball $B(a,r) \subset X$ for $r = \min\{a, 1-a\}$. We also have  $B(0,1) = [0,1)$ and $B(1,1) = (0,1)$, both of which are subsets of $X$. So the set $[0,1]$ is a neighborhood of each of its points in $X$ and so is open in $X$.  
+	
+\ea
+
+
+\end{comment}
+
+\ee
