@@ -1,4 +1,4 @@
-\achapter{8}{Open Sets in Metric Spaces}\label{sec:open_sets}
+\achapter{8}{Open Sets in Metric Spaces}\label{chap:open_sets}
 
 
 \vspace*{-17 pt}
@@ -14,7 +14,7 @@
 
 \vspace*{13 pt}
 
-\csection{Introduction}
+\csection{Introduction}\label{sec_open_sets_intro}
 
 Consider the interval $(a,b)$ in $\R$ using the Euclidean metric. If $m = \frac{a+b}{2}$, then $(a,b) = B\left(m,\frac{b-a}{2}\right)$, so every open interval is an open ball. As an open ball, an open interval $(a,b)$ is a neighborhood of each of its points. This is the foundation for the definition of an open set in a metric space. 
 
@@ -88,7 +88,7 @@ and $A = \{a,b\}$.
 \end{comment}
 
 
-\csection{Open Sets}
+\csection{Open Sets}\label{sec_open_sets}
 
 Open sets are vitally important in topology. In fact, we will see later that every topological space is completely defined by its open sets. Recall that an open ball is an open set. There are other subsets that every metric space contains, and we might ask if they are open or not.  
 
@@ -157,7 +157,7 @@ The proof of the converse is left for the following activity.
 
 Theorem \ref{thm:OS_1} tells us that every open set is made up of open balls, so the open balls generate all open sets much like a basis of a vector space in linear algebra generates all of the elements of the vector space. For this reason we call the set of open balls in a metric space a \emph{basis} for the open sets of the metric space. We will discuss this idea in more detail in a subsequent section.
 
-\csection{Unions and Intersections of Open Sets}
+\csection{Unions and Intersections of Open Sets}\label{sec_union_int_open_sets}
 
 Once we have defined open sets we might wonder about what happens if we take a union or intersection of open sets. 
 
@@ -232,7 +232,7 @@ For part 2, assume that $O_1$, $O_2$, $\ldots$, $O_n$ are open sets in $X$ for s
 \end{proof}
 
 
-\csection{Continuity and Open Sets}
+\csection{Continuity and Open Sets}\label{sec_cont_open_sets}
 Recall that we showed that a function $f$ from a metric space $(X,d_X)$ to a metric space $(Y,d_Y)$ is continuous if and only if $f^{-1}(N)$ is a neighborhood of $a \in X$ whenever $N$ is a neighborhood of $f(a)$ in $Y$. We can now provide another characterization of continuous functions in terms of open sets. This is the characterization that will serve as our definition of continuity in topological spaces.
 
 \begin{theorem} \label{thm:Open_continuity} Let $f$ be a function from a metric space $(X,d_X)$ to a metric space $(Y,d_Y)$. Then $f$ is continuous if and only if $f^{-1}(O)$ is an open set in $X$ whenever $O$ is an open set in $Y$.  
@@ -334,7 +334,7 @@ Since the inverse image of every open ball is an open set, we conclude that $f$ 
 \end{example}
 
 
-\csection{The Interior of a Set}
+\csection{The Interior of a Set}\label{sec_interior_set}
 
 Open sets can be characterized in terms of their interior points. By definition, every open set is a neighborhood of each of its points, so every point of an open set $O$ is an interior point of $O$. Conversely, if every point of a set $O$ is an interior point, then $O$ is a neighborhood of each of its points and is open. This argument is summarized in the next theorem. 
 
@@ -417,7 +417,7 @@ One consequence of Theorem \ref{thm:Interior_MS} is the following.
  
 The proof is left for Exercise (\ref{ex:O_int_O}).
 
-\csection{Summary}
+\csection{Summary}\label{sec_open_sets_summ}
 Important ideas that we discussed in this section include the following.
 \begin{itemize}
 \item A subset $O$ of a metric space $(X,d)$ is an open set if $O$ is a neighborhood of each of its points. Alternatively, $O$ is open if $O$ is a union of open balls.
@@ -427,7 +427,7 @@ Important ideas that we discussed in this section include the following.
 \item Any union of open sets is open, while any finite intersection of open sets is open.
 \end{itemize}
 
-\csection{Exercises}
+\csection{Exercises}\label{sec_open_sets_exer}
 
 \be
 

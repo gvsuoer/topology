@@ -1,4 +1,4 @@
-\achapter{6}{Continuous Functions in Metric Spaces}\label{sec:continuous_functions}
+\achapter{6}{Continuous Functions in Metric Spaces}\label{chap:continuous_functions}
 
 
 \vspace*{-17 pt}
@@ -11,7 +11,7 @@
 
 \vspace*{13 pt}
 
-\csection{Introduction}
+\csection{Introduction}\label{sec_cont_func_intro}
 
 We have likely had previous experiences with continuous functions. Continuity is an important consideration in optimization problems because a continuous function attains a maximum value and a minimum value on any closed and bounded interval. Continuous functions also satisfy the Intermediate Value Theorem, that a continuous function $f$ takes on all values between $f(a)$ and $f(b)$ on an interval $[a,b]$. An important consequence of the Intermediate Value Theorem is that if $f$ is a continuous function on an interval and $f(a)$ and $f(b)$ have opposite signs, then $f$ must have a root in the interval $[a,b]$. In this section we will begin to explore continuity of functions between metric spaces. Our ultimate goal in future sections is to understand continuous functions well enough that we can define continuity just in terms of open sets. 
 
@@ -106,7 +106,7 @@ So $| f(x) - f(1) | > \epsilon$. This shows that $f$ is not continuous at $x=1$.
 
 \end{comment}
 
-\csection{Continuous Functions Between Metric Spaces}
+\csection{Continuous Functions Between Metric Spaces}\label{sec_cont_func_btwn}
 In our preview activity we saw how to formally define what it means for a function $f : \R \to \R$ to be continuous at a point. 
 
 
@@ -247,7 +247,7 @@ Thus, the function $f$ is continuous at every point in $\R^2$ and is therefore a
 
 \end{comment}
 
-\csection{Composites of Continuous Functions}
+\csection{Composites of Continuous Functions}\label{sec_comp_cont_func}
 
 Let $(X, d_X)$, $(Y,d_Y)$, and $(Z, d_Z)$ be metric spaces, and suppose $f: X \to Y$ and $g: Y \to Z$ are continuous functions. It seems natural to ask if the composite $g \circ f : X \to Z$ is a continuous function.
 
@@ -284,7 +284,7 @@ Let $(X, d_X)$, $(Y,d_Y)$, and $(Z, d_Z)$ be metric spaces, and suppose $f: X \t
 Continuity is an important concept in topology. We have seen how to define continuity in metric spaces, and we will soon expand on this idea to define continuity without reference to metrics at all. This will allow us to later define continuous functions between arbitrary topological spaces. 
 
 
-\csection{Summary}
+\csection{Summary}\label{sec_cont_func_summ}
 Important ideas that we discussed in this section include the following.
 \begin{itemize}
 \item Let $(X,d_X)$ and $(Y, d_Y)$ be metric spaces. A function $f:X \to Y$ is continuous at $a \in X$ if, given any $\epsilon > 0$, there exists a $\delta > 0$ so that $d_X(x,a)< \delta$ implies $d_Y(f(x), f(a)) < \epsilon$.  
@@ -292,7 +292,7 @@ Important ideas that we discussed in this section include the following.
 \item Let $(X,d_X)$ and $(Y, d_Y)$ be metric spaces. A function $f:X \to Y$ is continuous if $f$ is continuous at every point in $X$.
 \end{itemize}
 
-\csection{Exercises}
+\csection{Exercises}\label{sec_cont_func_exer}
 
 \be
 

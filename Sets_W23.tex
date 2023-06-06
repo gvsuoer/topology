@@ -1,4 +1,4 @@
-\achapter{1}{Sets}\label{sec:sets}
+\achapter{1}{Sets}\label{chap:sets}
 
 
 \vspace*{-17 pt}
@@ -15,7 +15,7 @@
 
 \vspace*{13 pt}
 
-\csection{Introduction} 
+\csection{Introduction} \label{sec_sets_intro}
 
 At its most basic level topology deals with sets and how we can deform sets into other sets. So to start our study of topology, we begin with sets. Much of this material should be familiar, but some might be new.  The first issue for us to settle on is as precise a definition of ``set" as possible.
 
@@ -80,7 +80,7 @@ Given any object $x$, either $x \in S$ or $x \notin S$.
 \end{comment}
 
 
-\csection{The Basic Idea of Topology}
+\csection{The Basic Idea of Topology}\label{sec_basic_top}
 
 If you like geometry, you will probably like topology. Geometry is the study of objects with certain attributes (e.g., shape and size), while topology is more general than geometry. In topology, we aren't concerned about the attributes (shape and size) of an object, only about those characteristics that don't change when we transform the object in different ways (any way that doesn't involve tearing or poking holes the object).  There are lots of really interesting theorems in topology -- for example, the Hairy Ball Theorem which states that if you have a ball with hair all over it (think of a tribble from Star Trek -- if that isn't too old of a reference), it is impossible to comb the hairs continuously and have all the hairs lay flat. Some hair must be sticking straight up! 
 
@@ -122,7 +122,7 @@ If you like geometry, you will probably like topology. Geometry is the study of 
 
 This idea of transforming one set into another as we explored in Activity \ref{act:rubber_sheet} is formally done with functions. As we progress through this subject, we will need to have more rigorous definitions of functions and sets. We begin with sets and discuss functions in Section \ref{sec:functions}. 
 
-\csection{Intervals}
+\csection{Intervals}\label{sec_intervals}
 
 We will begin with one of the most basic type of set we will encounter -- intervals. The open intervals will be important as they will form a basis for the standard topology on $\R$. We are likely familiar with intervals from algebra and calculus, sets like $(0,1)$, $[2,3)$. To really understand intervals, we will need a rigorous definition.
 
@@ -144,7 +144,7 @@ Note that nothing in the definition indicates that we must have $a < b$ in the i
 One last note about intervals. Some require that $a$ be less than $b$ in the definition of an interval, with the result that there are no degenerate intervals. This is a matter of debate that we won't get into. In almost all of our work, we will consider only non-degenerate intervals so this won't be an issue for us. 
 
 
-\csection{Unions, Intersections, and Complements of Sets}
+\csection{Unions, Intersections, and Complements of Sets}\label{sec_union_int_comp}
 
 In mathematics, the collection of points that make up a string or a blob of play-doh as in Activity \ref{act:rubber_sheet} is represented as a set. Topology is then the study of these sets and what properties of the sets don't change when transformations are applied to the sets. To study topology we will need a solid understanding of sets and different operations on sets. 
 
@@ -534,7 +534,7 @@ Since $A_1^c = \Z \setminus \{1\}$, and $1$ is not an element of any $A_{\alpha}
 \end{comment}
 
 
-\csection{Cartesian Products of Sets}
+\csection{Cartesian Products of Sets}\label{sec_cart_prod}
 
 The final operation on sets that we discuss is the \emph{Cartesian product} (or \emph{cross product}). This is an operation that we have seen before. When we draw the graph of a line $y = mx+b$ in the plane, we plot the points $(x,mx+b)$. These points are ordered pairs of real numbers. We can extend this idea to any sets. 
 
@@ -627,7 +627,7 @@ $A \subseteq B$ \text{ if and only if } $B^c \subseteq A^c$
 \end{multicols}
 \end{theorem}
 
-\csection{Summary}
+\csection{Summary}\label{sec_sets_summ}
 Important ideas that we discussed in this section include the following.
 \begin{itemize}
 \item We can consider a set to be a well-defined collection of elements.
@@ -645,7 +645,7 @@ The intersection of an arbitrary collection $\{X_{\alpha}\}$ of sets for $\alpha
 \item If $\{X_{i}\}$ is a collection of sets with $i$ in some indexing set $I$, where $I$ is finite or $I$ is the set of positive integers, the Cartesian product $\Pi_{i \in I} X_i$ of the sets $X_{i}$ as the set of all ordered tuples of the form $(x_i)$ where $i \in I$. 
 \end{itemize}
 
-\csection{Exercises}
+\csection{Exercises}\label{sec_sets_exer}
 
 \be
 

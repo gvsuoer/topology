@@ -1,4 +1,4 @@
-\achapter{16}{Quotient Spaces}\label{sec:quotients}
+\achapter{16}{Quotient Spaces}\label{chap:quotients}
 
 
 \vspace*{-17 pt}
@@ -12,13 +12,13 @@
 
 \vspace*{13 pt}
 
-\csection{Introduction}
+\csection{Introduction}\label{sec_quotients}
 
 We are familiar with the word \emph{quotient} when working with rational numbers. That is, the fraction $\frac{1}{2}$ is the quotient of $1$ by $2$, and the set of rational numbers is the collection of all defined quotients of integers. The word quotient seems to have come from the latin word ``quotiens", which can be translated as ``how often" or ``how many times". We can think of the fraction $\frac{1}{2}$ as dividing a unit ($1)$ into two pieces. So we often apply the word quotient to any kind of construction that divides a set into pieces. Another familiar quotient construction is the set $\Z_n$, the set of quotients of integers after we divide by $n$. Another way to think of $\Z_n$ is as a quotient $\Z/n\Z$, where $n\Z$ is the set of multiples of $n$ and two integers $a$ and $b$ are equal if $b-a \in n\Z$. This defines the relation of congruence module $n$ on $\Z$, and the elements of $\Z/n\Z$ are the equivalence classes for this relation. We make similar constructions in many branches of mathematics by defining an equivalence relation on a set, and we then divide the set into pieces (the equivalence classes) and call the set of equivalence classes a \emph{quotient space}. We explore the concept of quotient spaces of topological spaces in this section.
 
 As an example, take the interval $X = [0,1]$ in $\R$ and bend it to be able to glue the endpoints together. The resulting object is a circle. By identifying the endpoints $0$ and $1$ of the interval, we are able to create a new topological space. We can view this gluing or identifying of points in the space $X$ in a formal way that allows us to recognize the resulting space as a quotient space. 
 
-\csection{The Quotient Topology}
+\csection{The Quotient Topology}\label{sec_quotient_top}
 
 Given a topological space $X$ and a surjection $f$ from $X$ to a set $Y$, we can use the topology on $X$ to define a topology on $Y$. This topology on $Y$ identifies points in $X$ through the function $f$. The resulting topology on $Y$ is called a \emph{quotient} topology. The quotient topology gives us a way of creating a topological space which models gluing and collapsing parts of a topological space.
 
@@ -65,7 +65,7 @@ Thus,
 
 \end{comment}
 
-\csection{Quotient Spaces}
+\csection{Quotient Spaces}\label{sec_quotient_space}
 
 As we saw in our preview activity, if we have a surjection $p$ from a topological space $(X,\tau)$ to a set $Y$, we were able to define a topology on $Y$ by making the open sets the sets $U \subseteq Y$ such that $p^{-1}(U)$ is open in $X$. This is how we will create what is called the \emph{quotient topology}.  Before we can define the quotient topology, we need to know that this construction always makes a topology.
 
@@ -289,7 +289,7 @@ Many other interesting identification spaces can be made. For example, let $X = 
 \end{center}
 \end{figure}
 
-\csection{Identifying Quotient Spaces}
+\csection{Identifying Quotient Spaces}\label{sec_find_quotient_space}
 
 Suppose $X$ is a topological space and $Y$ is a set, and let $p: X \to Y$ be a surjection. We can define a relation $\sim_p$ on $X$ by $x \sim_P y$ if and only if $p(x) = p(y)$. It is straightforward to show that $\sim_p$ is an equivalence relation. From this we can see that our two approaches to defining the quotient topology and quotient spaces are really the same. 
 
@@ -377,7 +377,7 @@ Now we will see how to use Theorem \ref{thm:quotient_2} to establish a homeomorp
 
 
 
-\csection{Summary}
+\csection{Summary}\label{sec_quotients_summ}
 Important ideas that we discussed in this section include the following.
 \begin{itemize}
 \item Let $(X,\tau_X)$ be a topological space, let $Y$ be a set, and let $p: X \to Y$ be a surjection. The quotient topology on $Y$ is the set
@@ -386,7 +386,7 @@ Important ideas that we discussed in this section include the following.
 \item A circle, a M\"{o}bius strip, a torus, and a sphere can all be realized as quotient spaces. 
 \end{itemize}
 
-\csection{Exercises}
+\csection{Exercises}\label{sec_quotients_exer}
 
 \be
 

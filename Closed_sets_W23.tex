@@ -1,4 +1,4 @@
-\achapter{10}{Closed Sets in Metric Spaces}\label{sec:closed_sets}
+\achapter{10}{Closed Sets in Metric Spaces}\label{chap:closed_sets}
 
 \vspace*{-17 pt}
 \framebox{
@@ -18,7 +18,7 @@
 
 \vspace*{13 pt}
 
-\csection{Introduction}
+\csection{Introduction}\label{sec_closed_sets_intro}
 Once we have defined open sets in metric spaces, it is natural to ask if there are closed sets. Recall that closed intervals are important in calculus because every continuous function on a closed interval attains an absolute maximum and absolute minimum value on that interval. If we have closed sets in metric spaces, we might consider if there is some result that is similar to this for continuous functions on closed sets. In this section we introduce the idea of closed sets in metric spaces and discover a few of their properties. 
 
 Every interval of the form $[a,b]$ in $\R$ is a closed set using the Euclidean metric. What distinguishes these closed intervals from the open intervals is that the open intervals do not contain either of their endpoints -- this is what makes an open interval a neighborhood of each of its points. In general, what makes open sets open is that they do not contain their boundaries. If an open set doesn't contain its boundary, then its complement, by contrast, should contain its boundary. This leads to the definition of a closed set. 
@@ -123,7 +123,7 @@ Notice that if $x \in X \setminus = \{c,d\}$, then $B(x, 0.5) = \{a\}$. So $X \s
 
 
 
-\csection{Closed Sets in Metric Spaces}
+\csection{Closed Sets in Metric Spaces}\label{sec_closed_sets_metric}
 
 Recall that Definition \ref{def:closed_metric_space} defines a closed set in a metric space to be a set whose complement is open. We have seen that both $\emptyset$ and $X$ are open subsets of $X$. We now ask the same question, this time in terms of closed sets.  
 
@@ -196,7 +196,7 @@ is a finite intersection of open sets, and so is an open set. Therefore, $\bigcu
 \end{proof}
 
 
-\csection{Continuity and Closed Sets}
+\csection{Continuity and Closed Sets} \label{sec_cont_closed_sets}
 Recall that we showed that a function $f$ from a metric space $(X,d_X)$ to a metric space $(Y,d_Y)$ is continuous if and only if $f^{-1}(O)$ is open for every open set $O$ in $Y$. We might conjecture that a similar result holds for closed sets. Since closed sets are complements of open sets, to make this connection we will want to know how $X \setminus f^{-1}(B)$ is related to $f^{-1}(Y \setminus B)$ for $B \subset Y$. 
 
 \begin{activity} \label{act:CS_1} Let $f$ be a function $f$ from a metric space $(X,d_X)$ to a metric space $(Y,d_Y)$, and let $B$ be a subset of $Y$.
@@ -280,7 +280,7 @@ The result of Activity \ref{act:CS_2} is summarized in the following theorem.
 \begin{theorem} \label{thm:closed_sets_continuity_MS} Let $f$ be a function from a metric space $(X,d_X)$ to a metric space $(Y,d_Y)$. Then $f$ is continuous if and only if $f^{-1}(C)$ is closed in $X$ whenever $C$ is a closed set in $Y$.  
 \end{theorem}
 
-\csection{Limit Points, Boundary Points, Isolated Points, and Sequences}
+\csection{Limit Points, Boundary Points, Isolated Points, and Sequences}\label{sec_limit_bound_iso_seq}
 
 Recall that a limit point of a subset $A$ of a metric space $X$ is a point $x \in X$ such that every neighborhood of $x$ contains a point in $A$ different from $x$. You might wonder about the use of the word ``limit" in the definition of limit point. The next activity should make this clear. 
 
@@ -344,7 +344,7 @@ An argument just like the one in Activity \ref{act:CS_3} gives us the following 
 \begin{theorem} \label{thm:CS_2} Let $X$ be a metric space, let $A$ be a subset of $X$, and let $b$ be a boundary point of $A$. Then there are sequences $(x_n)$ in $X \setminus A$ and $(a_n)$ in $A$ that converge to $x$.
 \end{theorem}
 
-\csection{Limit Points and Closed Sets}
+\csection{Limit Points and Closed Sets}\label{sec_limit_closed}
 
 There is a connection between limit points and closed sets. The open set $(1,2)$ in $(\R, d_E)$ does not contain all of its limit points or any of its boundary points, while the closed set $[1,2]$ contains all of its boundary and limit points. This is an important attribute of closed sets. Recall that for a limit point $x$ of a subset $A$ of a metric space $X$, every neighborhood of $x$ contains a point in $A$ different from $x$. We can make the neighborhoods as small as we like so, in a sense, the limit points of $A$ that are not in $A$ are the points in $X$ that are arbitrarily close to the set $A$. We denote the set of limit points of $A$ as $A'$, and the limit points of a set can tell us if the set is closed.
 
@@ -389,7 +389,7 @@ The converse of the result we just proved is the subject of the next activity.
 
 \end{comment}
 
-\csection{The Closure of a Set}
+\csection{The Closure of a Set}\label{sec_set_closure}
 
 We have seen that the interior of a set is the largest open subset of that set. There is a similar result for closed sets. For example, let $A = (0,1)$ in $(\R, d_E)$. The set $A$ is an open set, but if we union $A$ with its limit points, we obtain the closed set $C = [0,1]$. Moreover, The set $[0,1]$ is the smallest closed set that contains $A$. This leads to the idea of the \emph{closure} of a set. 
 
@@ -515,7 +515,7 @@ Let $x \in \overline{A} \cap \overline{X \setminus A}$.
 
 \end{comment}
 
-\csection{Closed Sets and Limits of Sequences}
+\csection{Closed Sets and Limits of Sequences}\label{sec_closed_limits_seq}
 
 Suppose we consider a sequence $(a_n)$ in a subset $A$ of a metric space $X$ that converges to a point $x$. Must it be the case that $x \in A$? We consider this question in the next activity. 
 
@@ -597,7 +597,7 @@ In our case, we might use Theorem \ref{thm:closed_limitpoints} and prove that $C
 \end{comment}
 
 
-\csection{Summary}
+\csection{Summary}\label{sec_closed_set_summ}
 Important ideas that we discussed in this section include the following.
 \begin{itemize}
 \item Let $X$ be a metric space and $A$ a subset of $X$. 
@@ -618,7 +618,7 @@ Important ideas that we discussed in this section include the following.
 \item A subset $A$ of a metric space $X$ is closed if and only if $\lim a_n$ is in $A$ whenever $(a_n)$ is a convergent sequence in $A$. 
 \end{itemize}
 
-\csection{Exercises}
+\csection{Exercises} \label{sec_closed_set_exer}
 
 \be
 

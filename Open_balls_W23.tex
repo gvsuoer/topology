@@ -1,4 +1,4 @@
-\achapter{7}{Open Balls and Neighborhoods in Metric Spaces}\label{sec:open_balls}
+\achapter{7}{Open Balls and Neighborhoods in Metric Spaces}\label{chap:open_balls}
 
 
 \vspace*{-17 pt}
@@ -12,7 +12,7 @@
 
 \vspace*{13 pt}
 
-\csection{Introduction}
+\csection{Introduction}\label{sec_open_balls_intro}
 Open sets are vitally important in topology. We will see later that every topological space is completely defined by its open sets, and continuous functions can be defined just in terms of open sets. In this section we introduce the idea of open balls and neighborhoods in metric spaces and discover a few of their properties. This discussion will form the basis for introducing open sets in the next section.
 
 Recall that the continuity of a function $f$ from a metric space $(X, d_X)$ to a metric space $(Y, d_Y)$ at a point $a$ is defined in terms of sets of points $x \in X$ such that $d_X(x,a) < \delta$ and $y \in Y$ such that $d_Y(y, f(a)) < \epsilon$ for positive real numbers $\delta$ and $\epsilon$. In $\R$ with the Euclidean metric $d_E$, for real numbers $x$ and $a$ the set of $x$ values satisfying $d_E(x,a) < \delta$ is the set of $x$ values so that $| x-a | < \delta$. We often write this set in interval notation as $(a-\delta, a+\delta)$ and call $(a-\delta, a+\delta)$ an open interval. An informal reason that we call such an interval open (as opposed to the intervals $[a-\delta, a+\delta)$, $(a-\delta, a+\delta]$, or $[a-\delta, a+\delta]$) is that the open interval does not contain either of its endpoints. A more substantial reason to call such an interval open is that if $x'$ is any element in $(a-\delta, a+\delta)$, then we can find another open interval around $x'$ that is completely contained in the interval $(a-\delta, a+\delta)$. So you could naively think of an open interval as one in which there is enough room in the interval for any point in the interval to wiggle around a bit and stay within the interval. 
@@ -181,7 +181,7 @@ These four lines form the diamond shown in Figure \ref{F:Balls_4_5}, and so the 
 \end{comment}
 
 
-\csection{Neighborhoods}
+\csection{Neighborhoods}\label{sec_neighborhoods}
 
 We are familiar with the idea of open intervals in $\R$. We next introduce the idea of an open neighborhood of a point and characterize continuity in terms of neighborhoods. This is the next step in developing the notation of continuity in topological spaces. 
 
@@ -237,7 +237,7 @@ So $c \in B(a,\delta)$ and $B(b,\gamma) \subset B(a,\delta)$.
 
 \end{comment}
 
-\csection{Continuity and Neighborhoods}
+\csection{Continuity and Neighborhoods}\label{sec_cont_neighborhoods}
 We can define continuity now in terms of neighborhoods instead of using metrics. The advantage here is that this idea does not explicitly depend on the existence of a metric, so we will be able to adopt this concept of continuity for arbitrary topological spaces. 
 
 Recall that a function $f$ from a metric space $(X, d_X)$ to a metric space $(Y, d_Y)$ is continuous at $a \in X$ if, for any $\epsilon > 0$ there exists $\delta > 0$ so that $d_X(x,a) < \delta$ implies $d_Y(f(x),f(a)) < \epsilon$. We can interpret this definition of continuity to say that for every $\epsilon > 0$, the inverse image under $f$ of the open ball $B(f(a), \epsilon)$ contains the open ball $B(a, \delta)$ for some $\delta > 0$. It is not unreasonable to wonder if the set $f^{-1}\left(B(f(a), \epsilon)\right)$ itself is an open ball. We investigate this question in the following activity. 
@@ -335,7 +335,7 @@ The proof of the reverse implication is left for the next activity.
 
 The proofs are straightforward and left for Exercise (\ref{ex:Nghb_properties}).
 
-\csection{Summary}
+\csection{Summary}\label{sec_open_balls_summ}
 Important ideas that we discussed in this section include the following.
 \begin{itemize}
 \item If $(X,d)$ is a metric space and $a \in X$, then an open ball centered at $a$ is a set of the form
@@ -347,7 +347,7 @@ for some positive number $\delta$.
 \end{itemize}
 
 
-\csection{Exercises}
+\csection{Exercises}\label{sec_open_balls_exer}
 
 \be
 

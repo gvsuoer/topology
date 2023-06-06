@@ -1,4 +1,4 @@
-\achapter{3}{Metric Spaces} \label{sec:metric_spaces}
+\achapter{3}{Metric Spaces} \label{chap:metric_spaces}
 
 
 \vspace*{-17 pt}
@@ -11,7 +11,7 @@
 
 \vspace*{13 pt}
 
-\csection{Introduction}
+\csection{Introduction}\label{sec_metric_space_intro}
 
 Metric spaces are particular examples of topological spaces. A metric space is a space that has a metric defined on it. A metric is a function that measures the distance between points in a metric space. 
 
@@ -155,7 +155,7 @@ The taxicab metric can be extended to $\R^n$ for any $n \geq 1$ as follows. If $
 \[d_T(x,y) = |x_1-y_1| + |x_2-y_2| + \cdots + |x_n-y_n| = \sum_{i=1}^n |x_i-y_i|.\]
 
 
-\csection{Metric Spaces}
+\csection{Metric Spaces}\label{sec_metric_space}
 
 For most of our mathematical careers our mathematics has taken place in $\R^2$, where we measure the distance between points $(x_1,x_2)$ and $(y_1,y_2)$ with the standard Euclidean distance $d_E$. In our preview activity we saw that the function $d_T$ satisfies many of the same properties as $d_E$. These properties allow us to use $d_E$ or $d_T$ as distance functions. We call any distance function a \emph{metric}, and any space on which a metric is defined is called a \emph{metric space}. 
 
@@ -300,7 +300,7 @@ Just as with the Euclidean and taxicab metrics, item (c) in Activity \ref{act:MS
 \[d_M(x,y) = \max\{| x_1-y_1 |, | x_2-y_2 |, |x_3-y_3|, \ldots, |x_n-y_n| \} = \max_{1 \leq i \leq n} \{|x_i-y_i|\}.\]
 The metric $d_M$ is called the \emph{max} metric{\index{metric!max}. In the following section we prove that the Euclidean metric is in fact a metric. Proofs that $d_T$ and $d_M$ are metrics are left to Exercises (\ref{ex:Taxicab}) and (\ref{ex:Max}). 
 
-\csection{The Euclidean Metric on $\R^n$}
+\csection{The Euclidean Metric on $\R^n$}\label{sec_euclid_rn}
 The metric space that is most familiar to us is the metric space $(\R^2, d_E)$, where 
 \[d_E((x_1,x_2), (y_1,y_2)) = \sqrt{(x_1-y_1)^2 + (x_2-y_2)^2}\] 
 The metric $d_E$ called the \emph{standard} or \emph{Euclidean}\index{metric!Euclidean} metric on $\R^2$. 
@@ -488,7 +488,7 @@ We have only shown that $d_T$ and $d_M$ are metrics on $\R^2$, but similar argum
 \[d(x,y) = \begin{cases} 0 & \text{ if } x=y \\ 1 & \text{ if } x \neq y \end{cases}\]
 makes any set $X$ into a metric space. The proof is left to Exercise (\ref{ex:MS_discrete}).
 
-\csection{Summary}
+\csection{Summary}\label{sec_metric_space_summ}
 Important ideas that we discussed in this section include the following.
 \begin{itemize}
 \item A metric on a space $X$ is a function that measures distance between elements in the space. More formally, a metric on a space $X$ is a function $d: X \times X \to \R^+ \cup \{0\}$ such that 
@@ -520,7 +520,7 @@ Under the max metric, the unit circle in $\R^2$ is the square with vertices $(1,
 \end{itemize}
 
 
-\csection{Exercises}
+\csection{Exercises}\label{sec_metric_space_exer}
 
 \be
 

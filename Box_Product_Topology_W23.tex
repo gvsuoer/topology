@@ -1,4 +1,4 @@
-\achapter{19}{Products of Topological Spaces}\label{sec:Product_topology}
+\achapter{19}{Products of Topological Spaces}\label{chap:Product_topology}
 
 
 \vspace*{-17 pt}
@@ -11,7 +11,7 @@
 
 \vspace*{13 pt}
 
-\csection{Introduction}
+\csection{Introduction}\label{sec_prod_top_intro}
 If we have two topological spaces $(X, \tau_X)$ and $(Y , \tau_Y)$, we might wonder if we can make the set $X \times Y$ into a topological space. A natural approach might be to take as the open sets in $X \times Y$ the sets of the form $U \times V$ where $U \in \tau_X$  and $V \in \tau_Y$. 
 
 \begin{pa} \label{PA:pd_top_1} Let $X = \{a,b,c\}$ with $\tau_X = \{\emptyset, \{a\}, \{b\}, \{a,b\}, \{a,c\}, X\}$, and let $Y = \{1,2\}$ with $\tau_Y = \{\emptyset, \{1\}, Y\}$. 
@@ -63,7 +63,7 @@ on $X \times Y$. In other words, we consider $\CB$ a basis for a topology of $X 
 \end{comment}
 
 
-\csection{The Box and Product Topologies} 
+\csection{The Box and Product Topologies} \label{sec_box_prod_top}
 
 In our preview activity we learned that we cannot make a topology on a product $X \times Y$ of topological spaces $(X, \tau_X)$ and $(Y , \tau_Y)$ with just the sets of the form $U \times V$ where $U \in \tau_X$ and $V \in \tau_Y$ as the open sets since the collection of these sets is not closed under arbitrary unions. What we can do instead is consider these unions of all of the sets of the form $U \times V$, where $U$ is open in $X$ and $V$ is open in $Y$. In other words, consider these sets to be a basis for the topology on $X \times Y$. 
 
@@ -102,7 +102,7 @@ These projection functions can help us determine when a function $f$ from a topo
 This same construction works for any finite number of topological spaces, but the main ideas are contained in a product of two spaces, so we keep our focus on that.\footnote{It is possible to define a topology on an infinite collection of topological spaces, but we will not consider such a product here.}
 
 
-\csection{Three Examples}
+\csection{Three Examples} \label{sec_prod_top_ex}
 
 In this section we consider three specific examples of a product of topological spaces. 
 
@@ -215,7 +215,7 @@ In this section we consider three specific examples of a product of topological 
 
 \end{comment}
 
-\csection{Products, Projections, and Continuous Functions on Products}
+\csection{Products, Projections, and Continuous Functions on Products} \label{sec_prod_proj_cont}
 
 Given topological spaces $(X_1, \tau_1)$ and $(X_2, \tau_2)$, we define $\pi_1: X_1 \times X_2 \to X_1$ and $\pi_2: X_1 \times X_2 \to X_2$  by $\pi_1((x,y)) = x$ and $\pi_2((x,y)) = y$. These functions $\pi_1$ and $\pi_2$ are the \emph{projections}\index{projection functions} of $X_1 \times X_2$ onto $X_1$ and $X_2$, respectively. These projection functions can help us determine when a function $f$ from a topological space $Y$ to $X_1 \times X_2$ is continuous.
 
@@ -258,7 +258,7 @@ The same argument as in Activity \ref{act:projection_continuous} shows that $\pi
 \end{activity}
 
  
-\csection{Properties of Products of Topological Spaces}
+\csection{Properties of Products of Topological Spaces} \label{sec_prop_prod_top}
 
 It is natural to ask what topological properties of the topological spaces $(X, \tau_X)$ and $(Y, \tau_Y)$ are inherited by the product $X \times Y$. We have studied Hausdorff, connected, and compact spaces, and we now consider those properties. 
 

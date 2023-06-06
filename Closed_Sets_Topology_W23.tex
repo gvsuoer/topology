@@ -1,4 +1,4 @@
-\achapter{13}{Closed Sets in Topological Spaces}\label{sec:Closed_sets_topology}
+\achapter{13}{Closed Sets in Topological Spaces}\label{chap:Closed_sets_topology}
 
 
 \vspace*{-17 pt}
@@ -18,7 +18,7 @@
 
 \vspace*{13 pt}
 
-\csection{Introduction}
+\csection{Introduction} \label{sec_closed_sets_top_intro}
 We defined a closed set in a metric space to be the complement of an open set. Since a topology is defined in terms of open sets, we can make the same definition of closed set in a topological space. With the definition of closed set in hand, we can then ask if it is possible to define limit points, boundary, and closure in topological spaces and determine if there are corresponding properties for these ideas in topological spaces. 
 
 \begin{definition} A subset $C$ of a topological space $X$ is \textbf{closed}\index{closed set in a topological space} if its complement $X \setminus C$ is open. 
@@ -104,7 +104,7 @@ We defined a closed set in a metric space to be the complement of an open set. S
 
 \end{comment}
 
-\csection{Unions and Intersections of Closed Sets}
+\csection{Unions and Intersections of Closed Sets}\label{sec_union_inter_closed}
 
 Now we have defined open and closed sets in topological spaces. In our preview activity we saw that a set can be both open and closed. As we did in metric spaces, we will call any set that is both open and closed a \emph{clopen}\index{clopen set in a topological space} (for closed-open) set.
 
@@ -152,7 +152,7 @@ Theorem \ref{thm:closed_TS} tells us that any intersection of closed sets is clo
 
 \end{comment}
 
-\csection{Limit Points and Sequences in Topological Spaces}
+\csection{Limit Points and Sequences in Topological Spaces}\label{sec_limit_points}
 
 Recall that we defined a limit point of a set $A$ in a metric space $X$ to be a point $x \in X$ such that every neighborhood of $x$ contains a point in $A$ different from $x$. Since we have defined neighborhoods in topological spaces, we can make the same definition. 
 
@@ -241,7 +241,7 @@ Finally, consider the sequence $(c)$.  Each neighborhood of $a$ and $b$ contains
 
 The result of Activity \ref{act:TS_limits} is that sequences do not behave in topological spaces as we would expect them to. Consequently, sequences do not play the same important role in topological spaces as they do in metric spaces. However, the concept of limit point is important, as are the notions of boundary and closure in topological spaces. 
 
-\csection{Closure in Topological Spaces}
+\csection{Closure in Topological Spaces}\label{sec_top_closure}
 
 Once we have a definition of limit point, we can define the closure of a set just as we did in metric spaces. 
 
@@ -295,7 +295,7 @@ One consequence of Theorem \ref{thm:TS_closure_closed} is the following.
 \begin{corollary} A subset $C$ of a topological space $X$ is closed if and only if $C = \overline{C}$. 
 \end{corollary}
 
-\csection{The Boundary of a Set}
+\csection{The Boundary of a Set}\label{sec_set_boundary}
 
 In addition to limit points, we also defined boundary points in metric spaces. Recall that a boundary point of a set $A$ in a metric space $X$ could be considered to be any point in $\overline{A} \cap \overline{X \setminus A}$. We make the same definition in a topological space. 
 
@@ -344,7 +344,7 @@ Just as with metric spaces, we can characterize the closed sets as the sets that
 
 The proof of Theorem \ref{thm:TS_Closed_boundary} is left to Exercise (\ref{ex:TS_Closed_boundary}).
 
-\csection{Separation Axioms}
+\csection{Separation Axioms}\label{sec_separation_ax}
 
 As we have seen, sequences in topological spaces do not generally behave as we would expect them to. As a result, we look for conditions on topological spaces under which sequences do exhibit some regular behavior. In our preview activity we saw that in it is possible in a topological space that single point sets do not have to be closed. In Activity \ref{act:TS_limits}, we also saw that limits of sequences in topological spaces are not necessarily unique. This type of behavior limits the results that one can prove about such spaces. As a result, we define classes of topological spaces whose behaviors are closer to what our intuition suggests. 
 
@@ -458,7 +458,7 @@ It is the case that every $T_4$-space is $T_3$, every $T_3$-space is $T_2$, and 
  
  
 
-\csection{Summary}
+\csection{Summary}\label{sec_closed_sets_top_summ}
 Important ideas that we discussed in this section include the following.
 \begin{itemize}
 \item A subset $C$ of a topological space $X$ is closed if $X \setminus C$ is open.
@@ -482,7 +482,7 @@ Hausdorff spaces are important because sequences have unique limits in Hausdorff
 	
 \end{itemize}
 
-\csection{Exercises}
+\csection{Exercises}\label{sec_closed_sets_top_exer}
 
 \be
 

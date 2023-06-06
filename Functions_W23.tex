@@ -1,4 +1,4 @@
-\achapter{2}{Functions}\label{sec:functions}
+\achapter{2}{Functions}\label{chap:functions}
 
 
 \vspace*{-17 pt}
@@ -17,7 +17,7 @@
 
 \vspace*{13 pt}
 
-\csection{Introduction}
+\csection{Introduction}\label{sec_func_intro}
 
 Many topological properties are defined using continuous functions. We will focus on continuity later -- for now we review some important concepts related to functions. Much of this should be familiar, but some might be new. 
 
@@ -144,7 +144,7 @@ This illustrates the important fact that whether a function is injective or surj
 
 An important special function that is always an injection and surjection is the \emph{identity} function\index{function!identity} on a set. If $A$ is a set, the identity function on $A$ is denoted as $i_A$, and $i_A(a) = a$ for every $a \in A$. 
 
-\csection{Composites of Functions}
+\csection{Composites of Functions}\label{sec_comp_func}
 
 In our past mathematical experiences, we have often added and multiplied functions together (e.g., if $f(x) = x^2$ and $g(x) = x+1$ map from $\R$ to $\R$, then $(fg)(x) = x^2(x+1)$ and $(f+g)(x) = x^2+(x+1)$).  In topology, we generally don't care about any algebraic structure a set might have, so we will move away from sums and products, and focus on compositions of functions.  
 
@@ -312,7 +312,7 @@ We have therefore shown that for every  $c \in C$, there exists an  $a \in A$  s
 
 \end{comment}
 
-\csection{Inverse Functions} 
+\csection{Inverse Functions} \label{sec_inv_func}
 
 Now that we have studied composite functions, we will move on to consider another important idea: the inverse of a function. In previous mathematics courses, you probably learned that the exponential function (with base $e$) and the natural logarithm functions are inverses of each other.  You may have seen this relationship expressed as follows:
 \begin{center}
@@ -542,7 +542,7 @@ Let $f: A \to B$  and  $g: B \to C$  be bijections.  Then  $g \circ f$  is a bij
 $( {g \circ f} )^{ - 1}  = f^{ - 1}  \circ g^{ - 1} $.
 \end{theorem}
 
-\csection{Functions and Sets}
+\csection{Functions and Sets}\label{sec_fun_set}
 
 We conclude this section with a connection between subsets and functions. A bit of notation first. If $f$ is a function from a set $X$ to a set $Y$, and if $A$ is a subset of $X$ and $B$ is a subset of $Y$, we define $f(A)$ and $f^{-1}(B)$ as 
 \[f(A) = \{f(a) \mid a \in C\},\]
@@ -586,7 +586,7 @@ Now assume that $x \in f^{-1}(g^{-1}(C))$. Then $f(x) \in g^{-1}(C)$. We then ha
 
 \end{comment}
 
-\csection{The Cardinality of a Set}
+\csection{The Cardinality of a Set}\label{sec_card_set}
 
 How big is a set? When a set is finite, we can count the number of elements in the set and answer the question directly. When a set is infinite, the question is a little more complicated. For example, how big is $\Z$? How big is $\Q$? Since $\Z$ is a subset of $\Q$, we might think that $\Q$ contains more elements than $\Z$. But $\Z$ is infinite and how many more elements can we have than infinity? We won't answer that question in this section, but it is an interesting one to consider. 
 
@@ -597,7 +597,7 @@ If two finite sets have the same number of elements, then it should seem natural
 
 In the case that $A = \emptyset$, we say that $A$ has \emph{cardinality} $0$, and if there is a bijection from $A$ to the set $\{1,2, \ldots, n\}$, we say that $A$ has cardinality $n$.  If there is no positive integer $n$ such that there is a bijection from set $A$ to $\{1,2, \ldots, n\}$ we say that $A$ is an \emph{infinite} set and say that $A$ has infinite cardinality. We use the word \emph{cardinality} instead of number of elements because we can't actually count the number of elements in an infinite set. We denote the cardinality of the set (the number of elements in the set) $A$ by $|A|$. It is left to the homework to show that if $A$ and $B$ are sets with $|A|=n$ and $|B| = m$, then $n=m$ if and only if there is a bijection $f: A \to B$. This tells us that cardinality is well defined. Since composites of bijections are bijections with inverses that are bijections, if there is a bijection from set $A$ to $\{1,2, \ldots, n\}$ and a bijection from a set $B$ to $\{1,2, \ldots, n\}$ for some positive integer $n$, then there is a bijection between $A$ and $B$. Using this idea, we say that two sets (either finite or infinite) have the same cardinality\index{cardinality of a set} if there is a bijection between the sets. We will discuss cardinality in more detail a bit later. 
 
-\csection{Summary}
+\csection{Summary}\label{sec_func_summ}
 Important ideas that we discussed in this section include the following.
 \begin{itemize}
 \item A function $f$ from a nonempty set $A$ to a set $B$ is a collection of ordered pairs $(a,b)$ so that for each $a \in A$ there is a pair $(a,b)$ in $f$, and if $(a,b)$ and $(a,b')$ are in $f$, then $b=b'$.  If $f$ is a function we use the notation $f(a) = b$ to indicate that $(a,b) \in f$. 
@@ -619,7 +619,7 @@ and if $D$ is a subset of $Y$, the inverse image of $D$ is the set
 \end{enumerate}
 \end{itemize}
 
-\csection{Exercises}
+\csection{Exercises}\label{sec_func_exer}
 \be
 
 \item 

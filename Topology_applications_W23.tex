@@ -1,4 +1,4 @@
-\achapter{3}{Applications}\label{sec:metric_applications}
+\achapter{3}{Applications}\label{chap:metric_applications}
 
 
 \vspace*{-17 pt}
@@ -10,11 +10,11 @@
 
 \vspace*{13 pt}
 
-\csection{Introduction}       % Enter section title between curly braces
+\csection{Introduction} \label{sec_top_app_intro}      % Enter section title between curly braces
 
 Although topology can be an abstract topic, it has many applications. Indeed, an Internet search on the topic of applications of topology turns up may examples. In this section we will discuss a few of these many examples in detail.
 
-\csection{The Hamming Meteric}
+\csection{The Hamming Meteric}\label{sec_hamming_app}
 
  In our society, a great deal of information is communicated electronically. Bank transactions, television programs, military communications, cell phone calls, digital images, and almost any interchange one can think of either can be or is digitized and transmitted electronically. In many situations we need to compare one set of data to another (e.g., Internet searches for text strings or image matches, DNA strands), and metrics are often used for this purpose. 
  
@@ -109,7 +109,7 @@ $c_5=(0,0,0,1,1,0)$, 		&$c_6=(0,0,1,0,1,0)$, 	&$c_7=(0,0,1,1,0,0)$, 	&$c_8=(0,0,
 \end{comment}
 
 
-\csection{The Levenshtein Metric}
+\csection{The Levenshtein Metric}\label{sec_levenshtein_app}
 
 Like the Hamming metric, the Levenshtein Metric is used for measuring the distance between strings of information. Unlike the Hamming distance, which only applies to strings of the same length, the Levenshtein distance does not have this restriction. The Levenshtein metric has applications in spell checkers, speech recognition, automated plagiarism detection, and genomics (useful in comparing DNA sequences). To understand how the Levenshtein metric is calculated, consider the question of how far apart the words ``green" and ``grease" are.
 
@@ -158,7 +158,7 @@ In general, to define the Levenshtein distance $d_L$ between a sting $x$ and a s
 
 The Levenshtein metric is one measure of distance that researchers use to understand DNA. DNA is composed of double chains of nucleotides, which wind together to form a double helix. The nucleotides come four types: adenine (A), cytosine (C), guanine (G), and thymine (T). The nucleotides in the two chains of a DNA strand pair together, (A with T, and C with G), so the nucleotides in one chain determine the nucleotides in the other. Therefore, we can represent a DNA strand with a string of letters from the alphabet $\{A, C, G, T\}$. One problem DNA researchers have is how to compare two strands of DNA, and Levenshtein metric is one way that the distance between strands can be measured. While the Hamming distance could also be used, the Levenshtein metric seems more appropriate to the task for several reasons. During evolution, changes in DNA sequences arise due to nucleotide substitution, or the insertion or deletion of nucleotides. These evolutionary changes are better modeled by the operations that determine the Levenshtein distance than by the Hamming distance.  
 
-\csection{The Hausdorff Metric}
+\csection{The Hausdorff Metric}\label{sec_haus_app}
 
 Introduced by Felix Hausdorff in the early 20th century as a way to measure the distance between sets, the Hausdorff metric\footnote{Also called the Pompeiu-Hausdorff metric} has since been widely studied and has many applications. For example, the United States Army Research Office (ARO) Small Business Technology Transfer (STTR) Program \cite{USArmy} develops ``software for terrain representation by smooth (C1-smooth or more) piecewise polynomials on irregular triangulations using nontraditional metrics" and has used the  Hausdorff metric to ``increase the accuracy and/or efficiency of both piecewise planar surfaces and smooth piecewise polynomials on irregular triangulations."  The United States military has also used the Hausdorff distance in target recognition procedures \cite{Olsen}. 
 
@@ -272,9 +272,15 @@ Since $d(a,B) \leq d(A,B)$ and $d(b_a,C) \leq d(B,C)$, we have
 \end{comment}
 
 
-\csection{The Digital Line Topology}
+\csection{The Digital Line Topology}\label{sec_digital_line}
 
-``The main purpose of Digital topology is the study of topological properties of discreteobjects which are obtained digitizing continuous objects. Digital topology plays a veryimportant role in computer vision, image processing and computer graphics. The ultimateaim of this article is to analyze the behavior of various general topological concepts in theKhalimsky topology. In this article, we provide some results and examples of topology onZ, the set of all integers. Also, we explain the concepts of digital line and digital intervalswith illustrative counterexamples."
+``The main purpose of Digital topology is the study of topological properties of discrete
+objects which are obtained digitizing continuous objects. Digital topology plays a very
+important role in computer vision, image processing and computer graphics. The ultimate
+aim of this article is to analyze the behavior of various general topological concepts in the
+Khalimsky topology. In this article, we provide some results and examples of topology on
+Z, the set of all integers. Also, we explain the concepts of digital line and digital intervals
+with illustrative counterexamples."
 
 Digital topologies. Main idea is to mimic the continuous information from the digital data. We restrict our discussion to two dimensional space. A continuous image can be represented in $\R^2$, as the curve in Figure \ref{F:DT_cont}. However, if we only have digital information in a data set, say information that is sampled from the continuous image as in the points shown on the graph in Figure \ref{F:DT_cont}, then we work in a discrete space. Each point in our data set is called a \emph{pixel} and to each pixel we assign a point with integer coordinates. In this way our discrete space is represented as $\Z^2$. 
 

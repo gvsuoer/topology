@@ -1,4 +1,4 @@
-\achapter{17}{Compact Spaces}\label{sec:Compact_topology}
+\achapter{17}{Compact Spaces}\label{chap:Compact_topology}
 
 
 \vspace*{-17 pt}
@@ -14,7 +14,7 @@
 
 \vspace*{13 pt}
 
-\csection{Introduction}
+\csection{Introduction}\label{sec_compact_top_intro}
 
 Closed and bounded intervals have important properties in calculus. Recall, for example, that every real-valued function that is continuous on a closed interval $[a, b]$ attains a maximum and minimum value on that interval. The question we want to address in this section is if there is a corresponding characterization for subsets of topological spaces that ensure that continuous real-valued functions with domains in topological spaces attain maximum and minimum values. The property that we will develop is called compactness.
 
@@ -80,7 +80,7 @@ Using the terminology we have now established, we can restate the definition of 
 There are two perspectives by which we can look at compactness. If $(X,\tau_X)$ is a topological space and $A$ is a subset of $X$, then Definition \ref{def:compact} tells us what it means for $A$ to be compact as a subset of $X$. From this perspective, we use open sets in $X$ to make open covers of $A$. We can also consider $A$ as a subspace of $X$ using the subspace topology $\tau_A$. From this perspective we can examine the compactness of $A$ using relatively open sets for open covers. Exercise (\ref{ex:subspace_compact}) tells us that these two perspectives are equivalent, so we will use whatever perspective is appropriate for a given situation. 
 
 
-\csection{Compactness and Continuity}
+\csection{Compactness and Continuity}\label{sec_compact_cont}
 
 In our preview activity we learned about compactness -- the analog of closed intervals from $\R$ in topological spaces. Recall that a subset $A$ of a topological space $X$ is compact if every open cover of $A$ has a finite sub-cover. As we will see, the definition of compactness is exactly what we need to ensure results of the type that continuous real-valued functions with domains in topological spaces attain maximum and minimum values on compact sets. 
 
@@ -168,7 +168,7 @@ A consequence of Activity \ref{act:compact_invariant} is that compactness is a t
 \begin{corollary} Let $(X, \tau_X)$ and $(Y, \tau_Y)$ be homeomorphic topological spaces. Then a subset $A$ of $X$ is compact if and only if $f(A)$ is compact in $Y$. 
 \end{corollary}
 
-\csection{Compact Subsets of $\R^n$}
+\csection{Compact Subsets of $\R^n$}\label{sec_compact_rn}
 
 The metric space $(\R^n,d_E)$ is not compact since the open cover $\{B(0, n)\}_{n \in \Z^+}$ has no finite sub-cover.  Since we have already shown that $(\R,d_E)$ is homeomorphic to the topological subspaces $(a,b)$, $(-\infty, b)$, and $(a,\infty)$ for any $a, b \in \R$, we conclude that no open intervals are compact. Similarly, no half-closed intervals are compact. In fact, we will demonstrate in this section that the compact subsets of $(\R^n, d_E)$ are exactly the subsets that are closed and bounded. The first step is contained in the next activity.
 
@@ -333,7 +333,7 @@ You might wonder whether the Heine-Borel Theorem is true in any metric space.
 \end{comment}
  
 
-\csection{An Application of Compactness}
+\csection{An Application of Compactness}\label{sec_compact_app}
 
 As mentioned at the beginning of this section, compactness is the quality we need to ensure that continuous functions from topological spaces to $\R$ attain their maximum and minimum values.
 
@@ -371,7 +371,7 @@ As mentioned at the beginning of this section, compactness is the quality we nee
 \end{comment}
 
 
-\csection{Summary}
+\csection{Summary}\label{sec_compact_top_summ}
 Important ideas that we discussed in this section include the following.
 \begin{itemize}
 \item A cover of a subset $A$ of a topological space $X$ is any collection of subsets of $X$ whose union contains $A$. An open cover is a cover consisting of open sets. 
@@ -382,7 +382,7 @@ Important ideas that we discussed in this section include the following.
 \end{itemize}
 
 
-\csection{Exercises}
+\csection{Exercises}\label{sec_compact_top_exer}
 
 \be
 
@@ -815,7 +815,7 @@ To show that $X$ is not locally compact, consider $0 \in X$. Let $O$ be an open 
 
 \ee
 
-\csection{An Application of Compactness: Fractals}
+\csection{An Application of Compactness: Fractals}\label{sec_fractals}
 
 Introduced by Felix Hausdorff in the early 20th century as a way to measure the distance between sets, the Hausdorff metric  (also called the Pompeiu-Hausdorff metric) has since been widely studied and has many applications. For example, the United States military has used the Hausdorff distance in target recognition procedures. In addition, the Hausdorff metric has been used in image matching and visual recognition by robots, medicine, image analysis, and astronomy.
 

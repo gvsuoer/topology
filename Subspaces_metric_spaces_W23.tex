@@ -1,4 +1,4 @@
-\achapter{11}{Subspaces and Products of Metric Spaces}\label{sec:metric_subspaces}
+\achapter{11}{Subspaces and Products of Metric Spaces}\label{chap:metric_subspaces}
 
 
 \vspace*{-17 pt}
@@ -12,7 +12,7 @@
 
 \vspace*{13 pt}
 
-\csection{Introduction}
+\csection{Introduction}\label{sec_sub_metric_intro}
 
 Let $(X,d)$ be a metric space, and let $A$ be a subset of $X$. We can make $A$ into a metric space itself in a very straightforward manner. When we do so, we say that $A$ is a \emph{subspace} of $X$. 
 
@@ -84,7 +84,7 @@ and $d'$ satisfies the triangle inequality. Thus, $d'$ is a metric on $A$.
 \end{comment}
 
 
-\csection{Open and Closed Sets in Subspaces}
+\csection{Open and Closed Sets in Subspaces}\label{sec_open_closed_sub}
 
 We saw in our preview activity that a subspace does not necessarily inherit the properties of the larger space. For example, a subset of a subspace might be open in the subspace, but not open in the larger space. However, there is a connection between the open subsets in a subspace and the open sets in the larger space. 
 
@@ -135,7 +135,7 @@ We might now wonder about closed sets in a subspace. If $X$ is a metric space an
 The proof is left to Exercise (\ref{ex:relatively_closed_ms}).
 
 
-\csection{Products of Metric Spaces}
+\csection{Products of Metric Spaces}\label{sec_prod_metric}
 If we have two metric spaces $(X, d_1)$ and $(X_2 ,d_2)$, we might wonder if we can make the set $X_1 \times X_2$ into a metric space. A natural approach might be to define a function $d : (X_1 \times X_2) \times (X_1 \times X_2) \to \R$ by 
 \[d((x,y),(u,v)) = d_1(x,u)d_2(y,v)\]
 for $(x,y)$ and $(u,v)$ in $X_1 \times X_2$. However, this $d$ does not define a metric. For example, if $x \in X_1$ and $y \neq v$ in $X_2$, then $d((x,y),(x,v)) = 0$ even though $(x,y) \neq (x,v)$. To make a metric, we can take a clue from the Euclidean metric on $\R \times \R$. On $\R$, the metric has the form $d_1(x,y) = |x-y|$, while on $\R^2$ the metric  is 
@@ -210,7 +210,7 @@ when $x = (x_1, x_2, \ldots, x_n)$ and $y = (y_1, y_2, \ldots, y_n)$ are in $X$.
 
 The metric $d$ is called the \emph{product metric}\index{product metric} and the spaces $(X_i,d_i)$ are called the \emph{coordinate}\index{coordinate space} or \emph{factor}\index{factor space} spaces of $(X,d)$. The proof that $d$ is a metric is essentially the same as in the $n=2$ case, and is left to Exercise (\ref{ex:prod_metric}). 
 
-\csection{Summary}
+\csection{Summary}\label{sec_sub_metric_summ}
 Important ideas that we discussed in this section include the following.
 \begin{itemize}
 \item A subset $A$ of a metric space $(X,d)$ is a metric space, called a subspace, by using the metric $d|_{A \times A}$ on $A$. 
@@ -222,7 +222,7 @@ with metric $d$ defined by
 when $x = (x_1, x_2, \ldots, x_n)$ and $y = (y_1, y_2, \ldots, y_n)$ are in $X$.
 \end{itemize}
 
-\csection{Exercises}
+\csection{Exercises}\label{sec_sub_metric_exer}
 
 \be
 

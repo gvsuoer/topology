@@ -1,4 +1,4 @@
-\achapter{12}{Topological Spaces}\label{sec:top_spaces}
+\achapter{12}{Topological Spaces}\label{chap:top_spaces}
 
 
 \vspace*{-17 pt}
@@ -15,7 +15,7 @@
 
 \vspace*{13 pt}
 
-\csection{Introduction}
+\csection{Introduction}\label{sec_top_space_intro}
 
 Many of the properties that we introduced in metric spaces (continuity, limit points, boundary) could be phrased in terms of the open sets in the space. With that in mind, we can broaden our concept of space by eliminating the metric and just defining the opens sets in the space. This produces what are called \emph{topological spaces}.
 
@@ -88,7 +88,7 @@ is a topology on $X$.
 
 \end{comment}
 
-\csection{Examples of Topologies}
+\csection{Examples of Topologies}\label{sec_exam_top}
 
 In our preview activity we saw several examples of topologies. Suppose $X$ is a nonempty set.
 \begin{itemize}
@@ -129,7 +129,7 @@ is a finite union of finite sets and so is finite. Thus, $\bigcap_{\alpha \in I}
 
 \end{comment}
 
-\csection{Bases for Topologies}
+\csection{Bases for Topologies}\label{sec_base_top}
 
 It can be difficult to completely describe the open sets in a topology. Instead, we can describe the topology using a collection of sets that generate the topology. For example, if $(X,d)$ is a metric space then the collection of open sets in $X$ forms a topology on $X$, called the \emph{metric}  topology. We also saw that in a metric space, every open set in $X$ is a union of open balls. For that reason we called the collection of open balls a \emph{basis} for the open sets in $X$. We can do the same thing in any topological space. As a non-trivial example, an interesting topology defined on the positive integers is due to S.W. Golomb.  One can use this topology to prove that there are infinitely many primes. This topology also makes the positive integers into a connected Hausdorff space (more on these concepts later). The Golomb topology is defined as follows. If $a$ and $b$ are coprime integers in $\Z^+$ (that is, $a$ and $b$ have no common positive factors other than 1 so that the greatest common divisor of $a$ and $b$ is $1$), let 
 \[B_{a,b} = \{a+bn \mid n \geq 0\}.\]
@@ -285,7 +285,7 @@ we conclude that $\mathcal{B}$ is a basis for $\tau$
 
 \end{comment}
 
-\csection{Metric Spaces and Topological Spaces}
+\csection{Metric Spaces and Topological Spaces}\label{sec_metric_top_space}
 
 Every metric space is a topological space, where the topology is the collection of open sets defined by the metric. This topology is called the \emph{metric topology}\index{topology!metric}. A natural question to ask is whether every topological space is a metric space. That is, given a topological space, can we define a metric on the space so that the open sets are exactly the sets in the topology? For example, any space with the discrete topology is a metric space with the discrete metric. 
 
@@ -301,7 +301,7 @@ Every metric space is a topological space, where the topology is the collection 
 
 We conclude that every metric space is a topological space, but not every topological space is a metric space. The topological spaces that can be realized as metric spaces are called \emph{metrizable}\index{metrizable topological space}. 
 
-\csection{Neighborhoods in Topological Spaces}
+\csection{Neighborhoods in Topological Spaces}\label{sec_neighborhood_top_space}
 
 Recall that we defined a neighborhood of a point $a$ in a metric space to be a subset of the space that contains an open ball centered at $X$. Every open ball is an open set, so we can extend the idea of neighborhood to topological spaces.
 
@@ -373,7 +373,7 @@ Since any union of open sets is an open set, this will verify that $O$ is an ope
 
 \end{comment}
 
-\csection{The Interior of a Set in a Topological Space}
+\csection{The Interior of a Set in a Topological Space}\label{sec_interior_set_top}
 
 We have seen that topologies define the open sets in a topological space. As in metric spaces, open sets can be characterized in terms of their interior points. We defined interior points in metric spaces in terms of neighborhoods -- the same holds true in topological spaces. 
 
@@ -463,7 +463,7 @@ One consequence of Theorem \ref{thm:Interior} is the following.
 \begin{corollary} A subset $O$ of a topological space $X$ is open if and only if $O = \Int(O)$. 
 \end{corollary}
  
-\csection{Summary}
+\csection{Summary}\label{sec_top_space_summ}
 Important ideas that we discussed in this section include the following.
 \begin{itemize}
 \item A topology on a set $X$ is a collection of open subsets of $X$. More specifically, a set $\tau$ of subsets of a set $X$ is a topology on $X$ if 
@@ -485,7 +485,7 @@ A topological space is a set along with a topology on the set.
 \item A subset $A$ of a topological space $X$ is open if and only if $A$ is equal to its interior. 
 \end{itemize}
 
-\csection{Exercises}
+\csection{Exercises}\label{sec_top_space_exer}
 
 \be
 

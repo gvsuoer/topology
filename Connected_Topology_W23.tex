@@ -1,4 +1,4 @@
-\achapter{18}{Connected Spaces}\label{sec:Connected_topology}
+\achapter{18}{Connected Spaces}\label{chap:Connected_topology}
 
 
 \vspace*{-17 pt}
@@ -15,7 +15,7 @@
 
 \vspace*{13 pt}
 
-\csection{Introduction}
+\csection{Introduction}\label{sec_connect_top_intro}
 
 The term ``connected" should bring up images of something that is one piece, not separated. There is more than one way we can interpret the notion of connectedness in topological spaces. For example, we might consider a topological space to be connected if we can't separate it into disjoint pieces in any non-trivial way. As another possibility, we might consider a topological space to be connected if there is always a path from one point in the spaced to another, provided we define what ``path' means. These are different notions of connectedness, and we focus on the first notion in this section.
 
@@ -97,7 +97,7 @@ Now let $U = O_1 \cup O_2$ and $V = O \cap A$. Then $U$ and $V$ are nonempty ope
 \end{comment}
 
 
-\csection{Connected Sets}
+\csection{Connected Sets}\label{sec_connect_sets}
 
 As we learned in our preview activity, connected sets are those sets that cannot be separated into a union of disjoint open sets. Another characterization of connectedness is established in the next activity.
 
@@ -294,7 +294,7 @@ The conditions in Theorem \ref{thm:conn_subset} provide a convenient way to show
 
 If $X$ is a disconnected topological space, then a separation of $X$ is a pair $U$, $V$ of disjoint nonempty open sets such that $U \cup V = X$. 
 
-\csection{Connected Subsets of $\R$}
+\csection{Connected Subsets of $\R$}\label{sec_connect_subset_rn}
 
 With Theorem \ref{thm:conn_subset} in hand, we are just about ready to show that any interval in $\R$ is connected. Let us return for a moment to our example of $A = (-1,0) \cup (4,5)$ in $\R$. It is not difficult to see that if $U$ and $V$ are a separation of $A$, then the subset $(-1,0)$ must be entirely contained in either $U$ or in $V$. The reason for this is that $(-1,0)$ is a connected subset of $A$. This result is true in general.
 
@@ -371,7 +371,7 @@ One consequence of Theorem \ref{thm:connected_limitpoints} is that any interval 
 
 \end{comment}
 
-\csection{Components}
+\csection{Components}\label{sec_components}
 
 As Activity \ref{act:connected_subsets_R} demonstrates, spaces like $A = (1,2) \cup (3,4)$ are not connected. Even so, $A$ is made of two connected subsets $(1,2)$ and $(3,4)$. These connected subsets are called \emph{components}.
 
@@ -437,7 +437,7 @@ Activity \ref{act:connected_compenent} shows that the relation $\sim$ is an equi
  
 
 
-\csection{Cut Sets}
+\csection{Cut Sets}\label{sec_cut_sets}
 
 It can be difficult to determine if two topological spaces are homeomorphic. We can sometimes use topological invariants to determine if spaces are not homeomorphic. For example, if $X$ is connected and $Y$ is not, then $X$ and $Y$ are not homeomorphic. But just because two spaces are connected, it does not automatically follow that the spaces are homeomorphic. For example consider the spaces $(0,2)$ and $[0,2)$. Both are connected subsets of $\R$. If we remove a point, say 1, from the set $(0,2)$ the resulting space $(0,1) \cup (1,2)$ is no longer connected. The same result is true if we remove any point from $(0,2)$. However, if we remove the point $0$ from $[0,2)$ the resulting space $(0,2)$ is connected. So the spaces $(0,2)$ and $[0,2)$ are fundamentally different in this respect, and so are not homeomorphic. Any set that we can remove from a connected set to obtain a disconnected set is called a \emph{cut set}.
 
@@ -516,7 +516,7 @@ Finally, there is no point in $S_5$ that cuts $S_5$ into three connected compone
 
 \end{comment}
 
-\csection{The Intermediate Value Theorem and a Fixed Point Theorem}
+\csection{The Intermediate Value Theorem and a Fixed Point Theorem}\label{sec_ivt_fpt}
 
 In this section we present two important consequences of connectedness. The first consequence is the Intermediate Value Theorem. In calculus, the Intermediate Value Theorem tells us that if $f$ is a continuous function on a closed interval $[a,b]$, then $f$ assumes all values between $f(a)$ and $f(b)$. This result seems straightforward if one just draws a graph of a continuous function on a closed interval. But a picture is not a proof. We state and then prove a more general version of the Intermediate Value Theorem. 
 
@@ -623,7 +623,7 @@ and $f(c) = c$. Thus we demonstrated that $f$ must have a fixed point.
 \end{comment}
 
 
-\csection{Summary}
+\csection{Summary}\label{sec_connect_top_summ}
 Important ideas that we discussed in this section include the following.
 \begin{itemize}
 \item A topological space $(X,\tau)$ is \textbf{connected}\index{connected space} if $X$ cannot be written as the union of two disjoint, nonempty, open subsets. A subset $A$ of a topological space topological space $(X,\tau)$ is connected if $A$ is connected in the subspace topology. 
@@ -641,7 +641,7 @@ Showing that a set has a separation can be a convenient way to show that the set
 \item A subset $S$ of a connected topological space $X$ is a cut set of $X$ if the set $X \setminus S$ is disconnected, while a .point $p$ in $X$ is a cut point if $X \setminus \{p\}$ is disconnected. The property of being a cut set or a cut point is a topological invariant, so we can sometimes use cut sets and cut points to show that topological spaces are not homeomorphic.
 \end{itemize}
 
-\csection{Exercises}
+\csection{Exercises}\label{sec_connect_top_exer}
 
 \be
 

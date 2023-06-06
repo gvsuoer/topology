@@ -1,4 +1,4 @@
-\achapter{19}{Path Connected Spaces}\label{sec:Path_connected_topology}
+\achapter{19}{Path Connected Spaces}\label{chap:Path_connected_topology}
 
 
 \vspace*{-17 pt}
@@ -14,7 +14,7 @@
 
 \vspace*{13 pt}
 
-\csection{Introduction}
+\csection{Introduction}\label{sec_path_intro}
 
 We defined connectedness in terms of separability by open sets. There are other ways to look at connectedness. For example, the subset $(0,1)$ is connected in $\R$ because we can draw a line segment (which we will call a \emph{path}) between any two points in $(0,1)$ and remain in the set $(0,1)$. So we might alternatively consider a topological space to be connected if there is always a path from one point in the spaced to another. Although this is a new notion of connectedness, we will see that path connectedness and connectedness are related.
  
@@ -62,7 +62,7 @@ It is also true that $A$ is path connected. The constant function $p: [0,1] \to 
 
 \end{comment}
 
-\csection{Path Connectedness}
+\csection{Path Connectedness}\label{sec_path_connect}
 
 As with every new property we define, it is natural to ask if path connectedness is a topological property.
 
@@ -104,7 +104,7 @@ A consequence of Theorem \ref{thm:path_connected} is the following.
 \end{corollary}
 
 
-\csection{Path Connectedness as an Equivalence Relation}
+\csection{Path Connectedness as an Equivalence Relation}\label{sec_path_connect_equiv}
 
 We saw that we could define an equivalence relation using connected subsets of a topological space, which partitions the space into a disjoint union of connected components. We might expect to be able to do something similar with path connectedness. The main difficulty will be transitivity. As illustrated in Figure \ref{F:path_transitive}, if we have a path $p$ from $a$ to $b$ and a path $q$ from $b$ to $c$, it appears that we can just follow the path $p$ from $a$ to $b$, then path $q$ from $b$ to $c$ to have a path from $a$ to $c$. But there are two problems to consider: how do we define this path as a function from $[0,1]$ into our space, and how do we know the resulting function is continuous. The next lemma will help.
 \begin{figure}[h]
@@ -192,7 +192,7 @@ Since $\sim$ as defined in (\ref{eq:path_equivalence}) is an equivalence relatio
 \begin{definition} The \textbf{path component}\index{path component} of an element $a$ in a topological space $(X, \tau)$ is the largest path connected subset of $X$ that contains $a$. 
 \end{definition}
  
-\csection{Path Connectedness and Connectedness}
+\csection{Path Connectedness and Connectedness}\label{sec_connectedness}
 
 Path connectedness and connectedness are different concepts, but they are related. In this section we will show that any path connected space must also be connected. We will see later that the converse is not true except in finite topological spaces. 
 
@@ -206,7 +206,7 @@ is a connected subset of $X$. But every $x \in X$ is in a $C_x$, so $C = X$. We 
 
 In the following sections we explore the reverse implication in Theorem \ref{thm:pctoc} -- that is, does connectedness imply path connectedness. 
 
-\csection{Path Connectedness and Connectedness in Finite Topological Spaces}
+\csection{Path Connectedness and Connectedness in Finite Topological Spaces}\label{sec_connect_finite}
 
 In this section we will demonstrate that connectedness and path connectedness are equivalent concepts in finite topological spaces. In the following section, we prove that path connectedness and connectedness are not equivalent in infinite topological spaces. Throughout this section, we assume that $X$ is a finite topological space. We begin with an example to motivate the main ideas. 
 
@@ -389,7 +389,7 @@ We can now complete our main result of this section.
 \end{proof}
 
 
-\csection{Path Connectedness and Connectedness in Infinite Topological Spaces}
+\csection{Path Connectedness and Connectedness in Infinite Topological Spaces}\label{sec_connect_infinite}
 
 Given that connectedness and path connectedness are equivalent in finite topological spaces, a reasonable question now is whether the converse of Theorem \ref{thm:pctoc} is true in arbitrary topological spaces. As we will see, the answer is no. To find a counterexample, we need to look in an infinite topological space. There are many examples, but a standard example to consider is the \emph{topologist's sine curve}\index{topologist's sine curve}. This curve $S$ is defined as the union of the sets
 \[S_1 = \{(0,y) \mid -1 \leq y \leq 1\}  \ \text{ and } \ S_2 = \left\{ \left(x,\sin\left(\frac{1}{x}\right)\right) \Big| \ 0 < x \leq 1\right\}.\]
@@ -445,7 +445,7 @@ Finally, suppose $q \geq \frac{1}{2}$. Then the ball $B_S\left(p(x), \frac{1}{2}
 We conclude that there can be no path in $S$ from $(0,0)$ to any point in $S_2$, completing our proof that $S$ is not path connected. (In fact, the  argument given shows that there is no path in $S$ from any point in $S_1$ to any point in $S_2$. 
 \end{proof}
 
-\csection{Summary}
+\csection{Summary}\label{sec_path_summ}
 Important ideas that we discussed in this section include the following.
 \begin{itemize}
 \item A path in a topological space $X$ is a continuous function $p$ from the interval $[0,1]$ to $X$. If $p(0) = a$ and $p(1) = b$, then $p$ is a path from $a$ to $b$. 
@@ -456,7 +456,7 @@ Important ideas that we discussed in this section include the following.
 \end{itemize}
 
 
-\csection{Exercises}
+\csection{Exercises}\label{sec_path_exer}
 
 \be
 

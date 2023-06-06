@@ -1,4 +1,4 @@
-\achapter{14}{Continuity and Homeomorphisms}\label{sec:continuity_topology}
+\achapter{14}{Continuity and Homeomorphisms}\label{chap:continuity_topology}
 
 
 \vspace*{-17 pt}
@@ -13,7 +13,7 @@
 
 \vspace*{13 pt}
 
-\csection{Introduction}
+\csection{Introduction}\label{sec_cont_top_intro}
 
 Recall that we could characterize a function $f$ from a metric space $(X,d_X)$ to a metric space $(Y,d_Y)$ as continuous at $a \in X$ if $f^{-1}(N)$ is a neighborhood of $a$ in $X$ whenever $N$ is a neighborhood of $f(a)$ in $Y$. We have defined neighborhoods in topological spaces, so we can use this characterization as our definition of a continuous function from one topological space to another. 
 
@@ -175,7 +175,7 @@ The following theorem is the topological analog of Theorem \ref{thm:closed_sets_
 \begin{theorem} \label{thm:closed_sets_continuity_TS} Let $f$ be a function from a topological space $(X,\tau_X)$ to a topologicval space $(Y,\tau_Y)$. Then $f$ is continuous if and only if $f^{-1}(C)$ is closed in $X$ whenever $C$ is a closed set in $Y$.  
 \end{theorem}
 
-\csection{Metric Equivalence}
+\csection{Metric Equivalence}\label{sec_metric_equiv}
 
 We have seen that we can make a set into a metric space with different metrics. For example, the spaces $(\R^2, d_E)$, $(\R^2, d_T)$, $(\R^2, d_M)$, and $(\R^2, d)$ are all metric spaces, where $d_E$ is the Euclidean metric, $d_T$ the taxicab metric, $d_M$ the max metric, and $d$ the discrete metric. But are these metric spaces really ``different" metric spaces? What do we mean by ``different"? 
 
@@ -247,7 +247,7 @@ Metric equivalence is a very strong type of equivalence -- the existence of an i
 \end{figure}
 
 
-\csection{Topological Equivalence}
+\csection{Topological Equivalence}\label{sec_top_equiv}
  
 When we can deform one set into another without poking holes in the set, we consider the two sets to be equivalent from a topological perspective. Such a deformation $f$ has to be a bijection to ensure that the two sets contain the same number of elements, continuous so that the inverse images of open sets are open, and $f^{-1}$ must be continuous so images of open sets are open. Such a function provides a one-to-one correspondence between open sets in the two spaces. This leads to the next definition.
 
@@ -320,7 +320,7 @@ So $(\R^2,d_T)$ and $(\R^2, d_T)$ are topologically equivalent.
 \end{comment}
 
 
-\csection{Relations}
+\csection{Relations}\label{sec_relations}
 We use the word ``equivalent" deliberately when talking about metric or topological equivalence. Recall that equivalence is a word used with relations, and that a relation is a way to compare two elements from a set. We are familiar with many relations on sets, ``$<$", ``$=$", ``$\geq$" on the integers, for example.  
 
 \begin{definition} A \emph{relation}\index{relation} on a set $S$ is a subset $R$ of $S \times S$.
@@ -390,7 +390,7 @@ So $X$ is topologically equivalent to $Z$ and topological equivalence is a trans
 Equivalence relations are important because an equivalence relation on a set $S$ partitions the set into a disjoint union of equivalence classes. Since topological equivalence is an equivalence relation, we can treat the spaces that are topologically equivalent to each other as being essentially the same space from a topological perspective. Under the relation of homeomorphism we call the equivalence classes \emph{homeomorphism} classes. 
 
 
-\csection{Topological Invariants}
+\csection{Topological Invariants}\label{sec_top_invar}
 Homeomorphic topological spaces are essentially the same from a topological perspective, and they share many properties, but not all. The properties they share are called \textit{topological invariants} or \emph{topological properties}.
 
 \begin{definition} A property of a topological space $X$ is a \textbf{topological property}\index{topological property} (or \textbf{topological invariant}\index{topological invariant}) if every topological space homeomorphic to $X$ has the same property. 
@@ -427,7 +427,7 @@ Suppose $B$ is a subset of $Y$ such that $Y \setminus B$ is finite. Then $f^{-1}
 
 \end{comment}
 
-\csection{Summary}
+\csection{Summary}\label{sec_cont_top_summ}
 Important ideas that we discussed in this section include the following.
 \begin{itemize}
 \item A function $f$ from a topological space $X$ to a topological space $Y$ is continuous if $f^{-1}(O)$ is open in $X$ whenever $O$ is open in $Y$. 
@@ -441,7 +441,7 @@ for all $x,y \in X$ and $u,v \in Y$. That is, $X$ and $Y$ are metrically equival
 \item A topological invariant is any property that topological space $X$ has that must also be a property of any topological space homeomorphic to $X$. We can sometimes use topological invariants to determine if two topological spaces are not homeomorphic.
 \end{itemize}
 
-\csection{Exercises}
+\csection{Exercises}\label{sec_cont_top_exer}
 
 \be
 
