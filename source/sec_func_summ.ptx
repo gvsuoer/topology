@@ -1,0 +1,95 @@
+<section xml:id="sec_func_summ">
+  <title>Summary</title>
+  <p>
+    Important ideas that we discussed in this section include the following.
+    <ul>
+      <li>
+        <p>
+          A function <m>f</m> from a nonempty set <m>A</m> to a set <m>B</m> is a collection of ordered pairs <m>(a,b)</m> so that for each <m>a \in A</m> there is a pair <m>(a,b)</m> in <m>f</m>,
+          and if <m>(a,b)</m> and <m>(a,b')</m> are in <m>f</m>,
+          then <m>b=b'</m>.
+          If <m>f</m> is a function we use the notation
+          <m>f(a) = b</m> to indicate that <m>(a,b) \in f</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          If <m>f</m> is a function from <m>A</m> to <m>B</m>,
+          the set <m>A</m> is the domain of the function.
+        </p>
+      </li>
+      <li>
+        <p>
+          If <m>f</m> is a function from <m>A</m> to <m>B</m>,
+          the set <m>B</m> is the codomain of the function.
+          The set
+          <me>
+            \{f(a) \mid a \in A\}
+          </me>
+          is the range of the function.
+          So the range of a function is a subset of the codomain.
+        </p>
+      </li>
+      <li>
+        <p>
+          A function <m>f</m> from a set <m>A</m> to a set <m>B</m> is an injection if,
+          whenever <m>f(a) = f(a')</m> for <m>a</m>,
+          <m>a' \in A</m>, then <m>a = a'</m>.
+          The function <m>f</m> is a surjection if,
+          whenever <m>b \in B</m>,
+          then there is an <m>a \in A</m> so that <m>f(a)=b</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          If <m>f</m> is a function from a set <m>A</m> to a set <m>B</m> and if <m>g</m> is a function from <m>B</m> to a set <m>C</m>,
+          then the composite <m>g \circ f</m> is a function from <m>A</m> to <m>C</m> defined by
+          <m>(g \circ f)(a) = g(f(a))</m> for every <m>a \in A</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          A function <m>f</m> from a set <m>A</m> to a set <m>B</m> is a bijection if <m>f</m> is both a surjection and injection.
+          When <m>f</m> is a bijection from <m>A</m> to <m>B</m>,
+          then <m>f</m> has an inverse <m>f^{-1}</m> defined by
+          <m>f^{-1}(b) = a</m> when <m>f(a) = b</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          If <m>f</m> is a function from a set <m>A</m> to a set <m>B</m>,
+          and if <m>C</m> is a subset of <m>A</m>,
+          then image of <m>C</m> under <m>f</m> is the set
+          <me>
+            f(C) = \{f(c) \mid c \in C\}
+          </me>,
+          and if <m>D</m> is a subset of <m>Y</m>,
+          the inverse image of <m>D</m> is the set
+          <me>
+            f^{-1}(D) = \{a \in A \mid f(a) \in D\}
+          </me>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Important properties that relate images and inverse images of sets and set unions are the following.
+          If <m>f</m> is a function from a set <m>X</m> to a set <m>Y</m>,
+          and if <m>\{A_{\alpha}\}</m> is a collection of subsets of <m>X</m> for <m>\alpha</m> in some indexing set <m>I</m>,
+          and <m>\{B_{\beta}\}</m> be a collection of subsets of <m>Y</m> for <m>\beta</m> in some indexing set <m>J</m>, then
+          <ol label="i">
+            <li>
+              <p>
+                <m>f\left(\bigcup_{\alpha \in I} A_{\alpha}\right) = \bigcup_{\alpha \in I} f(A_{\alpha})</m> and
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right) = \bigcup_{\beta \in J} f^{-1}(B_{\beta})</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+    </ul>
+  </p>
+</section>

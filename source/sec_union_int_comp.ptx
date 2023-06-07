@@ -1,0 +1,485 @@
+<section xml:id="sec_union_int_comp">
+  <title>Unions, Intersections, and Complements of Sets</title>
+  <p>
+    In mathematics,
+    the collection of points that make up a string or a blob of play-doh as in <xref ref="act_rubber_sheet">Activity</xref> is represented as a set.
+    Topology is then the study of these sets and what properties of the sets don't change when transformations are applied to the sets.
+    To study topology we will need a solid understanding of sets and different operations on sets.
+  </p>
+  <p>
+    What we saw in Preview <xref ref="pa_sets">Activity</xref>
+    is what is called a <em>paradox</em>.
+    Our original attempt to define a set led to an impossible situation since both <m>S \in S</m> and
+    <m>S \notin S</m> lead to contradictions.
+    This paradox is called <em>Russell's paradox</em> after Bertrand Russell,
+    although it was apparently known before Russell.
+    The moral of the story is that we need to be careful when making definitions.
+    A set might seem like a simple object,
+    and in our experience usually is,
+    but formally defining a set can be problematic.
+    As a result,
+    we won't state a formal definition, but rather take a set
+        <idx><h>set</h></idx>
+    to be a collection of objects that doesn't lead to a paradox.
+    The objects are called the elements of the set.
+    (In axiomatic set theory,
+    a set is taken to be an undefined primitive <mdash/> much as a point is undefined in Euclidean geometry.)
+  </p>
+  <p>
+    In order to effectively work with sets,
+    we need to have an understanding what it means for two sets to be equal.
+  </p>
+  <activity xml:id="act_set_equality">
+    <p>
+      <nbsp/>
+      <ul>
+        <li>
+          <p>
+            What should it mean for two sets to be equal?
+            If <m>A</m> and <m>B</m> are sets,
+            how do we prove that <m>A = B</m>? (This is question that requires discussion,
+            which is different than a question that only asks for a computation or an example.
+            Activities throughout this text will ask both types of questions.)
+          </p>
+        </li>
+        <li>
+          <p>
+            Let <m>A = \{x \in \R \mid x \lt 2\}</m> and <m>B = \{x \in \R \mid x-1 \lt 1\}</m>.
+            Is <m>A=B</m>?
+            If yes, prove your answer.
+            If no, prove any containment that you can.
+          </p>
+        </li>
+        <li>
+          <p>
+            Let <m>A = \{n \in \Z \mid 2 \text{ divides } n\}</m> and <m>B = \{n \in \Z \mid 4 \text{ divides } (n-2)\}</m>.
+            Is <m>A=B</m>?
+            If yes, prove your answer.
+            If no, prove any containment that you can.
+          </p>
+        </li>
+        <li>
+          <p>
+            Let <m>A = \{n \in \Z \mid n \text{ is odd } \}</m> and <m>B = \{n \in \Z \mid 4 \text{ divides } (n-1) \text{ or } 4 \text{ divides } (n-3)\}</m>.
+            Is <m>A=B</m>?
+            If yes, prove your answer.
+            If no, prove any containment that you can.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </activity>
+  <p>
+    Once we have the notion of a set,
+    we can build new sets from existing ones.
+    For example, we define the union, intersection,
+    set difference, and complement of a set as follows.
+    <ul>
+      <li>
+        <p>
+          The <em>union</em>
+            <idx><h>set</h><h>union</h></idx>
+          of sets <m>A</m> and <m>B</m> is the set <m>A \cup B</m> defined as
+          <me>
+            A \cup B = \{x \mid x \in A \text{ or }  x \in B\}
+          </me>.
+        </p>
+      </li>
+      <li>
+        <p>
+          The <em>intersection</em>
+            <idx><h>set</h><h>intersection</h></idx>
+          of sets <m>A</m> and <m>B</m> is the set <m>A \cap B</m> defined as
+          <me>
+            A \cap B = \{x \mid x \in A \text{ and }  x \in B\}
+          </me>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Let <m>A</m> and <m>B</m> be sets.
+          The <em>set difference</em>
+            <idx><h>set difference</h></idx>
+          <m>A \setminus B</m> is the set
+          <me>
+            A \setminus B = \{a \in A \mid a \notin B\}
+          </me>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Let <m>A</m> be a subset of a set <m>U</m>.
+          The <em>complement</em>
+            <idx><h>set</h><h>complement</h></idx>
+          of <m>A</m> in <m>U</m> is the set
+          <me>
+            U \setminus A = \{x \in U \mid x \notin A\}
+          </me>.
+          The complement of a set <m>A</m> in a set <m>U</m> is also denoted by <m>C_U(A)</m>,
+          <m>C(A)</m>
+          (if the set <m>U</m> is understood),
+          <m>A^c</m>, or even <m>U-A</m>.
+        </p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    We can visualize these sets using Venn diagrams.
+    A Venn diagram is a depiction of sets using geometric figures.
+    For example,
+    if <m>U</m> is a set containing all other sets of interest
+    (we call <m>U</m> the <em>universal</em> set),
+    we can represent <m>U</m> as a large container
+    (say a rectangle)
+    with subsets <m>A</m> and <m>B</m> as smaller containers
+    (say circles),
+    and shade the elements in a given set.
+    The Venn diagrams in <xref ref="F_Venn">Figure</xref>
+    depict the sets <m>A</m>, <m>B</m>,
+    <m>A \cup B</m>, <m>A \cap B</m>,
+    <m>A^c</m>, and <m>B^c</m>.
+  </p>
+  <figure xml:id="F_Venn">
+    <caption>Vennn diagrams</caption>
+    <sidebyside>
+      <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\figuredef\universal{(-4,-2.75) -- (4,-2.75) -- (4,2.75) -- (-4,2.75) -- cycle}
+\figuredef\firstcircle{(-1.25,0) circle (2cm)}
+\figuredef\secondcircle{(1.25,0) circle (2cm)}
+\draw[fill=gray!30] \firstcircle;
+\draw[thick] \firstcircle;
+\draw[thick] \secondcircle;
+\draw[thick] \universal;
+\node at (-3.4,1.5) {\(A\)};
+\node at (3.4,1.5) {\(B\)};\end{tikzpicture}]]>
+</latex-image>
+      </image>
+      <m>A</m>
+      <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\figuredef\universal{(-4,-2.75) -- (4,-2.75) -- (4,2.75) -- (-4,2.75) -- cycle}
+\figuredef\firstcircle{(-1.25,0) circle (2cm)}
+\figuredef\secondcircle{(1.25,0) circle (2cm)}
+\draw[fill=gray!30] \secondcircle;
+\draw[thick] \firstcircle;
+\draw[thick] \secondcircle;
+\draw[thick] \universal;
+\node at (-3.4,1.5) {\(A\)};
+\node at (3.4,1.5) {\(B\)};\end{tikzpicture}]]>
+</latex-image>
+      </image>
+      <m>B</m>
+      <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\figuredef\universal{(-4,-2.75) -- (4,-2.75) -- (4,2.75) -- (-4,2.75) -- cycle}
+\figuredef\firstcircle{(-1.25,0) circle (2cm)}
+\figuredef\secondcircle{(1.25,0) circle (2cm)}
+\draw[fill=gray!30] \firstcircle;
+\draw[fill=gray!30] \secondcircle;
+\draw[thick] \firstcircle;
+\draw[thick] \secondcircle;
+\draw[thick] \universal;
+\node at (-3.4,1.5) {\(A\)};
+\node at (3.4,1.5) {\(B\)};\end{tikzpicture}]]>
+</latex-image>
+      </image>
+      <m>A \cup B</m>
+      <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\figuredef\universal{(-4,-2.75) -- (4,-2.75) -- (4,2.75) -- (-4,2.75) -- cycle}
+\figuredef\firstcircle{(-1.25,0) circle (2cm)}
+\figuredef\secondcircle{(1.25,0) circle (2cm)}
+\draw[thick] \firstcircle;
+\draw[thick] \secondcircle;
+\draw[thick] \universal;
+\node at (-3.4,1.5) {\(A\)};
+\node at (3.4,1.5) {\(B\)};
+\draw[clip] \firstcircle;
+\draw[clip] \secondcircle;
+\fill[gray!30] (0,0) circle (2cm);
+\draw[thick] \firstcircle;
+\draw[thick] \secondcircle;\end{tikzpicture}]]>
+</latex-image>
+      </image>
+      <m>A \cap B</m>
+      <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\figuredef\universal{(-4,-2.75) -- (4,-2.75) -- (4,2.75) -- (-4,2.75) -- cycle}
+\figuredef\firstcircle{(-1.25,0) circle (2cm)}
+\figuredef\secondcircle{(1.25,0) circle (2cm)}
+\draw[fill=gray!30] \universal;
+\draw[fill=white] \firstcircle;
+\draw[thick] \firstcircle;
+\draw[thick] \secondcircle;
+\draw[thick] \universal;
+\node at (-3.4,1.5) {\(A\)};
+\node at (3.4,1.5) {\(B\)};\end{tikzpicture}]]>
+</latex-image>
+      </image>
+      <m>A^c</m>
+      <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\figuredef\universal{(-4,-2.75) -- (4,-2.75) -- (4,2.75) -- (-4,2.75) -- cycle}
+\figuredef\firstcircle{(-1.25,0) circle (2cm)}
+\figuredef\secondcircle{(1.25,0) circle (2cm)}
+\draw[fill=gray!30] \universal;
+\draw[fill=white] \secondcircle;
+\draw[thick] \firstcircle;
+\draw[thick] \secondcircle;
+\draw[thick] \universal;
+\node at (-3.4,1.5) {\(A\)};
+\node at (3.4,1.5) {\(B\)};\end{tikzpicture}]]>
+</latex-image>
+      </image>
+      <m>B^c</m>
+    </sidebyside>
+  </figure>
+  <p>
+    As we have discussed,
+    to prove that two sets <m>X</m> and <m>Y</m> are equal we prove that each is a subset of the other.
+    The next example provides another illustration of the idea.
+  </p>
+  <example xml:id="ex_set_eq">
+    <statement>
+      <p>
+        Let <m>A</m>, <m>B</m>, and <m>C</m> be sets.
+        We will prove that <m>A \cap (B \setminus C) = (A \cap B) \setminus (A \cap C)</m>.
+      </p>
+      <p>
+        To prove this set equality we must prove that
+        <m>A \cap (B \setminus C) \subseteq (A \cap B) \setminus (A \cap C)</m> and <m>(A \cap B) \setminus (A \cap C) \subseteq A \cap (B \setminus C)</m>.
+        We start with <m>A \cap (B \setminus C) \subseteq (A \cap B) \setminus (A \cap C)</m>.
+      </p>
+      <p>
+        To prove that <m>A \cap (B \setminus C) \subseteq (A \cap B) \setminus (A \cap C)</m>,
+        we need to demonstrate that every element in
+        <m>A \cap (B \setminus C)</m> is also in <m>(A \cap B) \setminus (A \cap C)</m>.
+        To do this, we select an arbitrary element in
+        <m>A \cap (B \setminus C)</m> and show that this element is in <m>(A \cap B) \setminus (A \cap C)</m>.
+        Let <m>x \in A \cap (B \setminus C)</m>.
+        Then <m>x \in A</m> and <m>x \in B \setminus C</m>.
+        The fact that <m>x \in B \setminus C</m> implies that <m>x \in B</m> but <m>x \notin C</m>.
+        Therefore, <m>x \in A</m> and <m>x \in B</m>, but <m>x \notin C</m>.
+        This implies that <m>x \in A</m> and <m>x \in B</m>,
+        but <m>x \in A</m> and <m>x \notin C</m>.
+        So <m>x \in A</m> and <m>x \in B</m>,
+        but <m>x \notin A \cap C</m>.
+        We conclude that <m>x \in (A \cap B) \setminus (A \cap C)</m>.
+        This proves that <m>A \cap (B \setminus C) \subseteq (A \cap B) \setminus (A \cap C)</m>.
+      </p>
+      <p>
+        For the reverse containment,
+        we let <m>y \in (A \cap B) \setminus (A \cap C)</m>.
+        So <m>y \in A \cap B</m> but <m>y \notin A \cap C</m>.
+        Since <m>y \in A \cap B</m>, we know that <m>y \in A</m> and <m>y \in B</m>.
+        The fact that <m>y \notin A \cap C</m> means that <m>y \notin C</m>.
+        So <m>y \in A</m>, <m>y \in B</m>, and <m>y \notin C</m>.
+        Thus, <m>y \in A</m> and <m>y \in B \setminus C</m>.
+        We conclude that <m>y \in A \cap (B \setminus C)</m>,
+        which shows that <m>(A \cap B) \setminus (A \cap C) \subseteq A \cap (B \setminus C)</m>.
+        The two containments,
+        <m>A \cap (B \setminus C) \subseteq (A \cap B) \setminus (A \cap C)</m> and
+        <m>(A \cap B) \setminus (A \cap C) \subseteq A \cap (B \setminus C)</m> demonstrate that <m>A \cap (B \setminus C) = (A \cap B) \setminus (A \cap C)</m>.
+      </p>
+    </statement>
+  </example>
+  <p>
+    We will use the ideas in <xref ref="act_set_equality">Activity</xref>
+    and <xref ref="ex_set_eq">Example</xref>
+    to prove set equalities throughout this text.
+    The next activity will provide some additional practice.
+  </p>
+  <activity xml:id="act_sets_1">
+    <p>
+      In this activity we work with unions,
+      intersections, and complements of sets.
+      Let <m>A</m> and <m>B</m> be sets.
+      <ul>
+        <li>
+          <p>
+            Let <m>A = \{1,2,3,4,5,6\}</m> and <m>B = \{2,4,6,8,10\}</m>,
+            with <m>U = \{1,2,3,4,5,6,7,8,9,10\}</m>.
+            <ol label="i">
+              <li>
+                <p>
+                  Determine the elements in <m>A \cup B</m> and <m>A \cap B</m>.
+                  What are the elements in <m>(A \cup B)^c</m> and <m>(A \cap B)^c</m>?
+                </p>
+              </li>
+              <li>
+                <p>
+                  Determine the elements in <m>A^{c} \cup B^{c}</m> and <m>A^{c} \cap B^{c}</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p>
+            Let <m>A</m> and <m>B</m> be arbitrary subsets of a universal set <m>U</m>.
+            There are connections between <m>A</m>,
+            <m>B</m> and their complements,
+            unions, and intersections.
+            <ol label="i">
+              <li>
+                <p>
+                  Use Venn diagrams to draw <m>(A \cup B)^c</m> and <m>(A \cap B)^c</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Use the Venn diagrams and the result of (a) to find and prove a relationship between <m>A^c</m>,
+                  <m>B^c</m> and <m>(A \cup B)^c</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Use the Venn diagrams and the result of (a) to find and prove a relationship between <m>A^c</m>,
+                  <m>B^c</m> and <m>(A \cap B)^c</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </activity>
+  <p>
+    In <xref ref="act_sets_1">Activity</xref>
+    we worked with the union and intersection of two sets.
+    There is no reason to restrict these definitions to only two sets,
+    as the next activity illustrates.
+  </p>
+  <activity>
+    <p>
+      To define an infinite collection of sets we often use what is called an <em>indexing set</em>.
+      An indexing set allows us to consider a collection of objects that are in one-to-one correspondence with a set like the positive integers,
+      or even the real numbers.
+      When using an indexing set,
+      we generally make a statement such as ``let <m>\{A_{\alpha}\}</m> for
+      <m>\alpha \in I</m> be a collection of sets indexed by some set <m>I</m>". The collection <m>\{A_{\alpha}\}_{\alpha \in I}</m> is called an
+      <em>indexed family of sets</em>.
+          <idx><h>indexed family of sets</h></idx>
+      <ul>
+        <li>
+          <p>
+            The set <m>I</m> could be finite.
+            As an example,
+            let <m>A_{n} = \{1, 2, 3, \ldots n\}</m> for <m>n</m> in the set <m>I = \{1,2,3, \ldots, 10\}</m>.
+            <ol label="i">
+              <li>
+                <p>
+                  What is <m>A_5</m>?
+                  What is <m>A_{8}</m>?
+                </p>
+              </li>
+              <li>
+                <p>
+                  How many sets are in the indexed family <m>\{A_n\}_{n \in I}</m>?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p>
+            The indexing set can be infinite.
+            For example,
+            let <m>A_{\alpha} = [0, |\alpha|)</m> for <m>\alpha</m> in the set <m>\R</m> (where <m>[a,b)</m> is the interval consisting of the real numbers <m>x</m> such that <m>a \leq x \lt b</m>).
+            In this case, what is <m>A_5</m>?
+            What is <m>A_{\pi}</m>?
+            What is <m>A_{-\frac{2}{3}}</m>?
+          </p>
+        </li>
+        <li>
+          <p>
+            We have defined the union and intersection of two sets.
+            The same idea can be extended to define the union and intersection of an indexed collection of sets.
+            <ol label="i">
+              <li>
+                <p>
+                  Recall that if <m>A</m> and <m>B</m> are sets,
+                  the intersection <m>A \cap B</m> is the set <m>\{x \mid x \in A \text{ and }  x \in B\}</m>.
+                  How can we extend this definition from two sets to any collection of sets?
+                  In other words, how do we <em>define</em>
+              <idx><h>set</h><h>arbitrary intersection</h></idx>
+                  <me>
+                    \bigcap_{\alpha \in I} A_{\alpha}?
+                  </me>
+                  In the example in (b),
+                  what set is <m>\ds \bigcap_{\alpha \in \R} A_{\alpha}</m>?
+                </p>
+              </li>
+              <li>
+                <p>
+                  Recall that if <m>A</m> and <m>B</m> are sets,
+                  the union <m>A \cup B</m> is the set <m>\{x \mid x \in A \text{ or }  x \in B\}</m>.
+                  How can we extend this definition from two sets to any collection of sets?
+                  In other words, how do we <em>define</em>
+              <idx><h>set</h><h>arbitrary union</h></idx>
+                  <me>
+                    \bigcup_{\alpha \in I} A_{\alpha}?
+                  </me>
+                  In the example in (b),
+                  what set is <m>\ds \bigcup_{\alpha \in \R} A_{\alpha}</m>?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </activity>
+  <p>
+    These properties <m>(A \cap B)^c = A^c \cup B^c</m> and
+    <m>(A \cup B)^c = A^c \cap B^c</m> that we learned about in <xref ref="act_sets_1">Activity</xref> are called DeMorgan's Laws.
+    These laws apply to any union or intersection of sets,
+    finite or infinite.
+    The proofs are left Exercise <xref ref="ex_DeMorgan"/>.
+  </p>
+  <theorem>
+    <title>DeMorgan's Laws</title>
+    <statement>
+      <p>
+        Let <m>\{A_{\alpha}\}</m> is a collection of sets indexed by a set <m>I</m> in some universal set <m>U</m>.
+        Then
+        <ol>
+          <li>
+            <p>
+              <m>\displaystyle \left(\bigcup_{\alpha \in I} A_{\alpha}\right)^c = \bigcap_{\alpha \in I} A_{\alpha}^c</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle \left(\bigcap_{\alpha \in I} A_{\alpha}\right)^c = \bigcup_{\alpha \in I} A_{\alpha}^c</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </theorem>
+  <activity>
+    <p>
+      <nbsp/>
+      <ul>
+        <li>
+          <p>
+            Verify DeMorgan's Laws in the specific case of <m>A_{\alpha} = \{1, 2, 3, \ldots \alpha\}</m> in <m>U = \Z</m>,
+            where <m>\alpha</m> is any element of the indexing set <m>I = \Z^+</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Why should the complement of a union be an intersection and why should the complement of an intersection be a union?
+            <hint>
+              <p>
+                Consider the definitions of unions and intersections.
+              </p>
+            </hint>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </activity>
+</section>

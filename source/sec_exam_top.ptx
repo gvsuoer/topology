@@ -1,0 +1,58 @@
+<section xml:id="sec_exam_top">
+  <title>Examples of Topologies</title>
+  <p>
+    In our preview activity we saw several examples of topologies.
+    Suppose <m>X</m> is a nonempty set.
+    <ul>
+      <li>
+        <p>
+          The topology consisting of all subsets of <m>X</m> is called the
+          <em>discrete topology</em>.
+            <idx><h>topology</h><h>discrete</h></idx>
+        </p>
+      </li>
+      <li>
+        <p>
+          The topology <m>\{\emptyset, X\}</m> is the
+          <em>indiscrete topology</em>.
+            <idx><h>topology</h><h>indiscrete</h></idx>
+        </p>
+      </li>
+      <li>
+        <p>
+          If <m>(X,d)</m> is a metric space,
+          then the collection consisting of unions of all open balls is a topology called the
+          <em>metric topology</em>.
+            <idx><h>topology</h><h>metric</h></idx>
+        This result tells us that every metric space is topological space under the metric topology.
+          We will see later than not every topological space is a metric space.
+        </p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    The discrete and indiscrete topologies are topologies that can be defined on any set and are often used to use to generate examples.
+    Another topology that can be defined on any set is in the next activity.
+  </p>
+  <activity xml:id="act_TS_limits">
+    <p>
+      Let <m>X</m> be any set and let
+      <m>\tau_{FC}</m> consist of the empty set along with all subsets <m>O</m> of <m>X</m> such that <m>X \setminus O</m> is finite.
+      <ul>
+        <li>
+          <p>
+            Prove that <m>\tau_{FC}</m> is a topology on <m>X</m>. (The topology
+            <m>\tau_{FC}</m> is called the <em>finite complement topology</em><idx><h>topology</h><h>finite complement</h></idx> or the
+            <em>cofinite topology</em>.
+              <idx><h>topology</h><h>cofinite</h></idx>
+          </p>
+        </li>
+        <li>
+          <p>
+            Explain why <m>\tau_{FC}</m> is the discrete topology when <m>X</m> is finite.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </activity>
+</section>

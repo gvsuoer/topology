@@ -1,0 +1,64 @@
+<section xml:id="sec_sets_summ">
+  <title>Summary</title>
+  <p>
+    Important ideas that we discussed in this section include the following.
+    <ul>
+      <li>
+        <p>
+          We can consider a set to be a well-defined collection of elements.
+        </p>
+      </li>
+      <li>
+        <p>
+          A subset of a set is any collection of elements from that set.
+          That is, a subset <m>S</m> of a set <m>X</m> is a set with the property that if <m>s \in S</m>,
+          then <m>s \in X</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          If <m>X</m> and <m>Y</m> are sets,
+          then the union <m>X \cup Y</m> is the set
+          <me>
+            X \cup Y = \{z \mid z \in X \text{ or }  z \in Y\}
+          </me>.
+          The union of an arbitrary collection
+          <m>\{X_{\alpha}\}</m> of sets for <m>\alpha</m> in some indexing set <m>I</m> is the set
+          <me>
+            \bigcup_{\alpha \in I} X_{\alpha} = \{z \mid z \in X_{\beta} \text{ for some }  \beta \in I\}
+          </me>.
+        </p>
+      </li>
+      <li>
+        <p>
+          If <m>X</m> and <m>Y</m> are sets,
+          then the intersection <m>X \cap Y</m> is the set
+          <me>
+            X \cap Y = \{z \mid z \in X \text{ and }  z \in Y\}
+          </me>.
+          The intersection of an arbitrary collection
+          <m>\{X_{\alpha}\}</m> of sets for <m>\alpha</m> in some indexing set <m>I</m> is the set
+          <me>
+            \bigcap_{\alpha \in I} X_{\alpha} = \{z \mid z \in X_{\beta} \text{ for all }  \beta \in I\}
+          </me>.
+        </p>
+      </li>
+      <li>
+        <p>
+          If <m>X</m> is a set and <m>A</m> is a subset of <m>X</m>,
+          then the complement of <m>A</m> in <m>X</m> is the set
+          <me>
+            A^c = \{x \in X \mid x \notin A\}
+          </me>.
+        </p>
+      </li>
+      <li>
+        <p>
+          If <m>\{X_{i}\}</m> is a collection of sets with <m>i</m> in some indexing set <m>I</m>,
+          where <m>I</m> is finite or <m>I</m> is the set of positive integers,
+          the Cartesian product <m>\Pi_{i \in I} X_i</m> of the sets <m>X_{i}</m> as the set of all ordered tuples of the form <m>(x_i)</m> where <m>i \in I</m>.
+        </p>
+      </li>
+    </ul>
+  </p>
+</section>

@@ -1,0 +1,51 @@
+<section xml:id="sec_subspace_top">
+  <title>The Subspace Topology</title>
+  <p>
+    In our preview activity,
+    we saw that the intersection of the open sets in a topological space <m>X</m> with any nonempty subset <m>A</m> of <m>X</m> forms a topology for <m>A</m>.
+    We then have <m>A</m> as a subspace of <m>X</m>.
+  </p>
+  <p>
+    The topology <m>\tau_A</m> in <xref ref="def_TS_subspace">Definition</xref>
+    is called the <em>subspace topology</em>,
+        <idx><h>subspace topology</h></idx>
+    the <em>induced topology</em>,
+        <idx><h>induced topology</h></idx>
+    or the <em>relative topology</em>.
+        <idx><h>relative topology</h></idx>
+    In our preview activity we saw that sets that are open in a subspace <m>A</m> of a topological space <m>X</m> need not be open in <m>X</m>.
+    So we call the sets in <m>\tau_A</m>
+    <em>relatively open</em>.
+        <idx><h>relatively open set</h></idx>
+  </p>
+  <p>
+    Once we have defined relatively open sets,
+    we can then consider how to define relatively closed sets.
+  </p>
+  <activity>
+    <p>
+      Let <m>(X, \tau)</m> be a topological space,
+      and let <m>A</m> be a subset of <m>X</m>.
+      <ul>
+        <li>
+          <p>
+            Recall that a subset of a topological space is closed if its complement is open.
+            Given that <m>(A, \tau_A)</m> is a topological space,
+            how is a closed set in <m>A</m> defined?
+            Such a set will be called <em>relatively closed</em>.
+              <idx><h>relatively closed set</h></idx>
+          </p>
+        </li>
+        <li>
+          <p>
+            Recall that a subset <m>U</m> of <m>A</m> is relatively open if and only if
+            <m>U = A \cap O</m> for some open subset of <m>X</m>.
+            With this in mind,
+            how might we expect a relatively closed set in <m>A</m> to be related to a closed set in <m>X</m>?
+            State and prove a theorem for this result.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </activity>
+</section>

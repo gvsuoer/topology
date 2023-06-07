@@ -1,0 +1,51 @@
+<section xml:id="sec_basic_top">
+  <title>The Basic Idea of Topology</title>
+  <p>
+    If you like geometry, you will probably like topology.
+    Geometry is the study of objects with certain attributes (e.g., shape and size),
+    while topology is more general than geometry.
+    In topology, we aren't concerned about the attributes
+    (shape and size)
+    of an object,
+    only about those characteristics that don't change when we transform the object in different ways
+    (any way that doesn't involve tearing or poking holes the object).
+    There are lots of really interesting theorems in topology <mdash/> for example,
+    the Hairy Ball Theorem which states that if you have a ball with hair all over it
+    (think of a tribble from Star Trek <mdash/> if that isn't too old of a reference),
+    it is impossible to comb the hairs continuously and have all the hairs lay flat.
+    Some hair must be sticking straight up!
+  </p>
+  <activity xml:id="act_rubber_sheet">
+    <p>
+      <nbsp/>
+      <ul>
+        <li>
+          <p>
+            Take a pipe cleaner, a rubber band,
+            or a piece of string and make a square from it.
+            You are allowed to change the square by moving parts of the square without breaking it or lifting it off the surface it is on.
+            To which of the following shapes can you transform your square?
+            Explain. (i.) a circle (ii.) the letter <c>S</c> (iii.) a five point star {<image width="73%" source="star.eps"/> } (iv.) the letter <c>D</c>
+          </p>
+        </li>
+        <li>
+          <p>
+            Now take some play-doh
+            (if you don't have any play-doh,
+            just use your imagination).
+            Use the play-doh
+            (or your imagination)
+            to determine which of the following shape can be transformed into others without breaking or making holes. (i.) a filled sphere (ii.) a doughnut (iii.) a bowl (iv.) a coffee mug with handle
+          </p>
+        </li>
+      </ul>
+    </p>
+  </activity>
+  <p>
+    This idea of transforming one set into another as we explored in <xref ref="act_rubber_sheet">Activity</xref>
+    is formally done with functions.
+    As we progress through this subject,
+    we will need to have more rigorous definitions of functions and sets.
+    We begin with sets and discuss functions in <xref ref="sec_functions">Section</xref>.
+  </p>
+</section>

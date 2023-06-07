@@ -1,0 +1,74 @@
+<section xml:id="sec_set_boundary">
+  <title>The Boundary of a Set</title>
+  <p>
+    In addition to limit points, we also defined boundary points in metric spaces.
+    Recall that a boundary point of a set <m>A</m> in a metric space <m>X</m> could be considered to be any point in <m>\overline{A} \cap \overline{X \setminus A}</m>.
+    We make the same definition in a topological space.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        Let <m>(X, \tau)</m> be a topological space,
+        and let <m>A</m> be a subset of <m>X</m>.
+        A boundary point<idx><h>boundary point in a topological space</h></idx> of <m>A</m> is a point <m>x \in X</m> such that every neighborhood of <m>x</m> contains a point in <m>A</m> and a point in <m>X \setminus A</m>.
+        The boundary<idx><h>boundary in a topological space</h></idx> of <m>A</m> is the set
+        <me>
+          \Bdry(A) = \{x \in X \mid x \text{ is a boundary point of }  A\}
+        </me>.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    As with metric spaces,
+    the boundary points of a set <m>A</m> are those points that are
+    <q>between</q>
+    <m>A</m> and its complement.
+  </p>
+  <activity xml:id="act_TS_bl_examples">
+    <p>
+      Find the boundaries of the following sets
+      <ul>
+        <li>
+          <p>
+            <m>\{c,d\}</m> in <m>(X, \tau)</m> with
+            <m>X= \{a,b,c,d\}</m> and <m>\tau = \{\emptyset, \{a\}, \{b\}, \{a,b\}, X \}</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{a,b\}</m> in the set <m>X= \{a,b,c,d,e,f\}</m> with topology
+            <me>
+              \tau= \{\emptyset,\{b\}, \{a,b,c\},\{d,e,f\},\{b,d,e,f\}, X\}
+            </me>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{a,b\} \subset X</m> where
+            <m>X = \{a,b,c\}</m> in the discrete topology.
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\Z</m> in <m>\R</m> with the finite complement topology <m>\tau_{FC}</m>.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </activity>
+  <p>
+    Just as with metric spaces,
+    we can characterize the closed sets as the sets that contain their boundary.
+  </p>
+  <theorem xml:id="thm_TS_Closed_boundary">
+    <statement>
+      <p>
+        A subset <m>C</m> of a topological space <m>X</m> is closed if and only if <m>C</m> contains its boundary.
+      </p>
+    </statement>
+  </theorem>
+  <p>
+    The proof of <xref ref="thm_TS_Closed_boundary">Theorem</xref>
+    is left to Exercise <xref ref="ex_TS_Closed_boundary"/>.
+  </p>
+</section>

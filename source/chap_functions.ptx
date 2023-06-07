@@ -1,0 +1,57 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_functions">
+  <title>Functions</title>
+  <introduction>
+    <objectives>
+      <ul>
+        <li>
+          <p>
+            What is a function?
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the domain of a function?
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the difference between the range and codomain of a function?
+          </p>
+        </li>
+        <li>
+          <p>
+            What does it mean for a function to be an injection?
+            A surjection?
+          </p>
+        </li>
+        <li>
+          <p>
+            When and how is the composite of two functions defined?
+          </p>
+        </li>
+        <li>
+          <p>
+            When and how is the inverse of a function defined?
+          </p>
+        </li>
+        <li>
+          <p>
+            What do we mean by the image and inverse image of a set under a function?
+          </p>
+        </li>
+        <li>
+          <p>
+            What properties relate images and inverse images of sets and set unions?
+          </p>
+        </li>
+      </ul>
+    </objectives>
+  </introduction>
+  <xi:include  href="sec_func_intro.ptx"/>
+  <xi:include  href="sec_comp_func.ptx"/>
+  <xi:include  href="sec_inv_func.ptx"/>
+  <xi:include  href="sec_fun_set.ptx"/>
+  <xi:include  href="sec_card_set.ptx"/>
+  <xi:include  href="sec_func_summ.ptx"/>
+  <xi:include  href="sec_func_exer.ptx"/>
+</chapter>

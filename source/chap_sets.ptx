@@ -1,0 +1,48 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_sets">
+  <title>Sets</title>
+  <introduction>
+    <objectives>
+      <ul>
+        <li>
+          <p>
+            What is a set?
+          </p>
+        </li>
+        <li>
+          <p>
+            What is a subset of a set?
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the union of two sets?
+            How do we define the union of an arbitrary collection of sets?
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the intersection of two sets?
+            How do we define the intersection of an arbitrary collection of sets?
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the complement of a set?
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the Cartesian product of sets?
+          </p>
+        </li>
+      </ul>
+    </objectives>
+  </introduction>
+  <xi:include  href="sec_sets_intro.ptx"/>
+  <xi:include  href="sec_basic_top.ptx"/>
+  <xi:include  href="sec_intervals.ptx"/>
+  <xi:include  href="sec_union_int_comp.ptx"/>
+  <xi:include  href="sec_cart_prod.ptx"/>
+  <xi:include  href="sec_sets_summ.ptx"/>
+  <xi:include  href="sec_sets_exer.ptx"/>
+</chapter>
