@@ -49,7 +49,7 @@
     or just <m>\lim a_n = L</m>
     (since we assume the limit for a sequence occurs as <m>n</m> goes to infinity)
     and we say that the sequence <m>(a_n)</m>
-    <em>converges</em> to <m>L</m>.
+    <term>converges</term> to <m>L</m>.
   </p>
   <example>
     <statement>
@@ -72,7 +72,7 @@
         we start with <m>\epsilon > 0</m>.
       </p>
       <blockquote>
-        <em>Scratch work.</em> Now we need to find <m>N</m> so that <m>n \geq N</m> implies <m>\left| \frac{n}{1+n} - 1 \right| \lt  \epsilon</m>. Just as with our continuity example, this work is not part of the proof, but shows how we go about finding the <m>N</m> we need. To make <m>\left| \frac{n}{1+n} - 1 \right| \lt  \epsilon</m> we need
+        <term>Scratch work.</term> Now we need to find <m>N</m> so that <m>n \geq N</m> implies <m>\left| \frac{n}{1+n} - 1 \right| \lt  \epsilon</m>. Just as with our continuity example, this work is not part of the proof, but shows how we go about finding the <m>N</m> we need. To make <m>\left| \frac{n}{1+n} - 1 \right| \lt  \epsilon</m> we need
         <md>
           <mrow>\left| \frac{n}{1+n} - 1 \right| \amp \lt  \epsilon</mrow>
           <mrow>\left| \frac{n}{1+n} - \frac{1+n}{1+n}  \right| \amp \lt  \epsilon</mrow>
@@ -166,7 +166,7 @@
     Just as with sequences of real numbers,
     when a sequence <m>(a_n)</m> has a limit <m>L</m>,
     we say that the sequence <m>(a_n)</m>
-    <em>converges</em> to <m>L</m>,
+    <term>converges</term> to <m>L</m>,
     or that <m>L</m> is a limit of the sequence <m>(a_n)</m>.
   </p>
   <activity>

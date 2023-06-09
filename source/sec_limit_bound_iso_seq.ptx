@@ -29,7 +29,7 @@
     </p>
   </activity>
   <p>
-    The result of <xref ref="act_CS_3">Activity</xref>
+    The result of <xref ref="act_CS_3"/>
     is summarized in the following theorem.
   </p>
   <theorem xml:id="thm_CS_limit_pt">
@@ -79,7 +79,7 @@
     more concrete soon.
   </p>
   <p>
-    An argument just like the one in <xref ref="act_CS_3">Activity</xref>
+    An argument just like the one in <xref ref="act_CS_3"/>
     gives us the following result about boundary points.
   </p>
   <theorem xml:id="thm_CS_2">

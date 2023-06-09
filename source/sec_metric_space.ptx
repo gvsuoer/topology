@@ -6,8 +6,8 @@
     <m>(y_1,y_2)</m> with the standard Euclidean distance <m>d_E</m>.
     In our preview activity we saw that the function <m>d_T</m> satisfies many of the same properties as <m>d_E</m>.
     These properties allow us to use <m>d_E</m> or <m>d_T</m> as distance functions.
-    We call any distance function a <em>metric</em>,
-    and any space on which a metric is defined is called a <em>metric space</em>.
+    We call any distance function a <term>metric</term>,
+    and any space on which a metric is defined is called a <term>metric space</term>.
   </p>
   <definition>
     <statement>
@@ -43,10 +43,10 @@
   </definition>
   <p>
     Properties 1 and 2 of a metric say that a metric is
-    <em>positive definite</em>,
-    while property 3 states that a metric is <em>symmetric</em>.
+    <term>positive definite</term>,
+    while property 3 states that a metric is <term>symmetric</term>.
     Property 4 of the definition is usually the most difficult property to verify for a metric and is called the
-    <em>triangle inequality</em>.
+    <term>triangle inequality</term>.
         <idx><h>triangle inequality</h></idx>
   </p>
   <definition>
@@ -201,7 +201,7 @@
   </figure>
   <p>
     Just as with the Euclidean and taxicab metrics,
-    item (c) in <xref ref="act_MS_metrics">Activity</xref>
+    item (c) in <xref ref="act_MS_metrics"/>
     can be extended to <m>\R^n</m> as follows.
     If <m>x = (x_1, x_2, \ldots,
     x_n)</m> and <m>y = (y_1, y_2, \ldots,
@@ -212,7 +212,7 @@
     </me>.
   </p>
   <p>
-    The metric <m>d_M</m> is called the <em>max</em> metric{.
+    The metric <m>d_M</m> is called the <term>max</term> metric{.
         <idx><h>metric</h><h>max</h></idx>
     In the following section we prove that the Euclidean metric is in fact a metric.
     Proofs that <m>d_T</m> and <m>d_M</m> are metrics are left to Exercises <xref ref="ex_Taxicab"/> and <xref ref="ex_Max"/>.

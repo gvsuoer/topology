@@ -2,8 +2,8 @@
   <title>Cartesian Products of Sets</title>
   <p>
     The final operation on sets that we discuss is the
-    <em>Cartesian product</em>
-    (or <em>cross product</em>).
+    <term>Cartesian product</term>
+    (or <term>cross product</term>).
     This is an operation that we have seen before.
     When we draw the graph of a line <m>y = mx+b</m> in the plane,
     we plot the points <m>(x,mx+b)</m>.

@@ -259,7 +259,7 @@
               <me>
                 d(f,g) = \int_0^1 |f(x) - g(x)| \,dx
               </me>.
-              (Refer to <xref ref="act_MS_metrics">Activity</xref>.) The function in <xref ref="eq_0_1_function"/> is not a continuous function,
+              (Refer to <xref ref="act_MS_metrics"/>.) The function in <xref ref="eq_0_1_function"/> is not a continuous function,
               so can't be a limit of the sequence <m>(f_n)</m> in <m>C[01]</m>.
               Determine if the sequence <m>(f_n)</m> has a limit in <m>C[0,1]</m>.
               If so, what is the limit?

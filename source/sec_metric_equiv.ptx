@@ -48,7 +48,7 @@
   <p>
     If there is a bijection between metric spaces that preserves distances,
     we say that the metric spaces are
-    <em>metrically equivalent</em>.
+    <term>metrically equivalent</term>.
   </p>
   <definition xml:id="def_MS_metric_equivalence">
     <statement>
@@ -75,7 +75,7 @@
   <p>
     Any function <m>f</m> that preserves distances
     (like the one in <xref ref="def_MS_metric_equivalence">Definition</xref>)
-    is called an <em>isometry</em>.
+    is called an <term>isometry</term>.
   </p>
   <definition>
     <statement>
@@ -104,7 +104,7 @@
     The important thing is that this stretching will preserve the open sets.
     This is a much more forgiving type of equivalence and maintains the central idea of topology that we have discussed <mdash/> what properties of a space are not altered by stretching and bending the space.
     This type of equivalence that allows us to manipulate a space without fundamentally changing the open sets is called
-    <em>topological equivalence</em>.
+    <term>topological equivalence</term>.
   </p>
   <figure xml:id="F_Equivalence">
     <caption>The open unit balls in <m>(\R^2, d_E)</m> and <m>(\R^2, d_M)</m>.</caption>

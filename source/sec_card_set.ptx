@@ -37,15 +37,15 @@
   </definition>
   <p>
     In the case that <m>A = \emptyset</m>,
-    we say that <m>A</m> has <em>cardinality</em> <m>0</m>,
+    we say that <m>A</m> has <term>cardinality</term> <m>0</m>,
     and if there is a bijection from <m>A</m> to the set
     <m>\{1,2, \ldots,
     n\}</m>, we say that <m>A</m> has cardinality <m>n</m>.
     If there is no positive integer <m>n</m> such that there is a bijection from set <m>A</m> to
     <m>\{1,2, \ldots,
-    n\}</m> we say that <m>A</m> is an <em>infinite</em>
+    n\}</m> we say that <m>A</m> is an <term>infinite</term>
     set and say that <m>A</m> has infinite cardinality.
-    We use the word <em>cardinality</em>
+    We use the word <term>cardinality</term>
     instead of number of elements because we can't actually count the number of elements in an infinite set.
     We denote the cardinality of the set
     (the number of elements in the set)

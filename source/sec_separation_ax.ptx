@@ -6,7 +6,7 @@
     As a result,
     we look for conditions on topological spaces under which sequences do exhibit some regular behavior.
     In our preview activity we saw that in it is possible in a topological space that single point sets do not have to be closed.
-    In <xref ref="act_TS_limits">Activity</xref>,
+    In <xref ref="act_TS_limits"/>,
     we also saw that limits of sequences in topological spaces are not necessarily unique.
     This type of behavior limits the results that one can prove about such spaces.
     As a result,
@@ -36,7 +36,7 @@
         </li>
         <li>
           <p>
-            Return to our example from <xref ref="act_TS_limits">Activity</xref>
+            Return to our example from <xref ref="act_TS_limits"/>
             with <m>X = \{a, b, c\}</m> and topology
             <me>
               \tau~=~\{\emptyset, \{c\}, \{a, c\}, \{b, c\}, X\}
@@ -49,11 +49,11 @@
     </p>
   </activity>
   <p>
-    It is the fact as described in <xref ref="act_Hausdorff">Activity</xref>
+    It is the fact as described in <xref ref="act_Hausdorff"/>
     that we can separate disjoint points by disjoint open sets that separates metric spaces from other spaces where limits are not unique.
     If we restrict ourselves to spaces where we can separate points like this,
     then we might expect to have unique limits.
-    Such spaces are called <em>Hausdorff</em> spaces.
+    Such spaces are called <term>Hausdorff</term> spaces.
   </p>
   <definition>
     <statement>
@@ -67,7 +67,7 @@
     </statement>
   </definition>
   <p>
-    <xref ref="act_Hausdorff">Activity</xref>
+    <xref ref="act_Hausdorff"/>
     shows that every metric space is a Hausdorff space.
     Once we start imposing conditions on topological spaces,
     we restrict the number of spaces we consider.
@@ -194,9 +194,9 @@
         <ol>
           <li>
             <p>
-              The space <m>X</m> is a <em><em>T</em><m>_1</m>-space</em>
+              The space <m>X</m> is a <term><term>T</term><m>_1</m>-space</term>
                 <idx><h><m>T_1</m>-space</h></idx>
-              or <em>Frechet space</em>
+              or <term>Frechet space</term>
                 <idx><h>Frechet space</h></idx>
               if for every <m>x\neq y</m> in <m>X</m>,
               there exist an open set <m>U</m> containing <m>y</m> such that <m>x \notin U</m>.
@@ -204,29 +204,29 @@
           </li>
           <li>
             <p>
-              The space <m>X</m> is a <em><em>T</em><m>_2</m>-space</em>
+              The space <m>X</m> is a <term><term>T</term><m>_2</m>-space</term>
                 <idx><h><m>T_2</m>-space</h></idx>
-              or a <em>Hausdorff space</em> if for every <m>x\neq y</m> in <m>X</m>,
+              or a <term>Hausdorff space</term> if for every <m>x\neq y</m> in <m>X</m>,
               there exist disjoint open sets <m>U</m> and <m>V</m> such that <m>x\in U</m> and <m>y\in V</m>.
             </p>
           </li>
           <li>
             <p>
-              The space <m>X</m> is <em>regular</em><idx><h>regular topological space</h></idx> if for each closed set <m>C</m> of <m>X</m> and each point <m>x \in X \setminus C</m>,
+              The space <m>X</m> is <term>regular</term><idx><h>regular topological space</h></idx> if for each closed set <m>C</m> of <m>X</m> and each point <m>x \in X \setminus C</m>,
               there exists disjoint open sets <m>U</m> and <m>V</m> in <m>X</m> such that <m>C \subseteq U</m> and <m>x \in V</m>.
-              The space <m>X</m> is a <em><em>T</em><m>_3</m>-space</em>
+              The space <m>X</m> is a <term><term>T</term><m>_3</m>-space</term>
                 <idx><h><m>T_3</m>-space</h></idx>
-              or a <em>regular Hausdorff space</em>
+              or a <term>regular Hausdorff space</term>
               if <m>X</m> is a regular <m>T_1</m> space.
             </p>
           </li>
           <li>
             <p>
-              The space <m>X</m> is a <em>normal</em><idx><h>normal topological space</h></idx> space if for each pair <m>C</m> and <m>D</m> of disjoint closed subsets of <m>X</m> there exist disjoint open sets <m>U</m> and <m>V</m> such that
+              The space <m>X</m> is a <term>normal</term><idx><h>normal topological space</h></idx> space if for each pair <m>C</m> and <m>D</m> of disjoint closed subsets of <m>X</m> there exist disjoint open sets <m>U</m> and <m>V</m> such that
               <m>C \subseteq U</m> and <m>D \subseteq V</m>.
-              The space <m>X</m> is a <em><em>T</em><m>_4</m>-space</em>
+              The space <m>X</m> is a <term><term>T</term><m>_4</m>-space</term>
                 <idx><h><m>T_4</m>-space</h></idx>
-              or a <em>normal Hausdorff space</em>
+              or a <term>normal Hausdorff space</term>
               if <m>X</m> is a normal <m>T_1</m> space.
             </p>
           </li>
@@ -257,7 +257,7 @@
     That is, there are <m>T_1</m>-spaces that are not <m>T_2</m> and <m>T_2</m>-spaces that are not <m>T_3</m>.
     These problems are given in Exercise <xref ref="ex_not_T_1_2_3"/>.
     The fact that there are <m>T_3</m>-spaces that are not <m>T_4</m> is a bit difficult.
-    An example is the <em>Niemytzki plane</em>.
+    An example is the <term>Niemytzki plane</term>.
     The Niemytzki plane is the upper half plane <m>X = \{(x,y) \in \R^2 \mid y \geq 0\}</m>.
     Let <m>L</m> be the boundary of <m>X</m>.
     That is, <m>L = \{(x,y) \in \R^2 \mid y = 0\}</m>.
@@ -266,6 +266,6 @@
     We won't verify that the Niemytzki plane is <m>T_3</m> but not <m>T_4</m>.
     The interested reader can find an accessible proof in the article
     <q>Another Proof that the Niemytzki Plane is not Normal</q>
-    by David H. Vetterlein in the <em>Pi Mu Epsilon Journal</em>, Vol. 10, No. 2 (SPRING 1995), pp. 119-121.
+    by David H. Vetterlein in the <term>Pi Mu Epsilon Journal</term>, Vol. 10, No. 2 (SPRING 1995), pp. 119-121.
   </p>
 </section>

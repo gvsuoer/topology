@@ -8,7 +8,7 @@
   </p>
   <p>
     The metric <m>d_E</m> called the
-    <em>standard</em> or <em>Euclidean</em>
+    <term>standard</term> or <term>Euclidean</term>
         <idx><h>metric</h><h>Euclidean</h></idx>
     metric on <m>\R^2</m>.
   </p>
@@ -265,7 +265,7 @@
     We have only shown that <m>d_T</m> and <m>d_M</m> are metrics on <m>\R^2</m>,
     but similar arguments apply in <m>\R^n</m>.
     Proofs are left to Exercises <xref ref="ex_Taxicab"/> and ( <xref ref="ex_Max"></xref>).
-    In addition, the <em>discrete metric</em>
+    In addition, the <term>discrete metric</term>
         <idx><h>metric</h><h>discrete</h></idx>
     <me>
       d(x,y) = \begin{cases}0 \amp  \text{ if }  x=y \\ 1 \amp  \text{ if }  x \neq y \end{cases}

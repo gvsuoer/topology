@@ -184,18 +184,36 @@
 \usetikzlibrary{through,intersections,decorations,shadows,fadings}
 \usepackage{pgfplots}
 </latex-image-preamble>
+<rename element="objectives">Focus Questions</rename>
+<rename element="exploration">Preview Activity</rename>
   </docinfo>
-  <book>
-    <title>{ Topology: An Inquiry-Based Approach}</title>
+  <book xml:id="schlicker-topology" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Topology</title>
+    <subtitle>An Inquiry-Based Approach</subtitle>
     <frontmatter>
       <titlepage>
         <author>
           <personname>Steven Schlicker</personname>
+          <institution>Grand Valley State University</institution>
+          <!-- <department>Mathematics</department> -->
         </author>
       </titlepage>
+      
+
+    <xi:include href="./preface.ptx"/>
+
     </frontmatter>
-    <xi:include href="./act_Preface.ptx"/>
-    <xi:include href="./chap_sets.ptx"/>
+
+    <part xml:id="part-sets-funcs">
+      <title>Sets and Functions</title>
+
+      <xi:include href="./chap_sets.ptx"/>
+      
+    </part>
+
+    
+
+    <!-- 
     <xi:include href="./chap_functions.ptx"/>
     <xi:include href="./chap_metric_spaces.ptx"/>
     <xi:include href="./chap_metric_spaces_apps.ptx"/>
@@ -214,7 +232,7 @@
     <xi:include href="./chap_Compact_topology.ptx"/>
     <xi:include href="./chap_Connected_topology.ptx"/>
     <xi:include href="./chap_Path_connected_topology.ptx"/>
-    <xi:include href="./chap_Product_topology.ptx"/>
+    <xi:include href="./chap_Product_topology.ptx"/> -->
     <backmatter>
       <xi:include href="./bibliography.ptx"/>
       <index>

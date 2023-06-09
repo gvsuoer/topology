@@ -93,7 +93,7 @@
             </ul>
           </p>
           Functions <m>f</m> that have the property that <m>f(O)</m> is open whenever <m>O</m> is open in <m>X</m> are called
-          <em>open</em> functions.
+          <term>open</term> functions.
           <definition>
             <statement>
               <p>
@@ -106,7 +106,7 @@
             </statement>
           </definition>
           There is a similar definition of a
-          <em>closed</em> function.
+          <term>closed</term> function.
         </li>
         <li>
           <p>

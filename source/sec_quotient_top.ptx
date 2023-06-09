@@ -5,7 +5,7 @@
     we can use the topology on <m>X</m> to define a topology on <m>Y</m>.
     This topology on <m>Y</m> identifies points in <m>X</m> through the function <m>f</m>.
     The resulting topology on <m>Y</m> is called a
-    <em>quotient</em> topology.
+    <term>quotient</term> topology.
     The quotient topology gives us a way of creating a topological space which models gluing and collapsing parts of a topological space.
   </p>
   <activity>

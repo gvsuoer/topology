@@ -55,9 +55,9 @@
     </p>
   </activity>
   <p>
-    The conclusion to be drawn from <xref ref="act_OB_1">Activity</xref>
+    The conclusion to be drawn from <xref ref="act_OB_1"/>
     is that if <m>f</m> is continuous,
-    we can only conclude that the inverse image of <m>B(f(a), \epsilon)</m> <em>contains</em>
+    we can only conclude that the inverse image of <m>B(f(a), \epsilon)</m> <term>contains</term>
     an open ball centered at <m>a</m>.
     By definition of continuity,
     if for every <m>\epsilon > 0</m> there exists a

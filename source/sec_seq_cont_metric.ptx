@@ -200,7 +200,7 @@
   </activity>
   <p>
     While it can sometimes be difficult to prove a fact about all sequences that converge to a point,
-    <xref ref="act_sequence_continuity">Activity</xref>
+    <xref ref="act_sequence_continuity"/>
     shows that we can use <xref ref="thm_seq_continuity">Theorem</xref>
     to prove that a function <m>f</m> is not continuous at an input <m>a</m> be finding just one sequence <m>(a_n)</m> that converges to <m>a</m> for which <m>\lim f(a_n) \neq f(a)</m>.
     We conclude this section with one final note.

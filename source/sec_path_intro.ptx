@@ -5,7 +5,7 @@
     There are other ways to look at connectedness.
     For example,
     the subset <m>(0,1)</m> is connected in <m>\R</m> because we can draw a line segment
-    (which we will call a <em>path</em>)
+    (which we will call a <term>path</term>)
     between any two points in <m>(0,1)</m> and remain in the set <m>(0,1)</m>.
     So we might alternatively consider a topological space to be connected if there is always a path from one point in the spaced to another.
     Although this is a new notion of connectedness,

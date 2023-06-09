@@ -115,8 +115,8 @@
             <p>
               Prove that <m>d</m> is a metric on <m>X</m>.
               Describe in geometric terms how this metric measures the distance between functions <m>f</m> and <m>g</m>. (This metric is called the
-              <em>supremum metric</em>
-              or the <em>uniform metric</em> on <m>X</m>.
+              <term>supremum metric</term>
+              or the <term>uniform metric</term> on <m>X</m>.
             </p>
           </li>
         </ul>
@@ -124,7 +124,7 @@
     </li>
     <li xml:id="ex_GLB_Archimedean">
       <p>
-        In this exercise we prove the <em>Archimedean property</em> of the natural numbers.
+        In this exercise we prove the <term>Archimedean property</term> of the natural numbers.
         Note that the set of natural numbers,
         denoted <m>\N</m> or <m>\Z^+</m>,
         is the set of all positive integers.
@@ -223,7 +223,7 @@
             </p>
           </statement>
         </theorem>
-        This theorem tells us an important fact <mdash/> that the rational numbers are what is called <em>dense</em>
+        This theorem tells us an important fact <mdash/> that the rational numbers are what is called <term>dense</term>
         in the set of real numbers.
         We prove this theorem in this exercise.
         Let <m>x</m> and <m>y</m> be real numbers and assume <m>x \lt  y</m>.

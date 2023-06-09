@@ -1,14 +1,10 @@
 <section xml:id="sec_sets_intro">
   <title>Introduction</title>
   <p>
-    At its most basic level topology deals with sets and how we can deform sets into other sets.
-    So to start our study of topology, we begin with sets.
-    Much of this material should be familiar, but some might be new.
-    The first issue for us to settle on is as precise a definition of
-    <q>set</q>
-    as possible.
+    At its most basic level topology deals with sets and how we can deform sets into other sets. So to start our study of topology, we begin with sets. Much of this material should be familiar, but some might be new. The first issue for us to settle on is as precise a definition of <q>set</q> as possible.
   </p>
-  <activity xml:id="pa_sets">
+  <exploration xml:id="pa_sets">
+    <introduction>
     <p>
       Suppose we try to define a set to be a collection of elements.
       So, by definition, the elements are the objects contained in the set.
@@ -22,7 +18,7 @@
       and <m>c</m>.
       We can also include in the set notation conditions on elements of the set.
       For example,
-      <m>\{x \in \R : x > 0\}</m> is the set of positive real numbers.
+      <m>\{x \in \R : x \gt 0\}</m> is the set of positive real numbers.
       We typically use capital letters to denote sets.
       Some familiar examples of sets are <m>\R</m>, the set of real numbers;
       <m>\Q</m>, the set of rational numbers;
@@ -32,8 +28,11 @@
       the power set of a set <m>S</m> is the set of subsets of <m>S</m>.
       So the power set of <m>S = \{1,2\}</m> is the set
       <m>\{\emptyset, \{1\}, \{2\}, \{1,2\}\}</m>. (We will define subsets and the empty set later in this activity).
-      <ol>
-        <li>
+      </p>
+      </introduction>
+
+      <task>
+        <introduction>
           <p>
             Consider the following
             <q>set</q>
@@ -43,63 +42,75 @@
             </me>.
             That is, <m>S</m> is the collection of sets that do not have themselves as elements.
             Given any object <m>x</m>, either <m>x \in S</m> or <m>x \notin S</m>.
-            <ul>
-              <li>
+          </p>
+        </introduction>
+            <task>
+              <statement>
                 <p>
                   Is <m>S</m> an element of <m>S</m>?
                   Explain.
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   Is it the case that <m>S \notin S</m>?
                   Explain.
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   Based on your responses to parts (a) and (b),
                   explain why our current concept of a set as a collection of elements is not a good one.
                 </p>
-              </li>
-            </ul>
-          </p>
-        </li>
-        <li>
+              </statement>
+            </task>
+          
+        </task>
+        <task>
+        <introduction>
           <p>
             Assume that we have a working definition of a set.
             In this part of the activity we define a subset of a set.
             The notation we will use is
             <m>A \subset S</m> if <m>A</m> is a subset of <m>S</m> that is not equal to <m>S</m>,
             and <m>A \subseteq S</m> if <m>A</m> is a subset of <m>S</m> that could be the entire set <m>S</m>.
-            We will also say that <m>A</m> is <em>contained</em>
+            We will also say that <m>A</m> is <term>contained</term>
             in <m>S</m> if <m>A</m> is a subset of <m>S</m>,
             and call the relation <m>A \subset S</m>
             (or <m>A \subseteq S</m>)
-            a <em>containment</em>.
-            <ul>
-              <li>
+            a <term>containment</term>.
+          </p>
+        </introduction>
+            <task>
+              <statement>
                 <p>
                   How should we define a subset of a set?
                   Give a specific example of a set and two examples of subsets of that set.
                 </p>
-              </li>
-              <li>
+              </statement>
+        </task>
+        <task>
+              <statement>
                 <p>
                   If <m>A</m> is a set, is <m>A</m> a subset of <m>A</m>?
                   Explain.
                 </p>
-              </li>
-              <li>
+              </statement>
+        </task>
+        <task>
+              <statement>
                 <p>
                   What is the empty set <m>\emptyset</m>?
                   If <m>A</m> is a set, is <m>\emptyset</m> a subset of <m>A</m>? explain.
                 </p>
-              </li>
-            </ul>
-          </p>
-        </li>
-      </ol>
-    </p>
-  </activity>
+              </statement>
+            </task>
+          
+        </task>
+
+  </exploration>
 </section>

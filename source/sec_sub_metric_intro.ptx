@@ -5,7 +5,7 @@
     and let <m>A</m> be a subset of <m>X</m>.
     We can make <m>A</m> into a metric space itself in a very straightforward manner.
     When we do so, we say that <m>A</m> is a
-    <em>subspace</em> of <m>X</m>.
+    <term>subspace</term> of <m>X</m>.
   </p>
   <activity>
     <p>
@@ -26,7 +26,7 @@
           <p>
             Show that <m>d'</m> is a metric on <m>A</m>.
             Since <m>d'</m> is a metric on <m>A</m> it follows that <m>(A,d')</m> is a metric space.
-            The metric <m>d'</m> is the <em>restriction</em>
+            The metric <m>d'</m> is the <term>restriction</term>
             of <m>d</m> to <m>A \times A</m> and can also be denoted by <m>d_A</m>.
             <definition>
               <statement>

@@ -88,7 +88,7 @@
         we let <m>a \in \R</m> and let <m>\epsilon > 0</m>.
       </p>
       <blockquote>
-        <em>Scratch work.</em> What happens next is not part of the proof, but shows how we go about finding a <m>\delta</m> we need. We are looking for <m>\delta > 0</m> such that <m>d_X(x,a) \lt  \delta</m> implies that <m>d_E(f(x),f(a)) \lt  \epsilon</m>. That is, we want to make
+        <term>Scratch work.</term> What happens next is not part of the proof, but shows how we go about finding a <m>\delta</m> we need. We are looking for <m>\delta > 0</m> such that <m>d_X(x,a) \lt  \delta</m> implies that <m>d_E(f(x),f(a)) \lt  \epsilon</m>. That is, we want to make
         <me>
           d_E(f(x),f(a)) = \sqrt{(f(x)-f(a))^2} = |f(x)-f(a)| = |x^2-a^2| \lt  \epsilon
         </me>
@@ -187,7 +187,7 @@
             <m>i_X(x) = x</m> for every <m>x \in X</m>.
             Show that <m>i_X</m> is a continuous function.
             (The function <m>i_X</m> is called the
-            <em>identity function</em>
+            <term>identity function</term>
               <idx><h>identity function</h></idx>
             on <m>X</m>.)
           </p>

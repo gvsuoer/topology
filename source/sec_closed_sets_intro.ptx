@@ -51,11 +51,11 @@
     then 0 is again a boundary point because any open interval in <m>\R</m> that contains <m>0</m> contains a point (<m>0</m>) in <m>A</m> and points not in <m>A</m>.
     However, <m>0</m> is the only point in <m>A</m> that is contained in any open interval that contains <m>0</m>.
     In this case we call <m>0</m> an
-    <em>isolated point</em> of <m>A</m>,
+    <term>isolated point</term> of <m>A</m>,
     and in the case of the set
     <m>A = (0,1)</m> we call <m>0</m> an
-    <em>accumulation point</em>
-    or a <em>limit point</em> of <m>A</m>
+    <term>accumulation point</term>
+    or a <term>limit point</term> of <m>A</m>
     (the use of the word
     <q>limit</q>
     here will become clear later).
@@ -68,13 +68,13 @@
         <ol>
           <li>
             <p>
-              An <em>accumulation point</em><idx><h>accumulation point in a metric space</h></idx> or
-              <em>limit point</em><idx><h>limit point in a metric space</h></idx> of <m>A</m> is a point <m>x \in X</m> such that every neighborhood of <m>x</m> contains a point in <m>A</m> different from <m>x</m>.
+              An <term>accumulation point</term><idx><h>accumulation point in a metric space</h></idx> or
+              <term>limit point</term><idx><h>limit point in a metric space</h></idx> of <m>A</m> is a point <m>x \in X</m> such that every neighborhood of <m>x</m> contains a point in <m>A</m> different from <m>x</m>.
             </p>
           </li>
           <li>
             <p>
-              An <em>isolated point</em><idx><h>isolated point in a metric space</h></idx> of <m>A</m> is a point <m>a \in A</m> such that there exists a neighborhood <m>N</m> of <m>a</m> in <m>X</m> with <m>N \cap A = \{a\}</m>.
+              An <term>isolated point</term><idx><h>isolated point in a metric space</h></idx> of <m>A</m> is a point <m>a \in A</m> such that there exists a neighborhood <m>N</m> of <m>a</m> in <m>X</m> with <m>N \cap A = \{a\}</m>.
             </p>
           </li>
         </ol>

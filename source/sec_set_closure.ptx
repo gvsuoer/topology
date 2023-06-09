@@ -8,7 +8,7 @@
     but if we union <m>A</m> with its limit points,
     we obtain the closed set <m>C = [0,1]</m>.
     Moreover, The set <m>[0,1]</m> is the smallest closed set that contains <m>A</m>.
-    This leads to the idea of the <em>closure</em> of a set.
+    This leads to the idea of the <term>closure</term> of a set.
   </p>
   <definition>
     <statement>

@@ -62,7 +62,7 @@
     </p>
   </activity>
   <p>
-    <xref ref="act_Open_union">Activity</xref>
+    <xref ref="act_Open_union"/>
     demonstrates that an arbitrary intersection of open sets is not necessarily open.
     However, there are some things we can say about unions and intersections of open sets.
   </p>

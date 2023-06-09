@@ -66,10 +66,10 @@
           <li>
             <p>
               Show that <m>\B</m> is a basis for a topology <m>\tau_{\ell \ell}</m> on <m>\R</m>.
-              This topology is called the <em>lower limit</em><idx><h>topology</h><h>lower limit</h></idx> topology on <m>\R</m>.
+              This topology is called the <term>lower limit</term><idx><h>topology</h><h>lower limit</h></idx> topology on <m>\R</m>.
               The line <m>\R</m> with the topology
               <m>\tau_{\ell \ell}</m> is sometimes called the
-              <em>Sorgenfrey line</em>
+              <term>Sorgenfrey line</term>
     <idx><h>Sorgenfrey line</h></idx>
               (after the mathematician Robert Sorgenfrey).
             </p>
@@ -82,9 +82,9 @@
           <li>
             <p>
               If <m>\tau_1</m> and <m>\tau_2</m> are topologies on a set <m>X</m> such that <m>\tau_1 \subseteq \tau_2</m>,
-              then <m>\tau_1</m> is said to be a <em>coarser</em>
+              then <m>\tau_1</m> is said to be a <term>coarser</term>
               topology that <m>\tau_2</m>,
-              or <m>\tau_2</m> is a <em>finer</em>
+              or <m>\tau_2</m> is a <term>finer</term>
               topology that <m>\tau_1</m>.
               Part (b) shows that the lower limit topology may be a finer topology than the Euclidean metric topology.
               Determine if this is true,
@@ -104,7 +104,7 @@
     </li>
     <li>
       <p>
-        A subset <m>A</m> of a topological space <m>X</m> is said to be <em>dense</em>
+        A subset <m>A</m> of a topological space <m>X</m> is said to be <term>dense</term>
         in <m>X</m> if <m>\overline{A} = X</m>.
         <ul>
           <li>

@@ -63,28 +63,28 @@
     <ul>
       <li>
         <p>
-          The set <m>A</m> is called the <em>domain</em>
+          The set <m>A</m> is called the <term>domain</term>
             <idx><h>function</h><h>domain</h></idx>
           of <m>f</m>, and we write <m>\text{ dom } (f) = A</m>.
         </p>
       </li>
       <li>
         <p>
-          The set <m>B</m> is called the <em>codomain</em>
+          The set <m>B</m> is called the <term>codomain</term>
             <idx><h>function</h><h>codomain</h></idx>
           of <m>f</m>, and we write <m>\text{ codom } (f) = B</m>.
         </p>
       </li>
       <li>
         <p>
-          The subset <m>\{f(a) \mid a \in A\}</m> of <m>B</m> is called the <em>range</em>
+          The subset <m>\{f(a) \mid a \in A\}</m> of <m>B</m> is called the <term>range</term>
             <idx><h>function</h><h>range</h></idx>
           of <m>f</m>, which we denote by <m>\text{ range } (f)</m>.
         </p>
       </li>
       <li>
         <p>
-          If <m>a \in A</m>, then <m>f(a)</m> is the <em>image</em>
+          If <m>a \in A</m>, then <m>f(a)</m> is the <term>image</term>
             <idx><h>image of an element</h></idx>
           of <m>a</m> under <m>f</m>.
           Since each <m>a</m> in <m>A</m> is paired with a unique <m>b \in B</m>,
@@ -97,7 +97,7 @@
       <li>
         <p>
           If <m>b \in B</m> and <m>b = f(a)</m> for some <m>a \in A</m>,
-          then <m>a</m> is called a <em>preimage</em>
+          then <m>a</m> is called a <term>preimage</term>
             <idx><h>preimage of an element</h></idx>
           of <m>b</m>.
           For a given <m>b \in B</m>, there may be many different preimages of <m>b</m>,
@@ -129,7 +129,7 @@
         <ol>
           <li>
             <p>
-              The function <m>f</m> is an <em>injection</em><idx><h>function</h><h>injection</h></idx> if,
+              The function <m>f</m> is an <term>injection</term><idx><h>function</h><h>injection</h></idx> if,
               whenever <m>(a,b)</m> and <m>(a',b)</m> are in <m>f</m>,
               then <m>a=a'</m>.
               Alternatively, using the function notation,
@@ -138,7 +138,7 @@
           </li>
           <li>
             <p>
-              The function <m>f</m> is a <em>surjection</em><idx><h>function</h><h>surjection</h></idx> if,
+              The function <m>f</m> is a <term>surjection</term><idx><h>function</h><h>surjection</h></idx> if,
               whenever <m>b \in B</m>,
               then there is an <m>a \in A</m> so that <m>(a,b)</m> is in <m>f</m>.
               Alternatively, using the function notation,
@@ -147,7 +147,7 @@
           </li>
           <li>
             <p>
-              The function <m>f</m> is a <em>bijection</em><idx><h>function</h><h>bijection</h></idx> if <m>f</m> is both an injection and a surjection.
+              The function <m>f</m> is a <term>bijection</term><idx><h>function</h><h>bijection</h></idx> if <m>f</m> is both an injection and a surjection.
             </p>
           </li>
         </ol>
@@ -192,7 +192,7 @@
               </statement>
             </definition>
             A notation used for the restriction is also <m>F = f\mid_C</m>.
-            We also call <m>f</m> an <em>extension</em> of <m>F</m>.
+            We also call <m>f</m> an <term>extension</term> of <m>F</m>.
             Let <m>f: \R \to \R</m> be defined by <m>f(x) = x^2+1</m>,
             and let <m>h = f \mid_{\R^+}</m>,
             where <m>\R^+</m> is the set of positive real numbers.
@@ -286,7 +286,7 @@
   </p>
   <p>
     An important special function that is always an injection and surjection is the
-    <em>identity</em> function
+    <term>identity</term> function
         <idx><h>function</h><h>identity</h></idx>
     on a set.
     If <m>A</m> is a set,

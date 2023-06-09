@@ -37,9 +37,9 @@
       </me>.
     </p>
     <p>
-      This function <m>d_T</m> is sometimes called the <em>taxicab metric</em>
+      This function <m>d_T</m> is sometimes called the <term>taxicab metric</term>
           <idx><h>metric</h><h>taxicab</h></idx>
-      or <em>distance</em> because the distance between points <m>x</m> and <m>y</m> can be thought of as obtained by driving around a city block rather than going directly from point <m>x</m> to point <m>y</m>.
+      or <term>distance</term> because the distance between points <m>x</m> and <m>y</m> can be thought of as obtained by driving around a city block rather than going directly from point <m>x</m> to point <m>y</m>.
     </p>
     <p>
       Any distance function should satisfy certain properties:

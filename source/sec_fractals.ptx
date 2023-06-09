@@ -42,7 +42,7 @@
     Let <m>A</m> and <m>B</m> be nonempty compact subsets of <m>X</m>.
     To find the distance from the set <m>A</m> to the set <m>B</m>,
     it seems reasonable to consider how far each point in <m>A</m> is from the set <m>B</m>.
-    Then the distance from <m>A</m> to <m>B</m> should measure how far we have to travel to get from <em>any</em>
+    Then the distance from <m>A</m> to <m>B</m> should measure how far we have to travel to get from <term>any</term>
     point in <m>A</m> to <m>B</m>.
   </p>
   <definition xml:id="def_AtoB">
@@ -130,8 +130,8 @@
             Then <m>\omega_i</m>, when applied to <m>S_0</m>,
             contracts <m>S_0</m> by a factor of 2 and then translates the image of <m>S_0</m> so that the
             <m>i^{\text{ th } }</m> vertex of <m>S_0</m> and the <m>i</m>th vertex of the image of <m>S_0</m> coincide.
-            Such a map is called a <em>contraction mapping</em>
-            with <em>contraction factor</em>
+            Such a map is called a <term>contraction mapping</term>
+            with <term>contraction factor</term>
             equal to <m>\frac{1}{2}</m>.
             Define <m>S_{1,i}</m> to be <m>\omega_i(S_0)</m>.
             Then <m>S_{1,i}</m>  is the set of all points half way between any point in <m>S_0</m>  and  <m>v_i</m>,
@@ -200,13 +200,13 @@
                 <li>
                   <p>
                     A sequence <m>(x_n)</m> in a metric space <m>(X,d)</m> is a
-                    <em>Cauchy sequence</em>
+                    <term>Cauchy sequence</term>
               <idx><h>Cauchy sequence</h></idx>
                     if given <m>\epsilon > 0</m> there exists <m>N \in \Z^+</m> such that
                     <m>d(x_n, x_m) \lt \epsilon</m> whenever <m>n, m \geq N</m>.
                     Every convergent sequence is a Cauchy sequence.
                     A metric space <m>X</m> is said to be
-                    <em>complete</em><idx><h>metric space</h><h>complete</h></idx> if every Cauchy sequence in <m>X</m> converges to an element in <m>X</m>.
+                    <term>complete</term><idx><h>metric space</h><h>complete</h></idx> if every Cauchy sequence in <m>X</m> converges to an element in <m>X</m>.
                     For example,
                     <m>(\R, d_E)</m> is complete while <m>(\Q, d_E)</m> is not.
                     Although we will not prove it,

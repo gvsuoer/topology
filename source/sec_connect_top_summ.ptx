@@ -6,7 +6,7 @@
   <ul>
     <li>
       <p>
-        A topological space <m>(X,\tau)</m> is <em>connected</em>
+        A topological space <m>(X,\tau)</m> is <term>connected</term>
           <idx><h>connected space</h></idx>
         if <m>X</m> cannot be written as the union of two disjoint,
         nonempty,

@@ -44,8 +44,8 @@
     that a product of path connected spaces is path connected,
     and that a product of compact spaces is compact are a bit more complicated.
     To prove that a product of two connected spaces is connected,
-    we will use the result of <xref ref="act_connected_compenent">Activity</xref>
-    in <xref ref="sec_Connected_topology">Section</xref>
+    we will use the result of <xref ref="act_connected_compenent"/>
+    in <xref ref="sec_Connected_topology"/>
     that the union of connected subsets is connected if the intersection of the subsets is nonempty.
     A consequence of this result is the following.
   </p>

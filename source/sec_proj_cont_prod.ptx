@@ -4,7 +4,7 @@
     Given topological spaces <m>(X_1, \tau_1)</m> and <m>(X_2, \tau_2)</m>,
     we define <m>\pi_1: X_1 \times X_2 \to X_1</m> and <m>\pi_2: X_1 \times X_2 \to X_2</m> by
     <m>\pi_1((x,y)) = x</m> and <m>\pi_2((x,y)) = y</m>.
-    These functions <m>\pi_1</m> and <m>\pi_2</m> are the <em>projections</em>
+    These functions <m>\pi_1</m> and <m>\pi_2</m> are the <term>projections</term>
         <idx><h>projection functions</h></idx>
     of <m>X_1 \times X_2</m> onto <m>X_1</m> and <m>X_2</m>,
     respectively.
@@ -30,7 +30,7 @@
     </p>
   </activity>
   <p>
-    The same argument as in <xref ref="act_projection_continuous">Activity</xref>
+    The same argument as in <xref ref="act_projection_continuous"/>
     shows that <m>\pi_2</m> is also a continuous function.
     In general, if <m>X = \Pi_{i=1}^n X_{i}</m> is a finite product of topological spaces,
     then the projection <m>\pi_{k}: X \to X_{k}</m> is a continuous function for each <m>k</m>,
@@ -39,7 +39,7 @@
   <p>
     Let <m>O = \Pi_{i=1}^n O_i</m> be a basic open set in <m>X = \Pi_{i=1}^n X_i</m>,
     where <m>X_i</m> is a topological space for each <m>i</m>.
-    We can extend the result of <xref ref="act_projection_continuous">Activity</xref> to see that
+    We can extend the result of <xref ref="act_projection_continuous"/> to see that
     <me>
       \pi_i^{-1}(O_i) = X_1 \times X_2 \times \cdots \times X_{i-1} \times O_i \times X_{i+1} \times \cdots \times X_n
     </me>.
@@ -55,7 +55,7 @@
     <m>\pi_i^{-1}(O_i)</m> where <m>O_i</m> is open in <m>X_i</m>.
     When this happens,
     we call the collection of sets of the form <m>\pi_i^{-1}(O_i)</m> a
-    <em>subbasis</em> of the topology.
+    <term>subbasis</term> of the topology.
   </p>
   <definition xml:id="def_subbasis">
     <statement>
@@ -87,7 +87,7 @@
   </p>
   <p>
     We note here that there is another topology,
-    called the <em>product topology</em>
+    called the <term>product topology</term>
         <idx><h>product topology</h></idx>
     ) on <m>X</m> with subbasis <m>S = \bigcup S_{\alpha \in I} S_{\alpha}</m>, where
     <me>

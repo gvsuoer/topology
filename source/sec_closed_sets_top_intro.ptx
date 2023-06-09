@@ -48,8 +48,8 @@
               <li>
                 <p>
                   <m>(X, \tau)</m> with <m>X=\Z^+</m> and <m>\tau = \{\emptyset, X\}</m>
-                  (this topology is called the <em>indiscrete</em>
-                  or <em>trivial</em> topology).
+                  (this topology is called the <term>indiscrete</term>
+                  or <term>trivial</term> topology).
                 </p>
               </li>
             </ul>

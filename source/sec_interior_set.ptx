@@ -19,7 +19,7 @@
   </theorem>
   <p>
     The collection of interior points in a set form a subset of that set,
-    called the <em>interior</em> of the set.
+    called the <term>interior</term> of the set.
   </p>
   <definition>
     <statement>

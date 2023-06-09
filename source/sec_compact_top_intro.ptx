@@ -33,7 +33,7 @@
     let <m>O_n = \left(\frac{1}{n}, 1-\frac{1}{n}\right)</m> for <m>n \in \Z^+</m> and <m>n \geq 3</m>.
     Notice that <m>(0, 1) \subseteq \bigcup_{n \geq 3} O_n</m>.
     Any collection of open sets whose union contains <m>(0, 1)</m> is called an
-    <em>open cover</em> of <m>(0, 1)</m>.
+    <term>open cover</term> of <m>(0, 1)</m>.
     Working with a larger number of sets is generally more complicated than working with a smaller number,
     so it is reasonable to ask if we can reduce the number of sets in our open cover of <m>(0, 1)</m> and still cover <m>(0, 1)</m>.
     In particular,
@@ -81,7 +81,7 @@
   </definition>
   <p>
     If <m>(X,\tau)</m> is a topological space and <m>X</m> is a compact subset of <m>X</m>,
-    then we say that <m>X</m> is a <em>compact topological space</em>.
+    then we say that <m>X</m> is a <term>compact topological space</term>.
     There is some terminology associated with <xref ref="def_compact">Definition</xref>.
   </p>
   <definition>

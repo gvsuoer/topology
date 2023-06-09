@@ -128,7 +128,7 @@
     Since <m>\sim</m> as defined in <xref ref="eq_path_equivalence"/> is an equivalence relation,
     the relation partitions <m>X</m> into a union of disjoint equivalence classes.
     The equivalence class of an element <m>[a]</m> is called a
-    <em>path component</em> of <m>X</m>,
+    <term>path component</term> of <m>X</m>,
     and is the largest path connected subset of <m>X</m> that contains <m>a</m>.
   </p>
   <definition>

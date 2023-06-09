@@ -313,13 +313,13 @@
     <li>
       <p>
         Let <m>(X,\tau)</m> be a topological space.
-        A subspace <m>A</m> of <m>X</m> is a <em>retract</em>
+        A subspace <m>A</m> of <m>X</m> is a <term>retract</term>
           <idx><h>retract</h></idx>
         of <m>X</m>
         (or that <m>X</m> retracts onto <m>A</m>)
         if there is a continuous function <m>r : X \to A</m> such that
         <m>r(a) = a</m> for all <m>a \in A</m>.
-        Such a map <m>r</m> is called a <em>retraction</em>.
+        Such a map <m>r</m> is called a <term>retraction</term>.
           <idx><h>retraction</h></idx>
       Intuitively,
         a subspace <m>A</m> of <m>X</m> is a retract of <m>X</m> if we can continually collapse

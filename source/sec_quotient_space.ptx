@@ -6,7 +6,7 @@
     we were able to define a topology on <m>Y</m> by making the open sets the sets
     <m>U \subseteq Y</m> such that <m>p^{-1}(U)</m> is open in <m>X</m>.
     This is how we will create what is called the
-    <em>quotient topology</em>.
+    <term>quotient topology</term>.
     Before we can define the quotient topology,
     we need to know that this construction always makes a topology.
   </p>
@@ -51,7 +51,7 @@
     </p>
   </activity>
   <p>
-    <xref ref="act_quot_topology">Activity</xref>
+    <xref ref="act_quot_topology"/>
     allows us to define the quotient topology.
   </p>
   <definition>
@@ -62,7 +62,7 @@
         <ol>
           <li>
             <p>
-              The <em>quotient topology</em>
+              The <term>quotient topology</term>
                 <idx><h>quotient topology</h></idx>
               on <m>Y</m> is the set
               <me>
@@ -72,7 +72,7 @@
           </li>
           <li>
             <p>
-              Any function <m>p: X \to Y</m> is a <em>quotient map</em>
+              Any function <m>p: X \to Y</m> is a <term>quotient map</term>
                 <idx><h>quotient map</h></idx>
               if <m>p</m> is surjective and for <m>U \subseteq Y</m>,
               <m>U</m> is open in <m>Y</m> if and only if <m>p^{-1}(U)</m> is open in <m>X</m>.
@@ -81,7 +81,7 @@
           <li>
             <p>
               If <m>p: X \to Y</m> is a quotient map,
-              then the space <m>Y</m> is the <em>quotient space</em>
+              then the space <m>Y</m> is the <term>quotient space</term>
                 <idx><h>quotient space</h></idx>
               of <m>X</m> determined by <m>p</m>.
             </p>
@@ -114,7 +114,7 @@
             where <m>\lfloor x\rfloor</m> is the largest integer less than or equal to <m>x</m>, (For example <m>\lfloor 1.2 \rfloor = 1</m>,
             and so <m>p(1.2) = 1.2 - 1 = 0.2</m>.
             The function defined by <m>\lfloor x\rfloor</m> is also called the
-            <em>floor</em> function.
+            <term>floor</term> function.
             Be careful, note that <m>\lfloor -0.7 \rfloor = -1</m>.)  Determine the sets in the quotient topology.
             <hint>
               <p>
@@ -157,7 +157,7 @@
     </p>
   </activity>
   <p>
-    The partition of <m>X</m> in <xref ref="act_quotient_er">Activity</xref>
+    The partition of <m>X</m> in <xref ref="act_quotient_er"/>
     into the disjoint union of sets <m>A</m> and <m>B</m> defines an equivalence relation on <m>X</m> where
     <m>x \sim y</m> if <m>x</m> and <m>y</m> are both in the same set <m>A</m> or <m>B</m>.
     That is, <m>a \sim b \sim c</m> and <m>d \sim e \sim f</m>.
@@ -172,10 +172,10 @@
     Then <m>p: X \to X/\ssim</m> defined by
     <m>p(x) = [x]</m> is a surjection and <m>X/\ssim</m> has the quotient topology.
     The space <m>X/\ssim</m> is called a
-    <em>quotient space</em>.
+    <term>quotient space</term>.
         <idx><h>quotient space</h></idx>
     The space <m>X/\ssim</m> is also called an
-    <em>identification</em> space
+    <term>identification</term> space
         <idx><h>identification space</h></idx>
     because the equivalence relation identifies points in the set to be thought of as the same.
     This allows us to visualize quotient spaces as resulting from gluing or collapsing parts of the space <m>X</m>.

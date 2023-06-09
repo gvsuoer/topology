@@ -47,7 +47,7 @@
     </p>
   </activity>
   <p>
-    The message of <xref ref="act_compact_clopen">Activity</xref>
+    The message of <xref ref="act_compact_clopen"/>
     is that compactness by itself is not related to closed or open sets.
     We will see later, though,
     that in some reasonable circumstances,
@@ -101,7 +101,7 @@
     </p>
   </activity>
   <p>
-    A consequence of <xref ref="act_compact_invariant">Activity</xref>
+    A consequence of <xref ref="act_compact_invariant"/>
     is that compactness is a topological property.
   </p>
   <corollary>

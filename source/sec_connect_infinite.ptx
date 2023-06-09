@@ -8,7 +8,7 @@
     To find a counterexample, we need to look in an infinite topological space.
     There are many examples,
     but a standard example to consider is the
-    <em>topologist's sine curve</em>.
+    <term>topologist's sine curve</term>.
         <idx><h>topologist's sine curve</h></idx>
     This curve <m>S</m> is defined as the union of the sets
     <me>

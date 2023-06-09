@@ -7,14 +7,14 @@
       <li>
         <p>
           The topology consisting of all subsets of <m>X</m> is called the
-          <em>discrete topology</em>.
+          <term>discrete topology</term>.
             <idx><h>topology</h><h>discrete</h></idx>
         </p>
       </li>
       <li>
         <p>
           The topology <m>\{\emptyset, X\}</m> is the
-          <em>indiscrete topology</em>.
+          <term>indiscrete topology</term>.
             <idx><h>topology</h><h>indiscrete</h></idx>
         </p>
       </li>
@@ -22,7 +22,7 @@
         <p>
           If <m>(X,d)</m> is a metric space,
           then the collection consisting of unions of all open balls is a topology called the
-          <em>metric topology</em>.
+          <term>metric topology</term>.
             <idx><h>topology</h><h>metric</h></idx>
         This result tells us that every metric space is topological space under the metric topology.
           We will see later than not every topological space is a metric space.
@@ -42,8 +42,8 @@
         <li>
           <p>
             Prove that <m>\tau_{FC}</m> is a topology on <m>X</m>. (The topology
-            <m>\tau_{FC}</m> is called the <em>finite complement topology</em><idx><h>topology</h><h>finite complement</h></idx> or the
-            <em>cofinite topology</em>.
+            <m>\tau_{FC}</m> is called the <term>finite complement topology</term><idx><h>topology</h><h>finite complement</h></idx> or the
+            <term>cofinite topology</term>.
               <idx><h>topology</h><h>cofinite</h></idx>
           </p>
         </li>

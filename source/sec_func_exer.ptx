@@ -274,7 +274,7 @@
         and let <m>X = X_1 \times X_2</m>.
         Define <m>\pi_i :X  \to X_i</m> by <m>\pi_i(x) = x_i</m>,
         where <m>x = (x_1,x_2)</m>.
-        We call <m>\pi_i</m> the <em>projection</em>
+        We call <m>\pi_i</m> the <term>projection</term>
         of <m>X</m> onto <m>X_i</m>.
         Let <m>Y_1</m> and <m>Y_2</m> be nonempty sets,
         and let <m>Y = Y_1 \times Y_2</m>.

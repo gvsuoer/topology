@@ -5,7 +5,7 @@
     In our preview activity we saw that a set can be both open and closed.
     As we did in metric spaces,
     we will call any set that is both open and closed a
-    <em>clopen</em><idx><h>clopen set in a topological space</h></idx>
+    <term>clopen</term><idx><h>clopen set in a topological space</h></idx>
     (for closed-open)
     set.
   </p>

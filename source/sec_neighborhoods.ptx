@@ -7,7 +7,7 @@
   </p>
   <p>
     The open ball <m>B(a, \delta)</m> in a metric space <m>(X,d)</m> is also called the
-    <em><m>\delta</m>-neighborhood</em><idx><h><m>\delta</m>-neighborhood of a point in a metric space</h></idx> around <m>a</m>.
+    <term><m>\delta</m>-neighborhood</term><idx><h><m>\delta</m>-neighborhood of a point in a metric space</h></idx> around <m>a</m>.
     A neighborhood of a point can be thought of as any set that envelops that point.
   </p>
   <definition>
