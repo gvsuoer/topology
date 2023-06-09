@@ -1,0 +1,40 @@
+<section xml:id="sec_goals">
+  <title>Goals</title>
+  <p>
+    Over many years I have taught topology I developed pre- and in-class activities that I used to supplement the texts I had adopted.
+    Eventually I had enough material to eliminate the reliance on outside texts and could rely on the activities.
+    This book is built on those activities and is intended as a one semester introduction to point-set topology.
+    The emphasis for this book is to have students be active learners and to help develop their intuition through working activities and examples.
+    Although it is difficult to capture the essence of active learning in a textbook,
+    this book is an attempt to do just that.
+  </p>
+  <p>
+    The goals for these materials are several.
+    <ul>
+      <li>
+        <p>
+          To carefully introduce the ideas behind the definitions and theorems to help students develop intuition and understand the logic behind them.
+        </p>
+      </li>
+      <li>
+        <p>
+          To help students understand that mathematics is not done as it is often presented.
+          I expect students to experiment through examples,
+          make conjectures, and then refine or prove their conjectures.
+          I believe it is important for students to learn that definitions and theorems don't pop up completely formed in the minds of most mathematicians but are the result of much thought and work.
+        </p>
+      </li>
+      <li>
+        <p>
+          To help students develop their communication skills in mathematics.
+          Students are expected to read and complete activities before class and come prepared with questions.
+          Students regularly work in groups and present their work in class.
+          Outside of class students work pre-class activities that are designed to help review previous material and to prepare them for the discussion of new material.
+          In addition,
+          students also individually write solutions to exercises on which they receive significant feedback.
+          Communication skills are essential in any discipline and a heavy focus is placed on their development.
+        </p>
+      </li>
+    </ul>
+  </p>
+</section>

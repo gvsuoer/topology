@@ -1,0 +1,57 @@
+<section xml:id="sec_top_invar">
+  <title>Topological Invariants</title>
+  <p>
+    Homeomorphic topological spaces are essentially the same from a topological perspective,
+    and they share many properties, but not all.
+    The properties they share are called
+    <em>topological invariants</em>
+    or <em>topological properties</em>.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        A property of a topological space <m>X</m> is a topological property
+            <idx><h>topological property</h></idx>
+        (or topological invariant
+            <idx><h>topological invariant</h></idx>
+        ) if every topological space homeomorphic to <m>X</m> has the same property.
+      </p>
+    </statement>
+  </definition>
+  <activity>
+    <p>
+      Which of the following are topological invariants?
+      That is for topological spaces
+      <m>(X, \tau_X)</m> and <m>(Y, \tau_Y)</m>,
+      if <m>X</m> and <m>Y</m> are homeomorphic space and <m>X</m> has the property,
+      does it follow that <m>Y</m> must also have that property?
+      <ul>
+        <li>
+          <p>
+            <m>X</m> has the indiscrete topology
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>X</m> has the discrete topology
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>X</m> has the finite complement topology
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>X</m> contains the number 2
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>X</m> contains exactly 13 elements
+          </p>
+        </li>
+      </ul>
+    </p>
+  </activity>
+</section>

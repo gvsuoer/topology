@@ -1,0 +1,109 @@
+<section xml:id="sec_fun_set">
+  <title>Functions and Sets</title>
+  <p>
+    We conclude this section with a connection between subsets and functions.
+    A bit of notation first.
+    If <m>f</m> is a function from a set <m>X</m> to a set <m>Y</m>,
+    and if <m>A</m> is a subset of <m>X</m> and <m>B</m> is a subset of <m>Y</m>,
+    we define <m>f(A)</m> and <m>f^{-1}(B)</m> as
+    <me>
+      f(A) = \{f(a) \mid a \in C\}
+    </me>,
+    and
+    <me>
+      f^{-1}(B) = \{a \in A \mid f(a) \in B\}
+    </me>.
+  </p>
+  <p>
+    We call <m>f(A)</m> the image of the set <m>A</m> under <m>f</m> and
+    <m>f^{-1}(B)</m> is the preimage of the set <m>B</m> under <m>f</m>.
+    Note that <m>f^{-1}(B)</m> is defined for any function,
+    not just invertible functions.
+    So it is important to recognize that the use of the notation
+    <m>f^{-1}(B)</m> does not imply that <m>f</m> is invertible.
+  </p>
+  <p>
+    When we work with continuous functions in later sections,
+    we will need to understand how a function behaves with respect to subsets.
+    One result is in the following lemma.
+  </p>
+  <lemma xml:id="lem_functions_subsets">
+    <statement>
+      <p>
+        Let <m>f : X \to Y</m> be a function and let
+        <m>\{A_{\alpha}\}</m> be a collection of subsets of <m>X</m> for <m>\alpha</m> in some indexing set <m>I</m>,
+        and <m>\{B_{\beta}\}</m> be a collection of subsets of <m>Y</m> for <m>\beta</m> in some indexing set <m>J</m>.
+        Then
+        <ol>
+          <li>
+            <p>
+              <m>f\left(\bigcup_{\alpha \in I} A_{\alpha}\right) = \bigcup_{\alpha \in I} f(A_{\alpha})</m> and
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right) = \bigcup_{\beta \in J} f^{-1}(B_{\beta})</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </lemma>
+  <proof>
+    <p>
+      Let <m>f : X \to Y</m> be a function and let
+      <m>\{A_{\alpha}\}</m> be a collection of subsets of <m>X</m> for <m>\alpha</m> in some indexing set <m>I</m>.
+      To prove part 1, we demonstrate the containment in both directions.
+    </p>
+    <p>
+      Let <m>b \in f\left(\bigcup_{\alpha \in I} A_{\alpha}\right)</m>.
+      Then <m>b = f(a)</m> for some <m>a \in \bigcup_{\alpha \in I} A_{\alpha}</m>.
+      It follows that <m>a \in A_{\rho}</m> for some <m>\rho \in I</m>.
+      Thus, <m>b \in f(A_{\rho}) \subseteq \bigcup_{\alpha \in I} f(A_{\alpha})</m>.
+      We conclude that <m>f\left(\bigcup_{\alpha \in I} A_{\alpha}\right) \subseteq \bigcup_{\alpha \in I} f(A_{\alpha})</m>.
+    </p>
+    <p>
+      Now let <m>b \in \bigcup_{\alpha \in I} f(A_{\alpha})</m>.
+      Then <m>b \in f(A_{\rho})</m> for some <m>\rho \in I</m>.
+      Since <m>A_{\rho} \subseteq \bigcup_{\alpha \in I} A_{\alpha}</m>,
+      it follows that <m>b \in f\left(\bigcup_{\alpha \in I} A_{\alpha}\right)</m>.
+      Thus, <m>\bigcup_{\alpha \in I} f(A_{\alpha}) \subseteq f\left(\bigcup_{\alpha \in I} A_{\alpha}\right)</m>.
+      The two containments prove part 1.
+    </p>
+    <p>
+      For part 2, we again demonstrate the containments in both directions.
+      Let <m>a \in f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right)</m>.
+      Then <m>f(a) \in \bigcup_{\beta \in J} B_{\beta}</m>.
+      So there exists <m>\mu \in J</m> such that <m>f(a) \in B_{\mu}</m>.
+      This implies that <m>a \in f^{-1}(B_{\mu}) \subseteq \bigcup_{\beta \in J} f^{-1}(B_{\beta})</m>.
+      We conclude that <m>f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right) \subseteq \bigcup_{\beta \in J} f^{-1}(B_{\beta})</m>.
+    </p>
+    <p>
+      For the reverse containment,
+      let <m>a \in \bigcup_{\beta \in J} f^{-1}(B_{\beta})</m>.
+      Then <m>a \in f^{-1}(B_{\mu})</m> for some <m>\mu \in J</m>.
+      Thus, <m>f(a) \in B_{\mu} \subseteq \bigcup_{\beta \in J} B_{\beta}</m>.
+      So <m>a \in f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right)</m>.
+      Thus, <m>\bigcup_{\beta \in J} f^{-1}(B_{\beta}) \subseteq f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right)</m>.
+      The two containments verify part 2.
+    </p>
+  </proof>
+  <p>
+    At this point it is reasonable to ask if <xref ref="lem_functions_subsets">Lemma</xref>
+    would still hold if we replace unions with intersections.
+    We leave that question for Exercise <xref ref="ex_intersection_image"/>.
+  </p>
+  <p>
+    Another result is contained in the next activity.
+  </p>
+  <activity>
+    <p>
+      Let <m>X</m>, <m>Y</m>, and <m>Z</m> be sets,
+      and let <m>f: X \to Y</m> and <m>g: Y \to Z</m> be functions.
+      Let <m>C</m> be a subset of <m>Z</m>.
+      There is a relationship between
+      <m>(g \circ f)^{-1}(C)</m> and <m>f^{-1}(g^{-1}(C))</m>.
+      Find and prove this relationship.
+    </p>
+  </activity>
+</section>

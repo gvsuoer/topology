@@ -1,0 +1,209 @@
+<section xml:id="sec_comp_func">
+  <title>Composites of Functions</title>
+  <p>
+    In our past mathematical experiences,
+    we have often added and multiplied functions together (e.g., if <m>f(x) = x^2</m> and
+    <m>g(x) = x+1</m> map from <m>\R</m> to <m>\R</m>,
+    then <m>(fg)(x) = x^2(x+1)</m> and <m>(f+g)(x) = x^2+(x+1)</m>).
+    In topology,
+    we generally don't care about any algebraic structure a set might have,
+    so we will move away from sums and products,
+    and focus on compositions of functions.
+  </p>
+  <p>
+    The basic idea of function composition is that, when possible,
+    the output of a function <m>f</m> is used as the input of a function <m>g</m>.
+    The resulting function can be referred to as
+    <q><m>f</m> followed by <m>g</m></q>
+    and is called the composite of <m>f</m> with <m>g</m>.
+    The notation we use is <m>g \circ f</m>
+    (note the order <mdash/> <m>f</m> is applied first).
+    For example, if
+    <me>
+      f(x) = 3x^2 + 2 \text{ and }  g(x) = \sin(x)
+    </me>,
+    both mapping <m>\R</m> to <m>\R</m>,
+    then we can compute <m>(g \circ f)(x)</m> as follows:
+    <me>
+      (g \circ f)(x) = g(f(x)) = g(3x^2 + 2) = \sin\left(3x^2 + 2\right)
+    </me>.
+  </p>
+  <p>
+    In this case, <m>f(x)</m>,
+    the output of the function <m>f</m>,
+    was used as the input for the function <m>g</m>.
+    This idea motivates the formal definition of the composition of two functions.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        Let <m>A</m>, <m>B</m>, and <m>C</m> be nonempty sets,
+        and let <m>f : A \to B</m> and <m>g : B \to C</m> be functions.
+        The composite<idx><h>composition of functions</h></idx> of <m>f</m> and <m>g</m> is the function <m>g \circ f : A \to C</m> defined by
+        <me>
+          (g \circ f)(x) = g(f(x))
+        </me>
+        for all <m>x \in A</m>
+      </p>
+    </statement>
+  </definition>
+  <p>
+    We refer to the function <m>g \circ f</m> as a composite function,
+    and we read <m>(g \circ f)(x)</m> as
+    <q><m>g</m> of <m>f</m></q>
+    of <m>x</m>.
+  </p>
+  <activity xml:id="act_functions_1">
+    <p>
+      Let <m>A = \{1, 2, 3\}</m>,
+      <m>B = \{a, b, c, d\}</m>, and <m>C = \{\alpha, \beta, \gamma\}</m>.
+      Define <m>f : A \to B</m>,
+      <m>g : A \to B</m>, and <m>h : B \to C</m> by
+      <me>
+        f(1) = b, \ f(2) = c, \  f(3) = a
+      </me>,
+      <me>
+        g(1) = d, \ g(2) = c, \  g(3) = d, \text{ and }
+      </me>
+      <me>
+        h(a) = \gamma, \ h(b) = \alpha, \ h(c) = \beta,  \ h(d) = \alpha
+      </me>.
+      <ul>
+        <li>
+          <p>
+            Find the images of the elements in <m>A</m> under the function <m>h \circ f</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Find the images of the elements in <m>A</m> under the function <m>h \circ g</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Are any of <m>f</m>, <m>g</m>, and <m>h</m> injections?
+            Are any of <m>f</m>, <m>g</m>, and <m>h</m> surjections?
+          </p>
+        </li>
+        <li>
+          <p>
+            Is <m>h \circ f</m> an injection?
+            Is <m>h \circ f</m> a surjection?
+            Explain.
+          </p>
+        </li>
+        <li>
+          <p>
+            Is <m>h \circ g</m> an injection?
+            Is <m>h \circ g</m> a surjection?
+            Explain.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </activity>
+  <p>
+    In <xref ref="act_functions_1">Activity</xref>,
+    we asked questions about whether certain composite functions were injections and/or surjections.
+    In mathematics,
+    it is typical to explore whether certain properties of an object transfer to related objects.
+    In particular,
+    we might want to know whether or not the composite of two injective functions is also an injection.
+    (Of course, we could ask a similar question for surjections.)
+    These questions are explored in the next activity.
+  </p>
+  <activity xml:id="act_composition2">
+    <p>
+      Let the sets <m>A</m>, <m>B</m>,
+      <m>C</m>, and <m>D</m> be as follows:
+      <me>
+        A = \{ a, b, c \},  B = \{p, q, r\},  C = \{u, v, w, x \},  \text{ and }   D = \{u, v \}
+      </me>.
+      <ul>
+        <li>
+          <p>
+            Construct a function <m>f : A \to B</m> that is an injection and a function
+            <m>g : B \to C</m> that is an injection.
+            In this case,
+            is the composite function <m>g \circ f : A \to C</m> an injection?
+            Explain.
+          </p>
+        </li>
+        <li>
+          <p>
+            Construct a function <m>f : A \to B</m> that is a surjection and a function
+            <m>g : B \to D</m> that is a surjection.
+            In this case,
+            is the composite function <m>g \circ f : A \to D</m> a surjection?
+            Explain.
+          </p>
+        </li>
+        <li>
+          <p>
+            Construct a function <m>f : A \to B</m> that is a bijection and a function <m>g : B \to A</m> that is a bijection.
+            In this case,
+            is the composite function <m>g \circ f : A \to A</m> a bijection?
+            Explain.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </activity>
+  <p>
+    In <xref ref="act_composition2">Activity</xref>,
+    we explored some properties of composite functions related to injections,
+    surjections, and bijections.
+    The following theorem summarizes the results that these explorations were intended to illustrate.
+  </p>
+  <theorem xml:id="thm_compositefunctions">
+    <statement>
+      <p>
+        Let <m>A</m>, <m>B</m>, and <m>C</m> be nonempty sets,
+        and assume that <m>f : A \to B</m> and <m>g : B \to C</m>.
+        <ol>
+          <li xml:id="thm_compositefunctions1">
+            <p>
+              If <m>f</m> and <m>g</m> are both injections,
+              then <m>(g \circ f) : A \to C</m> is an injection.
+            </p>
+          </li>
+          <li xml:id="thm_compositefunctions2">
+            <p>
+              If <m>f</m> and <m>g</m> are both surjections,
+              then <m>(g \circ f) : A \to C</m> is a surjection.
+            </p>
+          </li>
+          <li xml:id="thm_compositefunctions3">
+            <p>
+              If <m>f</m> and <m>g</m> are both bijections,
+              then <m>(g \circ f) : A \to C</m> is a bijection.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </theorem>
+  <activity>
+    <p>
+      <nbsp/>
+      <ul>
+        <li>
+          <p>
+            Prove part (1) of <xref ref="thm_compositefunctions">Theorem</xref>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Prove part (2) of <xref ref="thm_compositefunctions">Theorem</xref>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Why is the proof of part (3) of <xref ref="thm_compositefunctions">Theorem</xref>
+            a direct consequence of parts (1) and (2)?
+          </p>
+        </li>
+      </ul>
+    </p>
+  </activity>
+</section>

@@ -1,0 +1,70 @@
+<section xml:id="sec_card_set">
+  <title>The Cardinality of a Set</title>
+  <p>
+    How big is a set?
+    When a set is finite,
+    we can count the number of elements in the set and answer the question directly.
+    When a set is infinite, the question is a little more complicated.
+    For example, how big is <m>\Z</m>?
+    How big is <m>\Q</m>?
+    Since <m>\Z</m> is a subset of <m>\Q</m>,
+    we might think that <m>\Q</m> contains more elements than <m>\Z</m>.
+    But <m>\Z</m> is infinite and how many more elements can we have than infinity?
+    We won't answer that question in this section,
+    but it is an interesting one to consider.
+  </p>
+  <p>
+    If two finite sets have the same number of elements,
+    then it should seem natural to say that the sets are of the same size.
+    How do we extend this to infinite sets?
+    If two finite sets have the same number of elements,
+    then we can pair each element in one set with exactly one element in the other.
+    This is exactly what a bijection does.
+    So a set with <m>n</m> elements can be paired with the set <m>\{1, 2, \ldots, n\}</m>,
+    where <m>n</m> is a positive integer.
+    This is how we can define a finite set.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        A set <m>A</m> is a finite set
+            <idx><h>finite set</h></idx>
+        if <m>A = \emptyset</m> or there is a bijection <m>f</m> mapping <m>A</m> to the set
+        <m>\{1,2,3, \ldots,
+        n\}</m> for some positive integer <m>n</m>.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    In the case that <m>A = \emptyset</m>,
+    we say that <m>A</m> has <em>cardinality</em> <m>0</m>,
+    and if there is a bijection from <m>A</m> to the set
+    <m>\{1,2, \ldots,
+    n\}</m>, we say that <m>A</m> has cardinality <m>n</m>.
+    If there is no positive integer <m>n</m> such that there is a bijection from set <m>A</m> to
+    <m>\{1,2, \ldots,
+    n\}</m> we say that <m>A</m> is an <em>infinite</em>
+    set and say that <m>A</m> has infinite cardinality.
+    We use the word <em>cardinality</em>
+    instead of number of elements because we can't actually count the number of elements in an infinite set.
+    We denote the cardinality of the set
+    (the number of elements in the set)
+    <m>A</m> by <m>|A|</m>.
+    It is left to the homework to show that if <m>A</m> and <m>B</m> are sets with <m>|A|=n</m> and <m>|B| = m</m>,
+    then <m>n=m</m> if and only if there is a bijection <m>f: A \to B</m>.
+    This tells us that cardinality is well defined.
+    Since composites of bijections are bijections with inverses that are bijections,
+    if there is a bijection from set <m>A</m> to
+    <m>\{1,2, \ldots,
+    n\}</m> and a bijection from a set <m>B</m> to
+    <m>\{1,2, \ldots,
+    n\}</m> for some positive integer <m>n</m>,
+    then there is a bijection between <m>A</m> and <m>B</m>.
+    Using this idea, we say that two sets
+    (either finite or infinite)
+    have the same cardinality
+        <idx><h>cardinality of a set</h></idx>
+    if there is a bijection between the sets.
+    We will discuss cardinality in more detail a bit later.
+  </p>
+</section>

@@ -1,0 +1,330 @@
+<section xml:id="sec_inv_func">
+  <title>Inverse Functions</title>
+  <p>
+    Now that we have studied composite functions,
+    we will move on to consider another important idea:
+    the inverse of a function.
+    In previous mathematics courses,
+    you probably learned that the exponential function
+    (with base <m>e</m>)
+    and the natural logarithm functions are inverses of each other.
+    You may have seen this relationship expressed as follows: For each
+    <m>x \in \R</m> with <m>x > 0</m> and for each <m>y \in \R</m>,
+  </p>
+  <p>
+    <m>y = \ln(x)</m> if and only if <m>x = e^y</m>.
+    Notice that <m>x</m> is the input and <m>y</m> is the output for the natural logarithm function if and only if <m>y</m> is the input and <m>x</m> is the output for the exponential function.
+    In essence, the inverse function
+    (in this case, the exponential function)
+    reverses the action of the original function
+    (in this case, the natural logarithm function).
+    In terms of ordered pairs (input-output pairs),
+    this means that if <m>( {x, y} )</m> is an ordered pair for a function,
+    then <m>( {y, x} )</m> is an ordered pair for its inverse.
+    The idea of reversing the roles of the first and second coordinates is the basis for our definition of the inverse of a function.
+  </p>
+  <definition xml:id="sym_finverse">
+    <statement>
+      <p>
+        Let <m>f : A \to B</m> be a function.
+        The inverse
+            <idx><h>function</h><h>inverse</h></idx>
+        of <m>f</m>, denoted by <m>f^{ - 1}</m>,
+        is the set of ordered pairs
+        <me>
+          f^{ - 1}  = \left\{ { {( {b, a} ) \in B \times A} \mid ( {a, b} ) \in f} \right\}
+        </me>.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    Notice that this definition does not state that <m>f^{-1}</m> is a function.
+    Rather, <m>f^{-1}</m> is simply a subset of <m>B \times A</m>.
+    In <xref ref="prog_exploringinverse">Activity</xref>,
+    we will explore the conditions under which the inverse of a function
+    <m>f: A \to B</m> is itself a function from <m>B</m> to <m>A</m>.
+  </p>
+  <activity xml:id="prog_exploringinverse">
+    <p>
+      Let <m>A = \left\{ {a, b, c} \right\}</m>,
+      <m>B = \left\{ {a,b,c,d} \right\}</m>,
+      and <m>C = \left\{ {p, q, r} \right\}</m>.
+      Define
+    </p>
+    <tabular>
+      <row>
+        <cell><m>f: A \to C</m> by <nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/></cell>
+        <cell><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/>  <m>g: A \to C</m> by <nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/></cell>
+        <cell><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/>  <m>h: B \to C</m> by</cell>
+      </row>
+      <row>
+        <cell><m>f( a ) = r</m></cell>
+        <cell><m>g( a ) = p</m></cell>
+        <cell><m>h( a ) = p</m></cell>
+      </row>
+      <row>
+        <cell><m>f( b ) = p</m></cell>
+        <cell><m>g( b ) = q</m></cell>
+        <cell><m>h( b ) = q</m></cell>
+      </row>
+      <row>
+        <cell><m>f( c ) = q</m></cell>
+        <cell><m>g( c ) = p</m></cell>
+        <cell><m>h( c ) = r</m></cell>
+      </row>
+      <row>
+        <cell></cell>
+        <cell></cell>
+        <cell><m>h( d ) = q</m></cell>
+      </row>
+    </tabular>
+    <ul>
+      <li>
+        <p>
+          Determine the inverse of each function as a set of ordered pairs.
+        </p>
+      </li>
+      <li>
+        <ol label="i">
+          <li>
+            <p>
+              Is <m>f^{ - 1}</m> a function from <m>C</m> to <m>A</m>?
+              Explain.
+            </p>
+          </li>
+          <li>
+            <p>
+              Is <m>g^{ - 1}</m> a function from <m>C</m> to <m>A</m>?
+              Explain.
+            </p>
+          </li>
+          <li>
+            <p>
+              Is <m>h^{ - 1}</m> a function from <m>C</m> to <m>B</m>?
+              Explain.
+            </p>
+          </li>
+        </ol>
+      </li>
+      <li xml:id="A_exploringinverse3">
+        <p>
+          Make a conjecture about what conditions on a function
+          <m>F: S \to T</m> will ensure that its inverse is a function from <m>T</m> to <m>S</m>.
+        </p>
+      </li>
+    </ul>
+  </activity>
+  <p>
+    The result of the <xref ref="prog_exploringinverse">Activity</xref>
+    should have been the following theorem.
+  </p>
+  <theorem xml:id="T_inverseandbijection">
+    <statement>
+      <p>
+        Let <m>A</m> and <m>B</m> be nonempty sets,
+        and let <m>f: A \to B</m>.
+        The inverse of <m>f</m> is a function from <m>B</m> to <m>A</m> if and only if <m>f</m> is a bijection.
+      </p>
+    </statement>
+  </theorem>
+  <p>
+    The proof of <xref ref="T_inverseandbijection">Theorem</xref>
+    is outlined in the following activity.
+  </p>
+  <activity>
+    <p>
+      <xref ref="T_inverseandbijection">Theorem</xref> is a biconditional statement,
+      so we need to prove both directions.
+      Let <m>A</m> and <m>B</m> be nonempty sets,
+      and let <m>f: A \to B</m>.
+      <ul>
+        <li>
+          <p>
+            Assume that  <m>f</m>  is a bijection.
+            We will prove that <m>f^{-1}</m> is a function,
+            that is that <m>f^{-1}</m> satisfies the conditions of <xref ref="def_function">Definition</xref>.
+            <ol label="i">
+              <li>
+                <p>
+                  Let <m>b \in B</m>.
+                  What property does <m>f</m> have that ensures that
+                  <m>(b,a) \in f^{-1}</m> for some <m>a \in A</m>?
+                  What conclusion can we draw about <m>f^{-1}</m>?
+                </p>
+              </li>
+              <li>
+                <p>
+                  Now let <m>b \in B</m>, <m>a_1 , a_2  \in A</m> and assume that
+                  <me>
+                    ( {b, a_1 } ) \in f^{ - 1} \text{ and }  ( {b, a_2 } ) \in f^{-1}
+                  </me>.
+                  What does this tell us about elements that must be in <m>f</m>?
+                  What property of <m>f</m> ensures that <m>a_1=a_2</m>?
+                  What conclusion can we draw about <m>f^{-1}</m>?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p>
+            Now assume that <m>f^{-1}</m> is a function from <m>B</m> to <m>A</m>.
+            We will prove that <m>f</m> is a bijection.
+            <ol label="i">
+              <li>
+                <p>
+                  What does it take to prove that <m>f</m> is an injection?
+                  Use the fact that <m>f^{-1}</m> is a function to prove that <m>f</m> is an injection.
+                </p>
+              </li>
+              <li>
+                <p>
+                  What does it take to prove that <m>f</m> is a surjection?
+                  Use the fact that <m>f^{-1}</m> is a function to prove that <m>f</m> is a surjection.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </activity>
+  <p>
+    In the situation where <m>f: A \to B</m> is a bijection and <m>f^{-1}</m> is a function from <m>B</m> to <m>A</m>,
+    we can write <m>f^{-1} : B \to A</m>.
+    In this case, we frequently say that <m>f</m> is an
+    <em>invertible function</em>,
+    and we usually do not use the ordered pair representation for either <m>f</m> or <m>f^{-1}</m>.
+    Instead of writing <m>( {a, b} ) \in f</m>,
+    we write <m>f( a ) = b</m>,
+    and instead of writing <m>( {b, a} ) \in f^{-1}</m>,
+    we write <m>f^{-1} ( b ) = a</m>.
+    Using the fact that <m>( {a, b} ) \in f</m> if and only if <m>( {b, a} ) \in f^{-1}</m>,
+    we can now write <m>f( a ) = b</m> if and only if <m>f^{-1} ( b ) = a</m>.
+    <xref ref="T_inversenotation">Theorem</xref> formalizes this observation.
+  </p>
+  <theorem xml:id="T_inversenotation">
+    <statement>
+      <p>
+        Let <m>A</m> and <m>B</m> be nonempty sets,
+        and let <m>f: A \to B</m> be a bijection.
+        Then <m>f^{ - 1} : B \to A</m> is a function,
+        and for every <m>a \in A</m> and <m>b \in B</m>,
+        <me>
+          f( a ) = b  \text{ if and only if }  f^{ - 1} ( b ) = a
+        </me>.
+      </p>
+    </statement>
+  </theorem>
+  <p>
+    The next result provide useful information about inverse functions.
+    The proofs are left for Exercise <xref ref="ex_inverse_composite"/>.
+  </p>
+  <corollary xml:id="C_inversecomposition">
+    <statement>
+      <p>
+        Let <m>A</m> and <m>B</m> be nonempty sets,
+        and let <m>f: A \to B</m> be a bijection.
+        Then
+        <ol>
+          <li xml:id="C_inversecomposition1">
+            <p>
+              For every <m>x</m> in <m>A</m>,
+              <m>\left( f^{ - 1} \circ f \right)(x) = x</m>.
+            </p>
+          </li>
+          <li xml:id="C_inversecomposition2">
+            <p>
+              For every <m>y</m> in <m>B</m>,
+              <m>\left( f \circ f^{ - 1}\right)(y) = y</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </corollary>
+  <p>
+    The next question to address is what we can say about a composition of bijections.
+    In particular,
+    if <m>f: A \to B</m> and <m>g: B \to C</m> are both bijections,
+    then <m>f^{ - 1} : B \to A</m> and <m>g^{ - 1} : C \to B</m> are both functions.
+    Must it be the case that <m>g \circ f</m> is invertible and, if so,
+    what is <m>(g \circ f)^{-1}</m>?
+  </p>
+  <activity xml:id="act_comp_inverse">
+    <p>
+      Let <m>f: A \to B</m> and <m>g: B \to C</m> both be bijections.
+      <ul>
+        <li>
+          <p>
+            Why do we know that <m>g \circ f</m> is invertible?
+          </p>
+        </li>
+        <li>
+          <p>
+            Now we determine the inverse of <m>g \circ f</m>.
+            We might be tempted to think that
+            <m>(g \circ f)^{-1}</m> is <m>g^{-1} \circ f^{-1}</m>,
+            but this composite is not defined because <m>g^{-1}</m> maps <m>B</m> to <m>C</m> and <m>f^{-1}</m> maps <m>B</m> to <m>A</m>.
+            However, <m>f^{_1} \circ g^{-1}</m> is defined.
+            To prove that <m>(g \circ f)^{-1} = f^{-1} \circ g^{-1}</m>,
+            we need to prove that two functions are equal.
+            How do we prove that two functions are equal?
+          </p>
+        </li>
+        <li>
+          <p>
+            Suppose <m>c \in C</m>.
+            <ol label="i">
+              <li>
+                <p>
+                  What tells us that there is a <m>b \in B</m> so that <m>g(b) = c</m>?
+                </p>
+              </li>
+              <li>
+                <p>
+                  What tells us that there is an <m>a \in A</m> so that <m>f(a) = b</m>?
+                </p>
+              </li>
+              <li>
+                <p>
+                  What element is <m>(g \circ f)^{-1}(c)</m>?
+                  Why?
+                </p>
+              </li>
+              <li>
+                <p>
+                  What element is <m>f^{-1}(b)</m>?
+                  Why?
+                  What element is <m>g^{-1}(c)</m>?
+                  Why?
+                </p>
+              </li>
+              <li>
+                <p>
+                  What element is <m>(f^{-1} \circ g^{-1})(c)</m>?
+                  Why?
+                  What can we conclude about
+                  <m>(g \circ f)^{-1}</m> and <m>f^{-1} \circ g^{-1}</m>?
+                  Explain.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </activity>
+  <p>
+    The result of <xref ref="act_comp_inverse">Activity</xref>
+    is contained in the next theorem.
+  </p>
+  <theorem xml:id="compositionofbijections">
+    <statement>
+      <p>
+        Let <m>f: A \to B</m> and <m>g: B \to C</m> be bijections.
+        Then <m>g \circ f</m> is a bijection and <m>( {g \circ f} )^{ - 1} = f^{ - 1} \circ g^{ - 1}</m>.
+      </p>
+    </statement>
+  </theorem>
+</section>

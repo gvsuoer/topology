@@ -1,0 +1,603 @@
+<section xml:id="sec_func_exer">
+  <title>Exercises</title>
+  <ol>
+    <li>
+      <ul>
+        <li>
+          <p>
+            Find a function <m>f: \R \to \R</m> such that each element in the codomain has exactly one preimage.
+          </p>
+        </li>
+        <li>
+          <p>
+            Find a function <m>f: \R \to \R</m> such that each element in the codomain has at least two preimages.
+          </p>
+        </li>
+        <li>
+          <p>
+            Find a function <m>f: \R \to \R</m> such that each element has exactly two preimages.
+          </p>
+        </li>
+        <li>
+          <p>
+            Find a function <m>f: \R \to \R</m> such that there is an element in the codomain that has exactly three preimages and another element in the codomain that as exactly two preminages.
+          </p>
+        </li>
+        <li>
+          <p>
+            Find a function <m>f: \R \to \R</m> such that there is an element in the codomain that has infinitely many preimages.
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li xml:id="exer_forexample">
+      <p>
+        For each of the following functions,
+        determine if the function is an injection,
+        a surjection, a bijection, or none of these.
+        Remember to be careful about the domain and range in each case.
+        Justify all of your conclusions.
+        <ul>
+          <li>
+            <p>
+              <m>F:\mathbb{R} \to \mathbb{R}</m> defined by <m>F( x ) = 5x + 3</m>,
+              for all <m>x \in \mathbb{R}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>G:\Z \to \Z</m> defined by
+              <m>G( x ) = 5x + 3</m>, for all <m>x \in \Z</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f: ( \R \setminus \left\{ 4 \right\} ) \to \R</m> defined by <m>f ( x ) = \dfrac{3x}{x - 4}</m>,
+              for all <m>x \in \left( \R \setminus\{ 4 \} \right)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>g: ( \R \setminus \left\{ 4 \right\} ) \to ( \R \setminus \left\{ 3 \right\} )</m> defined by <m>g ( x ) = \dfrac{3x}{x - 4}</m>,
+              for all <m>x \in \left( \R \setminus \{ 4 \} \right)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>h: \R \to \R_{\geq 0}</m> defined by
+              <m>h(x) = x^2</m> for every <m>x \in \R</m>,
+              where <m>\R_{\geq 0} = \{x \in \R \mid x \geq 0\}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>k: \R_{\geq 0} \to \R_{\geq 0}</m> defined by
+              <m>k(x) = x^2</m> for every <m>x \in \R_{\geq 0}</m>
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+    <li>
+      <p>
+        Let <m>A = \{1,2,3,4,5,6,7,8,9,10\}</m> and let <m>B = \{a,b,c,d,e,g\}</m>,
+        and define <m>f:A \to B</m> as given in <xref ref="T_Sec_2_fn_example">Table</xref>.
+        <table xml:id="T_Sec_2_fn_example">
+          <title>A function from <m>A</m> to <m>B</m></title>
+          <tabular>
+            <row>
+              <cell><m>x</m></cell>
+              <cell>1</cell>
+              <cell>2</cell>
+              <cell>3</cell>
+              <cell>4</cell>
+              <cell>5</cell>
+              <cell>6</cell>
+              <cell>7</cell>
+              <cell>8</cell>
+              <cell>9</cell>
+              <cell>10</cell>
+            </row>
+            <row>
+              <cell><m>f(x)</m></cell>
+              <cell><m>c</m></cell>
+              <cell><m>d</m></cell>
+              <cell><m>a</m></cell>
+              <cell><m>g</m></cell>
+              <cell><m>a</m></cell>
+              <cell><m>c</m></cell>
+              <cell><m>e</m></cell>
+              <cell><m>d</m></cell>
+              <cell><m>c</m></cell>
+              <cell><m>a</m></cell>
+            </row>
+          </tabular>
+        </table>
+        <ul>
+          <li>
+            <p>
+              If <m>f</m> an injection?
+              Is <m>f</m> a surjection?
+              Explain.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find a largest subset <m>C</m> of <m>A</m>
+              (largest in the number of elements of <m>C</m>)
+              such that <m>f|_C</m> is an injection.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find a subset <m>D</m> of <m>B</m> such that <m>f</m> is a surjection.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find subsets <m>X</m> of <m>A</m> and <m>Y</m> of <m>B</m> such that <m>f|_X : X \to Y</m> is a bijection.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+    <li>
+      <p>
+        Let <m>A</m> and <m>B</m> be sets,
+        both of which have at least two distinct members.
+        <ul>
+          <li>
+            <p>
+              Illustrate a subset <m>X \subset A \times B</m> that is the Cartesian product of a subset of <m>A</m> with a subset of <m>B</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Show that there is a subset
+              <m>W \subset A \times B</m> that is not the Cartesian product of a subset of <m>A</m> with a subset of <m>B</m>. [Thus,
+              not every subset of a Cartesian product is the Cartesian product of a pair of subsets.]
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+    <li>
+      <p>
+        The cardinality of a finite set is defined to be the number of elements of that set.
+        We denote the cardinality of a set <m>A</m> as <m>|A|</m>.
+        Let <m>A</m> and <m>B</m> be sets with <m>|A| = n</m> and <m>|B| = m</m> for some positive integers <m>m</m> and <m>n</m>.
+        Prove that there is a bijection
+        <m>f: A \to B</m> if and only if <m>n = m</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        Let <m>X</m> and <m>Y</m> be sets and let <m>f: X \to Y</m> be a function.
+        <ul>
+          <li>
+            <p>
+              Let <m>A</m> be a subset of <m>X</m>.
+              Show that <m>A \subseteq f^{-1}(f(A))</m>.
+              Make an example to show that in general,
+              <m>A \neq f^{-1}(f(A))</m>.
+              <hint>
+                <p>
+                  To show that the sets are not equal,
+                  consider sets <m>X</m> and <m>Y</m> with two elements.
+                </p>
+              </hint>
+            </p>
+          </li>
+          <li>
+            <p>
+              Let <m>B</m> be a subset of <m>Y</m>.
+              Show that <m>f(f^{-1}(B)) \subseteq B</m>.
+              Make an example to show that in general,
+              <m>f(f^{-1}(B)) \neq B</m>.
+              <hint>
+                <p>
+                  To show that the sets are not equal,
+                  consider sets <m>X</m> and <m>Y</m> with two elements.
+                </p>
+              </hint>
+            </p>
+          </li>
+          <li>
+            <p>
+              Prove that <m>f</m> is a surjection if and only if
+              <m>f(f^{-1}(B)) = B</m> for every subset <m>B</m> of <m>Y</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Prove that <m>f</m> is an injection if and only if
+              <m>f^{-1}(f(A)) = A</m> for every subset <m>A</m> of <m>X</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+    <li xml:id="ex_intersection_image">
+      <p>
+        Let <m>f : X \to Y</m> be a function and let
+        <m>\{A_{\alpha}\}</m> be a collection of subsets of <m>X</m> for <m>\alpha</m> in some indexing set <m>I</m>,
+        and <m>\{B_{\beta}\}</m> be a collection of subsets of <m>Y</m> for <m>\beta</m> in some indexing set <m>J</m>.
+        Prove or disprove each of the following.
+        If a statement is not true, is either containment true?
+        Prove your answers.
+        <ul>
+          <li>
+            <p>
+              <m>f\left(\bigcap_{\alpha \in I} A_{\alpha}\right) = \bigcap_{\alpha \in I} f(A_{\alpha})</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f^{-1}\left(\bigcap_{\beta \in J} B_{\beta}\right) = \bigcap_{\beta \in J} f^{-1}(B_{\beta})</m>
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+    <li xml:id="ex_inverse_composite">
+      <p>
+        Let <m>A</m> and <m>B</m> be nonempty sets,
+        and let <m>f: A \to B</m> be a bijection.
+        Prove that
+        <ul>
+          <li>
+            <p>
+              For every <m>x</m> in <m>A</m>,
+              <m>\left( f^{-1} \circ f \right)(x) = x</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              For every <m>y</m> in <m>B</m>,
+              <m>\left( f \circ f^{-1}\right)(y) = y</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+    <li xml:id="ex_inverse_composite_sets">
+      <p>
+        Let <m>R</m>, <m>S</m>, and <m>T</m> be sets,
+        and let <m>g: R \to S</m> and <m>h : S \to T</m> be functions.
+        Let <m>O</m> be a subset of <m>T</m>.
+        Show that <m>(h \circ g)^{-1}(O) = g^{-1}(h^{-1}(O)</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        Let <m>X_1</m> and <m>X_2</m> be nonempty sets,
+        and let <m>X = X_1 \times X_2</m>.
+        Define <m>\pi_i :X  \to X_i</m> by <m>\pi_i(x) = x_i</m>,
+        where <m>x = (x_1,x_2)</m>.
+        We call <m>\pi_i</m> the <em>projection</em>
+        of <m>X</m> onto <m>X_i</m>.
+        Let <m>Y_1</m> and <m>Y_2</m> be nonempty sets,
+        and let <m>Y = Y_1 \times Y_2</m>.
+        Assume that for each <m>i</m> there is a function <m>f_i : X_i \to Y_i</m>.
+        For example,
+        let <m>X_i = \{i,i+1\}</m> and <m>Y_i = \{-i, -i-1\}</m>.
+        We could then define <m>f_i</m> by
+        <m>f_i(x) = -x</m> for <m>i</m> either <m>1</m> or <m>2</m>.
+        <ul>
+          <li>
+            <p>
+              Prove that <m>\pi_i</m> is a surjection for each <m>i</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Prove that there is a unique function
+              <m>f: X \to Y</m> such that <m>\pi_i \circ f = f_i \circ \pi_i</m> for each <m>i</m>.
+              (Note that one of the <m>\pi_i</m> maps <m>X</m> to <m>X_i</m> and the other maps <m>Y</m> to <m>Y_i</m>.)
+            </p>
+          </li>
+          <li>
+            <p>
+              The function <m>f</m> from part (b) is denoted as <m>f = f_1 \times f_2</m>.
+              Let <m>Z_1</m> and <m>Z_2</m> be two nonempty sets,
+              and let <m>Z = Z_1 \times Z_2</m>.
+              Assume that there are functions <m>g_i : Y_i \to Z_i</m> for each <m>i</m>.
+              Show that
+              <me>
+                \left(g_1 \times g_2\right) \circ \left(f_1 \times f_2\right) = (g_1 \circ f_1) \times (g_2 \circ f_2)
+              </me>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Suppose that each <m>f_i</m> has an inverse <m>h_i</m>.
+              Show that <m>\left(f_1 \times f_2\right)^{-1} = h_1 \times h_1</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+    <li>
+      <p>
+        Let <m>\N</m> be the set of positive integers.
+        Define <m>f:\N \to \Z</m> as follows: For each <m>n \in \N</m>, let
+        <me>
+          f(n) = \frac{1 + (-1)^n (2n - 1)}{4}
+        </me>.
+        Is the function <m>f</m> an injection?
+        Is the function <m>f</m> a surjection?
+        Justify your conclusions.
+        <hint>
+          <p>
+            Start by calculating several outputs for the function before you attempt to write a proof.
+            In exploring whether or not the function is an injection,
+            it might be a good idea to use cases based on whether the inputs are even or odd.
+            In exploring whether <m>f</m> is a surjection,
+            consider using cases based on whether the output is positive or less than or equal to zero.
+          </p>
+        </hint>
+      </p>
+    </li>
+    <li>
+      <p>
+        An operation <m>*</m> on a set <m>S</m> is a function from
+        <m>S \times S</m> to <m>S</m> that assigns to the pair
+        <m>(x,y) \in S \times S</m> the element <m>x*y</m> in <m>S</m>.
+        For example,
+        addition of integers can be defined as a function <m>f : \Z \times \Z \to \Z</m> that maps the pair
+        <m>(a,b)\in \Z \times \Z</m> to the integer <m>f(a,b) = a+b</m>.
+        <ul>
+          <li>
+            <p>
+              Is the function <m>f</m> an injection?
+              Justify your conclusion.
+            </p>
+          </li>
+          <li>
+            <p>
+              Is the function <m>f</m> a surjection?
+              Justify your conclusion.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+    <li>
+      <p>
+        Let <m>A</m>, <m>B</m>, and <m>C</m> be sets and let
+        <m>f : A \to B</m> and <m>g : B \to C</m> be functions.
+        <ul>
+          <li>
+            <p>
+              Is it true that if <m>g \circ f</m> is an injection,
+              then both <m>f</m> and <m>g</m> are injections?
+              If the answer is no,
+              are there any conditions that <m>f</m> or <m>g</m> must satisfy if <m>g \circ f</m> an injection?
+              Prove your answers.
+            </p>
+          </li>
+          <li>
+            <p>
+              Is it true that if <m>g \circ f</m> is a surjection,
+              then both <m>f</m> and <m>g</m> are surjections?
+              If the answer is no,
+              are there any conditions that <m>f</m> or <m>g</m> must satisfy if <m>f \circ g</m> a surjection?
+              Prove your answers.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+    <li>
+      <ul>
+        <li>
+          <p>
+            Is composition of functions a commutative operation?
+            Prove your answer.
+          </p>
+        </li>
+        <li>
+          <p>
+            Is composition of functions an associative operation?
+            Prove your answer.
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <ul>
+        <li>
+          <p>
+            Define <m>f: \Z_5 \to \Z_5</m> by
+            <m>f\left( [x] \right) = \left[x^2 + 4 \right]</m> for all <m>[x] \in \Z_5</m>.
+            Write the inverse of <m>f</m> as a set of ordered pairs,
+            and explain why <m>f^{-1}</m> is not a function.
+          </p>
+        </li>
+        <li>
+          <p>
+            Define <m>g: \Z_5 \to \Z_5</m> by
+            <m>g\left( [x] \right) = \left[x^3 + 4 \right]</m> for all <m>[x] \in \Z_5</m>.
+            Write the inverse of <m>g</m> as a set of ordered pairs,
+            and explain why <m>g^{-1}</m> is a function.
+          </p>
+        </li>
+        <li>
+          <p>
+            Is it possible to write a formula for <m>g^{-1}\left( [y] \right)</m>,
+            where <m>[y] \in \Z_5</m>?
+            The answer to this question depends on whether or not it is possible to define a cube root of elements of <m>\Z_5</m>.
+            Recall that for a real number <m>x</m>,
+            we define the cube root of <m>x</m> to be the real number <m>y</m> such that <m>y^3 = x</m>.
+            That is, <m>y = \sqrt[3]{x}</m> if and only if <m>y^3 = x</m>.
+            Using this idea,
+            is it possible to define the cube root of each element of <m>\Z_5</m>?
+            If so, what is <m>\sqrt[3]{[0]}</m>, <m>\sqrt[3]{[1]}</m>,
+            <m>\sqrt[3]{[2]}</m>, <m>\sqrt[3]{[3]}</m>, and <m>\sqrt[3]{[4]}</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Now answer the question posed at the beginning of part<nbsp/>(c).
+            If possible, determine a formula for
+            <m>g^{-1}\left([y] \right)</m> where <m>g^{-1}: \Z_5 \to \Z_5</m>.
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>
+        Let <m>A</m> be the set of all functions
+        <m>f:[a,b] \to \R</m> that are continuous on <m>[a,b]</m>
+        (use your memory of continuous functions from calculus for this problem).
+        Let <m>B</m> be the subset of <m>A</m> consisting of all functions possessing a continuous derivative on <m>[a,b]</m>.
+        Let <m>C</m> be the subset of <m>B</m> consisting of all functions whose value at <m>a</m> is 0.
+        <ul>
+          <li>
+            <ol label="i">
+              <li>
+                <p>
+                  Give an example of a function that is in <m>A</m> and not in <m>B</m> with <m>[a,b] = [-1,1]</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Give an example of a function that is in <m>B</m> but not in <m>C</m> with <m>[a,b] = [-1,1]</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Give an example of a function that is in <m>C</m> with <m>[a,b] = [-1,1]</m>.
+                </p>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <p>
+              Let <m>d:B \to A</m> be defined by
+              <me>
+                d(f) = f'
+              </me>.
+              Is the function <m>d</m> invertible?
+              Justify your response.
+            </p>
+          </li>
+          <li>
+            <p>
+              To each function <m>f \in A</m>,
+              let <m>h(f)</m> be the function defined by
+              <me>
+                (h(f))(x) = \int_a^x f(t) \, dt
+              </me>
+              for <m>x \in [a,b]</m>.
+              <ol label="i">
+                <li>
+                  <p>
+                    Verify that <m>h</m> maps <m>A</m> to <m>C</m>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Show that <m>h</m> is invertible by finding a function
+                    <m>g : C \to A</m> such that <m>g</m> and <m>h</m> are inverse functions.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+    <li>
+      <p>
+        For each of the following, answer true if the statement is always true.
+        If the statement is only sometimes true or never true,
+        answer false and provide a concrete example to illustrate that the statement is false.
+        If a statement is true, explain why.
+        <ul>
+          <li>
+            <p>
+              If <m>A</m> is a subset of <m>X</m>,
+              then <m>A \subseteq f^{-1}(f(A))</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>A</m> is a subset of <m>X</m>,
+              then <m>f^{-1}(f(A)) \subseteq A</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>B</m> is a subset of <m>Y</m>,
+              then <m>B \subseteq f(f^{-1}(B))</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>B</m> is a subset of <m>Y</m>,
+              then <m>f(f^{-1}(B)) \subseteq B</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>A_1</m> and <m>A_2</m> are subsets of <m>X</m> with <m>A_1 \subseteq A_2</m>,
+              then <m>f(A_1) \subseteq f(A_2)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>B_1</m> and <m>B_2</m> are subsets of <m>Y</m> with <m>B_1 \subseteq B_2</m>,
+              then <m>f^{-1}(B_1) \subseteq f^{-1}(B_2)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>B_1</m> and <m>B_2</m> are subsets of <m>Y</m> with <m>B_1 \subseteq B_2</m>,
+              then <m>f^{-1}(B_2) \subseteq f^{-1}(B_1)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>A_1</m> and <m>A_2</m> are subsets of <m>X</m>,
+              then <m>f(A_1 \cup A_2) = f(A_1) \cup f(A_2)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>B_1</m> and <m>B_2</m> are subsets of <m>Y</m>,
+              then <m>f^{-1}(B_1 \cup B_2) = f^{-1}(B_1) \cup f^{-1}(B_2)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>A_1</m> and <m>A_2</m> are subsets of <m>X</m>,
+              then <m>f(A_1 \cap A_2) = f(A_1) \cap f(A_2)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>B_1</m> and <m>B_2</m> are subsets of <m>Y</m>,
+              then <m>f^{-1}(B_1 \cap B_2) = f^{-1}(B_1) \cap f^{-1}(B_2)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>A_1</m> and <m>A_2</m> are subsets of <m>X</m>,
+              then <m>f(A_1 \setminus A_2) = f(A_1) \setminus f(A_2)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>B_1</m> and <m>B_2</m> are subsets of <m>Y</m>,
+              then <m>f^{-1}(B_1 \setminus B_2) = f^{-1}(B_1) \setminus f^{-1}(B_2)</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+  </ol>
+  <p>
+    \part{Metric Spaces}
+  </p>
+</section>

@@ -1,0 +1,296 @@
+<section xml:id="sec_func_intro">
+  <title>Introduction</title>
+  <p>
+    Many topological properties are defined using continuous functions.
+    We will focus on continuity later <mdash/> for now we review some important concepts related to functions.
+    Much of this should be familiar, but some might be new.
+  </p>
+  <p>
+    First we present the basic definitions.
+    Much of our previous work has probably been with functions that map from the reals to the reals,
+    but we will be considering functions form a more general perspective.
+    We start with a formal definition of a function.
+  </p>
+  <definition xml:id="def_function">
+    <statement>
+      <p>
+        A function
+            <idx><h>function</h></idx>
+        <m>f</m> from a nonempty set <m>A</m> to a set <m>B</m> is a collection of ordered pairs <m>(a,b)</m> so that
+        <ul>
+          <li>
+            <p>
+              for each <m>a \in A</m> there is a pair <m>(a,b)</m> in <m>f</m>, and
+            </p>
+          </li>
+          <li>
+            <p>
+              if <m>(a,b)</m> and <m>(a,b')</m> are in <m>f</m>, then <m>b=b'</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </statement>
+  </definition>
+  <p>
+    Note that the first property is an existence property <mdash/> that if <m>a \in A</m> then there is an element <m>b</m> in <m>B</m> that matches up with <m>a</m>.
+    This first property also says that every element in <m>A</m> is used,
+    or that every element in <m>A</m> is paired with an element in <m>B</m>,
+    and the element in <m>B</m> depends on the element in <m>A</m> that is chosen.
+    The second property is a uniqueness one <mdash/> that there is only one element <m>b</m> in <m>B</m> that is paired with a given element <m>a</m> in <m>A</m>.
+  </p>
+  <p>
+    We generally use an alternate notation for a function.
+    If <m>(a,b)</m> is an element of a function <m>f</m>, we write
+    <me>
+      f(a)=b
+    </me>,
+    and in this way we think of <m>f</m> as a mapping from the set <m>A</m> to the set <m>B</m>.
+    We indicate that <m>f</m> is a mapping from set <m>A</m> to set <m>B</m> with the notation
+    <me>
+      f : A \to B
+    </me>.
+  </p>
+  <p>
+    If <m>f</m> maps the element <m>a \in A</m> to the element <m>b \in B</m> we also use the notation
+    <me>
+      f : a \mapsto b
+    </me>.
+  </p>
+  <p>
+    There is some familiar terminology and notation associated with functions.
+    Let <m>f</m> be a function from a set <m>A</m> to a set <m>B</m>.
+    <ul>
+      <li>
+        <p>
+          The set <m>A</m> is called the <em>domain</em>
+            <idx><h>function</h><h>domain</h></idx>
+          of <m>f</m>, and we write <m>\text{ dom } (f) = A</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          The set <m>B</m> is called the <em>codomain</em>
+            <idx><h>function</h><h>codomain</h></idx>
+          of <m>f</m>, and we write <m>\text{ codom } (f) = B</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          The subset <m>\{f(a) \mid a \in A\}</m> of <m>B</m> is called the <em>range</em>
+            <idx><h>function</h><h>range</h></idx>
+          of <m>f</m>, which we denote by <m>\text{ range } (f)</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          If <m>a \in A</m>, then <m>f(a)</m> is the <em>image</em>
+            <idx><h>image of an element</h></idx>
+          of <m>a</m> under <m>f</m>.
+          Since each <m>a</m> in <m>A</m> is paired with a unique <m>b \in B</m>,
+          there is only one image of <m>a</m> under <m>f</m>.
+          That is why it is appropriate to use the work
+          <q>the</q>
+          when referring to the image of an element.
+        </p>
+      </li>
+      <li>
+        <p>
+          If <m>b \in B</m> and <m>b = f(a)</m> for some <m>a \in A</m>,
+          then <m>a</m> is called a <em>preimage</em>
+            <idx><h>preimage of an element</h></idx>
+          of <m>b</m>.
+          For a given <m>b \in B</m>, there may be many different preimages of <m>b</m>,
+          no preimages of <m>b</m>, or just one preimage of <m>b</m>.
+          It can be instructive to construct examples of each situation.
+          The fact that a preimage of an element <m>b</m> may not be unique is the reason we use the word
+          <q>a</q>
+          when referring to a preimage.
+        </p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    Knowing the domains and codomains is very important when working with functions,
+    and we will pay a lot of attention to these sets.
+  </p>
+  <p>
+    We have likely been exposed to one-to-one and onto function in our past mathematical experiences.
+    One-to-one functions
+    (or injections)
+    and onto functions
+    (or surjections)
+    are special types of functions and we present their definitions here.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        Let <m>f</m> be a function from a set <m>A</m> to a set <m>B</m>.
+        <ol>
+          <li>
+            <p>
+              The function <m>f</m> is an <em>injection</em><idx><h>function</h><h>injection</h></idx> if,
+              whenever <m>(a,b)</m> and <m>(a',b)</m> are in <m>f</m>,
+              then <m>a=a'</m>.
+              Alternatively, using the function notation,
+              <m>f</m> is an injection if <m>f(a)=f(a')</m> implies <m>a=a'</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              The function <m>f</m> is a <em>surjection</em><idx><h>function</h><h>surjection</h></idx> if,
+              whenever <m>b \in B</m>,
+              then there is an <m>a \in A</m> so that <m>(a,b)</m> is in <m>f</m>.
+              Alternatively, using the function notation,
+              <m>f</m> is a surjection if for each <m>b \in B</m> there exists an <m>a \in A</m> so that <m>f(a)=b</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              The function <m>f</m> is a <em>bijection</em><idx><h>function</h><h>bijection</h></idx> if <m>f</m> is both an injection and a surjection.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </definition>
+  <activity>
+    <p>
+      We often define functions with rules,
+      but functions can also be defined by tables or graphs.
+      We will work with functions defined by rules in this activity.
+      The goal of this activity is to illustrate why the domain and the codomain are just as important as the rule defining the outputs when want to determine if a function is one-to-one and/or onto.
+      As an example,
+      let <m>f(x) = x^2+1</m>. (Note that <m>f</m> is the function and <m>f(x)</m> is the image of <m>x</m> under <m>f</m>.) Notice that
+      <me>
+        f(2) = 5 \text{ and }  f(-2) = 5
+      </me>.
+    </p>
+    <p>
+      This observation is enough to prove that the function <m>f</m> is not an injection since we can see that there exist two different inputs that produce the same output.
+    </p>
+    <p>
+      Since <m>f(x) = x^2 + 1</m>,
+      we know that <m>f(x) \geq 1</m> for all <m>x \in \R</m>.
+      This implies that the function <m>f</m> is not a surjection.
+      For example, <m>-2</m> is in the codomain of <m>f</m> and
+      <m>f(x) \neq -2</m> for all <m>x</m> in the domain of <m>f</m>.
+      <ol>
+        <li>
+          <p>
+            We can change the domain of a function so that the function is defined on a subset of the original domain.
+            Such a function is called a restriction.
+            <definition>
+              <statement>
+                <p>
+                  Let <m>f</m> be a function from a set <m>A</m> to a set <m>B</m> and let <m>C</m> be a subset of <m>A</m>.
+                  The restriction<idx><h>function</h><h>restriction</h></idx> of <m>f</m> to <m>C</m> is the function <m>F: C \to B</m> satisfying
+                  <me>
+                    F(c) = f(c) \text{ for all }  c \in C
+                  </me>.
+                </p>
+              </statement>
+            </definition>
+            A notation used for the restriction is also <m>F = f\mid_C</m>.
+            We also call <m>f</m> an <em>extension</em> of <m>F</m>.
+            Let <m>f: \R \to \R</m> be defined by <m>f(x) = x^2+1</m>,
+            and let <m>h = f \mid_{\R^+}</m>,
+            where <m>\R^+</m> is the set of positive real numbers.
+            So <m>h</m> has the same codomain as <m>f</m>, but a different domain.
+            <ul>
+              <li>
+                <p>
+                  Show that <m>h</m> is an injection.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Is <m>h</m> a surjection?
+                  Justify your conclusion.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+        <li>
+          <p>
+            Let <m>T = \{y \in \R \mid y \geq 1\}</m>,
+            and let <m>F: \R \to T</m> be defined by <m>F(x) = f(x)</m>.
+            Notice that the function <m>F</m> uses the same formula as the function <m>f</m> and has the same domain as <m>f</m>,
+            but has a different codomain than <m>f</m>.
+            <ul>
+              <li>
+                <p>
+                  Explain why <m>F</m> is not an injection.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Is <m>F</m> a surjection?
+                  Justify your conclusion.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+        <li>
+          <p>
+            Let <m>\R^*= \{x \in \R \mid x \geq 0\}</m>.
+            Define <m>g : \R^* \to T</m> by <m>g(x) = x^2 + 1</m>.
+            <ul>
+              <li>
+                <p>
+                  Prove or disprove: the function <m>g</m> is an injection.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Prove or disprove: the function <m>g</m> is a surjection.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </activity>
+  <p>
+    In our preview activity,
+    the same mathematical formula was used to determine the outputs for the functions.
+    However:
+    <ul>
+      <li>
+        <p>
+          One of the functions was neither an injection nor a surjection.
+        </p>
+      </li>
+      <li>
+        <p>
+          One of the functions was not an injection but was a surjection.
+        </p>
+      </li>
+      <li>
+        <p>
+          One of the functions was an injection but was not a surjection.
+        </p>
+      </li>
+      <li>
+        <p>
+          One of the functions was both an injection and a surjection.
+        </p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    This illustrates the important fact that whether a function is injective or surjective not only depends on the formula that defines the output of the function but also on the domain and codomain of the function.
+  </p>
+  <p>
+    An important special function that is always an injection and surjection is the
+    <em>identity</em> function
+        <idx><h>function</h><h>identity</h></idx>
+    on a set.
+    If <m>A</m> is a set,
+    the identity function on <m>A</m> is denoted as <m>i_A</m>,
+    and <m>i_A(a) = a</m> for every <m>a \in A</m>.
+  </p>
+</section>

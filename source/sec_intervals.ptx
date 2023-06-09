@@ -1,0 +1,81 @@
+<section xml:id="sec_intervals">
+  <title>Intervals</title>
+  <p>
+    We will begin with one of the most basic type of set we will encounter <mdash/> intervals.
+    The open intervals will be important as they will form a basis for the standard topology on <m>\R</m>.
+    We are likely familiar with intervals from algebra and calculus,
+    sets like <m>(0,1)</m>, <m>[2,3)</m>.
+    To really understand intervals,
+    we will need a rigorous definition.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        A subset <m>I</m> of <m>\R</m> is an interval
+            <idx><h>interval</h></idx>
+        if for all <m>a</m>, <m>b</m>, and <m>c</m> in <m>\R</m>
+        (allowing for <m>a</m> or <m>b</m> to be <m>\pm \infty</m>)
+        with <m>a \lt c \lt b</m>,
+        if <m>a</m> and <m>b</m> are in <m>I</m>,
+        then <m>c</m> is in <m>I</m>.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    With this definition, the set of all real numbers <m>x</m> satisfying
+    <m>0 \lt  x \lt  1</m> is an interval that we denote by <m>(0,1)</m> (it is important to understand the context <mdash/> we also use the notation <m>(0,1)</m> to denote an ordered pair).
+    The general notation we use for intervals is the following:
+    <ul>
+      <li>
+        <p>
+          <m>(a,b) = \{t \in \R \mid a \lt t \lt b\}</m> (<m>a</m> or <m>b</m> could be <m>\pm \infty</m>)
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>[a,b) = \{t \in \R \mid a \leq t \lt b\}</m> (<m>b</m> could be <m>\pm \infty</m>)
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>(a,b] = \{t \in \R \mid a \lt t \leq b\}</m> (<m>a</m> could be <m>\pm \infty</m>)
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>[a,b] = \{t \in \R \mid a \leq t \leq b\}</m>.
+        </p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    In this notation, <m>\R = (-\infty, \infty)</m>.
+    Intervals of the form <m>(a,b)</m> are called
+    <em>open</em> intervals,
+    intervals of the form <m>[a,b]</m> are called
+    <em>closed</em> intervals,
+    and intervals of the form <m>[a,b)</m> or <m>(a,b]</m> are <em>half-open</em>
+    (or <em>half-closed</em>)
+    intervals.
+    The reason for this terminology should become more clear as we introduce open and closed sets later.
+  </p>
+  <p>
+    Note that nothing in the definition indicates that we must have <m>a \lt b</m> in the interval notation.
+    This implies that <m>(1,1)</m> is an interval.
+    Since there are no real numbers larger than <m>1</m> and less than <m>1</m>,
+    <m>\emptyset = (1,1)</m> is an interval.
+    We could also have an interval of the form <m>[a,a]</m> where <m>a</m> is any real number.
+    This means that <m>\{a\} = [a,a]</m>,
+    and any single point set is an interval.
+    The intervals <m>\emptyset</m> and <m>[a,a]</m> for any real number <m>a</m> are called
+    <em>degenerate</em> intervals.
+  </p>
+  <p>
+    One last note about intervals.
+    Some require that <m>a</m> be less than <m>b</m> in the definition of an interval,
+    with the result that there are no degenerate intervals.
+    This is a matter of debate that we won't get into.
+    In almost all of our work,
+    we will consider only non-degenerate intervals so this won't be an issue for us.
+  </p>
+</section>

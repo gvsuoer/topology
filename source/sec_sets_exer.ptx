@@ -1,0 +1,303 @@
+<section xml:id="sec_sets_exer">
+  <title>Exercises</title>
+  <ol>
+    <li>
+      <p>
+        Let <m>A</m>,
+        <m>B</m>, and <m>C</m> be subsets of a set <m>X</m>.
+        Express each of the following sets in mathematical notation using the symbols <m>\cup</m>,
+        <m>\cap</m>, and <m>\setminus</m>.
+        <ul>
+          <li>
+            <p>
+              The elements of <m>X</m> that belong to <m>A</m> and <m>B</m>,
+              but not <m>C</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              The elements of <m>X</m> that belong to <m>C</m> and either <m>A</m> or <m>B</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              The elements of <m>X</m> that belong to <m>A</m> but not to both <m>B</m> and <m>C</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              The elements of <m>X</m> that belong to none of the sets <m>A</m>,
+              <m>B</m>,
+              and <m>C</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              The elements of <m>X</m> that fail to belong to at least two of the sets <m>A</m>,
+              <m>B</m>,
+              and <m>C</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              The elements of <m>X</m> that fail to belong to at most one of the sets <m>A</m>,
+              <m>B</m>,
+              and <m>C</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+    <li>
+      <p>
+        Let <m>X \subset Y \subset Z</m>.
+        Prove or disprove.
+        <ul>
+          <li>
+            <p>
+              <m>C_Y(X) \subset C_Z(X)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>Z \setminus (Y \setminus X) = X \cup (Z \setminus Y)</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+    <li xml:id="ex_set_props">
+      <p>
+        Let <m>A</m> and <m>B</m> be subsets of a universal set <m>U</m>.
+        Prove the associative and distributive laws.
+        That is, prove each of the following.
+        <ul>
+          <li>
+            <p>
+              <m>(A \cap B) \cap C = A \cap (B \cap C)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>(A \cup B) \cup C = A \cup (B \cup C)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>A \cap (B \cup C) = (A \cap B) \cup (A \cap C)</m> \item<m>A \cup (B \cap C) = (A \cup B) \cap (A \cup C)</m>
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+    <li xml:id="ex_DeMorgan">
+      <p>
+        Prove DeMorgan's Laws.
+        That is, let <m>\{A_{\alpha}\}</m> be a collection of sets indexed by a set <m>I</m> in some universal set <m>U</m>.
+        Prove that
+        <ol>
+          <li>
+            <p>
+              <m>\displaystyle \left(\bigcup_{\alpha \in I} A_{\alpha}\right)^c = \bigcap_{\alpha \in I} A_{\alpha}^c</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle \left(\bigcap_{\alpha \in I} A_{\alpha}\right)^c = \bigcup_{\alpha \in I} A_{\alpha}^c</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        What familiar set is <m>\emptyset \times A</m> for any set <m>A</m>?
+        Explain.
+      </p>
+    </li>
+    <li xml:id="ex_power_set">
+      <p>
+        If <m>A</m> is a set, the power set
+    <idx><h>power set</h></idx>
+        of <m>A</m>,
+        denoted <m>2^A</m> is the collection of all subsets of <m>A</m>.
+        <ul>
+          <li>
+            <p>
+              List the elements of <m>\ds 2^{\{1,2\}}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>A</m> is a set with three elements,
+              how many elements are in <m>2^A</m>?
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>A</m> is a set with <m>n</m> elements,
+              make a conjecture about the number of elements in <m>2^A</m>.
+              Prove your conjecture?
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+    <li>
+      <p>
+        If <m>A</m> is a set, the power set of <m>A</m>,
+        denoted <m>2^A</m> is the collection of all subsets of <m>A</m>.
+        (See Exercise <xref ref="ex_power_set"/>.)
+        Critique each of the following statements.
+        Doe the statement make sense or not?
+        If not, explain why and then correct the statement to something that is true
+        (and non-trivial).
+        <ul>
+          <li>
+            <p>
+              If <m>A</m> is a set, then <m>A \in 2^A</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>A</m> is a set, then <m>A \subset 2^A</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>A</m> is a set, then <m>\{A\} \subset 2^A</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>A</m> is a set, then <m>\emptyset \in 2^A</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>A</m> is a set, then <m>\emptyset \subset 2^A</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>A</m> and <m>B</m> are sets and <m>A \subseteq B</m>,
+              then <m>2^A \subseteq 2^B</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+    <li>
+      <p>
+        Let <m>A</m> and <m>B</m> be sets,
+        both of which have at least two distinct members.
+        Prove that there is a subset
+        <m>W \subset A \times B</m> that is not the Cartesian product of a subset of <m>A</m> with a subset of <m>B</m>. [Thus,
+        not every subset of a Cartesian product is the Cartesian product of a pair of subsets.]
+      </p>
+    </li>
+    <li>
+      <p>
+        Let <m>I</m> be the set of real numbers that are greater than <m>0</m>.
+        For each <m>x \in I</m>, let <m>A_x</m> be the open interval <m>(0,x)</m>.
+        Prove that <m>\bigcap_{x \in I} A_x = \emptyset</m>,
+        <m>\bigcup_{x \in I} A_x = I</m>.
+        For each <m>x \in I</m>,
+        let <m>B_x</m> be the closed interval <m>[0,x]</m>.
+        Prove that <m>\bigcap_{x \in I} B_x = \{0\}</m>,
+        <m>\bigcup_{x \in I} B_x = I \cup \{0\}</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        For each of the following, answer true if the statement is always true.
+        If the statement is only sometimes true or never true,
+        answer false and provide a concrete example to illustrate that the statement is false.
+        If a statement is true, explain why.
+        As an example of a true statement,
+        consider the statement Let <m>A</m>, <m>B</m>,
+        and <m>C</m> be sets such that
+        <m>A \cap B = A \cap C</m> and <m>A \cap B \neq \emptyset</m>.
+        Then <m>B \cap C \neq \emptyset</m>.
+        We can justify the truth of this statement with a short argument.
+        Since <m>A \cap B \neq \emptyset</m>,
+        there is an element <m>x \in A \cap B</m>.
+        Then <m>x \in B</m>.
+        Since <m>A \cap B = A \cap C</m>,
+        we also must have <m>x \in A \cap C</m>,
+        which implies that <m>x \in C</m>.
+        Thus, <m>x \in B \cap C</m> and <m>B \cap C \neq \emptyset</m>.
+        As an example of a false statement,
+        consider the statement Let <m>A</m>, <m>B</m>,
+        and <m>C</m> be sets such that <m>A \cap B = A \cap C</m>.
+        Then <m>B = C</m>.
+        We can show that this statement is false by providing a counterexample.
+        For example, let <m>A = \{0,1\}</m>,
+        <m>B=\{1\}</m>, and <m>C = \{1,2\}</m>.
+        Then <m>A \cap B = \{1\} = A \cap C</m>, but <m>B \neq C</m>.
+        <ul>
+          <li>
+            <p>
+              If <m>A</m>, <m>B</m>, and <m>C</m> are sets and
+              <m>A \subseteq B</m> and <m>A \subseteq C</m>,
+              then <m>A \subseteq (B \cap C)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>A</m>, <m>B</m>, and <m>C</m> are sets and
+              <m>A \subseteq C</m> and <m>B \subseteq C</m>,
+              then <m>(A \cup B) \subseteq C</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>A</m> and <m>B</m> are subsets of a set <m>X</m> and <m>A \subseteq B</m>,
+              then <m>(X \setminus A) \subseteq (X \setminus B)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>A</m> and <m>B</m> are subsets of a set <m>X</m> and <m>A \subseteq B</m>,
+              then <m>(X \setminus B) \subseteq (X \setminus A)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>A</m> and <m>B</m> are sets,
+              then <m>(A \cup B) \setminus B = A</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>A</m> and <m>B</m> are sets,
+              then <m>A \setminus (A \setminus B) = B</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>A</m>, <m>B</m>, and <m>C</m> are sets,
+              then <m>A \cap (B \setminus C) = (A \cap B) \setminus (A \cap C)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>A</m> and <m>C</m> are subsets of a set <m>X</m>,
+              then <m>(A \setminus C) = A \cap (X \setminus C)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              There are no elements of the set <m>\{\emptyset\}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              There are two distinct objects that belong to the set <m>\{\emptyset, \{\emptyset\}\}</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+  </ol>
+</section>

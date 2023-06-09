@@ -1,0 +1,232 @@
+<section xml:id="sec_cart_prod">
+  <title>Cartesian Products of Sets</title>
+  <p>
+    The final operation on sets that we discuss is the
+    <em>Cartesian product</em>
+    (or <em>cross product</em>).
+    This is an operation that we have seen before.
+    When we draw the graph of a line <m>y = mx+b</m> in the plane,
+    we plot the points <m>(x,mx+b)</m>.
+    These points are ordered pairs of real numbers.
+    We can extend this idea to any sets.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        Let <m>A</m> and <m>B</m> are sets.
+        The Cartesian product
+            <idx><h>Cartesian product</h></idx>
+        of <m>A</m> and <m>B</m> is the set
+        <me>
+          A \times B = \{(a,b) \mid a \in A \text{ and }  b \in B\}
+        </me>.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    In other words,
+    the Cartesian product of <m>A</m> and <m>B</m> is the set of ordered pairs <m>(a,b)</m> with <m>a</m> coming from <m>A</m> and <m>b</m> coming from <m>B</m>.
+    Note that the order is important.
+  </p>
+  <activity>
+    <p>
+      <nbsp/>
+      <ul>
+        <li>
+          <p>
+            List all of the elements in <m>\{\text{ red } , \text{ blue } \} \times \{\text{ car } , \text{ truck } , \text{ van } \}</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            If <m>A</m> has <m>m</m> elements and <m>B</m> has <m>n</m> elements,
+            how many elements does the set <m>A \times B</m> have?
+            Explain.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </activity>
+  <p>
+    There is no reason to restrict ourselves to a Cartesian product of just two sets.
+    This is an idea that we have encountered before.
+    The Cartesian product <m>\R \times \R</m> is the standard real plane that we denote as <m>\R^2</m> and the Cartesian product
+    <m>\R \times \R \times \R</m> is the three-dimensional real space denoted as <m>\R^3</m>.
+    If we have an indexed collection <m>\{X_{i}\}</m> of sets,
+    with <m>i</m> running through the set of positive integers,
+    then we can define the Cartesian product of the sets <m>X_{i}</m> as the set of infinite sequences <m>(x_1, x_2, \ldots,
+    x_n, \ldots)</m>,
+    where <m>x_i \in X_i</m> for each <m>i \in \Z^+</m>.
+    We denote this cartesian product as
+    <me>
+      \Pi_{i \in \Z^+} X_i = \Pi_{i=1}^{\infty} X_i
+    </me>.
+  </p>
+  <p>
+    The capital pi (<m>\Pi</m>) is used to represent a product an an analog of the capital sigma (<m>\Sigma</m>) that is used to represent a sum.
+    We will study sequences in more detail later.
+  </p>
+  <p>
+    To conclude this section we summarize some properties of sets.
+    Many of these properties can be extended to arbitrary collections of sets.
+    Most of the proofs are straightforward.
+    The associative and distributive laws are left for Exercise <xref ref="ex_set_props"/>.
+  </p>
+  <theorem>
+    <statement>
+      <p>
+        Let <m>A</m>, <m>B</m>,
+        and <m>C</m> be subsets of a universal set <m>U</m>.
+        <ul>
+          <li>
+            <title>Properties of the Empty Set</title>
+            <p>
+              <nbsp/>
+              <ol label="i">
+                <li>
+                  <p>
+                    <m>A \cap \emptyset = \emptyset</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>A \cup \emptyset = A</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>A-\emptyset = A</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>\emptyset^c = U</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+          <li>
+            <title>Properties of the Universal Set</title>
+            <p>
+              <nbsp/>
+              <ol label="i">
+                <li>
+                  <p>
+                    <m>A \cap U = A</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>A \cup U = U</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>A-U = \emptyset</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>U^c = \emptyset</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+          <li>
+            <title>Idempotent Laws</title>
+            <p>
+              <nbsp/>
+              <ol label="i">
+                <li>
+                  <p>
+                    <m>A \cap A = A</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>A \cup A = A</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+          <li>
+            <title>Commutative Laws</title>
+            <p>
+              <nbsp/>
+              <ol label="i">
+                <li>
+                  <p>
+                    <m>A \cap B = B \cap A</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>A \cup B = B \cup A</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+          <li>
+            <title>Associative Laws</title>
+            <p>
+              <nbsp/>
+              <ol label="i">
+                <li>
+                  <p>
+                    <m>(A \cap B) \cap C = A \cap (B \cap C)</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>(A \cup B) \cup C = A \cup (B \cup C)</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+          <li>
+            <title>Distributive Laws</title>
+            <p>
+              <nbsp/>
+              <ol label="i">
+                <li>
+                  <p>
+                    <m>A \cap (B \cup C) = (A \cap B) \cup (A \cap C)</m> \item<m>A \cup (B \cap C) = (A \cup B) \cap (A \cup C)</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+          <li>
+            <title>Basic Properties</title>
+            <p>
+              <nbsp/>
+              <ol label="i">
+                <li>
+                  <p>
+                    <m>\left(A^c\right)^c = A</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>A - B = A \cap B^c</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+          <li>
+            <title>Subsets and Complements</title>
+            <p>
+              <nbsp/> <m>A \subseteq B</m> \text{ if and only if } <m>B^c \subseteq A^c</m>
+            </p>
+          </li>
+        </ul>
+      </p>
+    </statement>
+  </theorem>
+</section>
