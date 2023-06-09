@@ -37,7 +37,7 @@
       <p>
         Let <m>X</m> be the subspace of
         <m>(\R^2, d_E)</m> consisting of the line segments joining the point <m>(0,1)</m> to every point in the set
-        <m>\left\{\left(\frac{1}{n}, 0\right) \mid n \in \Z^+\right\}</m> as illustrated in <xref ref="F_harmonic_broom">Figure</xref>.
+        <m>\left\{\left(\frac{1}{n}, 0\right) \mid n \in \Z^+\right\}</m> as illustrated in <xref ref="F_harmonic_broom"/>.
         This space is called the <term>harmonic broom</term>.
         <figure xml:id="F_harmonic_broom">
           <caption>The harmonic broom.</caption>

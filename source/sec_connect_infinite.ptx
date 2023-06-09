@@ -16,7 +16,7 @@
     </me>.
   </p>
   <p>
-    A picture of <m>S</m> is shown in <xref ref="F_T_sin">Figure</xref>.
+    A picture of <m>S</m> is shown in <xref ref="F_T_sin"/>.
   </p>
   <figure xml:id="F_T_sin">
     <caption>The topologist's sine curve.</caption>
@@ -25,7 +25,7 @@
   <p>
     To understand if <m>S</m> is connected,
     let us consider the relationship between <m>S</m> and <m>S_2</m>.
-    <xref ref="F_T_sin">Figure</xref>
+    <xref ref="F_T_sin"/>
     seems to indicate that <m>S = \overline{S_2}</m>.
     To see if this is true, let <m>q=(0,y) \in S_1</m>,
     and let <m>N</m> be a neighborhood of <m>q</m>.
@@ -101,7 +101,7 @@
       The set <m>O</m> is complicated,
       consisting of infinitely many sub-curves of the curve <m>S_2</m>,
       along with points in <m>S_1</m>,
-      as illustrated in <xref ref="F_TSC_O">Figure</xref>.
+      as illustrated in <xref ref="F_TSC_O"/>.
       To simplify our analysis,
       let us consider the projection onto the <m>x</m>-axis.
       The function <m>P_x : \R^2 \to \R</m> defined by

@@ -47,7 +47,7 @@
             However, if <m>S = \{(x,y) \mid x^2+y^2 = 1\}</m>,
             then <m>D \setminus S</m> consists of two connected components:
             the open ball <m>B((0,0),1)</m> and the annulus
-            <m>\{(x,y) \mid 1 \lt x^2+y^2 \leq 4\}</m> as illustrated in <xref ref="F_Cut_set_disk">Figure</xref>.
+            <m>\{(x,y) \mid 1 \lt x^2+y^2 \leq 4\}</m> as illustrated in <xref ref="F_Cut_set_disk"/>.
             So <m>S</m> is a cut set of <m>D</m>.
             <figure xml:id="F_Cut_set_disk">
               <caption>The disk <m>D</m> and cut set <m>S</m>.</caption>

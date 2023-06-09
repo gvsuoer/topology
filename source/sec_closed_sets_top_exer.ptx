@@ -406,7 +406,7 @@
           </li>
           <li>
             <p>
-              Define the space <m>\R_K</m> as in <xref ref="exp_K_topology">Example</xref>
+              Define the space <m>\R_K</m> as in <xref ref="exp_K_topology"/>
               to be the set of reals with topology <m>\tau</m> with a basis that consists of the standard open intervals in <m>\R</m> along with all sets of the form <m>(a,b) \setminus K</m>,
               where <m>(a,b)</m> is any open interval and <m>K = \left\{\frac{1}{k} \mid k \in \Z^+\right\}</m>.
               Show that <m>\R_K</m> is <m>T_2</m> but not <m>T_3</m>.

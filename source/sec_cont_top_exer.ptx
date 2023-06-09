@@ -74,7 +74,7 @@
               Prove that <m>g \circ f : X \to Z</m> is a continuous function.
               <hint>
                 <p>
-                  Exercise <xref ref="ex_inverse_composite_sets"/> on <xref ref="ex_inverse_composite_sets">page</xref> could be helpful here.
+                  <xref ref="ex_inverse_composite_sets"/> on <xref ref="ex_inverse_composite_sets">page</xref> could be helpful here.
                 </p>
               </hint>
             </p>

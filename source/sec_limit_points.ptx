@@ -53,7 +53,7 @@
             and has applications in digital processing. (This topology is called the
             <term>digital line topology</term>
             and has applications in digital processing.
-            That the collection <m>\{B(n)\}</m> is a basis for a topology on <m>\Z</m> is the topic of Exercise <xref ref="ex_digital_line_topology"/> on <xref ref="ex_digital_line_topology">page</xref>.)
+            That the collection <m>\{B(n)\}</m> is a basis for a topology on <m>\Z</m> is the topic of <xref ref="ex_digital_line_topology"/> on <xref ref="ex_digital_line_topology">page</xref>.)
           </p>
         </li>
       </ul>

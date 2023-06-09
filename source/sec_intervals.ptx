@@ -51,11 +51,11 @@
   <p>
     In this notation, <m>\R = (-\infty, \infty)</m>.
     Intervals of the form <m>(a,b)</m> are called
-    <em>open</em> intervals,
+    <term>open</term> intervals,
     intervals of the form <m>[a,b]</m> are called
-    <em>closed</em> intervals,
-    and intervals of the form <m>[a,b)</m> or <m>(a,b]</m> are <em>half-open</em>
-    (or <em>half-closed</em>)
+    <term>closed</term> intervals,
+    and intervals of the form <m>[a,b)</m> or <m>(a,b]</m> are <term>half-open</term>
+    (or <term>half-closed</term>)
     intervals.
     The reason for this terminology should become more clear as we introduce open and closed sets later.
   </p>

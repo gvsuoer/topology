@@ -89,7 +89,7 @@
               </statement>
             </definition>
             Let <m>A</m> be the circle in <m>\R^2</m> centered at the origin with radius 1, let <m>B</m> be the inscribed square,
-            and let <m>C = \{(1,0), (-1,0)\}</m> as shown in <xref ref="F_Hausdorff_Example">Figure</xref>.
+            and let <m>C = \{(1,0), (-1,0)\}</m> as shown in <xref ref="F_Hausdorff_Example"/>.
             <figure xml:id="F_Hausdorff_Example">
               <caption>Sets <m>A</m>, <m>B</m>, and <m>C</m>.</caption>
               <image width="73%" source="HM_Example"/>
@@ -138,15 +138,15 @@
             or <m>S_{1,i}</m> is a triangle half the size of the original translated to the
             <m>i^{\text{ th } }</m> vertex of the original.
             Let <m>S_1 = \bigcup_{i=1}^3 S_{1,i}</m>.
-            Both <m>S_0</m> and <m>S_1</m> are shown in <xref ref="F_Sierpinski">figure</xref>.
+            Both <m>S_0</m> and <m>S_1</m> are shown in <xref ref="F_Sierpinski"/>.
             We can continue this procedure replacing <m>S_0</m> with <m>S_1</m>.
             In other words,
             for <m>i</m> = 1, 2, and 3, let <m>S_{2,i} = \omega_i(S_1)</m>.
             Then let <m>S_2 = \bigcup_{i=1}^3 S_{2,i}</m>.
-            A picture of <m>S_2</m> is shown in <xref ref="F_Sierpinski">figure</xref>.
+            A picture of <m>S_2</m> is shown in <xref ref="F_Sierpinski"/>.
             We can continue this procedure,
             each time replacing <m>S_{j-1}</m> with <m>S_j</m>.
-            A picture of <m>S_8</m> is shown in <xref ref="F_Sierpinski">figure</xref>.
+            A picture of <m>S_8</m> is shown in <xref ref="F_Sierpinski"/>.
             <table xml:id="F_Sierpinski">
               <caption><m>S_i</m> for <m>i</m> equal to 0, 1, 2, and 8.</caption>
               <tabular>
@@ -213,7 +213,7 @@
                     the metric space <m>(\mathcal{H}(\R^2), h)</m> is complete.
                     Show that the sequence <m>(S_n)</m> is a Cauchy sequence in <m>\mathcal{H}(\R^2)</m>.
                     The limit of this sequence is the famous Sierpinski triangle.
-                    The picture of <m>S_8</m> in <xref ref="F_Sierpinski">figure</xref>
+                    The picture of <m>S_8</m> in <xref ref="F_Sierpinski"/>
                     is a close approximation of the Sierpinski triangle.
                   </p>
                 </li>

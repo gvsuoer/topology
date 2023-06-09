@@ -96,7 +96,7 @@
     we are only concerned about the open sets <mdash/> there are no distances.
     The open unit ball in <m>(\R^2, d_E)</m> and the open ball in <m>(\R^2, d_M)</m>
     (where <m>d_E</m> is the Euclidean metric and <m>d_M</m> is the max metric)
-    are not that different as we can see in <xref ref="F_Equivalence">Figure</xref>.
+    are not that different as we can see in <xref ref="F_Equivalence"/>.
     If we don't worry about preserving distances,
     we can stretch the open ball <m>B_E = B((0,0),1)</m> in
     <m>(\R^2, d_E)</m> along the lines <m>y=x</m> and <m>y=-x</m> uniformly in a way to mold it onto the unit ball

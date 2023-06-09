@@ -271,6 +271,6 @@
       d(x,y) = \begin{cases}0 \amp  \text{ if }  x=y \\ 1 \amp  \text{ if }  x \neq y \end{cases}
     </me>
     makes any set <m>X</m> into a metric space.
-    The proof is left to Exercise <xref ref="ex_MS_discrete"/>.
+    The proof is left to <xref ref="ex_MS_discrete"/>.
   </p>
 </section>

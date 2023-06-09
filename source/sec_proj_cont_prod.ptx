@@ -83,7 +83,7 @@
   </p>
   <p>
     This set is a subbasis for the product topology on <m>X</m>
-    (the verification of this is left to Exercise <xref ref="ex_subbasis"/>).
+    (the verification of this is left to <xref ref="ex_subbasis"/>).
   </p>
   <p>
     We note here that there is another topology,
@@ -143,7 +143,7 @@
     <m>\pi_1\circ f</m> and <m>\pi_2 \circ f</m>.
     To determine if <m>f</m> is a continuous function,
     it would be useful to know if the converse is true.
-    A key idea in the proof is the result of Exercise <xref ref="ex_inverse_composite_sets"/> on <xref ref="ex_inverse_composite_sets">page</xref> that if <m>R</m>,
+    A key idea in the proof is the result of <xref ref="ex_inverse_composite_sets"/> on <xref ref="ex_inverse_composite_sets">page</xref> that if <m>R</m>,
     <m>S</m>,
     and <m>T</m> are sets, and
     <m>g: R \to S</m> and <m>h : S \to T</m> are functions,
@@ -182,7 +182,7 @@
       tells us that it is enough to show that
       <m>f^{-1}(S)</m> is open for each <m>S</m> in <m>\CS</m>.
       Let <m>O_i</m> be an open set in <m>X_i</m>.
-      Exercise <xref ref="ex_inverse_composite_sets"/> on <xref ref="ex_inverse_composite_sets">page</xref> tells us that
+      <xref ref="ex_inverse_composite_sets"/> on <xref ref="ex_inverse_composite_sets">page</xref> tells us that
       <me>
         f^{-1}(\pi_i^{-1}(O_i)) = (\pi_i \circ f)^{-1}(O_i)
       </me>,

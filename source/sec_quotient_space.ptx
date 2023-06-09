@@ -118,7 +118,7 @@
             Be careful, note that <m>\lfloor -0.7 \rfloor = -1</m>.)  Determine the sets in the quotient topology.
             <hint>
               <p>
-                The graph of <m>p</m> on <m>[-2,2]</m> is shown in <xref ref="F_floor">Figure</xref>.
+                The graph of <m>p</m> on <m>[-2,2]</m> is shown in <xref ref="F_floor"/>.
               </p>
             </hint>
             <figure xml:id="F_floor">
@@ -194,12 +194,12 @@
         <m>(x,0) \sim (x,1)</m> if <m>0 \leq x \leq 1</m>.
         It is straightforward to show that <m>\sim</m> is an equivalence relation.
         Let us consider what the identification space <m>X/\ssim</m> looks like.
-        The space <m>I \times I</m> is the unit square as shown in <xref ref="F_Quotient_tube">Figure</xref>.
+        The space <m>I \times I</m> is the unit square as shown in <xref ref="F_Quotient_tube"/>.
         All points in the interior of the square are identified only with themselves.
         However, the top side and bottom side are identified with each other in the same direction.
         Think of <m>X</m> as a piece of paper.
         We roll up the sides of the square to make the top and bottom sides coincide.
-        The result is that <m>X/\ssim</m> is the cylinder as shown in <xref ref="F_Quotient_tube">Figure</xref>.
+        The result is that <m>X/\ssim</m> is the cylinder as shown in <xref ref="F_Quotient_tube"/>.
       </p>
     </statement>
   </example>
@@ -228,7 +228,7 @@
           <p>
             Describe quotient spaces of
             <m>X = I \times I</m> with standard topology given by the following equivalence relations <m>\sim</m>.
-            Depictions of the identifications are shown in <xref ref="F_Quotients_activity">Figure</xref>.
+            Depictions of the identifications are shown in <xref ref="F_Quotients_activity"/>.
             (Here <m>I</m> is the closed interval <m>[0,1]</m>.)
             <ol label="i">
               <li>
@@ -267,7 +267,7 @@
     <m>0 \lt x \lt 1</m> and <m>0 \lt y \lt 1</m>,
     <m>(0, y) \sim (1, y)</m> for <m>0 \lt y \lt 1</m>,
     <m>(x,0) \sim (1-x,1)</m> for <m>0 \lt x \lt 1</m>.
-    This identification is illustrated in <xref ref="F_Klein_bottle">Figure</xref>.
+    This identification is illustrated in <xref ref="F_Klein_bottle"/>.
     The resulting identification space <m>X/\ssim</m> is a Klein bottle.
     A nice illustration of this can be seen at \url{https://plus.maths.org/content/introducing-klein-bottle}.
   </p>

@@ -334,7 +334,7 @@
         <me>
           B(n) = \begin{cases}\{n\}  \amp \text{ if \(n\) is odd } , \\ \{n-1,n,n+1\}  \amp \text{ if \(n\) is even } . \end{cases}
         </me>
-        The sets <m>B(n)</m> are illustrated in <xref ref="F_Digital_line">Figure</xref>.
+        The sets <m>B(n)</m> are illustrated in <xref ref="F_Digital_line"/>.
         <figure xml:id="F_Digital_line">
           <caption>The digital line topology.</caption>
           <image width="73%" source="Digital_line"/>

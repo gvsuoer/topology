@@ -58,7 +58,7 @@
     </p>
   </activity>
   <p>
-    It is left to Exercise <xref ref="ex_R_intervals"/> to show that <m>\R</m> is also homeomorphic to any interval of the form
+    It is left to <xref ref="ex_R_intervals"/> to show that <m>\R</m> is also homeomorphic to any interval of the form
     <m>(a,\infty)</m> or <m>(-\infty,b)</m>.
     Later we will determine if <m>\R</m> is homeomorphic to intervals of the form <m>[a,b)</m>,
     <m>(a,b]</m>, <m>[a, \infty)</m> or <m>(-\infty, b]</m>.

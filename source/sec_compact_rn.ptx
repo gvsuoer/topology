@@ -106,7 +106,7 @@
     The set <m>Q^n_M</m> in <xref ref="def_n_cube">Definition</xref>
     is called the <term>standard</term>
     <m>n</m><term>-dimensional cube of size M</term>.
-    A standard 3-dimensional cube of size <m>M</m> is shown in <xref ref="F_M_cube">Figure</xref>.
+    A standard 3-dimensional cube of size <m>M</m> is shown in <xref ref="F_M_cube"/>.
   </p>
   <figure xml:id="F_M_cube">
     <caption>A standard 3-cube <m>Q^3_M</m>.</caption>
@@ -135,7 +135,7 @@
       <m>\{O_{\alpha}\}</m> with <m>\alpha</m> in some indexing set <m>I</m> of <m>Q^n_M</m> that has no finite sub-cover.
       Let <m>Q_0 = Q^n_M</m> so that <m>Q_0</m> is an <m>n</m>-cube with side length <m>2M</m>.
       Partition <m>Q_0</m> into <m>2^n</m> uniform sub-cubes of side length
-      <m>M = \frac{2M}{2}</m> (a picture for <m>n=2</m> is shown at left in <xref ref="F_Cubes">Figure</xref>).
+      <m>M = \frac{2M}{2}</m> (a picture for <m>n=2</m> is shown at left in <xref ref="F_Cubes"/>).
     </p>
     <figure xml:id="F_Cubes">
       <caption>Left : <m>Q_1</m>. Middle: <m>Q_2</m>. Right: Labeling the corners.</caption>
@@ -153,7 +153,7 @@
       Now we repeat the process and partition <m>Q_1</m> into <m>2^n</m> uniform sub-cubes of side length <m>\frac{M}{2}= \frac{2M}{2^2}</m>.
       The same argument we just made tells us that there is a sub-cube <m>Q_2</m> of <m>Q_1</m> for which the open cover
       <m>\{O_{\alpha} \cap Q_2\}_{\alpha \in I}</m> has no finite sub-cover
-      (an illustration for the <m>n=2</m> case is shown at middle in <xref ref="F_Cubes">Figure</xref>).
+      (an illustration for the <m>n=2</m> case is shown at middle in <xref ref="F_Cubes"/>).
       We proceed inductively to obtain an infinite nested sequence
       <me>
         Q_0 \supset Q_1 \supset Q_2 \supset Q_3 \supset \cdots \supset Q_k \supset \cdots
@@ -170,7 +170,7 @@
       <m>(a_{i,1}, a_{i,2}, \ldots,
       a_{i,n})</m> as a lower corner of the cube and the point
       <m>(b_{i,1}, b_{i,2}, \ldots,
-      b_{i,n})</m> as an upper corner of the <m>n</m>-cube <m>Q_i</m> (a labeling for <m>n=2</m> and <m>i</m> from 1 to 3 is shown at right in <xref ref="F_Cubes">Figure</xref>).
+      b_{i,n})</m> as an upper corner of the <m>n</m>-cube <m>Q_i</m> (a labeling for <m>n=2</m> and <m>i</m> from 1 to 3 is shown at right in <xref ref="F_Cubes"/>).
       Let <m>q = (\sup\{a_{i,1}\}, \sup\{a_{i,2}\}, \ldots, \sup\{a_{i,n}\})</m>.
       We will show that <m>q \in \bigcap_{k=1}^{\infty} Q_k</m>.
       Fix <m>r \in \Z^+</m>.

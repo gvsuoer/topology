@@ -4,7 +4,7 @@
     Computers represent information from the real world digitally.
     That is, a computer screen consists of discrete pixels that are used to mimic the continuous information from the real world.
     So we exist in <m>\R^3</m>,
-    but a computer screen represents information in <m>\Z^2</m> as illustrated in <xref ref="F_Digital_plane">Figure</xref>.
+    but a computer screen represents information in <m>\Z^2</m> as illustrated in <xref ref="F_Digital_plane"/>.
     It is important to be able to accurately mimic the continuous information from digital data.
     One of the key ideas is to have a digital version of the Jordan curve theorem which states that a Jordan curve (a continuous loop that does not intersect itself) in the Euclidean plane separates the remainder of the plane into two connected components
     (the inside and the outside of the curve).
@@ -28,7 +28,7 @@
     The 8-neighbors of <m>(x,y)</m> are the 4-neighbors along with the points diagonally adjacent to <m>(x,y)</m>:
     that is, <m>(x \pm 1, y)</m>,
     <m>(x, y \pm 1)</m>, <m>(x \pm 1, y \pm 1)</m>.
-    These neighbors are illustrated in <xref ref="F_Digital_plane">Figure</xref>,
+    These neighbors are illustrated in <xref ref="F_Digital_plane"/>,
     with the crosses indicating the neighbors of the highlighted point.
   </p>
   <p>
@@ -65,11 +65,11 @@
             we us the idea of <m>k</m>-paths to define connectedness in <m>\Z^2</m>.
             We say that a subset <m>S</m> of <m>\Z^2</m> is
             <m>k-connected</m> if if any two of its points can be joined by a <m>k</m>-path in <m>S</m>.
-            <xref ref="F_Digital_curves">Figure</xref>
+            <xref ref="F_Digital_curves"/>
             show two sets (curves) in the digital plane indicated by the points that connect the line segments (examples taken from A Topological Approach to Digital Topology, T. Yung Kong, R. Kopperman,
             and P. Meyer,
             <term>American Mathematical Monthly</term>, 98 (1991), no. 10, 901-917).
-            Let <m>S_1</m> be the set illustrated at left in <xref ref="F_Digital_curves">Figure</xref>
+            Let <m>S_1</m> be the set illustrated at left in <xref ref="F_Digital_curves"/>
             and <m>S_2</m> the set at right.
             <figure xml:id="F_Digital_curves">
               <caption>Sets <m>S_1</m> (left) and <m>S_2</m> (right) in the digital plane.</caption>

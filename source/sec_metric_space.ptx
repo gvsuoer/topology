@@ -180,17 +180,17 @@
     </statement>
   </example>
   <p>
-    <xref ref="exp_finite_ms">Example</xref>
+    <xref ref="exp_finite_ms"/>
     shows that even finite sets can be metric spaces.
     In fact, we can make a finite metric space by taking any finite subset <m>S</m> of a metric space <m>(X,d)</m> and use as a metric the restriction of <m>d</m> to <m>S</m>.
-    <xref ref="exp_finite_ms">Example</xref>
+    <xref ref="exp_finite_ms"/>
     illustrates this by letting <m>a = (0,0)</m>,
     <m>b = (3,0)</m>, and <m>c = (3,4)</m> in <m>\R^2</m>.
     Then <m>d</m> is the restriction of the Euclidean metric to the set <m>X</m>.
     Another way to construct a finite metric space is to start with a finite set of points and make a graph with the points as vertices.
     Construct edges so that the graph is connected
     (that is, there is a path from any one vertex to any other)
-    and give weights to the edges as illustrated in <xref ref="F_Graph_metric">Figure</xref>.
+    and give weights to the edges as illustrated in <xref ref="F_Graph_metric"/>.
     We then define a metric <m>d</m> on <m>S</m> by letting <m>d(x,y)</m> be the length of a shortest path between vertices <m>x</m> and <m>y</m> in the graph.
     For example,
     <m>d(b,c) = d(b,e) + d(e,c) = 9</m> in this example.

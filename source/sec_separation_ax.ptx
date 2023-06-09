@@ -252,10 +252,10 @@
     It is the case that every <m>T_4</m>-space is <m>T_3</m>,
     every <m>T_3</m>-space is <m>T_2</m>,
     and every <m>T_2</m>-space is <m>T_1</m>.
-    Verification of these statements are left to Exercise <xref ref="ex_T_1_2_3"/>.
+    Verification of these statements are left to <xref ref="ex_T_1_2_3"/>.
     These properties are also all different.
     That is, there are <m>T_1</m>-spaces that are not <m>T_2</m> and <m>T_2</m>-spaces that are not <m>T_3</m>.
-    These problems are given in Exercise <xref ref="ex_not_T_1_2_3"/>.
+    These problems are given in <xref ref="ex_not_T_1_2_3"/>.
     The fact that there are <m>T_3</m>-spaces that are not <m>T_4</m> is a bit difficult.
     An example is the <term>Niemytzki plane</term>.
     The Niemytzki plane is the upper half plane <m>X = \{(x,y) \in \R^2 \mid y \geq 0\}</m>.
