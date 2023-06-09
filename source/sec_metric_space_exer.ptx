@@ -103,7 +103,7 @@
     </li>
     <li>
       <p>
-        Let <m>(\Q,d)</m> be the metric space from Exercise <xref ref="ex_MS_Q_metric"/>.
+        Let <m>(\Q,d)</m> be the metric space from <xref ref="ex_MS_Q_metric"/>.
         If <m>a</m>, <m>b</m>,
         and <m>c</m> are elements of a metric space <m>(X, d_X)</m>,
         we say that <m>b</m> is <term>between</term>
@@ -341,7 +341,7 @@
         Note that the expression <m>(1-\alpha)x + \alpha y</m> is linear in <m>\alpha</m> and is equal to <m>x</m> when
         <m>\alpha = 0</m> and <m>y</m> when <m>\alpha = 1</m>.
         So <m>(1-\alpha)x + \alpha y</m> is a parameterization of the line segment joining <m>x</m> to <m>y</m>.
-        As <xref ref="F_concave">Figure</xref> indicates,
+        As <xref ref="F_concave"/> indicates,
         <xref ref="eq_concave"/> implies that the graph of a concave function <m>f</m> on any interval <m>[x,y]</m> lies above the secant line joining the points <m>(x,f(x))</m> and <m>(y,f(y))</m>.
         <figure xml:id="F_concave">
           <caption>A concave function.</caption>

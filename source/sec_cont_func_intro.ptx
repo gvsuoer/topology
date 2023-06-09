@@ -77,7 +77,7 @@
     </me>.
   </p>
   <p>
-    We can picture this as shown at left in <xref ref="F_Continuity">Figure</xref>.
+    We can picture this as shown at left in <xref ref="F_Continuity"/>.
     Here we want to make the values of <m>f(x)</m> lie within an
     <m>\epsilon</m> band of <m>f(a)</m> above and below <m>f(a)</m>.
     That is, we want to be able to make the values of <m>f(x)</m> lie between
@@ -94,7 +94,7 @@
     In order for <m>f</m> to be continuous at <m>x=a</m>,
     we must be able to find <m>x</m> values close enough to <m>a</m> to force <m>| f(x) - f(a) | \lt \epsilon</m>.
     Pictorially,
-    we can see how this might happen in the image at right in <xref ref="F_Continuity">Figure</xref>.
+    we can see how this might happen in the image at right in <xref ref="F_Continuity"/>.
     We need to be able to find an interval around <m>x=a</m> so that the graph of <m>f(x)</m> lies in the
     <m>\epsilon</m> band around <m>f(a)</m> for values of <m>x</m> in that interval.
     In other words,

@@ -162,7 +162,7 @@
     <li xml:id="ex_GLB_Archimedean_2">
       <p>
         In this exercise we prove two statements that are equivalent to the Archimedean property
-        (see Exercise <xref ref="ex_GLB_Archimedean"/>).
+        (see <xref ref="ex_GLB_Archimedean"/>).
         One of the statements is the following theorem:
         <theorem xml:id="thm_Archimedean_2">
           <statement>

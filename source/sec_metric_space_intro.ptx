@@ -22,7 +22,7 @@
     <m>(y_1,y_2)</m> is the length of the segment connecting the points,
     while the unit circle
     (the set of points a distance 1 from the origin)
-    looks like what we think of as a circle as illustrated in <xref ref="F_Euclidean_metric">Figure</xref>.
+    looks like what we think of as a circle as illustrated in <xref ref="F_Euclidean_metric"/>.
   </p>
   <p>
     As we will see,
@@ -155,7 +155,7 @@
     </proof>
     <p>
       Task: A picture to illustrate the taxicab distance <m>d_T</m> between (points <m>x_1,x_2)</m> and
-      <m>(y_1,y_2)</m> is shown in <xref ref="F_PA_metric">Figure</xref>.
+      <m>(y_1,y_2)</m> is shown in <xref ref="F_PA_metric"/>.
       Draw a picture of the unit circle
       (the set of points a distance 1 from the origin)
       using the Taxicab metric.

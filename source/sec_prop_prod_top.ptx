@@ -138,7 +138,7 @@
     </statement>
   </corollary>
   <p>
-    The proof is left to Exercise <xref ref="ex_connected_product"/>.
+    The proof is left to <xref ref="ex_connected_product"/>.
   </p>
   <p>
     We conclude this section by demonstrating that a product of compact topological spaces is compact.

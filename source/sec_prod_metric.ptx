@@ -131,6 +131,6 @@
         <idx><h>factor space</h></idx>
     spaces of <m>(X,d)</m>.
     The proof that <m>d</m> is a metric is essentially the same as in the <m>n=2</m> case,
-    and is left to Exercise <xref ref="ex_prod_metric"/>.
+    and is left to <xref ref="ex_prod_metric"/>.
   </p>
 </section>

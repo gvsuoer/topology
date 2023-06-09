@@ -171,7 +171,7 @@
     we use open sets in <m>X</m> to make open covers of <m>A</m>.
     We can also consider <m>A</m> as a subspace of <m>X</m> using the subspace topology <m>\tau_A</m>.
     From this perspective we can examine the compactness of <m>A</m> using relatively open sets for open covers.
-    Exercise <xref ref="ex_subspace_compact"/> tells us that these two perspectives are equivalent,
+    <xref ref="ex_subspace_compact"/> tells us that these two perspectives are equivalent,
     so we will use whatever perspective is appropriate for a given situation.
   </p>
 </section>

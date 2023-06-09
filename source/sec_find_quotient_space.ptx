@@ -142,7 +142,7 @@
   <example>
     <statement>
       <p>
-        We return to the situation from <xref ref="exp_R_Z_quotient">Example</xref>
+        We return to the situation from <xref ref="exp_R_Z_quotient"/>
         with <m>X = \R</m> under the standard topology and equivalence relation <m>\sim</m> defined by
         <m>x \sim y</m> if <m>x - y \in \Z</m>.
         We will use <xref ref="thm_quotient_2">Theorem</xref>
@@ -167,7 +167,7 @@
             choosing <m>t = \frac{\theta}{2 \pi}</m> makes
             <m>f(t) = (\cos(\theta), \sin(\theta))</m> and <m>f</m> is a surjection.
             Now we need to demonstrate that <m>f</m> is continuous.
-            A collection of basic open sets in <m>S^1</m> can be found by intersecting <m>S^1</m> with open balls in <m>\R^2</m> as illustrated in <xref ref="F_S_1_basis">Figure</xref>.
+            A collection of basic open sets in <m>S^1</m> can be found by intersecting <m>S^1</m> with open balls in <m>\R^2</m> as illustrated in <xref ref="F_S_1_basis"/>.
             We can see that the basic open sets are arcs of the form
             <m>\wideparen{ab}</m> for <m>a</m> and <m>b</m> in <m>S^1</m>.
             Suppose <m>a = (\cos(2 \pi A), \sin(2 \pi A))</m> and

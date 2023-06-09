@@ -81,7 +81,7 @@
         </me>.
       </p>
       <p>
-        The proof that <m>d_X</m> is a metric is left for <xref ref="ex_min_1_metric">Exercise</xref>.
+        The proof that <m>d_X</m> is a metric is left for Exercise <xref ref="ex_min_1_metric">Exercise</xref>.
         Consider <m>f : X \to Y</m> defined by <m>f(x) = x^2</m>,
         where <m>(Y,d_Y) = (\R, d_E)</m>.
         To show that <m>f</m> is continuous,
@@ -194,7 +194,7 @@
         </li>
         <li>
           <p>
-            Why doesn't the argument in part (b) contradict <xref ref="exp_not_continuous">Example</xref>?
+            Why doesn't the argument in part (b) contradict <xref ref="exp_not_continuous"/>?
           </p>
         </li>
       </ul>

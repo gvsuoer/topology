@@ -60,7 +60,7 @@
         <m>L</m> is a limit of the sequence <m>(a_n)</m> if,
         given any <m>\epsilon > 0</m>,
         we can go far enough out in the sequence so that the numbers in the sequence all lie in the horizontal band between <m>y = L -\epsilon</m> and
-        <m>L+ \epsilon</m> as illustrated in <xref ref="F_sequence_limit">Figure</xref>
+        <m>L+ \epsilon</m> as illustrated in <xref ref="F_sequence_limit"/>
         for the sequence <m>\left(\frac{n}{1+n}\right)</m>.
       </p>
       <figure xml:id="F_sequence_limit">

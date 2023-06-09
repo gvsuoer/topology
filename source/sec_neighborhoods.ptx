@@ -69,7 +69,7 @@
         </li>
         <li>
           <p>
-            Use <xref ref="F_Open_ball_neighborhood">Figure</xref>
+            Use <xref ref="F_Open_ball_neighborhood"/>
             to help show that <m>B(a, \delta)</m> is a neighborhood of <m>b</m>.
             <figure xml:id="F_Open_ball_neighborhood">
               <caption><m>B(a, \delta)</m> as a neighborhood of <m>b</m>.</caption>

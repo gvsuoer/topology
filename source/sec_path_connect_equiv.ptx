@@ -5,7 +5,7 @@
     which partitions the space into a disjoint union of connected components.
     We might expect to be able to do something similar with path connectedness.
     The main difficulty will be transitivity.
-    As illustrated in <xref ref="F_path_transitive">Figure</xref>,
+    As illustrated in <xref ref="F_path_transitive"/>,
     if we have a path <m>p</m> from <m>a</m> to <m>b</m> and a path <m>q</m> from <m>b</m> to <m>c</m>,
     it appears that we can just follow the path <m>p</m> from <m>a</m> to <m>b</m>,
     then path <m>q</m> from <m>b</m> to <m>c</m> to have a path from <m>a</m> to <m>c</m>.
@@ -41,7 +41,7 @@
       Let <m>A</m> and <m>B</m> be closed subsets of a space <m>X = A \cup B</m>,
       and let <m>f:A \to Y</m> and
       <m>g: B \to Y</m> be continuous functions into a space <m>Y</m> such that <m>f(x)=g(x)</m> for all
-      <m>x \in (A \cap B)</m> as illustrated in <xref ref="F_Gluing_Lemma">Figure</xref>.
+      <m>x \in (A \cap B)</m> as illustrated in <xref ref="F_Gluing_Lemma"/>.
       Define <m>h: X \to Y</m> by
       <me>
         h(x) = \begin{cases}f(x) \amp \text{ if }  x \in A \\ g(x) \amp \text{ if }  x \in B. \end{cases}

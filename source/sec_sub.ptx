@@ -18,7 +18,7 @@
       It is reasonable to use the open sets in <m>X</m> to define open sets in <m>A</m>.
       More specifically,
       we might consider a subset <m>O_A</m> of <m>A</m> to be open in <m>A</m> if <m>O_A</m> is the intersection of <m>A</m> with some open set in <m>X</m>,
-      as illustrated in <xref ref="F_Subspace_open">Figure</xref>.
+      as illustrated in <xref ref="F_Subspace_open"/>.
       With this in mind we define <m>\tau_A</m> as
       <me>
         \tau_A = \{O \cap A \mid O \in \tau\}

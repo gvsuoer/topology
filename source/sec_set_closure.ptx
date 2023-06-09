@@ -127,7 +127,7 @@
   </theorem>
   <p>
     The proof of <xref ref="thm_Closed_boundary">Theorem</xref>
-    is left to Exercise <xref ref="ex_closed_bounded"/>.
+    is left to <xref ref="ex_closed_bounded"/>.
   </p>
   <p>
     Recall that a boundary point of a subset <m>A</m> of a metric space <m>X</m> is a point <m>x \in X</m> such that every neighborhood of <m>x</m> contains a point in <m>A</m> and a point in <m>X \setminus A</m>.

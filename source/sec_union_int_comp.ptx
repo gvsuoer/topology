@@ -7,7 +7,8 @@
     To study topology we will need a solid understanding of sets and different operations on sets.
   </p>
   <p>
-    What we saw in Preview <xref ref="pa_sets"/>
+    <idx><h>set</h></idx>
+    What we saw in <xref ref="pa_sets"/>
     is what is called a <term>paradox</term>.
     Our original attempt to define a set led to an impossible situation since both <m>S \in S</m> and
     <m>S \notin S</m> lead to contradictions.
@@ -19,7 +20,6 @@
     but formally defining a set can be problematic.
     As a result,
     we won't state a formal definition, but rather take a set
-        <idx><h>set</h></idx>
     to be a collection of objects that doesn't lead to a paradox.
     The objects are called the elements of the set.
     (In axiomatic set theory,
@@ -30,10 +30,9 @@
     we need to have an understanding what it means for two sets to be equal.
   </p>
   <activity xml:id="act_set_equality">
-    <p>
-      <nbsp/>
-      <ul>
-        <li>
+    
+      <task>
+        <statement>
           <p>
             What should it mean for two sets to be equal?
             If <m>A</m> and <m>B</m> are sets,
@@ -41,34 +40,41 @@
             which is different than a question that only asks for a computation or an example.
             Activities throughout this text will ask both types of questions.)
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Let <m>A = \{x \in \R \mid x \lt 2\}</m> and <m>B = \{x \in \R \mid x-1 \lt 1\}</m>.
             Is <m>A=B</m>?
             If yes, prove your answer.
             If no, prove any containment that you can.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Let <m>A = \{n \in \Z \mid 2 \text{ divides } n\}</m> and <m>B = \{n \in \Z \mid 4 \text{ divides } (n-2)\}</m>.
             Is <m>A=B</m>?
             If yes, prove your answer.
             If no, prove any containment that you can.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Let <m>A = \{n \in \Z \mid n \text{ is odd } \}</m> and <m>B = \{n \in \Z \mid 4 \text{ divides } (n-1) \text{ or } 4 \text{ divides } (n-3)\}</m>.
             Is <m>A=B</m>?
             If yes, prove your answer.
             If no, prove any containment that you can.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     Once we have the notion of a set,
     we can build new sets from existing ones.
@@ -76,9 +82,9 @@
     set difference, and complement of a set as follows.
     <ul>
       <li>
+        <idx><h>set</h><h>union</h></idx>
         <p>
           The <term>union</term>
-            <idx><h>set</h><h>union</h></idx>
           of sets <m>A</m> and <m>B</m> is the set <m>A \cup B</m> defined as
           <me>
             A \cup B = \{x \mid x \in A \text{ or }  x \in B\}
@@ -134,17 +140,17 @@
     with subsets <m>A</m> and <m>B</m> as smaller containers
     (say circles),
     and shade the elements in a given set.
-    The Venn diagrams in <xref ref="F_Venn">Figure</xref>
+    The Venn diagrams in <xref ref="F_Venn"/>
     depict the sets <m>A</m>, <m>B</m>,
     <m>A \cup B</m>, <m>A \cap B</m>,
     <m>A^c</m>, and <m>B^c</m>.
   </p>
   <figure xml:id="F_Venn">
-    <caption>Vennn diagrams</caption>
+    <caption>Venn diagrams</caption>
     <sidebyside>
-      <image>
+      <image xml:id="venn-a">
 <latex-image>
-<![CDATA[\begin{tikzpicture}\figuredef\universal{(-4,-2.75) -- (4,-2.75) -- (4,2.75) -- (-4,2.75) -- cycle}
+\begin{tikzpicture}\figuredef\universal{(-4,-2.75) -- (4,-2.75) -- (4,2.75) -- (-4,2.75) -- cycle}
 \figuredef\firstcircle{(-1.25,0) circle (2cm)}
 \figuredef\secondcircle{(1.25,0) circle (2cm)}
 \draw[fill=gray!30] \firstcircle;
@@ -152,13 +158,13 @@
 \draw[thick] \secondcircle;
 \draw[thick] \universal;
 \node at (-3.4,1.5) {\(A\)};
-\node at (3.4,1.5) {\(B\)};\end{tikzpicture}]]>
+\node at (3.4,1.5) {\(B\)};\end{tikzpicture}
 </latex-image>
       </image>
       <m>A</m>
       <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\figuredef\universal{(-4,-2.75) -- (4,-2.75) -- (4,2.75) -- (-4,2.75) -- cycle}
+\begin{tikzpicture}\figuredef\universal{(-4,-2.75) -- (4,-2.75) -- (4,2.75) -- (-4,2.75) -- cycle}
 \figuredef\firstcircle{(-1.25,0) circle (2cm)}
 \figuredef\secondcircle{(1.25,0) circle (2cm)}
 \draw[fill=gray!30] \secondcircle;
@@ -166,13 +172,13 @@
 \draw[thick] \secondcircle;
 \draw[thick] \universal;
 \node at (-3.4,1.5) {\(A\)};
-\node at (3.4,1.5) {\(B\)};\end{tikzpicture}]]>
+\node at (3.4,1.5) {\(B\)};\end{tikzpicture}
 </latex-image>
       </image>
       <m>B</m>
       <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\figuredef\universal{(-4,-2.75) -- (4,-2.75) -- (4,2.75) -- (-4,2.75) -- cycle}
+\begin{tikzpicture}\figuredef\universal{(-4,-2.75) -- (4,-2.75) -- (4,2.75) -- (-4,2.75) -- cycle}
 \figuredef\firstcircle{(-1.25,0) circle (2cm)}
 \figuredef\secondcircle{(1.25,0) circle (2cm)}
 \draw[fill=gray!30] \firstcircle;
@@ -181,13 +187,13 @@
 \draw[thick] \secondcircle;
 \draw[thick] \universal;
 \node at (-3.4,1.5) {\(A\)};
-\node at (3.4,1.5) {\(B\)};\end{tikzpicture}]]>
+\node at (3.4,1.5) {\(B\)};\end{tikzpicture}
 </latex-image>
       </image>
       <m>A \cup B</m>
       <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\figuredef\universal{(-4,-2.75) -- (4,-2.75) -- (4,2.75) -- (-4,2.75) -- cycle}
+\begin{tikzpicture}\figuredef\universal{(-4,-2.75) -- (4,-2.75) -- (4,2.75) -- (-4,2.75) -- cycle}
 \figuredef\firstcircle{(-1.25,0) circle (2cm)}
 \figuredef\secondcircle{(1.25,0) circle (2cm)}
 \draw[thick] \firstcircle;
@@ -199,13 +205,13 @@
 \draw[clip] \secondcircle;
 \fill[gray!30] (0,0) circle (2cm);
 \draw[thick] \firstcircle;
-\draw[thick] \secondcircle;\end{tikzpicture}]]>
+\draw[thick] \secondcircle;\end{tikzpicture}
 </latex-image>
       </image>
       <m>A \cap B</m>
       <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\figuredef\universal{(-4,-2.75) -- (4,-2.75) -- (4,2.75) -- (-4,2.75) -- cycle}
+\begin{tikzpicture}\figuredef\universal{(-4,-2.75) -- (4,-2.75) -- (4,2.75) -- (-4,2.75) -- cycle}
 \figuredef\firstcircle{(-1.25,0) circle (2cm)}
 \figuredef\secondcircle{(1.25,0) circle (2cm)}
 \draw[fill=gray!30] \universal;
@@ -214,13 +220,13 @@
 \draw[thick] \secondcircle;
 \draw[thick] \universal;
 \node at (-3.4,1.5) {\(A\)};
-\node at (3.4,1.5) {\(B\)};\end{tikzpicture}]]>
+\node at (3.4,1.5) {\(B\)};\end{tikzpicture}
 </latex-image>
       </image>
       <m>A^c</m>
       <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\figuredef\universal{(-4,-2.75) -- (4,-2.75) -- (4,2.75) -- (-4,2.75) -- cycle}
+\begin{tikzpicture}\figuredef\universal{(-4,-2.75) -- (4,-2.75) -- (4,2.75) -- (-4,2.75) -- cycle}
 \figuredef\firstcircle{(-1.25,0) circle (2cm)}
 \figuredef\secondcircle{(1.25,0) circle (2cm)}
 \draw[fill=gray!30] \universal;
@@ -229,12 +235,14 @@
 \draw[thick] \secondcircle;
 \draw[thick] \universal;
 \node at (-3.4,1.5) {\(A\)};
-\node at (3.4,1.5) {\(B\)};\end{tikzpicture}]]>
+\node at (3.4,1.5) {\(B\)};\end{tikzpicture}
 </latex-image>
       </image>
       <m>B^c</m>
     </sidebyside>
   </figure>
+
+
   <p>
     As we have discussed,
     to prove that two sets <m>X</m> and <m>Y</m> are equal we prove that each is a subset of the other.
@@ -284,66 +292,81 @@
       </p>
     </statement>
   </example>
+
   <p>
     We will use the ideas in <xref ref="act_set_equality"/>
-    and <xref ref="ex_set_eq">Example</xref>
+    and <xref ref="ex_set_eq"/>
     to prove set equalities throughout this text.
     The next activity will provide some additional practice.
   </p>
+  
   <activity xml:id="act_sets_1">
+    <introduction>
     <p>
       In this activity we work with unions,
       intersections, and complements of sets.
       Let <m>A</m> and <m>B</m> be sets.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <introduction>
           <p>
             Let <m>A = \{1,2,3,4,5,6\}</m> and <m>B = \{2,4,6,8,10\}</m>,
             with <m>U = \{1,2,3,4,5,6,7,8,9,10\}</m>.
-            <ol label="i">
-              <li>
+          </p>
+        </introduction>
+            <task>
+              <statement>
                 <p>
                   Determine the elements in <m>A \cup B</m> and <m>A \cap B</m>.
                   What are the elements in <m>(A \cup B)^c</m> and <m>(A \cap B)^c</m>?
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   Determine the elements in <m>A^{c} \cup B^{c}</m> and <m>A^{c} \cap B^{c}</m>.
                 </p>
-              </li>
-            </ol>
-          </p>
-        </li>
-        <li>
+              </statement>
+            </task>
+          
+        </task>
+        <task>
+        <introduction>
           <p>
             Let <m>A</m> and <m>B</m> be arbitrary subsets of a universal set <m>U</m>.
             There are connections between <m>A</m>,
             <m>B</m> and their complements,
             unions, and intersections.
-            <ol label="i">
-              <li>
+          </p>
+        </introduction>
+            <task>
+              <statement>
                 <p>
                   Use Venn diagrams to draw <m>(A \cup B)^c</m> and <m>(A \cap B)^c</m>.
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   Use the Venn diagrams and the result of (a) to find and prove a relationship between <m>A^c</m>,
                   <m>B^c</m> and <m>(A \cup B)^c</m>.
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   Use the Venn diagrams and the result of (a) to find and prove a relationship between <m>A^c</m>,
                   <m>B^c</m> and <m>(A \cap B)^c</m>.
                 </p>
-              </li>
-            </ol>
-          </p>
-        </li>
-      </ul>
-    </p>
+              </statement>
+            </task>
+         
+        </task>
+    
   </activity>
   <p>
     In <xref ref="act_sets_1"/>
@@ -352,6 +375,8 @@
     as the next activity illustrates.
   </p>
   <activity>
+  <idx><h>indexed family of sets</h></idx>
+    <introduction>
     <p>
       To define an infinite collection of sets we often use what is called an <term>indexing set</term>.
       An indexing set allows us to consider a collection of objects that are in one-to-one correspondence with a set like the positive integers,
@@ -360,29 +385,35 @@
       we generally make a statement such as ``let <m>\{A_{\alpha}\}</m> for
       <m>\alpha \in I</m> be a collection of sets indexed by some set <m>I</m>". The collection <m>\{A_{\alpha}\}_{\alpha \in I}</m> is called an
       <term>indexed family of sets</term>.
-          <idx><h>indexed family of sets</h></idx>
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <introduction>
           <p>
             The set <m>I</m> could be finite.
             As an example,
             let <m>A_{n} = \{1, 2, 3, \ldots n\}</m> for <m>n</m> in the set <m>I = \{1,2,3, \ldots, 10\}</m>.
-            <ol label="i">
-              <li>
+          </p>
+        </introduction>
+            <task>
+              <statement>
                 <p>
                   What is <m>A_5</m>?
                   What is <m>A_{8}</m>?
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   How many sets are in the indexed family <m>\{A_n\}_{n \in I}</m>?
                 </p>
-              </li>
-            </ol>
-          </p>
-        </li>
-        <li>
+              </statement>
+            </task>
+        
+        </task>
+        <task>
+        <statement>
           <p>
             The indexing set can be infinite.
             For example,
@@ -391,53 +422,60 @@
             What is <m>A_{\pi}</m>?
             What is <m>A_{-\frac{2}{3}}</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+        </task>
+        <task>
+          <introduction>
           <p>
             We have defined the union and intersection of two sets.
             The same idea can be extended to define the union and intersection of an indexed collection of sets.
-            <ol label="i">
-              <li>
+          </p>
+          </introduction>
+            <task>
+             <idx><h>set</h><h>arbitrary intersection</h></idx>
+              <statement>
                 <p>
                   Recall that if <m>A</m> and <m>B</m> are sets,
                   the intersection <m>A \cap B</m> is the set <m>\{x \mid x \in A \text{ and }  x \in B\}</m>.
                   How can we extend this definition from two sets to any collection of sets?
-                  In other words, how do we <term>define</term>
-              <idx><h>set</h><h>arbitrary intersection</h></idx>
+                  In other words, how do we <em>define</em>
                   <me>
                     \bigcap_{\alpha \in I} A_{\alpha}?
                   </me>
                   In the example in (b),
                   what set is <m>\ds \bigcap_{\alpha \in \R} A_{\alpha}</m>?
                 </p>
-              </li>
-              <li>
+              </statement>
+        </task>
+        <task>
+        <idx><h>set</h><h>arbitrary union</h></idx>
+              <statement>
                 <p>
                   Recall that if <m>A</m> and <m>B</m> are sets,
                   the union <m>A \cup B</m> is the set <m>\{x \mid x \in A \text{ or }  x \in B\}</m>.
                   How can we extend this definition from two sets to any collection of sets?
-                  In other words, how do we <term>define</term>
-              <idx><h>set</h><h>arbitrary union</h></idx>
+                  In other words, how do we <em>define</em>
                   <me>
                     \bigcup_{\alpha \in I} A_{\alpha}?
                   </me>
                   In the example in (b),
                   what set is <m>\ds \bigcup_{\alpha \in \R} A_{\alpha}</m>?
                 </p>
-              </li>
-            </ol>
-          </p>
-        </li>
-      </ul>
-    </p>
+              </statement>
+            </task>
+          
+        </task>
+  
   </activity>
+
   <p>
     These properties <m>(A \cap B)^c = A^c \cup B^c</m> and
     <m>(A \cup B)^c = A^c \cap B^c</m> that we learned about in <xref ref="act_sets_1"/> are called DeMorgan's Laws.
     These laws apply to any union or intersection of sets,
     finite or infinite.
-    The proofs are left Exercise <xref ref="ex_DeMorgan"/>.
+    The proofs are left for Exercise <xref ref="ex_DeMorgan"/>.
   </p>
+
   <theorem>
     <title>DeMorgan's Laws</title>
     <statement>
@@ -459,27 +497,31 @@
       </p>
     </statement>
   </theorem>
+
+
   <activity>
-    <p>
-      <nbsp/>
-      <ul>
-        <li>
+
+      <task>
+        <statement>
           <p>
             Verify DeMorgan's Laws in the specific case of <m>A_{\alpha} = \{1, 2, 3, \ldots \alpha\}</m> in <m>U = \Z</m>,
             where <m>\alpha</m> is any element of the indexing set <m>I = \Z^+</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Why should the complement of a union be an intersection and why should the complement of an intersection be a union?
-            <hint>
+            
+          </p>
+        </statement>
+        <hint>
               <p>
                 Consider the definitions of unions and intersections.
               </p>
             </hint>
-          </p>
-        </li>
-      </ul>
-    </p>
+      </task>
+  
   </activity>
 </section>

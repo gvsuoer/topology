@@ -118,7 +118,7 @@
       <p>
         Let <m>X = \R</m> with the Euclidean metric <m>d_E</m>,
         and let <m>Y = \R</m> with the metric <m>d</m> defined by <m>d(x,y) = \frac{|x-y|}{|x-y|+1}</m>
-        (that <m>d</m> is a metric is the subject of Exercise <xref ref="ex_1_over_1_plus_t_metric"/> <xref ref="ex_1_over_1_plus_t_metric">on</xref>).
+        (that <m>d</m> is a metric is the subject of <xref ref="ex_1_over_1_plus_t_metric"/> <xref ref="ex_1_over_1_plus_t_metric">on</xref>).
         Let <m>a</m> and <m>b</m> be real numbers and let
         <m>f:\R \to \R</m> be defined by <m>f(x) = ax+b</m>.
         That is, <m>f</m> is an arbitrary linear function from <m>\R</m> to <m>\R</m>.
