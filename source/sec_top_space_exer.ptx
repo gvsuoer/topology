@@ -308,7 +308,7 @@
         <m>X</m>,
         and all of the subsets of <m>X</m> that contain <m>p</m>.
         Show that <m>\tau_p</m> is a topology on <m>X</m>. (This topology is called the
-        <em>particular point topology</em>).
+        <term>particular point topology</term>).
     <idx><h>topology</h><h>particular point</h></idx>
 </p>
     </li>
@@ -319,7 +319,7 @@
         <m>X</m>,
         and all of the subsets of <m>X</m> that do not contain <m>p</m>.
         Show that <m>\tau_{\overline{p}}</m> is a topology on <m>X</m>. (This topology is called the
-        <em>excluded point topology</em>.
+        <term>excluded point topology</term>.
     <idx><h>topology</h><h>excluded point</h></idx>
 )
       </p>
@@ -344,17 +344,17 @@
           <li>
             <p>
               Show that the collection <m>\B = \{B(n)\}</m> is a basis for a topology on <m>\Z</m>. (The resulting topology is called the
-              <em>digital line topology</em>
+              <term>digital line topology</term>
     <idx><h>digital line topology</h></idx>
               <m>\tau_{dl}</m>.<fn>
               This digital line topology has applications in digital processing <mdash/> see
-              <em>Introduction to Topology: Pure and Applied</em>
+              <term>Introduction to Topology: Pure and Applied</term>
               by Colin Adams and Robert Franzosa , Pearson Education, Inc., 2008,  Sections 1.4 and 11.3.
-              The set <m>\Z</m> with the digital line topology is called the <em>digital line</em>.
+              The set <m>\Z</m> with the digital line topology is called the <term>digital line</term>.
               </fn> (The digital line models a one-dimensional array of pixels,
               where the even integers are the pixels and the odd integers are boundaries between the pixels.
-              Information about the <em>digital plane</em>
-              can be found in <xref ref="sec_Product_topology">Section</xref>.)
+              Information about the <term>digital plane</term>
+              can be found in <xref ref="sec_Product_topology"/>.)
             </p>
           </li>
           <li>
@@ -435,7 +435,7 @@
             <p>
               Let <m>\mathcal{B}</m> be the set of complements of the sets <m>Z(f)</m> for <m>f \in \mathcal{P}_n</m>.
               Show that <m>\mathcal{B}</m> is a basis for a topology on <m>\R^n</m>.
-              The resulting topology is called the <em>Zariski</em>
+              The resulting topology is called the <term>Zariski</term>
     <idx><h>Zariski topology</h></idx>
     <idx><h>topology</h><h>Zariski</h></idx>
               topology.

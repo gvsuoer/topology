@@ -6,7 +6,7 @@
     boundary) could be phrased in terms of the open sets in the space.
     With that in mind,
     we can broaden our concept of space by eliminating the metric and just defining the opens sets in the space.
-    This produces what are called <em>topological spaces</em>.
+    This produces what are called <term>topological spaces</term>.
   </p>
   <p>
     Recall that the open sets in a metric space satisfied certain properties,
@@ -43,13 +43,13 @@
     </statement>
   </definition>
   <p>
-    A <em>topological space</em>
+    A <term>topological space</term>
         <idx><h>topological space</h></idx>
     is then any set on which a topology is defined.
     If <m>X</m> is the space and <m>\tau</m> a topology on <m>X</m>,
     we denote the topological space as <m>(X, \tau)</m>.
     The elements of <m>\tau</m> are called the
-    <em>open sets</em><idx><h>open sets in a topological space</h></idx> in the topological space.
+    <term>open sets</term><idx><h>open sets in a topological space</h></idx> in the topological space.
     When the topology is clear from the context,
     we simple refer to <m>X</m> as the topological space.
     Some examples are in order.

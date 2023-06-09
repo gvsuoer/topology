@@ -15,7 +15,7 @@
     </statement>
   </definition>
   <p>
-    The set <m>A'</m> of limit points of <m>A</m> is called the <em>derived set</em>
+    The set <m>A'</m> of limit points of <m>A</m> is called the <term>derived set</term>
         <idx><h>derived set</h></idx>
     of <m>A</m>.
   </p>
@@ -49,9 +49,9 @@
             <me>
               B(n) = \begin{cases}\{n\}  \amp \text{ if \(n\) is odd } , \\ \{n-1,n,n+1\}  \amp \text{ if \(n\) is even } . \end{cases}
             </me>
-            (This topology is called the <em>digital line topology</em>
+            (This topology is called the <term>digital line topology</term>
             and has applications in digital processing. (This topology is called the
-            <em>digital line topology</em>
+            <term>digital line topology</term>
             and has applications in digital processing.
             That the collection <m>\{B(n)\}</m> is a basis for a topology on <m>\Z</m> is the topic of Exercise <xref ref="ex_digital_line_topology"/> on <xref ref="ex_digital_line_topology">page</xref>.)
           </p>
@@ -136,7 +136,7 @@
   </definition>
   <p>
     If a sequence <m>(x_n)</m> converges to a point <m>x</m>,
-    we call <m>x</m> a <em>limit</em><idx><h>limit of a sequence in a topological space</h></idx> of the sequence <m>(x_n)</m>.
+    we call <m>x</m> a <term>limit</term><idx><h>limit of a sequence in a topological space</h></idx> of the sequence <m>(x_n)</m>.
   </p>
   <activity xml:id="act_TS_limits">
     <p>
@@ -148,7 +148,7 @@
     </p>
   </activity>
   <p>
-    The result of <xref ref="act_TS_limits">Activity</xref>
+    The result of <xref ref="act_TS_limits"/>
     is that sequences do not behave in topological spaces as we would expect them to.
     Consequently,
     sequences do not play the same important role in topological spaces as they do in metric spaces.

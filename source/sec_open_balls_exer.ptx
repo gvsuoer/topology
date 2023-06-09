@@ -74,7 +74,7 @@
     </li>
     <li>
       <p>
-        Recall from <xref ref="sec_metric_spaces">Section</xref>
+        Recall from <xref ref="sec_metric_spaces"/>
         that we can construct a finite metric space by starting with a finite set of points and making a graph with the points as vertices.
         We construct edges so that the graph is connected
         (that is, there is a path from any one vertex to any other)

@@ -23,8 +23,8 @@
     </li>
     <li>
       <p>
-        In <xref ref="act_connected_compenent">Activity</xref>
-        of <xref ref="sec_Connected_topology">Section</xref>
+        In <xref ref="act_connected_compenent"/>
+        of <xref ref="sec_Connected_topology"/>
         we showed that an arbitrary union of connected sets is connected provided the intersection of those sets is not empty.
         Is the same result true for path connected sets.
         That is, if <m>X</m> is a topological space and
@@ -38,7 +38,7 @@
         Let <m>X</m> be the subspace of
         <m>(\R^2, d_E)</m> consisting of the line segments joining the point <m>(0,1)</m> to every point in the set
         <m>\left\{\left(\frac{1}{n}, 0\right) \mid n \in \Z^+\right\}</m> as illustrated in <xref ref="F_harmonic_broom">Figure</xref>.
-        This space is called the <em>harmonic broom</em>.
+        This space is called the <term>harmonic broom</term>.
         <figure xml:id="F_harmonic_broom">
           <caption>The harmonic broom.</caption>
           <image width="73%" source="Harmonic_broom.eps"/>

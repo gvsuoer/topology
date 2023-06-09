@@ -1,6 +1,6 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_sets">
   <title>Sets</title>
-  <introduction>
+  
     <objectives>
       <ul>
         <li>
@@ -37,7 +37,7 @@
         </li>
       </ul>
     </objectives>
-  </introduction>
+  
   <xi:include  href="sec_sets_intro.ptx"/>
   <xi:include  href="sec_basic_top.ptx"/>
   <xi:include  href="sec_intervals.ptx"/>

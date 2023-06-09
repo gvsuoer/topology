@@ -58,7 +58,7 @@
     </p>
   </activity>
   <p>
-    The result of <xref ref="act_metric_compact_closed">Activity</xref>
+    The result of <xref ref="act_metric_compact_closed"/>
     is summarized in <xref ref="thm_metric_compact_closed">Theorem</xref>.
   </p>
   <theorem xml:id="thm_metric_compact_closed">
@@ -104,8 +104,8 @@
   </definition>
   <p>
     The set <m>Q^n_M</m> in <xref ref="def_n_cube">Definition</xref>
-    is called the <em>standard</em>
-    <m>n</m><em>-dimensional cube of size M</em>.
+    is called the <term>standard</term>
+    <m>n</m><term>-dimensional cube of size M</term>.
     A standard 3-dimensional cube of size <m>M</m> is shown in <xref ref="F_M_cube">Figure</xref>.
   </p>
   <figure xml:id="F_M_cube">

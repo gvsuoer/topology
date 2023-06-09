@@ -1,7 +1,7 @@
 <section xml:id="sec_quotients">
   <title>Introduction</title>
   <p>
-    We are familiar with the word <em>quotient</em>
+    We are familiar with the word <term>quotient</term>
     when working with rational numbers.
     That is, the fraction <m>\frac{1}{2}</m> is the quotient of <m>1</m> by <m>2</m>,
     and the set of rational numbers is the collection of all defined quotients of integers.
@@ -22,7 +22,7 @@
     and we then divide the set into pieces
     (the equivalence classes)
     and call the set of equivalence classes a
-    <em>quotient space</em>.
+    <term>quotient space</term>.
     We explore the concept of quotient spaces of topological spaces in this section.
   </p>
   <p>

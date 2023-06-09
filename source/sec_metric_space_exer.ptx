@@ -106,7 +106,7 @@
         Let <m>(\Q,d)</m> be the metric space from Exercise <xref ref="ex_MS_Q_metric"/>.
         If <m>a</m>, <m>b</m>,
         and <m>c</m> are elements of a metric space <m>(X, d_X)</m>,
-        we say that <m>b</m> is <em>between</em>
+        we say that <m>b</m> is <term>between</term>
         <m>a</m> and <m>c</m> if <m>d_X(a,c) = d_X(a,b) + d_X(b,c)</m>.
         Using the Euclidean metric on <m>\Q</m>,
         there are infinitely many different rational numbers between <m>0</m> and <m>1</m> (the rational numbers between <m>0</m> and <m>1</m> that lie on the Euclidean line through <m>0</m> and <m>1</m>.
@@ -168,7 +168,7 @@
           <li>
             <p>
               Show that <m>d_H</m> is a metric
-              (called the <em>hub</em> metric).
+              (called the <term>hub</term> metric).
             </p>
           </li>
           <li>
@@ -333,7 +333,7 @@
     </li>
     <li>
       <p>
-        A real valued function <m>f</m> on an interval is <em>concave</em> if
+        A real valued function <m>f</m> on an interval is <term>concave</term> if
         <men xml:id="eq_concave">
           f((1-\alpha)x + \alpha y) \geq (1-\alpha)f(x) + \alpha f(y)
         </men>

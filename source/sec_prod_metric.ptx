@@ -95,7 +95,7 @@
     </p>
   </activity>
   <p>
-    <xref ref="act_ms_product_open">Activity</xref>
+    <xref ref="act_ms_product_open"/>
     shows that open sets in a product are more complicated than just products of open sets in the factors.
     We will return to product later when we consider topological spaces.
   </p>
@@ -123,11 +123,11 @@
     </statement>
   </definition>
   <p>
-    The metric <m>d</m> is called the <em>product metric</em>
+    The metric <m>d</m> is called the <term>product metric</term>
         <idx><h>product metric</h></idx>
-    and the spaces <m>(X_i,d_i)</m> are called the <em>coordinate</em>
+    and the spaces <m>(X_i,d_i)</m> are called the <term>coordinate</term>
         <idx><h>coordinate space</h></idx>
-    or <em>factor</em>
+    or <term>factor</term>
         <idx><h>factor space</h></idx>
     spaces of <m>(X,d)</m>.
     The proof that <m>d</m> is a metric is essentially the same as in the <m>n=2</m> case,

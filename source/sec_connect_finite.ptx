@@ -23,7 +23,7 @@
           <p>
             For each <m>x \in X</m>,
             let <m>U_x</m> be the intersection of all open sets that contain <m>x</m>
-            (we call <m>U_x</m> a <em>minimal neighborhood</em> of <m>x</m>).
+            (we call <m>U_x</m> a <term>minimal neighborhood</term> of <m>x</m>).
             <definition xml:id="def_min_nghb">
               <statement>
                 <p>
@@ -79,7 +79,7 @@
     the set <m>U_x</m> is a finite intersection of open sets,
     so the sets <m>U_x</m> are open sets
     (this is not true in general in infinite topological spaces <mdash/> you should find an example where <m>U_x</m> is not open).
-    In <xref ref="act_minimal_nbhds">Activity</xref>
+    In <xref ref="act_minimal_nbhds"/>
     we saw that <m>U_x</m> was path connected for a particular <m>x</m> in one example.
     The next activity shows that this result is true in general in finite topological spaces.
   </p>
@@ -141,7 +141,7 @@
     and each of the <m>U_x</m> is a path connected subspace.
     So every point in <m>X</m> is contained in some neighborhood with a path connected subset containing <m>x</m>.
     Spaces with this property are called
-    <em>locally path connected</em>.
+    <term>locally path connected</term>.
   </p>
   <definition>
     <statement>

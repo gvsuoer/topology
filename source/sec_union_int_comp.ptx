@@ -2,16 +2,16 @@
   <title>Unions, Intersections, and Complements of Sets</title>
   <p>
     In mathematics,
-    the collection of points that make up a string or a blob of play-doh as in <xref ref="act_rubber_sheet">Activity</xref> is represented as a set.
+    the collection of points that make up a string or a blob of play-doh as in <xref ref="act_rubber_sheet"/> is represented as a set.
     Topology is then the study of these sets and what properties of the sets don't change when transformations are applied to the sets.
     To study topology we will need a solid understanding of sets and different operations on sets.
   </p>
   <p>
-    What we saw in Preview <xref ref="pa_sets">Activity</xref>
-    is what is called a <em>paradox</em>.
+    What we saw in Preview <xref ref="pa_sets"/>
+    is what is called a <term>paradox</term>.
     Our original attempt to define a set led to an impossible situation since both <m>S \in S</m> and
     <m>S \notin S</m> lead to contradictions.
-    This paradox is called <em>Russell's paradox</em> after Bertrand Russell,
+    This paradox is called <term>Russell's paradox</term> after Bertrand Russell,
     although it was apparently known before Russell.
     The moral of the story is that we need to be careful when making definitions.
     A set might seem like a simple object,
@@ -77,7 +77,7 @@
     <ul>
       <li>
         <p>
-          The <em>union</em>
+          The <term>union</term>
             <idx><h>set</h><h>union</h></idx>
           of sets <m>A</m> and <m>B</m> is the set <m>A \cup B</m> defined as
           <me>
@@ -87,7 +87,7 @@
       </li>
       <li>
         <p>
-          The <em>intersection</em>
+          The <term>intersection</term>
             <idx><h>set</h><h>intersection</h></idx>
           of sets <m>A</m> and <m>B</m> is the set <m>A \cap B</m> defined as
           <me>
@@ -98,7 +98,7 @@
       <li>
         <p>
           Let <m>A</m> and <m>B</m> be sets.
-          The <em>set difference</em>
+          The <term>set difference</term>
             <idx><h>set difference</h></idx>
           <m>A \setminus B</m> is the set
           <me>
@@ -109,7 +109,7 @@
       <li>
         <p>
           Let <m>A</m> be a subset of a set <m>U</m>.
-          The <em>complement</em>
+          The <term>complement</term>
             <idx><h>set</h><h>complement</h></idx>
           of <m>A</m> in <m>U</m> is the set
           <me>
@@ -128,7 +128,7 @@
     A Venn diagram is a depiction of sets using geometric figures.
     For example,
     if <m>U</m> is a set containing all other sets of interest
-    (we call <m>U</m> the <em>universal</em> set),
+    (we call <m>U</m> the <term>universal</term> set),
     we can represent <m>U</m> as a large container
     (say a rectangle)
     with subsets <m>A</m> and <m>B</m> as smaller containers
@@ -285,7 +285,7 @@
     </statement>
   </example>
   <p>
-    We will use the ideas in <xref ref="act_set_equality">Activity</xref>
+    We will use the ideas in <xref ref="act_set_equality"/>
     and <xref ref="ex_set_eq">Example</xref>
     to prove set equalities throughout this text.
     The next activity will provide some additional practice.
@@ -346,20 +346,20 @@
     </p>
   </activity>
   <p>
-    In <xref ref="act_sets_1">Activity</xref>
+    In <xref ref="act_sets_1"/>
     we worked with the union and intersection of two sets.
     There is no reason to restrict these definitions to only two sets,
     as the next activity illustrates.
   </p>
   <activity>
     <p>
-      To define an infinite collection of sets we often use what is called an <em>indexing set</em>.
+      To define an infinite collection of sets we often use what is called an <term>indexing set</term>.
       An indexing set allows us to consider a collection of objects that are in one-to-one correspondence with a set like the positive integers,
       or even the real numbers.
       When using an indexing set,
       we generally make a statement such as ``let <m>\{A_{\alpha}\}</m> for
       <m>\alpha \in I</m> be a collection of sets indexed by some set <m>I</m>". The collection <m>\{A_{\alpha}\}_{\alpha \in I}</m> is called an
-      <em>indexed family of sets</em>.
+      <term>indexed family of sets</term>.
           <idx><h>indexed family of sets</h></idx>
       <ul>
         <li>
@@ -402,7 +402,7 @@
                   Recall that if <m>A</m> and <m>B</m> are sets,
                   the intersection <m>A \cap B</m> is the set <m>\{x \mid x \in A \text{ and }  x \in B\}</m>.
                   How can we extend this definition from two sets to any collection of sets?
-                  In other words, how do we <em>define</em>
+                  In other words, how do we <term>define</term>
               <idx><h>set</h><h>arbitrary intersection</h></idx>
                   <me>
                     \bigcap_{\alpha \in I} A_{\alpha}?
@@ -416,7 +416,7 @@
                   Recall that if <m>A</m> and <m>B</m> are sets,
                   the union <m>A \cup B</m> is the set <m>\{x \mid x \in A \text{ or }  x \in B\}</m>.
                   How can we extend this definition from two sets to any collection of sets?
-                  In other words, how do we <em>define</em>
+                  In other words, how do we <term>define</term>
               <idx><h>set</h><h>arbitrary union</h></idx>
                   <me>
                     \bigcup_{\alpha \in I} A_{\alpha}?
@@ -433,7 +433,7 @@
   </activity>
   <p>
     These properties <m>(A \cap B)^c = A^c \cup B^c</m> and
-    <m>(A \cup B)^c = A^c \cap B^c</m> that we learned about in <xref ref="act_sets_1">Activity</xref> are called DeMorgan's Laws.
+    <m>(A \cup B)^c = A^c \cap B^c</m> that we learned about in <xref ref="act_sets_1"/> are called DeMorgan's Laws.
     These laws apply to any union or intersection of sets,
     finite or infinite.
     The proofs are left Exercise <xref ref="ex_DeMorgan"/>.

@@ -38,19 +38,19 @@
     <ul>
       <li>
         <p>
-          A relation <m>\sim</m> on a set <m>S</m> is <em>reflexive</em>
+          A relation <m>\sim</m> on a set <m>S</m> is <term>reflexive</term>
           if <m>a \sim a</m> for all <m>a \in S</m>.
         </p>
       </li>
       <li>
         <p>
-          A relation <m>\sim</m> on a set <m>S</m> is <em>symmetric</em>
+          A relation <m>\sim</m> on a set <m>S</m> is <term>symmetric</term>
           if whenever <m>a \sim b</m> in <m>S</m> we also have <m>b \sim a</m>.
         </p>
       </li>
       <li>
         <p>
-          A relation <m>\sim</m> on a set <m>S</m> is <em>transitive</em>
+          A relation <m>\sim</m> on a set <m>S</m> is <term>transitive</term>
           if whenever <m>a \sim b</m> and
           <m>b \sim c</m> in <m>S</m> we also have <m>a \sim c</m>.
         </p>
@@ -93,6 +93,6 @@
     Since topological equivalence is an equivalence relation,
     we can treat the spaces that are topologically equivalent to each other as being essentially the same space from a topological perspective.
     Under the relation of homeomorphism we call the equivalence classes
-    <em>homeomorphism</em> classes.
+    <term>homeomorphism</term> classes.
   </p>
 </section>

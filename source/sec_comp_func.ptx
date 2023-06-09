@@ -103,7 +103,7 @@
     </p>
   </activity>
   <p>
-    In <xref ref="act_functions_1">Activity</xref>,
+    In <xref ref="act_functions_1"/>,
     we asked questions about whether certain composite functions were injections and/or surjections.
     In mathematics,
     it is typical to explore whether certain properties of an object transfer to related objects.
@@ -150,7 +150,7 @@
     </p>
   </activity>
   <p>
-    In <xref ref="act_composition2">Activity</xref>,
+    In <xref ref="act_composition2"/>,
     we explored some properties of composite functions related to injections,
     surjections, and bijections.
     The following theorem summarizes the results that these explorations were intended to illustrate.

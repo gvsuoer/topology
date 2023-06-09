@@ -16,7 +16,7 @@
     However, if we remove the point <m>0</m> from <m>[0,2)</m> the resulting space <m>(0,2)</m> is connected.
     So the spaces <m>(0,2)</m> and <m>[0,2)</m> are fundamentally different in this respect,
     and so are not homeomorphic.
-    Any set that we can remove from a connected set to obtain a disconnected set is called a <em>cut set</em>.
+    Any set that we can remove from a connected set to obtain a disconnected set is called a <term>cut set</term>.
   </p>
   <definition>
     <statement>

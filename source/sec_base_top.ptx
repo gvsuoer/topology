@@ -5,10 +5,10 @@
     Instead, we can describe the topology using a collection of sets that generate the topology.
     For example,
     if <m>(X,d)</m> is a metric space then the collection of open sets in <m>X</m> forms a topology on <m>X</m>,
-    called the <em>metric</em> topology.
+    called the <term>metric</term> topology.
     We also saw that in a metric space,
     every open set in <m>X</m> is a union of open balls.
-    For that reason we called the collection of open balls a <em>basis</em>
+    For that reason we called the collection of open balls a <term>basis</term>
     for the open sets in <m>X</m>.
     We can do the same thing in any topological space.
     As a non-trivial example,
@@ -26,7 +26,7 @@
   </p>
   <p>
     The collection of sets <m>B_{a,b}</m> is a basis for the Golomb topology,
-    and the topological space <m>(\Z^+, \tau)</m> is called the <em>Golomb space</em>.
+    and the topological space <m>(\Z^+, \tau)</m> is called the <term>Golomb space</term>.
         <idx><h>Golomb space</h></idx>
     It is an exercise in number theory to prove that the sets <m>B_{a,b}</m> form a basis for a topology,
     so we will not go into the details.
@@ -41,7 +41,7 @@
     </p>
   </activity>
   <p>
-    <xref ref="act_top_basis">Activity</xref> shows that,
+    <xref ref="act_top_basis"/> shows that,
     just like the open balls in a metric space,
     a topology can have a collection of subsets whose unions make up all of the open sets in the topology.
     We do need to take a little care, though.
@@ -232,9 +232,9 @@
     </statement>
   </definition>
   <p>
-    The elements of a basis <m>\B</m> are called <em>basis elements</em>
+    The elements of a basis <m>\B</m> are called <term>basis elements</term>
         <idx><h>basis</h><h>elements</h></idx>
-    or the <em>basic open sets</em>.
+    or the <term>basic open sets</term>.
         <idx><h>basic open set</h></idx>
     A basis for a topology on a set <m>X</m> defines a topology on <m>X</m> as shown in <xref ref="thm_Basis">Theorem</xref>.
   </p>

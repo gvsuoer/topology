@@ -14,7 +14,7 @@
     <m>B(a, \epsilon)</m> for some <m>\epsilon > 0</m>.
     We saw that every open ball is a neighborhood of each of its points,
     and we will now extend that idea to define an
-    <em>open set</em> in a metric space.
+    <term>open set</term> in a metric space.
   </p>
   <definition>
     <statement>

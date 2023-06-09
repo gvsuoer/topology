@@ -199,9 +199,9 @@
     </li>
     <li>
       <p>
-        A topological space <m>X</m> is <em>embedded</em>
+        A topological space <m>X</m> is <term>embedded</term>
         in a topological space <m>Y</m> if there is a homeomorphism from <m>X</m> to some subspace of <m>Y</m>.
-        The homeomorphism is called an <em>embedding</em>.
+        The homeomorphism is called an <term>embedding</term>.
         <ul>
           <li>
             <p>
@@ -394,7 +394,7 @@
     <li>
       <p>
         Show that property <m>T_i</m> is a topological property for each <m>i</m>.
-        (See <xref ref="sec_Closed_sets_topology">Section</xref>
+        (See <xref ref="sec_Closed_sets_topology"/>
         for definitions of the separation axioms.)
       </p>
     </li>

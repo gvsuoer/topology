@@ -3,7 +3,7 @@
   <p>
     Every metric space is a topological space,
     where the topology is the collection of open sets defined by the metric.
-    This topology is called the <em>metric topology</em>.
+    This topology is called the <term>metric topology</term>.
         <idx><h>topology</h><h>metric</h></idx>
     A natural question to ask is whether every topological space is a metric space.
     That is, given a topological space,
@@ -26,7 +26,7 @@
   <p>
     We conclude that every metric space is a topological space,
     but not every topological space is a metric space.
-    The topological spaces that can be realized as metric spaces are called <em>metrizable</em>.
+    The topological spaces that can be realized as metric spaces are called <term>metrizable</term>.
         <idx><h>metrizable topological space</h></idx>
   </p>
 </section>

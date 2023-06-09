@@ -9,10 +9,10 @@
     we will need a rigorous definition.
   </p>
   <definition>
+  <idx><h>interval</h></idx>
     <statement>
       <p>
-        A subset <m>I</m> of <m>\R</m> is an interval
-            <idx><h>interval</h></idx>
+        A subset <m>I</m> of <m>\R</m> is an <term>interval</term>
         if for all <m>a</m>, <m>b</m>, and <m>c</m> in <m>\R</m>
         (allowing for <m>a</m> or <m>b</m> to be <m>\pm \infty</m>)
         with <m>a \lt c \lt b</m>,
@@ -68,7 +68,7 @@
     This means that <m>\{a\} = [a,a]</m>,
     and any single point set is an interval.
     The intervals <m>\emptyset</m> and <m>[a,a]</m> for any real number <m>a</m> are called
-    <em>degenerate</em> intervals.
+    <term>degenerate</term> intervals.
   </p>
   <p>
     One last note about intervals.

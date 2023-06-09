@@ -7,7 +7,7 @@
     and in this activity we extend that idea to measure the distance between a point and a subset in a metric space.
     However, there are two questions we need to address before we can do so.
     The first we mentioned in our preview activity.
-    We will assume the <em>completeness axiom</em> of the reals,
+    We will assume the <term>completeness axiom</term> of the reals,
     that is that any subset of <m>\R</m> that is bounded below always has a greatest lower bound.
     The second question is whether or not a greatest lower bound is unique.
   </p>
@@ -44,11 +44,11 @@
   <p>
     With the existence and uniqueness of greatest lower bounds considered,
     we can now say that any nonempty subset <m>S</m> of <m>\R</m> that is bounded below has a unique greatest lower bound.
-    We use the notation <m>\glb(S)</m> (or <m>\inf(S)</m> for <em>infimum</em>
+    We use the notation <m>\glb(S)</m> (or <m>\inf(S)</m> for <term>infimum</term>
     of <m>S</m>) for the greatest lower bound of <m>S</m>.
-    There is also a <em>least upper bound</em>
+    There is also a <term>least upper bound</term>
         <idx><h>least upper bound</h></idx>
-    (<m>\lub(S)</m>, or <m>\sup(S)</m> for <em>supremum</em>
+    (<m>\lub(S)</m>, or <m>\sup(S)</m> for <term>supremum</term>
         <idx><h>supremum</h></idx>
     ) of a subset <m>S</m> of <m>\R</m> that is bounded above.
   </p>

@@ -28,7 +28,7 @@
   </activity>
   <p>
     Note that a subset of a metric space can be both open and closed.
-    We call such sets <em>clopen</em>
+    We call such sets <term>clopen</term>
     (for closed-open).
     When we discussed open sets,
     we saw that an arbitrary union of open sets is open,
@@ -59,7 +59,7 @@
     </p>
   </activity>
   <p>
-    <xref ref="act_Closed_union">Activity</xref>
+    <xref ref="act_Closed_union"/>
     shows that an arbitrary union of closed sets is not necessarily closed.
     However, the following theorem tells us what we can say about unions and intersections of closed sets.
     The results should not be surprising given the relationship between open and closed sets.

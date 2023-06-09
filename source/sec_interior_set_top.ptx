@@ -35,7 +35,7 @@
   </theorem>
   <p>
     The collection of interior points in a set form a subset of that set,
-    called the <em>interior</em> of the set.
+    called the <term>interior</term> of the set.
   </p>
   <definition>
     <statement>
@@ -99,7 +99,7 @@
     One might expect that the interior of a set is an open set,
     as it was in metric spaces.
     This is true, but we can say even more.
-    In <xref ref="act_interior">Activity</xref>
+    In <xref ref="act_interior"/>
     we saw that in our examples that <m>\Int(A)</m> was the largest open subset of <m>X</m> contained in <m>A</m>.
     That this is always true is the subject of the next theorem.
   </p>

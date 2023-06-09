@@ -27,7 +27,7 @@
     The function <m>f</m>
     (or <m>f^{-1}</m>)
     in <xref ref="def_MS_topological_equivalence">Definition</xref>
-    is called a <em>homeomorphism</em>.
+    is called a <term>homeomorphism</term>.
   </p>
   <definition xml:id="def_Homeomorphism">
     <statement>
@@ -42,7 +42,7 @@
   <p>
     If there is a homeomorphism from <m>(X,\tau_X)</m> to
     <m>(Y,\tau_Y)</m> we say that the spaces <m>(X,\tau_X)</m> to
-    <m>(Y,\tau_Y)</m> are <em>homeomorphic</em>
+    <m>(Y,\tau_Y)</m> are <term>homeomorphic</term>
         <idx><h>homeomorphic spaces</h></idx>
     topological spaces.
   </p>

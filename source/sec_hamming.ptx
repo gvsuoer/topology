@@ -14,7 +14,7 @@
     That is, a digital message is a collection of elements in the space <m>X^n</m> for some positive integer <m>n</m>,
     where <m>X = \{0,1\}</m>.
     Each element in <m>X^n</m> is called a
-    <em>word</em> - that is,
+    <term>word</term> - that is,
     a word is an element in <m>X^n</m> denoted in the form <m>(x_1, x_1, \ldots,
     x_n)</m>.
     Just like in the English language,
@@ -23,12 +23,12 @@
     We might, for example,
     code the letters of the alphabet by assigning numbers 1-26 to the letters,
     then make them elements of <m>X^n</m> by converting to binary.
-    The collection of all intelligible words is called a <em>code</em>.
+    The collection of all intelligible words is called a <term>code</term>.
     So a code is just some subset of <m>X^n</m> that all parties agree are sensible words.
-    The words in a code are called <em>code words</em>.
+    The words in a code are called <term>code words</term>.
     To deal with problems that occur in transmitting digital messages,
-    like scrambling (<em>encoding</em>) messages,
-    unscrambling (<em>decoding</em>) messages,
+    like scrambling (<term>encoding</term>) messages,
+    unscrambling (<term>decoding</term>) messages,
     and detecting and correcting errors in messages,
     it is useful to have a way to measure distance between words.
     One way is to use the Hamming metric.

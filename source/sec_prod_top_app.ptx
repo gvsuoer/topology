@@ -68,7 +68,7 @@
             <xref ref="F_Digital_curves">Figure</xref>
             show two sets (curves) in the digital plane indicated by the points that connect the line segments (examples taken from A Topological Approach to Digital Topology, T. Yung Kong, R. Kopperman,
             and P. Meyer,
-            <em>American Mathematical Monthly</em>, 98 (1991), no. 10, 901-917).
+            <term>American Mathematical Monthly</term>, 98 (1991), no. 10, 901-917).
             Let <m>S_1</m> be the set illustrated at left in <xref ref="F_Digital_curves">Figure</xref>
             and <m>S_2</m> the set at right.
             <figure xml:id="F_Digital_curves">
@@ -104,7 +104,7 @@
     </p>
   </activity>
   <p>
-    In <xref ref="act_digital_graph_theory">Activity</xref>
+    In <xref ref="act_digital_graph_theory"/>
     we discussed the importance of a digital Jordan curve theorem.
     In the next activity we describe a topology in which such a theorem exists.
   </p>
@@ -116,15 +116,15 @@
       </me>
     </p>
     <p>
-      This topology is called the <em>digital line topology</em>
-      or the <em>Khalimsky topology</em><idx><h>topology</h><h>Khalimsky</h></idx> on <m>\Z</m>.
+      This topology is called the <term>digital line topology</term>
+      or the <term>Khalimsky topology</term><idx><h>topology</h><h>Khalimsky</h></idx> on <m>\Z</m>.
       Notice that all sets of the form <m>\{n\}</m> are open when <m>n</m> is odd.
     </p>
     <p>
       Task: Show that any set of the form <m>\{n\}</m> where <m>n</m> is even is closed in the digital line topology.
     </p>
     <p>
-      Task: To define a <em>Khalimsky topology</em>
+      Task: To define a <term>Khalimsky topology</term>
       on <m>\Z^2</m> we use the product topology.
       Explain why the collection of sets <m>\{B(m,n)\}</m> where
       <me>
@@ -132,21 +132,21 @@
       </me>
       is a basis for the Khalimsky topology <m>\tau_2</m> on <m>\Z^2</m>.
       (This topology was originally published by E. Khalimsky in
-      <em>Applications of connected ordered topological spaces in topology</em>, Conference of math. departments of Povolsia, 1970.)
+      <term>Applications of connected ordered topological spaces in topology</term>, Conference of math. departments of Povolsia, 1970.)
     </p>
     <p>
       Task: New we want to define a digital Jordan curve.
-      Our first step is to define a <em>digital path</em>.
+      Our first step is to define a <term>digital path</term>.
       Recall that a path in a topological space is a homeomorphism from the interval <m>[0,1]</m> into the space.
       So we need the concept of a digital interval.
       If <m>z_1 \lt  z_2</m> in <m>(\Z, \tau_1)</m>,
-      the <em>digital interval</em> <m>[z_1,z_2]</m> is the set
+      the <term>digital interval</term> <m>[z_1,z_2]</m> is the set
       <me>
         [z_1, z_2] = \{z \in \Z \mid z_1 \leq z \leq z_2\}
       </me>.
     </p>
     <p>
-      The integers <m>z_1</m> and <m>z_2</m> are called the <em>endpoints</em>
+      The integers <m>z_1</m> and <m>z_2</m> are called the <term>endpoints</term>
       of the digital interval <m>[z_1,z_2]</m>.
     </p>
     <definition>
@@ -156,14 +156,14 @@
           <ul>
             <li>
               <p>
-                A <em>digital path</em>
+                A <term>digital path</term>
                   <idx><h>digital path</h></idx>
                 in <m>X</m> is the range of a continuous function from a digital interval to <m>X</m>.
               </p>
             </li>
             <li>
               <p>
-                A <em>digital arc</em>
+                A <term>digital arc</term>
                   <idx><h>digital arc</h></idx>
                 in X is the range of a homeomorphism from a digital interval to <m>X</m>.
               </p>
@@ -209,7 +209,7 @@
     <p>
       Task: The upshot of all of this is the following theorem (a proof can be found in A Topological Approach to Digital Topology, T. Yung Kong, R. Kopperman,
       and P. Meyer,
-      <em>American Mathematical Monthly</em>, 98 (1991), no. 10, 901-917).
+      <term>American Mathematical Monthly</term>, 98 (1991), no. 10, 901-917).
     </p>
     <theorem xml:id="thm_digital_Jordan_curve">
       <statement>
@@ -233,10 +233,10 @@
   </activity>
   <p>
     Digital Jordan curves,
-    as described in <xref ref="act_digital_Jordan_curve">Activity</xref>,
+    as described in <xref ref="act_digital_Jordan_curve"/>,
     are important in order to have a digital Jordan curve theorem.
     Christer O. Kiselman presents the following theorem to characterize digital Jordan curves in
-    <em>Discrete Geometry for Computer Imagery</em>, Springer-Verlag, 2000, p. 46-56.
+    <term>Discrete Geometry for Computer Imagery</term>, Springer-Verlag, 2000, p. 46-56.
   </p>
   <theorem xml:id="thm_digital_curve">
     <statement>
@@ -264,7 +264,7 @@
           <p>
             We need to first define the appropriate terms.
             Let <m>X</m> be a topological space.
-            Two points <m>x</m> and <m>y</m> in <m>X</m> are <em>adjacent</em>
+            Two points <m>x</m> and <m>y</m> in <m>X</m> are <term>adjacent</term>
             if <m>x \neq y</m> and the set <m>\{x, y\}</m> is connected.
             Then let <m>N(x)</m> to be the intersection of all neighborhoods of <m>x</m>.
             Show that distinct elements <m>x</m> and <m>y</m> in a topological space <m>X</m> are adjacent if and only if
@@ -273,22 +273,22 @@
         </li>
         <li>
           <p>
-            A point <m>(x_1,x_2)</m> in <m>\Z^2</m> is called <em>pure</em>
+            A point <m>(x_1,x_2)</m> in <m>\Z^2</m> is called <term>pure</term>
             if <m>x_1</m> and <m>x_2</m> have the same parity.
-            Otherwise, the point is <em>mixed</em>.
+            Otherwise, the point is <term>mixed</term>.
             Find <m>N(P)</m> if <m>P</m> is a pure point or a mixed point.
           </p>
         </li>
         <li>
           <p>
-            In <xref ref="act_digital_Jordan_curve">Activity</xref>
+            In <xref ref="act_digital_Jordan_curve"/>
             we show that the set <m>S_1 = \{(1,-1), (1,1), (-1,1), (-1,-1)\}</m> is not a digital path and so not a digital Jordan curve.
             Which part of <xref ref="thm_digital_curve">Theorem</xref> does <m>S_1</m> violate?
           </p>
         </li>
         <li>
           <p>
-            In <xref ref="act_digital_Jordan_curve">Activity</xref>
+            In <xref ref="act_digital_Jordan_curve"/>
             we show that the set <m>S_2 = \{(0,0), (1,-1), (2,0), (1,1)\}</m> is a digital Jordan curve.
             Show that in <m>S_2</m>,
             the property from <xref ref="thm_digital_curve">Theorem</xref>
