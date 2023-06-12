@@ -1,7 +1,7 @@
 <section xml:id="sec_connect_subset_rn">
   <title>Connected Subsets of <m>\R</m></title>
   <p>
-    With <xref ref="thm_conn_subset">Theorem</xref> in hand,
+    With <xref ref="thm_conn_subset"/> in hand,
     we are just about ready to show that any interval in <m>\R</m> is connected.
     Let us return for a moment to our example of <m>A = (-1,0) \cup (4,5)</m> in <m>\R</m>.
     It is not difficult to see that if <m>U</m> and <m>V</m> are a separation of <m>A</m>,
@@ -72,7 +72,7 @@
       To show that <m>A</m> is connected,
       assume to the contrary that <m>A</m> is disconnected.
       Then there are nonempty open subsets <m>U</m> and <m>V</m> of <m>X</m> that form a separation of <m>A</m>.
-      <xref ref="lem_separation_subset">Lemma</xref>
+      <xref ref="lem_separation_subset"/>
       shows that <m>C \subseteq U</m> or <m>C \subseteq V</m>.
       Without loss of generality we assume that <m>C \subseteq U</m>.
       Since <m>U \cap V \cap A = \emptyset</m>, it follows that
@@ -91,7 +91,7 @@
     </p>
   </proof>
   <p>
-    One consequence of <xref ref="thm_connected_limitpoints">Theorem</xref>
+    One consequence of <xref ref="thm_connected_limitpoints"/>
     is that any interval of the form <m>[a,b)</m>,
     <m>(a,b]</m>, <m>[a,b]</m>,
     <m>(-\infty,

@@ -127,7 +127,7 @@
       <ul>
         <li>
           <p>
-            What does <xref ref="thm_open_ball_continuity">Theorem</xref>
+            What does <xref ref="thm_open_ball_continuity"/>
             tell us that we need to do to show that <m>f</m> is continuous at <m>a</m>?
           </p>
         </li>

@@ -5,7 +5,7 @@
     <m>f : \R \to \R</m> to be continuous at a point.
   </p>
   <p>
-    Note that <xref ref="def_epsilon_delta_continuity">Definition</xref>
+    Note that <xref ref="def_epsilon_delta_continuity"/>
     depends only on being able to measure how close points are to each other.
     Since that is precisely what a metric does,
     we can extend this notion of continuity to define continuity for functions between metric spaces.

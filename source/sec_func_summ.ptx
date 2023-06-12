@@ -76,7 +76,7 @@
           If <m>f</m> is a function from a set <m>X</m> to a set <m>Y</m>,
           and if <m>\{A_{\alpha}\}</m> is a collection of subsets of <m>X</m> for <m>\alpha</m> in some indexing set <m>I</m>,
           and <m>\{B_{\beta}\}</m> be a collection of subsets of <m>Y</m> for <m>\beta</m> in some indexing set <m>J</m>, then
-          <ol label="i">
+          <ol marker="i">
             <li>
               <p>
                 <m>f\left(\bigcup_{\alpha \in I} A_{\alpha}\right) = \bigcup_{\alpha \in I} f(A_{\alpha})</m> and

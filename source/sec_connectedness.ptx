@@ -33,7 +33,7 @@
     </p>
   </proof>
   <p>
-    In the following sections we explore the reverse implication in <xref ref="thm_pctoc">Theorem</xref> <mdash/> that is,
+    In the following sections we explore the reverse implication in <xref ref="thm_pctoc"/> <mdash/> that is,
     does connectedness imply path connectedness.
   </p>
 </section>

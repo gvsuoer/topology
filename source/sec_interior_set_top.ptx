@@ -155,7 +155,7 @@
     </p>
   </activity>
   <p>
-    One consequence of <xref ref="thm_Interior">Theorem</xref> is the following.
+    One consequence of <xref ref="thm_Interior"/> is the following.
   </p>
   <corollary>
     <statement>

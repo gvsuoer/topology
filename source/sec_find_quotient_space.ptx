@@ -62,11 +62,11 @@
   </theorem>
   <activity>
     <p>
-      <xref ref="thm_quotient_1">Theorem</xref>
+      <xref ref="thm_quotient_1"/>
       is a statement about sets and functions,
       and there is no topology involved.
       We prove the theorem in this activity.
-      Use the conditions stated in <xref ref="thm_quotient_1">Theorem</xref>.
+      Use the conditions stated in <xref ref="thm_quotient_1"/>.
       <ul>
         <li>
           <p>
@@ -109,7 +109,7 @@
   <proof>
     <p>
       The existence of <m>\overline{f}</m> as the unique function satisfying
-      <m>f = \overline{f} \circ p</m> was established in <xref ref="thm_quotient_1">Theorem</xref>.
+      <m>f = \overline{f} \circ p</m> was established in <xref ref="thm_quotient_1"/>.
       All that remains is to show that <m>\overline{f}</m> is continuous.
       Let <m>O</m> be an open set in <m>Y</m>.
       Since <m>f</m> is continuous,
@@ -136,7 +136,7 @@
     </p>
   </proof>
   <p>
-    Now we will see how to use <xref ref="thm_quotient_2">Theorem</xref>
+    Now we will see how to use <xref ref="thm_quotient_2"/>
     to establish a homeomorphism from a quotient space of a given topological space to another topological space
   </p>
   <example>
@@ -145,7 +145,7 @@
         We return to the situation from <xref ref="exp_R_Z_quotient"/>
         with <m>X = \R</m> under the standard topology and equivalence relation <m>\sim</m> defined by
         <m>x \sim y</m> if <m>x - y \in \Z</m>.
-        We will use <xref ref="thm_quotient_2">Theorem</xref>
+        We will use <xref ref="thm_quotient_2"/>
         to show that <m>\R/\ssim</m> is homeomorphic to the circle <m>Y = S^1</m>.
       </p>
       <figure xml:id="F_S_1_basis">
@@ -182,7 +182,7 @@
           <title>Step 2</title>
           <p>
             Find a continuous function from <m>X/\ssim</m> to <m>Y</m>.
-            <xref ref="thm_quotient_2">Theorem</xref>
+            <xref ref="thm_quotient_2"/>
             tells us that the function
             <m>\overline{f} : (X/\ssim) \to Y</m> defined by <m>\overline{f}([t]) = f(t)</m> is continuous.
             So <m>\overline{f}</m> is our candidate to be a homeomorphism.

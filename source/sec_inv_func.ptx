@@ -9,7 +9,7 @@
     (with base <m>e</m>)
     and the natural logarithm functions are inverses of each other.
     You may have seen this relationship expressed as follows: For each
-    <m>x \in \R</m> with <m>x > 0</m> and for each <m>y \in \R</m>,
+    <m>x \in \R</m> with <m>x \gt 0</m> and for each <m>y \in \R</m>,
   </p>
   <p>
     <m>y = \ln(x)</m> if and only if <m>x = e^y</m>.
@@ -45,79 +45,71 @@
     <m>f: A \to B</m> is itself a function from <m>B</m> to <m>A</m>.
   </p>
   <activity xml:id="prog_exploringinverse">
+    <introduction>
     <p>
       Let <m>A = \left\{ {a, b, c} \right\}</m>,
       <m>B = \left\{ {a,b,c,d} \right\}</m>,
       and <m>C = \left\{ {p, q, r} \right\}</m>.
       Define
+      <md>
+        <mrow>f: A \amp \to C \text{ by} \amp g: A \amp \to C \text{ by} \amp h: B \amp \to C \text{ by}</mrow>
+        <mrow>f( a ) \amp = r \amp g( a ) \amp = p \amp h( a ) \amp = p</mrow>
+        <mrow>f( b ) \amp = p \amp g( b ) \amp = q \amp h( b ) \amp = q</mrow>
+        <mrow>f( c ) \amp = q \amp g( c ) \amp = p \amp h( c ) \amp = r</mrow>
+        <mrow>\amp \amp \amp \amp h ( d ) \amp = q</mrow>
+      </md>
     </p>
-    <tabular>
-      <row>
-        <cell><m>f: A \to C</m> by <nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/></cell>
-        <cell><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/>  <m>g: A \to C</m> by <nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/></cell>
-        <cell><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/>  <m>h: B \to C</m> by</cell>
-      </row>
-      <row>
-        <cell><m>f( a ) = r</m></cell>
-        <cell><m>g( a ) = p</m></cell>
-        <cell><m>h( a ) = p</m></cell>
-      </row>
-      <row>
-        <cell><m>f( b ) = p</m></cell>
-        <cell><m>g( b ) = q</m></cell>
-        <cell><m>h( b ) = q</m></cell>
-      </row>
-      <row>
-        <cell><m>f( c ) = q</m></cell>
-        <cell><m>g( c ) = p</m></cell>
-        <cell><m>h( c ) = r</m></cell>
-      </row>
-      <row>
-        <cell></cell>
-        <cell></cell>
-        <cell><m>h( d ) = q</m></cell>
-      </row>
-    </tabular>
-    <ul>
-      <li>
+    
+    </introduction>
+    <task>
+      <statement>
         <p>
           Determine the inverse of each function as a set of ordered pairs.
         </p>
-      </li>
-      <li>
-        <ol label="i">
-          <li>
+      </statement>
+    </task>
+    <task>
+      
+        <task>
+          <statement>
             <p>
               Is <m>f^{ - 1}</m> a function from <m>C</m> to <m>A</m>?
               Explain.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               Is <m>g^{ - 1}</m> a function from <m>C</m> to <m>A</m>?
               Explain.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               Is <m>h^{ - 1}</m> a function from <m>C</m> to <m>B</m>?
               Explain.
             </p>
-          </li>
-        </ol>
-      </li>
-      <li xml:id="A_exploringinverse3">
+          </statement>
+        </task>
+      </task>
+      <task xml:id="A_exploringinverse3">
+      <statement>
         <p>
           Make a conjecture about what conditions on a function
           <m>F: S \to T</m> will ensure that its inverse is a function from <m>T</m> to <m>S</m>.
         </p>
-      </li>
-    </ul>
+      </statement>
+    </task>
   </activity>
+
   <p>
     The result of the <xref ref="prog_exploringinverse"/>
     should have been the following theorem.
   </p>
+
   <theorem xml:id="T_inverseandbijection">
     <statement>
       <p>
@@ -127,32 +119,41 @@
       </p>
     </statement>
   </theorem>
+
   <p>
-    The proof of <xref ref="T_inverseandbijection">Theorem</xref>
+    The proof of <xref ref="T_inverseandbijection"/>
     is outlined in the following activity.
   </p>
+
   <activity>
+    <introduction>
     <p>
-      <xref ref="T_inverseandbijection">Theorem</xref> is a biconditional statement,
+      <xref ref="T_inverseandbijection"/> is a biconditional statement,
       so we need to prove both directions.
       Let <m>A</m> and <m>B</m> be nonempty sets,
       and let <m>f: A \to B</m>.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <introduction>
           <p>
             Assume that  <m>f</m>  is a bijection.
             We will prove that <m>f^{-1}</m> is a function,
-            that is that <m>f^{-1}</m> satisfies the conditions of <xref ref="def_function">Definition</xref>.
-            <ol label="i">
-              <li>
+            that is that <m>f^{-1}</m> satisfies the conditions of <xref ref="def_function"/>.
+          </p>
+        </introduction>
+            <task>
+              <statement>
                 <p>
                   Let <m>b \in B</m>.
                   What property does <m>f</m> have that ensures that
                   <m>(b,a) \in f^{-1}</m> for some <m>a \in A</m>?
                   What conclusion can we draw about <m>f^{-1}</m>?
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   Now let <m>b \in B</m>, <m>a_1 , a_2  \in A</m> and assume that
                   <me>
@@ -162,33 +163,37 @@
                   What property of <m>f</m> ensures that <m>a_1=a_2</m>?
                   What conclusion can we draw about <m>f^{-1}</m>?
                 </p>
-              </li>
-            </ol>
-          </p>
-        </li>
-        <li>
+              </statement>
+            </task>
+       </task>
+        <task>
+          <introduction>
           <p>
             Now assume that <m>f^{-1}</m> is a function from <m>B</m> to <m>A</m>.
             We will prove that <m>f</m> is a bijection.
-            <ol label="i">
-              <li>
+          </p>
+          </introduction>
+            <task>
+              <statement>
                 <p>
                   What does it take to prove that <m>f</m> is an injection?
                   Use the fact that <m>f^{-1}</m> is a function to prove that <m>f</m> is an injection.
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   What does it take to prove that <m>f</m> is a surjection?
                   Use the fact that <m>f^{-1}</m> is a function to prove that <m>f</m> is a surjection.
                 </p>
-              </li>
-            </ol>
-          </p>
-        </li>
-      </ul>
-    </p>
+              </statement>
+            </task>
+          
+        </task>
+      
   </activity>
+
   <p>
     In the situation where <m>f: A \to B</m> is a bijection and <m>f^{-1}</m> is a function from <m>B</m> to <m>A</m>,
     we can write <m>f^{-1} : B \to A</m>.
@@ -201,8 +206,9 @@
     we write <m>f^{-1} ( b ) = a</m>.
     Using the fact that <m>( {a, b} ) \in f</m> if and only if <m>( {b, a} ) \in f^{-1}</m>,
     we can now write <m>f( a ) = b</m> if and only if <m>f^{-1} ( b ) = a</m>.
-    <xref ref="T_inversenotation">Theorem</xref> formalizes this observation.
+    <xref ref="T_inversenotation"/> formalizes this observation.
   </p>
+
   <theorem xml:id="T_inversenotation">
     <statement>
       <p>
@@ -216,10 +222,12 @@
       </p>
     </statement>
   </theorem>
+
   <p>
     The next result provide useful information about inverse functions.
     The proofs are left for Exercise <xref ref="ex_inverse_composite"/>.
   </p>
+
   <corollary xml:id="C_inversecomposition">
     <statement>
       <p>
@@ -243,6 +251,7 @@
       </p>
     </statement>
   </corollary>
+
   <p>
     The next question to address is what we can say about a composition of bijections.
     In particular,
@@ -251,16 +260,22 @@
     Must it be the case that <m>g \circ f</m> is invertible and, if so,
     what is <m>(g \circ f)^{-1}</m>?
   </p>
+
   <activity xml:id="act_comp_inverse">
+    <introduction>
     <p>
       Let <m>f: A \to B</m> and <m>g: B \to C</m> both be bijections.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             Why do we know that <m>g \circ f</m> is invertible?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Now we determine the inverse of <m>g \circ f</m>.
             We might be tempted to think that
@@ -271,36 +286,48 @@
             we need to prove that two functions are equal.
             How do we prove that two functions are equal?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <introduction>
           <p>
             Suppose <m>c \in C</m>.
-            <ol label="i">
-              <li>
+          </p>
+        </introduction>
+            <task>
+              <statement>
                 <p>
                   What tells us that there is a <m>b \in B</m> so that <m>g(b) = c</m>?
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   What tells us that there is an <m>a \in A</m> so that <m>f(a) = b</m>?
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   What element is <m>(g \circ f)^{-1}(c)</m>?
                   Why?
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   What element is <m>f^{-1}(b)</m>?
                   Why?
                   What element is <m>g^{-1}(c)</m>?
                   Why?
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   What element is <m>(f^{-1} \circ g^{-1})(c)</m>?
                   Why?
@@ -308,13 +335,13 @@
                   <m>(g \circ f)^{-1}</m> and <m>f^{-1} \circ g^{-1}</m>?
                   Explain.
                 </p>
-              </li>
-            </ol>
-          </p>
-        </li>
-      </ul>
-    </p>
+              </statement>
+            </task>
+          
+        </task>
+     
   </activity>
+
   <p>
     The result of <xref ref="act_comp_inverse"/>
     is contained in the next theorem.

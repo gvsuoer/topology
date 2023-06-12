@@ -55,7 +55,7 @@
     </li>
     <li xml:id="ex_closed_sets_continuity_TS">
       <p>
-        Prove <xref ref="thm_closed_sets_continuity_TS">theorem</xref>
+        Prove <xref ref="thm_closed_sets_continuity_TS"/>
         that if <m>(X,\tau_X)</m> and
         <m>(Y, \tau_Y)</m> are topological spaces,
         and <m>f: X \to Y</m> is a function,

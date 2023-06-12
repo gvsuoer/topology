@@ -116,7 +116,7 @@
   </p>
   <activity>
     <p>
-      Prove <xref ref="thm_subbasis_continuous">Theorem</xref>. (Hint: Recall that <m>f</m> is continuous if
+      Prove <xref ref="thm_subbasis_continuous"/>. (Hint: Recall that <m>f</m> is continuous if
       <m>f^{-1}(B)</m> is open in <m>X</m> for each basic open set <m>B</m>.)
     </p>
     <theorem xml:id="thm_subbasis_continuous">
@@ -178,7 +178,7 @@
       </me>
       is a subbasis for the product topology on <m>\Pi_{i=1}^n X_i</m>.
       To prove that <m>f</m> is continuous,
-      <xref ref="thm_subbasis_continuous">Theorem</xref>
+      <xref ref="thm_subbasis_continuous"/>
       tells us that it is enough to show that
       <m>f^{-1}(S)</m> is open for each <m>S</m> in <m>\CS</m>.
       Let <m>O_i</m> be an open set in <m>X_i</m>.

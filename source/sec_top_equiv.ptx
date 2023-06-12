@@ -26,7 +26,7 @@
   <p>
     The function <m>f</m>
     (or <m>f^{-1}</m>)
-    in <xref ref="def_MS_topological_equivalence">Definition</xref>
+    in <xref ref="def_MS_topological_equivalence"/>
     is called a <term>homeomorphism</term>.
   </p>
   <definition xml:id="def_Homeomorphism">

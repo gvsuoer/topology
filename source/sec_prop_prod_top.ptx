@@ -69,12 +69,12 @@
       For each <m>\alpha \in I</m> let <m>B_{\alpha} = B \cup A_{\alpha}</m>.
       Let <m>\beta \in I</m>.
       Since <m>B \cap A_{\beta} \neq \emptyset</m>,
-      <xref ref="lem_Connected_union">Lemma</xref>
+      <xref ref="lem_Connected_union"/>
       shows that <m>B_{\beta}</m> is connected.
       Given that <m>B</m> is not empty,
       and <m>B \subseteq \bigcap_{\alpha \in I} B_{\alpha}</m>,
       we see that <m>\bigcap_{\alpha \in I} B_{\alpha} \neq \emptyset</m>.
-      <xref ref="lem_Connected_union">Lemma</xref>
+      <xref ref="lem_Connected_union"/>
       allows us to conclude that <m>\bigcup_{\alpha \in I} B_{\alpha}</m> is connected.
       But
       <me>
@@ -84,7 +84,7 @@
     </p>
   </proof>
   <p>
-    We will use <xref ref="lem_Connected_union">Lemma</xref>
+    We will use <xref ref="lem_Connected_union"/>
     to show that a product of connected spaces is connected.
   </p>
   <theorem xml:id="thm_connected_product">
@@ -113,7 +113,7 @@
       (The verification of these homeomorphisms is left to the reader.)
       The point <m>(a,b)</m> is in <m>X_a \cap Y_b</m>,
       so <m>X_a \cap Y_b \neq \emptyset</m> for every <m>b \in Y</m>.
-      It follows that <m>X_a \cup \left( \bigcup_{t \in Y} Y_t \right)</m> is connected by <xref ref="lem_Connected_union">Lemma</xref>.
+      It follows that <m>X_a \cup \left( \bigcup_{t \in Y} Y_t \right)</m> is connected by <xref ref="lem_Connected_union"/>.
       All that remains is to prove that
       <m>X_a \cup \left( \bigcup_{t \in Y} Y_t \right) = X \times Y</m> and we will have demonstrated that <m>X \times Y</m> is connected.
       The fact that <m>X_a \subseteq X \times Y</m> and

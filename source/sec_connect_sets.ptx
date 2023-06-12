@@ -178,7 +178,7 @@
       <m>(Y, \tau_Y)</m> be topological spaces and let <m>f: X \to Y</m> be a homeomorphism.
       Assume that <m>X</m> is connected.
       Since <m>f</m> is continuous,
-      <xref ref="thm_connected_invariant">Theorem</xref>
+      <xref ref="thm_connected_invariant"/>
       shows that <m>f(X) = Y</m> is connected.
       The reverse implication follows from the fact that <m>f^{-1}</m> is a homeomorphism.
     </p>
@@ -188,7 +188,7 @@
     <m>(-\infty,
     b)</m>, and <m>(a,\infty)</m> for any <m>a, b \in \R</m>.
     The fact that <m>(\R, d_E)</m> is connected
-    (<xref ref="thm_R_connected">Theorem</xref>)
+    (<xref ref="thm_R_connected"/>)
     allows us to conclude that all open intervals are connected.
     It would seem natural that all closed
     (or half-closed)
@@ -282,9 +282,9 @@
     </p>
   </activity>
   <p>
-    The conditions in <xref ref="thm_conn_subset">Theorem</xref>
+    The conditions in <xref ref="thm_conn_subset"/>
     provide a convenient way to show that a set is disconnected,
-    and so any pair of sets <m>U</m> and <m>V</m> that satisfy the conditions of <xref ref="thm_conn_subset">Theorem</xref> is given a special name.
+    and so any pair of sets <m>U</m> and <m>V</m> that satisfy the conditions of <xref ref="thm_conn_subset"/> is given a special name.
   </p>
   <definition>
     <statement>

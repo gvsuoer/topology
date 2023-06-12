@@ -46,7 +46,7 @@
       <ul>
         <li>
           <p>
-            What assumption do we make to prove the remaining implication of <xref ref="thm_Open_continuity">Theorem</xref>?
+            What assumption do we make to prove the remaining implication of <xref ref="thm_Open_continuity"/>?
             What do we need to demonstrate to prove the conclusion?
           </p>
         </li>
@@ -78,7 +78,7 @@
   </p>
   <activity xml:id="act_continuity_balls">
     <p>
-      In this activity we prove the following corollary to <xref ref="thm_Open_continuity">Theorem</xref>.
+      In this activity we prove the following corollary to <xref ref="thm_Open_continuity"/>.
     </p>
     <corollary xml:id="cor_continuity_balls">
       <statement>
@@ -98,7 +98,7 @@
             Since the corollary is a biconditional statement,
             we need to prove both implications.
             First, assume that <m>f</m> is continuous.
-            Use <xref ref="thm_Open_continuity">Theorem</xref>
+            Use <xref ref="thm_Open_continuity"/>
             to explain why <m>f^{-1}(B)</m> is open in <m>X</m> whenever <m>B</m> is an open ball in <m>Y</m>.
           </p>
         </li>
@@ -107,23 +107,23 @@
             For the remaining implication,
             assume that <m>f^{-1}(B)</m> is an open set in <m>X</m> for any open ball <m>B</m> in <m>Y</m>.
             To show that <m>f</m> is a continuous function,
-            we will use <xref ref="thm_Open_continuity">Theorem</xref>
+            we will use <xref ref="thm_Open_continuity"/>
             and show that <m>f^{-1}(O)</m> is open in <m>X</m> whenever <m>O</m> is an open set in <m>Y</m>.
             So let <m>O</m> be an open set in <m>Y</m>.
             <ol label="i">
               <li>
                 <p>
-                  What does <xref ref="thm_OS_1">Theorem</xref> tell us about <m>O</m>.
+                  What does <xref ref="thm_OS_1"/> tell us about <m>O</m>.
                 </p>
               </li>
               <li>
                 <p>
-                  Recall that <xref ref="lem_functions_subsets">Lemma</xref>
+                  Recall that <xref ref="lem_functions_subsets"/>
                   tells us that if <m>\{B_{\beta}\}</m> is a collection of subsets of <m>Y</m> for <m>\beta</m> in some indexing set <m>J</m>, then
                   <me>
                     f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right) = \bigcup_{\beta \in J} f^{-1}(B_{\beta})
                   </me>.
-                  Use <xref ref="lem_functions_subsets">Lemma</xref>
+                  Use <xref ref="lem_functions_subsets"/>
                   to show that <m>f^{-1}(O)</m> is open in <m>X</m> and conclude that <m>f</m> is a continuous function.
                 </p>
               </li>

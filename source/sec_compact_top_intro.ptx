@@ -82,7 +82,7 @@
   <p>
     If <m>(X,\tau)</m> is a topological space and <m>X</m> is a compact subset of <m>X</m>,
     then we say that <m>X</m> is a <term>compact topological space</term>.
-    There is some terminology associated with <xref ref="def_compact">Definition</xref>.
+    There is some terminology associated with <xref ref="def_compact"/>.
   </p>
   <definition>
     <statement>
@@ -165,7 +165,7 @@
   <p>
     There are two perspectives by which we can look at compactness.
     If <m>(X,\tau_X)</m> is a topological space and <m>A</m> is a subset of <m>X</m>,
-    then <xref ref="def_compact">Definition</xref>
+    then <xref ref="def_compact"/>
     tells us what it means for <m>A</m> to be compact as a subset of <m>X</m>.
     From this perspective,
     we use open sets in <m>X</m> to make open covers of <m>A</m>.

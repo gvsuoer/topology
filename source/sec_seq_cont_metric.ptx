@@ -105,7 +105,7 @@
     <p>
       Let <m>(X,d_X)</m> and <m>(Y,d_Y)</m> be metric spaces,
       let <m>a \in X</m>, and let <m>f: X \to Y</m> be a function.
-      We prove the remaining implication of <xref ref="thm_seq_continuity">Theorem</xref>,
+      We prove the remaining implication of <xref ref="thm_seq_continuity"/>,
       that <m>f</m> is continuous at <m>a</m> if
       <m>\lim f(a_n) = f(a)</m> for any sequence <m>(a_n)</m> in <m>X</m> that converges to <m>a</m>,
       in this activity.
@@ -157,7 +157,7 @@
     </p>
   </activity>
   <p>
-    One way that <xref ref="thm_seq_continuity">Theorem</xref>
+    One way that <xref ref="thm_seq_continuity"/>
     is often used is illustrated in the next activity.
   </p>
   <activity xml:id="act_sequence_continuity">
@@ -201,12 +201,12 @@
   <p>
     While it can sometimes be difficult to prove a fact about all sequences that converge to a point,
     <xref ref="act_sequence_continuity"/>
-    shows that we can use <xref ref="thm_seq_continuity">Theorem</xref>
+    shows that we can use <xref ref="thm_seq_continuity"/>
     to prove that a function <m>f</m> is not continuous at an input <m>a</m> be finding just one sequence <m>(a_n)</m> that converges to <m>a</m> for which <m>\lim f(a_n) \neq f(a)</m>.
     We conclude this section with one final note.
   </p>
   <p>
-    IMPORTANT NOTE: <xref ref="thm_seq_continuity">Theorem</xref>
+    IMPORTANT NOTE: <xref ref="thm_seq_continuity"/>
     tells us that if <m>f : X \to Y</m> is a continuous function,
     then <m>f</m> commutes with limits.
     That is, if <m>(a_n)</m> is a sequence in <m>X</m> that converges to <m>a \in X</m>, then

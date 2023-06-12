@@ -68,7 +68,7 @@
   <activity>
     <p>
       Let <m>X</m> be a metric space.
-      To prove the remaining implication of <xref ref="thm_OS_1">Theorem</xref>,
+      To prove the remaining implication of <xref ref="thm_OS_1"/>,
       assume that a subset <m>O</m> of <m>X</m> is a union of open balls.
       <ul>
         <li>
@@ -91,7 +91,7 @@
     </p>
   </activity>
   <p>
-    <xref ref="thm_OS_1">Theorem</xref>
+    <xref ref="thm_OS_1"/>
     tells us that every open set is made up of open balls,
     so the open balls generate all open sets much like a basis of a vector space in linear algebra generates all of the elements of the vector space.
     For this reason we call the set of open balls in a metric space a <term>basis</term>

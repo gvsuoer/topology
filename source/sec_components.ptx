@@ -40,7 +40,7 @@
             Show that <m>A</m> is a connected subset of <m>X</m>.
             <hint>
               <p>
-                Assume a separation and use <xref ref="lem_separation_subset">Lemma</xref>.
+                Assume a separation and use <xref ref="lem_separation_subset"/>.
               </p>
             </hint>
           </p>

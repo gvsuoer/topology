@@ -61,8 +61,8 @@
     </p>
     <p>
       Task: Let <m>z = (z_1,z_2)</m> in <m>\R^2</m>.
-      Read the proof of <xref ref="lem_abs_TI">Lemma</xref>
-      (below) and then use <xref ref="lem_abs_TI">Lemma</xref> to show that
+      Read the proof of <xref ref="lem_abs_TI"/>
+      (below) and then use <xref ref="lem_abs_TI"/> to show that
       <me>
         d_T(x,y) \leq d_T(x,z) + d_T(z,y)
       </me>.

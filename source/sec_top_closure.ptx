@@ -89,7 +89,7 @@
     </p>
   </activity>
   <p>
-    One consequence of <xref ref="thm_TS_closure_closed">Theorem</xref> is the following.
+    One consequence of <xref ref="thm_TS_closure_closed"/> is the following.
   </p>
   <corollary>
     <statement>

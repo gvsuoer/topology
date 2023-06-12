@@ -71,7 +71,7 @@
     </p>
   </activity>
   <p>
-    The terminology in <xref ref="def_min_nghb">Definition</xref> is apt.
+    The terminology in <xref ref="def_min_nghb"/> is apt.
     Since every neighborhood <m>N</m> of a point <m>x \in X</m> must contain an open set <m>O</m> with <m>x \in O</m>,
     it follows that <m>U_x \subseteq O \subseteq N</m>.
     So every neighborhood of <m>x \in X</m> has <m>U_x</m> as a subset.
@@ -192,7 +192,7 @@
   </proof>
   <p>
     Since <m>X</m> is open in <m>X</m> whenever <m>X</m> is a topological space,
-    a natural corollary of <xref ref="lem_open_PC">Lemma</xref> is the following.
+    a natural corollary of <xref ref="lem_open_PC"/> is the following.
   </p>
   <corollary>
     <statement>
@@ -255,7 +255,7 @@
   <proof>
     <p>
       Let <m>X</m> be a finite topological space.
-      <xref ref="thm_pctoc">Theorem</xref>
+      <xref ref="thm_pctoc"/>
       demonstrates that if <m>X</m> is path connected,
       then <m>X</m> is connected.
       For the reverse implication, assume that <m>X</m> is path connected.
