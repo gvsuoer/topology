@@ -6,7 +6,7 @@
   </p>
   <activity>
     <p>
-      In this activity we prove <xref ref="thm_path_connected">Theorem</xref>.
+      In this activity we prove <xref ref="thm_path_connected"/>.
     </p>
     <theorem xml:id="thm_path_connected">
       <statement>
@@ -44,7 +44,7 @@
     </p>
   </activity>
   <p>
-    A consequence of <xref ref="thm_path_connected">Theorem</xref> is the following.
+    A consequence of <xref ref="thm_path_connected"/> is the following.
   </p>
   <corollary>
     <statement>

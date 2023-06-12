@@ -12,10 +12,10 @@
     We start with a formal definition of a function.
   </p>
   <definition xml:id="def_function">
+  <idx><h>function</h></idx>
     <statement>
       <p>
         A function
-            <idx><h>function</h></idx>
         <m>f</m> from a nonempty set <m>A</m> to a set <m>B</m> is a collection of ordered pairs <m>(a,b)</m> so that
         <ul>
           <li>
@@ -32,6 +32,7 @@
       </p>
     </statement>
   </definition>
+
   <p>
     Note that the first property is an existence property <mdash/> that if <m>a \in A</m> then there is an element <m>b</m> in <m>B</m> that matches up with <m>a</m>.
     This first property also says that every element in <m>A</m> is used,
@@ -122,6 +123,7 @@
     (or surjections)
     are special types of functions and we present their definitions here.
   </p>
+
   <definition>
     <statement>
       <p>
@@ -154,7 +156,9 @@
       </p>
     </statement>
   </definition>
-  <activity>
+
+  <exploration>
+    <introduction>
     <p>
       We often define functions with rules,
       but functions can also be defined by tables or graphs.
@@ -175,11 +179,14 @@
       This implies that the function <m>f</m> is not a surjection.
       For example, <m>-2</m> is in the codomain of <m>f</m> and
       <m>f(x) \neq -2</m> for all <m>x</m> in the domain of <m>f</m>.
-      <ol>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <introduction>
           <p>
             We can change the domain of a function so that the function is defined on a subset of the original domain.
             Such a function is called a restriction.
+          </p>
             <definition>
               <statement>
                 <p>
@@ -191,69 +198,83 @@
                 </p>
               </statement>
             </definition>
+            <p>
             A notation used for the restriction is also <m>F = f\mid_C</m>.
             We also call <m>f</m> an <term>extension</term> of <m>F</m>.
             Let <m>f: \R \to \R</m> be defined by <m>f(x) = x^2+1</m>,
             and let <m>h = f \mid_{\R^+}</m>,
             where <m>\R^+</m> is the set of positive real numbers.
             So <m>h</m> has the same codomain as <m>f</m>, but a different domain.
-            <ul>
-              <li>
+          </p>
+          </introduction>
+            <task>
+              <statement>
                 <p>
                   Show that <m>h</m> is an injection.
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   Is <m>h</m> a surjection?
                   Justify your conclusion.
                 </p>
-              </li>
-            </ul>
-          </p>
-        </li>
-        <li>
+              </statement>
+            </task>
+          
+        </task>
+        <task>
+        <introduction>
           <p>
             Let <m>T = \{y \in \R \mid y \geq 1\}</m>,
             and let <m>F: \R \to T</m> be defined by <m>F(x) = f(x)</m>.
             Notice that the function <m>F</m> uses the same formula as the function <m>f</m> and has the same domain as <m>f</m>,
             but has a different codomain than <m>f</m>.
-            <ul>
-              <li>
+          </p>
+        </introduction>
+            <task>
+              <statement>
                 <p>
                   Explain why <m>F</m> is not an injection.
                 </p>
-              </li>
-              <li>
+              </statement>
+        </task>
+        <task>
+              <statement>
                 <p>
                   Is <m>F</m> a surjection?
                   Justify your conclusion.
                 </p>
-              </li>
-            </ul>
-          </p>
-        </li>
-        <li>
+              </statement>
+            </task>
+          
+        </task>
+        <task>
+        <introduction>
           <p>
             Let <m>\R^*= \{x \in \R \mid x \geq 0\}</m>.
             Define <m>g : \R^* \to T</m> by <m>g(x) = x^2 + 1</m>.
-            <ul>
-              <li>
+          </p>
+        </introduction>
+            <task>
+              <statement>
                 <p>
                   Prove or disprove: the function <m>g</m> is an injection.
                 </p>
-              </li>
-              <li>
+              </statement>
+        </task>
+        <task>
+              <statement>
                 <p>
                   Prove or disprove: the function <m>g</m> is a surjection.
                 </p>
-              </li>
-            </ul>
-          </p>
-        </li>
-      </ol>
-    </p>
-  </activity>
+              </statement>
+            </task>
+          
+        </task>
+   
+  </exploration>
   <p>
     In our preview activity,
     the same mathematical formula was used to determine the outputs for the functions.

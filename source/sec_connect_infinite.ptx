@@ -2,7 +2,7 @@
   <title>Path Connectedness and Connectedness in Infinite Topological Spaces</title>
   <p>
     Given that connectedness and path connectedness are equivalent in finite topological spaces,
-    a reasonable question now is whether the converse of <xref ref="thm_pctoc">Theorem</xref>
+    a reasonable question now is whether the converse of <xref ref="thm_pctoc"/>
     is true in arbitrary topological spaces.
     As we will see, the answer is no.
     To find a counterexample, we need to look in an infinite topological space.
@@ -42,7 +42,7 @@
     </md>,
     and so <m>\left(z, \arcsin(z)\right) \in B(q, \epsilon)</m> and every neighborhood of <m>q</m> contains a point in <m>S_2</m>.
     Therefore, <m>S_1 \subseteq S_2' \subseteq \overline{S_2}</m> and <m>\overline{S_2} = S</m> in <m>S</m>.
-    The fact that <m>S</m> is connected follows from <xref ref="thm_connected_limitpoints">Theorem</xref>.
+    The fact that <m>S</m> is connected follows from <xref ref="thm_connected_limitpoints"/>.
   </p>
   <p>
     Now that we know that <m>S</m> is connected,

@@ -42,7 +42,7 @@
     </li>
     <li xml:id="ex_relatively_closed_ms">
       <p>
-        Prove <xref ref="thm_relatively_closed_ms">Theorem</xref>.
+        Prove <xref ref="thm_relatively_closed_ms"/>.
         That is, let <m>(X,d)</m> be a metric space and <m>A</m> a subset of <m>X</m>.
         Prove that a subset <m>C_A</m> of <m>A</m> is closed in <m>A</m> if and only if there is a closed set <m>C_X</m> in <m>X</m> so that <m>C_A = C_X \cap A</m>.
       </p>

@@ -63,7 +63,7 @@
     </p>
   </proof>
   <p>
-    <xref ref="thm_closed_TS">Theorem</xref>
+    <xref ref="thm_closed_TS"/>
     tells us that any intersection of closed sets is closed,
     but only finite unions of closed sets are closed.
     How do we know that non-finite unions of closed sets aren't necessarily closed?

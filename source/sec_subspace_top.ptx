@@ -6,7 +6,7 @@
     We then have <m>A</m> as a subspace of <m>X</m>.
   </p>
   <p>
-    The topology <m>\tau_A</m> in <xref ref="def_TS_subspace">Definition</xref>
+    The topology <m>\tau_A</m> in <xref ref="def_TS_subspace"/>
     is called the <term>subspace topology</term>,
         <idx><h>subspace topology</h></idx>
     the <term>induced topology</term>,

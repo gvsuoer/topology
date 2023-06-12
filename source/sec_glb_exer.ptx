@@ -180,14 +180,14 @@
                 <li>
                   <p>
                     Show that if the Archimedean property is true,
-                    then so is <xref ref="thm_Archimedean_2">Theorem</xref>.
+                    then so is <xref ref="thm_Archimedean_2"/>.
                   </p>
                 </li>
                 <li>
                   <p>
-                    Show that if <xref ref="thm_Archimedean_2">Theorem</xref> is true,
+                    Show that if <xref ref="thm_Archimedean_2"/> is true,
                     then so is the Archimedean property.
-                    Conclude that <xref ref="thm_Archimedean_2">Theorem</xref>
+                    Conclude that <xref ref="thm_Archimedean_2"/>
                     is equivalent to the Archimedean property.
                   </p>
                 </li>
@@ -205,7 +205,7 @@
                   </p>
                 </statement>
               </theorem>
-              Prove that <xref ref="thm_Archimedean_3">Theorem</xref>
+              Prove that <xref ref="thm_Archimedean_3"/>
               is equivalent to the Archimedean property.
             </p>
           </li>

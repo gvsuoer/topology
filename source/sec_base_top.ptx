@@ -57,7 +57,7 @@
     To make the last two conditions happen,
     we will see that it is enough to insist that for any point in the intersection of basis elements,
     there is another basis element in that intersection that contains the point.
-    This is summarized in <xref ref="thm_Basis">Theorem</xref>.
+    This is summarized in <xref ref="thm_Basis"/>.
   </p>
   <theorem xml:id="thm_Basis">
     <statement>
@@ -85,7 +85,7 @@
     </statement>
   </theorem>
   <p>
-    Before we prove <xref ref="thm_Basis">Theorem</xref>,
+    Before we prove <xref ref="thm_Basis"/>,
     we will need to know one fact about the set <m>\B</m>.
   </p>
   <activity xml:id="act_Basis">
@@ -152,7 +152,7 @@
     </lemma>
   </activity>
   <p>
-    Now we can prove <xref ref="thm_Basis">Theorem</xref>.
+    Now we can prove <xref ref="thm_Basis"/>.
   </p>
   <proof>
     <p>
@@ -188,7 +188,7 @@
       Thus, <m>x \in \bigcap_{1 \leq m \leq n} B_m</m>.
     </p>
     <p>
-      <xref ref="lem_Basis">Lemma</xref>
+      <xref ref="lem_Basis"/>
       shows that there is a set <m>B_x \in \B</m> such that
       <m>x \in B_x</m> and <m>B_x \subseteq \bigcap_{1 \leq m \leq n} B_m \subseteq \bigcap_{1 \leq m \leq n} U_m = U</m>.
       Since <m>x</m> is an arbitrary element of <m>U</m>,
@@ -204,7 +204,7 @@
     </p>
   </proof>
   <p>
-    Any collection <m>\B</m> of sets as given in <xref ref="thm_Basis">Theorem</xref> is given a special name.
+    Any collection <m>\B</m> of sets as given in <xref ref="thm_Basis"/> is given a special name.
   </p>
   <definition xml:id="def_basis_topology">
     <statement>
@@ -236,10 +236,10 @@
         <idx><h>basis</h><h>elements</h></idx>
     or the <term>basic open sets</term>.
         <idx><h>basic open set</h></idx>
-    A basis for a topology on a set <m>X</m> defines a topology on <m>X</m> as shown in <xref ref="thm_Basis">Theorem</xref>.
+    A basis for a topology on a set <m>X</m> defines a topology on <m>X</m> as shown in <xref ref="thm_Basis"/>.
   </p>
   <p>
-    Note that because of property (1) of <xref ref="def_basis_topology">Definition</xref>,
+    Note that because of property (1) of <xref ref="def_basis_topology"/>,
     the union of the sets in the basis must contain <m>X</m>.
     In other words, the sets in a basis cover the space.
     The second property ensures that if a point is in the intersection of two basic open sets,

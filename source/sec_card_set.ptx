@@ -24,7 +24,9 @@
     where <m>n</m> is a positive integer.
     This is how we can define a finite set.
   </p>
+
   <definition>
+  <idx><h>finite set</h></idx>
     <statement>
       <p>
         A set <m>A</m> is a finite set
@@ -35,7 +37,9 @@
       </p>
     </statement>
   </definition>
+
   <p>
+    <idx><h>cardinality of a set</h></idx>
     In the case that <m>A = \emptyset</m>,
     we say that <m>A</m> has <term>cardinality</term> <m>0</m>,
     and if there is a bijection from <m>A</m> to the set
@@ -63,7 +67,7 @@
     Using this idea, we say that two sets
     (either finite or infinite)
     have the same cardinality
-        <idx><h>cardinality of a set</h></idx>
+        
     if there is a bijection between the sets.
     We will discuss cardinality in more detail a bit later.
   </p>

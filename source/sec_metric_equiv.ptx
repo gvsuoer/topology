@@ -65,7 +65,7 @@
   </definition>
   <p>
     Because <m>f</m> is a bijection,
-    it will also be the case in <xref ref="def_MS_metric_equivalence">Definition</xref> that
+    it will also be the case in <xref ref="def_MS_metric_equivalence"/> that
     <me>
       d_Y(u,v) = d_X(f^{-1}(u), f^{-1}(v))
     </me>
@@ -74,7 +74,7 @@
   </p>
   <p>
     Any function <m>f</m> that preserves distances
-    (like the one in <xref ref="def_MS_metric_equivalence">Definition</xref>)
+    (like the one in <xref ref="def_MS_metric_equivalence"/>)
     is called an <term>isometry</term>.
   </p>
   <definition>

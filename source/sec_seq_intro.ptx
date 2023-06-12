@@ -101,7 +101,7 @@
     </statement>
   </example>
   <p>
-    <xref ref="def_sequence_limit_real">Definition</xref>
+    <xref ref="def_sequence_limit_real"/>
     only applies to sequences of real numbers.
     Ultimately, we want to phrase the definition in a way that allows us to define limits of sequences in metric spaces and topological spaces.
     So we have to reformulate the definition in such a way that it does not depend on distances.

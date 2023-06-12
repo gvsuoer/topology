@@ -220,7 +220,7 @@
       </statement>
     </theorem>
     <p>
-      The two components in <xref ref="thm_digital_Jordan_curve">Theorem</xref>
+      The two components in <xref ref="thm_digital_Jordan_curve"/>
       split the digital plane into an infinite region
       (the outside)
       and a finite region
@@ -283,7 +283,7 @@
           <p>
             In <xref ref="act_digital_Jordan_curve"/>
             we show that the set <m>S_1 = \{(1,-1), (1,1), (-1,1), (-1,-1)\}</m> is not a digital path and so not a digital Jordan curve.
-            Which part of <xref ref="thm_digital_curve">Theorem</xref> does <m>S_1</m> violate?
+            Which part of <xref ref="thm_digital_curve"/> does <m>S_1</m> violate?
           </p>
         </li>
         <li>
@@ -291,7 +291,7 @@
             In <xref ref="act_digital_Jordan_curve"/>
             we show that the set <m>S_2 = \{(0,0), (1,-1), (2,0), (1,1)\}</m> is a digital Jordan curve.
             Show that in <m>S_2</m>,
-            the property from <xref ref="thm_digital_curve">Theorem</xref>
+            the property from <xref ref="thm_digital_curve"/>
             that <m>x_{j-1}</m> and <m>x_{j+1}</m> and no other points are adjacent to <m>x_j</m> is satisfied for each <m>j</m>.
           </p>
         </li>

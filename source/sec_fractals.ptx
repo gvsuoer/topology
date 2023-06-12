@@ -66,14 +66,14 @@
       <ul>
         <li>
           <p>
-            A problem with <m>d</m> as in <xref ref="def_AtoB">Definition</xref>
+            A problem with <m>d</m> as in <xref ref="def_AtoB"/>
             is that <m>d</m> is not symmetric.
             Find examples of compact subsets <m>A</m> and <m>B</m> of <m>\R^n</m> with the Euclidean metric such that <m>d(A,B) \neq d(B,A)</m>.
           </p>
         </li>
         <li>
           <p>
-            Even though the function <m>d</m> in <xref ref="def_AtoB">Definition</xref> is not a metric,
+            Even though the function <m>d</m> in <xref ref="def_AtoB"/> is not a metric,
             we can define the Hausdorff distance  in terms of <m>d</m> as follows.
             <definition xml:id="def_Hausdorff_distance">
               <statement>
@@ -100,7 +100,7 @@
         </li>
         <li>
           <p>
-            It may be surprising that <m>h</m> as in <xref ref="def_Hausdorff_distance">Definition</xref>
+            It may be surprising that <m>h</m> as in <xref ref="def_Hausdorff_distance"/>
             is actually a metric, but it is.
             The underlying space is the collection of nonempty compact subsets of <m>X</m> which we denote at <m>\mathcal{H}(X)</m>.
             Prove the following theorem.

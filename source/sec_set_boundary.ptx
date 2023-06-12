@@ -68,7 +68,7 @@
     </statement>
   </theorem>
   <p>
-    The proof of <xref ref="thm_TS_Closed_boundary">Theorem</xref>
+    The proof of <xref ref="thm_TS_Closed_boundary"/>
     is left to <xref ref="ex_TS_Closed_boundary"/>.
   </p>
 </section>

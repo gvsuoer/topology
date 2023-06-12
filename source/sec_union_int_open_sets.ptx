@@ -90,9 +90,9 @@
       Let <m>X</m> be a metric space.
       To prove part 1, assume that
       <m>\{O_{\alpha}\}</m> is a collection of open sets in <m>X</m> for <m>\alpha</m> in some indexing set <m>I</m> and let <m>O = \bigcup_{\alpha \in I} O_{\alpha}</m>.
-      By <xref ref="thm_OS_1">Theorem</xref>,
+      By <xref ref="thm_OS_1"/>,
       we know that <m>O_{\alpha}</m> is a union of open balls for each <m>\alpha \in I</m>.
-      Combining all of these open balls together shows that <m>O</m> is a union of open balls and is therefore an open set by <xref ref="thm_OS_1">Theorem</xref>.
+      Combining all of these open balls together shows that <m>O</m> is a union of open balls and is therefore an open set by <xref ref="thm_OS_1"/>.
     </p>
     <p>
       For part 2, assume that <m>O_1</m>,

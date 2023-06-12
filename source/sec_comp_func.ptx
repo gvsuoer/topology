@@ -34,12 +34,14 @@
     was used as the input for the function <m>g</m>.
     This idea motivates the formal definition of the composition of two functions.
   </p>
+
   <definition>
+  <idx><h>composition of functions</h></idx>
     <statement>
       <p>
         Let <m>A</m>, <m>B</m>, and <m>C</m> be nonempty sets,
         and let <m>f : A \to B</m> and <m>g : B \to C</m> be functions.
-        The composite<idx><h>composition of functions</h></idx> of <m>f</m> and <m>g</m> is the function <m>g \circ f : A \to C</m> defined by
+        The composite of <m>f</m> and <m>g</m> is the function <m>g \circ f : A \to C</m> defined by
         <me>
           (g \circ f)(x) = g(f(x))
         </me>
@@ -54,6 +56,7 @@
     of <m>x</m>.
   </p>
   <activity xml:id="act_functions_1">
+    <introduction>
     <p>
       Let <m>A = \{1, 2, 3\}</m>,
       <m>B = \{a, b, c, d\}</m>, and <m>C = \{\alpha, \beta, \gamma\}</m>.
@@ -68,40 +71,51 @@
       <me>
         h(a) = \gamma, \ h(b) = \alpha, \ h(c) = \beta,  \ h(d) = \alpha
       </me>.
-      <ul>
-        <li>
+      </p>
+      </introduction>
+      <task>
+        <statement>
           <p>
             Find the images of the elements in <m>A</m> under the function <m>h \circ f</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Find the images of the elements in <m>A</m> under the function <m>h \circ g</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Are any of <m>f</m>, <m>g</m>, and <m>h</m> injections?
             Are any of <m>f</m>, <m>g</m>, and <m>h</m> surjections?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Is <m>h \circ f</m> an injection?
             Is <m>h \circ f</m> a surjection?
             Explain.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Is <m>h \circ g</m> an injection?
             Is <m>h \circ g</m> a surjection?
             Explain.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+  
   </activity>
+
   <p>
     In <xref ref="act_functions_1"/>,
     we asked questions about whether certain composite functions were injections and/or surjections.
@@ -112,15 +126,19 @@
     (Of course, we could ask a similar question for surjections.)
     These questions are explored in the next activity.
   </p>
+
   <activity xml:id="act_composition2">
+    <introduction>
     <p>
       Let the sets <m>A</m>, <m>B</m>,
       <m>C</m>, and <m>D</m> be as follows:
       <me>
         A = \{ a, b, c \},  B = \{p, q, r\},  C = \{u, v, w, x \},  \text{ and }   D = \{u, v \}
       </me>.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             Construct a function <m>f : A \to B</m> that is an injection and a function
             <m>g : B \to C</m> that is an injection.
@@ -128,8 +146,10 @@
             is the composite function <m>g \circ f : A \to C</m> an injection?
             Explain.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Construct a function <m>f : A \to B</m> that is a surjection and a function
             <m>g : B \to D</m> that is a surjection.
@@ -137,24 +157,28 @@
             is the composite function <m>g \circ f : A \to D</m> a surjection?
             Explain.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Construct a function <m>f : A \to B</m> that is a bijection and a function <m>g : B \to A</m> that is a bijection.
             In this case,
             is the composite function <m>g \circ f : A \to A</m> a bijection?
             Explain.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     In <xref ref="act_composition2"/>,
     we explored some properties of composite functions related to injections,
     surjections, and bijections.
     The following theorem summarizes the results that these explorations were intended to illustrate.
   </p>
+
   <theorem xml:id="thm_compositefunctions">
     <statement>
       <p>
@@ -183,27 +207,31 @@
       </p>
     </statement>
   </theorem>
+
   <activity>
-    <p>
-      <nbsp/>
-      <ul>
-        <li>
+    
+      <task>
+        <statement>
           <p>
-            Prove part (1) of <xref ref="thm_compositefunctions">Theorem</xref>.
+            Prove part (1) of <xref ref="thm_compositefunctions"/>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
-            Prove part (2) of <xref ref="thm_compositefunctions">Theorem</xref>.
+            Prove part (2) of <xref ref="thm_compositefunctions"/>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
-            Why is the proof of part (3) of <xref ref="thm_compositefunctions">Theorem</xref>
+            Why is the proof of part (3) of <xref ref="thm_compositefunctions"/>
             a direct consequence of parts (1) and (2)?
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
 </section>

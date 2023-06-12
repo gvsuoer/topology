@@ -27,6 +27,7 @@
     we will need to understand how a function behaves with respect to subsets.
     One result is in the following lemma.
   </p>
+
   <lemma xml:id="lem_functions_subsets">
     <statement>
       <p>
@@ -48,7 +49,7 @@
         </ol>
       </p>
     </statement>
-  </lemma>
+  
   <proof>
     <p>
       Let <m>f : X \to Y</m> be a function and let
@@ -88,8 +89,9 @@
       The two containments verify part 2.
     </p>
   </proof>
+  </lemma>
   <p>
-    At this point it is reasonable to ask if <xref ref="lem_functions_subsets">Lemma</xref>
+    At this point it is reasonable to ask if <xref ref="lem_functions_subsets"/>
     would still hold if we replace unions with intersections.
     We leave that question for Exercise <xref ref="ex_intersection_image"/>.
   </p>

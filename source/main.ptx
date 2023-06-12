@@ -207,14 +207,15 @@
     <part xml:id="part-sets-funcs">
       <title>Sets and Functions</title>
 
-      <xi:include href="./chap_sets.ptx"/>
+      <!-- <xi:include href="./chap_sets.ptx"/> -->
+      <xi:include href="./chap_functions.ptx"/>
       
     </part>
 
     
 
     <!-- 
-    <xi:include href="./chap_functions.ptx"/>
+    
     <xi:include href="./chap_metric_spaces.ptx"/>
     <xi:include href="./chap_metric_spaces_apps.ptx"/>
     <xi:include href="./chap_glb.ptx"/>

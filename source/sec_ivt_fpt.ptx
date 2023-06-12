@@ -111,7 +111,7 @@
                   Show that <m>f</m> maps the interval <m>[-1,2]</m> into the interval <m>[-1,2]</m>.
                   <hint>
                     <p>
-                      Use <xref ref="thm_max_min">Theorem</xref>
+                      Use <xref ref="thm_max_min"/>
                       on <xref ref="thm_max_min">page</xref>
                       that a continuous function from a compact topological space to <m>\R</m> assumes a maximum and minimum value.
                     </p>

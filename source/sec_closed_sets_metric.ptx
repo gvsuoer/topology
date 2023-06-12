@@ -1,7 +1,7 @@
 <section xml:id="sec_closed_sets_metric">
   <title>Closed Sets in Metric Spaces</title>
   <p>
-    Recall that <xref ref="def_closed_metric_space">Definition</xref>
+    Recall that <xref ref="def_closed_metric_space"/>
     defines a closed set in a metric space to be a set whose complement is open.
     We have seen that both <m>\emptyset</m> and <m>X</m> are open subsets of <m>X</m>.
     We now ask the same question,

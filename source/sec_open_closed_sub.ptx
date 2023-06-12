@@ -79,7 +79,7 @@
     If <m>X</m> is a metric space and <m>A</m> is a subspace,
     then by definition a subset <m>C_A</m> of <m>A</m> is closed if and only if
     <m>C_A = A \setminus O_A</m> for some set <m>O_A</m> that is open in <m>A</m>.
-    The analogy of <xref ref="thm_relatively_open_ms">Theorem</xref>
+    The analogy of <xref ref="thm_relatively_open_ms"/>
     is true for closed sets in subspaces.
   </p>
   <theorem xml:id="thm_relatively_closed_ms">
