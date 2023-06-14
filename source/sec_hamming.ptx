@@ -33,6 +33,7 @@
     it is useful to have a way to measure distance between words.
     One way is to use the Hamming metric.
   </p>
+
   <definition>
     <statement>
       <p>
@@ -48,6 +49,7 @@
       </p>
     </statement>
   </definition>
+
   <p>
     Recall that for each <m>i</m> both <m>x_i</m> and <m>y_i</m> are either 0 or 1.
     So
@@ -59,59 +61,58 @@
     In other words,
     <m>d_H(x,y)</m> counts the number of components at which <m>x</m> and <m>y</m> are different.
   </p>
+
   <activity>
-    <p>
-      <nbsp/>
-      <ul>
-        <li>
+  
+      <task>
+        <statement>
           <p>
             Explain why <m>d_H</m> is a metric.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
           <p>
             Suppose we create a code
             <me>
               C = \{c_1,c_2,c_3,c_4,c_5,c_6,c_7,c_8\}
             </me>
             in <m>X^6</m>, where
-            <tabular>
-              <row>
-                <cell><m>c_1 = (0,0,0,0,0,0)</m>,</cell>
-                <cell><m>c_2=(0,0,0,0,1,1)</m>,</cell>
-                <cell><m>c_3=(0,0,0,1,0,1)</m>,</cell>
-              </row>
-              <row>
-                <cell><m>c_4=(0,0,1,0,0,1)</m>,</cell>
-                <cell><m>c_5=(0,0,0,1,1,0)</m>,</cell>
-                <cell><m>c_6=(0,0,1,0,1,0)</m>,</cell>
-              </row>
-              <row>
-                <cell><m>c_7=(0,0,1,1,0,0)</m>,</cell>
-                <cell><m>c_8=(0,0,1,1,1,1)</m>.</cell>
-                <cell></cell>
-              </row>
-            </tabular>
+            <md>
+              <mrow>c_1 \amp = (0,0,0,0,0,0) \amp c_2 \amp =( 0,0,0,0,1,1) \amp c_3 \amp = (0,0,0,1,0,1)</mrow>
+              <mrow>c_4 \amp = (0,0,1,0,0,1) \amp c_5 \amp = (0,0,0,1,1,0) \amp c_6 \amp = (0,0,1,0,1,0)</mrow>
+              <mrow>c_7 \amp = (0,0,1,1,0,0) \amp c_8 \amp = (0,0,1,1,1,1) \amp \amp </mrow>
+            </md>
+            
             That is, the words <m>c_1</m>,
             <m>c_2</m>, <m>c_3</m>, <m>c_4</m>,
             <m>c_5</m>, <m>c_6</m>, <m>c_7</m>,
             <m>c_8</m> are the only words that can comprise a message.
             Find <m>d_H(c_2, c_8)</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+
+      <task>
+        <introduction>
           <p>
             Suppose we are on the receiving end of the message
             <men xml:id="eq_message">
               (0,0,0,1,1,1) \ (0,0,1,1,0,0) \ (1,0,0,0,0,0) \ (0,0,0,0,1,1) \ (0,0,1,0,0,1)
             </men>.
-            <ol label="i">
-              <li>
+          </p>
+        </introduction>
+            <task>
+              <statement>
                 <p>
                   How do we know that an error has occurred in transmission of the message we received?
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   To correct the errors in this received message,
                   we replace the incorrect words with the code word(s) in <m>C</m> closest to them.
@@ -119,11 +120,10 @@
                   (Note that there may be more than one possible substitution.
                   Find all of the possibilities.)
                 </p>
-              </li>
-            </ol>
-          </p>
-        </li>
-      </ul>
-    </p>
+              </statement>
+            </task>
+          
+        </task>
+     
   </activity>
 </section>

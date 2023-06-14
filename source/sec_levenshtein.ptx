@@ -30,7 +30,7 @@
     and add or delete letters.
     If <m>x = x_1x_2 \cdots x_n</m> is a string of letters,
     we allow the following operations:
-    <ul>
+    <dl>
       <li>
         <title>a deletion:</title>
         <p>
@@ -51,13 +51,12 @@
           where <m>y</m> is an allowable letter and <m>1 \leq i \leq n</m>.
         </p>
       </li>
-    </ul>
+    </dl>
   </p>
+
   <activity>
-    <p>
-      <nbsp/>
-      <ul>
-        <li>
+      <task>
+        <statement>
           <p>
             Using the allowable operations, change the word
             <q>green</q>
@@ -66,8 +65,10 @@
             (Note: the intermediate strings of letters do not have to form recognizable words.)
             How many operations did you use?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             If it took three operations to transform
             <q>green</q>
@@ -105,19 +106,20 @@
             Prove that the Levenshtein distance function is really a metric on the set of all possible words
             (sensical or nonsensical).
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
           <p>
             A spell checker corrects the misspelled word
             <q>tupotagry</q>. Using the Levenshtein metric,
             which word would the spell checker use as the closest to
             <q>tupotagry</q>? Why?
-            <q>topography</q>
-            <q>topology</q>
-            <q>tautology</q>
+            <me>\text{"topography} \qquad \text{"topology"} \qquad \text{"tautology"}</me>
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
 </section>
