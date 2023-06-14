@@ -102,7 +102,7 @@
         <me>
           d\left(\frac{a}{b}, \frac{u}{v}\right) = \max\{| a-u |, | b-v |\}
         </me>
-        (The fact that <m>d</m> is a metric is the topic of <xref ref="ex_MS_Q_metric">Exercise</xref>
+        (The fact that <m>d</m> is a metric is the topic of <xref ref="ex_MS_Q_metric"/>
         <xref ref="ex_MS_Q_metric">on</xref>.) Describe the open ball <m>B(q,2)</m> in <m>Q</m> if <m>q = \frac{2}{5}</m>.
       </p>
     </li>

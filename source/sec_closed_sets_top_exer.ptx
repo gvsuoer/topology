@@ -218,7 +218,7 @@
           <li>
             <p>
               We proved that in a metric space every boundary point of a set <m>A</m> is either a limit point or an isolated point of <m>A</m>.
-              (See <xref ref="ex_MS_boundary_limit_isolated">Exercise</xref>
+              (See <xref ref="ex_MS_boundary_limit_isolated"/>
               on <xref ref="ex_MS_boundary_limit_isolated">page</xref>.)
               Is the same statement true in a topological space?
               Prove your answer.
@@ -318,7 +318,7 @@
         </li>
         <li>
           <p>
-            Show that <m>\R^n</m> with the Zariski topology is not Hausdorff. (<xref ref="ex_TS_Zariski">Exercise</xref>
+            Show that <m>\R^n</m> with the Zariski topology is not Hausdorff. (<xref ref="ex_TS_Zariski"/>
             on <xref ref="ex_TS_Zariski">page</xref>
             shows that a basis for the Zariski topology on <m>\R^n</m> is the collection of sets of the form <m>\R^n \setminus Z(f)</m>,
             where <m>Z(f)</m> is the set of zeros of the polynomial <m>f</m> in <m>n</m> variables.)

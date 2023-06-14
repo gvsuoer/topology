@@ -215,7 +215,7 @@
                   <p>
                     Let <m>a = \left(\frac{1}{2}, 0\right)</m>.
                     Explicitly describe which points are in the set <m>B(a,1)</m> in <m>(\R^2, d_H)</m>.
-                    (See <xref ref="ex_MS_mod_metric">Exercise</xref>
+                    (See <xref ref="ex_MS_mod_metric"/>
                     for the definition of an open ball.)
                   </p>
                 </statement>
