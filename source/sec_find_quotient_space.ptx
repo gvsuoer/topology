@@ -150,7 +150,7 @@
       </p>
       <figure xml:id="F_S_1_basis">
         <caption>A basis element for <m>S^1</m>.</caption>
-        <image width="73%" source="S_1_basis.eps"/>
+        <image width="50%" source="S_1_basis"/>
       </figure>
       <ul>
         <li>

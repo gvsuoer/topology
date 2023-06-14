@@ -9,11 +9,13 @@
     We call any distance function a <term>metric</term>,
     and any space on which a metric is defined is called a <term>metric space</term>.
   </p>
+
   <definition>
+  <idx><h>metric</h></idx>
     <statement>
       <p>
         A metric
-            <idx><h>metric</h></idx>
+            
         on a space <m>X</m> is a function
         <m>d : X \times X \to \R^+ \cup \{0\}</m> that satisfies the properties:
         <ol>
@@ -50,10 +52,11 @@
         <idx><h>triangle inequality</h></idx>
   </p>
   <definition>
+  <idx><h>metric space</h></idx>
     <statement>
       <p>
         A metric space
-            <idx><h>metric space</h></idx>
+            
         is a pair <m>(X,d)</m>, where <m>d</m> is a metric on the space <m>X</m>.
       </p>
     </statement>
@@ -62,7 +65,9 @@
     When the metric is clear from the context,
     we just refer to <m>X</m> as the metric space.
   </p>
+
   <activity xml:id="act_MS_metrics">
+    <introduction>
     <p>
       For each of the following, determine if <m>(X,d)</m> is a metric space.
       If <m>(X,d)</m> is a metric space, explain why.
@@ -72,25 +77,33 @@
       give a geometric description of the unit circle
       (the set of all points in <m>X</m> a distance <m>1</m> from the zero element)
       in the space.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             <m>X = \R</m>, <m>d(x,y) = \max\{|x|,|y|\}</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             <m>X = \R</m>,
             <m>d(x,y) = \begin{cases}0 \amp \text{ if } x=y \\ 1 \amp \text{ if } x \neq y. \end{cases}</m>
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             <m>X = \R^2</m>,
             <m>d((x_1,x_2),(y_1,y_2)) = \max\{| x_1-y_1 |, | x_2-y_2 | \}</m>
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             <m>X = C[0,1]</m>,
             the set of all continuous functions on the interval <m>[0,1]</m>,
@@ -98,14 +111,16 @@
               d(f,g) = \ds \int_0^1 | f(x) - g(x) | \, dx
             </me>.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     It should be noted that not all metric spaces are infinite.
     We discuss one metric on a finite space in the following example.
   </p>
+
   <example xml:id="exp_finite_ms">
     <statement>
       <p>
@@ -114,33 +129,27 @@
       </p>
       <table xml:id="T_finite_metric_ex">
         <title>Table of values for a function <m>d</m></title>
-        <tabular>
-          <row>
-            <cell></cell>
+        <tabular row-headers="yes">
+          <row bottom="minor">
+            <cell right="minor"></cell>
             <cell><m>a</m></cell>
             <cell><m>b</m></cell>
             <cell><m>c</m></cell>
           </row>
-          <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
           <row>
-            <cell><m>a</m></cell>
+            <cell right="minor"><m>a</m></cell>
             <cell><m>0</m></cell>
             <cell><m>3</m></cell>
             <cell><m>5</m></cell>
           </row>
           <row>
-            <cell><m>b</m></cell>
+            <cell right="minor"><m>b</m></cell>
             <cell><m>3</m></cell>
             <cell><m>0</m></cell>
             <cell><m>4</m></cell>
           </row>
           <row>
-            <cell><m>c</m></cell>
+            <cell right="minor"><m>c</m></cell>
             <cell><m>5</m></cell>
             <cell><m>4</m></cell>
             <cell><m>0</m></cell>
@@ -179,6 +188,7 @@
       </p>
     </statement>
   </example>
+
   <p>
     <xref ref="exp_finite_ms"/>
     shows that even finite sets can be metric spaces.
@@ -195,10 +205,12 @@
     For example,
     <m>d(b,c) = d(b,e) + d(e,c) = 9</m> in this example.
   </p>
+
   <figure xml:id="F_Graph_metric">
     <caption>A graph to define a metric.</caption>
-    <image width="73%" source="Graph_metric.eps"/>
+    <image width="30%" source="Graph_metric"/>
   </figure>
+
   <p>
     Just as with the Euclidean and taxicab metrics,
     item (c) in <xref ref="act_MS_metrics"/>
@@ -212,8 +224,8 @@
     </me>.
   </p>
   <p>
-    The metric <m>d_M</m> is called the <term>max</term> metric{.
-        <idx><h>metric</h><h>max</h></idx>
+    <idx><h>metric</h><h>max</h></idx>
+    The metric <m>d_M</m> is called the <term>max</term> metric.
     In the following section we prove that the Euclidean metric is in fact a metric.
     Proofs that <m>d_T</m> and <m>d_M</m> are metrics are left to Exercises <xref ref="ex_Taxicab"/> and <xref ref="ex_Max"/>.
   </p>

@@ -204,19 +204,26 @@
 
     </frontmatter>
 
-    <part xml:id="part-sets-funcs">
+    <!-- <part xml:id="part-sets-funcs">
       <title>Sets and Functions</title>
 
-      <!-- <xi:include href="./chap_sets.ptx"/> -->
+      <xi:include href="./chap_sets.ptx"/>
       <xi:include href="./chap_functions.ptx"/>
+
+    </part> -->
+
+    <part xml:id="part-metric-spaces">
+      <title>Metric Spaces</title>
+      <xi:include href="./chap_metric_spaces.ptx"/>
       
+
     </part>
 
     
 
     <!-- 
     
-    <xi:include href="./chap_metric_spaces.ptx"/>
+    
     <xi:include href="./chap_metric_spaces_apps.ptx"/>
     <xi:include href="./chap_glb.ptx"/>
     <xi:include href="./chap_continuous_functions.ptx"/>

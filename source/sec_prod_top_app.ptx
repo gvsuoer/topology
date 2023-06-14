@@ -16,7 +16,7 @@
   </p>
   <figure xml:id="F_Digital_plane">
     <caption>Left: The digital plane. Middle: <m>4</m>-neighbors of a point. Right: <m>8</m>-neighbors of a point.</caption>
-    <image width="73%" source="digital_grid"/>   <image width="73%" source="neighbors_4"/>   <image width="73%" source="neighbors_8"/>
+    <image width="50%" source="digital_grid"/>   <image width="50%" source="neighbors_4"/>   <image width="50%" source="neighbors_8"/>
   </figure>
   <p>
     A natural start to building a digital topology might be to identify neighborhoods.
@@ -73,7 +73,7 @@
             and <m>S_2</m> the set at right.
             <figure xml:id="F_Digital_curves">
               <caption>Sets <m>S_1</m> (left) and <m>S_2</m> (right) in the digital plane.</caption>
-              <image width="73%" source="digital_curve_1"/> <image width="73%" source="digital_curve_2"/>
+              <image width="50%" source="digital_curve_1"/> <image width="50%" source="digital_curve_2"/>
             </figure>
             Is <m>S_1</m> <m>4</m> connected?
             Is <m>S_1</m> <m>8</m> connected?

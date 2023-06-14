@@ -7,9 +7,9 @@
     </me>
   </p>
   <p>
+    <idx><h>metric</h><h>Euclidean</h></idx>
     The metric <m>d_E</m> called the
     <term>standard</term> or <term>Euclidean</term>
-        <idx><h>metric</h><h>Euclidean</h></idx>
     metric on <m>\R^2</m>.
   </p>
   <p>
@@ -26,41 +26,54 @@
   <p>
     In the next activity we will show that <m>d_E</m> satisfies the first three properties of a metric.
   </p>
+
   <activity>
+    <introduction>
     <p>
       Let <m>x = (x_1, x_2, \ldots,
       x_n)</m> and <m>y = (y_1, y_2, \ldots,
       y_n)</m> be in <m>\R^n</m>.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             Show that <m>d_E(x,y) \geq 0</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Show that <m>d_E(x,y) = d_E(y,x)</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Show that if <m>x=y</m>, then <m>d_E(x,y) = 0</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Show that if <m>d_E(x,y) = 0</m>, then <m>x=y</m>.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     Proving that the triangle inequality is satisfied is often the most difficult part of proving that a function is a metric.
     We will work through this proof with the help of the Cauchy-Schwarz Inequality.
   </p>
+
   <lemma xml:id="lem_CS_Euclidean">
-    <title>Cauchy-Schwarz Inequality\index{Cauchy-Schwarz Inequality}</title>
+    <title>Cauchy-Schwarz Inequality</title>
+  <idx><h>Cauchy-Schwarz Inequality</h></idx>
     <statement>
       <p>
         Let <m>n</m> be a positive integer and <m>x = (x_1, x_2, \ldots,
@@ -73,29 +86,37 @@
       </p>
     </statement>
   </lemma>
+
   <activity>
+    <introduction>
     <p>
       Before we prove the Cauchy-Schwarz Inequality,
       let us analyze it in two specific situations.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             Let <m>x=(1,4)</m> and <m>y = (3,2)</m> in <m>\R^2</m>.
             Verify the Cauchy-Schwarz Inequality in this case.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Let <m>x=(1,2, -3)</m> and <m>y = (-4, 0, -1)</m> in <m>\R^3</m>.
             Verify the Cauchy-Schwarz Inequality in this case.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     Now we prove the Cauchy-Schwarz Inequality.
   </p>
+
   <proof>
     <p>
       Let <m>n</m> be a positive integer and <m>x = (x_1, x_2, \ldots,
@@ -155,9 +176,11 @@
       This establishes the Cauchy-Schwarz Inequality.
     </p>
   </proof>
+
   <p>
     One consequence of the Cauchy-Schwarz Inequality that we will need to show that <m>d_E</m> is a metric is the following.
   </p>
+
   <corollary xml:id="cor_SL">
     <statement>
       <p>
@@ -171,29 +194,37 @@
       </p>
     </statement>
   </corollary>
+
   <activity>
+    <introduction>
     <p>
       Before we prove the corollary,
       let us analyze it in two specific situations.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             Let <m>x=(1,4)</m> and <m>y = (3,2)</m> in <m>\R^2</m>.
-            Verify <xref ref="cor_SL">Corollary</xref> in this case.
+            Verify <xref ref="cor_SL"/> in this case.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Let <m>x=(1,2, -3)</m> and <m>y = (-4, 0, -1)</m> in <m>\R^3</m>.
-            Verify <xref ref="cor_SL">Corollary</xref> in this case.
+            Verify <xref ref="cor_SL"/> in this case.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
-    Now we prove <xref ref="cor_SL">Corollary</xref>.
+    Now we prove <xref ref="cor_SL"/>.
   </p>
+
   <proof>
     <p>
       Let <m>n</m> be a positive integer and <m>x = (x_1, x_2, \ldots,
@@ -211,24 +242,28 @@
       Taking the square roots of both sides yields the desired inequality.
     </p>
   </proof>
+
   <p>
     We can now complete the proof that <m>d_E</m> is a metric.
   </p>
+
   <activity>
     <p>
       Let <m>n</m> be a positive integer and <m>x = (x_1, x_2, \ldots,
       x_n)</m>,
       <m>y=(y_1, y_2, \ldots, y_n)</m>,
       and <m>z=(z_1, z_2, \ldots, z_n)</m> be in <m>\R^n</m>.
-      Use <xref ref="cor_SL">Corollary</xref> to show that
+      Use <xref ref="cor_SL"/> to show that
       <me>
         d_E(x,y) \leq d_E(x,z)+d_E(z,y)
       </me>.
     </p>
   </activity>
+
   <p>
     This concludes our proof that the Euclidean metric is in fact a metric.
   </p>
+
   <p>
     We have seen several metrics in this section,
     some of which are given special names.
@@ -264,13 +299,13 @@
   <p>
     We have only shown that <m>d_T</m> and <m>d_M</m> are metrics on <m>\R^2</m>,
     but similar arguments apply in <m>\R^n</m>.
-    Proofs are left to Exercises <xref ref="ex_Taxicab"/> and ( <xref ref="ex_Max"></xref>).
+    Proofs are left to Exercises <xref ref="ex_Taxicab"/> and <xref ref="ex_Max"></xref>.
     In addition, the <term>discrete metric</term>
         <idx><h>metric</h><h>discrete</h></idx>
     <me>
       d(x,y) = \begin{cases}0 \amp  \text{ if }  x=y \\ 1 \amp  \text{ if }  x \neq y \end{cases}
     </me>
     makes any set <m>X</m> into a metric space.
-    The proof is left to <xref ref="ex_MS_discrete"/>.
+    The proof is left to Exercise <xref ref="ex_MS_discrete"/>.
   </p>
 </section>

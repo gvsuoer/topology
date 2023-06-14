@@ -20,7 +20,7 @@
   </p>
   <figure xml:id="F_T_sin">
     <caption>The topologist's sine curve.</caption>
-    <image width="73%" source="T_sin"/>
+    <image width="50%" source="T_sin"/>
   </figure>
   <p>
     To understand if <m>S</m> is connected,
@@ -94,7 +94,7 @@
     </p>
     <figure xml:id="F_TSC_O">
       <caption>The set <m>O</m>.</caption>
-      <image width="73%" source="O_set"/>
+      <image width="50%" source="O_set"/>
     </figure>
     <p>
       Every element in <m>B</m> is mapped into <m>O</m> by the path <m>p</m>.

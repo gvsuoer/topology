@@ -65,7 +65,7 @@
       </p>
       <figure xml:id="F_sequence_limit">
         <caption>The limit of the sequence <m>\left(\frac{n}{1+n}\right)</m>.</caption>
-        <image width="73%" source="Sequence_limit"/>
+        <image width="50%" source="Sequence_limit"/>
       </figure>
       <p>
         To verify that the limit of the sequence <m>\left(\frac{n}{1+n}\right)</m> is <m>1</m>,
