@@ -83,7 +83,7 @@
         Consider the metric space <m>(X,d)</m> corresponding to the graph in <xref ref="F_Graph_metric_ex"/>.
         <figure xml:id="F_Graph_metric_ex">
           <caption>A graph to define a metric.</caption>
-          <image width="73%" source="Graph_metric.eps"/>
+          <image width="50%" source="Graph_metric"/>
         </figure>
         <ul>
           <li>

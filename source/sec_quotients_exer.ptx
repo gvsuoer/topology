@@ -230,7 +230,7 @@
               as illustrated at left in <xref ref="F_projective_1"/>.
               <figure xml:id="F_projective_1">
                 <caption>Three perspectives of <m>\mathbb{R}P^2</m>.</caption>
-                <image width="73%" source="projective_1.png"/> <image width="73%" source="Projective_disk.eps"/> <image width="73%" source="Projective_square.eps"/>
+                <image width="50%" source="projective_1.png"/> <image width="50%" source="Projective_disk"/> <image width="50%" source="Projective_square"/>
               </figure>
               By projecting the points on the hemisphere down to the <m>xy</m>-plane,
               we can represent <m>S^2/\ssim</m> as a disk whose antipodal points are identified,
@@ -257,9 +257,9 @@
                     is a M&#xf6;bius strip.
                     <figure xml:id="F_projective_2">
                       <caption>Splitting the real projective plane.</caption>
-                      <image width="73%" source="Projective_square.eps"/> <image width="73%" source="Projective_Mobius.eps"/>
+                      <image width="50%" source="Projective_square"/> <image width="50%" source="Projective_Mobius"/>
                       <sidebyside>
-                        { <image width="73%" source="Projective_Mobius_split.eps"/> }
+                        { <image width="50%" source="Projective_Mobius_split"/> }
                       </sidebyside>
                     </figure>
                   </p>
@@ -273,15 +273,15 @@
                     Then explain how <m>\mathbf{R}P^2</m> is obtained by attaching a M&#xf6;bius strip to a disk along its boundary.
                     <figure xml:id="F_projective_3">
                       <caption>Recognizing the space <m>S</m>.</caption>
-                      <image width="73%" source="Projective_Disk_split.eps"/>
+                      <image width="50%" source="Projective_Disk_split"/>
                       <sidebyside>
                         { <m>\xrightarrow{f}</m>}
                       </sidebyside>
-                      <image width="73%" source="Projective_Disk_hom_1.eps"/>
+                      <image width="50%" source="Projective_Disk_hom_1"/>
                       <sidebyside>
                         { <m>\xrightarrow{g}</m>}
                       </sidebyside>
-                      <image width="73%" source="Projective_Disk_hom_2.eps"/>
+                      <image width="50%" source="Projective_Disk_hom_2"/>
                     </figure>
                   </p>
                 </li>

@@ -51,7 +51,7 @@
             So <m>S</m> is a cut set of <m>D</m>.
             <figure xml:id="F_Cut_set_disk">
               <caption>The disk <m>D</m> and cut set <m>S</m>.</caption>
-              <image width="73%" source="Cut_set_disk.eps"/>
+              <image width="50%" source="Cut_set_disk"/>
             </figure>
           </p>
         </li>

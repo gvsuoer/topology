@@ -337,7 +337,7 @@
         The sets <m>B(n)</m> are illustrated in <xref ref="F_Digital_line"/>.
         <figure xml:id="F_Digital_line">
           <caption>The digital line topology.</caption>
-          <image width="73%" source="Digital_line"/>
+          <image width="50%" source="Digital_line"/>
         </figure>
         In this exercise we explore the collection <m>\B = \{B(n)\}</m>.
         <ul>

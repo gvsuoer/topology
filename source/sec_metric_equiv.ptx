@@ -108,6 +108,6 @@
   </p>
   <figure xml:id="F_Equivalence">
     <caption>The open unit balls in <m>(\R^2, d_E)</m> and <m>(\R^2, d_M)</m>.</caption>
-    <image width="73%" source="Equivalence.eps"/>
+    <image width="50%" source="Equivalence"/>
   </figure>
 </section>

@@ -110,7 +110,7 @@
   </p>
   <figure xml:id="F_M_cube">
     <caption>A standard 3-cube <m>Q^3_M</m>.</caption>
-    <image width="73%" source="M_cube.png"/>
+    <image width="50%" source="M_cube.png"/>
   </figure>
   <p>
     An important fact about standard <m>n</m>-cubes is that they are compact subsets of <m>\R^n</m>.
@@ -139,7 +139,7 @@
     </p>
     <figure xml:id="F_Cubes">
       <caption>Left : <m>Q_1</m>. Middle: <m>Q_2</m>. Right: Labeling the corners.</caption>
-      <image width="73%" source="HB_cube"/>   <image width="73%" source="HB_cube_2"/>    <image width="73%" source="HB_cube_3"/>
+      <image width="50%" source="HB_cube"/>   <image width="50%" source="HB_cube_2"/>    <image width="50%" source="HB_cube_3"/>
     </figure>
     <p>
       Let <m>Q'_0</m> be one of these sub-cubes.

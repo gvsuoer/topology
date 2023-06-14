@@ -123,7 +123,7 @@
             </hint>
             <figure xml:id="F_floor">
               <caption>The graph of <m>p(x) = x - \lfloor x\rfloor</m>.</caption>
-              <image width="73%" source="floor.eps"/>
+              <image width="50%" source="floor"/>
             </figure>
           </p>
         </li>
@@ -182,7 +182,7 @@
   </p>
   <figure xml:id="F_Quotient_tube">
     <caption>A tube as the identification space <m>X/\ssim</m>.</caption>
-    <image width="73%" source="Cylinder_identification.eps"/>
+    <image width="50%" source="Cylinder_identification"/>
   </figure>
   <example>
     <statement>
@@ -220,7 +220,7 @@
             </hint>
             <figure xml:id="F_Quotients_activity">
               <caption>From left to right: the identifications for parts i., ii., and iii.</caption>
-              <image width="73%" source="Mobius_identification.eps"/> <image width="73%" source="Torus_identification.eps"/> <image width="73%" source="Quotient_sphere_1.png"/>
+              <image width="50%" source="Mobius_identification"/> <image width="50%" source="Torus_identification"/> <image width="50%" source="Quotient_sphere_1.png"/>
             </figure>
           </p>
         </li>
@@ -273,6 +273,6 @@
   </p>
   <figure xml:id="F_Klein_bottle">
     <caption>Identifications for the Klein Bottle.</caption>
-    <image width="73%" source="Klein_identification.eps"/>
+    <image width="50%" source="Klein_identification"/>
   </figure>
 </section>

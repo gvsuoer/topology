@@ -136,7 +136,7 @@
   <example xml:id="exp_linear_continuous">
     <statement>
       <p>
-        As an example of <xref ref="cor_continuity_balls">Corollary</xref>,
+        As an example of <xref ref="cor_continuity_balls"/>,
         we prove that the square function from <m>\R</m> to <m>\R</m> is a continuous function.
         Let <m>X = \R</m> with the Euclidean metric <m>d_E</m>,
         and let <m>f: X \to X</m> be defined by <m>f(x) = x^2</m>.

@@ -1,7 +1,7 @@
-<section xml:id="sec_metric_space_exer">
-  <title>Exercises</title>
-  <ol>
-    <li xml:id="ex_MS_discrete">
+<exercises xml:id="sec_metric_space_exer">
+  
+  <exercise xml:id="ex_MS_discrete">
+    <statement>
       <p>
         Let <m>X</m> be a set.
         Show that the function <m>d</m>
@@ -12,8 +12,12 @@
         </me>
         is a metric.
       </p>
-    </li>
-    <li xml:id="ex_MS_mod_metric">
+    </statement>
+  </exercise>
+
+  <exercise xml:id="ex_MS_mod_metric">
+  <introduction>
+  
       <p>
         Let <m>X = \{1,3,5\} \subset \Z</m> and define
         <m>d: X \times X \to \R</m> by <m>d(x,y) = xy - 1 \pmod{n}</m>.
@@ -50,35 +54,45 @@
             </p>
           </li>
         </ul>
-        <ul>
-          <li>
+        </p>
+        </introduction>
+        <task>
+          <statement>
             <p>
               <m>n = 4</m>
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               <m>n = 8</m>
             </p>
-          </li>
-        </ul>
-      </p>
-    </li>
-    <li xml:id="ex_MS_Q_metric">
+          </statement>
+        </task>
+      
+    </exercise>
+
+    <exercise xml:id="ex_MS_Q_metric">
+    <introduction>
       <p>
         Let <m>Q</m> be the set of all rational numbers in reduced form.
-        A rational number <m>\frac{r}{s}</m> is in reduced form if <m>s > 0</m> and <m>r</m> and <m>s</m> have no common factors larger than <m>1</m>.
+        A rational number <m>\frac{r}{s}</m> is in reduced form if <m>s \gt 0</m> and <m>r</m> and <m>s</m> have no common factors larger than <m>1</m>.
         Define <m>d : Q \times Q \to \R</m> by
         <me>
           d\left(\frac{a}{b}, \frac{r}{s}\right) = \max\{| a-r |, | b-s |\}
         </me>.
-        <ul>
-          <li>
+      </p>
+    </introduction>
+        <task>
+          <statement>
             <p>
               Prove that <m>d</m> is a metric.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               A metric allows us to determine which elements in our metric space are ''close'' together.
               Describe the set of elements in <m>Q</m> that are a distance no more than <m>1</m> from
@@ -87,8 +101,10 @@
               describe the open ball centered at <m>\frac{2}{3}</m> with radius <m>1</m>
               (see <xref ref="def_ms_open_ball"/>).
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               If <m>a</m>, <m>b</m>,
               and <m>c</m> are elements of a metric space <m>(X, d_X)</m>,
@@ -97,11 +113,13 @@
               there are infinitely many different rational numbers between <m>0</m> and <m>1</m> (the rational numbers between <m>0</m> and <m>1</m> that lie on the Euclidean line through <m>0</m> and <m>1</m>.
               Describe all of the points in <m>(\Q,d)</m> that are between <m>0</m> and <m>1</m>.
             </p>
-          </li>
-        </ul>
-      </p>
-    </li>
-    <li>
+          </statement>
+        </task>
+    
+    </exercise>
+
+    <exercise>
+    <introduction>
       <p>
         Let <m>(\Q,d)</m> be the metric space from <xref ref="ex_MS_Q_metric"/>.
         If <m>a</m>, <m>b</m>,
@@ -111,50 +129,67 @@
         Using the Euclidean metric on <m>\Q</m>,
         there are infinitely many different rational numbers between <m>0</m> and <m>1</m> (the rational numbers between <m>0</m> and <m>1</m> that lie on the Euclidean line through <m>0</m> and <m>1</m>.
         In this exercise we explore numbers that are between others in the space <m>(\Q,d)</m>.
-        <ul>
-          <li>
+      </p>
+    </introduction>
+        <task>
+          <statement>
             <p>
               Find all of the elements in <m>(\Q,d)</m> that are between <m>0</m> and <m>1</m>.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               Which is closer to <m>0</m> in <m>(\Q,d)</m>:
               <m>1</m> or <m>\frac{1}{3}</m>?
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               Now find all of the elements in <m>(\Q,d)</m> that are between <m>0</m> and <m>\frac{1}{3}</m>.
             </p>
-          </li>
-        </ul>
-      </p>
-    </li>
-    <li xml:id="ex_Taxicab">
+          </statement>
+        </task>
+      
+    </exercise>
+
+    <exercise xml:id="ex_Taxicab">
+    <statement>
       <p>
         Prove that the taxicab metric <m>d_T</m> is a metric on <m>\R^n</m>.
       </p>
-    </li>
-    <li xml:id="ex_Max">
+    </statement>
+    </exercise>
+
+    <exercise xml:id="ex_Max">
+    <introduction>
       <p>
         Let <m>A</m> and <m>B</m> be nonempty finite subsets of <m>\R^n</m>,
         and let <m>A+B = \{a+b \mid a \in A, b \in B\}</m>.
-        <ul>
-          <li>
+      </p>
+    </introduction>
+        <task>
+          <statement>
             <p>
               Prove that <m>\max (A+B) \leq \max A + \max B</m>.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               Prove that the max metric <m>d_M</m> is a metric on <m>\R^n</m>.
             </p>
-          </li>
-        </ul>
-      </p>
-    </li>
-    <li xml:id="ex_MS_hub">
+          </statement>
+        </task>
+      
+    </exercise>
+
+    <exercise xml:id="ex_MS_hub">
+    <introduction>
       <p>
         If <m>x = (x_1, x_2, \ldots, x_n)</m>,
         we let <m>|x| = \sqrt{x_1^2+x_2^2+ \cdots + x_n^2}</m>.
@@ -164,43 +199,49 @@
         <me>
           d_H(x,y) = \begin{cases}0 \amp \text{ if }  x=y \\ |x|+|y| \amp \text{ otherwise } . \end{cases}
         </me>
-        <ul>
-          <li>
+        </p>
+    </introduction>
+        <task>
+          <statement>
             <p>
               Show that <m>d_H</m> is a metric
               (called the <term>hub</term> metric).
             </p>
-          </li>
-          <li>
-            <p>
-              <nbsp/>
-              <ol label="i">
-                <li>
+          </statement>
+        </task>
+        <task>
+              <task>
+                <statement>
                   <p>
                     Let <m>a = \left(\frac{1}{2}, 0\right)</m>.
                     Explicitly describe which points are in the set <m>B(a,1)</m> in <m>(\R^2, d_H)</m>.
                     (See <xref ref="ex_MS_mod_metric">Exercise</xref>
                     for the definition of an open ball.)
                   </p>
-                </li>
-                <li>
+                </statement>
+              </task>
+              <task>
+                <statement>
                   <p>
                     Let <m>a = (3,4)</m>.
                     Explicitly describe which points are in the set <m>B(a,1)</m> in <m>(\R^2, d_H)</m>.
                   </p>
-                </li>
-                <li>
+                </statement>
+              </task>
+              <task>
+                <statement>
                   <p>
                     Now explicitly describe all open balls in <m>(\R^2, d_H)</m>.
                   </p>
-                </li>
-              </ol>
-            </p>
-          </li>
-        </ul>
-      </p>
-    </li>
-    <li>
+                </statement>
+              </task>
+            
+          </task>
+        
+    </exercise>
+  
+  <exercise>
+    <introduction>
       <p>
         Let <m>\Z</m> be the set of integers and let <m>p</m> be a prime.
         For each pair of distinct integers <m>m</m> and <m>n</m> there is an integer
@@ -216,13 +257,17 @@
         <me>
           d(m,n) = \begin{cases}0 \amp \text{ if }  m=n \\ \frac{1}{p^t} \amp \text{ if }  m \neq n. \end{cases}
         </me>
-        <ul>
-          <li>
+      </p>
+    </introduction>
+        <task>
+          <statement>
             <p>
               Determine the values of <m>d(62,170)</m> using <m>p=3</m> and <m>d(14008,2003)</m> using <m>p=7</m>.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               Prove that if <m>a</m>, <m>b</m>,
               and <m>c</m> are in <m>\Z</m>, then
@@ -230,28 +275,36 @@
                 t(a,c) \geq \min\{t(a,b), t(b,c)\}
               </me>.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               Prove that <m>(\Z,d)</m> is a metric space.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               Let <m>p = 3</m>.
               Describe the set of all elements <m>x</m> in <m>(\Z,d)</m> such that <m>d(x,0) = 1</m>.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               Continue with <m>p=3</m>.
               Describe the set of all elements <m>x</m> in <m>(\Z,d)</m> such that <m>d(x,0) \lt \frac{1}{2}</m>.
             </p>
-          </li>
-        </ul>
-      </p>
-    </li>
-    <li>
+          </statement>
+        </task>
+      
+  </exercise>
+
+  <exercise>
+    <introduction>
       <p>
         Let <m>(X, d_X)</m> and <m>(Y, d_Y)</m> be metric spaces.
         We can make the Cartesian product
@@ -261,8 +314,10 @@
           d'((x_1,y_1), (x_2, y_2)) = \max\{d_X(x_1,x_2), d_Y(y_1,y_2)\}
         </me>.
         You may assume without proof that <m>d'</m> is a metric on <m>X \times Y</m>.
-        <ul>
-          <li>
+      </p>
+    </introduction>
+        <task>
+          <statement>
             <p>
               Let <m>(X, d_X) = (\R^2, d_M)</m> and <m>(Y, d_Y) = (\R^2, d_T)</m>.
               Let <m>u = ((1,2), (1,-1))</m> and <m>v = ((0,5),(2,-2))</m>.
@@ -279,8 +334,10 @@
                 d_T((x_1,x_2),(y_1,y_2)) = | x_1-y_1 | + | x_2-y_2 |
               </me>.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               Let <m>(X, d_X) = (\R, d_E)</m> and <m>(Y, d_Y) = (\R, d)</m>,
               where <m>d</m> is the discrete metric.
@@ -294,11 +351,12 @@
               what the open ball <m>B(a,1)</m> looks like in the product space <m>X \times Y</m>.
               Draw a picture of this open ball.
             </p>
-          </li>
-        </ul>
-      </p>
-    </li>
-    <li>
+          </statement>
+        </task>
+  </exercise>
+
+  <exercise>
+    <statement>
       <p>
         Let <m>X = \R^+</m>, the set of positive reals,
         and define <m>d: X \times X \to \R</m> by
@@ -308,8 +366,11 @@
         Is <m>d</m> is a metric on <m>X</m>?
         Prove your answer.
       </p>
-    </li>
-    <li xml:id="ex_1_over_1_plus_t_metric">
+    </statement>
+  </exercise>
+
+  <exercise xml:id="ex_1_over_1_plus_t_metric">
+    <statement>
       <p>
         Let <m>d: \R \times \R \to \R</m> be defined by
         <me>
@@ -319,8 +380,11 @@
         note that <m>d(x,y) = f(|x-y|)</m> where <m>f(t) = \frac{t}{t+1}</m>,
         and <m>f</m> is an increasing function.)
       </p>
-    </li>
-    <li>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
       <p>
         Let <m>(X,d)</m> be a metric space and <m>k</m> be a constant.
         Define <m>kd: X \times X \to \R</m> by
@@ -330,8 +394,11 @@
         Under what, if any, conditions is <m>kd</m> a metric on <m>X</m>.
         Justify your answer.
       </p>
-    </li>
-    <li>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <introduction>
       <p>
         A real valued function <m>f</m> on an interval is <term>concave</term> if
         <men xml:id="eq_concave">
@@ -341,20 +408,29 @@
         Note that the expression <m>(1-\alpha)x + \alpha y</m> is linear in <m>\alpha</m> and is equal to <m>x</m> when
         <m>\alpha = 0</m> and <m>y</m> when <m>\alpha = 1</m>.
         So <m>(1-\alpha)x + \alpha y</m> is a parameterization of the line segment joining <m>x</m> to <m>y</m>.
-        As <xref ref="F_concave"/> indicates,
+        As <xref ref="F_concave"/> indicates, equation
         <xref ref="eq_concave"/> implies that the graph of a concave function <m>f</m> on any interval <m>[x,y]</m> lies above the secant line joining the points <m>(x,f(x))</m> and <m>(y,f(y))</m>.
-        <figure xml:id="F_concave">
+      </p>
+      <figure xml:id="F_concave">
           <caption>A concave function.</caption>
-          <image width="73%" source="Concave"/>
+          <image width="30%" source="Concave"/>
         </figure>
-        <ul>
-          <li>
+    </introduction>
+        <task>
+          <statement>
             <p>
               Let <m>f(x) = -x^2</m> map <m>\R</m> to <m>\R</m> with the standard Euclidean metric.
-              Show that <m>f</m> is concave on the interval <m>[-1,1]</m>. (Hint: Start with the fact that <m>\alpha(1-\alpha)(x-y)^2 \geq 0</m>.)
+              Show that <m>f</m> is concave on the interval <m>[-1,1]</m>.
             </p>
-          </li>
-          <li>
+          </statement>
+          <hint>
+            <p>
+              Start with the fact that <m>\alpha(1-\alpha)(x-y)^2 \geq 0</m>.
+            </p>
+          </hint>
+        </task>
+        <task>
+          <statement>
             <p>
               Show that if <m>f</m> is a concave function on
               <m>[0,\infty)</m> and <m>f(0) \geq 0</m>,
@@ -362,64 +438,77 @@
               <me>
                 f(a) + f(b) \geq f(a+b)
               </me>.
-              <hint>
+              
+            </p>
+          </statement>
+          <hint>
                 <p>
                   Consider <xref ref="eq_concave"/> with <m>y=0</m>.
                   Then use the fact that <m>\frac{a}{a+b}</m> is in <m>[0,1]</m>.
                 </p>
               </hint>
-            </p>
-          </li>
-          <li>
+        </task>
+        <task>
+          <statement>
             <p>
               Suppose <m>(X,d)</m> is a metric space and <m>f: [0, \infty) \to [0, \infty)</m> is an increasing,
               concave function such that
               <m>f(x) = 0</m> if and only if <m>x=0</m>.
               Prove that <m>f \circ d</m> is a metric on <m>X</m>.
             </p>
-          </li>
-        </ul>
-      </p>
-    </li>
-    <li>
+          </statement>
+        </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
       <p>
         For each of the following, answer true if the statement is always true.
         If the statement is only sometimes true or never true,
         answer false and provide a concrete example to illustrate that the statement is false.
         If a statement is true, explain why.
-        <ul>
-          <li>
+      </p>
+    </introduction>
+        <task>
+          <statement>
             <p>
               The function <m>d: \R \times \R \to \R</m> defined by
               <m>d(x,y) = (x-y)^2</m> is a metric on <m>\R</m>.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               Every nonempty set can be made into a metric space.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               It is possible to define an infinite number of metrics on every set containing at least two elements.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               Let <m>(X, d_X)</m> and <m>(Y, d_Y)</m> be metric spaces with <m>|X| \geq 2</m>.
               Then the function <m>d: X \times Y \to \R</m> defined by
               <m>d((a,b),(c,d)) = d_X(a,c)d_Y(b,d)</m> is a metric on <m>X \times Y</m>.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               Let <m>(X,d)</m> be a metric space.
               If <m>X</m> is infinite,
               then the range of <m>d</m> is also an infinite set.
             </p>
-          </li>
-        </ul>
-      </p>
-    </li>
-  </ol>
-</section>
+          </statement>
+        </task>
+      
+    </exercise>
+  </exercises>

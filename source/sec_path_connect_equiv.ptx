@@ -16,7 +16,7 @@
   </p>
   <figure xml:id="F_path_transitive">
     <caption>A path from <m>a</m> to <m>c</m>.</caption>
-    <image width="73%" source="path_transitive"/>
+    <image width="50%" source="path_transitive"/>
   </figure>
   <lemma>
     <title>The Gluing Lemma</title>
@@ -34,7 +34,7 @@
   </lemma>
   <figure xml:id="F_Gluing_Lemma">
     <caption>The Gluing Lemma.</caption>
-    <image width="73%" source="Gluing_Lemma.eps"/>
+    <image width="50%" source="Gluing_Lemma"/>
   </figure>
   <proof>
     <p>

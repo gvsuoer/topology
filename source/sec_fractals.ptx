@@ -92,7 +92,7 @@
             and let <m>C = \{(1,0), (-1,0)\}</m> as shown in <xref ref="F_Hausdorff_Example"/>.
             <figure xml:id="F_Hausdorff_Example">
               <caption>Sets <m>A</m>, <m>B</m>, and <m>C</m>.</caption>
-              <image width="73%" source="HM_Example"/>
+              <image width="50%" source="HM_Example"/>
             </figure>
             Determine <m>h(A,B)</m>, <m>h(A,C)</m>, and <m>h(B,C)</m>,
             and verify that <m>h(A,C) \leq h(A,B) + h(B,C)</m>.
@@ -151,16 +151,16 @@
               <caption><m>S_i</m> for <m>i</m> equal to 0, 1, 2, and 8.</caption>
               <tabular>
                 <row>
-                  <cell><image width="73%" source="S0.eps"/></cell>
-                  <cell><image width="73%" source="S1.eps"/></cell>
+                  <cell><image width="50%" source="S0"/></cell>
+                  <cell><image width="50%" source="S1"/></cell>
                 </row>
                 <row>
                   <cell><m>S_0</m></cell>
                   <cell><m>S_1</m></cell>
                 </row>
                 <row>
-                  <cell><image width="73%" source="S2.eps"/></cell>
-                  <cell><image width="73%" source="S8.eps"/></cell>
+                  <cell><image width="50%" source="S2"/></cell>
+                  <cell><image width="50%" source="S8"/></cell>
                 </row>
                 <row>
                   <cell><m>S_2</m></cell>
