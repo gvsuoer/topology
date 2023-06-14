@@ -44,7 +44,7 @@
         <me>
           d(x,y) = \begin{cases}0 \amp \text{ if }  x=y \\ 1 \amp \text{ if }  x \neq y. \end{cases}
         </me>
-        <xref ref="ex_MS_discrete">Exercise</xref>
+        <xref ref="ex_MS_discrete"/>
         on <xref ref="ex_MS_discrete">page</xref>
         asks us to show that <m>d</m> is a metric
         (the discrete metric)
@@ -173,7 +173,7 @@
         Prove that <m>f(x) = 0</m> for every <m>x \in \R</m>.
         <hint>
           <p>
-            Use <xref ref="ex_GLB_rational">Exercise</xref>
+            Use <xref ref="ex_GLB_rational"/>
             on <xref ref="ex_GLB_rational">page</xref>.
           </p>
         </hint>
@@ -188,9 +188,9 @@
         Show that <m>f</m> is not continuous at any point in <m>\R</m>.
         <hint>
           <p>
-            Use <xref ref="ex_GLB_rational">Exercise</xref>
+            Use <xref ref="ex_GLB_rational"/>
             on <xref ref="ex_GLB_rational">page</xref>
-            and <xref ref="ex_GLB_irrational">Exercise</xref>
+            and <xref ref="ex_GLB_irrational"/>
             on <xref ref="ex_GLB_irrational">page</xref>.
           </p>
         </hint>

@@ -10,7 +10,7 @@
           A greatest lower bound
           (or infimum)
           for a nonempty subset <m>S</m> of <m>\R</m> that is bounded below is a real number <m>m</m> such that
-          <ol label="i">
+          <ol marker="i">
             <li>
               <p>
                 <m>m</m> is a lower bound for <m>S</m> and
@@ -31,7 +31,7 @@
           A least upper bound
           (or supremum)
           for a nonempty subset <m>S</m> of <m>\R</m> that is bounded above is a real number <m>M</m> such that
-          <ol label="i">
+          <ol marker="i">
             <li>
               <p>
                 <m>M</m> is an upper bound for <m>S</m> and

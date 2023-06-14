@@ -340,7 +340,7 @@
           </li>
           <li>
             <p>
-              Consider the Sorgenfrey line from <xref ref="ex_Closed_Sets_Sorgenfrey">Exercise</xref>
+              Consider the Sorgenfrey line from <xref ref="ex_Closed_Sets_Sorgenfrey"/>
               on <xref ref="ex_Closed_Sets_Sorgenfrey">page</xref>.
               Recall that the Sorgenfrey line is the space <m>\R</m> with a basis <m>\B = \{[a,b) \mid a \lt b \text{ in } \R\}</m> for its topology.
               Show that the Sorgenfrey line is Hausdorff but not locally compact.

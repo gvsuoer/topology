@@ -115,7 +115,7 @@
               then <m>\sum_{k=1}^{\infty} (x_k-y_k)^2</m> is also finite.
               <hint>
                 <p>
-                  Consider a finite sum and use <xref ref="ex_Subspace_monotone_convergence">Exercise</xref>.
+                  Consider a finite sum and use <xref ref="ex_Subspace_monotone_convergence"/>.
                 </p>
               </hint>
             </p>
