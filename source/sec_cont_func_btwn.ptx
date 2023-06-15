@@ -19,54 +19,61 @@
     Using this metric we can reformulate what it means for a function
     <m>f : \R \to \R</m> to be continuous at a point.
   </p>
+
   <definition>
     <title>Alternate Definition</title>
     <statement>
       <p>
         A function <m>f : \R \to \R</m> is continuous at a point <m>a</m> if,
-        given any <m>\epsilon > 0</m>,
-        there exists a <m>\delta > 0</m> so that
+        given any <m>\epsilon \gt 0</m>,
+        there exists a <m>\delta \gt 0</m> so that
         <m>d_E(x,a) \lt \delta</m> implies <m>d_E(f(x), f(a)) \lt \epsilon</m>.
       </p>
     </statement>
   </definition>
+
   <p>
     This alternate definition depends on the metric <m>d_E</m>.
     We could easily replace the metric <m>d</m> with any other metric we choose.
     This allows us to define continuity at a point for functions between metric spaces.
   </p>
+
   <definition>
+  <idx><h>continuity at a point in a metric space</h></idx>
     <statement>
       <p>
         Let <m>(X,d_X)</m> and <m>(Y, d_Y)</m> be metric spaces.
-        A function <m>f:X \to Y</m> is continuous<idx><h>continuity at a point in a metric space</h></idx> at <m>a \in X</m> if,
-        given any <m>\epsilon > 0</m>,
-        there exists a <m>\delta > 0</m> so that
+        A function <m>f:X \to Y</m> is continuous at <m>a \in X</m> if,
+        given any <m>\epsilon \gt 0</m>,
+        there exists a <m>\delta \gt 0</m> so that
         <m>d_X(x,a)\lt \delta</m> implies <m>d_Y(f(x), f(a)) \lt \epsilon</m>.
       </p>
     </statement>
   </definition>
+
   <p>
     Once we have defined continuity at a point,
     we can define continuous functions.
   </p>
+
   <definition>
+  <idx><h>continuous function</h></idx>
     <statement>
       <p>
         Let <m>(X,d_X)</m> and <m>(Y, d_Y)</m> be metric spaces.
         A function <m>f:X \to Y</m> is continuous
-            <idx><h>continuous function</h></idx>
         if <m>f</m> is continuous at every point in <m>X</m>.
       </p>
     </statement>
   </definition>
+
   <example>
     <statement>
       <p>
         In general, to prove that a function <m>f:X \to Y</m> is continuous,
         where <m>(X,d_X)</m> and <m>(Y, d_Y)</m> are metric spaces,
         we begin by choosing an arbitrary element <m>a</m> in <m>X</m>.
-        Then we let <m>\epsilon</m> be a number greater than <m>0</m> and show that there is a <m>\delta > 0</m> so that
+        Then we let <m>\epsilon</m> be a number greater than <m>0</m> and show that there is a <m>\delta \gt 0</m> so that
         <m>d_Y(f(x),f(a)) \lt  \epsilon</m> whenever <m>d_X(x,a) \lt  \delta</m>.
         The <m>\delta</m> we need cannot depend on <m>x</m>
         (since <m>x</m> isn't known),
@@ -81,14 +88,15 @@
         </me>.
       </p>
       <p>
-        The proof that <m>d_X</m> is a metric is left for Exercise <xref ref="ex_min_1_metric"/>.
+        The proof that <m>d_X</m> is a metric is left for <xref ref="ex_min_1_metric"/>.
         Consider <m>f : X \to Y</m> defined by <m>f(x) = x^2</m>,
         where <m>(Y,d_Y) = (\R, d_E)</m>.
         To show that <m>f</m> is continuous,
-        we let <m>a \in \R</m> and let <m>\epsilon > 0</m>.
+        we let <m>a \in \R</m> and let <m>\epsilon \gt 0</m>.
       </p>
       <blockquote>
-        <term>Scratch work.</term> What happens next is not part of the proof, but shows how we go about finding a <m>\delta</m> we need. We are looking for <m>\delta > 0</m> such that <m>d_X(x,a) \lt  \delta</m> implies that <m>d_E(f(x),f(a)) \lt  \epsilon</m>. That is, we want to make
+        <p>
+        <em>Scratch work.</em> What happens next is not part of the proof, but shows how we go about finding a <m>\delta</m> we need. We are looking for <m>\delta \gt 0</m> such that <m>d_X(x,a) \lt  \delta</m> implies that <m>d_E(f(x),f(a)) \lt  \epsilon</m>. That is, we want to make
         <me>
           d_E(f(x),f(a)) = \sqrt{(f(x)-f(a))^2} = |f(x)-f(a)| = |x^2-a^2| \lt  \epsilon
         </me>
@@ -106,6 +114,7 @@
         </me>.
         To make this product less that <m>\epsilon</m>, we can choose <m>\delta</m> such that <m>\delta(1+2|a|) \lt  \epsilon</m> or <m>\delta \lt  \frac{\epsilon}{1+2|a|}</m>. That is, there is a function <m>C</m> of <m>\epsilon</m> that gives us the <m>\delta</m> we want, namely <m>\delta = C(a,\epsilon) = \left\{1, \frac{\epsilon}{1+2|a|}\right\}</m>.
         Now we ignore this paragraph and present the proof, which is essentially reversing the steps we just made. If the steps can't be reversed, then we have to rethink our argument. The next step in the proof might seem like magic to the uninitiated reader, but we have seen behind the curtain so it isn't a mystery to us.
+        </p>
       </blockquote>
       <p>
         Let <m>\delta</m> be a positive number less than <m>\min\left\{1, \frac{\epsilon}{1+2|a|}\right\}</m>.
@@ -137,9 +146,11 @@
       </p>
     </statement>
   </example>
+
   <p>
     Not all functions are continuous as we see in the next example.
   </p>
+
   <example xml:id="exp_not_continuous">
     <statement>
       <p>
@@ -148,7 +159,7 @@
         <m>x \neq y</m>.) Let <m>a \in X</m> and let <m>0 \lt \epsilon \lt 1</m>.
       </p>
       <p>
-        Let <m>\delta > 0</m>, and let <m>x = a+\frac{\delta}{2}</m>.
+        Let <m>\delta \gt 0</m>, and let <m>x = a+\frac{\delta}{2}</m>.
         Then <m>x \neq a</m> and <m>d_X(x,a) \lt  \delta</m>.
         However,
         <me>
@@ -157,21 +168,22 @@
       </p>
       <p>
         So if <m>0 \lt \epsilon \lt 1</m>,
-        there is no <m>\delta > 0</m> such that
+        there is no <m>\delta \gt 0</m> such that
         <m>d_X(x,a) \lt \delta</m> implies that <m>d_Y(f(x),f(a)) \lt \epsilon</m>.
         We conclude that <m>f</m> is continuous at no point in <m>X</m>.
       </p>
     </statement>
   </example>
+
   <p>
     Certain functions are always continuous,
     as the next activity shows.
   </p>
+
   <activity xml:id="act_id_constant_continuous">
-    <p>
-      <nbsp/>
-      <ul>
-        <li>
+   
+      <task>
+        <statement>
           <p>
             Let <m>(X, d_X)</m> and <m>(Y, d_Y)</m> be metric spaces,
             and let <m>b \in Y</m>.
@@ -179,8 +191,10 @@
             <m>f(x) = b</m> for every <m>x \in X</m>.
             Show that <m>f</m> is a continuous function.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Let <m>(X, d)</m> be a metric space.
             Define the function <m>i_X : X \to X</m> by
@@ -191,19 +205,24 @@
               <idx><h>identity function</h></idx>
             on <m>X</m>.)
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Why doesn't the argument in part (b) contradict <xref ref="exp_not_continuous"/>?
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     More complicated examples are in the next activity.
   </p>
+
   <activity>
+    <introduction>
     <p>
       Let <m>X = (\R^2, d_T)</m> and <m>Y = (\R^2, d_M)</m>, where
       <me>
@@ -215,20 +234,24 @@
       </me>
       is the max metric.
       Define <m>f : \R^2 \to \R^2</m> by <m>f((a,b)) = (a+b, b)</m>.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             Is <m>f</m> a continuous function from <m>X</m> to <m>Y</m>?
             Justify your answer.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Is <m>f</m> a continuous function from <m>Y</m> to <m>X</m>?
             Justify your answer.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
 </section>

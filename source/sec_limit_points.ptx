@@ -119,7 +119,7 @@
     We can't define convergence in a topological space using a metric,
     but we can use open sets.
     Recall that a sequence <m>(x_n)</m> in a metric space <m>(X,d)</m> converges to a point <m>x</m> in the space if,
-    given <m>\epsilon > 0</m> there exists a positive integer <m>N</m> such that
+    given <m>\epsilon \gt 0</m> there exists a positive integer <m>N</m> such that
     <m>d(x_n,x) \lt \epsilon</m> for all <m>n \geq N</m>.
     In other words,
     every open ball centered at <m>x</m> contains all of the entries of the sequence past a certain point.

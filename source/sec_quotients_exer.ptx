@@ -5,7 +5,7 @@
       <p>
         Let <m>X</m> be the real numbers with the standard topology and let <m>p: X \to \{a,b,c\}</m> be defined by
         <me>
-          p(x) = \begin{cases}a \amp \text{ if }  x \lt  0 \\ b \amp \text{ if }  x = 0 \\ c \amp \text{ if }  x > 0. \end{cases}
+          p(x) = \begin{cases}a \amp \text{ if }  x \lt  0 \\ b \amp \text{ if }  x = 0 \\ c \amp \text{ if }  x \gt 0. \end{cases}
         </me>
         What is the quotient topology?
       </p>
@@ -125,7 +125,7 @@
       <p>
         Let <m>X = I \times I</m> where <m>I</m> is the interval <m>[0,1]</m> with the standard metric topology,
         and define an equivalence relation on <m>X</m> by
-        <m>(s_1, t_1) \sim (s_2,t_2)</m> when <m>t_1 = t_2 > 0</m> and
+        <m>(s_1, t_1) \sim (s_2,t_2)</m> when <m>t_1 = t_2 \gt 0</m> and
         <m>x \sim x</m> for all other <m>x \in X</m>.
         <ul>
           <li>

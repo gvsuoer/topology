@@ -59,7 +59,7 @@
     <p>
       Suppose <m>x \in U</m>.
       The fact that <m>U</m> is an open set implies that there exists
-      <m>\epsilon > 0</m> such that <m>B(x, \epsilon) \subseteq U</m>.
+      <m>\epsilon \gt 0</m> such that <m>B(x, \epsilon) \subseteq U</m>.
       But then <m>B(x, \epsilon) \cap V = \emptyset</m> and so
       <m>d(x,v) \geq \epsilon</m> for every <m>v \in V</m>.
       This means that <m>x+\epsilon \lt v</m> for every <m>v \in V'</m>,
@@ -70,7 +70,7 @@
       It follows that <m>x \in V</m>.
       Since <m>a \in U</m>, we know that <m>x \neq a</m>.
       The fact that <m>V</m> is an open set tells us that there exists
-      <m>\delta > 0</m> such that <m>B(x, \delta) \subseteq V</m>.
+      <m>\delta \gt 0</m> such that <m>B(x, \delta) \subseteq V</m>.
       We can choose <m>\delta</m> to ensure that <m>\delta \lt x-a</m>.
       Since <m>x > a</m>, the interval
       <m>(x-\delta,

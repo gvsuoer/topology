@@ -46,7 +46,7 @@
     <li>
       <p>
         Let <m>(X,d)</m> be a metric space.
-        Let <m>a \in X</m>, and let <m>r > 0</m>.
+        Let <m>a \in X</m>, and let <m>r \gt 0</m>.
         We know that the open ball <m>B(a,r) = \{x \in X \mid d(a,x) \lt  r\}</m> is an open set.
         Let
         <me>
@@ -240,13 +240,13 @@
             <p>
               We first establish a preliminary result.
               Let <m>C</m> be a closed subset of <m>X</m> and <m>x \in X</m>.
-              Prove that if <m>x \notin C</m>, then <m>d(x,C) > 0</m>.
+              Prove that if <m>x \notin C</m>, then <m>d(x,C) \gt 0</m>.
             </p>
           </li>
           <li>
             <p>
               Let <m>\{C_{\alpha}\}</m> be a collection of closed subsets of <m>X</m> for <m>\alpha</m> in some indexing set <m>I</m> with the property that given any <m>x \in X</m>,
-              there exists an <m>\epsilon_x > 0</m> such that
+              there exists an <m>\epsilon_x \gt 0</m> such that
               <m>B(x, \epsilon_x)</m> intersects at most finitely many of the sets <m>C_{\alpha}</m>.
               Prove that <m>\bigcup_{\alpha \in I} C_{\alpha}</m> is closed.
             </p>

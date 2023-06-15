@@ -217,7 +217,7 @@
       <xi:include href="./chap_metric_spaces.ptx"/>
       <xi:include href="./chap_metric_spaces_apps.ptx"/>
       <xi:include href="./chap_glb.ptx"/>
-
+      <xi:include href="./chap_continuous_functions.ptx"/>
     </part>
 
     
@@ -226,7 +226,7 @@
     
     
     
-    <xi:include href="./chap_continuous_functions.ptx"/>
+   
     <xi:include href="./chap_open_balls.ptx"/>
     <xi:include href="./chap_open_sets.ptx"/>
     <xi:include href="./chap_sequences.ptx"/>

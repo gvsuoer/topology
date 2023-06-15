@@ -105,7 +105,7 @@
       Let <m>k</m> be between 1 and <m>n</m>.
       Since <m>O_k</m> is open,
       we know that <m>O_k</m> is a neighborhood of each of its points.
-      So there exists <m>\epsilon_k > 0</m> such that <m>B(x, \epsilon_k) \subseteq O_k</m>.
+      So there exists <m>\epsilon_k \gt 0</m> such that <m>B(x, \epsilon_k) \subseteq O_k</m>.
       Since there are only finitely many values of <m>k</m>,
       let <m>\epsilon = \min\{\epsilon_k \mid 1 \leq k \leq n\}</m>.
       Then <m>B(x, \epsilon) \subseteq B(x, \epsilon_k)</m> for each <m>k</m> and so <m>B(x, \epsilon) \subseteq \bigcap_{k=1}^n O_k = O</m>.

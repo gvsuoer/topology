@@ -11,7 +11,7 @@
       <li>
         <p>
           A sequence <m>(a_n)</m> in a metric space <m>(X,d)</m> has a limit <m>L</m> in <m>X</m> if,
-          given any <m>\epsilon > 0</m> there exists a positive integer <m>N</m> such that
+          given any <m>\epsilon \gt 0</m> there exists a positive integer <m>N</m> such that
           <m>d(a_n,L) \lt \epsilon</m> whenever <m>n \geq N</m>.
         </p>
       </li>
