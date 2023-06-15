@@ -202,7 +202,7 @@
                     A sequence <m>(x_n)</m> in a metric space <m>(X,d)</m> is a
                     <term>Cauchy sequence</term>
               <idx><h>Cauchy sequence</h></idx>
-                    if given <m>\epsilon > 0</m> there exists <m>N \in \Z^+</m> such that
+                    if given <m>\epsilon \gt 0</m> there exists <m>N \in \Z^+</m> such that
                     <m>d(x_n, x_m) \lt \epsilon</m> whenever <m>n, m \geq N</m>.
                     Every convergent sequence is a Cauchy sequence.
                     A metric space <m>X</m> is said to be

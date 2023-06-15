@@ -95,7 +95,7 @@
   <definition xml:id="def_n_cube">
     <statement>
       <p>
-        A subset <m>A</m> of <m>\R^n</m> is bounded<idx><h>bounded subset of <m>\R^n</m></h></idx> if there exists <m>M > 0</m> such that <m>A \subseteq Q^n_M</m>, where
+        A subset <m>A</m> of <m>\R^n</m> is bounded<idx><h>bounded subset of <m>\R^n</m></h></idx> if there exists <m>M \gt 0</m> such that <m>A \subseteq Q^n_M</m>, where
         <me>
           Q^n_M = \{(x_1,x_2, \ldots, x_n) \mid -M \leq x_i \leq M \text{ for every }  1 \leq i \leq n\}
         </me>.
@@ -123,7 +123,7 @@
     <statement>
       <p>
         Let <m>n \in \Z^+</m>.
-        The standard <m>n</m>-dimensional cube of size <m>M</m> is a compact subset of <m>\R^n</m> for any <m>M > 0</m>.
+        The standard <m>n</m>-dimensional cube of size <m>M</m> is a compact subset of <m>\R^n</m> for any <m>M \gt 0</m>.
       </p>
     </statement>
   </theorem>
@@ -206,7 +206,7 @@
       Since <m>\{O_{\alpha}\}_{\alpha \in I}</m> is a cover for <m>Q_0</m>,
       there must exist an <m>\alpha_q \in I</m> such that <m>q \in O_{\alpha_q}</m>.
       The set <m>O_{\alpha_q}</m> is open,
-      so there exists <m>\epsilon_q > 0</m> such that <m>B(q, \epsilon_q) \subseteq O_{\alpha_q}</m>.
+      so there exists <m>\epsilon_q \gt 0</m> such that <m>B(q, \epsilon_q) \subseteq O_{\alpha_q}</m>.
       The maximum distance between points in <m>Q_k</m> is the distance between the corner points
       <m>(a_{k,1}, a_{k,2}, \ldots,
       a_{k,n})</m> and <m>(b_{k,1}, b_{k,2}, \ldots, b_{k,n})</m>,
@@ -225,7 +225,7 @@
       So the collection <m>\{O_{\alpha_q} \cap Q_K\}</m> is a sub-cover of <m>\{O_{\alpha} \cap Q_K\}_{\alpha \in I}</m> for <m>Q_K</m>.
       But this contradicts the fact this open cover has no finite sub-cover.
       The assumption that led us to this contradiction was that <m>Q_0</m> was not compact,
-      so we conclude that the standard <m>n</m>-dimensional cube of size <m>M</m> is a compact subset of <m>\R^n</m> for any <m>M > 0</m>.
+      so we conclude that the standard <m>n</m>-dimensional cube of size <m>M</m> is a compact subset of <m>\R^n</m> for any <m>M \gt 0</m>.
     </p>
   </proof>
   <p>
@@ -298,7 +298,7 @@
       <xref ref="thm_metric_compact_closed"/>
       then shows that <m>A</m> is closed.
       To conclude our proof, we need to demonstrate that <m>A</m> is bounded.
-      For each <m>k > 0</m>, let
+      For each <m>k \gt 0</m>, let
       <me>
         O_k = \{ (x_1,x_2, \ldots, x_n) \mid -k \lt  x_i \lt  k \text{ for every }  1 \leq i \leq n\}
       </me>.
@@ -310,11 +310,11 @@
         U_k = O_k \cap A
       </me>
       for each <m>k</m>.
-      Since <m>\bigcup_{k > 0} O_k = \R^n</m>,
-      it follows that <m>\{U_k\}_{k > 0}</m> is an open cover of <m>A</m>.
+      Since <m>\bigcup_{k \gt 0} O_k = \R^n</m>,
+      it follows that <m>\{U_k\}_{k \gt 0}</m> is an open cover of <m>A</m>.
       The fact that <m>A</m> is compact means that there is a finite collection <m>U_{k_1}</m>,
       <m>U_{k_2}</m>, <m>\ldots</m>,
-      <m>U_{k_m}</m> of sets in <m>\{U_k\}_{k > 0}</m> that cover <m>A</m>.
+      <m>U_{k_m}</m> of sets in <m>\{U_k\}_{k \gt 0}</m> that cover <m>A</m>.
       Let <m>K = \max\{k_i \mid 1 \leq i \leq m\}</m>.
       Then <m>U_{k_i} \subseteq U_K</m> for each <m>i</m>,
       and so <m>A \subseteq U_K \subset Q^m_K</m>.

@@ -15,7 +15,7 @@
       <p>
         Let <m>(X, d_X)</m> be a metric space, and let <m>a \in X</m>.
         A subset <m>N</m> of <m>X</m> is a neighborhood<idx><h>neighborhood in a metric space</h></idx> of <m>a</m> if there exists a
-        <m>\delta > 0</m> such that <m>B(a, \delta) \subseteq N</m>.
+        <m>\delta \gt 0</m> such that <m>B(a, \delta) \subseteq N</m>.
       </p>
     </statement>
   </definition>
@@ -56,7 +56,7 @@
   <activity>
     <p>
       Let <m>(X, d)</m> be a metric space,
-      let <m>a \in X</m>, and let <m>\delta > 0</m>.
+      let <m>a \in X</m>, and let <m>\delta \gt 0</m>.
       In this activity we ask the question,
       is <m>B(a, \delta)</m> a neighborhood of each of its points?
       <ul>

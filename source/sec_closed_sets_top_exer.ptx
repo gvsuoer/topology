@@ -282,7 +282,7 @@
         we use the standard open balls for every point except <m>0</m> and <m>0^*</m>.
         For the point <m>0</m>, we define open sets to be
         <me>
-          N(0,r) = \left\{(x,y) \in \R^2 \mid x^2+y^2 \lt  \frac{1}{r^2}, y > 0\right\}  \cup \{0\}
+          N(0,r) = \left\{(x,y) \in \R^2 \mid x^2+y^2 \lt  \frac{1}{r^2}, y \gt 0\right\}  \cup \{0\}
         </me>
         and for <m>0^*</m> we define open sets to be
         <me>

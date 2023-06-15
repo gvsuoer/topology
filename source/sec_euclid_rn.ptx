@@ -162,7 +162,7 @@
       </me>.
     </p>
     <p>
-      If <m>b^2-4ac > 0</m>, then <m>p(\lambda)</m> has two real roots.
+      If <m>b^2-4ac \gt 0</m>, then <m>p(\lambda)</m> has two real roots.
       Therefore, in order for <m>p(\lambda)</m> to have at most one real zero we must have
       <me>
         0 \geq b^2-4ac = 4 \left(\sum x_iy_i\right)^2 - 4\left(\sum y_i^2\right)\left(\sum x_i^2\right)

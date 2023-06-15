@@ -31,7 +31,7 @@
       We proceed by contradiction and assume that <m>x \notin C</m>.
       Then <m>x \in X \setminus C</m>, which is an open set.
       This implies that there is an
-      <m>\epsilon > 0</m> so that <m>B(x, \epsilon) \subseteq X \setminus C</m>.
+      <m>\epsilon \gt 0</m> so that <m>B(x, \epsilon) \subseteq X \setminus C</m>.
       But then this neighborhood
       <m>B(x, \epsilon)</m> contains no points in <m>C</m>,
       which contradicts the fact that <m>x</m> is a limit point of <m>C</m>.

@@ -8,12 +8,12 @@
   <p>
     Recall that a function <m>f</m> from a metric space <m>(X, d_X)</m> to a metric space
     <m>(Y, d_Y)</m> is continuous at <m>a \in X</m> if,
-    for any <m>\epsilon > 0</m> there exists <m>\delta > 0</m> so that
+    for any <m>\epsilon \gt 0</m> there exists <m>\delta \gt 0</m> so that
     <m>d_X(x,a) \lt \delta</m> implies <m>d_Y(f(x),f(a)) \lt \epsilon</m>.
-    We can interpret this definition of continuity to say that for every <m>\epsilon > 0</m>,
+    We can interpret this definition of continuity to say that for every <m>\epsilon \gt 0</m>,
     the inverse image under <m>f</m> of the open ball
     <m>B(f(a), \epsilon)</m> contains the open ball
-    <m>B(a, \delta)</m> for some <m>\delta > 0</m>.
+    <m>B(a, \delta)</m> for some <m>\delta \gt 0</m>.
     It is not unreasonable to wonder if the set
     <m>f^{-1}\left(B(f(a), \epsilon)\right)</m> itself is an open ball.
     We investigate this question in the following activity.
@@ -60,8 +60,8 @@
     we can only conclude that the inverse image of <m>B(f(a), \epsilon)</m> <term>contains</term>
     an open ball centered at <m>a</m>.
     By definition of continuity,
-    if for every <m>\epsilon > 0</m> there exists a
-    <m>\delta > 0</m> so that the open ball
+    if for every <m>\epsilon \gt 0</m> there exists a
+    <m>\delta \gt 0</m> so that the open ball
     <m>f^{-1}\left(B(f(a), \epsilon)\right)</m> contains <m>B(a, \delta)</m>,
     then <m>f</m> is continuous at <m>a</m>.
     We summarize this in the next theorem.
@@ -72,7 +72,7 @@
         Let <m>f</m> be a function a metric space <m>(X, d_X)</m> to a metric space
         <m>(Y, d_Y)</m>, and let <m>a \in X</m>.
         Then <m>f</m> is continuous at <m>a \in X</m> if and only if,
-        given any <m>\epsilon > 0</m> there exists <m>\delta > 0</m> so that
+        given any <m>\epsilon \gt 0</m> there exists <m>\delta \gt 0</m> so that
         <me>
           B(a, \delta) \subseteq f^{-1}\left(B(f(a), \epsilon)\right)
         </me>.
@@ -105,9 +105,9 @@
       we need to find an open ball around <m>a</m> that is contained in <m>f^{-1}(N)</m>.
       Since <m>N</m> is a neighborhood of <m>f(a)</m>,
       by definition there exists
-      <m>\epsilon > 0</m> so that <m>B(f(a), \epsilon) \subseteq N</m>.
+      <m>\epsilon \gt 0</m> so that <m>B(f(a), \epsilon) \subseteq N</m>.
       Since <m>f</m> is continuous at <m>a</m>,
-      there exists <m>\delta > 0</m> such that <m>B(a, \delta) \subseteq f^{-1}\left(B(f(a), \epsilon)\right)</m>.
+      there exists <m>\delta \gt 0</m> such that <m>B(a, \delta) \subseteq f^{-1}\left(B(f(a), \epsilon)\right)</m>.
       So if <m>x \in B(a, \delta)</m>,
       then <m>f(x) \in B(f(a), \epsilon) \subseteq N</m>.
       So <m>B(a, \delta) \subseteq f^{-1}(N)</m>,

@@ -89,7 +89,7 @@
       We will prove that <m>i_X</m> is a homeomorphism.
       We know that <m>i_X</m> is a bijection,
       so we only need verify that <m>i_X</m> and <m>i_X^{-1}</m> are continuous.
-      Let <m>\epsilon > 0</m> be given, and let <m>a \in X</m>.
+      Let <m>\epsilon \gt 0</m> be given, and let <m>a \in X</m>.
       Let <m>\delta = \frac{\epsilon}{K}</m>.
       Suppose <m>x \in X</m> so that <m>d(x,a) \lt  \delta</m>.
       Then

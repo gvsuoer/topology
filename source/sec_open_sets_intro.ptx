@@ -11,7 +11,7 @@
   </p>
   <p>
     Recall that we defined a subset <m>N</m> of <m>X</m> to be neighborhood of point <m>a</m> in a metric space <m>(X,d)</m> if <m>N</m> contains an open ball
-    <m>B(a, \epsilon)</m> for some <m>\epsilon > 0</m>.
+    <m>B(a, \epsilon)</m> for some <m>\epsilon \gt 0</m>.
     We saw that every open ball is a neighborhood of each of its points,
     and we will now extend that idea to define an
     <term>open set</term> in a metric space.

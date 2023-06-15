@@ -46,7 +46,7 @@
       To prove this biconditional statement we first assume that <m>O</m> is an open set and demonstrate that <m>O</m> is a union of open balls.
       Let <m>a \in O</m>.
       Since <m>O</m> is open, there exists
-      <m>\epsilon_a > 0</m> so that <m>B(a, \epsilon_a) \subseteq O</m>.
+      <m>\epsilon_a \gt 0</m> so that <m>B(a, \epsilon_a) \subseteq O</m>.
       We will show that
       <me>
         O = \bigcup_{a \in O} B(a, \epsilon_a)

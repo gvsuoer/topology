@@ -55,10 +55,15 @@
       </li>
     </ul>
   </p>
+
   <figure xml:id="F_Continuity">
     <caption>Demonstrating the definition of continuity at a point.</caption>
-    <image width="50%" source="Continuity_1"/>   <image width="50%" source="Continuity_2"/>
+    <sidebyside>
+    <image width="50%" source="Continuity_1"/>
+    <image width="50%" source="Continuity_2"/>
+    </sidebyside>
   </figure>
+
   <p>
     Let's deal with the first statement,
     making the values of <m>f(x)</m>
@@ -113,26 +118,32 @@
     This gives us a rigorous definition of what it means for a function
     <m>f: \R \to \R</m> to be continuous at a point.
   </p>
+
   <definition xml:id="def_epsilon_delta_continuity">
     <statement>
       <p>
         A function <m>f : \R \to \R</m> is continuous at a point <m>a</m> if,
-        given any <m>\epsilon > 0</m>,
-        there exists a <m>\delta > 0</m> so that
+        given any <m>\epsilon \gt 0</m>,
+        there exists a <m>\delta \gt 0</m> so that
         <m>| x - a | \lt \delta</m> implies <m>| f(x) - f(a)| \lt \epsilon</m>.
       </p>
     </statement>
   </definition>
+
   <p>
     Note that the value of <m>\delta</m> can depend on the value of <m>a</m> and on <m>\epsilon</m>,
     but not on values of <m>x</m>.
   </p>
-  <activity xml:id="pa_MS_continuity">
+
+  <exploration xml:id="pa_MS_continuity">
+    <introduction>
     <p>
-      The GeoGebra file at \url{https://www.geogebra.org/m/rym36sqs} will allow us to play around with this definition.
+      The <url href="https://www.geogebra.org/m/rym36sqs" visual="geogebra.org/m/rym36sqs">GeoGebra file online</url> will allow us to play around with this definition.
       Use this GeoGebra applet for the first two problems in this activity.
-      <ol>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             Enter <m>f(x)=x\sin(x)</m> as your function.
             (You can change the viewing window coordinates, the base point <m>a</m>,
@@ -141,26 +152,30 @@
             <m>| f(x) - f(1) | \lt 0.5</m> whenever <m>| x - 1 | \lt \delta</m>.
             Explain your method.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Now find a value of <m>\delta</m> so that
             <m>| f(x) - f(2.5) | \lt 0.25</m> whenever <m>| x - 2.5 | \lt \delta</m>.
             Explain your method.
           </p>
-        </li>
-        <li>
-          <p>
-            <nbsp/>
-            <ul>
-              <li>
+        </statement>
+      </task>
+      <task>
+       
+            <task>
+              <statement>
                 <p>
                   What is the negation of the definition of continuity at a point?
                   In other words, what do we need to do to show that a function
                   <m>f: \R \to \R</m> is not continuous at a point <m>x=a</m>?
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   Use the negation of the definition to explain why the function <m>f : \R \to \R</m> defined by
                   <me>
@@ -168,11 +183,10 @@
                   </me>
                   is not continuous at <m>x=1</m>.
                 </p>
-              </li>
-            </ul>
-          </p>
-        </li>
-      </ol>
-    </p>
-  </activity>
+              </statement>
+            </task>
+          
+        </task>
+   
+  </exploration>
 </section>

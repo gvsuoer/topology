@@ -106,7 +106,7 @@
           <p>
             Let <m>f: (\R,d_E) \to (\R,d_E)</m> be defined by
             <m>f(x) = ax+b</m> for some real numbers <m>a</m> and <m>b</m> with <m>a \neq 0</m>.
-            Let <m>p \in \R</m> and let <m>r > 0</m>.
+            Let <m>p \in \R</m> and let <m>r \gt 0</m>.
             Show that <m>f^{-1}(B(f(p),r))</m> contains an open ball centered at <m>p</m>.
             Conclude that every linear function from
             <m>(\R,d_E)</m> to <m>(\R,d_E)</m> is continuous.
@@ -114,7 +114,7 @@
               <p>
                 By <xref ref="ex_sum_continuous"/>
                 on <xref ref="ex_sum_continuous">page</xref>
-                we can assume <m>a > 0</m> to simplify the problem.
+                we can assume <m>a \gt 0</m> to simplify the problem.
               </p>
             </hint>
           </p>
@@ -125,7 +125,7 @@
             <m>f(x) = ax^2+bx+c</m> for some real numbers <m>a</m>,
             <m>b</m>,
             and <m>c</m> with <m>a \neq 0</m>.
-            Let <m>p \in \R</m> and let <m>r > 0</m>.
+            Let <m>p \in \R</m> and let <m>r \gt 0</m>.
             <m>f^{-1}(B(f(p),r))</m> contains an open ball centered at <m>p</m>.
             Conclude that every quadratic function from
             <m>(\R,d_E)</m> to <m>(\R,d_E)</m> is continuous.
@@ -150,7 +150,7 @@
         for all <m>b, c \in X</m>.
         Define <m>f: X \to \R</m> by <m>f(x) = d(x,A)</m>.
         Let <m>b \in X</m>.
-        Given <m>\epsilon > 0</m>,
+        Given <m>\epsilon \gt 0</m>,
         show that there is a neighborhood <m>N</m> of <m>b</m> such that <m>x \in N</m> implies <m>f(x) \in B(f(b),\epsilon)</m>.
         Conclude that <m>f</m> is a continuous function.
         (Assume the metric on <m>\R</m> is the Euclidean metric.)
@@ -190,9 +190,9 @@
     <li>
       <p>
         Let <m>f: (\R,d_E) \to (\R,d_E)</m> be a continuous function.
-        Show that if <m>f(a) > 0</m> for some <m>a \in \R</m>,
+        Show that if <m>f(a) \gt 0</m> for some <m>a \in \R</m>,
         then there is a neighborhood <m>N</m> of <m>a</m> such that
-        <m>f(x) > 0</m> for all <m>x \in N</m>.
+        <m>f(x) \gt 0</m> for all <m>x \in N</m>.
       </p>
     </li>
     <li>

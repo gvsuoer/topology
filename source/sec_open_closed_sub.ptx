@@ -20,7 +20,7 @@
       Let <m>(X,d)</m> be a metric space and <m>A</m> a subset of <m>X</m>.
       Let <m>O_A</m> be an open subset of <m>A</m>.
       So for each <m>a \in A</m> there is a
-      <m>\delta_a > 0</m> so that <m>B_A(a, \delta_a) \subseteq O_A</m>,
+      <m>\delta_a \gt 0</m> so that <m>B_A(a, \delta_a) \subseteq O_A</m>,
       where <m>B_A(a, \delta_a)</m> is the open ball in <m>A</m> centered at <m>a</m> of radius <m>\delta_a</m>.
       Then, <m>O_A~=~\bigcup_{a \in O_A}~B_A(a, \delta_a)</m>.
       Now let <m>B_X(a, \delta_a)</m> be the open ball in <m>X</m> centered at <m>a</m> of radius <m>\delta_a</m>,
@@ -55,7 +55,7 @@
           <p>
             Let <m>a \in O_A</m>.
             Explain why there must exist a
-            <m>\delta > 0</m> such that <m>B_X(a, \delta)</m>,
+            <m>\delta \gt 0</m> such that <m>B_X(a, \delta)</m>,
             the open ball in <m>X</m> of radius <m>\delta</m> around <m>a</m> in <m>X</m>,
             is a subset of <m>O_X</m>.
           </p>

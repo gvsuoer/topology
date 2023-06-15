@@ -261,7 +261,7 @@
     The Niemytzki plane is the upper half plane <m>X = \{(x,y) \in \R^2 \mid y \geq 0\}</m>.
     Let <m>L</m> be the boundary of <m>X</m>.
     That is, <m>L = \{(x,y) \in \R^2 \mid y = 0\}</m>.
-    A basis for the topology on <m>X</m> consists of the standard open disks centered at points with <m>y > 0</m> along with the open disks in
+    A basis for the topology on <m>X</m> consists of the standard open disks centered at points with <m>y \gt 0</m> along with the open disks in
     <m>X \setminus L</m> that are tangent to <m>L</m> together with their points of tangency.
     We won't verify that the Niemytzki plane is <m>T_3</m> but not <m>T_4</m>.
     The interested reader can find an accessible proof in the article

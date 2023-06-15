@@ -34,7 +34,7 @@
     <statement>
       <p>
         A sequence <m>(a_n)</m> of real numbers has a limit<idx><h>limit of a sequence of real numbers</h></idx> <m>L</m> if,
-        given any <m>\epsilon > 0</m> there exists a positive integer <m>N</m> such that
+        given any <m>\epsilon \gt 0</m> there exists a positive integer <m>N</m> such that
         <me>
           | a_n - L | \lt  \epsilon \ \text{ whenever }  \ n \geq N
         </me>.
@@ -58,7 +58,7 @@
         In this way we can visualize a sequence and its limit.
         By definition,
         <m>L</m> is a limit of the sequence <m>(a_n)</m> if,
-        given any <m>\epsilon > 0</m>,
+        given any <m>\epsilon \gt 0</m>,
         we can go far enough out in the sequence so that the numbers in the sequence all lie in the horizontal band between <m>y = L -\epsilon</m> and
         <m>L+ \epsilon</m> as illustrated in <xref ref="F_sequence_limit"/>
         for the sequence <m>\left(\frac{n}{1+n}\right)</m>.
@@ -69,7 +69,7 @@
       </figure>
       <p>
         To verify that the limit of the sequence <m>\left(\frac{n}{1+n}\right)</m> is <m>1</m>,
-        we start with <m>\epsilon > 0</m>.
+        we start with <m>\epsilon \gt 0</m>.
       </p>
       <blockquote>
         <term>Scratch work.</term> Now we need to find <m>N</m> so that <m>n \geq N</m> implies <m>\left| \frac{n}{1+n} - 1 \right| \lt  \epsilon</m>. Just as with our continuity example, this work is not part of the proof, but shows how we go about finding the <m>N</m> we need. To make <m>\left| \frac{n}{1+n} - 1 \right| \lt  \epsilon</m> we need
@@ -120,7 +120,7 @@
     <statement>
       <p>
         A sequence <m>(a_n)</m> of real numbers has a limit <m>L</m> if,
-        given any <m>\epsilon > 0</m> there exists a positive integer <m>N</m> such that
+        given any <m>\epsilon \gt 0</m> there exists a positive integer <m>N</m> such that
         <me>
           d_E(a_n, L) \lt  \epsilon \ \text{ whenever }  \ n \geq N
         </me>.
@@ -151,7 +151,7 @@
       <p>
         Let <m>(X,d)</m> be a metric space.
         A sequence <m>(a_n)</m> in <m>X</m> has a limit<idx><h>limit of a sequence in a metric space</h></idx> <m>L \in X</m> if,
-        given any <m>\epsilon > 0</m> there exists a positive integer <m>N</m> such that
+        given any <m>\epsilon \gt 0</m> there exists a positive integer <m>N</m> such that
         <me>
           d(a_n, L) \lt  \epsilon \ \text{ whenever }  \ n \geq N
         </me>.

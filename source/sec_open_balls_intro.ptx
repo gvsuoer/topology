@@ -45,7 +45,7 @@
     <statement>
       <p>
         Let <m>(X, d_X)</m> be a metric space, and let <m>a \in X</m>.
-        For <m>\delta > 0</m>, the open ball
+        For <m>\delta \gt 0</m>, the open ball
         <m>B(a, \delta)</m> of radius <m>\delta</m> around <m>a</m><idx><h>open ball in a metric space</h></idx> is the set
         <me>
           B(a, \delta) = \{x \in X \mid d_X(x,a) \lt  \delta\}

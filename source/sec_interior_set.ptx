@@ -85,7 +85,7 @@
       Then <m>a</m> is an interior point of <m>A</m>,
       so <m>A</m> is a neighborhood of <m>a</m>.
       This implies that there exists an
-      <m>\epsilon > 0</m> so that <m>B(a, \epsilon) \subseteq A</m>.
+      <m>\epsilon \gt 0</m> so that <m>B(a, \epsilon) \subseteq A</m>.
       But <m>B(a, \epsilon)</m> is a neighborhood of each of its points,
       so every point in <m>B(a, \epsilon)</m> is an interior point of <m>A</m>.
       It follows that <m>B(a, \epsilon) \subseteq \Int(A)</m>.

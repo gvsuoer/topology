@@ -29,7 +29,7 @@
     seems to indicate that <m>S = \overline{S_2}</m>.
     To see if this is true, let <m>q=(0,y) \in S_1</m>,
     and let <m>N</m> be a neighborhood of <m>q</m>.
-    Then there is an <m>\epsilon > 0</m> such that <m>B = B(q, \epsilon) \subseteq N</m>.
+    Then there is an <m>\epsilon \gt 0</m> such that <m>B = B(q, \epsilon) \subseteq N</m>.
     Choose <m>K \in \Z^+</m> such that <m>\frac{1}{\arcsin(y)+2 \pi K} \lt  \epsilon</m>,
     and let <m>z = \frac{1}{\arcsin(y)+2 \pi K}</m>.
     Then
@@ -86,7 +86,7 @@
       The set <m>O = B_S\left(p(x), \frac{1}{2}\right) \cap S</m> is open in <m>S</m>.
       The continuity of <m>p</m> then tells us that
       <m>p^{-1}(O)</m> is open in <m>[0,1]</m>.
-      So there is a <m>\delta > 0</m> such that the open ball
+      So there is a <m>\delta \gt 0</m> such that the open ball
       <m>B=B_{[0,1]}(x, \delta)</m> is a subset of <m>p^{-1}(O)</m>.
       We will prove that <m>p(B) \subseteq S_1</m>.
       This will imply that <m>B \subseteq U</m> and so <m>U</m> is a neighborhood of each of its points,

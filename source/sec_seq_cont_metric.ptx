@@ -20,9 +20,9 @@
       Suppose <m>\lim a_n = a</m> and
       <m>\lim a_n = a'</m> for some <m>a, a' \in X</m>.
       Without much to go on it might appear that proving <m>a=a'</m> is a difficult task.
-      However, if <m>d(a,a') \lt \epsilon</m> for any <m>\epsilon > 0</m>,
+      However, if <m>d(a,a') \lt \epsilon</m> for any <m>\epsilon \gt 0</m>,
       then it will have to be the case that <m>a=a'</m>.
-      So let <m>\epsilon > 0</m>.
+      So let <m>\epsilon \gt 0</m>.
       <ul>
         <li>
           <p>
@@ -81,8 +81,8 @@
       We will show that <m>\lim f(a_n) = f(a)</m> for any sequence <m>(a_n)</m> in <m>X</m> that converges to <m>a</m>.
       Let <m>(a_n)</m> be a sequence in <m>X</m> that converges to <m>a</m> (we know such a sequence exists,
       namely the sequence <m>(a)</m>).
-      To verify that <m>\lim f(a_n) = a</m>, let <m>\epsilon > 0</m>.
-      The fact that <m>f</m> is continuous at <m>a</m> means that there is a <m>\delta > 0</m> so that
+      To verify that <m>\lim f(a_n) = a</m>, let <m>\epsilon \gt 0</m>.
+      The fact that <m>f</m> is continuous at <m>a</m> means that there is a <m>\delta \gt 0</m> so that
       <m>d_Y(f(x),
       f(a)) \lt  \epsilon</m> whenever <m>d_X(x,a) \lt  \delta</m>.
       Since <m>(a_n)</m> converges to <m>a</m>,
@@ -114,8 +114,8 @@
           <p>
             To have an additional assumption with which to work,
             let us proceed by contradiction and assume that <m>f</m> is not continuous at <m>a</m>.
-            Why can we then say that there is an <m>\epsilon > 0</m> so that there is no
-            <m>\delta > 0</m> with the property that
+            Why can we then say that there is an <m>\epsilon \gt 0</m> so that there is no
+            <m>\delta \gt 0</m> with the property that
             <m>d_X(x,a) \lt \delta</m> implies <m>d_Y(f(x), f(a)) \lt \epsilon</m>?
           </p>
         </li>
