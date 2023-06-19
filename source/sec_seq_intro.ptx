@@ -30,6 +30,7 @@
     <m>| a_n - L | \lt \epsilon</m> whenever <m>n \geq N</m>.
     This leads to the definition.
   </p>
+
   <definition xml:id="def_sequence_limit_real">
     <statement>
       <p>
@@ -41,6 +42,7 @@
       </p>
     </statement>
   </definition>
+
   <p>
     When a sequence <m>(a_n)</m> has a limit <m>L</m>, we write
     <me>
@@ -51,6 +53,7 @@
     and we say that the sequence <m>(a_n)</m>
     <term>converges</term> to <m>L</m>.
   </p>
+  
   <example>
     <statement>
       <p>

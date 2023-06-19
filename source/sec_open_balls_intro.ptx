@@ -41,6 +41,7 @@
     will no longer be appropriate.
     We replace the concept of interval with that of an open ball.
   </p>
+
   <definition>
     <statement>
       <p>
@@ -53,16 +54,21 @@
       </p>
     </statement>
   </definition>
+
   <p>
     We note here that our notation for an open ball is not universal.
     For example, some texts use
     <m>B_{\delta}(a)</m> for our <m>B(a,\delta)</m>.
   </p>
-  <activity>
+
+  <exploration>
+    <introduction>
     <p>
       Describe and draw a picture of the indicated open ball in each of the following metric spaces.
-      <ol>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             The open ball <m>B(2, 1)</m> in the metric space
             <m>(\R, d_E)</m> with the Euclidean metric
@@ -70,8 +76,10 @@
               d_E(x,y) = | x-y |
             </me>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             The open ball <m>B((3,2), 1)</m> in the metric space
             <m>(\R^2, d_E)</m> with the Euclidean metric
@@ -79,16 +87,20 @@
               d_E((x_1,x_2),(y_1,y_2)) = \sqrt{(x_1-y_1)^2 + (x_2-y_2)^2}
             </me>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             The open ball <m>B((3,2), 1)</m> in the metric space <m>(\R^2, d_M)</m> with the max metric
             <me>
               d_M((x_1,x_2),(y_1,y_2)) = \max\{| x_1-y_1 |, | x_2-y_2 |\}
             </me>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             The open ball <m>B((3,2), 1)</m> in the metric space
             <m>(\R^2, d_T)</m> with the taxicab metric
@@ -96,8 +108,10 @@
               d_T((x_1,x_2),(y_1,y_2)) = | x_1-y_1 | + | x_2-y_2 |
             </me>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             The open ball <m>B((3,2), 1)</m> in the metric space
             <m>(\R^2, d)</m> with the discrete metric
@@ -108,8 +122,8 @@
             <m>B((3,2),r)</m> in this metric space if <m>r > 1</m>?
             If <m>r \lt  1</m>?
           </p>
-        </li>
-      </ol>
-    </p>
-  </activity>
+        </statement>
+      </task>
+    
+  </exploration>
 </section>

@@ -3,69 +3,83 @@
   <p>
     Once we have defined open sets we might wonder about what happens if we take a union or intersection of open sets.
   </p>
+
   <activity xml:id="act_Open_union">
-    <p>
-      <nbsp/>
-      <ul>
-        <li>
+  
+      <task>
+        <introduction>
           <p>
             Let <m>A = (-2,1)</m> and <m>B = (-1,2)</m> in <m>(\R, d_E)</m>.
-            <ol label="i">
-              <li>
+          </p>
+        </introduction>
+            <task>
+              <statement>
                 <p>
                   Is <m>A \cup B</m> open?
                   Explain.
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   Is <m>A \cap B</m> open?
                   Explain.
                 </p>
-              </li>
-            </ol>
-          </p>
-        </li>
-        <li>
+              </statement>
+            </task>
+      </task>
+
+      <task>
+        <introduction>
           <p>
             Let <m>X = \R</m> with the Euclidean metric.
             Let <m>A_n = \left(1-\frac{1}{n}, 1+\frac{1}{n}\right)</m> for each <m>n \in \Z^+</m>.
-            <ol label="i">
-              <li>
+          </p>
+        </introduction>
+            <task>
+              <statement>
                 <p>
                   What is <m>\bigcup_{n \geq 1} A_n</m>?
                   A proof is not necessary.
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   Is <m>\bigcup_{n \geq 1} A_n</m> open in <m>\R</m>?
                   Explain.
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   What is <m>\bigcap_{n \geq 1} A_n</m>?
                   A proof is not necessary.
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   Is <m>\bigcap_{n \geq 1} A_n</m> open in <m>\R</m>?
                   Explain.
                 </p>
-              </li>
-            </ol>
-          </p>
-        </li>
-      </ul>
-    </p>
+              </statement>
+            </task>
+          
+        </task>
+     
   </activity>
+
   <p>
     <xref ref="act_Open_union"/>
     demonstrates that an arbitrary intersection of open sets is not necessarily open.
     However, there are some things we can say about unions and intersections of open sets.
   </p>
+
   <theorem>
     <statement>
       <p>
@@ -84,7 +98,7 @@
         </ol>
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       Let <m>X</m> be a metric space.
@@ -112,4 +126,5 @@
       Therefore, <m>O</m> is a neighborhood of each of its points and <m>O</m> is an open set.
     </p>
   </proof>
+  </theorem>
 </section>

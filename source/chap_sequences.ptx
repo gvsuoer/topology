@@ -1,6 +1,6 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_sequences">
   <title>Sequences in Metric Spaces</title>
-  <introduction>
+  
     <objectives>
       <ul>
         <li>
@@ -20,7 +20,7 @@
         </li>
       </ul>
     </objectives>
-  </introduction>
+
   <xi:include  href="sec_seq_intro.ptx"/>
   <xi:include  href="sec_seq_cont_metric.ptx"/>
   <xi:include  href="sec_seq_summ.ptx"/>
