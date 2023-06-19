@@ -6,6 +6,7 @@
     We can now provide another characterization of continuous functions in terms of open sets.
     This is the characterization that will serve as our definition of continuity in topological spaces.
   </p>
+  
   <theorem xml:id="thm_Open_continuity">
     <statement>
       <p>
@@ -14,7 +15,7 @@
         <m>f^{-1}(O)</m> is an open set in <m>X</m> whenever <m>O</m> is an open set in <m>Y</m>.
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       Let <m>(X, d_X)</m> and <m>(Y,d_Y)</m> be metric spaces,
@@ -40,43 +41,57 @@
       The proof of the reverse implication is left for the next activity.
     </p>
   </proof>
+  </theorem>
+
   <activity>
+    <introduction>
     <p>
       Let <m>f</m> be a function from a metric space <m>(X,d_X)</m> to a metric space <m>(Y,d_Y)</m>.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             What assumption do we make to prove the remaining implication of <xref ref="thm_Open_continuity"/>?
             What do we need to demonstrate to prove the conclusion?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Let <m>a \in X</m>,
             and let <m>N</m> be a neighborhood of <m>f(a)</m> in <m>Y</m>.
             Why does there exist an <m>\epsilon \gt 0</m> so that <m>B(f(a), \epsilon) \subseteq N</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             What does our hypothesis tell us about <m>f^{-1}(B(f(a), \epsilon))</m> in <m>X</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Why is <m>f^{-1}(N)</m> a neighborhood of <m>a</m>?
             How does this show that <m>f</m> is a continuous function?
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     Recall that every open set is a union of open balls,
     so we can simplify proofs of continuous functions in metric spaces by working only with open balls instead of arbitrary open sets.
     The next activity provides the details.
   </p>
+  
   <activity xml:id="act_continuity_balls">
+  <introduction>
     <p>
       In this activity we prove the following corollary to <xref ref="thm_Open_continuity"/>.
     </p>
@@ -92,8 +107,10 @@
       To set up the proof,
       let <m>(X,d_X)</m> and <m>(Y,d_Y)</m> be metric spaces,
       and let <m>f: X \to Y</m> be a function.
-      <ul>
-        <li>
+    </p>
+  </introduction>
+      <task>
+        <statement>
           <p>
             Since the corollary is a biconditional statement,
             we need to prove both implications.
@@ -101,8 +118,11 @@
             Use <xref ref="thm_Open_continuity"/>
             to explain why <m>f^{-1}(B)</m> is open in <m>X</m> whenever <m>B</m> is an open ball in <m>Y</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+
+      <task>
+        <introduction>
           <p>
             For the remaining implication,
             assume that <m>f^{-1}(B)</m> is an open set in <m>X</m> for any open ball <m>B</m> in <m>Y</m>.
@@ -110,13 +130,17 @@
             we will use <xref ref="thm_Open_continuity"/>
             and show that <m>f^{-1}(O)</m> is open in <m>X</m> whenever <m>O</m> is an open set in <m>Y</m>.
             So let <m>O</m> be an open set in <m>Y</m>.
-            <ol label="i">
-              <li>
+          </p>
+        </introduction>
+            <task>
+              <statement>
                 <p>
                   What does <xref ref="thm_OS_1"/> tell us about <m>O</m>.
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   Recall that <xref ref="lem_functions_subsets"/>
                   tells us that if <m>\{B_{\beta}\}</m> is a collection of subsets of <m>Y</m> for <m>\beta</m> in some indexing set <m>J</m>, then
@@ -126,13 +150,13 @@
                   Use <xref ref="lem_functions_subsets"/>
                   to show that <m>f^{-1}(O)</m> is open in <m>X</m> and conclude that <m>f</m> is a continuous function.
                 </p>
-              </li>
-            </ol>
-          </p>
-        </li>
-      </ul>
-    </p>
+              </statement>
+            </task>
+          
+        </task>
+     
   </activity>
+  
   <example xml:id="exp_linear_continuous">
     <statement>
       <p>

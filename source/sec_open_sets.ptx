@@ -7,31 +7,39 @@
     There are other subsets that every metric space contains,
     and we might ask if they are open or not.
   </p>
+
   <activity>
+    <introduction>
     <p>
       Let <m>X</m> be a metric space.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             Is <m>\emptyset</m> an open set in <m>X</m>?
             Explain.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Is <m>X</m> an open set in <m>X</m>?
             Explain.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     We have defined open balls,
     and open balls are the canonical examples of open sets.
     In fact, as the following theorem shows,
     the open balls determine the open sets.
   </p>
+
   <theorem xml:id="thm_OS_1">
     <statement>
       <p>
@@ -39,7 +47,7 @@
         A subset <m>O</m> of <m>X</m> is open if and only if <m>O</m> is a union of open balls.
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       Let <m>X</m> be a metric space and <m>O</m> a subset of <m>X</m>.
@@ -65,30 +73,39 @@
       The proof of the converse is left for the following activity.
     </p>
   </proof>
+  </theorem>
+
   <activity>
+  <introduction>
     <p>
       Let <m>X</m> be a metric space.
       To prove the remaining implication of <xref ref="thm_OS_1"/>,
       assume that a subset <m>O</m> of <m>X</m> is a union of open balls.
-      <ul>
-        <li>
+    </p>
+  </introduction>
+      <task>
+        <statement>
           <p>
             What do we need to show to prove that <m>O</m> is an open set?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Let <m>x \in O</m>.
             Why is there an open ball <m>B</m> in <m>O</m> that contains <m>x</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Complete the proof to show that <m>O</m> is an open set.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
   <p>
     <xref ref="thm_OS_1"/>

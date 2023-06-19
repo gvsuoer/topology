@@ -1,6 +1,6 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_open_balls">
   <title>Open Balls and Neighborhoods in Metric Spaces</title>
-  <introduction>
+  
     <objectives>
       <ul>
         <li>
@@ -21,7 +21,7 @@
         </li>
       </ul>
     </objectives>
-  </introduction>
+  
   <xi:include  href="sec_open_balls_intro.ptx"/>
   <xi:include  href="sec_neighborhoods.ptx"/>
   <xi:include  href="sec_cont_neighborhoods.ptx"/>

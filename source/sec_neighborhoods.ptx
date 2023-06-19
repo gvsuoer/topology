@@ -1,5 +1,6 @@
 <section xml:id="sec_neighborhoods">
   <title>Neighborhoods</title>
+  <idx><h><m>\delta</m>-neighborhood of a point in a metric space</h></idx>
   <p>
     We are familiar with the idea of open intervals in <m>\R</m>.
     We next introduce the idea of an open neighborhood of a point and characterize continuity in terms of neighborhoods.
@@ -7,9 +8,10 @@
   </p>
   <p>
     The open ball <m>B(a, \delta)</m> in a metric space <m>(X,d)</m> is also called the
-    <term><m>\delta</m>-neighborhood</term><idx><h><m>\delta</m>-neighborhood of a point in a metric space</h></idx> around <m>a</m>.
+    <term><m>\delta</m>-neighborhood</term> around <m>a</m>.
     A neighborhood of a point can be thought of as any set that envelops that point.
   </p>
+
   <definition>
     <statement>
       <p>
@@ -19,10 +21,11 @@
       </p>
     </statement>
   </definition>
+
   <example xml:id="exp_neighborhood_MS">
     <statement>
       <p>
-        <nbsp/>
+       
         <ul>
           <li>
             <p>
@@ -48,44 +51,54 @@
       </p>
     </statement>
   </example>
+
   <p>
     As another example, the open ball
     <m>B(a, \delta)</m> is a neighborhood of <m>a</m>.
     We can say even more about open balls.
   </p>
+
   <activity>
+    <introduction>
     <p>
       Let <m>(X, d)</m> be a metric space,
       let <m>a \in X</m>, and let <m>\delta \gt 0</m>.
       In this activity we ask the question,
       is <m>B(a, \delta)</m> a neighborhood of each of its points?
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             Let <m>b \in B(a, \delta)</m>.
             What do we have to do to show that
             <m>B(a, \delta)</m> is a neighborhood of <m>b</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Use <xref ref="F_Open_ball_neighborhood"/>
             to help show that <m>B(a, \delta)</m> is a neighborhood of <m>b</m>.
+          </p>
             <figure xml:id="F_Open_ball_neighborhood">
               <caption><m>B(a, \delta)</m> as a neighborhood of <m>b</m>.</caption>
               <image width="50%" source="Open_ball_neighborhood"/>
             </figure>
-          </p>
-        </li>
-        <li>
+          
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Is the converse true?
             That is, if a set is a neighborhood of each of its points,
             is the set an open ball?
             No proof is necessary, but a convincing argument is in order.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+   
   </activity>
 </section>

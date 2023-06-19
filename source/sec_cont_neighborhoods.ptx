@@ -18,7 +18,9 @@
     <m>f^{-1}\left(B(f(a), \epsilon)\right)</m> itself is an open ball.
     We investigate this question in the following activity.
   </p>
+
   <activity xml:id="act_OB_1">
+    <introduction>
     <p>
       Let <m>f</m> be a function from a metric space <m>(X, d_X)</m> to a metric space
       <m>(Y, d_Y)</m> that is continuous at <m>a \in X</m>.
@@ -34,26 +36,33 @@
       where we use the Euclidean metric <m>d_E</m> throughout.
       Assume that <m>f</m> is a continuous function.
       Then <m>f</m> is continuous at <m>x=2</m>.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             What is <m>B(f(2), 1)</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             What is <m>f^{-1}\left(B(f(2), 1)\right)</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Is <m>f^{-1}\left(B(f(2), 1)\right)</m> an open ball centered at <m>2</m>?
             Explain.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     The conclusion to be drawn from <xref ref="act_OB_1"/>
     is that if <m>f</m> is continuous,
@@ -66,6 +75,7 @@
     then <m>f</m> is continuous at <m>a</m>.
     We summarize this in the next theorem.
   </p>
+
   <theorem xml:id="thm_open_ball_continuity">
     <statement>
       <p>
@@ -79,10 +89,12 @@
       </p>
     </statement>
   </theorem>
+
   <p>
     We can extend this idea of continuity to describe continuity in terms of neighborhoods.
     This condition will allow us to later consider continuous functions even if there are no metrics on our spaces.
   </p>
+
   <theorem>
     <statement>
       <p>
@@ -91,7 +103,7 @@
         Then <m>f</m> is continuous at <m>a \in X</m> if and only if the inverse image of every neighborhood of <m>f(a)</m> is a neighborhood of <m>a</m>.
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       Let <m>(X, d_X)</m> and <m>(Y,d_Y)</m> be metric spaces,
@@ -117,44 +129,56 @@
       The proof of the reverse implication is left for the next activity.
     </p>
   </proof>
+  </theorem>
+
   <activity>
+    <introduction>
     <p>
       Let <m>(X, d_X)</m> and <m>(Y,d_Y)</m> be metric spaces,
       and let <m>f : X \to Y</m> be a function.
       Let <m>a \in X</m>.
       In this activity we prove that if the inverse image of every neighborhood of <m>f(a)</m> is a neighborhood of <m>a</m>,
       then <m>f</m> is continuous at <m>a</m>.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             What does <xref ref="thm_open_ball_continuity"/>
             tell us that we need to do to show that <m>f</m> is continuous at <m>a</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+        <statement>
           <p>
             Suppose <m>\epsilon</m> is greater than 0, why is
             <m>B(f(a), \epsilon)</m> a neighborhood of <m>f(a)</m> in <m>Y</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             What does our hypothesis tell us about <m>f^{-1}\left(B(f(a), \epsilon)\right)</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             What can we conclude from part (c)?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             How do (a)-(d) show that <m>f</m> is continuous at <m>a</m>?
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     We conclude this section with some important facts about neighborhoods.
     Assume that <m>(X,d)</m> is a metric space and <m>a \in X</m>.
@@ -179,6 +203,6 @@
     </ul>
   </p>
   <p>
-    The proofs are straightforward and left for Exercise <xref ref="ex_Nghb_properties"/>.
+    The proofs are straightforward and left for <xref ref="ex_Nghb_properties"/>.
   </p>
 </section>
