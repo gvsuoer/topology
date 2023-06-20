@@ -68,41 +68,46 @@
       </p>
       <figure xml:id="F_sequence_limit">
         <caption>The limit of the sequence <m>\left(\frac{n}{1+n}\right)</m>.</caption>
-        <image width="50%" source="Sequence_limit"/>
+        <image width="90%" source="Sequence_limit"/>
       </figure>
       <p>
         To verify that the limit of the sequence <m>\left(\frac{n}{1+n}\right)</m> is <m>1</m>,
         we start with <m>\epsilon \gt 0</m>.
       </p>
       <blockquote>
-        <term>Scratch work.</term> Now we need to find <m>N</m> so that <m>n \geq N</m> implies <m>\left| \frac{n}{1+n} - 1 \right| \lt  \epsilon</m>. Just as with our continuity example, this work is not part of the proof, but shows how we go about finding the <m>N</m> we need. To make <m>\left| \frac{n}{1+n} - 1 \right| \lt  \epsilon</m> we need
+        <p>
+        <em>Scratch work.</em> Now we need to find <m>N</m> so that <m>n \geq N</m> implies <m>\left| \frac{n}{1+n} - 1 \right| \lt  \epsilon</m>. Just as with our continuity example, this work is not part of the proof, but shows how we go about finding the <m>N</m> we need. To make <m>\left| \frac{n}{1+n} - 1 \right| \lt  \epsilon</m> we need
         <md>
           <mrow>\left| \frac{n}{1+n} - 1 \right| \amp \lt  \epsilon</mrow>
           <mrow>\left| \frac{n}{1+n} - \frac{1+n}{1+n}  \right| \amp \lt  \epsilon</mrow>
           <mrow>\left| \frac{-1}{1+n} \right| \amp \lt  \epsilon</mrow>
-          <mrow>1+n \amp > \frac{1}{\epsilon}</mrow>
-          <mrow>n \amp > \frac{1}{\epsilon} -1</mrow>
+          <mrow>1+n \amp \gt \frac{1}{\epsilon}</mrow>
+          <mrow>n \amp \gt \frac{1}{\epsilon} -1</mrow>
         </md>.
         Now we use this scratch work to design our proof.
+        </p>
       </blockquote>
+
       <p>
-        Let <m>N > \frac{1}{\epsilon} -1</m>
+        Let <m>N \gt \frac{1}{\epsilon} -1</m>
         (so that <m>N</m> depends on <m>\epsilon</m>).
         Then for <m>n \geq N</m> we have
         <md>
-          <mrow>n \amp > N > \frac{1}{\epsilon} -1</mrow>
-          <mrow>1+n \amp > \frac{1}{\epsilon}</mrow>
+          <mrow>n \amp \gt N \gt \frac{1}{\epsilon} -1</mrow>
+          <mrow>1+n \amp \gt \frac{1}{\epsilon}</mrow>
           <mrow>|-1| \left| \frac{1}{1+n} \right| \amp \lt  \epsilon</mrow>
           <mrow>\left| \frac{-1}{1+n} \right| \amp \lt  \epsilon</mrow>
           <mrow>\left| \frac{n}{1+n} - 1 \right| \amp \lt  \epsilon</mrow>
           <mrow>\left| \frac{n}{1+n} - \frac{1+n}{1+n}  \right| \amp \lt  \epsilon</mrow>
         </md>.
       </p>
+
       <p>
         So the sequence <m>\left(\frac{n}{1+n}\right)</m> has a limit of <m>1</m>.
       </p>
     </statement>
   </example>
+
   <p>
     <xref ref="def_sequence_limit_real"/>
     only applies to sequences of real numbers.
@@ -118,6 +123,7 @@
   <p>
     So we can rephrase the definition of a limit of a sequence of real numbers as follows.
   </p>
+
   <definition>
     <title>Alternate Definition</title>
     <statement>
@@ -130,17 +136,21 @@
       </p>
     </statement>
   </definition>
+
   <p>
     Once we have described a limit of a sequence in terms of a metric,
     then we can extend the idea into any metric space.
   </p>
+
   <definition>
+  <idx><h>sequence in a metric space</h></idx>
     <statement>
       <p>
-        A sequence<idx><h>sequence in a metric space</h></idx> in a metric space <m>(X,d)</m> is a function <m>f: \Z^+ \to X</m>.
+        A sequence in a metric space <m>(X,d)</m> is a function <m>f: \Z^+ \to X</m>.
       </p>
     </statement>
   </definition>
+
   <p>
     If <m>f</m> is a sequence in <m>X</m>,
     we write the sequence defined by <m>f</m> as <m>(f(n))</m>,
@@ -149,11 +159,13 @@
     As long as <m>X</m> has a metric defined on it,
     we can then describe the limit of a sequence.
   </p>
+
   <definition>
+  <idx><h>limit of a sequence in a metric space</h></idx>
     <statement>
       <p>
         Let <m>(X,d)</m> be a metric space.
-        A sequence <m>(a_n)</m> in <m>X</m> has a limit<idx><h>limit of a sequence in a metric space</h></idx> <m>L \in X</m> if,
+        A sequence <m>(a_n)</m> in <m>X</m> has a limit <m>L \in X</m> if,
         given any <m>\epsilon \gt 0</m> there exists a positive integer <m>N</m> such that
         <me>
           d(a_n, L) \lt  \epsilon \ \text{ whenever }  \ n \geq N
@@ -161,6 +173,7 @@
       </p>
     </statement>
   </definition>
+
   <p>
     In other words,
     a sequence <m>(a_n)</m> in a metric space <m>(X,d)</m> has a limit <m>L \in X</m> if
@@ -172,19 +185,21 @@
     <term>converges</term> to <m>L</m>,
     or that <m>L</m> is a limit of the sequence <m>(a_n)</m>.
   </p>
-  <activity>
-    <p>
-      <nbsp/>
-      <ol>
-        <li>
+
+  <exploration>
+
+      <task>
+        <statement>
           <p>
             Explain why the sequence <m>\left(\frac{1}{n}\right)</m> converges to 0 in <m>\R</m> using the Euclidean metric <m>d_E</m>, where
             <me>
               d_E(a,y) = | x-y |
             </me>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Consider the sequence <m>(a_n) = \left(\left(\frac{1}{n}, \frac{1}{n+1} \right)\right)</m> in <m>(\R^2, d_T)</m>,
             where <m>d_T</m> is the taxicab metric
@@ -195,8 +210,10 @@
             If so, find its limit and prove that your candidate is the limit.
             If not, explain why.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Let <m>(b_n) = \left((2n,
             n^2)\right)</m> in the metric space <m>(\R^2, d)</m>,
@@ -208,8 +225,8 @@
             If so, find its limit and prove that your candidate is the limit.
             If not, explain why.
           </p>
-        </li>
-      </ol>
-    </p>
-  </activity>
+        </statement>
+      </task>
+    
+  </exploration>
 </section>
