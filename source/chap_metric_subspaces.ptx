@@ -1,6 +1,6 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_metric_subspaces">
   <title>Subspaces and Products of Metric Spaces</title>
-  <introduction>
+  
     <objectives>
       <ul>
         <li>
@@ -20,7 +20,7 @@
         </li>
       </ul>
     </objectives>
-  </introduction>
+  
   <xi:include  href="sec_sub_metric_intro.ptx"/>
   <xi:include  href="sec_open_closed_sub.ptx"/>
   <xi:include  href="sec_prod_metric.ptx"/>
