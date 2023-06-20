@@ -21,7 +21,7 @@
         Then <m>C</m> is closed if and only if <m>C' \subseteq C</m>.
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       Let <m>X</m> be a metric space,
@@ -41,36 +41,47 @@
       The converse of the result we just proved is the subject of the next activity.
     </p>
   </proof>
+  </theorem>
+
   <activity>
+  <introduction>
     <p>
       Let <m>C</m> be a subset of a metric space <m>X</m>,
       and let <m>C'</m> be the set of limit points of <m>C</m>.
       In this activity we prove that <m>C</m> is closed if <m>C</m> contains all of its limit points.
       So assume <m>C' \subseteq C</m>.
-      <ul>
-        <li>
+    </p>
+  </introduction>
+      <task>
+        <statement>
           <p>
             What do we need to do to show that <m>C</m> is closed?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             If we proceed by contradiction to prove that <m>C</m> is closed,
             we assume that <m>C</m> is not closed.
             What does this tell us about <m>X \setminus C</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             What does the conclusion of part (b) tells us?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             How does the result of (c) contradict the assumption that <m>C</m> contains all of its limit points?
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
 </section>

@@ -10,16 +10,19 @@
     Moreover, The set <m>[0,1]</m> is the smallest closed set that contains <m>A</m>.
     This leads to the idea of the <term>closure</term> of a set.
   </p>
+
   <definition>
+  <idx><h>closure of a set in a metric space</h></idx>
     <statement>
       <p>
-        The closure<idx><h>closure of a set in a metric space</h></idx> of a subset <m>A</m> of a metric space <m>X</m> is the set
+        The closure of a subset <m>A</m> of a metric space <m>X</m> is the set
         <me>
           \overline{A} = A \cup A'
         </me>.
       </p>
     </statement>
   </definition>
+
   <p>
     In other words,
     the closure of a set is the collection of the elements of the set and the limit points of the set <mdash/> those points that are on the
@@ -27,6 +30,7 @@
     of the set.
     The importance of the closure of a set <m>A</m> is that the closure of <m>A</m> is the smallest closed set that contains <m>A</m>.
   </p>
+
   <theorem xml:id="thm_closure_closed">
     <statement>
       <p>
@@ -35,7 +39,7 @@
         Moreover, the closure of <m>A</m> is the smallest closed subset of <m>X</m> that contains <m>A</m>.
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       Let <m>X</m> be a metric space and <m>A</m> a subset of <m>X</m>.
@@ -67,40 +71,53 @@
       The proof that <m>\overline{A}</m> is the smallest closed subset of <m>X</m> that contains <m>A</m> is left for the next activity.
     </p>
   </proof>
+  </theorem>
+
   <activity>
+  <introduction>
     <p>
       Let <m>(X,d)</m> be a metric space,
       and let <m>A</m> be a subset of <m>X</m>.
-      <ul>
-        <li>
+    </p>
+  </introduction>
+      <task>
+        <statement>
           <p>
             What will we have to show to prove that
             <m>\overline{A}</m> is the smallest closed subset of <m>X</m> that contains <m>A</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Suppose that <m>C</m> is a closed subset of <m>X</m> that contains <m>A</m>.
             To show that <m>\overline{A} \subseteq C</m>,
             why is it enough to demonstrate that <m>A' \subseteq C</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             If <m>x \in A'</m>, what can we say about <m>x</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Complete the proof that <m>\overline{A} \subseteq C</m>.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     One consequence of <xref ref="thm_closure_closed"/> is the following.
   </p>
+
   <corollary>
     <statement>
       <p>
@@ -108,9 +125,11 @@
       </p>
     </statement>
   </corollary>
+
   <p>
     We can also characterize closed sets as sets that contain their boundaries.
   </p>
+
   <definition>
     <statement>
       <p>
@@ -118,6 +137,7 @@
       </p>
     </statement>
   </definition>
+
   <theorem xml:id="thm_Closed_boundary">
     <statement>
       <p>
@@ -125,6 +145,7 @@
       </p>
     </statement>
   </theorem>
+
   <p>
     The proof of <xref ref="thm_Closed_boundary"/>
     is left to <xref ref="ex_closed_bounded"/>.
@@ -142,6 +163,7 @@
     Notice that <m>\Bdry(A) = \overline{A} \cap \overline{\R \setminus A}</m>.
     That this is always true is formalized in the next theorem.
   </p>
+
   <theorem xml:id="thm_Bd_between">
     <statement>
       <p>
@@ -152,7 +174,7 @@
         </me>.
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       Let <m>X</m> be a metric space and <m>A</m> a subset of <m>X</m>.
@@ -190,7 +212,10 @@
       For the reverse implication, refer to the next activity.
     </p>
   </proof>
+  </theorem>
+
   <activity>
+    <introduction>
     <p>
       Let <m>X</m> be a metric space and <m>A</m> a subset of <m>X</m>.
       In this activity we prove that
@@ -200,42 +225,51 @@
     </p>
     <p>
       Let <m>x \in \overline{A} \cap \overline{X \setminus A}</m>.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             What must be true about <m>x</m>,
             given that <m>x</m> is in the intersection of two sets?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <introduction>
           <p>
             Let <m>N</m> be a neighborhood of <m>x</m>.
             As we did in the proof of <xref ref="thm_Bd_between"/>,
             we consider the cases <m>x \in A</m> and <m>x \notin A</m>.
-            <ol label="i">
-              <li>
+          </p>
+        </introduction>
+            <task>
+              <statement>
                 <p>
                   Suppose <m>x \in A</m>.
                   Why must <m>N</m> contain a point in <m>A</m> and a point not in <m>A</m>?
                   What does this tell us about <m>x</m>?
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   Suppose <m>x \notin A</m>.
                   Why must <m>N</m> contain a point in <m>A</m> and a point not in <m>A</m>?
                   What does this tell us about <m>x</m>?
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   What can we conclude from parts i. and ii.?
                 </p>
-              </li>
-            </ol>
-          </p>
-        </li>
-      </ul>
-    </p>
+              </statement>
+            </task>
+          
+        </task>
+  
   </activity>
 </section>

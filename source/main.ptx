@@ -221,6 +221,8 @@
       <xi:include href="./chap_open_balls.ptx"/> -->
       <xi:include href="./chap_open_sets.ptx"/>
       <xi:include href="./chap_sequences.ptx"/>
+      <xi:include href="./chap_closed_sets.ptx"/>
+      <xi:include href="./chap_metric_subspaces.ptx"/>
     </part>
 
     
@@ -233,8 +235,8 @@
     
     
     
-    <xi:include href="./chap_closed_sets.ptx"/>
-    <xi:include href="./chap_metric_subspaces.ptx"/>
+    
+    
     <xi:include href="./chap_top_spaces.ptx"/>
     <xi:include href="./chap_Closed_sets_topology.ptx"/>
     <xi:include href="./chap_continuity_topology.ptx"/>
