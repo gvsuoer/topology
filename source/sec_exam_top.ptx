@@ -5,54 +5,64 @@
     Suppose <m>X</m> is a nonempty set.
     <ul>
       <li>
+        <idx><h>topology</h><h>discrete</h></idx>
         <p>
           The topology consisting of all subsets of <m>X</m> is called the
           <term>discrete topology</term>.
-            <idx><h>topology</h><h>discrete</h></idx>
+            
         </p>
       </li>
       <li>
+        <idx><h>topology</h><h>indiscrete</h></idx>
         <p>
           The topology <m>\{\emptyset, X\}</m> is the
           <term>indiscrete topology</term>.
-            <idx><h>topology</h><h>indiscrete</h></idx>
+            
         </p>
       </li>
       <li>
+        <idx><h>topology</h><h>metric</h></idx>
         <p>
           If <m>(X,d)</m> is a metric space,
           then the collection consisting of unions of all open balls is a topology called the
           <term>metric topology</term>.
-            <idx><h>topology</h><h>metric</h></idx>
+            
         This result tells us that every metric space is topological space under the metric topology.
           We will see later than not every topological space is a metric space.
         </p>
       </li>
     </ul>
   </p>
+
   <p>
     The discrete and indiscrete topologies are topologies that can be defined on any set and are often used to use to generate examples.
     Another topology that can be defined on any set is in the next activity.
   </p>
+
   <activity xml:id="act_TS_limits">
+    <introduction>
     <p>
       Let <m>X</m> be any set and let
       <m>\tau_{FC}</m> consist of the empty set along with all subsets <m>O</m> of <m>X</m> such that <m>X \setminus O</m> is finite.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             Prove that <m>\tau_{FC}</m> is a topology on <m>X</m>. (The topology
             <m>\tau_{FC}</m> is called the <term>finite complement topology</term><idx><h>topology</h><h>finite complement</h></idx> or the
             <term>cofinite topology</term>.
               <idx><h>topology</h><h>cofinite</h></idx>
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Explain why <m>\tau_{FC}</m> is the discrete topology when <m>X</m> is finite.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+  
   </activity>
 </section>
