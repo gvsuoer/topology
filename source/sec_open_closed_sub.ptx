@@ -7,6 +7,7 @@
     but not open in the larger space.
     However, there is a connection between the open subsets in a subspace and the open sets in the larger space.
   </p>
+
   <theorem xml:id="thm_relatively_open_ms">
     <statement>
       <p>
@@ -14,7 +15,7 @@
         A subset <m>O_A</m> of <m>A</m> is open in <m>A</m> if and only if there is an open set <m>O_X</m> in <m>X</m> so that <m>O_A = O_X \cap A</m>.
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       Let <m>(X,d)</m> be a metric space and <m>A</m> a subset of <m>X</m>.
@@ -45,13 +46,18 @@
       For the reverse implication, see the following activity.
     </p>
   </proof>
+  </theorem>
+
   <activity>
+    <introduction>
     <p>
       Let <m>(X,d)</m> be a metric space and <m>A</m> a subset of <m>X</m>.
       Suppose that <m>O_A = A \cap O_X</m> for some set <m>O_X</m> that is open in <m>X</m>.
       In this activity we will prove that <m>O_A</m> is an open subset of <m>A</m>.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             Let <m>a \in O_A</m>.
             Explain why there must exist a
@@ -59,21 +65,26 @@
             the open ball in <m>X</m> of radius <m>\delta</m> around <m>a</m> in <m>X</m>,
             is a subset of <m>O_X</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             What would be a natural candidate for an open ball in <m>A</m> centered at <m>a</m> that is contained in <m>A</m>?
             Prove your conjecture.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             What conclusion can we draw?
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     We might now wonder about closed sets in a subspace.
     If <m>X</m> is a metric space and <m>A</m> is a subspace,
@@ -82,6 +93,7 @@
     The analogy of <xref ref="thm_relatively_open_ms"/>
     is true for closed sets in subspaces.
   </p>
+
   <theorem xml:id="thm_relatively_closed_ms">
     <statement>
       <p>
@@ -90,6 +102,7 @@
       </p>
     </statement>
   </theorem>
+  
   <p>
     The proof is left to <xref ref="ex_relatively_closed_ms"/>.
   </p>

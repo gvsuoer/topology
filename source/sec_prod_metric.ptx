@@ -17,9 +17,10 @@
     we can take a clue from the Euclidean metric on <m>\R \times \R</m>.
     On <m>\R</m>, the metric has the form <m>d_1(x,y) = |x-y|</m>,
     while on <m>\R^2</m> the metric is
-    <me>
-      d_E((x_1,x_2), (y_1,y_2)) = \sqrt{ (x_1-y_1)^2 + (x_2-y_2)^2} = \sqrt{d_1(x_1,y_1)^2 + d_1(x_2,y_2)^2}
-    </me>.
+    <md>
+      <mrow>d_E((x_1,x_2), (y_1,y_2)) \amp = \sqrt{ (x_1-y_1)^2 + (x_2-y_2)^2}</mrow>
+      <mrow>\amp = \sqrt{d_1(x_1,y_1)^2 + d_1(x_2,y_2)^2}</mrow>
+    </md>.
   </p>
   <p>
     So on <m>(X, d_1)</m> and <m>(X_2 ,d_2)</m> we could consider defining <m>d : (X_1 \times X_2) \times (X_1 \times X_2) \to \R</m> by
@@ -60,40 +61,51 @@
   <p>
     In the next activity we consider products of open balls and open sets in products oif metric spaces.
   </p>
+
   <activity xml:id="act_ms_product_open">
+    <introduction>
     <p>
       Let <m>X_1 = [1,2]</m> and
       <m>X_2 = [3,4]</m> as subspaces of <m>\R^2</m> using the Euclidean metric.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             Explain in detail what the product space <m>X_1 \times X_2</m> looks like.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             If <m>B_1</m> is an open ball in <m>X_1</m> and <m>B_2</m> is an open ball in <m>X_2</m>,
             is <m>B_1 \times B_2</m> an open ball in <m>X_1 \times X_2</m>?
             Explain.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             If <m>B_1</m> is an open ball in <m>X_1</m> and <m>B_2</m> is an open ball in <m>X_2</m>,
             is <m>B_1 \times B_2</m> an open set in <m>X_1 \times X_2</m>?
             Explain.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Find, if possible, an open subset of
             <m>X_1 \times X_2</m> that is not of the form
             <m>O_1 \times O_2</m> where <m>O_1</m> is open in <m>X_1</m> and <m>O_2</m> is open in <m>X_2</m>.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     <xref ref="act_ms_product_open"/>
     shows that open sets in a product are more complicated than just products of open sets in the factors.
@@ -103,6 +115,7 @@
     We conclude with one final comment about products.
     We can make the Cartesian product of any number of metric spaces into a metric space with the same construction we used for the product of two spaces.
   </p>
+
   <definition>
     <statement>
       <p>
@@ -122,13 +135,14 @@
       </p>
     </statement>
   </definition>
+
   <p>
-    The metric <m>d</m> is called the <term>product metric</term>
-        <idx><h>product metric</h></idx>
+    <idx><h>product metric</h></idx>
+    <idx><h>coordinate space</h></idx>
+    <idx><h>factor space</h></idx>
+    The metric <m>d</m> is called the <term>product metric</term> 
     and the spaces <m>(X_i,d_i)</m> are called the <term>coordinate</term>
-        <idx><h>coordinate space</h></idx>
     or <term>factor</term>
-        <idx><h>factor space</h></idx>
     spaces of <m>(X,d)</m>.
     The proof that <m>d</m> is a metric is essentially the same as in the <m>n=2</m> case,
     and is left to <xref ref="ex_prod_metric"/>.
