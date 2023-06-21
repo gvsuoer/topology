@@ -1,36 +1,46 @@
-<section xml:id="sec_sub_metric_exer">
-  <title>Exercises</title>
-  <ol>
-    <li>
+<exercises xml:id="sec_sub_metric_exer">
+  
+  <exercise>
+    <introduction>
       <p>
         Determine if the following sets <m>S</m> are open in the subspace <m>A</m> of the topological space <m>(\R, d_E)</m>.
-        <ul>
-          <li>
+      </p>
+    </introduction>
+        <task>
+          <statement>
             <p>
               <m>S = [1,2)</m> in <m>A = [1,3]</m>
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               <m>S = \{1, 2\}</m> in <m>A = \Q</m>
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               <m>S = \{1,2\}</m> in <m>A = \Z</m>
             </p>
-          </li>
-        </ul>
-      </p>
-    </li>
-    <li>
+          </statement>
+        </task>
+  </exercise>
+
+  <exercise>
+    <statement>
       <p>
         Let <m>O</m> be an open set in a metric space <m>(X,d)</m>.
         Show that a subset <m>U</m> of <m>O</m> is open in
         <m>(O, d|_O)</m> if and only if <m>U</m> is open in <m>(X,d)</m>.
       </p>
-    </li>
-    <li>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
       <p>
         Let <m>(X,d_X)</m> and <m>(Y, d_Y)</m> be metric spaces,
         and let <m>f : X \to Y</m> be a continuous function.
@@ -39,15 +49,21 @@
         Give a proof that the restriction is continuous,
         or an example to show that the restriction need not be continuous.
       </p>
-    </li>
-    <li xml:id="ex_relatively_closed_ms">
+    </statement>
+  </exercise>
+
+  <exercise xml:id="ex_relatively_closed_ms">
+    <statement>
       <p>
         Prove <xref ref="thm_relatively_closed_ms"/>.
         That is, let <m>(X,d)</m> be a metric space and <m>A</m> a subset of <m>X</m>.
         Prove that a subset <m>C_A</m> of <m>A</m> is closed in <m>A</m> if and only if there is a closed set <m>C_X</m> in <m>X</m> so that <m>C_A = C_X \cap A</m>.
       </p>
-    </li>
-    <li>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
       <p>
         Let <m>(X,d_X)</m> and <m>(Y,d_Y)</m> be metric spaces.
         Prove or disprove:
@@ -57,8 +73,11 @@
         </me>
         is a metric on <m>X \times Y</m>.
       </p>
-    </li>
-    <li xml:id="ex_prod_metric">
+    </statement>
+  </exercise>
+
+  <exercise xml:id="ex_prod_metric">
+    <statement>
       <p>
         Let <m>(X_i, d_i)</m> be metric spaces for <m>i</m> from <m>1</m> to some positive integer <m>n</m>.
         Let <m>d: \prod_{i=1}^n X_i \to \R</m> be defined
@@ -69,31 +88,42 @@
         x_n)</m> and <m>y = (y_1, y_2, \ldots, y_n)</m> are in <m>X</m>.
         Show that <m>d</m> is a metric on <m>\prod_{i=1}^n X_i</m>.
       </p>
-    </li>
-    <li xml:id="ex_Subspace_monotone_convergence">
+    </statement>
+  </exercise>
+
+  <exercise xml:id="ex_Subspace_monotone_convergence">
+    <statement>
       <p>
         Let <m>(x_n)</m> be a non-decreasing sequence of real numbers that is bounded above.
         That is, <m>x_n \leq x_{n+1}</m> for every <m>n</m> and there is a positive real number <m>K</m> such that <m>x_n \leq K</m> for every <m>n</m>.
         Show that the sequence <m>(x_n)</m> converges.
       </p>
-    </li>
-    <li>
+    </statement>
+  </exercise>
+
+  <exercise>
+  <idx><h>Hilbert space</h></idx>
+    <introduction>
       <p>
         It is possible to consider infinite products as metric spaces.
         One important example is a Hilbert space
-          <idx><h>Hilbert space</h></idx>
+          
         <m>H</m>, which consists of all infinite sequences <m>(x_n)</m> where
         <m>x_n \in \R</m> for every <m>n</m> and <m>\sum_{k = 1}^{\infty} x_k^2</m> is finite.
         Hilbert space has important applications in physics,
         particularly in quantum mechanics.
-        <ul>
-          <li>
+      </p>
+    </introduction>
+        <task>
+          <statement>
             <p>
               Give two distinct elements in <m>H</m> and one infinite sequence that is not in <m>H</m>.
               Explain your examples.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               We define the norm of an element <m>x = (x_n)</m> in <m>H</m> as
               <me>
@@ -113,19 +143,24 @@
               then <m>x-y \in H</m>.
               That is, show that if <m>\sum_{k=1}^{\infty} x_k^2</m> and <m>\sum_{k=1}^{\infty} y_k^2</m> are finite,
               then <m>\sum_{k=1}^{\infty} (x_k-y_k)^2</m> is also finite.
-              <hint>
+              
+            </p>
+          </statement>
+          <hint>
                 <p>
                   Consider a finite sum and use <xref ref="ex_Subspace_monotone_convergence"/>.
                 </p>
               </hint>
-            </p>
-          </li>
-          <li>
+        </task>
+        <task>
+          <statement>
             <p>
               Show that <m>d</m> is a metric on <m>H</m>.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               Let <m>E^m = \{(x_n) \in H \mid x_k = 0 \text{ for } k > m\}</m>.
               Let <m>f: E^m \to \R^m</m> be defined by <m>f((x_n)_{n=1}^{\infty}) = (x_n)_{n=1}^m</m>.
@@ -134,48 +169,59 @@
               f((y_n)))</m> for any elements <m>(x_n)</m>, <m>(y_n)</m> in <m>H</m>.
               So <m>E^m</m> is essentially the same as <m>\R^m</m> and so we can consider the space <m>\R^m</m> as embedded in <m>H</m> as a subspace of <m>H</m> for every <m>m \in \Z^+</m>.
             </p>
-          </li>
-        </ul>
-      </p>
-    </li>
-    <li>
+          </statement>
+        </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
       <p>
         For each of the following, answer true if the statement is always true.
         If the statement is only sometimes true or never true,
         answer false and provide a concrete example to illustrate that the statement is false.
         If a statement is true, explain why.
-        <ul>
-          <li>
+      </p>
+    </introduction>
+        <task>
+          <statement>
             <p>
               If <m>d</m> is the discrete metric on a metric space <m>X</m>,
               then for any subspace <m>A</m> of <m>X</m>,
               the restriction of <m>d</m> to <m>A</m> is the discrete metric.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               If <m>d</m> is a metric on a space <m>X</m> that is not the discrete metric,
               and if <m>A</m> is a subset of <m>X</m>,
               then <m>d|_A</m> cannot be the discrete metric.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               Let <m>A</m> be a subspace of a metric space <m>(X,d)</m>.
               If a sequence <m>(a_n)</m> is in <m>A</m> and
               <m>\lim a_n = a</m> for some <m>a \in A</m>,
               then <m>\lim a_n = a</m> in <m>X</m>.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               Let <m>A</m> be a subspace of a metric space <m>(X,d)</m>.
               If a sequence <m>(a_n)</m> is in <m>A</m> and
               <m>\lim a_n = a</m> for some <m>a \in X</m>,
               then <m>\lim a_n = a</m> in <m>A</m>.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               If <m>(X,d_X)</m> and <m>(Y, d_Y)</m> are metric spaces,
               then the function <m>d: X \times Y \to \R</m> defined by
@@ -184,8 +230,10 @@
               </me>
               is a metric on <m>X \times Y</m>.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               If <m>(X,d_X)</m> and <m>(Y, d_Y)</m> are metric spaces,
               then the function <m>d: X \times Y \to \R</m> defined by
@@ -194,12 +242,9 @@
               </me>
               is a metric on <m>X \times Y</m>.
             </p>
-          </li>
-        </ul>
-      </p>
-    </li>
-  </ol>
-  <p>
-    \part{Topological Spaces}
-  </p>
-</section>
+          </statement>
+        </task>
+      
+    </exercise>
+ 
+</exercises>
