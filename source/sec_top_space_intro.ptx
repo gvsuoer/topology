@@ -13,14 +13,16 @@
     including that the arbitrary union of open sets is open and any finite intersection of opens sets is open.
     We will now take these properties as our axioms in defining topological spaces.
   </p>
+
   <definition>
+  <idx><h>topology</h></idx>
     <statement>
       <p>
         Let <m>X</m> be a nonempty set.
         A set <m>\tau</m><fn>
         The symbol <m>\tau</m> is the Greek lowercase letter tau.
         </fn> of subsets of <m>X</m> is said to a topology
-            <idx><h>topology</h></idx>
+            
         on <m>X</m> if
         <ol>
           <li>
@@ -42,30 +44,35 @@
       </p>
     </statement>
   </definition>
+
   <p>
+    <idx><h>topological space</h></idx>
+    <idx><h>open sets in a topological space</h></idx>
     A <term>topological space</term>
-        <idx><h>topological space</h></idx>
+        
     is then any set on which a topology is defined.
     If <m>X</m> is the space and <m>\tau</m> a topology on <m>X</m>,
     we denote the topological space as <m>(X, \tau)</m>.
     The elements of <m>\tau</m> are called the
-    <term>open sets</term><idx><h>open sets in a topological space</h></idx> in the topological space.
+    <term>open sets</term> in the topological space.
     When the topology is clear from the context,
     we simple refer to <m>X</m> as the topological space.
     Some examples are in order.
   </p>
-  <activity>
-    <p>
-      <nbsp/>
-      <ol>
-        <li>
+
+  <exploration>
+   
+      <task>
+        <statement>
           <p>
             Suppose <m>X = \{ a, b, c\}</m>.
             Is the set <m>\tau = \{a,b\}</m> a topology on <m>X</m>?
             Justify your response.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Suppose <m>X= \{a,b,c,d\}</m>.
             Is the collection of subsets consisting of
@@ -73,8 +80,10 @@
             Justify your response.
             If not, what is the smallest collection of subsets of <m>X</m> that need to be added to <m>\tau</m> to make <m>\tau</m> a topology on <m>X</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Suppose <m>X= \{a,b,c,d\}</m>.
             Is the collection of subsets consisting of
@@ -85,8 +94,10 @@
             Justify your response.
             If not, what is the smallest collection of subsets of <m>X</m> that need to be added to <m>\tau</m> to make <m>\tau</m> a topology on <m>X</m>?.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Suppose <m>X= \{a,b,c,d\}</m>.
             Is the collection of subsets consisting of
@@ -97,8 +108,10 @@
             Justify your response.
             If not, what is the smallest collection of subsets of <m>X</m> that need to be added to <m>\tau</m> to make <m>\tau</m> a topology on <m>X</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Let <m>F</m> be the collection of finite subsets of <m>\R</m>.
             Let <m>\tau = \{\emptyset, \R\} \cup F</m>.
@@ -106,29 +119,35 @@
             Next, is <m>\tau</m> a topology on <m>\R</m>?
             Justify your response.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Let <m>\tau = \{\emptyset, \R, \{0\} \}</m>.
             Is <m>\tau</m> a topology on <m>\R</m>?
             Justify your response.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Let <m>X</m> be a set and let <m>\tau = \{\emptyset, X\}</m>.
             Is <m>\tau</m> a topology on <m>X</m>?
             Justify your response.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Let <m>X</m> be a set and let <m>\tau</m> be the collection of all subsets of <m>X</m>.
             Is <m>\tau</m> a topology on <m>X</m>?
             Justify your response.
           </p>
-        </li>
-      </ol>
-    </p>
-  </activity>
+        </statement>
+      </task>
+    
+  </exploration>
 </section>
