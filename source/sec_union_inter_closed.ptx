@@ -1,11 +1,12 @@
 <section xml:id="sec_union_inter_closed">
   <title>Unions and Intersections of Closed Sets</title>
+  <idx><h>clopen set in a topological space</h></idx>
   <p>
     Now we have defined open and closed sets in topological spaces.
     In our preview activity we saw that a set can be both open and closed.
     As we did in metric spaces,
     we will call any set that is both open and closed a
-    <term>clopen</term><idx><h>clopen set in a topological space</h></idx>
+    <term>clopen</term>
     (for closed-open)
     set.
   </p>
@@ -14,6 +15,7 @@
     any union and any finite intersection of open sets in a topological space is open,
     so the fact that closed sets are complements of open sets implies the following theorem.
   </p>
+
   <theorem xml:id="thm_closed_TS">
     <statement>
       <p>
@@ -32,7 +34,7 @@
         </ol>
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       Let <m>X</m> be a topological space.
@@ -62,30 +64,38 @@
       Therefore, <m>\bigcup_{\alpha \in I} C_{\alpha}</m> is a closed set.
     </p>
   </proof>
+  </theorem>
+
   <p>
     <xref ref="thm_closed_TS"/>
     tells us that any intersection of closed sets is closed,
     but only finite unions of closed sets are closed.
     How do we know that non-finite unions of closed sets aren't necessarily closed?
   </p>
+
   <activity>
+    <introduction>
     <p>
       Let <m>\Z</m> be a topological space with the finite complement topology <m>\tau_{FC}</m>.
       That is, a non-empty set <m>O</m> is open in <m>\Z</m> if <m>\Z \setminus O</m> is finite.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             What must be true about the cardinality of the closed sets in <m>(\Z, \tau_{FC})</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Let <m>C_n = \{2, 3, \ldots, n\}</m>.
             Is the set <m>\bigcup_{n \geq 3} C_n</m> a closed set in <m>(\Z, \tau_{FC})</m>?
             Explain.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+  
   </activity>
 </section>
