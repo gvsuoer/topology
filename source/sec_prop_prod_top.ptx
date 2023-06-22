@@ -143,7 +143,7 @@
   <p>
     We conclude this section by demonstrating that a product of compact topological spaces is compact.
     It is also true that finite products of path connected and compact spaces are path connected and compact.
-    The proofs are left to Exercises <xref ref="ex_compact_product"/> and <xref ref="ex_path_connected_product"/>.
+    The proofs are left to <xref ref="ex_compact_product"/> and <xref ref="ex_path_connected_product"/>.
   </p>
   <theorem xml:id="thm_compact_product">
     <statement>

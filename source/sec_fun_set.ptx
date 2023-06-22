@@ -93,7 +93,7 @@
   <p>
     At this point it is reasonable to ask if <xref ref="lem_functions_subsets"/>
     would still hold if we replace unions with intersections.
-    We leave that question for Exercise <xref ref="ex_intersection_image"/>.
+    We leave that question for <xref ref="ex_intersection_image"/>.
   </p>
   <p>
     Another result is contained in the next activity.

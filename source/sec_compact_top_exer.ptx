@@ -221,7 +221,7 @@
           </li>
         </ul>
       </p>
-      That the particular point and excluded point topologies are topologies is the subject of Exercises <xref ref="ex_particular_point_topology"/> and <xref ref="ex_excluded_point_topology"/> on <xref ref="ex_particular_point_topology">page</xref>.
+      That the particular point and excluded point topologies are topologies is the subject of <xref ref="ex_particular_point_topology"/> and <xref ref="ex_excluded_point_topology"/> on <xref ref="ex_particular_point_topology">page</xref>.
       Determine, with proof, the compact subsets of <m>X</m> when
       <ul>
         <li>

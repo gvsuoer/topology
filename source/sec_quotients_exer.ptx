@@ -165,7 +165,7 @@
           </li>
         </ul>
       </p>
-      That the particular point and excluded point topologies are topologies is the subject of Exercises <xref ref="ex_particular_point_topology"/> and <xref ref="ex_excluded_point_topology"/> on <xref ref="ex_particular_point_topology">page</xref>.
+      That the particular point and excluded point topologies are topologies is the subject of <xref ref="ex_particular_point_topology"/> and <xref ref="ex_excluded_point_topology"/> on <xref ref="ex_particular_point_topology">page</xref>.
       Let <m>\sim</m> be the equivalence relation on <m>\Z</m> defined by
       <m>x \sim y</m> if <m>x \equiv y \pmod{3}</m>.
       Describe the quotient space <m>\Z/\ssim</m> and then determine,

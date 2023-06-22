@@ -75,7 +75,7 @@
     To conclude this section we summarize some properties of sets.
     Many of these properties can be extended to arbitrary collections of sets.
     Most of the proofs are straightforward.
-    The associative and distributive laws are left for Exercise <xref ref="ex_set_props"/>.
+    The associative and distributive laws are left for <xref ref="ex_set_props"/>.
   </p>
 
   <theorem>

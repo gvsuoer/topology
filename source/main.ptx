@@ -230,7 +230,7 @@
 
       <xi:include href="./chap_top_spaces.ptx"/>
       <xi:include href="./chap_Closed_sets_topology.ptx"/>
-      <!-- <xi:include href="./chap_continuity_topology.ptx"/> -->
+      <xi:include href="./chap_continuity_topology.ptx"/>
     </part>
 
     <!-- 

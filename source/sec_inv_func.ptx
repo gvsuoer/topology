@@ -225,7 +225,7 @@
 
   <p>
     The next result provide useful information about inverse functions.
-    The proofs are left for Exercise <xref ref="ex_inverse_composite"/>.
+    The proofs are left for <xref ref="ex_inverse_composite"/>.
   </p>
 
   <corollary xml:id="C_inversecomposition">
