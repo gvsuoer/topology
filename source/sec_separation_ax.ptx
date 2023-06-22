@@ -12,29 +12,33 @@
     As a result,
     we define classes of topological spaces whose behaviors are closer to what our intuition suggests.
   </p>
+
   <activity xml:id="act_Hausdorff">
-    <p>
-      <nbsp/>
-      <ul>
-        <li>
+    
+      <task>
+        <introduction>
           <p>
             Consider a metric space <m>(X,d)</m>,
             and let <m>x</m> and <m>y</m> be distinct points in <m>X</m>.
-            <ol label="i">
-              <li>
+          </p>
+        </introduction>
+            <task>
+              <statement>
                 <p>
                   Explain why <m>x</m> and <m>y</m> cannot both be limits of the same sequence if we can find disjoint open balls <m>B(x,r)</m> centered at <m>x</m> and <m>B(y,s)</m> centered at <m>y</m> such that <m>B_x \cap B_y = \emptyset</m>.
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   Now show that we can find disjoint open balls <m>B(x,r)</m> centered at <m>x</m> and <m>B(y,s)</m> centered at <m>y</m> such that <m>B(x,s) \cap B(y,r) = \emptyset</m>.
                 </p>
-              </li>
-            </ol>
-          </p>
-        </li>
-        <li>
+              </statement>
+            </task>
+      </task>
+      <task>
+        <statement>
           <p>
             Return to our example from <xref ref="act_TS_limits"/>
             with <m>X = \{a, b, c\}</m> and topology
@@ -44,10 +48,11 @@
             We saw that every point in <m>X</m> is a limit of the constant sequence <m>(c)</m>.
             If <m>x \neq c</m> in <m>X</m>, Explain why there are no disjoint open sets <m>O_x</m> containing <m>x</m> and <m>O_c</m> containing <m>c</m>.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     It is the fact as described in <xref ref="act_Hausdorff"/>
     that we can separate disjoint points by disjoint open sets that separates metric spaces from other spaces where limits are not unique.
@@ -55,35 +60,39 @@
     then we might expect to have unique limits.
     Such spaces are called <term>Hausdorff</term> spaces.
   </p>
+
   <definition>
+  <idx><h>Hausdoff space</h></idx>
     <statement>
       <p>
         A topological space <m>X</m> is a Hausdorff
-            <idx><h>Hausdoff space</h></idx>
         space if for each pair <m>x</m>,
         <m>y</m> of distinct points in <m>X</m>,
         there exists open sets <m>O_x</m> of <m>x</m> and <m>O_y</m> of <m>y</m> such that <m>O_x \cap O_y = \emptyset</m>.
       </p>
     </statement>
   </definition>
+
   <p>
     <xref ref="act_Hausdorff"/>
     shows that every metric space is a Hausdorff space.
     Once we start imposing conditions on topological spaces,
     we restrict the number of spaces we consider.
   </p>
+
   <activity>
-    <p>
-      <nbsp/>
-      <ul>
-        <li>
+    
+      <task>
+        <statement>
           <p>
             Let <m>X</m> be any set and <m>\tau</m> the discrete topology.
             Is <m>(X, \tau)</m> Hausdorff?
             Justify your answer.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Let <m>(X, \tau)</m> be a Hausdorff topological space with <m>X = \{x, x_1, x_2, \ldots,
             x_n\}</m> a finite set.
@@ -91,16 +100,18 @@
             Is <m>\{x\}</m> an open set?
             Explain.
             What does this say about the topology <m>\tau</m>?
-            <hint>
+            
+          </p>
+        </statement>
+        <hint>
               <p>
                 Is <m>x</m> a limit point of <m>\{x_1, x_2, \ldots, x_n\}</m>?
               </p>
             </hint>
-          </p>
-        </li>
-      </ul>
-    </p>
+      </task>
+    
   </activity>
+
   <example xml:id="exp_K_topology">
     <statement>
       <p>
@@ -116,17 +127,19 @@
       </p>
     </statement>
   </example>
+
   <p>
     The reason we defined Hausdorff spaces is because they have familiar properties,
     as the next theorems illustrate.
   </p>
+
   <theorem>
     <statement>
       <p>
         Each single point subset of a Hausdorff topological space is closed.
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       Let <m>X</m> be a Hausdorff topological space,
@@ -141,13 +154,15 @@
       This verifies that <m>A</m> is a closed set.
     </p>
   </proof>
+  </theorem>
+
   <theorem>
     <statement>
       <p>
         A sequence of points in a Hausdorff topological space can have at most one limit in the space.
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       Let <m>X</m> be a Hausdorff topological space,
@@ -162,6 +177,8 @@
       We conclude that <m>a=b</m> and that the sequence <m>(x_n)</m> can have at most one limit in <m>X</m>.
     </p>
   </proof>
+  </theorem>
+
   <p>
     Hausdorff spaces are important because we can separate distinct points with disjoint open sets.
     It is also of interest to consider what other types of objects we can separate with disjoint open sets.
@@ -187,7 +204,10 @@
     However, these are not axioms in the usual sense of the word,
     but rather properties.)
   </p>
+
   <definition>
+  <idx><h><m>T_1</m>-space</h></idx>
+<idx><h>Frechet space</h></idx>
     <statement>
       <p>
         Let <m>X</m> be a topological space.
@@ -195,9 +215,7 @@
           <li>
             <p>
               The space <m>X</m> is a <term><term>T</term><m>_1</m>-space</term>
-                <idx><h><m>T_1</m>-space</h></idx>
               or <term>Frechet space</term>
-                <idx><h>Frechet space</h></idx>
               if for every <m>x\neq y</m> in <m>X</m>,
               there exist an open set <m>U</m> containing <m>y</m> such that <m>x \notin U</m>.
             </p>
@@ -234,6 +252,7 @@
       </p>
     </statement>
   </definition>
+
   <p>
     The use of the variable <m>T</m> comes from the German
     <q>Trennungsaxiome</q>
@@ -266,6 +285,6 @@
     We won't verify that the Niemytzki plane is <m>T_3</m> but not <m>T_4</m>.
     The interested reader can find an accessible proof in the article
     <q>Another Proof that the Niemytzki Plane is not Normal</q>
-    by David H. Vetterlein in the <term>Pi Mu Epsilon Journal</term>, Vol. 10, No. 2 (SPRING 1995), pp. 119-121.
+    by David H. Vetterlein in the <pubtitle>Pi Mu Epsilon Journal</pubtitle>, Vol. 10, No. 2 (SPRING 1995), pp. 119-121.
   </p>
 </section>

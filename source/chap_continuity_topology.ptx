@@ -1,6 +1,6 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_continuity_topology">
   <title>Continuity and Homeomorphisms</title>
-  <introduction>
+ 
     <objectives>
       <ul>
         <li>
@@ -27,7 +27,7 @@
         </li>
       </ul>
     </objectives>
-  </introduction>
+  
   <xi:include  href="sec_cont_top_intro.ptx"/>
   <xi:include  href="sec_metric_equiv.ptx"/>
   <xi:include  href="sec_top_equiv.ptx"/>

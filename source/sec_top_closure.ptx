@@ -4,21 +4,25 @@
     Once we have a definition of limit point,
     we can define the closure of a set just as we did in metric spaces.
   </p>
+
   <definition>
+  <idx><h>closure in topological spaces</h></idx>
     <statement>
       <p>
-        The closure<idx><h>closure in topological spaces</h></idx> of a subset <m>A</m> of a topological space <m>X</m> is the set
+        The closure of a subset <m>A</m> of a topological space <m>X</m> is the set
         <me>
           \overline{A} = A \cup A'
         </me>.
       </p>
     </statement>
   </definition>
+
   <p>
     In other words,
     the closure of a set is the collection of the elements of the set and the limit points of the set.
     The following theorem is the analog of the theorem in metric spaces about closures.
   </p>
+
   <theorem xml:id="thm_TS_closure_closed">
     <statement>
       <p>
@@ -27,7 +31,7 @@
         Moreover, the closure of <m>A</m> is the smallest closed subset of <m>X</m> that contains <m>A</m>.
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       Let <m>X</m> be a topological space and <m>A</m> a subset of <m>X</m>.
@@ -57,40 +61,53 @@
       The proof that <m>\overline{A}</m> is the smallest closed subset of <m>X</m> that contains <m>A</m> is left for the next activity.
     </p>
   </proof>
+  </theorem>
+
   <activity>
+    <introduction>
     <p>
       Let <m>(X,d)</m> be a topological space,
       and let <m>A</m> be a subset of <m>X</m>.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             What will we have to show to prove that
             <m>\overline{A}</m> is the smallest closed subset of <m>X</m> that contains <m>A</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Suppose that <m>C</m> is a closed subset of <m>X</m> that contains <m>A</m>.
             To show that <m>\overline{A} \subseteq C</m>,
             why is it enough to demonstrate that <m>A' \subseteq C</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             If <m>x \in A'</m>, what can we say about <m>x</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Complete the proof that <m>\overline{A} \subseteq C</m>.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     One consequence of <xref ref="thm_TS_closure_closed"/> is the following.
   </p>
+  
   <corollary>
     <statement>
       <p>
