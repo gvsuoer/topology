@@ -9,41 +9,47 @@
     Such a function provides a one-to-one correspondence between open sets in the two spaces.
     This leads to the next definition.
   </p>
+
   <definition xml:id="def_MS_topological_equivalence">
+  <idx><h>topologically equivalent</h></idx>
     <statement>
       <p>
-        Two topological spaces <m>(X,d_X)</m> and <m>(Y,d_Y)</m> are topologically equivalent<idx><h>topologically equivalent</h></idx> if there is a continuous bijection
+        Two topological spaces <m>(X,d_X)</m> and <m>(Y,d_Y)</m> are topologically equivalent if there is a continuous bijection
         <m>f : X \to Y</m> such that <m>f^{-1}</m> is also continuous.
       </p>
     </statement>
   </definition>
+
   <p>
     Metric equivalence always implies topological equivalence
     (using the metric topologies),
-    which is left for Exercise <xref ref="ex_me_implies_te"/>.
+    which is left for <xref ref="ex_me_implies_te"/>.
     So metric equivalence is a stronger condition than topological equivalence.
   </p>
+
   <p>
     The function <m>f</m>
     (or <m>f^{-1}</m>)
     in <xref ref="def_MS_topological_equivalence"/>
     is called a <term>homeomorphism</term>.
   </p>
+
   <definition xml:id="def_Homeomorphism">
+  <idx><h>homeomorphism</h></idx>
     <statement>
       <p>
         Let <m>(X,\tau_X)</m> and <m>(Y,\tau_Y)</m> be topological spaces.
         A function <m>f: X \to Y</m> is a homeomorphism
-            <idx><h>homeomorphism</h></idx>
         if <m>f</m> is a continuous bijection such that <m>f^{-1}</m> is also continuous.
       </p>
     </statement>
   </definition>
+
   <p>
+    <idx><h>homeomorphic spaces</h></idx>
     If there is a homeomorphism from <m>(X,\tau_X)</m> to
     <m>(Y,\tau_Y)</m> we say that the spaces <m>(X,\tau_X)</m> to
     <m>(Y,\tau_Y)</m> are <term>homeomorphic</term>
-        <idx><h>homeomorphic spaces</h></idx>
     topological spaces.
   </p>
   <p>
@@ -61,6 +67,7 @@
     f(y))</m> for any <m>x, y \in \R^2</m>.
     The next theorem tells us that this is a sufficient condition for topological equivalence when we work in the same underlying space.
   </p>
+
   <theorem>
     <statement>
       <p>
@@ -74,7 +81,7 @@
         then <m>(X,d)</m> is topologically equivalent to <m>(X,d')</m>.
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       Let <m>X</m> be a set on which two metrics <m>d</m> and <m>d'</m> are defined.
@@ -103,30 +110,35 @@
       Therefore, <m>i_X</m> is a homeomorphism between <m>(X,d)</m> and <m>(X,d')</m>.
     </p>
   </proof>
+  </theorem>
+
   <activity>
-    <p>
-      <nbsp/>
-      <ul>
-        <li>
+    
+      <task>
+        <statement>
           <p>
             Are <m>(\R^2,d_T)</m> and <m>(\R^2, d_M)</m> topologically equivalent?
             Explain.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Are <m>(\R^2,d_E)</m> and <m>(\R^2, d_T)</m> topologically equivalent?
             Explain.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Do you expect that <m>(\R^2,d_E)</m> and
             <m>(\R^2, d_M)</m> are topologically equivalent.
             Explain without doing any calculations or comparisons.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
 </section>

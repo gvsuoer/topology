@@ -227,6 +227,6 @@
     <idx><h>metric</h><h>max</h></idx>
     The metric <m>d_M</m> is called the <term>max</term> metric.
     In the following section we prove that the Euclidean metric is in fact a metric.
-    Proofs that <m>d_T</m> and <m>d_M</m> are metrics are left to Exercises <xref ref="ex_Taxicab"/> and <xref ref="ex_Max"/>.
+    Proofs that <m>d_T</m> and <m>d_M</m> are metrics are left to <xref ref="ex_Taxicab"/> and <xref ref="ex_Max"/>.
   </p>
 </section>

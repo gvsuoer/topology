@@ -12,15 +12,17 @@
     <q><m>\geq</m></q>
     on the integers, for example.
   </p>
+
   <definition>
+  <idx><h>relation</h></idx>
     <statement>
       <p>
         A relation
-            <idx><h>relation</h></idx>
         on a set <m>S</m> is a subset <m>R</m> of <m>S \times S</m>.
       </p>
     </statement>
   </definition>
+
   <p>
     For example, the subset <m>R = \{(a,a) \mid a \in \Z \}</m> of
     <m>\Z \times \Z</m> is the relation we call equals.
@@ -61,32 +63,34 @@
     When we use the word
     <q>equivalence</q>, we are referring to an equivalence relation.
   </p>
+
   <definition>
+  <idx><h>equivalence relation</h></idx>
     <statement>
       <p>
         An equivalence relation
-            <idx><h>equivalence relation</h></idx>
         is a relation on a set that is reflexive,
         symmetric, and transitive.
       </p>
     </statement>
   </definition>
+
   <activity>
-    <p>
-      <nbsp/>
-      <ul>
-        <li>
+      <task>
+        <statement>
           <p>
             Explain why metric equivalence is an equivalence relation.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Explain why topological equivalence is an equivalence relation.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
   <p>
     Equivalence relations are important because an equivalence relation on a set <m>S</m> partitions the set into a disjoint union of equivalence classes.

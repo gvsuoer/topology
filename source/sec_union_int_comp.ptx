@@ -473,7 +473,7 @@
     <m>(A \cup B)^c = A^c \cap B^c</m> that we learned about in <xref ref="act_sets_1"/> are called DeMorgan's Laws.
     These laws apply to any union or intersection of sets,
     finite or infinite.
-    The proofs are left for Exercise <xref ref="ex_DeMorgan"/>.
+    The proofs are left for <xref ref="ex_DeMorgan"/>.
   </p>
 
   <theorem>

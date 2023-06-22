@@ -6,26 +6,29 @@
     We have defined neighborhoods in topological spaces,
     so we can use this characterization as our definition of a continuous function from one topological space to another.
   </p>
+
   <definition xml:id="def_Continuity_topology">
+  <idx><h>continuity in a topological space</h></idx>
     <statement>
       <p>
         A function <m>f</m> from a topological space
         <m>(X, \tau_X)</m> to a topological space
-        <m>(Y, \tau_Y)</m> is continuous at a point<idx><h>continuity in a topological space</h></idx> <m>a \in X</m> if
+        <m>(Y, \tau_Y)</m> is continuous at a point <m>a \in X</m> if
         <m>f^{-1}(N)</m> is a neighborhood of <m>a</m> in <m>X</m> whenever <m>N</m> is a neighborhood of <m>f(a)</m> in <m>Y</m>.
         The function <m>f</m> is continuous if <m>f</m> is continuous at each point in <m>X</m>.
       </p>
     </statement>
   </definition>
+
   <p>
     We saw that in metric spaces,
     a useful characterization of continuity was in terms of open sets.
     It is not surprising that we have the same characterization in topological spaces.
     You may assume the result of <xref ref="thm_PA_TS_Open_continuity"/>
-    (the topological space version of <xref ref="thm_Open_continuity"/>
-    <xref ref="thm_Open_continuity">on</xref> for metric spaces)
+    (the topological space version of <xref ref="thm_Open_continuity"/> for metric spaces)
     for this activity.
   </p>
+
   <theorem xml:id="thm_PA_TS_Open_continuity">
     <statement>
       <p>
@@ -36,11 +39,11 @@
       </p>
     </statement>
   </theorem>
-  <activity>
-    <p>
-      <nbsp/>
-      <ol>
-        <li>
+
+  <exploration>
+    
+      <task>
+        <introduction>
           <p>
             Let
             <me>
@@ -51,21 +54,25 @@
               (Y, \tau_Y) = (\{2,4,6,8\}, \{\emptyset, \{4\}, \{6\}, \{4,6\}, Y\})
             </me>.
             Define <m>f: X \to Y</m> by <m>f(x) = 2x</m>.
-            <ul>
-              <li>
+          </p>
+        </introduction>
+            <task>
+              <statement>
                 <p>
                   Is <m>f</m> continuous at <m>4</m>?
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   Is <m>f</m> a continuous function?
                 </p>
-              </li>
-            </ul>
-          </p>
-        </li>
-        <li>
+              </statement>
+            </task>
+      </task>
+      <task>
+        <introduction>
           <p>
             Let
             <me>
@@ -77,23 +84,31 @@
             </me>.
             Define <m>f: X \to Y</m> by <m>f(1) = a</m>,
             <m>f(2) = c</m>, <m>f(3) = f(4) = b</m>.
-            <ul>
-              <li>
+          </p>
+        </introduction>
+            <task>
+              <statement>
                 <p>
                   Show that <m>f</m> is a continuous function.
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   Even though <m>f</m> is continuous,
                   it is possible that <m>f(O)</m> may not be open for every open set in <m>X</m>.
                   Find such an example for this function <m>f</m>.
                 </p>
-              </li>
-            </ul>
-          </p>
+              </statement>
+            </task>
+      </task>
+      <task>
+        <statement>
+          <p>
           Functions <m>f</m> that have the property that <m>f(O)</m> is open whenever <m>O</m> is open in <m>X</m> are called
           <term>open</term> functions.
+        </p>
           <definition>
             <statement>
               <p>
@@ -105,18 +120,24 @@
               </p>
             </statement>
           </definition>
+          <p>
           There is a similar definition of a
           <term>closed</term> function.
-        </li>
-        <li>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Let <m>X= \{1,2,3,4,5\}</m> and <m>\tau = \{\emptyset,\{1\}, \{3,5\}, \{1,3,5\}, X\}</m>.
             Define <m>f: X \to X</m> by <m>f(x) = \la x-3 \ra+1</m>.
             At which points is <m>f</m> continuous?
             Is <m>f</m> a continuous function?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Let <m>f:(\Z,\tau_{FC}) \to (\Z, d_E)</m> where <m>f(n) = n</m> and
             <m>\tau_{FC}</m> is the finite complement topology.
@@ -125,8 +146,10 @@
             exhibit a specific point at which <m>f</m> fails to be continuous.
             Explain.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Let <m>f:(\Z, d_E) \to (\Z,\tau_{FC})</m> where <m>f(n) = n</m> and
             <m>\tau_{FC}</m> is the finite complement topology.
@@ -135,8 +158,10 @@
             exhibit a specific point at which <m>f</m> fails to be continuous.
             Explain.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             It can sometimes be easier to show that a function <m>f</m> mapping a topological space <m>(X,d_X)</m> to a topological space <m>(Y,d_Y)</m> is continuous by working with a basis instead of all open sets.
             Let <m>\B</m> be a basis for the topology on <m>Y</m>.
@@ -144,10 +169,11 @@
             then <m>f</m> is continuous?
             Verify your result.
           </p>
-        </li>
-      </ol>
-    </p>
-  </activity>
+        </statement>
+      </task>
+    
+  </exploration>
+
   <p>
     To complete the introduction to this section,
     we prove <xref ref="thm_PA_TS_Open_continuity"/>.
@@ -169,45 +195,56 @@
     <m>f^{-1}(O)</m> is a neighborhood of <m>a</m>.
     So <m>f^{-1}(O)</m> is a neighborhood of each of its points and <m>f^{-1}(O)</m> is an open set.
   </p>
+
   <activity>
+  <introduction>
     <p>
       Now we prove the remaining implication in <xref ref="thm_PA_TS_Open_continuity"/>.
       That is, let <m>f</m> be a function from a topological space
       <m>(X, \tau_X)</m> to a topological space <m>(Y, \tau_Y)</m>,
       and assume that <m>f^{-1}(O)</m> is open whenever <m>O</m> is open in <m>Y</m>.
       We will prove that <m>f</m> is a continuous function.
-      <ul>
-        <li>
+    </p>
+  </introduction>
+      <task>
+        <statement>
           <p>
             Using the definition,
             what does it take to show that <m>f</m> is a continuous function?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Let <m>a \in X</m> and suppose that <m>N</m> is a neighborhood of <m>f(a)</m> in <m>Y</m>.
             What can we conclude from <m>N</m> being a neighborhood?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Use the assumption about <m>f</m> in this activity to explain why
             <m>f^{-1}(N)</m> is a neighborhood of <m>a</m> in <m>X</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Explain how we have shown that <m>f</m> is a continuous function.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+  
   </activity>
+
   <p>
-    The following theorem is the topological analog of <xref ref="thm_closed_sets_continuity_MS"/>
-    on <xref ref="thm_closed_sets_continuity_MS">page</xref>.
-    The proof is left for Exercise <xref ref="ex_closed_sets_continuity_TS"/>.
+    The following theorem is the topological analog of <xref ref="thm_closed_sets_continuity_MS"/>.
+    The proof is left for <xref ref="ex_closed_sets_continuity_TS"/>.
   </p>
+
   <theorem xml:id="thm_closed_sets_continuity_TS">
     <statement>
       <p>
@@ -218,4 +255,5 @@
       </p>
     </statement>
   </theorem>
+
 </section>
