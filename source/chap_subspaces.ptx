@@ -1,6 +1,6 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_subspaces">
   <title>Subspaces</title>
-  <introduction>
+  
     <objectives>
       <ul>
         <li>
@@ -25,7 +25,7 @@
         </li>
       </ul>
     </objectives>
-  </introduction>
+ 
   <xi:include  href="sec_sub.ptx"/>
   <xi:include  href="sec_subspace_top.ptx"/>
   <xi:include  href="sec_base_sub.ptx"/>

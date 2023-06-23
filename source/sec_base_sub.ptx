@@ -6,20 +6,27 @@
     and if <m>A</m> is a subspace of <m>X</m>,
     we might ask if we can find a basis <m>\B_A</m> from <m>\B</m> in a natural way.
   </p>
+
   <activity>
+    <introduction>
     <p>
       Let <m>(X, \tau)</m> be a topological space with basis <m>\B</m>,
       and let <m>A</m> be a subspace of <m>X</m>.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             There is a natural candidate to consider as a basis <m>\B_A</m> for <m>A</m>.
             How do you think we should define the elements in <m>\B_A</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Recall that a set <m>\B</m> is a basis for a topological space <m>X</m> if
+          
             <ol>
               <li>
                 <p>
@@ -35,10 +42,11 @@
                 </p>
               </li>
             </ol>
-          </p>
+          
           Show that your set from (a) is a basis for the induced topology on <m>A</m>.
-        </li>
-      </ul>
-    </p>
+          </p>
+        </statement>
+      </task>
+  
   </activity>
 </section>
