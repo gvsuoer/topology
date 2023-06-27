@@ -184,6 +184,9 @@
 \usetikzlibrary{through,intersections,decorations,shadows,fadings}
 \usepackage{pgfplots}
 </latex-image-preamble>
+<!-- <latex-preamble>
+  <package>yhmath</package>
+</latex-preamble> -->
 <rename element="objectives">Focus Questions</rename>
 <rename element="exploration">Preview Activity</rename>
   </docinfo>
@@ -232,7 +235,8 @@
       <xi:include href="./chap_Closed_sets_topology.ptx"/>
       <xi:include href="./chap_continuity_topology.ptx"/>
       <xi:include href="./chap_subspaces.ptx"/>
-
+      <xi:include href="./chap_quotients.ptx"/>
+      
     </part>
 
     <!-- 
@@ -249,7 +253,7 @@
     
     
     
-    <xi:include href="./chap_quotients.ptx"/>
+    
     <xi:include href="./chap_Compact_topology.ptx"/>
     <xi:include href="./chap_Connected_topology.ptx"/>
     <xi:include href="./chap_Path_connected_topology.ptx"/>
