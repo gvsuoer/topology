@@ -8,7 +8,9 @@
     <term>quotient</term> topology.
     The quotient topology gives us a way of creating a topological space which models gluing and collapsing parts of a topological space.
   </p>
-  <activity>
+
+  <exploration>
+    <introduction>
     <p>
       Let <m>X = \{1,2,3,4,5,6\}</m> and let <m>\tau = \{\emptyset, \{1,2\},\{4,6\}, \{1,2,4,6\},X\}</m>.
       Let <m>Y = \{a,b,c,d\}</m> and define <m>p: X \to Y</m> by
@@ -18,8 +20,10 @@
     </p>
     <p>
       Our goal in this activity is to define a topology on <m>Y</m> that is related to the topology on <m>X</m> via <m>p</m>.
-      <ol>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             We know the sets in <m>X</m> that are open.
             So let us consider the sets <m>U</m> in <m>Y</m> such that <m>p^{-1}(U)</m> is open in <m>X</m>.
@@ -30,25 +34,31 @@
             </me>.
             Find all of the sets in <m>\sigma</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Show that <m>\sigma</m> is a topology on <m>Y</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Explain why <m>p : (X, \tau) \to (Y, \sigma)</m> is continuous.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Show that <m>\sigma</m> is the largest topology on <m>Y</m> for which <m>p</m> is continuous.
             That is, if <m>\sigma'</m> is a topology on <m>Y</m> with <m>\sigma \subsetneqq \sigma'</m>,
             then <m>p: (X,\tau) \to (Y, \sigma')</m> is not continuous.
           </p>
-        </li>
-      </ol>
-    </p>
-  </activity>
+        </statement>
+      </task>
+    
+  </exploration>
 </section>

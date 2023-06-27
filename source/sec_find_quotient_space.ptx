@@ -13,6 +13,7 @@
     and we would like to have an effective way to be able to identify the quotient space <m>X/\ssim</m> as homeomorphic to some familiar topological space <m>Y</m>.
     That is, we want to be able to show that there is a homeomorphism <m>f</m> from <m>X/\ssim</m> to <m>Y</m>.
   </p>
+
   <example xml:id="exp_R_Z_quotient">
     <statement>
       <p>
@@ -41,9 +42,11 @@
       </p>
     </statement>
   </example>
+
   <p>
     The following theorem encapsulates the above example.
   </p>
+
   <theorem xml:id="thm_quotient_1">
     <statement>
       <p>
@@ -60,38 +63,48 @@
       </p>
     </statement>
   </theorem>
+
   <activity>
+    <introduction>
     <p>
       <xref ref="thm_quotient_1"/>
       is a statement about sets and functions,
       and there is no topology involved.
       We prove the theorem in this activity.
       Use the conditions stated in <xref ref="thm_quotient_1"/>.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             Show that <m>\overline{f}</m> is well-defined.
             That is, show that whenever <m>[x_1] = [x_2]</m> in <m>X/\ssim</m>,
             then <m>\overline{f}([x_1]) =\overline{f}([x_2])</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Prove that <m>f = \overline{f} \circ p</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Show that the uniqueness of
             <m>\overline{f}</m> comes from the equation <m>f = \overline{f} \circ p</m>.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     Now we present a final result that can be very helpful when working with quotient spaces.
   </p>
+
   <theorem xml:id="thm_quotient_2">
     <statement>
       <p>
@@ -105,7 +118,7 @@
         <m>\overline{f}([x]) = f(x)</m> is the unique continuous function satisfying <m>f = \overline{f} \circ p</m>.
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       The existence of <m>\overline{f}</m> as the unique function satisfying
@@ -135,10 +148,13 @@
       We conclude that <m>\overline{f}^{-1}(O)</m> is open in <m>X</m> and <m>\overline{f}</m> is continuous.
     </p>
   </proof>
+  </theorem>
+
   <p>
     Now we will see how to use <xref ref="thm_quotient_2"/>
     to establish a homeomorphism from a quotient space of a given topological space to another topological space
   </p>
+
   <example>
     <statement>
       <p>
@@ -152,7 +168,8 @@
         <caption>A basis element for <m>S^1</m>.</caption>
         <image width="50%" source="S_1_basis"/>
       </figure>
-      <ul>
+      <p>
+      <dl>
         <li>
           <title>Step 1</title>
           <p>
@@ -229,7 +246,8 @@
             and so <m>S^1</m> is a quotient space of <m>\R</m>.
           </p>
         </li>
-      </ul>
+      </dl>
+      </p>
     </statement>
   </example>
 </section>
