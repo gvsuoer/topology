@@ -13,23 +13,29 @@
     <m>(\R^n, d_E)</m> are exactly the subsets that are closed and bounded.
     The first step is contained in the next activity.
   </p>
+
   <activity xml:id="act_metric_compact_closed">
+    <introduction>
     <p>
       We have seen that compact sets can be either open or closed.
       However, in certain situations compact sets must be closed.
       We investigate that idea in this activity.
       Let <m>A</m> be a compact subset of a Hausdorff topological space <m>X</m>.
       We will examine why <m>A</m> must be a closed set.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             To prove that <m>A</m> is a closed set,
             we consider the set <m>X \setminus A</m>.
             What property of <m>X \setminus A</m> will ensure that <m>A</m> is closed?
             How do we prove that <m>X \setminus A</m> has this property?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Let <m>x \in X \setminus A</m>.
             Assume that <m>A</m> is a nonempty set (why can we make this assumption)?
@@ -37,8 +43,10 @@
             why must there exist disjoint open sets <m>O_{xa}</m> and <m>O_a</m> with
             <m>x \in O_{xa}</m> and <m>a \in O_a</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Why must there exist a positive integer <m>n</m> and elements <m>a_1</m>,
             <m>a_2</m>, <m>\ldots</m>,
@@ -46,21 +54,25 @@
             <m>O_{a_2}</m>,
             <m>\ldots</m>, <m>O_{a_n}</m> form an open cover of <m>A</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Now find an open subset of
             <m>X \setminus A</m> that has <m>x</m> as an element.
             What does this tell us about <m>A</m>?
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     The result of <xref ref="act_metric_compact_closed"/>
     is summarized in <xref ref="thm_metric_compact_closed"/>.
   </p>
+
   <theorem xml:id="thm_metric_compact_closed">
     <statement>
       <p>
@@ -69,12 +81,14 @@
       </p>
     </statement>
   </theorem>
+
   <p>
     <xref ref="thm_metric_compact_closed"/>
     tells us something about compact subsets of <m>(\R^n, d_E)</m>.
     Since every metric space is Hausdorff,
     we can conclude the following corollary.
   </p>
+
   <corollary>
     <statement>
       <p>
@@ -83,6 +97,7 @@
       </p>
     </statement>
   </corollary>
+
   <p>
     To classify the compact subsets of
     <m>(\R^n, d_E)</m> as closed and bounded,
@@ -92,26 +107,31 @@
     a subset <m>A</m> of <m>\R^n</m> is bounded if we can construct a box in <m>\R^n</m> that is large enough to contain it.
     Thus, the following definition.
   </p>
+
   <definition xml:id="def_n_cube">
+  <idx><h>bounded subset of <m>\R^n</m></h></idx>
     <statement>
       <p>
-        A subset <m>A</m> of <m>\R^n</m> is bounded<idx><h>bounded subset of <m>\R^n</m></h></idx> if there exists <m>M \gt 0</m> such that <m>A \subseteq Q^n_M</m>, where
+        A subset <m>A</m> of <m>\R^n</m> is bounded if there exists <m>M \gt 0</m> such that <m>A \subseteq Q^n_M</m>, where
         <me>
           Q^n_M = \{(x_1,x_2, \ldots, x_n) \mid -M \leq x_i \leq M \text{ for every }  1 \leq i \leq n\}
         </me>.
       </p>
     </statement>
   </definition>
+
   <p>
     The set <m>Q^n_M</m> in <xref ref="def_n_cube"/>
     is called the <term>standard</term>
     <m>n</m><term>-dimensional cube of size M</term>.
     A standard 3-dimensional cube of size <m>M</m> is shown in <xref ref="F_M_cube"/>.
   </p>
+
   <figure xml:id="F_M_cube">
     <caption>A standard 3-cube <m>Q^3_M</m>.</caption>
-    <image width="50%" source="M_cube.png"/>
+    <image width="50%" source="M_cube"/>
   </figure>
+
   <p>
     An important fact about standard <m>n</m>-cubes is that they are compact subsets of <m>\R^n</m>.
     Compactness is a complicated property <mdash/> it is difficult to prove a result that is true about every open cover.
@@ -119,6 +139,7 @@
     the proof of <xref ref="thm_Compact_cubes"/> is quite technical,
     but it is a critical step to classifying the compact subsets of <m>\R^n</m>.
   </p>
+
   <theorem xml:id="thm_Compact_cubes">
     <statement>
       <p>
@@ -126,7 +147,7 @@
         The standard <m>n</m>-dimensional cube of size <m>M</m> is a compact subset of <m>\R^n</m> for any <m>M \gt 0</m>.
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       We proceed by contradiction and assume that there is an
@@ -139,8 +160,13 @@
     </p>
     <figure xml:id="F_Cubes">
       <caption>Left : <m>Q_1</m>. Middle: <m>Q_2</m>. Right: Labeling the corners.</caption>
-      <image width="50%" source="HB_cube"/>   <image width="50%" source="HB_cube_2"/>    <image width="50%" source="HB_cube_3"/>
+      <sidebyside>
+      <image width="50%" source="HB_cube"/>
+      <image width="50%" source="HB_cube_2"/>
+      <image width="50%" source="HB_cube_3"/>
+      </sidebyside>
     </figure>
+
     <p>
       Let <m>Q'_0</m> be one of these sub-cubes.
       The collection <m>\{O_{\alpha} \cap Q'_0\}_{\alpha \in I}</m> is an open cover of <m>Q'_0</m> in the subspace topology.
@@ -228,30 +254,41 @@
       so we conclude that the standard <m>n</m>-dimensional cube of size <m>M</m> is a compact subset of <m>\R^n</m> for any <m>M \gt 0</m>.
     </p>
   </proof>
+  </theorem>
+
   <p>
     One consequence of <xref ref="thm_Compact_cubes"/>
     is that any closed interval <m>[a,b]</m> in <m>\R</m> is a compact set.
     But we can say even more <mdash/> that the compact subsets of <m>\R^n</m> are the closed and bounded subsets.
     This will require one more intermediate result about closed subsets of compact topological spaces.
   </p>
+
   <activity>
+    <introduction>
     <p>
       Let <m>X</m> be a compact topological space and <m>C</m> a closed subset of <m>X</m>.
       In this activity we will prove that <m>C</m> is compact.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             What does it take to prove that <m>C</m> is compact?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Use an open cover for <m>C</m> and the fact that <m>C</m> is closed to make an open cover for <m>X</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Use the fact that <m>X</m> is compact to complete the proof of the following theorem.
+          </p>
             <theorem xml:id="thm_closed_compact">
               <statement>
                 <p>
@@ -260,17 +297,19 @@
                 </p>
               </statement>
             </theorem>
-          </p>
-        </li>
-      </ul>
-    </p>
+          
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     Now we can prove a major result,
     that the compact subsets of
     <m>(\R^n, d_E)</m> are the closed and bounded subsets.
     This result is important enough that it is given a name.
   </p>
+
   <theorem>
     <title>The Heine-Borel Theorem</title>
     <statement>
@@ -278,7 +317,7 @@
         A subset <m>A</m> of <m>(\R^n, d_E)</m> is compact if and only if <m>A</m> is closed and bounded.
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       Let <m>A</m> be a subset of <m>(\R^n, d_E)</m>.
@@ -323,9 +362,12 @@
       then <m>A</m> is closed and bounded.
     </p>
   </proof>
+  </theorem>
+
   <p>
     You might wonder whether the Heine-Borel Theorem is true in any metric space.
   </p>
+
   <activity>
     <p>
       A subset <m>A</m> of a metric space <m>(X, d)</m> is bounded if there exists a real number <m>M</m> such that

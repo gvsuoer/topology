@@ -67,6 +67,7 @@
     way in terms of open sets than we can the interval <m>(0, 1)</m>.
     This is the basic idea behind compactness.
   </p>
+
   <definition xml:id="def_compact">
     <statement>
       <p>
@@ -79,40 +80,42 @@
       </p>
     </statement>
   </definition>
+
   <p>
     If <m>(X,\tau)</m> is a topological space and <m>X</m> is a compact subset of <m>X</m>,
     then we say that <m>X</m> is a <term>compact topological space</term>.
     There is some terminology associated with <xref ref="def_compact"/>.
   </p>
+
   <definition>
+  <idx><h>cover</h></idx>
+<idx><h>cover</h><h>open</h></idx>
     <statement>
       <p>
         A cover
-            <idx><h>cover</h></idx>
         of a subset <m>A</m> of a topological space <m>X</m> is a collection
         <m>\{S_{\alpha}\}</m> of subsets of <m>X</m> for <m>\alpha</m> in some indexing set <m>I</m> so that <m>A \subseteq \bigcup_{\alpha \in I} S_{\alpha}</m>.
         In addition, if each set <m>S_{\alpha}</m> is an open set,
         then the collection <m>\{S_{\alpha}\}</m> is an open cover
-            <idx><h>cover</h><h>open</h></idx>
         for <m>A</m>.
       </p>
     </statement>
   </definition>
+
   <definition>
     <statement>
       <p>
         A subcover
-            <idx><h>subcover</h></idx>
         of a cover <m>\{S_{\alpha}\}_{\alpha \in I}</m> of a subset <m>A</m> of a topological space <m>X</m> is a collection
         <m>\{S_{\beta}\}</m> for <m>\beta \in J</m>,
         where <m>J</m> is a subset of <m>I</m> such that <m>A \subseteq \bigcup_{\beta \in J} S_{\beta}</m>.
         In addition, if <m>J</m> is a finite set,
         the subcover <m>\{S_{\beta}\}_{\beta \in J}</m> is a finite subcover
-            <idx><h>subcover</h><h>finite</h></idx>
         of <m>\{S_{\alpha}\}_{\alpha \in I}</m>.
       </p>
     </statement>
   </definition>
+
   <p>
     So the sets <m>O_0</m>, <m>O_1</m>,
     and <m>O_4</m> in our previous example form a finite subcover of the open cover <m>\{O_n\}_{n \geq 3}</m>.
@@ -122,46 +125,61 @@
     we can restate the definition of compactness in the following way:
     a subset <m>A</m> of a topological space <m>X</m> is compact if every open cover of <m>A</m> has a finite subcover of <m>A</m>.
   </p>
-  <activity>
+
+  <exploration>
+    <introduction>
     <p>
       Determine if the subset <m>A</m> of the topological space <m>X</m> is compact.
       Either prove <m>A</m> is compact by starting with an arbitrary infinite cover and demonstrating that there is a finite subcover,
       or find a specific infinite cover and prove that there is no finite subcover.
-      <ol>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             <m>A = \{-2, 3, e, \pi, 456875\}</m> in <m>X = \R</m> with the Euclidean topology.
             Generalize this example.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             <m>A = (0, 1]</m> in <m>X = \R</m> with the Euclidean topology.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             <m>A = \left\{\frac{1}{n} \mid n \in \Z^+\right\}</m> in <m>X = \R</m> with the Euclidean topology.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             <m>A = \Z^+</m> in <m>X = \R</m> with the Euclidean topology.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             <m>A = \Z^+</m> in <m>X = \R</m> with the finite complement topology.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             <m>A = \R</m> in <m>X = \R</m> with the Euclidean topology.
           </p>
-        </li>
-      </ol>
-    </p>
-  </activity>
+        </statement>
+      </task>
+    
+  </exploration>
+
   <p>
     There are two perspectives by which we can look at compactness.
     If <m>(X,\tau_X)</m> is a topological space and <m>A</m> is a subset of <m>X</m>,

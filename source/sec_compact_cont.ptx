@@ -10,42 +10,55 @@
     We might expect that compact sets have certain properties,
     but we must be careful which ones we assume.
   </p>
+
   <activity xml:id="act_compact_clopen">
+  <introduction>
     <p>
       Let <m>X = \{a,b,c,d\}</m> and give <m>X</m> the topology <m>\tau = \{\emptyset, \{a\}, \{b,c\}, \{a,b,c\}, X\}</m>.
-      <ul>
-        <li>
+    </p>
+  </introduction>
+      <task>
+        <statement>
           <p>
             Explain why every finite subset of a topological space must be compact.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Find, if possible, a subset of <m>X</m> that is compact and open.
             If no such subset exists, explain why.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             If <m>A</m> is a compact subset of <m>X</m>, must <m>A</m> be open?
             Explain.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Find, if possible, a subset of <m>X</m> that is compact and closed.
             If no such subset exists, explain why.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             If <m>A</m> is a compact subset of <m>X</m>, must <m>A</m> be closed?
             Explain.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     The message of <xref ref="act_compact_clopen"/>
     is that compactness by itself is not related to closed or open sets.
@@ -55,35 +68,46 @@
     For the moment,
     we take a short detour and ask if compactness is a topological property.
   </p>
+
   <activity xml:id="act_compact_invariant">
+  <introduction>
     <p>
       Let <m>(X, \tau_X)</m> and
       <m>(Y, \tau_Y)</m> be topological spaces,
       and let <m>f: X \to Y</m> be continuous.
       Assume that <m>A</m> is a compact subset of <m>X</m>.
       In this activity we want to determine if <m>f(A)</m> must be a compact subset of <m>Y</m>.
-      <ul>
-        <li>
+    </p>
+  </introduction>
+      <task>
+        <statement>
           <p>
             What do we need to show to prove that <m>f(A)</m> is a compact subset of <m>Y</m>?
             Where do we start?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             If we have an open cover of <m>f(A)</m> in <m>Y</m>,
             how can we find an open cover <m>\{U_{\alpha}\}</m> for <m>A</m>?
             Be sure to verify that what you claim is actually an open cover of <m>A</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             What do we know about any open cover of <m>A</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Complete the proof of the following theorem.
+          </p>
             <theorem>
               <statement>
                 <p>
@@ -95,15 +119,17 @@
                 </p>
               </statement>
             </theorem>
-          </p>
-        </li>
-      </ul>
-    </p>
+       
+        </statement>
+      </task>
+ 
   </activity>
+
   <p>
     A consequence of <xref ref="act_compact_invariant"/>
     is that compactness is a topological property.
   </p>
+
   <corollary>
     <statement>
       <p>
