@@ -1,6 +1,6 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_Compact_topology">
   <title>Compact Spaces</title>
-  <introduction>
+
     <objectives>
       <ul>
         <li>
@@ -32,7 +32,7 @@
         </li>
       </ul>
     </objectives>
-  </introduction>
+  
   <xi:include  href="sec_compact_top_intro.ptx"/>
   <xi:include  href="sec_compact_cont.ptx"/>
   <xi:include  href="sec_compact_rn.ptx"/>
