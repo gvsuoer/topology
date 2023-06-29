@@ -8,40 +8,52 @@
     we assume that <m>X</m> is a finite topological space.
     We begin with an example to motivate the main ideas.
   </p>
+
   <activity xml:id="act_minimal_nbhds">
+  <introduction>
     <p>
       Let <m>X = \{a,b,c,d\}</m> and <m>\tau = \{\emptyset, \{b\}, \{c\}, \{a,b\}, \{b,c\}, \{a,b,c\}, \{b,c,d\}, X\}</m>.
       Assume that <m>\tau</m> is a topology on <m>X</m>.
-      <ul>
-        <li>
+    </p>
+  </introduction>
+      <task>
+        <statement>
           <p>
             Is <m>X</m> connected?
             Explain.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             For each <m>x \in X</m>,
             let <m>U_x</m> be the intersection of all open sets that contain <m>x</m>
             (we call <m>U_x</m> a <term>minimal neighborhood</term> of <m>x</m>).
+          </p>
             <definition xml:id="def_min_nghb">
+            <idx><h>minimal neighborhood</h></idx>
               <statement>
                 <p>
                   For <m>x \in X</m>, the minimal neighborhood
-              <idx><h>minimal neighborhood</h></idx>
                   <m>U_x</m> of <m>x</m> is the intersection of all open sets that contain <m>x</m>.
                 </p>
               </statement>
             </definition>
+            <p>
             Find <m>U_x</m> for each <m>x \in X</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <introduction>
           <p>
             We will see that the minimal neighborhoods of <m>X</m> are path connected.
             Here we will illustrate with <m>U_d</m>.
-            <ol label="i">
-              <li>
+          </p>
+        </introduction>
+            <task>
+              <statement>
                 <p>
                   Let <m>p : [0,1] \to X</m> be defined by
                   <me>
@@ -49,8 +61,10 @@
                   </me>
                   Show that <m>p</m> is a path in <m>U_d</m> from <m>b</m> to <m>d</m>.
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   Let <m>p : [0,1] \to X</m> be defined by
                   <me>
@@ -58,18 +72,20 @@
                   </me>
                   Show that <m>p</m> is a path in <m>U_d</m> from <m>c</m> to <m>d</m>.
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   Explain why <m>U_d</m> is path connected.
                 </p>
-              </li>
-            </ol>
-          </p>
-        </li>
-      </ul>
-    </p>
+              </statement>
+            </task>
+          
+        </task>
+     
   </activity>
+  
   <p>
     The terminology in <xref ref="def_min_nghb"/> is apt.
     Since every neighborhood <m>N</m> of a point <m>x \in X</m> must contain an open set <m>O</m> with <m>x \in O</m>,
@@ -83,7 +99,9 @@
     we saw that <m>U_x</m> was path connected for a particular <m>x</m> in one example.
     The next activity shows that this result is true in general in finite topological spaces.
   </p>
+
   <activity>
+  <introduction>
     <p>
       Let <m>X</m> be a finite topological space, and let <m>x \in X</m>.
       In this activity we demonstrate that <m>U_x</m> is path connected.
@@ -96,46 +114,57 @@
       To prove that <m>p</m> is continuous,
       let <m>O</m> be an open set in <m>X</m>.
       We either have <m>x \in O</m> or <m>x \notin O</m>.
-      <ul>
-        <li>
+    </p>
+  </introduction>
+      <task>
+        <statement>
           <p>
             Suppose <m>x \in O</m>.
             Why must <m>y</m> also be in <m>O</m>?
             What, then, is <m>p^{-1}(O)</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <introduction>
           <p>
             Now suppose <m>x \notin O</m>.
             There are two cases to consider.
-            <ol label="i">
-              <li>
+          </p>
+        </introduction>
+            <task>
+              <statement>
                 <p>
                   What is <m>p^{-1}(O)</m> if <m>y \in O</m>?
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   What is <m>p^{-1}(O)</m> if <m>y \notin O</m>?
                 </p>
-              </li>
-            </ol>
-          </p>
-        </li>
-        <li>
+              </statement>
+            </task>
+      </task>
+      <task>
+        <statement>
           <p>
             Explain why <m>p</m> is a path from <m>y</m> to <m>x</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Show that we can find a path between any two points in <m>U_x</m>.
             Conclude that <m>U_x</m> is path connected.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     The sets <m>U_x</m> collectively form the space <m>X</m>,
     and each of the <m>U_x</m> is a path connected subspace.
@@ -143,14 +172,17 @@
     Spaces with this property are called
     <term>locally path connected</term>.
   </p>
+
   <definition>
+  <idx><h>path connected</h><h>locally</h></idx>
     <statement>
       <p>
         A topological space <m>(X, \tau)</m> is locally path connected at <m>x</m> if every neighborhood of <m>x</m> contains a path connected open neighborhood with <m>x</m> as an element.
-        The space <m>(X, \tau)</m> is locally path connected<idx><h>path connected</h><h>locally</h></idx> if <m>X</m> is locally path connected at every point.
+        The space <m>(X, \tau)</m> is locally path connected if <m>X</m> is locally path connected at every point.
       </p>
     </statement>
   </definition>
+
   <p>
     If <m>X</m> is a finite topological space,
     for any <m>x \in X</m> the set <m>U_x</m> is the smallest open set containing <m>x</m>.
@@ -159,6 +191,7 @@
     (this is not true in general of infinite topological spaces).
     One consequence of a locally path connected space is the following.
   </p>
+
   <lemma xml:id="lem_open_PC">
     <statement>
       <p>
@@ -166,7 +199,7 @@
         each path component of <m>O</m> is open in <m>X</m>.
       </p>
     </statement>
-  </lemma>
+  
   <proof>
     <p>
       Let <m>X</m> be a locally path connected topological space.
@@ -190,10 +223,13 @@
       Thus, <m>N</m> contains a path connected neighborhood of <m>x</m> and <m>X</m> is locally path connected at every point.
     </p>
   </proof>
+  </lemma>
+
   <p>
     Since <m>X</m> is open in <m>X</m> whenever <m>X</m> is a topological space,
     a natural corollary of <xref ref="lem_open_PC"/> is the following.
   </p>
+
   <corollary>
     <statement>
       <p>
@@ -202,6 +238,7 @@
       </p>
     </statement>
   </corollary>
+
   <p>
     Since there are only finitely many open sets in the finite space <m>X</m>,
     any arbitrary intersection of open sets in <m>X</m> just reduces to a finite intersection.
@@ -210,19 +247,25 @@
     which will ultimately allow us to prove that if <m>X</m> is connected,
     then <m>X</m> is also path connected.
   </p>
+
   <activity>
+  <introduction>
     <p>
       Let <m>X</m> be a locally path connected topological space.
       In this activity we will prove that the components and path components of <m>X</m> are the same.
-      <ul>
-        <li>
+    </p>
+  </introduction>
+      <task>
+        <statement>
           <p>
             Let <m>x \in X</m>,
             and let <m>C</m> be the component of <m>X</m> containing <m>x</m> and <m>P</m> be the path component of <m>X</m> containing <m>x</m>.
             Show that <m>P \subseteq C</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             To complete the proof that <m>P = C</m>,
             proceed by contradiction and assume that <m>C \neq P</m>.
@@ -231,19 +274,22 @@
             and is therefore a subset of <m>C</m>.
             So <m>C = P \cup Q</m>.
             Explain why <m>P</m> and <m>Q</m> form a separation of <m>C</m>.
-            <hint>
+            
+          </p>
+        </statement>
+        <hint>
               <p>
                 How do we use the fact that <m>X</m> is locally path connected?
               </p>
             </hint>
-          </p>
-        </li>
-      </ul>
-    </p>
+      </task>
+    
   </activity>
+
   <p>
     We can now complete our main result of this section.
   </p>
+
   <theorem>
     <statement>
       <p>
@@ -251,7 +297,7 @@
         Then <m>X</m> is connected if and only if <m>X</m> is path connected.
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       Let <m>X</m> be a finite topological space.
@@ -264,4 +310,5 @@
       we conclude that <m>P= X</m> is a component of <m>X</m> and that <m>X</m> is connected.
     </p>
   </proof>
+  </theorem>
 </section>

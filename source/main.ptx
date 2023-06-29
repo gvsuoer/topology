@@ -238,26 +238,11 @@
       <xi:include href="./chap_quotients.ptx"/>
       <xi:include href="./chap_Compact_topology.ptx"/>
       <xi:include href="./chap_Connected_topology.ptx"/>
+      <xi:include href="./chap_Path_connected_topology.ptx"/>
     </part>
 
     <!-- 
-    
-    
-    
-   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <xi:include href="./chap_Path_connected_topology.ptx"/>
+
     <xi:include href="./chap_Product_topology.ptx"/> -->
     <backmatter>
       <xi:include href="./bibliography.ptx"/>
