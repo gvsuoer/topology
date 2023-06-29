@@ -18,28 +18,32 @@
     and so are not homeomorphic.
     Any set that we can remove from a connected set to obtain a disconnected set is called a <term>cut set</term>.
   </p>
+
   <definition>
+  <idx><h>cut set</h></idx>
+  <idx><h>cut point</h></idx>
     <statement>
       <p>
         A subset <m>S</m> of a connected topological space <m>X</m> is a cut set
-            <idx><h>cut set</h></idx>
         of <m>X</m> if the set <m>X \setminus S</m> is disconnected.
         A point <m>p</m> in a connected topological space <m>X</m> is a cut point
-            <idx><h>cut point</h></idx>
         if <m>X \setminus \{p\}</m> is disconnected.
       </p>
     </statement>
   </definition>
+  
   <example>
-    <statement>
-      <ol>
-        <li>
+    
+      <task>
+        <statement>
           <p>
             The point <m>1</m> is a cut point of the space <m>(0,2)</m>.
             In fact, every point in <m>(0,2)</m> is a cut point of <m>(0,2)</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Let <m>D = \{(x,y) \mid x^2+y^2 \leq 4\}</m> in <m>(\R^2, d_E)</m>.
             That is, <m>D</m> is the closed disk of radius <m>2</m> in the plane.
@@ -49,19 +53,22 @@
             the open ball <m>B((0,0),1)</m> and the annulus
             <m>\{(x,y) \mid 1 \lt x^2+y^2 \leq 4\}</m> as illustrated in <xref ref="F_Cut_set_disk"/>.
             So <m>S</m> is a cut set of <m>D</m>.
+          </p>
             <figure xml:id="F_Cut_set_disk">
               <caption>The disk <m>D</m> and cut set <m>S</m>.</caption>
               <image width="50%" source="Cut_set_disk"/>
             </figure>
-          </p>
-        </li>
-      </ol>
-    </statement>
+          
+        </statement>
+      </task>
+    
   </example>
+
   <p>
     Once we have a new property,
     we then ask if that property is a topological invariant.
   </p>
+
   <theorem>
     <statement>
       <p>
@@ -70,7 +77,7 @@
         then <m>f(S)</m> is a cut set of <m>Y</m>.
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       Let <m>X</m> and <m>Y</m> be topological spaces with <m>f : X \to Y</m> a homeomorphism.
@@ -118,19 +125,22 @@
       <m>Y \setminus f(S)</m> and <m>f(S)</m> is a cut set of <m>Y</m>.
     </p>
   </proof>
+  </theorem>
+
   <activity>
-    <p>
-      <nbsp/>
-      <ul>
-        <li>
+   
+      <task>
+        <statement>
           <p>
             Use the idea of cut sets/points to explain why the unit circle in <m>\R^2</m> is not homeomorphic to the interval <m>[0,1]</m> in <m>\R</m>.
             Note: the unit circle is the set <m>\{(x,y) \mid x^2+y^2 = 1\}</m>.
             Draw pictures to illustrate your explanation. (A formal proof is not necessary,
             but you need to provide a convincing justification.)
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Consider the following subsets of <m>\R^2</m> in the subspace topology:
             <me>
@@ -139,10 +149,11 @@
             Is <m>A \cup B</m> homeomorphic to <m>A</m>? (A formal proof is not necessary,
             but you need to provide a convincing justification.)
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+  
   </activity>
+
   <p>
     We have seen that topological equivalence is an equivalence relation,
     which partitions the collection of all topological spaces into disjoint homeomorphism classes.
@@ -150,6 +161,7 @@
     In general, though,
     it can be more difficult to prove that two spaces are homeomorphic than not homeomorphic.
   </p>
+  
   <activity>
     <p>
       Consider the spaces <m>S_1 = \R</m>,

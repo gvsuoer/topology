@@ -2,7 +2,7 @@
   <title>Summary</title>
   <p>
     Important ideas that we discussed in this section include the following.
-  </p>
+  
   <ul>
     <li>
       <p>
@@ -18,7 +18,7 @@
     <li>
       <p>
         A separation of a subset <m>A</m> of a topological space <m>X</m> is a pair of nonempty open subsets <m>U</m> and <m>V</m> of <m>X</m> such that
-      </p>
+     
       <ul>
         <li>
           <p>
@@ -42,6 +42,7 @@
         </li>
       </ul>
       Showing that a set has a separation can be a convenient way to show that the set is disconnected.
+      </p>
     </li>
     <li>
       <p>
@@ -71,4 +72,5 @@
       </p>
     </li>
   </ul>
+  </p>
 </section>

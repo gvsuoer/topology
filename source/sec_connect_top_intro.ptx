@@ -39,11 +39,13 @@
     So <m>Y</m> is a set we should consider to be connected.
     This is the notion of connectedness that we wish to investigate.
   </p>
+
   <definition>
+  <idx><h>connected space</h></idx>
     <statement>
       <p>
         A topological space <m>(X,\tau)</m> is connected
-            <idx><h>connected space</h></idx>
+            
         if <m>X</m> cannot be written as the union of two disjoint,
         nonempty,
         open subsets.
@@ -52,23 +54,30 @@
       </p>
     </statement>
   </definition>
+
   <p>
     If a set <m>X</m> is not connected,
     we say that <m>X</m> is disconnected.
     If <m>X</m> is a disconnected topological space,
     then there exist disjoint nonempty open sets <m>U</m> and <m>V</m> such that <m>X = U \cup V</m>.
   </p>
-  <activity>
+
+  <exploration>
+    <introduction>
     <p>
       Can the subset <m>A</m> of the topological space <m>X</m> be written as the union of two disjoint nonempty relatively open sets?
-      <ol>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             The set <m>A = \{a, b\}</m> in <m>(X, \tau)</m> with
             <m>X = \{a, b, c, d\}</m> and <m>\tau = \{\emptyset, \{a\}, \{b\}, \{a, b\}, X\}</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             The set <m>A = \{a, b, c\}</m> in
             <m>(X, \tau)</m> with <m>X = \{a,b,c,d,e,f\}</m> and
@@ -76,49 +85,61 @@
               \tau = \{\emptyset, \{a\}, \{c,d\}, \{a, c, d\}, \{b,c,d,e,f\}, X\}
             </me>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             The set <m>A = X</m> with <m>X = \{a,b,c,d\}</m> and
             <me>
               \tau = \{\emptyset, \{b\}, \{c\}, \{a,b\}, \{b,c\}, \{a,b,c\}, \{b,c,d\}, X\}
             </me>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             The set <m>A = \{d, f\}</m> in
             <m>X = \{a, b, c, d, e, f\}</m> with the discrete topology.
             Generalize your findings.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             The set <m>A = \{a, c, d\}</m> in
             <m>X = \{a, b, c, d, e\}</m> with the indiscrete topology.
             Generalize your findings.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             The set <m>A = \Z</m> in <m>X = \R</m> with the finite complement topology.
             Generalize your findings.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             The set <m>A = X</m> in <m>X = \{x \in \R \ \mid \ 1 \leq x \leq 2 \text{ or } 3 \lt x \lt 4\}</m> with the subspace metric topology from <m>(\R, d_E)</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             The set <m>A = X</m> in <m>X = \left\{(x, y) \in \R^2 \ \mid \  y = \frac{1}{x} \text{ or }  y = 0\right\}</m> with open sets
             <me>
               \tau = \{U  \cap X \ \mid \ U \text{ is open in the Euclidean Topology on }  \R^2\}
             </me>.
           </p>
-        </li>
-      </ol>
-    </p>
-  </activity>
+        </statement>
+      </task>
+    
+  </exploration>
 </section>

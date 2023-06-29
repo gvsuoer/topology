@@ -5,44 +5,55 @@
     connected sets are those sets that cannot be separated into a union of disjoint open sets.
     Another characterization of connectedness is established in the next activity.
   </p>
+
   <activity>
+    <introduction>
     <p>
       Let <m>(X, \tau)</m> be a topological space.
-      <ul>
-        <li>
+      </p>
+
+    </introduction>
+      <task>
+        <statement>
           <p>
             Assume that <m>X</m> is a connected space,
             and let <m>A</m> be a subset of <m>X</m> that is both open and closed.
             What happens if we combine <m>A</m> and <m>X \setminus A</m>?
             What does the fact that <m>X</m> is connected tell us about <m>A</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Now assume that the only subsets of <m>X</m> that are both open and closed are <m>\emptyset</m> and <m>X</m>.
             Must it follow that <m>X</m> is connected?
             Prove your assertion.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Summarize the result of this activity into a theorem of the form ``A topological space
             <m>(X, \tau)</m> is connected if and only if ... ``.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+   
   </activity>
+
   <p>
     A standard example of a connected topological space is the metric space <m>(\R, d_E)</m>.
   </p>
+
   <theorem xml:id="thm_R_connected">
     <statement>
       <p>
         The metric space <m>(\R, d_E)</m> is a connected topological space.
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       We proceed by contradiction and assume that there are nonempty open sets <m>U</m> and <m>V</m> such that
@@ -83,10 +94,14 @@
       Therefore, <m>(\R, d_E)</m> is a connected topological space.
     </p>
   </proof>
+  </theorem>
+
   <p>
     As you might expect, connectedness is a topological property.
   </p>
+
   <activity>
+    <introduction>
     <p>
       Let <m>(X, \tau_X)</m> and
       <m>(Y, \tau_Y)</m> be topological spaces,
@@ -99,51 +114,65 @@
       <m>g: X \to Z</m> by <m>g(x) = f(x)</m>.
       Then <m>g</m> is a continuous function that maps <m>X</m> onto <m>Z</m>.
       So we consider <m>g</m> instead of <m>f</m>.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             Assume to the contrary that <m>Z</m> is not connected.
             What do we then assume about <m>Z</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <introduction>
           <p>
             Suppose that <m>U</m> and <m>V</m> are disjoint nonempty open sets in <m>Z</m> such that <m>U \cup V = Z</m>.
             Let <m>R = g^{-1}(U)</m> and <m>S = g^{-1}(V)</m>.
-            <ol label="i">
-              <li>
+          </p>
+        </introduction>
+            <task>
+              <statement>
                 <p>
                   Explain why <m>R</m> and <m>S</m> are open sets in <m>X</m>.
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   Show that <m>R \cup S = X</m>. (Hint:
                   <m>X = g^{-1}(Z)</m>.)
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   Show <m>R</m> and <m>S</m> are nonempty sets.
-                  <hint>
+                  
+                </p>
+              </statement>
+              <hint>
                     <p>
                       Use the fact that <m>g</m> is a surjection.
                     </p>
                   </hint>
-                </p>
-              </li>
-              <li>
+            </task>
+            <task>
+              <statement>
                 <p>
                   Now show that <m>R \cap S = \emptyset</m>. (Hint:
                   <m>R \cap S = g^{-1}(U) \cap g^{-1}(V)</m>.)
                 </p>
-              </li>
-            </ol>
-          </p>
-        </li>
-        <li>
+              </statement>
+            </task>
+      </task>
+      <task>
+        <statement>
           <p>
             Explain how we have proved the following.
+          </p>
             <theorem xml:id="thm_connected_invariant">
               <statement>
                 <p>
@@ -154,15 +183,17 @@
                 </p>
               </statement>
             </theorem>
-          </p>
-        </li>
-      </ul>
-    </p>
+          
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     The fact that connectedness is preserved by continuous functions means that connectedness is a property that is shared by any homeomorphic topological spaces,
     as the next corollary indicates.
   </p>
+
   <corollary>
     <statement>
       <p>
@@ -171,7 +202,7 @@
         Then <m>X</m> is connected if and only if <m>Y</m> is connected.
       </p>
     </statement>
-  </corollary>
+  
   <proof>
     <p>
       Let <m>(X, \tau_X)</m> and
@@ -183,6 +214,8 @@
       The reverse implication follows from the fact that <m>f^{-1}</m> is a homeomorphism.
     </p>
   </proof>
+  </corollary>
+
   <p>
     Recall that <m>(\R,d_E)</m> is homeomorphic to the topological subspaces <m>(a,b)</m>,
     <m>(-\infty,
@@ -210,6 +243,7 @@
     Note that it is not necessary to have <m>U \cap V = \emptyset</m>.
     That this works in general is the result of the next theorem.
   </p>
+
   <theorem xml:id="thm_conn_subset">
     <statement>
       <p>
@@ -239,7 +273,7 @@
         </ul>
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       Let <m>X</m> be a topological space,
@@ -270,6 +304,8 @@
       The proof of the reverse implication is left to the next activity.
     </p>
   </proof>
+  </theorem>
+
   <activity>
     <p>
       Let <m>X</m> be a topological space,
@@ -281,11 +317,13 @@
       Prove that <m>A</m> is disconnected.
     </p>
   </activity>
+
   <p>
     The conditions in <xref ref="thm_conn_subset"/>
     provide a convenient way to show that a set is disconnected,
     and so any pair of sets <m>U</m> and <m>V</m> that satisfy the conditions of <xref ref="thm_conn_subset"/> is given a special name.
   </p>
+
   <definition>
     <statement>
       <p>
@@ -319,6 +357,7 @@
       </p>
     </statement>
   </definition>
+
   <p>
     If <m>X</m> is a disconnected topological space,
     then a separation of <m>X</m> is a pair <m>U</m>,
