@@ -4,7 +4,9 @@
     As with every new property we define,
     it is natural to ask if path connectedness is a topological property.
   </p>
+
   <activity>
+  <introduction>
     <p>
       In this activity we prove <xref ref="thm_path_connected"/>.
     </p>
@@ -25,27 +27,33 @@
       To prove that <m>f(A)</m> is path connected,
       we choose two elements <m>u</m> and <m>v</m> in <m>f(A)</m>.
       It follows that there exist elements <m>a</m> and <m>b</m> in <m>A</m> such that <m>f(a) = u</m> and <m>f(b) = v</m>.
-      <ul>
-        <li>
+    </p>
+  </introduction>
+      <task>
+        <statement>
           <p>
             Explain why there is a continuous function
             <m>p: [0,1] \to A</m> such that <m>p(0) = a</m> and <m>p(1) = b</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Determine how <m>p</m> and <m>f</m> can be used to define a path
             <m>q: [0,1] \to f(A)</m> from <m>u</m> to <m>v</m>.
             Be sure to explain why <m>q</m> is a path.
             Conclude that <m>f(A)</m> is path connected.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     A consequence of <xref ref="thm_path_connected"/> is the following.
   </p>
+  
   <corollary>
     <statement>
       <p>

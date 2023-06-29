@@ -6,6 +6,7 @@
     In this section we will show that any path connected space must also be connected.
     We will see later that the converse is not true except in finite topological spaces.
   </p>
+
   <theorem xml:id="thm_pctoc">
     <statement>
       <p>
@@ -13,7 +14,7 @@
         then <m>X</m> is connected.
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       Suppose that <m>X</m> is path connected.
@@ -32,6 +33,7 @@
       We conclude that <m>X</m> is connected.
     </p>
   </proof>
+  </theorem>
   <p>
     In the following sections we explore the reverse implication in <xref ref="thm_pctoc"/> <mdash/> that is,
     does connectedness imply path connectedness.

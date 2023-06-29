@@ -1,5 +1,6 @@
 <section xml:id="sec_connect_infinite">
   <title>Path Connectedness and Connectedness in Infinite Topological Spaces</title>
+  <idx><h>topologist's sine curve</h></idx>
   <p>
     Given that connectedness and path connectedness are equivalent in finite topological spaces,
     a reasonable question now is whether the converse of <xref ref="thm_pctoc"/>
@@ -9,7 +10,6 @@
     There are many examples,
     but a standard example to consider is the
     <term>topologist's sine curve</term>.
-        <idx><h>topologist's sine curve</h></idx>
     This curve <m>S</m> is defined as the union of the sets
     <me>
       S_1 = \{(0,y) \mid -1 \leq y \leq 1\}  \ \text{ and }  \ S_2 = \left\{ \left(x,\sin\left(\frac{1}{x}\right)\right) \Big| \ 0 \lt  x \leq 1\right\}
@@ -18,10 +18,12 @@
   <p>
     A picture of <m>S</m> is shown in <xref ref="F_T_sin"/>.
   </p>
+
   <figure xml:id="F_T_sin">
     <caption>The topologist's sine curve.</caption>
     <image width="50%" source="T_sin"/>
   </figure>
+
   <p>
     To understand if <m>S</m> is connected,
     let us consider the relationship between <m>S</m> and <m>S_2</m>.
@@ -48,13 +50,14 @@
     Now that we know that <m>S</m> is connected,
     the following theorem demonstrates that <m>S</m> is a connected space that is not path connected.
   </p>
+
   <theorem>
     <statement>
       <p>
         The topologist's sine curve is connected but not path connected.
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       We know that <m>S</m> is connected,
@@ -92,10 +95,12 @@
       This will imply that <m>B \subseteq U</m> and so <m>U</m> is a neighborhood of each of its points,
       and <m>U</m> is therefore an open set.
     </p>
+
     <figure xml:id="F_TSC_O">
       <caption>The set <m>O</m>.</caption>
       <image width="50%" source="O_set"/>
     </figure>
+
     <p>
       Every element in <m>B</m> is mapped into <m>O</m> by the path <m>p</m>.
       The set <m>O</m> is complicated,
@@ -165,4 +170,5 @@
       the argument given shows that there is no path in <m>S</m> from any point in <m>S_1</m> to any point in <m>S_2</m>.
     </p>
   </proof>
+  </theorem>
 </section>

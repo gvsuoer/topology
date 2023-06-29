@@ -14,15 +14,18 @@
     and how do we know the resulting function is continuous.
     The next lemma will help.
   </p>
+
   <figure xml:id="F_path_transitive">
     <caption>A path from <m>a</m> to <m>c</m>.</caption>
     <image width="50%" source="path_transitive"/>
   </figure>
+
   <lemma>
     <title>The Gluing Lemma</title>
+    <idx><h>Gluing Lemma</h></idx>
     <statement>
       <p>
-            <idx><h>Gluing Lemma</h></idx>
+
         Let <m>A</m> and <m>B</m> be closed subsets of a space <m>X = A \cup B</m>, and let <m>f:A \to Y</m> and <m>g: B \to Y</m> be continuous functions into a space <m>Y</m> such that <m>f(x)=g(x)</m> for all <m>x \in (A \cap B)</m>.
         Then the function <m>h:X \to Y</m> defined by
         <me>
@@ -30,12 +33,12 @@
         </me>
         is continuous.
       </p>
+      <figure xml:id="F_Gluing_Lemma">
+        <caption>The Gluing Lemma.</caption>
+        <image width="50%" source="Gluing_Lemma"/>
+      </figure>
     </statement>
-  </lemma>
-  <figure xml:id="F_Gluing_Lemma">
-    <caption>The Gluing Lemma.</caption>
-    <image width="50%" source="Gluing_Lemma"/>
-  </figure>
+
   <proof>
     <p>
       Let <m>A</m> and <m>B</m> be closed subsets of a space <m>X = A \cup B</m>,
@@ -51,9 +54,10 @@
       To show that <m>h</m> is continuous,
       let <m>C</m> be a closed subset of <m>Y</m>.
       Then
-      <me>
-        h^{-1}(C) = \{x \in X \mid h(x) \in C\} = \{x \in A \mid f(x) \in C\} \cup \{x \in B \mid g(x) \in C\} = f^{-1}(C) \cup g^{-1}(C)
-      </me>.
+      <md>
+        <mrow>h^{-1}(C) = \{x \in X \mid h(x) \in C\} \amp = \{x \in A \mid f(x) \in C\} \cup \{x \in B \mid g(x) \in C\}</mrow>
+        <mrow> \amp = f^{-1}(C) \cup g^{-1}(C)</mrow>
+      </md>.
     </p>
     <p>
       Since <m>f</m> is continuous,
@@ -74,9 +78,12 @@
       it follows that <m>h</m> is continuous.
     </p>
   </proof>
+  </lemma>
+
   <p>
     We can use the Gluing Lemma to create a path from <m>a</m> to <m>c</m> given a path from <m>a</m> to <m>b</m> and a path from <m>b</m> to <m>c</m>.
   </p>
+
   <activity>
     <p>
       Use the Gluing Lemma to explain why the path product given in the following definition is actually a path from <m>p(0)</m> to <m>q(1)</m>.
@@ -95,35 +102,45 @@
       </statement>
     </definition>
   </activity>
+
   <p>
     Now we can show that path connectedness defines an equivalence relation on a topological space.
   </p>
+
   <activity>
+    <introduction>
     <p>
       Let <m>(X,\tau)</m> be a topological space.
       Define a relation on <m>X</m> as follows:
       <men xml:id="eq_path_equivalence">
         a \sim b \text{ if there is a path in }  X \text{ from }  a \text{ to }  b
       </men>.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             Explain why <m>\sim</m> is a reflexive relation.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Explain why <m>\sim</m> is a symmetric relation.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Explain why <m>\sim</m> is a transitive relation.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     Since <m>\sim</m> as defined in <xref ref="eq_path_equivalence"/> is an equivalence relation,
     the relation partitions <m>X</m> into a union of disjoint equivalence classes.
@@ -131,6 +148,7 @@
     <term>path component</term> of <m>X</m>,
     and is the largest path connected subset of <m>X</m> that contains <m>a</m>.
   </p>
+
   <definition>
     <statement>
       <p>
