@@ -9,7 +9,9 @@
     The reason for this is that <m>(-1,0)</m> is a connected subset of <m>A</m>.
     This result is true in general.
   </p>
+
   <activity>
+    <introduction>
     <p>
       Let <m>X</m> be a topological space,
       and let <m>A</m> be a subset of <m>X</m>.
@@ -17,23 +19,30 @@
       Let <m>C</m> be a connected subset of <m>A</m>.
       In this activity we want to prove that
       <m>C \subseteq U</m> or <m>C \subseteq V</m>.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             Use the fact that <m>U</m> and <m>V</m> form a separation to <m>A</m> to wxplain why
             <m>C \subseteq U \cup V</m> and <m>C \cap U \cap V = \emptyset</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Given that <m>C</m> is connected,
             what conclusion can we draw about the sets
             <m>U' = U \cap C</m> and <m>V' = V \cap C</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Complete the proof of the following lemma.
+          </p>
             <lemma xml:id="lem_separation_subset">
               <statement>
                 <p>
@@ -45,17 +54,19 @@
                 </p>
               </statement>
             </lemma>
-          </p>
-        </li>
-      </ul>
-    </p>
+          
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     Now we can prove that any interval in <m>\R</m> is connected.
     Since <m>[a,b]</m>, <m>[a,b)</m>,
     and <m>(a,b]</m> are all sets that lie between <m>(a,b)</m> and <m>\overline{(a,b)}</m>,
     we can address their connectedness all at once with the next result.
   </p>
+
   <theorem xml:id="thm_connected_limitpoints">
     <statement>
       <p>
@@ -64,7 +75,7 @@
         then <m>A</m> is connected in <m>X</m>.
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       Let <m>X</m> be a topological space and <m>C</m> a connected subset of <m>X</m>.
@@ -90,6 +101,8 @@
       This contradiction allows us to conclude that <m>A</m> is connected.
     </p>
   </proof>
+  </theorem>
+
   <p>
     One consequence of <xref ref="thm_connected_limitpoints"/>
     is that any interval of the form <m>[a,b)</m>,
@@ -99,18 +112,24 @@
     This prompts the question,
     are there any other subsets of <m>\R</m> that are connected?
   </p>
+
   <activity xml:id="act_connected_subsets_R">
+    <introduction>
     <p>
       Let <m>A</m> be a subset of <m>\R</m>.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             Let <m>A = \{a\}</m> be a single point subset of <m>\R</m>.
             Is <m>A</m> connected?
             Explain.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Now suppose that <m>A</m> is a subset of <m>\R</m> that contains two or more points.
             Assume that <m>A</m> is not an interval.
@@ -119,13 +138,15 @@
             Use this idea to find a separation of <m>A</m>.
             What can we conclude about <m>A</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Explicitly describe the connected subsets of <m>(\R, d_E)</m>.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
 </section>

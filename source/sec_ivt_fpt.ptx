@@ -10,6 +10,7 @@
     But a picture is not a proof.
     We state and then prove a more general version of the Intermediate Value Theorem.
   </p>
+
   <theorem>
     <title>The Intermediate Value Theorem</title>
     <statement>
@@ -22,38 +23,49 @@
       </p>
     </statement>
   </theorem>
+
   <activity>
+    <introduction>
     <p>
       In this activity we prove the Intermediate Value Theorem.
       Let <m>X</m> be a topological space and <m>A</m> a connected subset of <m>X</m>.
       Assume that <m>f : A \to \R</m> is a continuous function,
       and let <m>a,b \in A</m>.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             Explain why we can assume that <m>a \neq b</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Explain what happens if <m>y = f(a)</m> or <m>y=f(b)</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Now assume that <m>f(a) \neq f(b)</m>.
             Without loss of generality, assume that <m>f(a) \lt f(b)</m>.
             Why can we say that <m>f(A)</m> is an interval?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             How does the fact that <m>f(A)</m> is an interval complete the proof?
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     Our second consequence of connectedness involves a fixed point theorem.
     Fixed point theorems are important in mathematics.
@@ -61,7 +73,9 @@
     There are many fixed point theorems <mdash/> one of the most well-known is the Brouwer Fixed Point Theorem that shows that every continuous function from a closed ball <m>B</m> in <m>\R^n</m> to itself must have a fixed point.
     We can use the Intermediate Value Theorem to prove this result in <m>\R</m>.
   </p>
+
   <activity>
+    <introduction>
     <p>
       In this activity we prove the following theorem.
     </p>
@@ -77,56 +91,67 @@
     <p>
       So let <m>a,b \in \R</m> with <m>a \lt b</m>,
       and let <m>f : [a,b] \to [a,b]</m> be a continuous function.
-      <ul>
-        <li>
+    </p>
+    </introduction>
+      <task>
+        <statement>
           <p>
             Explain why we can assume that
             <m>a \lt f(a)</m> and <m>f(b) \lt b</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <introduction>
           <p>
             Define <m>g : [a,b] \to \R</m> by <m>g(x) = x-f(x)</m>.
-            <ol label="i">
-              <li>
+          </p>
+        </introduction>
+            <task>
+              <statement>
                 <p>
                   Why is <m>g</m> a continuous function?
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   What can we say about <m>g(a)</m> and <m>g(b)</m>?
                   Use the Intermediate Value Theorem to complete the proof.
                 </p>
-              </li>
-            </ol>
-          </p>
-        </li>
-        <li>
+              </statement>
+            </task>
+      </task>
+      <task>
+        <introduction>
           <p>
             Let <m>f(x) = \frac{1}{6}x^3+\frac{1}{4}x</m>.
-            <ol label="i">
-              <li>
+          </p>
+        </introduction>
+            <task>
+              <statement>
                 <p>
                   Show that <m>f</m> maps the interval <m>[-1,2]</m> into the interval <m>[-1,2]</m>.
-                  <hint>
+                  
+                </p>
+              </statement>
+              <hint>
                     <p>
                       Use <xref ref="thm_max_min"/>
-                      on <xref ref="thm_max_min">page</xref>
                       that a continuous function from a compact topological space to <m>\R</m> assumes a maximum and minimum value.
                     </p>
                   </hint>
-                </p>
-              </li>
-              <li>
+            </task>
+            <task>
+              <statement>
                 <p>
                   Find all values of <m>c</m> in <m>[-1,2]</m> such that <m>f(c) = c</m>.
                 </p>
-              </li>
-            </ol>
-          </p>
-        </li>
-      </ul>
-    </p>
+              </statement>
+            </task>
+        
+        </task>
+    
   </activity>
 </section>

@@ -6,15 +6,17 @@
     Even so, <m>A</m> is made of two connected subsets <m>(1,2)</m> and <m>(3,4)</m>.
     These connected subsets are called <term>components</term>.
   </p>
+
   <definition>
+  <idx><h>component</h></idx>
     <statement>
       <p>
         A subspace <m>C</m> of a topological space <m>X</m> is a component
-            <idx><h>component</h></idx>
         (or connected component) of <m>X</m> if <m>C</m> is connected and there is no larger connected subspace of <m>X</m> that contains <m>C</m>.
       </p>
     </statement>
   </definition>
+
   <p>
     As an example, if <m>X = (1,2) \cup [4,10) \cup \{-1,15\}</m>,
     then the components of <m>X</m> are <m>(1,2)</m>, <m>[4,10)</m>,
@@ -22,30 +24,39 @@
     As the next activity shows,
     we can always partition a topological space into a disjoint union of compenents.
   </p>
+
   <activity xml:id="act_connected_compenent">
+  <introduction>
     <p>
       Let <m>(X, \tau)</m> be a nonempty topological space.
-      <ul>
-        <li>
+    </p>
+  </introduction>
+      <task>
+        <statement>
           <p>
             Show that if <m>x \in X</m>, then <m>\{x\}</m> is connected.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Suppose that <m>X</m> is a topological space and
             <m>\{A_{\alpha}\}</m> for <m>\alpha</m> in some indexing set <m>I</m> is a collection of connected subsets of <m>X</m>.
             Let <m>A = \bigcup_{\alpha \in I} A_{\alpha}</m>.
             Suppose that <m>\bigcap_{\alpha \in I} A_{\alpha} \neq \emptyset</m>.
             Show that <m>A</m> is a connected subset of <m>X</m>.
-            <hint>
+            
+          </p>
+        </statement>
+        <hint>
               <p>
                 Assume a separation and use <xref ref="lem_separation_subset"/>.
               </p>
             </hint>
-          </p>
-        </li>
-        <li>
+      </task>
+      <task>
+        <introduction>
           <p>
             Part (a) shows that every element in <m>x</m> belongs to some connected subset of <m>X</m>.
             So we can write <m>X</m> as a union of connected subsets.
@@ -54,31 +65,37 @@
             we define the following relation <m>\sim</m> on <m>X</m>: For <m>x</m> and <m>y</m> in <m>X</m>,
             <m>x \sim y</m> if <m>x</m> and <m>y</m> are contained in the same connected subset of <m>X</m>.
             As with any relation, we ask if <m>\sim</m> is an equivalence relation.
-            <ol label="i">
-              <li>
+          </p>
+        </introduction>
+            <task>
+              <statement>
                 <p>
                   Is <m>\sim</m> a reflexive relation?
                   Why or why not?
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   Is <m>\sim</m> a symmetric relation?
                   Why or why not?
                 </p>
-              </li>
-              <li>
+              </statement>
+            </task>
+            <task>
+              <statement>
                 <p>
                   Is <m>\sim</m> a transitive relation?
                   Why or why not?
                 </p>
-              </li>
-            </ol>
-          </p>
-        </li>
-      </ul>
-    </p>
+              </statement>
+            </task>
+          
+        </task>
+     
   </activity>
+  
   <p>
     <xref ref="act_connected_compenent"/>
     shows that the relation <m>\sim</m> is an equivalence relation,
