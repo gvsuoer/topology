@@ -6,26 +6,35 @@
     We have studied Hausdorff, connected,
     and compact spaces, and we now consider those properties.
   </p>
+
   <activity>
+  <introduction>
     <p>
       Let <m>(X, \tau_X)</m> and <m>(Y, \tau_Y)</m> be Hausdorff spaces.
-      <ul>
-        <li>
+    </p>
+  </introduction>
+      <task>
+        <statement>
           <p>
             What will it take to prove that the space
             <m>X \times Y</m> with the product topology is Hausdorff?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Suppose that <m>(x_1,y_1), (x_2, y_2) \in X \times Y</m>.
             What does the fact that <m>X</m> is Hausdorff tell us about <m>x_1</m> and <m>x_2</m>?
             What can we say about <m>y_1</m> and <m>y_2</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Complete the proof of the following theorem.
+          </p>
             <theorem>
               <statement>
                 <p>
@@ -34,11 +43,12 @@
                 </p>
               </statement>
             </theorem>
-          </p>
-        </li>
-      </ul>
-    </p>
+          
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     The proofs that a product of connected spaces is connected,
     that a product of path connected spaces is path connected,
@@ -49,6 +59,7 @@
     that the union of connected subsets is connected if the intersection of the subsets is nonempty.
     A consequence of this result is the following.
   </p>
+
   <lemma xml:id="lem_Connected_union">
     <statement>
       <p>
@@ -59,7 +70,7 @@
         Then <m>B \cup \left(\bigcup_{\alpha \in I} A_{\alpha} \right)</m> is connected.
       </p>
     </statement>
-  </lemma>
+  
   <proof>
     <p>
       Let <m>X</m> be a topological space,
@@ -83,10 +94,13 @@
       and so <m>B \cup \left(\bigcup_{\alpha \in I} A_{\alpha}\right)</m> is connected.
     </p>
   </proof>
+  </lemma>
+
   <p>
     We will use <xref ref="lem_Connected_union"/>
     to show that a product of connected spaces is connected.
   </p>
+
   <theorem xml:id="thm_connected_product">
     <statement>
       <p>
@@ -94,7 +108,7 @@
         then <m>X \times Y</m> with the product topology is a connected topological space.
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       Assume <m>(X, \tau_X)</m> and
@@ -125,10 +139,13 @@
       Therefore, <m>X \times Y</m> is connected.
     </p>
   </proof>
+  </theorem>
+
   <p>
     Once we know that a product of connected topological spaces is connected,
     we can extend that result to any finite number of connected spaces by induction.
   </p>
+
   <corollary>
     <statement>
       <p>
@@ -137,6 +154,7 @@
       </p>
     </statement>
   </corollary>
+
   <p>
     The proof is left to <xref ref="ex_connected_product"/>.
   </p>
@@ -145,6 +163,7 @@
     It is also true that finite products of path connected and compact spaces are path connected and compact.
     The proofs are left to <xref ref="ex_compact_product"/> and <xref ref="ex_path_connected_product"/>.
   </p>
+
   <theorem xml:id="thm_compact_product">
     <statement>
       <p>
@@ -152,7 +171,7 @@
         then <m>X \times Y</m> is a compact topological space under the product topology.
       </p>
     </statement>
-  </theorem>
+  
   <proof>
     <p>
       Let <m>(X, \tau_X)</m> and
@@ -214,4 +233,5 @@
       Therefore, <m>X \times Y</m> is compact.
     </p>
   </proof>
+  </theorem>
 </section>

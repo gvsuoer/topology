@@ -1,9 +1,9 @@
-<section xml:id="sec_prod_top_exer">
-  <title>Exercises</title>
-  <ol>
-    <li xml:id="ex_subbasis">
-      <ul>
-        <li>
+<exercises xml:id="sec_prod_top_exer">
+  
+  <exercise xml:id="ex_subbasis">
+    
+      <task>
+        <statement>
           <p>
             Let <m>(Y_1, \tau_1)</m> and
             <m>(Y_2, \tau_2)</m> be topological spaces,
@@ -15,8 +15,10 @@
             </me>
             and verify that these sets generate the product topology on <m>Y_1 \times Y_2</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Let <m>X_{i}</m> for <m>i</m> from <m>1</m> to <m>n</m> be topological spaces and let <m>X = \Pi_{i=1}^n X_i</m>.
             Show that the collection
@@ -25,14 +27,18 @@
             </me>
             is a subbasis for the box topology on <m>X</m>.
           </p>
-        </li>
-      </ul>
-    </li>
-    <li>
+        </statement>
+      </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
       <p>
         Let <m>X</m> be the set of real numbers with the standard Euclidean metric topology and let <m>Y</m> be the real numbers with the discrete topology.
-        <ul>
-          <li>
+      </p>
+    </introduction>
+        <task>
+          <statement>
             <p>
               Explain why the set of all
               <q>horizontal intervals</q>
@@ -42,52 +48,65 @@
               </me>
               is a base for the product topology on <m>X \times Y</m>.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <introduction>
             <p>
               Find the interior and closure of each of the following subsets of <m>X \times Y</m>.
-              <ol>
-                <li>
+            </p>
+          </introduction>
+              <task>
+                <statement>
                   <p>
                     <m>A = \{(x,0) \mid 0 \leq x \lt 1\}</m>
                   </p>
-                </li>
-                <li>
+                </statement>
+              </task>
+              <task>
+                <statement>
                   <p>
                     <m>B = \{(0,y) \mid 0 \leq y \lt 1\}</m>
                   </p>
-                </li>
-                <li>
+                </statement>
+              </task>
+              <task>
+                <statement>
                   <p>
                     <m>C = \{(x,y) \mid 0 \leq x \lt 1, 0 \leq y \lt 1\}</m>
                   </p>
-                </li>
-              </ol>
-            </p>
-          </li>
-        </ul>
-      </p>
-    </li>
-    <li xml:id="ex_product_closure">
+                </statement>
+              </task>
+            
+          </task>
+  </exercise>
+
+  <exercise xml:id="ex_product_closure">
+    <introduction>
       <p>
         Let <m>X_1</m> and <m>X_2</m> be topological space and let <m>A_1</m> be a subset of <m>X_1</m> and <m>A_2</m> a subset of <m>X_2</m>.
         Assume the product topology on <m>X_1 \times X_2</m>.
         Prove each of the following.
-        <ul>
-          <li>
+      </p>
+    </introduction>
+        <task>
+          <statement>
             <p>
               <m>\overline{A_1 \times A_2} = \overline{A_1} \times \overline{A_2}</m>
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               <m>\Int(A_1 \times A_2) \subseteq \Int{A_1} \times \Int{A_2}</m>
             </p>
-          </li>
-        </ul>
-      </p>
-    </li>
-    <li xml:id="ex_unions_cross_products">
+          </statement>
+        </task>
+  </exercise>
+
+  <exercise xml:id="ex_unions_cross_products">
+    <statement>
       <p>
         Let <m>X</m> and <m>Y</m> be topological spaces and let <m>\{U_{\alpha}\}_{\alpha \in I}</m> and
         <m>\{V_{\beta}\}_{\beta \in J}</m> be collections of open sets in <m>X</m> and <m>Y</m>,
@@ -97,10 +116,13 @@
           \bigcup_{\substack{\alpha \in I \\ \beta \in J} } (U_{\alpha} \times V_{\beta}) = \left(\bigcup_{\alpha \in I} U_{\alpha} \right) \times  \left(\bigcup_{\beta \in J} V_{\beta} \right)
         </me>.
       </p>
-    </li>
-    <li>
-      <ul>
-        <li>
+    </statement>
+  </exercise>
+
+  <exercise>
+  
+      <task>
+        <statement>
           <p>
             If <m>S_1</m>, <m>S_2</m>, <m>T_1</m>,
             and <m>T_2</m> are sets, show that
@@ -108,50 +130,67 @@
               (S_1 \times T_1) \cap (S_2 \times T_2) = (S_1 \cap S_2) \times (T_1 \cap T_2)
             </me>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             If <m>\CB_X</m> is a base for a topology <m>\tau_X</m> on a space <m>X</m> and <m>\CB_Y</m> is a base for a topology <m>\tau_Y</m> on a space <m>Y</m>,
             show that <m>\CB_X \times \CB_Y</m> is a base for the product topology on <m>X \times Y</m>.
           </p>
-        </li>
-      </ul>
-    </li>
-    <li xml:id="ex_connected_product">
+        </statement>
+      </task>
+  </exercise>
+
+  <exercise xml:id="ex_connected_product">
+    <statement>
       <p>
         Prove that the product of any finite number of connected spaces is connected.
       </p>
-    </li>
-    <li xml:id="ex_compact_product">
+    </statement>
+  </exercise>
+
+  <exercise xml:id="ex_compact_product">
+    <statement>
       <p>
         Prove that the product of any finite number of compact spaces is compact.
       </p>
-    </li>
-    <li xml:id="ex_path_connected_product">
-      <ul>
-        <li>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="ex_path_connected_product">
+    
+      <task>
+        <statement>
           <p>
             Prove that if <m>(X_1, \tau_1)</m> and
             <m>(X_2, \tau_2)</m> are path connected topological spaces,
             then <m>X_1 \times X_2</m> with the product topology is a path connected topological space.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Prove that the product of any finite number of path connected spaces is path connected.
           </p>
-        </li>
-      </ul>
-    </li>
-    <li>
+        </statement>
+      </task>
+  </exercise>
+
+  <exercise>
+    <statement>
       <p>
         Let <m>X_1</m> and <m>X_2</m> be topological spaces and <m>X = X_1 \times X_2</m>.
         Is it true that if <m>X</m> is compact,
         then both <m>X_1</m> and <m>X_2</m> are compact.
         Prove your answer.
       </p>
-    </li>
-    <li xml:id="ex_projection_open">
+    </statement>
+  </exercise>
+
+  <exercise xml:id="ex_projection_open">
+    <statement>
       <p>
         Let <m>X_1</m> and <m>X_2</m> be topological spaces and let
         <m>\pi_i : X_1 \times X_2 \to X_i</m> be the projection mapping.
@@ -159,16 +198,22 @@
         Now show that <m>\pi_i</m> is an open map for <m>i</m> equal 1 and 2.
         Assume the standard product topology.
       </p>
-    </li>
-    <li>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
       <p>
         Let <m>X_1</m> and <m>X_2</m> be topological spaces with cardinalities at least 2.
         Let <m>X = X_1 \times X_2</m>.
         Prove that the product space topology on
         <m>X = X_1 \times X_2</m> is the discrete topology if and only if the topologies on <m>X_1</m> and <m>X_2</m> are the discrete topologies.
       </p>
-    </li>
-    <li>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <introduction>
       <p>
         For each of the following, answer true if the statement is always true.
         If the statement is only sometimes true or never true,
@@ -176,53 +221,65 @@
         If a statement is true, explain why.
         Throughout, let <m>X_1</m> and <m>X_2</m> be topological spaces and
         <m>X = X_1 \times X_2</m> with the product topology.
-        <ul>
-          <li>
+      </p>
+    </introduction>
+        <task>
+          <statement>
             <p>
               If <m>A_1 \subseteq X_1</m> and <m>A_2 \subseteq X_2</m>,
               then <m>(X_1 \times X_2) \setminus (A_1 \times A_2) = (X_1 \setminus A_1) \times (X_2 \setminus A_2)</m>.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               If <m>A_1 \subseteq X_1</m> and <m>A_2 \subseteq X_2</m>,
               then <m>\Bdry(A_1 \times A_2) \subseteq \Bdry{A_1} \times \Bdry{A_2}</m>.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               If <m>A_1 \subseteq X_1</m> and <m>A_2 \subseteq X_2</m>,
               then <m>\Bdry{A_1} \times \Bdry{A_2} \subseteq \Bdry(A_1 \times A_2)</m>.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               If <m>O_1</m> is an open subset of <m>X_1</m> and <m>O_2</m> is an open subset of <m>X_2</m>,
               then <m>O_1 \times O_2</m> is an open subset of <m>X_1 \times X_2</m>.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               If <m>O_1</m> is a subset of <m>X_1</m> and <m>O_2</m> is a subset of <m>X_2</m> and
               <m>O_1 \times O_2</m> is an open subset of <m>X_1 \times X_2</m>,
               then <m>O_1</m> is an open subset of <m>X_1</m> and <m>O_2</m> is an open subset of <m>X_2</m>.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               If <m>C_1</m> is a closed subset of <m>X_1</m> and <m>C_2</m> is a closed subset of <m>X_2</m>,
               then <m>C_1 \times C_2</m> is a closed subset of <m>X_1 \times X_2</m>.
             </p>
-          </li>
-          <li>
+          </statement>
+        </task>
+        <task>
+          <statement>
             <p>
               If <m>C_1</m> is a subset of <m>X_1</m> and <m>C_2</m> is a subset of <m>X_2</m> and
               <m>C_1 \times C_2</m> is a closed subset of <m>X_1 \times X_2</m>,
               then <m>C_1</m> is a closed subset of <m>X_1</m> and <m>C_2</m> is a closed subset of <m>X_2</m>.
             </p>
-          </li>
-        </ul>
-      </p>
-    </li>
-  </ol>
-</section>
+          </statement>
+        </task>
+  </exercise>
+</exercises>
