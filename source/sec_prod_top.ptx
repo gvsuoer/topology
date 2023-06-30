@@ -13,14 +13,18 @@
     a natural approach to this problem might be to take as the open sets in
     <m>X \times Y</m> the sets of the form <m>U \times V</m> where
     <m>U \in \tau_X</m> and <m>V \in \tau_Y</m>.
-    We investigate this idea in Preview <xref ref="PA_pd_top_1"/>.
+    We investigate this idea in <xref ref="PA_pd_top_1"/>.
   </p>
-  <activity xml:id="PA_pd_top_1">
+
+  <exploration xml:id="PA_pd_top_1">
+  <introduction>
     <p>
       Let <m>X = \{a,b,c\}</m> with <m>\tau_X = \{\emptyset, \{a\}, \{b\}, \{a,b\}, \{a,c\}, X\}</m>,
       and let <m>Y = \{1,2\}</m> with <m>\tau_Y = \{\emptyset, \{1\}, Y\}</m>.
-      <ol>
-        <li>
+    </p>
+  </introduction>
+      <task>
+        <statement>
           <p>
             Let
             <men xml:id="eq_prod_basis">
@@ -28,8 +32,10 @@
             </men>.
             List all of the sets in <m>\CB</m> along with their elements.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Assume that all of the sets in <m>\CB</m> are open sets in <m>X \times Y</m>.
             Should the set <m>A = \{(a,1), (a,2), (b,1)\}</m> be an open set in <m>X \times Y</m>?
@@ -38,15 +44,17 @@
             Explain.
             Is <m>\CB</m> a topology on <m>X \times Y</m>?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             If <m>\CB</m> is not a topology on <m>X \times Y</m>,
             what is the smallest collection of sets would we need to add to <m>\CB</m> to make a topology on <m>X \times Y</m>?
             Explain your process.
           </p>
-        </li>
-      </ol>
-    </p>
-  </activity>
+        </statement>
+      </task>
+    
+  </exploration>
 </section>

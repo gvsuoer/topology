@@ -1,6 +1,6 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_Product_topology">
   <title>Products of Topological Spaces</title>
-  <introduction>
+  
     <objectives>
       <ul>
         <li>
@@ -35,7 +35,7 @@
         </li>
       </ul>
     </objectives>
-  </introduction>
+ 
   <xi:include  href="sec_prod_top.ptx"/>
   <xi:include  href="sec_top_prod_space.ptx"/>
   <xi:include  href="sec_prod_top_exam.ptx"/>

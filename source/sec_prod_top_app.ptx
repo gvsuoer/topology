@@ -14,10 +14,16 @@
     along with the associated colors of the regions,
     rather than having to save the color of every single pixel in an image.
   </p>
+
   <figure xml:id="F_Digital_plane">
     <caption>Left: The digital plane. Middle: <m>4</m>-neighbors of a point. Right: <m>8</m>-neighbors of a point.</caption>
-    <image width="50%" source="digital_grid"/>   <image width="50%" source="neighbors_4"/>   <image width="50%" source="neighbors_8"/>
+    <sidebyside width="30%">
+    <image source="digital_grid"/>
+    <image source="neighbors_4"/>
+    <image source="neighbors_8"/>
+    </sidebyside>
   </figure>
+
   <p>
     A natural start to building a digital topology might be to identify neighborhoods.
     The idea of a neighborhood is to consider elements that are close to a point,
@@ -43,17 +49,19 @@
     <m>p_2</m> is a <m>k</m>-neighbor of <m>p_3</m>, <m>\ldots</m>,
     <m>p_{m-1}</m> is a <m>k</m>-neighbor of <m>p_m</m>.
   </p>
+
   <activity xml:id="act_digital_graph_theory">
-    <p>
-      <nbsp/>
-      <ul>
-        <li>
+    
+      <task>
+        <statement>
           <p>
             Show that there is a <m>4</m>-path connecting any two points in <m>\Z^2</m>.
             Then explain why there is an <m>8</m>-path connecting any two points in <m>\Z^2</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             In the continuous case,
             every Jordan curve separates <m>\R^2</m> into two connected regions.
@@ -68,20 +76,27 @@
             <xref ref="F_Digital_curves"/>
             show two sets (curves) in the digital plane indicated by the points that connect the line segments (examples taken from A Topological Approach to Digital Topology, T. Yung Kong, R. Kopperman,
             and P. Meyer,
-            <term>American Mathematical Monthly</term>, 98 (1991), no. 10, 901-917).
+            <pubtitle>American Mathematical Monthly</pubtitle>, 98 (1991), no. 10, 901-917).
             Let <m>S_1</m> be the set illustrated at left in <xref ref="F_Digital_curves"/>
             and <m>S_2</m> the set at right.
+          </p>
             <figure xml:id="F_Digital_curves">
               <caption>Sets <m>S_1</m> (left) and <m>S_2</m> (right) in the digital plane.</caption>
-              <image width="50%" source="digital_curve_1"/> <image width="50%" source="digital_curve_2"/>
+              <sidebyside width="45%">
+              <image source="digital_curve_1"/>
+              <image source="digital_curve_2"/>
+              </sidebyside>
             </figure>
+          <p>
             Is <m>S_1</m> <m>4</m> connected?
             Is <m>S_1</m> <m>8</m> connected?
             Verify your answer.
             Repeat with <m>S_2</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             We can now define a Jordan <m>k</m>-curve to be a finite <m>k</m>-connected set which contains exactly two <m>k</m>-neighbors for each of its points.
             Is <m>S_1</m> a Jordan <m>4</m>-curve?
@@ -89,8 +104,10 @@
             Verify your answer.
             Repeat with <m>S_2</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             As usual, we define a component to be a maximal connected set.
             Explain why <m>S_1</m> is a Jordan <m>8</m>-curve whose complement is connected and why <m>S_2</m> is a Jordan <m>4</m>-curve whose complement consists of three connected <m>4</m>-components.
@@ -99,16 +116,20 @@
             That is, a Jordan <m>4</m>-curve with at least five points separates <m>\Z^2</m> into exactly two <m>8</m>-components,
             and a Jordan <m>8</m>-curve with at least five points separates <m>\Z^2</m> into exactly two <m>4</m>-components.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
+
   <p>
     In <xref ref="act_digital_graph_theory"/>
     we discussed the importance of a digital Jordan curve theorem.
     In the next activity we describe a topology in which such a theorem exists.
   </p>
+
   <activity xml:id="act_digital_Jordan_curve">
+  <idx><h>topology</h><h>Khalimsky</h></idx>
+  <introduction>
     <p>
       Consider <m>Z</m> with the topology <m>\tau_1</m> with basis <m>\{B(n)\}</m>, where
       <me>
@@ -117,14 +138,21 @@
     </p>
     <p>
       This topology is called the <term>digital line topology</term>
-      or the <term>Khalimsky topology</term><idx><h>topology</h><h>Khalimsky</h></idx> on <m>\Z</m>.
+      or the <term>Khalimsky topology</term> on <m>\Z</m>.
       Notice that all sets of the form <m>\{n\}</m> are open when <m>n</m> is odd.
     </p>
-    <p>
-      Task: Show that any set of the form <m>\{n\}</m> where <m>n</m> is even is closed in the digital line topology.
-    </p>
-    <p>
-      Task: To define a <term>Khalimsky topology</term>
+  </introduction>
+  <task>
+    <statement>
+      <p>
+        Show that any set of the form <m>\{n\}</m> where <m>n</m> is even is closed in the digital line topology.
+      </p>
+    </statement>
+  </task>
+  <task>
+    <statement>
+      <p>
+        To define a <term>Khalimsky topology</term>
       on <m>\Z^2</m> we use the product topology.
       Explain why the collection of sets <m>\{B(m,n)\}</m> where
       <me>
@@ -132,10 +160,14 @@
       </me>
       is a basis for the Khalimsky topology <m>\tau_2</m> on <m>\Z^2</m>.
       (This topology was originally published by E. Khalimsky in
-      <term>Applications of connected ordered topological spaces in topology</term>, Conference of math. departments of Povolsia, 1970.)
-    </p>
-    <p>
-      Task: New we want to define a digital Jordan curve.
+      <pubtitle>Applications of connected ordered topological spaces in topology</pubtitle>, Conference of math. departments of Povolsia, 1970.)
+      </p>
+    </statement>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Now we want to define a digital Jordan curve.
       Our first step is to define a <term>digital path</term>.
       Recall that a path in a topological space is a homeomorphism from the interval <m>[0,1]</m> into the space.
       So we need the concept of a digital interval.
@@ -144,11 +176,12 @@
       <me>
         [z_1, z_2] = \{z \in \Z \mid z_1 \leq z \leq z_2\}
       </me>.
-    </p>
-    <p>
-      The integers <m>z_1</m> and <m>z_2</m> are called the <term>endpoints</term>
+      </p>
+      <p>
+        The integers <m>z_1</m> and <m>z_2</m> are called the <term>endpoints</term>
       of the digital interval <m>[z_1,z_2]</m>.
-    </p>
+      </p>
+    
     <definition>
       <statement>
         <p>
@@ -172,6 +205,7 @@
         </p>
       </statement>
     </definition>
+
     <p>
       Let
       <md>
@@ -179,15 +213,17 @@
         <mrow>S_2 \amp = \{(0,0), (1,-1), (2,0), (1,1)\}, \text{ and }</mrow>
         <mrow>S_3 \amp = \{(1,-1), (1,0), (1,1), (0,1), (-1,1), (-1,0), (-1,-1), (0,-1)\}</mrow>
       </md>.
-    </p>
-    <p>
       Show that <m>S_1</m> is not a digital path but <m>S_2</m> and <m>S_3</m> are digital paths.
     </p>
-    <p>
-      Task: To produce a digital Jordan Curve Theorem,
+    </statement>
+  </task>
+  <task>
+    <statement>
+      <p>
+        To produce a digital Jordan Curve Theorem,
       we need a definition of a digital Jordan curve.
-    </p>
-    <definition>
+      </p>
+      <definition>
       <statement>
         <p>
           A digital Jordan curve
@@ -195,23 +231,27 @@
           is a finite connected set <m>J</m> with <m>|J| \geq 4</m> such that
           <m>J \setminus \{j\}</m> is a digital arc for each <m>j \in J</m>.
         </p>
+        <p>
+          So every digital Jordan curve is a connected set.
+      Show that any finite digital path in <m>\Z^2</m> is a connected set.
+        </p>
       </statement>
     </definition>
-    <p>
-      So every digital Jordan curve is a connected set.
-      Show that any finite digital path in <m>\Z^2</m> is a connected set.
-    </p>
+    </statement>
     <hint>
       <p>
         Is every digital interval connected?
       </p>
     </hint>
-    <p>
-      Task: The upshot of all of this is the following theorem (a proof can be found in A Topological Approach to Digital Topology, T. Yung Kong, R. Kopperman,
+  </task>
+  <task>
+    <statement>
+      <p>
+        The upshot of all of this is the following theorem (a proof can be found in A Topological Approach to Digital Topology, T. Yung Kong, R. Kopperman,
       and P. Meyer,
-      <term>American Mathematical Monthly</term>, 98 (1991), no. 10, 901-917).
-    </p>
-    <theorem xml:id="thm_digital_Jordan_curve">
+      <pubtitle>American Mathematical Monthly</pubtitle>, 98 (1991), no. 10, 901-917).
+      </p>
+      <theorem xml:id="thm_digital_Jordan_curve">
       <statement>
         <p>
           If <m>J</m> is a digital Jordan curve in the digital plane <m>\Z^2</m>,
@@ -230,14 +270,20 @@
       Show that <m>S_2</m> is a digital Jordan curve
       (and thus splits <m>\Z^2</m> into two connected components).
     </p>
+    </statement>
+    
+  </task>
+
   </activity>
+
   <p>
     Digital Jordan curves,
     as described in <xref ref="act_digital_Jordan_curve"/>,
     are important in order to have a digital Jordan curve theorem.
     Christer O. Kiselman presents the following theorem to characterize digital Jordan curves in
-    <term>Discrete Geometry for Computer Imagery</term>, Springer-Verlag, 2000, p. 46-56.
+    <pubtitle>Discrete Geometry for Computer Imagery</pubtitle>, Springer-Verlag, 2000, p. 46-56.
   </p>
+
   <theorem xml:id="thm_digital_curve">
     <statement>
       <p>
@@ -253,14 +299,15 @@
       </p>
     </statement>
   </theorem>
+
   <p>
     We investigate this theorem in the next activity.
   </p>
+
   <activity>
-    <p>
-      <nbsp/>
-      <ul>
-        <li>
+    
+      <task>
+        <statement>
           <p>
             We need to first define the appropriate terms.
             Let <m>X</m> be a topological space.
@@ -270,23 +317,29 @@
             Show that distinct elements <m>x</m> and <m>y</m> in a topological space <m>X</m> are adjacent if and only if
             <m>x \in N(y)</m> or <m>y \in N(x)</m>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             A point <m>(x_1,x_2)</m> in <m>\Z^2</m> is called <term>pure</term>
             if <m>x_1</m> and <m>x_2</m> have the same parity.
             Otherwise, the point is <term>mixed</term>.
             Find <m>N(P)</m> if <m>P</m> is a pure point or a mixed point.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             In <xref ref="act_digital_Jordan_curve"/>
             we show that the set <m>S_1 = \{(1,-1), (1,1), (-1,1), (-1,-1)\}</m> is not a digital path and so not a digital Jordan curve.
             Which part of <xref ref="thm_digital_curve"/> does <m>S_1</m> violate?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             In <xref ref="act_digital_Jordan_curve"/>
             we show that the set <m>S_2 = \{(0,0), (1,-1), (2,0), (1,1)\}</m> is a digital Jordan curve.
@@ -294,8 +347,8 @@
             the property from <xref ref="thm_digital_curve"/>
             that <m>x_{j-1}</m> and <m>x_{j+1}</m> and no other points are adjacent to <m>x_j</m> is satisfied for each <m>j</m>.
           </p>
-        </li>
-      </ul>
-    </p>
+        </statement>
+      </task>
+    
   </activity>
 </section>
