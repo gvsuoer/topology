@@ -86,7 +86,7 @@
   <exercise>
     <introduction>
       <p>
-        Recall from <xref ref="sec_metric_spaces"/>
+        Recall from <xref ref="chap_metric_spaces"/>
         that we can construct a finite metric space by starting with a finite set of points and making a graph with the points as vertices.
         We construct edges so that the graph is connected
         (that is, there is a path from any one vertex to any other)
@@ -96,7 +96,7 @@
       </p>
         <figure xml:id="F_Graph_metric_ex">
           <caption>A graph to define a metric.</caption>
-          <image width="40%" source="Graph_metric"/>
+          <image width="35%" source="Graph_metric"/>
         </figure>
     </introduction>
         <task>

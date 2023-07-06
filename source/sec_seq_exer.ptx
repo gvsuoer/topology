@@ -272,8 +272,7 @@
         <me>
           d(f,g) = \sup\{|f(x)-g(x)| \mid x \in [0,1]\}
         </me>.
-        (See <xref ref="ex_GLB_function_sup_metric"/>
-        on <xref ref="ex_GLB_function_sup_metric">page</xref>.)  There is a difference between the point-wise convergence of a sequence of functions and convergence in the metric space <m>(X,d)</m> that we explore in this exercise.
+        (See <xref ref="ex_GLB_function_sup_metric"/>.)  There is a difference between the point-wise convergence of a sequence of functions and convergence in the metric space <m>(X,d)</m> that we explore in this exercise.
         For each <m>n \in \Z^+</m>,
         define <m>f_n :[0,1] \to \R</m> by <m>f_n(x) = x^n</m>.
       </p>
