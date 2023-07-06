@@ -22,7 +22,6 @@
     <statement>
       <p>
         Recall from <xref ref="def_weaker_topologies"/>
-        on <xref ref="def_weaker_topologies">page</xref>
         that if <m>\tau_1</m> and <m>\tau_2</m> are two topologies on a set <m>X</m> such that <m>\tau_1 \subseteq \tau_2</m>,
         then <m>\tau_1</m> is said to be a <term>coarser</term>
         (or <term>weaker</term>)
@@ -100,7 +99,7 @@
     <statement>
       <p>
         Consider <m>\Z</m> with the digital line topology
-        (see <xref ref="ex_digital_line_topology"/> on <xref ref="ex_digital_line_topology">page</xref>).
+        (see <xref ref="ex_digital_line_topology"/>).
         Determine the compact subsets of <m>\Z</m>.
       </p>
     </statement>
@@ -110,7 +109,7 @@
     <introduction>
       <p>
         For each <m>n \in \Z^+</m>,
-        let <m>(-n,n)</m> be the set of integers in the interval <m>(-n,n)</m> (see <xref ref="ex_coarse_topology_example"/> <xref ref="ex_coarse_topology_example">on</xref>.)
+        let <m>(-n,n)</m> be the set of integers in the interval <m>(-n,n)</m> (see <xref ref="ex_coarse_topology_example"/>.)
       </p>
     </introduction>
         <task>
@@ -274,7 +273,7 @@
           </li>
         </ul>
       
-      That the particular point and excluded point topologies are topologies is the subject of <xref ref="ex_particular_point_topology"/> and <xref ref="ex_excluded_point_topology"/> on <xref ref="ex_particular_point_topology">page</xref>.
+      That the particular point and excluded point topologies are topologies is the subject of <xref ref="ex_particular_point_topology"/> and <xref ref="ex_excluded_point_topology"/>.
       Determine, with proof, the compact subsets of <m>X</m> when
       </p>
     </introduction>

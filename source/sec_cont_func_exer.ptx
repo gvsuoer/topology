@@ -107,9 +107,10 @@
               We will first want to express
               <m>f(x)g(x) - f(a)g(a)</m> in a more useful way.
               Use the fact that <m>f(x) = f(a) + (f(x)-f(a))</m> and <m>g(x)  = g(a) + (g(x)-g(a))</m> to show that
-              <me>
-                f(x)g(x)-f(a)g(a) = f(a)(g(x)-g(a)) + g(a)(f(x)-f(a)) + (f(x)-f(a))(g(x)-g(a))
-              </me>.
+              <md>
+                <mrow>f(x)g(x)-f(a)g(a) = f(a)(g(x)-g(a)) \amp + g(a)(f(x)-f(a))</mrow>
+                <mrow> \amp + (f(x)-f(a))(g(x)-g(a))</mrow>
+              </md>.
             </p>
           </statement>
         </task>
