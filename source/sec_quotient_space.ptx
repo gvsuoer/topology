@@ -147,7 +147,7 @@
   </activity>
 
   <p>
-    Another perspective of the quotient topology utilizes the fact that any equivalence relation on a set <m>X</m> partitions <m>X</m> into a union of disjoint equivalence classes <m>[x] = \{y \in X \mid y \sim x\}</m>.
+    Another perspective of the quotient topology utilizes the fact that any equivalence relation <m>\sim</m> on a set <m>X</m> partitions <m>X</m> into a union of disjoint equivalence classes <m>[x] = \{y \in X \mid y \sim x\}</m>.
     There is a natural surjection <m>q</m> from <m>X</m> to the space of equivalence classes given by <m>q(x) = [x]</m>.
     We investigate this perspective in the next activity.
   </p>

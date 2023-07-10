@@ -46,7 +46,7 @@
     a <m>k</m>-path is a finite sequence <m>p_0</m>,
     <m>p_1</m>, <m>\ldots</m>,
     <m>p_m</m> in <m>\Z^2</m> such that <m>p_1</m> is a <m>k</m>-neighbor of <m>p_2</m>,
-    <m>p_2</m> is a <m>k</m>-neighbor of <m>p_3</m>, <m>\ldots</m>,
+    <m>p_2</m> is a <m>k</m>-neighbor of <m>p_3</m>, <m>\ldots</m>, and
     <m>p_{m-1}</m> is a <m>k</m>-neighbor of <m>p_m</m>.
   </p>
 

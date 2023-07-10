@@ -5,7 +5,7 @@
     sequences in topological spaces do not generally behave as we would expect them to.
     As a result,
     we look for conditions on topological spaces under which sequences do exhibit some regular behavior.
-    In our preview activity we saw that in it is possible in a topological space that single point sets do not have to be closed.
+    In our preview activity we saw that it is possible in a topological space that single point sets do not have to be closed.
     In <xref ref="act_TS_limits"/>,
     we also saw that limits of sequences in topological spaces are not necessarily unique.
     This type of behavior limits the results that one can prove about such spaces.
@@ -96,7 +96,6 @@
           <p>
             Let <m>(X, \tau)</m> be a Hausdorff topological space with <m>X = \{x, x_1, x_2, \ldots,
             x_n\}</m> a finite set.
-            Let <m>x \in X</m>.
             Is <m>\{x\}</m> an open set?
             Explain.
             What does this say about the topology <m>\tau</m>?
@@ -254,12 +253,12 @@
   </definition>
 
   <p>
-    The use of the variable <m>T</m> comes from the German
+    <xref ref="ex_Metric_space_regular"/> shows that every metric space is both regular and normal. The use of the variable <m>T</m> comes from the German
     <q>Trennungsaxiome</q>
     for separation axioms.
     Note again that these are not technically axioms, but rather properties.
     An interesting question is why we insist that <m>T_3</m> and <m>T_4</m>-spaces also be <m>T_1</m>.
-    We want these axioms to provide more separation at the index increases.
+    We want these axioms to provide more separation as the index increases.
     Consider a space <m>X</m> with the indiscrete topology.
     In this space, nothing is separated.
     However, this space is vacuously regular and normal.

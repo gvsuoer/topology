@@ -1,66 +1,86 @@
 <section xml:id="sec_prod_metric">
   <title>Products of Metric Spaces</title>
   <p>
-    If we have two metric spaces
-    <m>(X, d_1)</m> and <m>(X_2 ,d_2)</m>,
-    we might wonder if we can make the set <m>X_1 \times X_2</m> into a metric space.
-    A natural approach might be to define a function <m>d : (X_1 \times X_2) \times (X_1 \times X_2) \to \R</m> by
-    <me>
-      d((x,y),(u,v)) = d_1(x,u)d_2(y,v)
-    </me>
-    for <m>(x,y)</m> and <m>(u,v)</m> in <m>X_1 \times X_2</m>.
-    However, this <m>d</m> does not define a metric.
-    For example,
-    if <m>x \in X_1</m> and <m>y \neq v</m> in <m>X_2</m>,
-    then <m>d((x,y),(x,v)) = 0</m> even though <m>(x,y) \neq (x,v)</m>.
-    To make a metric,
-    we can take a clue from the Euclidean metric on <m>\R \times \R</m>.
-    On <m>\R</m>, the metric has the form <m>d_1(x,y) = |x-y|</m>,
-    while on <m>\R^2</m> the metric is
-    <md>
-      <mrow>d_E((x_1,x_2), (y_1,y_2)) \amp = \sqrt{ (x_1-y_1)^2 + (x_2-y_2)^2}</mrow>
-      <mrow>\amp = \sqrt{d_1(x_1,y_1)^2 + d_1(x_2,y_2)^2}</mrow>
-    </md>.
+    If we have two metric spaces <m>(X, d_1)</m> and <m>(X_2 ,d_2)</m>, we might wonder if we can make the set <m>X_1 \times X_2</m> into a metric space. A natural approach might be to define a function <m>d : (X_1 \times X_2) \times (X_1 \times X_2) \to \R</m> by 
+<me>d((x,y),(u,v)) = d_1(x,u)d_2(y,v)</me>
+for <m>(x,y)</m> and <m>(u,v)</m> in <m>X_1 \times X_2</m>. However, this <m>d</m> does not define a metric. For example, if <m>x \in X_1</m> and <m>y \neq v</m> in <m>X_2</m>, then <m>d((x,y),(x,v)) = 0</m> even though <m>(x,y) \neq (x,v)</m>. To make a metric, we can take a clue from the Euclidean metric on <m>\R \times \R</m>. On <m>\R</m>, the metric has the form <m>d_1(x,y) = |x-y|</m>, while on <m>\R^2</m> the metric  is 
+<md><mrow>d_E((x_1,x_2), (y_1,y_2)) \amp = \sqrt{ (x_1-y_1)^2 + (x_2-y_2)^2}</mrow>
+<mrow> \amp = \sqrt{d_1(x_1,y_1)^2 + d_1(x_2,y_2)^2}</mrow></md>.
+
   </p>
   <p>
     So on <m>(X, d_1)</m> and <m>(X_2 ,d_2)</m> we could consider defining <m>d : (X_1 \times X_2) \times (X_1 \times X_2) \to \R</m> by
-    <me>
+    
+    <men xml:id="eq_product_metric">
       d((x_1,x_2), (y_1,y_2)) = \sqrt{ d_1(x_1,y_1)^2 + d_2(x_2,y_2)^2}
-    </me>.
+    </men>.
+
   </p>
-  <p>
-    We show that <m>d</m> is a metric If <m>x=(x_1,x_2)</m> and
-    <m>y=(y_1,y_2)</m> are in <m>X_1 \times X_2</m>,
-    then <m>d(x,y) = \sqrt{ d_1(x_1,y_1)^2 + d_2(x_2,y_2)^2}</m> is nonnegative by definition.
-    Also, the symmetry of <m>d_1</m> and <m>d_2</m> imply that <m>d(x,y) = d(y,x)</m>.
-    Note that <m>d(x,y) = 0</m> if and only if <m>d_1(x_1,y_1) = d_2(x_2,y_2) = 0</m>.
-    But this happens if and only if <m>x_1=y_1</m> and <m>x_2=y_2</m>,
-    or if <m>x = y</m>.
-    The last (and most difficult) property to verify is the triangle inequality.
-  </p>
-  <p>
-    Let <m>z = (z_1, z_2)</m> be in <m>X_1 \times X_2</m>.
-    Then
-    <md>
-      <mrow>d(x,z)^2 \amp =  d_1(x_1,z_1)^2 + d_2(x_2,z_2)^2</mrow>
-      <mrow>\amp \leq \left(d_1(x_1,y_1) + d_1(y_1,z_1)\right)^2 + \left(d_2(x_2,y_2) + d_2(y_2,z_2)\right)^2</mrow>
-      <mrow>\amp = \left(d_1(x_1,y_1)^2 + d_2(x_2,y_2)^2\right) + 2\left(d_1(x_1,y_1)d_1(y_1,z_1) + d_2(x_2,y_2)d_2(y_2,z_2)\right)</mrow>
-      <mrow>\amp \qquad + \left(d_1(y_1,z_1)^2 + d_2(y_2,z_2)^2\right)</mrow>
-      <mrow>\amp = d(x,y)^2 + 2\left(d_1(x_1,y_1)d_1(y_1,z_1) + d_2(x_2,y_2)d_2(y_2,z_2)\right) + d(y,z)^2</mrow>
-      <mrow>\amp \leq d(x,y)^2 + d(y,z)^2</mrow>
-    </md>.
-  </p>
-  <p>
-    Since all terms are non-negative we conclude that
-    <md>
-      <mrow>d(x,z) \leq \sqrt{d(x,y)^2 + d(y,z)^2} \amp \leq \sqrt{d(x,y)^2 + 2 d(x,y)d(y,z) + d(y,z)^2}</mrow>
-      <mrow>\amp = \sqrt{\left(d(x,y)+d(y,z)\right)^2}</mrow>
-      <mrow>\amp = d(x,y) + d(y,z)</mrow>
-    </md>.
-  </p>
-  <p>
-    In the next activity we consider products of open balls and open sets in products oif metric spaces.
-  </p>
+
+
+<activity xml:id="act_metric_space_products">
+  <introduction>
+    <p>
+      In this activity we verify some of the properties that make <m>d</m> as defined in <xref ref="eq_product_metric"/> a metric. Let <m>x=(x_1,x_2)</m> and <m>y=(y_1,y_2)</m> be in <m>X_1 \times X_2</m>
+    </p>
+  </introduction>
+
+  <task>
+    <statement>
+      <p>
+        Explain why <m>d(x,y)</m> is greater than or equal to <m>0</m>.
+      </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Explain why <m>d(x,y) = d(y,x)</m>. 
+      </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Explain why <m>d(x,y) = 0</m> if and only if <m>x = y</m>.
+      </p>
+    </statement>
+  </task>
+  
+</activity>
+
+<p>
+  <xref ref="act_metric_space_products"/> provides three of the four items that are necessary to prove that <m>d</m> as defined in <xref ref="eq_product_metric"/> is a metric. We verify the last property, the triangle inequality, now. 
+</p>
+
+<p>
+  Let <m>x</m> and <m>y</m> be defined as in Activity \ref{act:metric_space_products}, and let <m>z = (z_1, z_2)</m> be in <m>X_1 \times X_2</m>. Then
+  <md>
+<mrow> d(x,z)^2 \amp =  d_1(x_1,z_1)^2 + d_2(x_2,z_2)^2 </mrow>
+	<mrow> \amp \leq \left(d_1(x_1,y_1) + d_1(y_1,z_1)\right)^2 + \left(d_2(x_2,y_2) + d_2(y_2,z_2)\right)^2 </mrow>
+	<mrow> \amp = \left(d_1(x_1,y_1)^2 + d_2(x_2,y_2)^2\right) + 2\left(d_1(x_1,y_1)d_1(y_1,z_1) + d_2(x_2,y_2)d_2(y_2,z_2) \right) </mrow>
+	<mrow> \amp \qquad + \left(d_1(y_1,z_1)^2 + d_2(y_2,z_2)^2\right)</mrow>
+	<mrow> \amp = d(x,y)^2 + 2\left(d_1(x_1,y_1)d_1(y_1,z_1) + d_2(x_2,y_2)d_2(y_2,z_2)\right) + d(y,z)^2 </mrow>
+	<mrow> \amp \leq d(x,y)^2 + d(y,z)^2</mrow>
+</md>.
+
+Since all terms are non-negative we conclude that 
+
+<md>
+<mrow>d(x,z) \leq \sqrt{d(x,y)^2 + d(y,z)^2} \amp \leq \sqrt{d(x,y)^2 + 2 d(x,y)d(y,z) + d(y,z)^2} </mrow>
+	<mrow>\amp = \sqrt{\left(d(x,y)+d(y,z)\right)^2} </mrow>
+	<mrow>\amp = d(x,y) + d(y,z)</mrow>
+  </md>.
+</p>
+
+<p>
+  We conclude that <m>d</m> as defined in <xref ref="eq_product_metric"/> is a metric on <m>X_1 \times X_2</m>, and so we can make the product of any two metric spaces into a metric space.  
+</p>
+<p>
+In the next activity we consider products of open balls and open sets in products of metric spaces.
+</p>
 
   <activity xml:id="act_ms_product_open">
     <introduction>

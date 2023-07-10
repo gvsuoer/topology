@@ -1,5 +1,14 @@
 <exercises xml:id="sec_quotients_exer">
   <title>Exercises</title>
+
+  <exercise xml:id="ex_sim_p_relation">
+    <statement>
+      <p>
+        Let <m>X</m> be a topological space, <m>Y</m> a set, and <m>p: X \to Y</m> a surjection. Define the relation <m>\sim_p</m> on <m>X</m> by <m>x \sim_p y</m> if and only if <m>p(x)=p(y)</m>. Prove that <m>\sim_p</m> is an equivalence relation. 
+      </p>
+    </statement>
+  </exercise>
+
   <exercise>
     <statement>
       <p>

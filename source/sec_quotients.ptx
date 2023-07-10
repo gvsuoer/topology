@@ -14,8 +14,7 @@
     So we often apply the word quotient to any kind of construction that divides a set into pieces.
     Another familiar quotient construction is the set <m>\Z_n</m>,
     the set of quotients of integers after we divide by <m>n</m>.
-    Another way to think of <m>\Z_n</m> is as a quotient <m>\Z/n\Z</m>,
-    where <m>n\Z</m> is the set of multiples of <m>n</m> and two integers <m>a</m> and <m>b</m> are equal if <m>b-a \in n\Z</m>.
+    Another way to think of <m>\Z_n</m> is as a quotient <m>\Z/n\Z</m>, where <m>n\Z</m> is the set of multiples of <m>n</m> and two integers <m>a</m> and <m>b</m> are identified with each other (or are <term>equivalent</term>) if <m>b-a \in n\Z</m>.
     This defines the relation of congruence module <m>n</m> on <m>\Z</m>,
     and the elements of <m>\Z/n\Z</m> are the equivalence classes for this relation.
     We make similar constructions in many branches of mathematics by defining an equivalence relation on a set,

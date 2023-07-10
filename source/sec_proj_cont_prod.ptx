@@ -71,8 +71,8 @@
     <statement>
       <p>
         Let <m>(X, \tau)</m> be a topological space.
-        A subset <m>\CS</m> of <m>\tau</m> is a subbasis
-        or subbase
+        A subset <m>\CS</m> of <m>\tau</m> is a <term>subbasis</term>
+        or <term>subbase</term>
         for <m>\tau</m> if the set of all finite intersections of elements of <m>\CS</m> is a basis for <m>\tau</m>.
       </p>
     </statement>
@@ -96,11 +96,9 @@
   </p>
   <p>
     <idx><h>product topology</h></idx>
-    We note here that there is another topology,
-    called the <term>product topology</term>
-    on <m>X</m> with subbasis <m>S = \bigcup S_{\alpha \in I} S_{\alpha}</m>, where
+    We note here that there is another topology, called the <term>product topology</term>, on <m>X</m> with subbasis <m>S = \bigcup_{\alpha \in I} S_{\alpha}</m>, where
     <me>
-      S_{\alpha} = \{\pi_{\alpha}^{-1}(U_{\alpha}) \mid U_{\alpha} \text{ is open in }  X_{\alpha}\}
+      S_{\alpha} = \{\pi_{\alpha}^{-1}(U_{\alpha}) \mid U_{\alpha} \text{ is open in } X_{\alpha}\}
     </me>.
   </p>
   <p>

@@ -190,7 +190,15 @@
         </task>
   </exercise>
 
-  <exercise>
+  <exercise xml:id="ex_CS_2">
+    <statement>
+      <p>
+        Prove <xref ref="thm_CS_2"/> that if <m>A</m> is a subset of a metric space <m>X</m> and <m>b</m> is a boundary point of <m>A</m>, then there are sequences <m>(x_n)</m> in <m>X \setminus A</m> and <m>(a_n)</m> in <m>A</m> that converge to <m>b</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="ex_distance_pt_to_set">
     <statement>
       <p>
         Recall that the distance from a point <m>x</m> in a metric space <m>X</m> to a nonempty subset <m>A</m> of <m>X</m> is

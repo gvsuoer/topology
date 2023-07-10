@@ -91,10 +91,7 @@
     Since every neighborhood <m>N</m> of a point <m>x \in X</m> must contain an open set <m>O</m> with <m>x \in O</m>,
     it follows that <m>U_x \subseteq O \subseteq N</m>.
     So every neighborhood of <m>x \in X</m> has <m>U_x</m> as a subset.
-    In addition, when <m>X</m> is finite,
-    the set <m>U_x</m> is a finite intersection of open sets,
-    so the sets <m>U_x</m> are open sets
-    (this is not true in general in infinite topological spaces <mdash/> you should find an example where <m>U_x</m> is not open).
+    In addition, when <m>X</m> is finite, the set <m>U_x</m> is a finite intersection of open sets, so the sets <m>U_x</m> are open sets (this is not true in general in infinite topological spaces <mdash/> you are asked to find an example in Exercise (\ref{ex:U_x_not_open})).
     In <xref ref="act_minimal_nbhds"/>
     we saw that <m>U_x</m> was path connected for a particular <m>x</m> in one example.
     The next activity shows that this result is true in general in finite topological spaces.
@@ -177,8 +174,8 @@
   <idx><h>path connected</h><h>locally</h></idx>
     <statement>
       <p>
-        A topological space <m>(X, \tau)</m> is locally path connected at <m>x</m> if every neighborhood of <m>x</m> contains a path connected open neighborhood with <m>x</m> as an element.
-        The space <m>(X, \tau)</m> is locally path connected if <m>X</m> is locally path connected at every point.
+        A topological space <m>(X, \tau)</m> is <term>locally path connected at</term> <m>x</m> if every neighborhood of <m>x</m> contains a path connected open neighborhood with <m>x</m> as an element.
+        The space <m>(X, \tau)</m> is <term>locally path connected</term> if <m>X</m> is locally path connected at every point.
       </p>
     </statement>
   </definition>
@@ -187,8 +184,7 @@
     If <m>X</m> is a finite topological space,
     for any <m>x \in X</m> the set <m>U_x</m> is the smallest open set containing <m>x</m>.
     This means that any neighborhood of <m>N</m> of <m>x</m> will contain <m>U_x</m> as a subset.
-    Thus, a finite topological space is locally path connected
-    (this is not true in general of infinite topological spaces).
+    Thus, a finite topological space is locally path connected (this is not true in general of infinite topological spaces, see <xref ref="ex_PC_harmonic_broom"/> for example).
     One consequence of a locally path connected space is the following.
   </p>
 
