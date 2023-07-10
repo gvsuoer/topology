@@ -1,10 +1,10 @@
 <section xml:id="sec_seq_cont_metric">
   <title>Sequences and Continuity in Metric Spaces</title>
   <p>
-    There are different characterizations of continuity.
-    We have already see the <m>\epsilon</m>-<m>\delta</m> definition and a characterization in terms of neighborhoods.
-    In this section we investigate sequences and limits of sequences in metric spaces,
-    and then provide a characterization of continuous functions in terms of sequences.
+    We have seen that there are different ways to characterize. For example, there is
+the <m>\epsilon - \delta</m> definition and a characterization in terms of neighborhoods. In this
+section we investigate sequences and limits of sequences in metric spaces, and then
+provide a characterization of continuous functions in terms of sequences.
   </p>
 
   <activity>
@@ -64,7 +64,7 @@
   </activity>
 
   <p>
-    Continuity can also be described in terms of sequences.
+    Now we will examine how continuity can be described in terms of sequences.
     The basic idea is this.
     Suppose that <m>f : \R \to \R</m> is continuous at a point <m>a</m>.
     This means that <m>f</m> has a limit

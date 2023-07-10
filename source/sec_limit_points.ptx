@@ -144,9 +144,10 @@
   </p>
 
   <definition>
+  <idx><h>convergent sequence in a topological space</h></idx>
     <statement>
       <p>
-        A sequence <m>(x_n)</m> in a topological space <m>X</m> converges<idx><h>convergent sequence in a topological space</h></idx> to the point <m>x \in X</m> if,
+        A sequence <m>(x_n)</m> in a topological space <m>X</m> converges to the point <m>x \in X</m> if,
         for each open set <m>O</m> that contains <m>x</m> there exists a positive integer <m>N</m> such that
         <m>x_n \in O</m> for all <m>n \geq N</m>.
       </p>
@@ -154,8 +155,9 @@
   </definition>
 
   <p>
+    <idx><h>limit of a sequence in a topological space</h></idx>
     If a sequence <m>(x_n)</m> converges to a point <m>x</m>,
-    we call <m>x</m> a <term>limit</term><idx><h>limit of a sequence in a topological space</h></idx> of the sequence <m>(x_n)</m>.
+    we call <m>x</m> a <term>limit</term> of the sequence <m>(x_n)</m>.
   </p>
 
   <activity xml:id="act_TS_limits">

@@ -25,25 +25,62 @@
         </task>
   </exercise>
 
+  <exercise xml:id="ex_aZ_top">
+    <introduction>
+      <p>
+        For each integer <m>a</m>, let <m>a\Z = \{ka \mid k \in \Z\}</m>. That is, <m>a\Z</m> is the set of all integer multiples of <m>a</m>.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Show that <m>\{a\Z \mid a \in \Z\}</m> is a basis for a topology <m>\tau</m> on <m>\Z</m>.
+        </p>
+      </statement>
+      <hint>
+        <p>
+          What set is <m>m\Z \cap n\Z</m>?
+        </p>
+      </hint>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Is the set of positive integers an open set in the topological space <m>(\Z, \tau)</m>? Explain.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Is the set of odd integers open in the topological space <m>(\Z, \tau)</m>? Explain.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Is the set <m>\{0\} \cup \{x \in Z \mid |x| \geq 5\}</m> open in the topological space <m>(\Z, \tau)</m>? Explain.
+        </p>
+      </statement>
+    </task>
+  </exercise>
+
   <exercise>
     <introduction>
       <p>
-        Let <m>a</m> and <m>b</m> be integers with <m>b \neq 0</m>.
-        Let <m>A_{a,b} = a\Z+b = \{a + kb \mid k \in \Z\}</m>.
+        This exercise is a generalization of <xref ref="ex_aZ_top"/>. Let <m>a</m> and <m>b</m> be integers with <m>a \neq 0</m>. Let <m>A_{a,b} = a\Z+b = \{ak + b \mid k \in \Z\}</m>.
       </p>
     </introduction>
         <task>
           <statement>
             <p>
-              Show that <m>\{A_{a,b} \mid a, b \in \Z, b \neq 0\}</m> is a basis for a topology <m>\tau</m> on <m>\Z</m>.
-              
+              Show that <m>\{A_{a,b} \mid a, b \in \Z, a \neq 0\}</m> is a basis for a topology <m>\tau</m> on <m>\Z</m>.
             </p>
           </statement>
           <hint>
                 <p>
-                  If <m>B_1 = A_{a_1,b_1}</m> and <m>B_2 = A_{a_2,b_2}</m>,
-                  and if <m>x \in B_1 \cap B_2</m>,
-                  what can we say about <m>A_{x,b_1b_2}</m>?
+                  If <m>B_1 = A_{a_1,b_1}</m> and <m>B_2 = A_{a_2,b_2}</m>, and if <m>x \in B_1 \cap B_2</m>, what can we say about <m>A_{a_1a_2,x}</m>?
                 </p>
               </hint>
         </task>
@@ -204,34 +241,29 @@
           <task>
             <statement>
               <p>
-                If <m>x \in X</m>,
-                let <m>U_x</m> be the intersection of all open sets that contain <m>x</m>.
-                Explain why <m>U_x</m> is an open set.
+                If <m>x \in X</m>, let <m>U_x</m> be the intersection of all open sets that contain <m>x</m>. Explain why <m>U_x</m> is an open set.
               </p>
             </statement>
           </task>
           <task>
             <statement>
               <p>
-                Let <m>\B_{\text{ min } } = \{U_x \mid x \in X\}</m>.
-                Show that <m>\B_{\text{ min } }</m> is a basis for <m>\tau</m>.
+                Let <m>\B_{\text{min}} = \{U_x \mid x \in X\}</m>. Show that <m>\B_{\text{min}}</m> is a basis for <m>\tau</m>.
               </p>
             </statement>
           </task>
           <task>
             <statement>
               <p>
-                Show that if <m>\B</m> is a basis for <m>\tau</m>,
-                then <m>\B_{\text{ min } } \subseteq \B</m>.
+                Show that if <m>\B</m> is a basis for <m>\tau</m>, then <m>\B_{\text{min}} \subseteq \B</m>.
               </p>
             </statement>
           </task>
           <task>
             <statement>
               <p>
-                Let <m>X = \{a,b,c,d\}</m> and let <m>\tau = \{\emptyset, \{a\}, \{a, b\}, \{a, c\}, \{a, b, c\}, \{a, d\}, \{a, b, d\}, \{a, c, d\}, \{a, b, c, d\}\}</m>.
-                You may assume that <m>\tau</m> is a topology on <m>X</m>.
-                Find the unique minimal basis for <m>\tau</m>.
+                Let <m>X = \{a,b,c,d\}</m> and let 
+                <me>\tau = \{\emptyset, \{a\}, \{a, b\}, \{a, c\}, \{a, b, c\}, \{a, d\}, \{a, b, d\}, \{a, c, d\}, \{a, b, c, d\}\}</me>. You may assume that <m>\tau</m> is a topology on <m>X</m>. Find the unique minimal basis for <m>\tau</m>.
               </p>
             </statement>
           </task>

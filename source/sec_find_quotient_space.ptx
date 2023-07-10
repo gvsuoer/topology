@@ -4,8 +4,8 @@
     Suppose <m>X</m> is a topological space and <m>Y</m> is a set,
     and let <m>p: X \to Y</m> be a surjection.
     We can define a relation <m>\sim_p</m> on <m>X</m> by
-    <m>x \sim_P y</m> if and only if <m>p(x) = p(y)</m>.
-    It is straightforward to show that <m>\sim_p</m> is an equivalence relation.
+    <m>x \sim_p y</m> if and only if <m>p(x) = p(y)</m>.
+    It is straightforward to show that <m>\sim_p</m> is an equivalence relation, the details are left for <xref ref="ex_sim_p_relation"/>.
     From this we can see that our two approaches to defining the quotient topology and quotient spaces are really the same.
   </p>
   <p>

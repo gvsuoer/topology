@@ -460,6 +460,57 @@
           </task>
   </exercise>
 
+  <exercise xml:id="ex_Metric_space_regular">
+    <introduction>
+      <p>
+        Let <m>(X,d)</m> be a metric space. Recall from <xref ref="ex_distance_pt_to_set"/> in <xref ref="sec_closed_sets"/>, that if <m>C</m> is a closed subset of a metric space <m>X</m> and <m>x</m> is an element of <m>X \setminus C</m>, then <m>d(x,C) = 0</m> if and only if <m>x \in C</m>. Use this idea to do the following.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Prove that every metric space is regular.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Prove that every metric space is a normal space.
+        </p>
+      </statement>
+    </task>
+    
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        Let  <m>K = \left\{\frac{1}{k} \mid k \text{ is a positive integer} \right\}</m>. Let <m>\B</m> be the collection of all open intervals of the form <m>(a,b)</m> and all sets of the form <m>(a,b) \setminus K</m>, where <m>a \lt b</m> are real numbers as in Example \ref{exp:K_topology} on page \pageref{exp:K_topology}.  That <m>\B</m> generates a topology <m>\tau_K</m> on <m>\R</m> follows from the fact that <m>\tau_K</m> is finer than the Euclidean topology.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Show that <m>(\R, \tau_K)</m> is a Hausdorff space.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <xref ref="ex_Metric_space_regular"/> shows that every metric space is regular. In this part of the exercise, show that <m>(R, \tau_K)</m> is not a regular space. We can conclude that <m>(\R, \tau_K)</m> is not metrizable.
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Consider <m>0</m> and <m>K</m>.
+        </p>
+      </hint>
+    </task>
+    
+  </exercise>
+
   <exercise xml:id="ex_T_1_2_3">
     
       <task>

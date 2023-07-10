@@ -32,10 +32,11 @@
   </p>
 
   <definition xml:id="def_sequence_limit_real">
+  <idx><h>limit of a sequence of real numbers</h></idx>
     <statement>
       <p>
-        A sequence <m>(a_n)</m> of real numbers has a limit<idx><h>limit of a sequence of real numbers</h></idx> <m>L</m> if,
-        given any <m>\epsilon \gt 0</m> there exists a positive integer <m>N</m> such that
+        A sequence <m>(a_n)</m> of real numbers has a <term>limit</term> <m>L</m> if,
+        given any <m>\epsilon \gt 0</m> there exists a positive integer <m>N</m> (depending only on <m>\epsilon</m>) such that
         <me>
           | a_n - L | \lt  \epsilon \ \text{ whenever }  \ n \geq N
         </me>.
@@ -129,7 +130,7 @@
     <statement>
       <p>
         A sequence <m>(a_n)</m> of real numbers has a limit <m>L</m> if,
-        given any <m>\epsilon \gt 0</m> there exists a positive integer <m>N</m> such that
+        given any <m>\epsilon \gt 0</m> there exists a positive integer <m>N</m> (depending only on <m>\epsilon</m>) such that
         <me>
           d_E(a_n, L) \lt  \epsilon \ \text{ whenever }  \ n \geq N
         </me>.
@@ -166,7 +167,7 @@
       <p>
         Let <m>(X,d)</m> be a metric space.
         A sequence <m>(a_n)</m> in <m>X</m> has a limit <m>L \in X</m> if,
-        given any <m>\epsilon \gt 0</m> there exists a positive integer <m>N</m> such that
+        given any <m>\epsilon \gt 0</m> there exists a positive integer <m>N</m> (depending only on <m>\epsilon</m>) such that
         <me>
           d(a_n, L) \lt  \epsilon \ \text{ whenever }  \ n \geq N
         </me>.
