@@ -87,7 +87,7 @@
           <li>
             <title>Properties of the Empty Set</title>
             <p>
-              <ol label="i">
+              <ol marker="i">
                 <li>
                   <p>
                     <m>A \cap \emptyset = \emptyset</m>
@@ -115,7 +115,7 @@
             <title>Properties of the Universal Set</title>
             <p>
               
-              <ol label="i">
+              <ol marker="i">
                 <li>
                   <p>
                     <m>A \cap U = A</m>
@@ -143,7 +143,7 @@
             <title>Idempotent Laws</title>
             <p>
              
-              <ol label="i">
+              <ol marker="i">
                 <li>
                   <p>
                     <m>A \cap A = A</m>
@@ -161,7 +161,7 @@
             <title>Commutative Laws</title>
             <p>
               
-              <ol label="i">
+              <ol marker="i">
                 <li>
                   <p>
                     <m>A \cap B = B \cap A</m>
@@ -179,7 +179,7 @@
             <title>Associative Laws</title>
             <p>
               
-              <ol label="i">
+              <ol marker="i">
                 <li>
                   <p>
                     <m>(A \cap B) \cap C = A \cap (B \cap C)</m>
@@ -197,7 +197,7 @@
             <title>Distributive Laws</title>
             <p>
               
-              <ol label="i">
+              <ol marker="i">
                 <li>
                   <p>
                     <m>A \cap (B \cup C) = (A \cap B) \cup (A \cap C)</m> 
@@ -215,7 +215,7 @@
             <title>Basic Properties</title>
             <p>
               
-              <ol label="i">
+              <ol marker="i">
                 <li>
                   <p>
                     <m>\left(A^c\right)^c = A</m>

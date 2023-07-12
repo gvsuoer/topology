@@ -508,7 +508,7 @@
     <statement>
       <p>
         Show that property <m>T_i</m> is a topological property for each <m>i</m>.
-        (See <xref ref="sec_Closed_sets_topology"/>
+        (See <xref ref="chap_Closed_sets_topology"/>
         for definitions of the separation axioms.)
       </p>
     </statement>

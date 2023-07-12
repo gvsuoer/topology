@@ -35,8 +35,8 @@
       <task>
         <statement>
           <p>
-            Summarize the result of this activity into a theorem of the form ``A topological space
-            <m>(X, \tau)</m> is connected if and only if ... ``.
+            Summarize the result of this activity into a theorem of the form <q>A topological space
+            <m>(X, \tau)</m> is connected if and only if ...</q>.
           </p>
         </statement>
       </task>

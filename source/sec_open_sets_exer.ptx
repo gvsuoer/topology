@@ -149,7 +149,7 @@
     </statement>
   </exercise>
 
-  <exercise xml:id="ex_linear_continuous">
+  <exercise xml:id="ex_linear_continuous2">
     <introduction>
       <p>
         Let <m>X = \R</m> with the Euclidean metric <m>d_E</m>,

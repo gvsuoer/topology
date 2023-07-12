@@ -38,8 +38,8 @@
     The discrete and indiscrete topologies are topologies that can be defined on any set and are often used to use to generate examples.
     Another topology that can be defined on any set is in the next activity.
   </p>
-
-  <activity xml:id="act_TS_limits">
+<!-- 12.1 -->
+  <activity xml:id="act_TS_limits1"> 
     <introduction>
     <p>
       Let <m>X</m> be any set and let

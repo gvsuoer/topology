@@ -127,9 +127,10 @@
           <p>
             In this case <m>a = -a'</m> and <m>b = -b'</m> where <m>a'</m> and <m>b'</m> are nonnegative.
             It follows from Case 1 that
-            <me>
-              | a+b | = | -(a'+b') | = | a'+b' | = a'+b' = | a' | + | b' | = | -a' | + | -b' | = | a | + | b |
-            </me>.
+            <md>
+              <mrow>| a+b | \amp = | -(a'+b') | = | a'+b' | = a'+b' = | a' | + | b' |</mrow>
+              <mrow> \amp = | -a' | + | -b' | = | a | + | b |</mrow>
+            </md>.
           </p>
         </li>
         <li>

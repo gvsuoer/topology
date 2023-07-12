@@ -1,10 +1,10 @@
 <section xml:id="sec_prod_top">
   <title>Introduction</title>
   <p>
-    In <xref ref="sec_metric_subspaces"/>
+    In <xref ref="chap_metric_subspaces"/>
     we saw how we can make a Cartesian product of two metric spaces into a metric space.
     This is exactly the construction that allows us to work with the Cartesian plane <m>\R^2</m> as a metric space with the usual metric.
-    As we discussed in <xref ref="sec_top_spaces"/>,
+    As we discussed in <xref ref="chap_top_spaces"/>,
     every metric space is a topological space,
     but not every topological space is metrizable.
     So knowing how to make a product of metric spaces into a metric space still leaves open the question of how we can make the product of topological spaces into a topological space.

@@ -37,7 +37,7 @@
     <statement>
       <p>
         In <xref ref="act_connected_compenent"/>
-        of <xref ref="sec_Connected_topology"/>
+        of <xref ref="chap_Connected_topology"/>
         we showed that an arbitrary union of connected sets is connected provided the intersection of those sets is not empty.
         Is the same result true for path connected sets.
         That is, if <m>X</m> is a topological space and

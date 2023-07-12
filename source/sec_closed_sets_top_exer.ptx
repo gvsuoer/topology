@@ -463,7 +463,7 @@
   <exercise xml:id="ex_Metric_space_regular">
     <introduction>
       <p>
-        Let <m>(X,d)</m> be a metric space. Recall from <xref ref="ex_distance_pt_to_set"/> in <xref ref="sec_closed_sets"/>, that if <m>C</m> is a closed subset of a metric space <m>X</m> and <m>x</m> is an element of <m>X \setminus C</m>, then <m>d(x,C) = 0</m> if and only if <m>x \in C</m>. Use this idea to do the following.
+        Let <m>(X,d)</m> be a metric space. Recall from <xref ref="ex_distance_pt_to_set"/> in <xref ref="chap_closed_sets"/>, that if <m>C</m> is a closed subset of a metric space <m>X</m> and <m>x</m> is an element of <m>X \setminus C</m>, then <m>d(x,C) = 0</m> if and only if <m>x \in C</m>. Use this idea to do the following.
       </p>
     </introduction>
     <task>
