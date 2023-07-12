@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="lemma theorem-like"><h3 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">4.6</span><span class="period">.</span><span class="space"> </span><span class="title">The Gluing Lemma.</span>
+</h3>
+<div class="para logical">
+<div class="para">Let <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> be closed subsets of a space <span class="process-math">\(X = A \cup B\text{,}\)</span> and let <span class="process-math">\(f:A \to Y\)</span> and <span class="process-math">\(g: B \to Y\)</span> be continuous functions into a space <span class="process-math">\(Y\)</span> such that <span class="process-math">\(f(x)=g(x)\)</span> for all <span class="process-math">\(x \in (A \cap B)\text{.}\)</span> Then the function <span class="process-math">\(h:X \to Y\)</span> defined by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+h(x) = \begin{cases}f(x) \amp \text{ if }  x \in A \\ g(x) \amp \text{ if }  x \in B \end{cases}
+\end{equation*}
+</div>
+<div class="para">is continuous.</div>
+</div> <figure class="figure figure-like"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/Gluing_Lemma.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.7<span class="period">.</span></span><span class="space"> </span>The Gluing Lemma.</figcaption></figure></article><article class="proof"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
+<div class="para logical">
+<div class="para">Let <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> be closed subsets of a space <span class="process-math">\(X = A \cup B\text{,}\)</span> and let <span class="process-math">\(f:A \to Y\)</span> and <span class="process-math">\(g: B \to Y\)</span> be continuous functions into a space <span class="process-math">\(Y\)</span> such that <span class="process-math">\(f(x)=g(x)\)</span> for all <span class="process-math">\(x \in (A \cap B)\)</span> as illustrated in <a href="" class="xref" data-knowl="./knowl/F_Gluing_Lemma.html" title="Figure 4.7">Figure 4.7</a>. Define <span class="process-math">\(h: X \to Y\)</span> by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/F_Gluing_Lemma.html">
+\begin{equation*}
+h(x) = \begin{cases}f(x) \amp \text{ if }  x \in A \\ g(x) \amp \text{ if }  x \in B. \end{cases}
+\end{equation*}
+</div>
+</div> <div class="para logical">
+<div class="para">To show that <span class="process-math">\(h\)</span> is continuous, let <span class="process-math">\(C\)</span> be a closed subset of <span class="process-math">\(Y\text{.}\)</span> Then</div>
+<div class="displaymath process-math">
+\begin{align*}
+h^{-1}(C) = \{x \in X \mid h(x) \in C\} \amp = \{x \in A \mid f(x) \in C\} \cup \{x \in B \mid g(x) \in C\}\\
+\amp = f^{-1}(C) \cup g^{-1}(C)\text{.}
+\end{align*}
+</div>
+</div> <div class="para logical">
+<div class="para">Since <span class="process-math">\(f\)</span> is continuous, <span class="process-math">\(f^{-1}(C)\)</span> is closed in the subspace topology on <span class="process-math">\(A\)</span> and since <span class="process-math">\(g\)</span> is continuous <span class="process-math">\(g^{-1}(C)\)</span> is closed in the subspace topology on <span class="process-math">\(B\text{.}\)</span> So <span class="process-math">\(f^{-1}(C) = A \cap D\)</span> and <span class="process-math">\(g^{-1}(C) = B \cap E\)</span> for some closed sets <span class="process-math">\(D\)</span> and <span class="process-math">\(E\)</span> of <span class="process-math">\(X\text{.}\)</span> The fact that <span class="process-math">\(A\)</span> is closed in <span class="process-math">\(X\)</span> implies that <span class="process-math">\(A \cap D\)</span> is closed in <span class="process-math">\(X\text{.}\)</span> Similarly, the fact that <span class="process-math">\(B\)</span> is closed in <span class="process-math">\(X\)</span> implies that <span class="process-math">\(B \cap E\)</span> is closed in <span class="process-math">\(X\text{.}\)</span> Thus,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+h^{-1}(C) = f^{-1}(C) \cup g^{-1}(C) = (A \cap D) \cup (B \cap E)
+\end{equation*}
+</div>
+<div class="para">is a finite union of closed sets in <span class="process-math">\(X\)</span> and so is closed in <span class="process-math">\(X\text{.}\)</span> Since <span class="process-math">\(h^{-1}(C)\)</span> is closed for every closed set in <span class="process-math">\(Y\text{,}\)</span> it follows that <span class="process-math">\(h\)</span> is continuous.</div>
+</div></article><span class="incontext"><a href="sec_path_connect_equiv.html#lemma-2" class="internal">in-context</a></span>
+</body>
+</html>

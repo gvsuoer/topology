@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.6</span><span class="period">.</span>
+</h3>
+<div class="para logical">
+<div class="para">In general, to prove that a function <span class="process-math">\(f:X \to Y\)</span> is continuous, where <span class="process-math">\((X,d_X)\)</span> and <span class="process-math">\((Y, d_Y)\)</span> are metric spaces, we begin by choosing an arbitrary element <span class="process-math">\(a\)</span> in <span class="process-math">\(X\text{.}\)</span> Then we let <span class="process-math">\(\epsilon\)</span> be a number greater than <span class="process-math">\(0\)</span> and show that there is a <span class="process-math">\(\delta \gt 0\)</span> so that <span class="process-math">\(d_Y(f(x),f(a)) \lt  \epsilon\)</span> whenever <span class="process-math">\(d_X(x,a) \lt  \delta\text{.}\)</span> The <span class="process-math">\(\delta\)</span> we need cannot depend on <span class="process-math">\(x\)</span> (since <span class="process-math">\(x\)</span> isn’t known), but can depend on the value of <span class="process-math">\(a\)</span> that we choose, and will likely depend on <span class="process-math">\(\epsilon\)</span> as well. That is, there is a function <span class="process-math">\(C\)</span> of only the independent variables <span class="process-math">\(a\)</span> and <span class="process-math">\(\epsilon\)</span> that produces the <span class="process-math">\(\delta\text{,}\)</span> or <span class="process-math">\(\delta = C(a,\epsilon)\text{.}\)</span> As an example, let <span class="process-math">\(X = \R\)</span> and let <span class="process-math">\(d_X\)</span> be defined as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d_X(x,y) = \min\{|x-y|,1\}\text{.}
+\end{equation*}
+</div>
+</div> <div class="para">The proof that <span class="process-math">\(d_X\)</span> is a metric is left for <a href="" class="xref" data-knowl="./knowl/ex_min_1_metric.html" title="Exercise 9">Exercise 9</a>. Consider <span class="process-math">\(f : X \to Y\)</span> defined by <span class="process-math">\(f(x) = x^2\text{,}\)</span> where <span class="process-math">\((Y,d_Y) = (\R, d_E)\text{.}\)</span> To show that <span class="process-math">\(f\)</span> is continuous, we let <span class="process-math">\(a \in \R\)</span> and let <span class="process-math">\(\epsilon \gt 0\text{.}\)</span>
+</div> <blockquote class="blockquote"><div class="para logical">
+<div class="para">
+<em class="emphasis">Scratch work.</em> What happens next is not part of the proof, but shows how we go about finding a <span class="process-math">\(\delta\)</span> we need. We are looking for <span class="process-math">\(\delta \gt 0\)</span> such that <span class="process-math">\(d_X(x,a) \lt  \delta\)</span> implies that <span class="process-math">\(d_E(f(x),f(a)) \lt  \epsilon\text{.}\)</span> That is, we want to make</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d_E(f(x),f(a)) = \sqrt{(f(x)-f(a))^2} = |f(x)-f(a)| = |x^2-a^2| \lt  \epsilon
+\end{equation*}
+</div>
+<div class="para">whenever</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d_X(x,a) = \min\{|x-a|, 1\} \lt  \delta\text{.}
+\end{equation*}
+</div>
+<div class="para">Now <span class="process-math">\(|x^2-a^2| = |(x-a)(x+a)| = |x-a| \ |x+a|\text{.}\)</span> If <span class="process-math">\(d_X(x,a) \lt  \delta\text{,}\)</span> then <span class="process-math">\(\min\{|x-a|, 1\} \lt  \delta\text{.}\)</span> If we choose <span class="process-math">\(\delta \lt  1\text{,}\)</span> then <span class="process-math">\(d_X(x,a) \lt  \delta \lt  1\)</span> implies that <span class="process-math">\(|x-a| \lt  1\)</span> and so <span class="process-math">\(d_X(x,a) = |x-a|\text{.}\)</span> Now</div>
+<div class="displaymath process-math">
+\begin{equation*}
+|x+a| = |(x-a) + 2a| \leq |x-a| + 2|a| \lt  1+2|a|\text{.}
+\end{equation*}
+</div>
+<div class="para">It follows that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+|x-a| \ |x+a| \lt  \delta(1+2|a|)\text{.}
+\end{equation*}
+</div>
+<div class="para">To make this product less that <span class="process-math">\(\epsilon\text{,}\)</span> we can choose <span class="process-math">\(\delta\)</span> such that <span class="process-math">\(\delta(1+2|a|) \lt  \epsilon\)</span> or <span class="process-math">\(\delta \lt  \frac{\epsilon}{1+2|a|}\text{.}\)</span> That is, there is a function <span class="process-math">\(C\)</span> of <span class="process-math">\(\epsilon\)</span> that gives us the <span class="process-math">\(\delta\)</span> we want, namely <span class="process-math">\(\delta = C(a,\epsilon) = \left\{1, \frac{\epsilon}{1+2|a|}\right\}\text{.}\)</span> Now we ignore this paragraph and present the proof, which is essentially reversing the steps we just made. If the steps can’t be reversed, then we have to rethink our argument. The next step in the proof might seem like magic to the uninitiated reader, but we have seen behind the curtain so it isn’t a mystery to us.</div>
+</div></blockquote> <div class="para logical">
+<div class="para">Let <span class="process-math">\(\delta\)</span> be a positive number less than <span class="process-math">\(\min\left\{1, \frac{\epsilon}{1+2|a|}\right\}\text{.}\)</span> Then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d_X(x,a) = \min\{|x-a|,1\} \lt  \delta
+\end{equation*}
+</div>
+<div class="para">implies that <span class="process-math">\(d_X(x,a) \lt  \delta \lt  1\)</span> and so <span class="process-math">\(d_X(x,a) = |x-a| \lt  \delta \lt  1\text{.}\)</span> Then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+|x+a| = |(x-a) + 2a| \leq |x-a| + 2|a| \lt  1+2|a|\text{.}
+\end{equation*}
+</div>
+</div> <div class="para logical">
+<div class="para">It follows that</div>
+<div class="displaymath process-math">
+\begin{align*}
+d_E(f(x),f(a)) \amp = \sqrt{(f(x)-f(a))^2}\\
+\amp = |f(x)-f(a)|\\
+\amp = |x^2-a^2|\\
+\amp = |(x-a)(x+a)|\\
+\amp = |x-a| \ |x+a|\\
+\amp \lt  \delta (1+2|a|)\\
+\amp \lt   \left(\frac{\epsilon}{1+2|a|}\right) (1+2|a|)\\
+\amp = \epsilon\text{.}
+\end{align*}
+</div>
+</div> <div class="para">We conclude that <span class="process-math">\(f\)</span> is continuous at every point in <span class="process-math">\(X\)</span> and so <span class="process-math">\(f\)</span> is a continuous function.</div></article><span class="incontext"><a href="sec_cont_func_btwn.html#example-3" class="internal">in-context</a></span>
+</body>
+</html>

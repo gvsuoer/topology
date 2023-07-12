@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="proof"><h3 class="heading"><span class="type">Proof</span></h3>
+<div class="para logical">
+<div class="para">Let <span class="process-math">\(n\)</span> be a positive integer and <span class="process-math">\(x = (x_1, x_2, \ldots,
+x_n)\text{,}\)</span> <span class="process-math">\(y=(y_1, y_2, \ldots, y_n)\)</span> be in <span class="process-math">\(\R^n\text{.}\)</span> To verify <a href="" class="xref" data-knowl="./knowl/eq_SL.html" title="Equation 3.1">(3.1)</a> it suffices to show that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_SL.html">
+\begin{equation*}
+\left(\sum_{i=1}^n x_iy_i\right)^2 \leq  \left(\sum_{i=1}^n x_i^2\right) \left(\sum_{i=1}^n y_i^2\right)\text{.}
+\end{equation*}
+</div>
+</div> <div class="para logical">
+<div class="para">This is difficult to do directly, but there is a nice trick one can use. Consider the expression</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum (x_i-\lambda y_i)^2\text{.}
+\end{equation*}
+</div>
+</div> <div class="para logical">
+<div class="para">(All of our sums are understood to be from 1 to <span class="process-math">\(n\text{,}\)</span> so we will omit the limits on the sums for the remainder of the proof.) Now</div>
+<div class="displaymath process-math">
+\begin{align}
+0 \amp  \leq \sum (x_i-\lambda y_i)^2\notag\\
+\amp = \sum \left(x_i^2 - 2\lambda x_iy_i + \lambda^2 y_i^2 \right)\notag\\
+\amp = \left( \sum y_i^2 \right)\lambda^2 - 2\left(\sum x_iy_i\right) \lambda + \left(\sum x_i^2\right)\text{.}\tag{3.2}
+\end{align}
+</div>
+</div> <div class="para logical">
+<div class="para">To interpret this last expression more clearly, let <span class="process-math">\(a=\sum y_i^2\text{,}\)</span> <span class="process-math">\(b=-2\sum x_iy_i\)</span> and <span class="process-math">\(c = \sum x_i^2\text{.}\)</span> The inequality defined by <a href="" class="xref" data-knowl="./knowl/eq_SL_1.html" title="Equation 3.2">(3.2)</a> can then be written in the form</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_SL_1.html">
+\begin{equation*}
+p(\lambda) = a \lambda^2 + b \lambda + c \geq 0\text{.}
+\end{equation*}
+</div>
+</div> <div class="para logical">
+<div class="para">So we have a quadratic <span class="process-math">\(p(\lambda)\)</span> that is never negative. This implies that the quadratic <span class="process-math">\(p(\lambda)\)</span> can have at most one real zero. The quadratic formula gives the roots of <span class="process-math">\(p(\lambda)\)</span> as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{-b \pm \sqrt{b^2-4ac}}{2a}\text{.}
+\end{equation*}
+</div>
+</div> <div class="para logical">
+<div class="para">If <span class="process-math">\(b^2-4ac \gt 0\text{,}\)</span> then <span class="process-math">\(p(\lambda)\)</span> has two real roots. Therefore, in order for <span class="process-math">\(p(\lambda)\)</span> to have at most one real zero we must have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0 \geq b^2-4ac = 4 \left(\sum x_iy_i\right)^2 - 4\left(\sum y_i^2\right)\left(\sum x_i^2\right)
+\end{equation*}
+</div>
+<div class="para">or</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left(\sum y_i^2\right)\left(\sum x_i^2\right) \geq \left(\sum x_iy_i\right)^2\text{.}
+\end{equation*}
+</div>
+</div> <div class="para">This establishes the Cauchy-Schwarz Inequality.</div></article><span class="incontext"><a href="sec_euclid_rn.html#proof-3" class="internal">in-context</a></span>
+</body>
+</html>

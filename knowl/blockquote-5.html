@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<blockquote class="blockquote">
+<h4 class="heading"><span class="type">Quotation</span></h4>
+<div class="para logical">
+<div class="para">
+<em class="emphasis">Scratch work.</em> What happens next is not part of the proof, but shows how we go about finding a <span class="process-math">\(\delta\)</span> we need. We are looking for <span class="process-math">\(\delta \gt 0\)</span> such that <span class="process-math">\(d_X(x,a) \lt  \delta\)</span> implies that <span class="process-math">\(d_E(f(x),f(a)) \lt  \epsilon\text{.}\)</span> That is, we want to make</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d_E(f(x),f(a)) = \sqrt{(f(x)-f(a))^2} = |f(x)-f(a)| = |x^2-a^2| \lt  \epsilon
+\end{equation*}
+</div>
+<div class="para">whenever</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d_X(x,a) = \min\{|x-a|, 1\} \lt  \delta\text{.}
+\end{equation*}
+</div>
+<div class="para">Now <span class="process-math">\(|x^2-a^2| = |(x-a)(x+a)| = |x-a| \ |x+a|\text{.}\)</span> If <span class="process-math">\(d_X(x,a) \lt  \delta\text{,}\)</span> then <span class="process-math">\(\min\{|x-a|, 1\} \lt  \delta\text{.}\)</span> If we choose <span class="process-math">\(\delta \lt  1\text{,}\)</span> then <span class="process-math">\(d_X(x,a) \lt  \delta \lt  1\)</span> implies that <span class="process-math">\(|x-a| \lt  1\)</span> and so <span class="process-math">\(d_X(x,a) = |x-a|\text{.}\)</span> Now</div>
+<div class="displaymath process-math">
+\begin{equation*}
+|x+a| = |(x-a) + 2a| \leq |x-a| + 2|a| \lt  1+2|a|\text{.}
+\end{equation*}
+</div>
+<div class="para">It follows that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+|x-a| \ |x+a| \lt  \delta(1+2|a|)\text{.}
+\end{equation*}
+</div>
+<div class="para">To make this product less that <span class="process-math">\(\epsilon\text{,}\)</span> we can choose <span class="process-math">\(\delta\)</span> such that <span class="process-math">\(\delta(1+2|a|) \lt  \epsilon\)</span> or <span class="process-math">\(\delta \lt  \frac{\epsilon}{1+2|a|}\text{.}\)</span> That is, there is a function <span class="process-math">\(C\)</span> of <span class="process-math">\(\epsilon\)</span> that gives us the <span class="process-math">\(\delta\)</span> we want, namely <span class="process-math">\(\delta = C(a,\epsilon) = \left\{1, \frac{\epsilon}{1+2|a|}\right\}\text{.}\)</span> Now we ignore this paragraph and present the proof, which is essentially reversing the steps we just made. If the steps can’t be reversed, then we have to rethink our argument. The next step in the proof might seem like magic to the uninitiated reader, but we have seen behind the curtain so it isn’t a mystery to us.</div>
+</div>
+</blockquote>
+<span class="incontext"><a href="sec_cont_func_btwn.html#blockquote-5" class="internal">in-context</a></span>
+</body>
+</html>

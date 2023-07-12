@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="theorem theorem-like"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">17.13</span><span class="period">.</span><span class="space"> </span><span class="title">The Heine-Borel Theorem.</span>
+</h3>
+<div class="para">A subset <span class="process-math">\(A\)</span> of <span class="process-math">\((\R^n, d_E)\)</span> is compact if and only if <span class="process-math">\(A\)</span> is closed and bounded.</div></article><article class="proof"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
+<div class="para">Let <span class="process-math">\(A\)</span> be a subset of <span class="process-math">\((\R^n, d_E)\text{.}\)</span> Assume that <span class="process-math">\(A\)</span> is closed and bounded. Since <span class="process-math">\(A\)</span> is bounded, there is a positive number <span class="process-math">\(M\)</span> such that <span class="process-math">\(A \subseteq Q^n_M\text{.}\)</span> <a href="" class="xref" data-knowl="./knowl/thm_Compact_cubes.html" title="Theorem 17.10">Theorem 17.10</a> shows that <span class="process-math">\(Q^n_M\)</span> is compact, and then <a href="" class="xref" data-knowl="./knowl/thm_closed_compact.html" title="Theorem 17.12">Theorem 17.12</a> shows that <span class="process-math">\(A\)</span> is compact.</div> <div class="para logical">
+<div class="para">For the converse, assume that <span class="process-math">\(A\)</span> is a compact subset of <span class="process-math">\(\R^n\text{.}\)</span> We must show that <span class="process-math">\(A\)</span> is closed and bounded. Now <span class="process-math">\((\R^n, d_E)\)</span> is a metric space, and so Hausdorff. <a href="" class="xref" data-knowl="./knowl/thm_metric_compact_closed.html" title="Theorem 17.6">Theorem 17.6</a> then shows that <span class="process-math">\(A\)</span> is closed. To conclude our proof, we need to demonstrate that <span class="process-math">\(A\)</span> is bounded. For each <span class="process-math">\(k \gt 0\text{,}\)</span> let</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/thm_metric_compact_closed.html">
+\begin{equation*}
+O_k = \{ (x_1,x_2, \ldots, x_n) \mid -k \lt  x_i \lt  k \text{ for every }  1 \leq i \leq n\}\text{.}
+\end{equation*}
+</div>
+</div> <div class="para logical">
+<div class="para">That is, <span class="process-math">\(O_k\)</span> is the open <span class="process-math">\(k\)</span>-cube in <span class="process-math">\(\R^n\text{.}\)</span> Next let</div>
+<div class="displaymath process-math">
+\begin{equation*}
+U_k = O_k \cap A
+\end{equation*}
+</div>
+<div class="para">for each <span class="process-math">\(k\text{.}\)</span> Since <span class="process-math">\(\bigcup_{k \gt 0} O_k = \R^n\text{,}\)</span> it follows that <span class="process-math">\(\{U_k\}_{k \gt 0}\)</span> is an open cover of <span class="process-math">\(A\text{.}\)</span> The fact that <span class="process-math">\(A\)</span> is compact means that there is a finite collection <span class="process-math">\(U_{k_1}\text{,}\)</span> <span class="process-math">\(U_{k_2}\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\(U_{k_m}\)</span> of sets in <span class="process-math">\(\{U_k\}_{k \gt 0}\)</span> that cover <span class="process-math">\(A\text{.}\)</span> Let <span class="process-math">\(K = \max\{k_i \mid 1 \leq i \leq m\}\text{.}\)</span> Then <span class="process-math">\(U_{k_i} \subseteq U_K\)</span> for each <span class="process-math">\(i\text{,}\)</span> and so <span class="process-math">\(A \subseteq U_K \subset Q^m_K\text{.}\)</span> Thus, <span class="process-math">\(A\)</span> is bounded. This completes the proof that if <span class="process-math">\(A\)</span> is compact in <span class="process-math">\(\R^n\text{,}\)</span> then <span class="process-math">\(A\)</span> is closed and bounded.</div>
+</div></article><span class="incontext"><a href="sec_compact_rn.html#theorem-51" class="internal">in-context</a></span>
+</body>
+</html>

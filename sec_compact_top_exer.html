@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Exercises</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Topology">
+<meta property="book:author" content="Steven Schlicker">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.7/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="schlicker-topology.html"><span class="title">Topology:</span> <span class="subtitle">An Inquiry-Based Approach</span></a></h1>
+<p class="byline">Steven Schlicker</p>
+</div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms" class="searchterms"></span>
+</h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="sec_compact_top_summ.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="chap_Compact_topology.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="sec_fractals.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\E}{\mathbb{E}}
+\DeclareMathOperator{\ch}{char}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\W}{\mathbb{W}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\J}{\mathbb{J}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\NE}{\mathcal{E}}
+\newcommand{\Mn}[1]{\mathcal{M}_{#1 \times #1}}
+\renewcommand{\P}{\mathcal{P}}
+\newcommand{\Rn}{\R^n}
+\newcommand{\Mat}{\mathbf}
+\newcommand{\Seq}{\boldsymbol}
+\newcommand{\seq}[1]{\boldsymbol{#1}}
+\newcommand{\set}[1]{\mathcal{#1}}
+\newcommand{\abs}[1]{\left\lvert{}#1\right\rvert}
+\newcommand{\floor}[1]{\left\lfloor#1\right\rfloor}
+\newcommand{\cq}{\scalebox{.34}{\pscirclebox{ \textbf{?}}}}
+\newcommand{\cqup}{\,$^{\text{\scalebox{.2}{\pscirclebox{\textbf{?}}}}}$}
+\newcommand{\cqupmath}{\,^{\text{\scalebox{.2}{\pscirclebox{\textbf{?}}}}}}
+\newcommand{\cqupmathnospace}{^{\text{\scalebox{.2}{\pscirclebox{\textbf{?}}}}}}
+\newcommand{\uspace}[1]{\underline{}}
+\newcommand{\muspace}[1]{\underline{\mspace{#1 mu}}}
+\newcommand{\bspace}[1]{}
+\newcommand{\ie}{\emph{i}.\emph{e}.}
+\newcommand{\nq}[1]{\scalebox{.34}{\pscirclebox{\textbf{#1}}}}
+\newcommand{\equalwhy}{\stackrel{\cqupmath}{=}}
+\newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
+\newcommand{\Ker}{\text{Ker}}
+\newcommand{\Image}{\text{Im}}
+\renewcommand{\qedsymbol}{\blacksquare}
+\newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\SL}{\text{SL}}
+\newcommand{\lcm}{\text{lcm}}
+\newcommand{\Aut}{\text{Aut}}
+\newcommand{\Inn}{\text{Inn}}
+\newcommand{\Hol}{\text{Hol}}
+\newcommand{\cl}{\text{cl}}
+\newcommand{\bsq}{\hfill $\blacksquare$}
+\newcommand{\NIMdot}{{ $\cdot$ }}
+\newcommand{\eG}{e_{\scriptscriptstyle{G}}}
+\newcommand{\eGroup}[1]{e_{\scriptscriptstyle{#1}}}
+\newcommand{\Gdot}[1]{\cdot_{\scriptscriptstyle{#1}}}
+\newcommand{\rbar}{\overline{r}}
+\newcommand{\nuG}[1]{\nu_{\scriptscriptstyle{#1}}}
+\newcommand{\rightarray}[2]{\left[ \begin{array}{#1} #2 \end{array} \right]}
+\newcommand{\polymod}[1]{\mspace{5 mu}(\text{mod} #1)}
+\newcommand{\ts}{\mspace{2 mu}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\adj}{\text{adj}}
+\newcommand{\pol}{\mathbb{P}}
+\newcommand{\CS}{\mathcal{S}}
+\newcommand{\CC}{\mathcal{C}}
+\newcommand{\CB}{\mathcal{B}}
+\newcommand{\CD}{\mathcal{D}}
+\newcommand{\CP}{\mathcal{P}}
+\newcommand{\CQ}{\mathcal{Q}}
+\newcommand{\CW}{\mathcal{W}}
+\newcommand{\rank}{\text{rank}}
+\newcommand{\nullity}{\text{nullity}}
+\newcommand{\trace}{\text{trace}}
+\newcommand{\Area}{\text{Area}}
+\newcommand{\Vol}{\text{Vol}}
+\newcommand{\cov}{\text{cov}}
+\newcommand{\var}{\text{var}}
+\newcommand{\la}{\left|}
+\newcommand{\ra}{\right|}
+\newcommand{\Int}{\text{Int}}
+\newcommand{\Bdry}{\text{Bdry}}
+\newcommand{\lub}{\text{lub}}
+\newcommand{\glb}{\text{glb}}
+\newcommand{\ssim}{\sim}
+\newcommand{\va}{\mathbf{a}}
+\newcommand{\vb}{\mathbf{b}}
+\newcommand{\vc}{\mathbf{c}}
+\newcommand{\vd}{\mathbf{d}}
+\newcommand{\ve}{\mathbf{e}}
+\newcommand{\vf}{\mathbf{f}}
+\newcommand{\vg}{\mathbf{g}}
+\newcommand{\vh}{\mathbf{h}}
+\newcommand{\vm}{\mathbf{m}}
+\newcommand{\vn}{\mathbf{n}}
+\newcommand{\vp}{\mathbf{p}}
+\newcommand{\vq}{\mathbf{q}}
+\newcommand{\vr}{\mathbf{r}}
+\newcommand{\vs}{\mathbf{s}}
+\newcommand{\vx}{\mathbf{x}}
+\newcommand{\vy}{\mathbf{y}}
+\newcommand{\vu}{\mathbf{u}}
+\newcommand{\vv}{\mathbf{v}}
+\newcommand{\vw}{\mathbf{w}}
+\newcommand{\vz}{\mathbf{z}}
+\newcommand{\vzero}{\mathbf{0}}
+\newcommand{\vi}{\mathbf{i}}
+\newcommand{\vj}{\mathbf{j}}
+\newcommand{\vk}{\mathbf{k}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\vP}{\mathbf{P}}
+\newcommand{\nin}{}
+\newcommand{\Dom}{\text{Dom}}
+\newcommand{\tr}{\mathsf{T}}
+\newcommand{\proj}{\text{proj}}
+\newcommand{\comp}{\text{comp}}
+\newcommand{\Row}{\text{Row }}
+\newcommand{\Col}{\text{Col }}
+\newcommand{\Nul}{\text{Nul }}
+\newcommand{\Span}{\text{Span}}
+\newcommand{\Range}{\text{Range}}
+\newcommand{\Domain}{\text{Domain}}
+\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
+\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
+\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
+\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
+\newcommand{\gr}{\varphi}
+\newcommand{\grc}{\overline{\varphi}}
+\newcommand{\hthin}{\hlinewd{.1pt}}
+\newcommand{\hthick}{\hlinewd{.7pt}}
+\newcommand{\pbreaks}{1}
+\newcommand{\pbreak}{
+}
+\newcommand{\lint}{\underline{}
+\int}
+\newcommand{\uint}{ \underline{}
+\int}
+\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
+\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\bei}{\begin{numlist2}}
+\newcommand{\eei}{\end{numlist2}}
+\newcommand{\ba}{\begin{itemize}}
+\newcommand{\ea}{\end{itemize}}
+\newcommand{\bal}{\begin{alphalist2}}
+\newcommand{\eal}{\end{alphalist2}}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\btl}{\begin{thmlist}}
+\newcommand{\etl}{\end{thmlist}}
+\newcommand{\solution}{ \textbf{Solution. }}
+\renewcommand{\be}{\begin{enumerate}}
+\renewcommand{\ee}{\end{enumerate}}
+\renewcommand{\labelenumi}{(\arabic{enumi})}
+\newcommand{\xitem}{\ans \item \ansend}
+\newcommand{\obe}{\begin{oddenumerate}}
+\newcommand{\oee}{\end{oddenumerate}}
+\newcommand{\skipitems}[1]{
+}
+\renewcommand{\phi}{\varphi}
+\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
+\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.95}
+\renewcommand{\floatpagefraction}{0.35}
+\renewcommand{\MakeUppercase}[1]{#1}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 parts"><ul class="structural">
+<li>
+<div class="toc-item"><a href="frontmatter-1.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="act_Preface.html" class="internal"><span class="title">Preface</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="part-sets-funcs.html" class="internal"><span class="codenumber">I</span> <span class="title">Sets and Functions</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="chap_sets.html" class="internal"><span class="codenumber">1</span> <span class="title">Sets</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec_sets_intro.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="sec_basic_top.html" class="internal"><span class="title">The Basic Idea of Topology</span></a></div></li>
+<li><div class="toc-item"><a href="sec_intervals.html" class="internal"><span class="title">Intervals</span></a></div></li>
+<li><div class="toc-item"><a href="sec_union_int_comp.html" class="internal"><span class="title">Unions, Intersections, and Complements of Sets</span></a></div></li>
+<li><div class="toc-item"><a href="sec_cart_prod.html" class="internal"><span class="title">Cartesian Products of Sets</span></a></div></li>
+<li><div class="toc-item"><a href="sec_sets_summ.html" class="internal"><span class="title">Summary</span></a></div></li>
+<li><div class="toc-item"><a href="sec_sets_exer.html" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chap_functions.html" class="internal"><span class="codenumber">2</span> <span class="title">Functions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec_func_intro.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="sec_comp_func.html" class="internal"><span class="title">Composites of Functions</span></a></div></li>
+<li><div class="toc-item"><a href="sec_inv_func.html" class="internal"><span class="title">Inverse Functions</span></a></div></li>
+<li><div class="toc-item"><a href="sec_fun_set.html" class="internal"><span class="title">Functions and Sets</span></a></div></li>
+<li><div class="toc-item"><a href="sec_card_set.html" class="internal"><span class="title">The Cardinality of a Set</span></a></div></li>
+<li><div class="toc-item"><a href="sec_func_summ.html" class="internal"><span class="title">Summary</span></a></div></li>
+<li><div class="toc-item"><a href="sec_func_exer.html" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="part-metric-spaces.html" class="internal"><span class="codenumber">II</span> <span class="title">Metric Spaces</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="chap_metric_spaces.html" class="internal"><span class="codenumber">3</span> <span class="title">Metric Spaces</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec_metric_space_intro.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="sec_metric_space.html" class="internal"><span class="title">Metric Spaces</span></a></div></li>
+<li><div class="toc-item"><a href="sec_euclid_rn.html" class="internal"><span class="title">The Euclidean Metric on <span class="process-math">\(\R^n\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="sec_metric_space_summ.html" class="internal"><span class="title">Summary</span></a></div></li>
+<li><div class="toc-item"><a href="sec_metric_space_exer.html" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chap_metric_spaces_apps.html" class="internal"><span class="codenumber">4</span> <span class="title">Applications of Metric Spaces</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec_met_space_app.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="sec_hamming.html" class="internal"><span class="title">The Hamming Metric</span></a></div></li>
+<li><div class="toc-item"><a href="sec_levenshtein.html" class="internal"><span class="title">The Levenshtein Metric</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chap_glb.html" class="internal"><span class="codenumber">5</span> <span class="title">The Greatest Lower Bound</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec_glb_intro.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="sec_dist_point_set.html" class="internal"><span class="title">The Distance from a Point to a Set</span></a></div></li>
+<li><div class="toc-item"><a href="sec_glb_summ.html" class="internal"><span class="title">Summary</span></a></div></li>
+<li><div class="toc-item"><a href="sec_glb_exer.html" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chap_continuous_functions.html" class="internal"><span class="codenumber">6</span> <span class="title">Continuous Functions in Metric Spaces</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec_cont_func_intro.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="sec_cont_func_btwn.html" class="internal"><span class="title">Continuous Functions Between Metric Spaces</span></a></div></li>
+<li><div class="toc-item"><a href="sec_comp_cont_func.html" class="internal"><span class="title">Composites of Continuous Functions</span></a></div></li>
+<li><div class="toc-item"><a href="sec_cont_func_summ.html" class="internal"><span class="title">Summary</span></a></div></li>
+<li><div class="toc-item"><a href="sec_cont_func_exer.html" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chap_open_balls.html" class="internal"><span class="codenumber">7</span> <span class="title">Open Balls and Neighborhoods in Metric Spaces</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec_open_balls_intro.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="sec_neighborhoods.html" class="internal"><span class="title">Neighborhoods</span></a></div></li>
+<li><div class="toc-item"><a href="sec_cont_neighborhoods.html" class="internal"><span class="title">Continuity and Neighborhoods</span></a></div></li>
+<li><div class="toc-item"><a href="sec_open_balls_summ.html" class="internal"><span class="title">Summary</span></a></div></li>
+<li><div class="toc-item"><a href="sec_open_balls_exer.html" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chap_open_sets.html" class="internal"><span class="codenumber">8</span> <span class="title">Open Sets in Metric Spaces</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec_open_sets_intro.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="sec_open_sets.html" class="internal"><span class="title">Open Sets</span></a></div></li>
+<li><div class="toc-item"><a href="sec_union_int_open_sets.html" class="internal"><span class="title">Unions and Intersections of Open Sets</span></a></div></li>
+<li><div class="toc-item"><a href="sec_cont_open_sets.html" class="internal"><span class="title">Continuity and Open Sets</span></a></div></li>
+<li><div class="toc-item"><a href="sec_interior_set.html" class="internal"><span class="title">The Interior of a Set</span></a></div></li>
+<li><div class="toc-item"><a href="sec_open_sets_summ.html" class="internal"><span class="title">Summary</span></a></div></li>
+<li><div class="toc-item"><a href="sec_open_sets_exer.html" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chap_sequences.html" class="internal"><span class="codenumber">9</span> <span class="title">Sequences in Metric Spaces</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec_seq_intro.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="sec_seq_cont_metric.html" class="internal"><span class="title">Sequences and Continuity in Metric Spaces</span></a></div></li>
+<li><div class="toc-item"><a href="sec_seq_summ.html" class="internal"><span class="title">Summary</span></a></div></li>
+<li><div class="toc-item"><a href="sec_seq_exer.html" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chap_closed_sets.html" class="internal"><span class="codenumber">10</span> <span class="title">Closed Sets in Metric Spaces</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec_closed_sets_intro.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="sec_closed_sets_metric.html" class="internal"><span class="title">Closed Sets in Metric Spaces</span></a></div></li>
+<li><div class="toc-item"><a href="sec_cont_closed_sets.html" class="internal"><span class="title">Continuity and Closed Sets</span></a></div></li>
+<li><div class="toc-item"><a href="sec_limit_bound_iso_seq.html" class="internal"><span class="title">Limit Points, Boundary Points, Isolated Points, and Sequences</span></a></div></li>
+<li><div class="toc-item"><a href="sec_limit_closed.html" class="internal"><span class="title">Limit Points and Closed Sets</span></a></div></li>
+<li><div class="toc-item"><a href="sec_set_closure.html" class="internal"><span class="title">The Closure of a Set</span></a></div></li>
+<li><div class="toc-item"><a href="sec_closed_limits_seq.html" class="internal"><span class="title">Closed Sets and Limits of Sequences</span></a></div></li>
+<li><div class="toc-item"><a href="sec_closed_set_summ.html" class="internal"><span class="title">Summary</span></a></div></li>
+<li><div class="toc-item"><a href="sec_closed_set_exer.html" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chap_metric_subspaces.html" class="internal"><span class="codenumber">11</span> <span class="title">Subspaces and Products of Metric Spaces</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec_sub_metric_intro.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="sec_open_closed_sub.html" class="internal"><span class="title">Open and Closed Sets in Subspaces</span></a></div></li>
+<li><div class="toc-item"><a href="sec_prod_metric.html" class="internal"><span class="title">Products of Metric Spaces</span></a></div></li>
+<li><div class="toc-item"><a href="sec_sub_metric_summ.html" class="internal"><span class="title">Summary</span></a></div></li>
+<li><div class="toc-item"><a href="sec_sub_metric_exer.html" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="part-top-spaces.html" class="internal"><span class="codenumber">III</span> <span class="title">Topological Spaces</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="chap_top_spaces.html" class="internal"><span class="codenumber">12</span> <span class="title">Topological Spaces</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec_top_space_intro.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="sec_exam_top.html" class="internal"><span class="title">Examples of Topologies</span></a></div></li>
+<li><div class="toc-item"><a href="sec_base_top.html" class="internal"><span class="title">Bases for Topologies</span></a></div></li>
+<li><div class="toc-item"><a href="sec_metric_top_space.html" class="internal"><span class="title">Metric Spaces and Topological Spaces</span></a></div></li>
+<li><div class="toc-item"><a href="sec_neighborhood_top_space.html" class="internal"><span class="title">Neighborhoods in Topological Spaces</span></a></div></li>
+<li><div class="toc-item"><a href="sec_interior_set_top.html" class="internal"><span class="title">The Interior of a Set in a Topological Space</span></a></div></li>
+<li><div class="toc-item"><a href="sec_top_space_summ.html" class="internal"><span class="title">Summary</span></a></div></li>
+<li><div class="toc-item"><a href="sec_top_space_exer.html" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chap_Closed_sets_topology.html" class="internal"><span class="codenumber">13</span> <span class="title">Closed Sets in Topological Spaces</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec_closed_sets_top_intro.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="sec_union_inter_closed.html" class="internal"><span class="title">Unions and Intersections of Closed Sets</span></a></div></li>
+<li><div class="toc-item"><a href="sec_limit_points.html" class="internal"><span class="title">Limit Points and Sequences in Topological Spaces</span></a></div></li>
+<li><div class="toc-item"><a href="sec_top_closure.html" class="internal"><span class="title">Closure in Topological Spaces</span></a></div></li>
+<li><div class="toc-item"><a href="sec_set_boundary.html" class="internal"><span class="title">The Boundary of a Set</span></a></div></li>
+<li><div class="toc-item"><a href="sec_separation_ax.html" class="internal"><span class="title">Separation Axioms</span></a></div></li>
+<li><div class="toc-item"><a href="sec_closed_sets_top_summ.html" class="internal"><span class="title">Summary</span></a></div></li>
+<li><div class="toc-item"><a href="sec_closed_sets_top_exer.html" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chap_continuity_topology.html" class="internal"><span class="codenumber">14</span> <span class="title">Continuity and Homeomorphisms</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec_cont_top_intro.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="sec_metric_equiv.html" class="internal"><span class="title">Metric Equivalence</span></a></div></li>
+<li><div class="toc-item"><a href="sec_top_equiv.html" class="internal"><span class="title">Topological Equivalence</span></a></div></li>
+<li><div class="toc-item"><a href="sec_relations.html" class="internal"><span class="title">Relations</span></a></div></li>
+<li><div class="toc-item"><a href="sec_top_invar.html" class="internal"><span class="title">Topological Invariants</span></a></div></li>
+<li><div class="toc-item"><a href="sec_cont_top_summ.html" class="internal"><span class="title">Summary</span></a></div></li>
+<li><div class="toc-item"><a href="sec_cont_top_exer.html" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chap_subspaces.html" class="internal"><span class="codenumber">15</span> <span class="title">Subspaces</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec_sub.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="sec_subspace_top.html" class="internal"><span class="title">The Subspace Topology</span></a></div></li>
+<li><div class="toc-item"><a href="sec_base_sub.html" class="internal"><span class="title">Bases for Subspaces</span></a></div></li>
+<li><div class="toc-item"><a href="sec_open_int_rn.html" class="internal"><span class="title">Open Intervals and <span class="process-math">\(\R\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="sec_sub_summ.html" class="internal"><span class="title">Summary</span></a></div></li>
+<li><div class="toc-item"><a href="sec_sub_exer.html" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chap_quotients.html" class="internal"><span class="codenumber">16</span> <span class="title">Quotient Spaces</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec_quotients.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="sec_quotient_top.html" class="internal"><span class="title">The Quotient Topology</span></a></div></li>
+<li><div class="toc-item"><a href="sec_quotient_space.html" class="internal"><span class="title">Quotient Spaces</span></a></div></li>
+<li><div class="toc-item"><a href="sec_find_quotient_space.html" class="internal"><span class="title">Identifying Quotient Spaces</span></a></div></li>
+<li><div class="toc-item"><a href="sec_quotients_summ.html" class="internal"><span class="title">Summary</span></a></div></li>
+<li><div class="toc-item"><a href="sec_quotients_exer.html" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chap_Compact_topology.html" class="internal"><span class="codenumber">17</span> <span class="title">Compact Spaces</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec_compact_top_intro.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="sec_compact_cont.html" class="internal"><span class="title">Compactness and Continuity</span></a></div></li>
+<li><div class="toc-item"><a href="sec_compact_rn.html" class="internal"><span class="title">Compact Subsets of <span class="process-math">\(\R^n\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="sec_compact_app.html" class="internal"><span class="title">An Application of Compactness</span></a></div></li>
+<li><div class="toc-item"><a href="sec_compact_top_summ.html" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="active"><div class="toc-item"><a href="sec_compact_top_exer.html" class="internal"><span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="sec_fractals.html" class="internal"><span class="title">An Application of Compactness: Fractals</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chap_Connected_topology.html" class="internal"><span class="codenumber">18</span> <span class="title">Connected Spaces</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec_connect_top_intro.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="sec_connect_sets.html" class="internal"><span class="title">Connected Sets</span></a></div></li>
+<li><div class="toc-item"><a href="sec_connect_subset_rn.html" class="internal"><span class="title">Connected Subsets of <span class="process-math">\(\R\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="sec_components.html" class="internal"><span class="title">Components</span></a></div></li>
+<li><div class="toc-item"><a href="sec_cut_sets.html" class="internal"><span class="title">Cut Sets</span></a></div></li>
+<li><div class="toc-item"><a href="sec_ivt_fpt.html" class="internal"><span class="title">The Intermediate Value Theorem and a Fixed Point Theorem</span></a></div></li>
+<li><div class="toc-item"><a href="sec_connect_top_summ.html" class="internal"><span class="title">Summary</span></a></div></li>
+<li><div class="toc-item"><a href="sec_connect_top_exer.html" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chap_Path_connected_topology.html" class="internal"><span class="codenumber">19</span> <span class="title">Path Connected Spaces</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec_path_intro.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="sec_path_connect.html" class="internal"><span class="title">Path Connectedness</span></a></div></li>
+<li><div class="toc-item"><a href="sec_path_connect_equiv.html" class="internal"><span class="title">Path Connectedness as an Equivalence Relation</span></a></div></li>
+<li><div class="toc-item"><a href="sec_connectedness.html" class="internal"><span class="title">Path Connectedness and Connectedness</span></a></div></li>
+<li><div class="toc-item"><a href="sec_connect_finite.html" class="internal"><span class="title">Path Connectedness and Connectedness in Finite Topological Spaces</span></a></div></li>
+<li><div class="toc-item"><a href="sec_connect_infinite.html" class="internal"><span class="title">Path Connectedness and Connectedness in Infinite Topological Spaces</span></a></div></li>
+<li><div class="toc-item"><a href="sec_path_summ.html" class="internal"><span class="title">Summary</span></a></div></li>
+<li><div class="toc-item"><a href="sec_path_exer.html" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chap_Product_topology.html" class="internal"><span class="codenumber">20</span> <span class="title">Products of Topological Spaces</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec_prod_top.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="sec_top_prod_space.html" class="internal"><span class="title">The Topology on a Product of Topological Spaces</span></a></div></li>
+<li><div class="toc-item"><a href="sec_prod_top_exam.html" class="internal"><span class="title">Three Examples</span></a></div></li>
+<li><div class="toc-item"><a href="sec_proj_cont_prod.html" class="internal"><span class="title">Projections and Continuous Functions on Products</span></a></div></li>
+<li><div class="toc-item"><a href="sec_prop_prod_top.html" class="internal"><span class="title">Properties of Products of Topological Spaces</span></a></div></li>
+<li><div class="toc-item"><a href="sec_prod_top_summ.html" class="internal"><span class="title">Summary</span></a></div></li>
+<li><div class="toc-item"><a href="sec_prod_top_exer.html" class="internal"><span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="sec_prod_top_app.html" class="internal"><span class="title">Applications of Products of Topological Spaces</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="backmatter-1.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="index-1.html" class="internal"><span class="title">Index</span></a></div></li></ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="exercises" id="sec_compact_top_exer"><h2 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Exercises</span>
+</h2>
+<article class="exercise exercise-like" id="exercise-193"><h3 class="heading"><span class="codenumber">1<span class="period">.</span></span></h3>
+<article class="task exercise-like" id="task-888"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="p-2111">Determine the compact subsets of a topological space <span class="process-math">\(X\)</span> with the indiscrete topology.</div></article><article class="task exercise-like" id="task-889"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-2112">Determine the compact subsets of a topological space <span class="process-math">\(X\)</span> with the indiscrete topology.</div></article></article><article class="exercise exercise-like" id="exercise-194"><h3 class="heading"><span class="codenumber">2<span class="period">.</span></span></h3>
+<div class="para" id="p-2113">Recall from <a href="" class="xref" data-knowl="./knowl/def_weaker_topologies.html" title="Definition 12.13">Definition 12.13</a> that if <span class="process-math">\(\tau_1\)</span> and <span class="process-math">\(\tau_2\)</span> are two topologies on a set <span class="process-math">\(X\)</span> such that <span class="process-math">\(\tau_1 \subseteq \tau_2\text{,}\)</span> then <span class="process-math">\(\tau_1\)</span> is said to be a <dfn class="terminology">coarser</dfn> (or <dfn class="terminology">weaker</dfn>) topology than <span class="process-math">\(\tau_2\text{,}\)</span> or <span class="process-math">\(\tau_2\)</span> is a <dfn class="terminology">finer</dfn> (or <dfn class="terminology">stronger</dfn>) topology than <span class="process-math">\(\tau_1\text{.}\)</span> In this exercise we explore the question of whether compactness is a property that is passed from weaker to stronger topologies or from stronger to weaker. Let <span class="process-math">\(\tau_1\)</span> and <span class="process-math">\(\tau_2\)</span> be two topologies on a set <span class="process-math">\(X\text{.}\)</span> If <span class="process-math">\(\tau_1 \subseteq \tau_2\text{,}\)</span> what does compactness under <span class="process-math">\(\tau_1\)</span> or <span class="process-math">\(\tau_2\)</span> imply, if anything, about compactness under the other topology? Justify your answers.</div></article><article class="exercise exercise-like" id="ex_intersection_not_compact"><h3 class="heading"><span class="codenumber">3<span class="period">.</span></span></h3>
+<div class="introduction" id="introduction-241"><div class="para" id="p-2114">Let <span class="process-math">\(\E\)</span> be the set of even integers, and let <span class="process-math">\(\tau = \{\Z\} \cup \{O \subseteq \E\}\text{.}\)</span> That is, <span class="process-math">\(\tau\)</span> is the collection of all subsets of <span class="process-math">\(\E\)</span> along with <span class="process-math">\(\Z\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="task-890"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="p-2115">Prove that <span class="process-math">\(\tau\)</span> is a topology on <span class="process-math">\(\Z\text{.}\)</span>
+</div></article><article class="task exercise-like" id="task-891"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-2116">Find all compact subsets of <span class="process-math">\((\Z, \tau)\text{.}\)</span> Verify your answer.</div></article><article class="task exercise-like" id="task-892"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="p-2117">Prove or disprove: If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are compact subsets of a topological space <span class="process-math">\(X\text{,}\)</span> then <span class="process-math">\(A \cap B\)</span> is also a compact subset of <span class="process-math">\(X\text{.}\)</span>
+</div></article></article><article class="exercise exercise-like" id="exercise-196"><h3 class="heading"><span class="codenumber">4<span class="period">.</span></span></h3>
+<div class="introduction" id="introduction-242"><div class="para" id="p-2118">Let <span class="process-math">\((X,\tau)\)</span> be a topological space</div></div>
+<article class="task exercise-like" id="task-893"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="p-2119">Prove that the union of any finite number of compact subsets of <span class="process-math">\(X\)</span> is a compact subset of <span class="process-math">\(X\text{.}\)</span>
+</div></article><article class="task exercise-like" id="task-894"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-2120">In <a href="" class="xref" data-knowl="./knowl/ex_intersection_not_compact.html" title="Exercise 3">Exercise 3</a> we should have seen that the intersection of compact sets is not necessarily compact. If <span class="process-math">\(X\)</span> is Hausdorff, prove that the intersection of any finite number of compact subsets of <span class="process-math">\(X\)</span> is a compact subset of <span class="process-math">\(X\text{.}\)</span>
+</div></article></article><article class="exercise exercise-like" id="exercise-197"><h3 class="heading"><span class="codenumber">5<span class="period">.</span></span></h3>
+<div class="para" id="p-2121">Consider <span class="process-math">\(\Z\)</span> with the digital line topology (see <a href="" class="xref" data-knowl="./knowl/ex_digital_line_topology.html" title="Exercise 11">Exercise 11</a>). Determine the compact subsets of <span class="process-math">\(\Z\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-198"><h3 class="heading"><span class="codenumber">6<span class="period">.</span></span></h3>
+<div class="introduction" id="introduction-243"><div class="para" id="p-2122">For each <span class="process-math">\(n \in \Z^+\text{,}\)</span> let <span class="process-math">\((-n,n)\)</span> be the set of integers in the interval <span class="process-math">\((-n,n)\)</span> (see <a href="" class="xref" data-knowl="./knowl/ex_coarse_topology_example.html" title="Exercise 4">Exercise 4</a>.)</div></div>
+<article class="task exercise-like" id="task-895"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="p-2123">Show that <span class="process-math">\(\B = \{(-n,n)\}_{n \in \Z^+}\)</span> is a basis for a topology <span class="process-math">\(\tau\)</span> on <span class="process-math">\(\Z\)</span>
+</div></article><article class="task exercise-like" id="task-896"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-2124">Is the subset <span class="process-math">\((-2,2)\)</span> compact in this topology?</div></article><article class="task exercise-like" id="task-897"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="p-2125">Determine all of the compact subsets of <span class="process-math">\(\Z\text{.}\)</span>
+</div></article></article><article class="exercise exercise-like" id="exercise-199"><h3 class="heading"><span class="codenumber">7<span class="period">.</span></span></h3>
+<div class="introduction" id="introduction-244"><div class="para" id="p-2126">Let <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> be topological spaces, and let <span class="process-math">\(f: X \to Y\)</span> be a function.</div></div>
+<article class="task exercise-like" id="task-898"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="p-2127">Suppose that <span class="process-math">\(f\)</span> is a continuous function, and that <span class="process-math">\(X\)</span> is compact and <span class="process-math">\(Y\)</span> is Hausdorff. Prove that if <span class="process-math">\(C\)</span> is a closed subset of <span class="process-math">\(X\text{,}\)</span> then <span class="process-math">\(f(C)\)</span> is a closed subset of <span class="process-math">\(Y\text{.}\)</span> (Thus, <span class="process-math">\(f\)</span> is a <dfn class="terminology">closed</dfn> function.)</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-26" id="hint-26"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-26"><div class="hint solution-like"><div class="para" id="p-2128">Use Activity 17.3, Activity 17.4, and Theorem 17.6.</div></div></div>
+</div></article><article class="task exercise-like" id="task-899"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-2129">Suppose that <span class="process-math">\(f\)</span> is a continuous bijection. Prove that if <span class="process-math">\(X\)</span> is compact and <span class="process-math">\(Y\)</span> is Hausdorff, then <span class="process-math">\(f\)</span> is a homeomorphism.</div></article><article class="task exercise-like" id="task-900"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="p-2130">Give an example where <span class="process-math">\(f\)</span> is a continuous bijection and <span class="process-math">\(X\)</span> is compact, but <span class="process-math">\(f\)</span> is not a homeomorphism.</div></article><article class="task exercise-like" id="task-901"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="p-2131">Give an example where <span class="process-math">\(f\)</span> is a continuous bijection and <span class="process-math">\(Y\)</span> is Hausdorff, but <span class="process-math">\(f\)</span> is not a homeomorphism.</div></article></article><article class="exercise exercise-like" id="exercise-200"><h3 class="heading"><span class="codenumber">8<span class="period">.</span></span></h3>
+<div class="introduction" id="introduction-245"><div class="para" id="p-2132">The Either-Or topology on the interval <span class="process-math">\(X = [-1,1]\)</span> has as its open sets all subsets of <span class="process-math">\(X\)</span> that contain <span class="process-math">\((-1,1)\)</span> and any subset of <span class="process-math">\(X\)</span> that doesn’t contain <span class="process-math">\(0\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="task-902"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="p-2133">Describe the non-trivial closed subsets of <span class="process-math">\(X\text{.}\)</span>
+</div></article><article class="task exercise-like" id="task-903"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-2134">Is <span class="process-math">\(X\)</span> a Hausdorff topological space? Explain.</div></article><article class="task exercise-like" id="task-904"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="p-2135">Is <span class="process-math">\(X\)</span> compact? Prove your answer.</div></article><article class="task exercise-like" id="task-905"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="p-2136">Are there any subsets of <span class="process-math">\(\Z\)</span> that are not compact? Justify your answer.</div></article></article><article class="exercise exercise-like" id="ex_K_topology_compact"><h3 class="heading"><span class="codenumber">9<span class="period">.</span></span></h3>
+<div class="introduction" id="introduction-246"><div class="para" id="p-2137">Let <span class="process-math">\(K = \left\{\frac{1}{k} \mid k \text{ is a positive integer} \right\}\text{.}\)</span> Let <span class="process-math">\(\B\)</span> be the collection of all open intervals of the form <span class="process-math">\((a,b)\)</span> and all sets of the form <span class="process-math">\((a,b) \setminus K\text{,}\)</span> where <span class="process-math">\(a \lt b\)</span> are real numbers as in <a href="" class="xref" data-knowl="./knowl/exp_K_topology.html" title="Example 13.13">Example 13.13</a>. Let <span class="process-math">\(\tau_K\)</span> be the topology generated by <span class="process-math">\(\B\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="task-906"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="p-2138">Show that <span class="process-math">\((\R, \tau_K)\)</span> is not compact.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-27" id="hint-27"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-27"><div class="hint solution-like"><div class="para" id="p-2139">How is the <span class="process-math">\(K\)</span>-topology related to the Euclidean topology?</div></div></div>
+</div></article><article class="task exercise-like" id="task-907"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-2140">Show that any subset of <span class="process-math">\(\R\)</span> that contains <span class="process-math">\(K\)</span> is not a compact subset of <span class="process-math">\((\R, \tau_K)\text{.}\)</span> In particular, even though <span class="process-math">\([0,1]\)</span> is a closed and bounded subset of <span class="process-math">\(\R\)</span> in <span class="process-math">\((\R, \tau_K)\text{,}\)</span> we note that <span class="process-math">\([0,1]\)</span> is not compact.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-28" id="hint-28"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-28"><div class="hint solution-like"><div class="para" id="p-2141">Consider the sets <span class="process-math">\(O_k = \left(\frac{1}{k},2\right) \cup (-1,1) \setminus K\)</span> for <span class="process-math">\(k \in \Z^+\text{.}\)</span>
+</div></div></div>
+</div></article></article><article class="exercise exercise-like" id="ex_Compact_normal"><h3 class="heading"><span class="codenumber">10<span class="period">.</span></span></h3>
+<div class="introduction" id="introduction-247"><div class="para" id="p-2142">Let <span class="process-math">\(X\)</span> be a topological space.</div></div>
+<article class="task exercise-like" id="task-908"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="p-2143">Prove that if <span class="process-math">\(X\)</span> is Hausdorff and <span class="process-math">\(C\)</span> is a compact subset of <span class="process-math">\(X\text{,}\)</span> then for each <span class="process-math">\(x \in X \setminus C\)</span> there exist disjoint open sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> such that <span class="process-math">\(x \in U\)</span> and <span class="process-math">\(C \subseteq V\text{.}\)</span>
+</div></article><article class="task exercise-like" id="task-909"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-2144">Prove that if <span class="process-math">\(X\)</span> is a compact Hausdorff space, then <span class="process-math">\(X\)</span> is normal.</div></article></article><article class="exercise exercise-like" id="exercise-203"><h3 class="heading"><span class="codenumber">11<span class="period">.</span></span></h3>
+<div class="introduction" id="introduction-248"><div class="para logical" id="p-2145">
+<div class="para">Let <span class="process-math">\(X\)</span> be a nonempty set and let <span class="process-math">\(p\)</span> be a fixed element in <span class="process-math">\(X\text{.}\)</span> Let <span class="process-math">\(\tau_p\)</span> be the particular point topology and <span class="process-math">\(\tau_{\overline{p}}\)</span> the excluded point topology on <span class="process-math">\(X\text{.}\)</span> That is</div>
+<ul class="disc">
+<li id="li-327"><div class="para" id="p-2146">
+<span class="process-math">\(\tau_{p}\)</span> is the collection of subsets of <span class="process-math">\(X\)</span> consisting of <span class="process-math">\(\emptyset\text{,}\)</span> <span class="process-math">\(X\text{,}\)</span> and all of the subsets of <span class="process-math">\(X\)</span> that contain <span class="process-math">\(p\text{.}\)</span>
+</div></li>
+<li id="li-328"><div class="para" id="p-2147">
+<span class="process-math">\(\tau_{\overline{p}}\)</span> is the collection of subsets of <span class="process-math">\(X\)</span> consisting of <span class="process-math">\(\emptyset\text{,}\)</span> <span class="process-math">\(X\text{,}\)</span> and all of the subsets of <span class="process-math">\(X\)</span> that do not contain <span class="process-math">\(p\text{.}\)</span>
+</div></li>
+</ul>
+<div class="para">That the particular point and excluded point topologies are topologies is the subject of <a href="" class="xref" data-knowl="./knowl/ex_particular_point_topology.html" title="Exercise 9">Exercise 9</a> and <a href="" class="xref" data-knowl="./knowl/ex_excluded_point_topology.html" title="Exercise 10">Exercise 10</a>. Determine, with proof, the compact subsets of <span class="process-math">\(X\)</span> when</div>
+</div></div>
+<article class="task exercise-like" id="task-910"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="p-2148">
+<span class="process-math">\(X\)</span> has the particular point topology <span class="process-math">\(\tau_p\)</span>
+</div></article><article class="task exercise-like" id="task-911"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-2149">
+<span class="process-math">\(X\)</span> has the excluded point topology <span class="process-math">\(\tau_{\overline{p}}\text{.}\)</span>
+</div></article></article><article class="exercise exercise-like" id="exercise-204"><h3 class="heading"><span class="codenumber">12<span class="period">.</span></span></h3>
+<div class="introduction" id="introduction-249"><div class="para" id="p-2150">In this exercise we encounter a non-Hausdorff topological space in which single points sets are closed, and in which compact subsets need not be closed. Consider the set <span class="process-math">\(\Z\)</span> with the finite complement topology <span class="process-math">\(\tau_{FC}\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="task-912"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="p-2151">Show that every single point set is closed.</div></article><article class="task exercise-like" id="task-913"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-2152">Explain why <span class="process-math">\((\Z, \tau_{FC})\)</span> is not a Hausdorff space.</div></article><article class="task exercise-like" id="task-914"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="p-2153">Let <span class="process-math">\(U\)</span> be an open set in <span class="process-math">\((\Z, \tau_{FC})\)</span> that contains <span class="process-math">\(0\)</span> and <span class="process-math">\(V\)</span> an open set in <span class="process-math">\((\Z, \tau_{FC})\)</span> that contains <span class="process-math">\(1\text{.}\)</span> Explain why it cannot be the case that <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> are disjoint — that is, <span class="process-math">\(U \cap V\)</span> must be non-empty.</div></article><article class="task exercise-like" id="task-915"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="p-2154">Show that the subset <span class="process-math">\(\E\)</span> of even integers is a compact subset of <span class="process-math">\((\Z, \tau_{FC})\)</span> that is not closed. Verify your result.</div></article></article><article class="exercise exercise-like" id="exercise-205"><h3 class="heading"><span class="codenumber">13<span class="period">.</span></span></h3>
+<div class="introduction" id="introduction-250"><div class="para" id="p-2155">Let <span class="process-math">\((X, \tau)\)</span> be a Hausdorff topological space.</div></div>
+<article class="task exercise-like" id="task-916"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="p-2156">Let <span class="process-math">\(x \in X\)</span> and let <span class="process-math">\(A\)</span> be a compact subset of <span class="process-math">\(X\text{.}\)</span> Prove that there exist disjoint open subsets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> of <span class="process-math">\(X\)</span> such that <span class="process-math">\(x \in U\)</span> and <span class="process-math">\(A \subseteq V\text{.}\)</span>
+</div></article><article class="task exercise-like" id="task-917"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-2157">Let <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> be disjoint compact subsets of <span class="process-math">\(X\text{.}\)</span> Prove that there exist disjoint open sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> such that <span class="process-math">\(A \subseteq U\)</span> and <span class="process-math">\(B \subseteq V\text{.}\)</span>
+</div></article></article><article class="exercise exercise-like" id="ex_subspace_compact"><h3 class="heading"><span class="codenumber">14<span class="period">.</span></span></h3>
+<div class="para" id="p-2158">Let <span class="process-math">\((X,\tau_X)\)</span> be a topological space and let <span class="process-math">\(A\)</span> be a subset of <span class="process-math">\(X\text{.}\)</span> Let <span class="process-math">\(\tau_A\)</span> be the subspace topology on <span class="process-math">\(A\text{.}\)</span> Prove that <span class="process-math">\(A\)</span> is a compact subset of <span class="process-math">\(X\)</span> if and only if <span class="process-math">\((A, \tau_A)\)</span> is a compact topological space.</div></article><article class="exercise exercise-like" id="exercise-207"><h3 class="heading"><span class="codenumber">15<span class="period">.</span></span></h3>
+<div class="para" id="p-2159">Let <span class="process-math">\(X\)</span> be a topological space. A family <span class="process-math">\(\{F_{\alpha}\}_{\alpha \in I}\)</span> of subsets of <span class="process-math">\(X\)</span> is said to have the <dfn class="terminology">finite intersection property</dfn> if for each finite subset <span class="process-math">\(J\)</span> of <span class="process-math">\(I\text{,}\)</span> <span class="process-math">\(\bigcap_{\alpha \in J} F_{\alpha} \neq \emptyset\text{.}\)</span> Prove that <span class="process-math">\(X\)</span> is compact if and only if for each family <span class="process-math">\(\{F_{\alpha}\}_{\alpha \in I}\)</span> of closed subsets of <span class="process-math">\(X\)</span> that has the finite intersection property, we have <span class="process-math">\(\bigcap_{\alpha \in I} F_{\alpha} \neq \emptyset\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-208"><h3 class="heading"><span class="codenumber">16<span class="period">.</span></span></h3>
+<div class="introduction" id="introduction-251">
+<div class="para" id="p-2160">Even though <span class="process-math">\(\R\)</span> is not a compact space, if <span class="process-math">\(x \in \R\text{,}\)</span> then <span class="process-math">\(x \in [x-1, x+1]\)</span> and so every point in <span class="process-math">\(\R\)</span> is contained in a compact subset of <span class="process-math">\(\R\text{.}\)</span> So if we view <span class="process-math">\(\R\)</span> from the perspective of a point in <span class="process-math">\(\R\text{,}\)</span> the space <span class="process-math">\(\R\)</span> looks compact around that point. This is the idea of local compactness. Locally compact spaces are important in the general topology of function spaces.</div> <article class="definition definition-like" id="definition-69"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">17.15</span><span class="period">.</span>
+</h4> <div class="para" id="p-2161">A topological space <span class="process-math">\(X\)</span> is locally compact if for each <span class="process-math">\(x \in X\)</span> there is an open set <span class="process-math">\(O\)</span> such that <span class="process-math">\(p \in O\)</span> and <span class="process-math">\(\overline{O}\)</span> is compact.</div></article>
+</div>
+<article class="task exercise-like" id="task-918"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="p-2162">Explain why <span class="process-math">\(\R^n\)</span> is locally compact for each <span class="process-math">\(n \in \Z^+\text{.}\)</span>
+</div></article><article class="task exercise-like" id="task-919"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-2163">Show that any compact space is locally compact.</div></article><article class="task exercise-like" id="task-920"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="p-2164">Consider the Sorgenfrey line from <a href="" class="xref" data-knowl="./knowl/ex_Closed_Sets_Sorgenfrey.html" title="Exercise 5">Exercise 5</a>. Recall that the Sorgenfrey line is the space <span class="process-math">\(\R\)</span> with a basis <span class="process-math">\(\B = \{[a,b) \mid a \lt b \text{ in } \R\}\)</span> for its topology. Show that the Sorgenfrey line is Hausdorff but not locally compact.</div></article></article><article class="exercise exercise-like" id="exercise-209"><h3 class="heading"><span class="codenumber">17<span class="period">.</span></span></h3>
+<div class="introduction" id="introduction-252"><div class="para" id="p-2165">For each of the following, answer true if the statement is always true. If the statement is only sometimes true or never true, answer false and provide a concrete example to illustrate that the statement is false. If a statement is true, explain why.</div></div>
+<article class="task exercise-like" id="task-921"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="p-2166">If <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> are compact topological spaces and <span class="process-math">\(f: X \to Y\)</span> is a continuous bijection, then <span class="process-math">\(f\)</span> is a homeomorphism.</div></article><article class="task exercise-like" id="task-922"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-2167">If <span class="process-math">\(X\)</span> is a compact topological space, then any closed subspace of <span class="process-math">\(X\)</span> is compact.</div></article><article class="task exercise-like" id="task-923"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="p-2168">If <span class="process-math">\(X\)</span> is a Hausdorff space, <span class="process-math">\(Y\)</span> is a compact space, and <span class="process-math">\(f : X \to Y\)</span> is a continuous and bijective function, then <span class="process-math">\(f\)</span> is a homeomorphism.</div></article><article class="task exercise-like" id="task-924"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="p-2169">If <span class="process-math">\(X\)</span> is a compact space, <span class="process-math">\(Y\)</span> is a Hausdorff space, and <span class="process-math">\(f : X \to Y\)</span> is a continuous bijection, then <span class="process-math">\(f\)</span> is a homeomorphism.</div></article><article class="task exercise-like" id="task-925"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para" id="p-2170">Let <span class="process-math">\(C\)</span> be a closed subset of a metric space <span class="process-math">\((X, d)\)</span> with the metric topology. Then <span class="process-math">\(C\)</span> is compact.</div></article><article class="task exercise-like" id="task-926"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<div class="para" id="p-2171">If <span class="process-math">\(A\)</span> is a compact subset of a topological space <span class="process-math">\(X\text{,}\)</span> then <span class="process-math">\(A\)</span> is a closed subset of <span class="process-math">\(X\text{.}\)</span>
+</div></article><article class="task exercise-like" id="task-927"><h4 class="heading"><span class="codenumber">(g)</span></h4>
+<div class="para" id="p-2172">Let <span class="process-math">\((X,\tau)\)</span> be a topological space with <span class="process-math">\(\tau\)</span> the discrete topology. Then <span class="process-math">\(X\)</span> is compact if and only if <span class="process-math">\(X\)</span> is finite.</div></article></article></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec_compact_top_summ.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_fractals.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>

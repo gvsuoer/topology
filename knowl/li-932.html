@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="li"><h3 class="heading">
+<span class="type">Item</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span>
+</h3>
+<div class="para">Let <span class="process-math">\(X = \{a,b,c\}\text{,}\)</span> and let <span class="process-math">\(\tau_1 = \{\emptyset, \{a\}, \{a,b,c\}\}\)</span> and <span class="process-math">\(\tau_2 = \{\emptyset, \{a\}, \{b\}, \{a,b\}, \{a,b,c\}\}\text{.}\)</span> Both <span class="process-math">\(\tau_1\)</span> and <span class="process-math">\(\tau_2\)</span> are topologies in <span class="process-math">\(X\text{,}\)</span> but every element in <span class="process-math">\(\tau_1\)</span> is also an element in <span class="process-math">\(\tau_2\text{.}\)</span> Then this happens we say that <span class="process-math">\(\tau_1\)</span> is a weaker topology than <span class="process-math">\(\tau_2\text{.}\)</span> Exercise ( <a href="" class="xref" data-knowl="./knowl/ex_coarse_topology_example.html" title="Item 3">Item 3</a> provides an example. More formally, <article class="definition definition-like"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">13.8.1</span><span class="period">.</span>
+</h3>
+<div class="para">Let <span class="process-math">\(\tau_1\)</span> and <span class="process-math">\(\tau_2\)</span> be two topologies on a set <span class="process-math">\(X\text{.}\)</span> If <span class="process-math">\(\tau_1 \subseteq \tau_2\text{,}\)</span> then <span class="process-math">\(\tau_1\)</span> is a coarser (or weaker) topology than <span class="process-math">\(\tau_2\text{.}\)</span> We also say that <span class="process-math">\(\tau_2\)</span> is a finer (or stronger) topology than <span class="process-math">\(\tau_1\text{.}\)</span>
+</div></article>
+</div>
+<ul class="disc">
+<li><div class="para">What is the weakest topology on any set?</div></li>
+<li><div class="para">What is the strongest topology on any set?</div></li>
+<li><div class="para logical">
+<div class="para">If a topology on <span class="process-math">\(X\)</span> contains all single point sets, then every subset is open and our our topology is the discrete topology. Also, if a topology on <span class="process-math">\(X\)</span> contains all two-point sets, then if <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\text{,}\)</span> and <span class="process-math">\(z\)</span> are in <span class="process-math">\(X\)</span> it follows that <span class="process-math">\(\{x,y\} \cap \{x,z\} = \{x\}\)</span> is in the topology and we again have the.discrete topology. Consider the topology</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sigma = \{\emptyset, \{a\}, \{b\}, \{a,b\}, \{a,c\}, X\}\text{.}
+\end{equation*}
+</div>
+<div class="para">The only sets not in <span class="process-math">\(\sigma\)</span> are <span class="process-math">\(\{c\}\)</span> and <span class="process-math">\(\{b,c\}\text{,}\)</span> but adding either set to <span class="process-math">\(\sigma\)</span> will produce the discrete topology. So <span class="process-math">\(\sigma\)</span> is a strongest topology possible other than the discrete topology.</div>
+</div></li>
+<li><div class="para">Let <span class="process-math">\(X = \{a,b,c\}\text{.}\)</span> Are there any topologies <span class="process-math">\(\sigma\)</span> on <span class="process-math">\(X\)</span> such that <span class="process-math">\(\sigma\)</span> is not the discrete topology but there are no stronger topologies on <span class="process-math">\(X\)</span> other than the discrete topology? Explain.</div></li>
+<li><div class="para">Let <span class="process-math">\(X = \{a,b,c\}\text{.}\)</span> Are there any topologies <span class="process-math">\(\gamma\)</span> on <span class="process-math">\(X\)</span> such that <span class="process-math">\(\gamma\)</span> is not the indiscrete topology but there are no weaker topologies on <span class="process-math">\(X\)</span> other than the indiscrete topology? Explain.</div></li>
+<li>
+<div class="para">In general, there may be many different bases for a given topology, and two different bases can have the same cardinality. This is not the case for finite topological space. Let <span class="process-math">\(X\)</span> be a finite set and let <span class="process-math">\(\tau\)</span> be a topology on <span class="process-math">\(X\text{.}\)</span> In this exercise we will show that there is a minimal basis for the topology <span class="process-math">\(\tau\text{.}\)</span> That is, there is a basis <span class="process-math">\(\B_{\text{ min } }\)</span> of <span class="process-math">\(\tau\)</span> such that if <span class="process-math">\(\B\)</span> is any other basis for <span class="process-math">\(\tau\text{,}\)</span> then <span class="process-math">\(\B_{\text{ min } } \subseteq \B\text{.}\)</span>
+</div>
+<ul class="circle">
+<li><div class="para">If <span class="process-math">\(x \in X\text{,}\)</span> let <span class="process-math">\(U_x\)</span> be the intersection of all open sets that contain <span class="process-math">\(x\text{.}\)</span> Explain why <span class="process-math">\(U_x\)</span> is an open set.</div></li>
+<li><div class="para">Let <span class="process-math">\(\B_{\text{ min } } = \{U_x \mid x \in X\}\text{.}\)</span> Show that <span class="process-math">\(\B_{\text{ min } }\)</span> is a basis for <span class="process-math">\(\tau\text{.}\)</span>
+</div></li>
+<li><div class="para">Show that if <span class="process-math">\(\B\)</span> is a basis for <span class="process-math">\(\tau\text{,}\)</span> then <span class="process-math">\(\B_{\text{ min } } \subseteq \B\text{.}\)</span>
+</div></li>
+<li><div class="para">Let <span class="process-math">\(X = \{a,b,c,d\}\)</span> and let <span class="process-math">\(\tau = \{\emptyset, \{a\}, \{a, b\}, \{a, c\}, \{a, b, c\}, \{a, d\}, \{a, b, d\}, \{a, c, d\}, \{a, b, c, d\}\}\text{.}\)</span> You may assume that <span class="process-math">\(\tau\)</span> is a topology on <span class="process-math">\(X\text{.}\)</span> Find the unique minimal basis for <span class="process-math">\(\tau\text{.}\)</span>
+</div></li>
+</ul>
+</li>
+<li><div class="para logical">
+<div class="para">Below is a list of <span class="process-math">\(9\)</span> distinct topologies on <span class="process-math">\(X = \{a,b,c\}\text{.}\)</span> Each topology lies in one or more sequences of topologies ordered by coarseness. For each topology <span class="process-math">\(\tau\text{,}\)</span> list the longest sequence(s) of topologies that start <span class="process-math">\(\{\emptyset, X\} \subset \tau\text{,}\)</span> ordered by coarseness.</div>
+<ol class="decimal">
+<li><div class="para"><span class="process-math">\(\displaystyle \{\emptyset, X\}\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \{\emptyset, \{a\}, X\}\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \{\emptyset, \{a,b\}, X\}\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \{\emptyset, \{a\}, \{a,b\}, X\}\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \{\emptyset, \{a\}, \{b,c\}, X\}\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \{\emptyset, \{a\}, \{b\}, \{a,b\}, X\}\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \{\emptyset, \{b\}, \{a,b\}, \{b,c\}, X\}\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \{\emptyset, \{b\}, \{c\}, \{b,c\}, \{a,c\}, X\}\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \{\emptyset, \{a\}, \{b\}, \{a,b\}, \{b,c\}, X\}\)</span></div></li>
+<li><div class="para">the discrete topology</div></li>
+</ol>
+</div></li>
+</ul></article><span class="incontext"><a href="sec_top_space_exer.html#li-932" class="internal">in-context</a></span>
+</body>
+</html>

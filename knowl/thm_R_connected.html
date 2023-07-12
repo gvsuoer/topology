@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="theorem theorem-like"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">18.2</span><span class="period">.</span>
+</h3>
+<div class="para">The metric space <span class="process-math">\((\R, d_E)\)</span> is a connected topological space.</div></article><article class="proof"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
+<div class="para">We proceed by contradiction and assume that there are nonempty open sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> such that <span class="process-math">\(\R = U \cup V\)</span> and <span class="process-math">\(U \cap V = \emptyset\text{.}\)</span> Let <span class="process-math">\(a \in U\)</span> and <span class="process-math">\(b \in V\text{.}\)</span> Since <span class="process-math">\(U \cap V = \emptyset\text{,}\)</span> we know that <span class="process-math">\(a \neq b\text{.}\)</span> Without loss of generality we can assume <span class="process-math">\(a \lt b\text{.}\)</span> Let <span class="process-math">\(U' = U \cap [a,b]\)</span> and let <span class="process-math">\(V' = V \cap [a,b]\text{.}\)</span> The set <span class="process-math">\(V'\)</span> is bounded below by <span class="process-math">\(a\text{,}\)</span> so <span class="process-math">\(x = \inf\{v \mid v \in V'\}\)</span> exists. Since <span class="process-math">\(\R = U \cup V\)</span> it must be the case that <span class="process-math">\(x \in U\)</span> or <span class="process-math">\(x \in V\text{.}\)</span>
+</div> <div class="para">Suppose <span class="process-math">\(x \in U\text{.}\)</span> The fact that <span class="process-math">\(U\)</span> is an open set implies that there exists <span class="process-math">\(\epsilon \gt 0\)</span> such that <span class="process-math">\(B(x, \epsilon) \subseteq U\text{.}\)</span> But then <span class="process-math">\(B(x, \epsilon) \cap V = \emptyset\)</span> and so <span class="process-math">\(d(x,v) \geq \epsilon\)</span> for every <span class="process-math">\(v \in V\text{.}\)</span> This means that <span class="process-math">\(x+\epsilon \lt v\)</span> for every <span class="process-math">\(v \in V'\text{,}\)</span> contradicting the fact that <span class="process-math">\(x\)</span> is the greatest lower bound. We conclude that <span class="process-math">\(x \notin U\text{.}\)</span>
+</div> <div class="para">It follows that <span class="process-math">\(x \in V\text{.}\)</span> Since <span class="process-math">\(a \in U\text{,}\)</span> we know that <span class="process-math">\(x \neq a\text{.}\)</span> The fact that <span class="process-math">\(V\)</span> is an open set tells us that there exists <span class="process-math">\(\delta \gt 0\)</span> such that <span class="process-math">\(B(x, \delta) \subseteq V\text{.}\)</span> We can choose <span class="process-math">\(\delta\)</span> to ensure that <span class="process-math">\(\delta \lt x-a\text{.}\)</span> Since <span class="process-math">\(x &gt; a\text{,}\)</span> the interval <span class="process-math">\((x-\delta,
+x)\)</span> is a subset of <span class="process-math">\(V'\text{,}\)</span> and so <span class="process-math">\(x\)</span> is not a lower bound for <span class="process-math">\(V\text{.}\)</span>
+</div> <div class="para">Each possibility leads to a contradiction, so we conclude that the sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> cannot exist. Therefore, <span class="process-math">\((\R, d_E)\)</span> is a connected topological space.</div></article><span class="incontext"><a href="sec_connect_sets.html#thm_R_connected" class="internal">in-context</a></span>
+</body>
+</html>
