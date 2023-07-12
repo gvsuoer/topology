@@ -273,9 +273,10 @@
       <li>
         <p>
           The Euclidean metric <m>d_E</m>, where
-          <me>
-            d_E(x,y) = \sqrt{(x_1-y_1)^2 + (x_2-y_2)^2 + \cdots (x_n-y_n)^2} = \sqrt{\sum_{i=1}^n (x_i-y_i)^2}
-          </me>.
+          <md>
+            <mrow>d_E(x,y) \amp = \sqrt{(x_1-y_1)^2 + (x_2-y_2)^2 + \cdots (x_n-y_n)^2}</mrow>
+            <mrow> \amp = \sqrt{\sum_{i=1}^n (x_i-y_i)^2}</mrow>
+          </md>.
         </p>
       </li>
       <li>
@@ -289,9 +290,10 @@
       <li>
         <p>
           The max metric <m>d_M</m>, where
-          <me>
-            d_M(x,y) = \max\{| x_1-y_1 |, | x_2-y_2 |, |x_3-y_3|, \ldots, |x_n-y_n| \} = \max_{1 \leq i \leq n} \{|x_i-y_i|\}
-          </me>.
+          <md>
+            <mrow>d_M(x,y) \amp = \max\{| x_1-y_1 |, | x_2-y_2 |, |x_3-y_3|, \ldots, |x_n-y_n| \}</mrow>
+            <mrow> \amp = \max_{1 \leq i \leq n} \{|x_i-y_i|\}</mrow>
+          </md>.
         </p>
       </li>
     </ul>

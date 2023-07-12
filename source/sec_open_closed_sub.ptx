@@ -35,9 +35,10 @@
       As a union of open balls in <m>X</m>,
       the set <m>O_X</m> is open in <m>X</m>.
       Now
-      <me>
-        O_X \cap A = \left(\bigcup_{a \in O_A} B_X(a, \delta_a) \right) \cap A = \bigcup_{a \in O_A} \left( B_X(a, \delta_a) \cap A \right) = \bigcup_{a \in O_A} B_A(a, \delta_a) = O_A
-      </me>.
+      <md>
+        <mrow>O_X \cap A = \left(\bigcup_{a \in O_A} B_X(a, \delta_a) \right) \cap A \amp = \bigcup_{a \in O_A} \left( B_X(a, \delta_a) \cap A \right)</mrow>
+        <mrow> \amp = \bigcup_{a \in O_A} B_A(a, \delta_a) = O_A</mrow>
+      </md>.
     </p>
     <p>
       So there is an open set <m>O_X</m> in <m>X</m> such that <m>O_A = O_X \cap A</m>.

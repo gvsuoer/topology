@@ -159,8 +159,8 @@
     If a sequence <m>(x_n)</m> converges to a point <m>x</m>,
     we call <m>x</m> a <term>limit</term> of the sequence <m>(x_n)</m>.
   </p>
-
-  <activity xml:id="act_TS_limits">
+<!-- 13.3 -->
+  <activity xml:id="act_TS_limits2">
     <p>
       In metric spaces, limits of sequences are unique.
       We may wonder if the same result is true in topological spaces.
@@ -171,7 +171,7 @@
   </activity>
   
   <p>
-    The result of <xref ref="act_TS_limits"/>
+    The result of <xref ref="act_TS_limits2"/>
     is that sequences do not behave in topological spaces as we would expect them to.
     Consequently,
     sequences do not play the same important role in topological spaces as they do in metric spaces.

@@ -98,7 +98,7 @@
       <p>
         Show that properties <m>T_1</m>,
         <m>T_2</m>, and <m>T_3</m> are hereditary.
-        (The separation axioms <m>T_i</m> are found in <xref ref="sec_Closed_sets_topology"/>.)
+        (The separation axioms <m>T_i</m> are found in <xref ref="chap_Closed_sets_topology"/>.)
         The fact that <m>T_4</m> is not hereditary is somewhat difficult.
         One example is the Tychonoff plank
         (which is normal)

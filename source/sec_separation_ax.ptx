@@ -6,7 +6,7 @@
     As a result,
     we look for conditions on topological spaces under which sequences do exhibit some regular behavior.
     In our preview activity we saw that it is possible in a topological space that single point sets do not have to be closed.
-    In <xref ref="act_TS_limits"/>,
+    In <xref ref="act_TS_limits2"/>,
     we also saw that limits of sequences in topological spaces are not necessarily unique.
     This type of behavior limits the results that one can prove about such spaces.
     As a result,
@@ -40,7 +40,7 @@
       <task>
         <statement>
           <p>
-            Return to our example from <xref ref="act_TS_limits"/>
+            Return to our example from <xref ref="act_TS_limits2"/>
             with <m>X = \{a, b, c\}</m> and topology
             <me>
               \tau~=~\{\emptyset, \{c\}, \{a, c\}, \{b, c\}, X\}

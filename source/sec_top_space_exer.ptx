@@ -453,7 +453,7 @@
               </fn> The digital line models a one-dimensional array of pixels,
               where the even integers are the pixels and the odd integers are boundaries between the pixels.
               Information about the <term>digital plane</term>
-              can be found in <xref ref="sec_Product_topology"/>.)
+              can be found in <xref ref="chap_Product_topology"/>.)
             </p>
           </statement>
         </task>

@@ -328,7 +328,7 @@
                   </p>
                     <figure xml:id="F_projective_2">
                       <caption>Splitting the real projective plane.</caption>
-                      <sidebyside>
+                      <sidebyside valign="middle">
                         <image width="50%" source="Projective_square"/>
                         <image width="50%" source="Projective_Mobius"/>
                         <image width="50%" source="Projective_Mobius_split"/>
@@ -348,7 +348,7 @@
                   </p>
                     <figure xml:id="F_projective_3">
                       <caption>Recognizing the space <m>S</m>.</caption>
-                      <sidebyside>
+                      <sidebyside valign="middle">
                       <image width="50%" source="Projective_Disk_split"/>
                       
                         <p><me>\xrightarrow{f}</me></p>
