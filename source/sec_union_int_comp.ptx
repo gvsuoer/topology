@@ -140,17 +140,17 @@
     with subsets <m>A</m> and <m>B</m> as smaller containers
     (say circles),
     and shade the elements in a given set.
-    The Venn diagrams in <xref ref="F_Venn"/>
+    The Venn diagrams in <xref provisional="F_Venn"/>
     depict the sets <m>A</m>, <m>B</m>,
     <m>A \cup B</m>, <m>A \cap B</m>,
     <m>A^c</m>, and <m>B^c</m>.
   </p>
-  <figure xml:id="F_Venn">
+  <!-- <figure xml:id="F_Venn">
     <caption>Venn diagrams</caption>
     <sidebyside>
       <image xml:id="venn-a">
 <latex-image>
-\begin{tikzpicture}\figuredef\universal{(-4,-2.75) -- (4,-2.75) -- (4,2.75) -- (-4,2.75) -- cycle}
+\begin{tikzpicture}\figuredef\universal{(-4,-2.75) *doubledash* (4,-2.75) *doulbedash* (4,2.75) *doubledash* (-4,2.75) *doubledash* cycle}
 \figuredef\firstcircle{(-1.25,0) circle (2cm)}
 \figuredef\secondcircle{(1.25,0) circle (2cm)}
 \draw[fill=gray!30] \firstcircle;
@@ -164,7 +164,7 @@
       <m>A</m>
       <image>
 <latex-image>
-\begin{tikzpicture}\figuredef\universal{(-4,-2.75) -- (4,-2.75) -- (4,2.75) -- (-4,2.75) -- cycle}
+\begin{tikzpicture}\figuredef\universal{(-4,-2.75) *doubledash* (4,-2.75) *doubledash* (4,2.75) *doubledash* (-4,2.75) *doubledash* cycle}
 \figuredef\firstcircle{(-1.25,0) circle (2cm)}
 \figuredef\secondcircle{(1.25,0) circle (2cm)}
 \draw[fill=gray!30] \secondcircle;
@@ -178,7 +178,7 @@
       <m>B</m>
       <image>
 <latex-image>
-\begin{tikzpicture}\figuredef\universal{(-4,-2.75) -- (4,-2.75) -- (4,2.75) -- (-4,2.75) -- cycle}
+\begin{tikzpicture}\figuredef\universal{(-4,-2.75) *doubledash* (4,-2.75) *doubledash* (4,2.75) *doubledash* (-4,2.75) *doubledash* cycle}
 \figuredef\firstcircle{(-1.25,0) circle (2cm)}
 \figuredef\secondcircle{(1.25,0) circle (2cm)}
 \draw[fill=gray!30] \firstcircle;
@@ -193,7 +193,7 @@
       <m>A \cup B</m>
       <image>
 <latex-image>
-\begin{tikzpicture}\figuredef\universal{(-4,-2.75) -- (4,-2.75) -- (4,2.75) -- (-4,2.75) -- cycle}
+\begin{tikzpicture}\figuredef\universal{(-4,-2.75) *doubledash* (4,-2.75) *doubledash* (4,2.75) *doubledash* (-4,2.75) *doubledash* cycle}
 \figuredef\firstcircle{(-1.25,0) circle (2cm)}
 \figuredef\secondcircle{(1.25,0) circle (2cm)}
 \draw[thick] \firstcircle;
@@ -211,7 +211,7 @@
       <m>A \cap B</m>
       <image>
 <latex-image>
-\begin{tikzpicture}\figuredef\universal{(-4,-2.75) -- (4,-2.75) -- (4,2.75) -- (-4,2.75) -- cycle}
+\begin{tikzpicture}\figuredef\universal{(-4,-2.75) *doubledash* (4,-2.75) *doubledash* (4,2.75) *doubledash* (-4,2.75) *doubledash* cycle}
 \figuredef\firstcircle{(-1.25,0) circle (2cm)}
 \figuredef\secondcircle{(1.25,0) circle (2cm)}
 \draw[fill=gray!30] \universal;
@@ -226,7 +226,7 @@
       <m>A^c</m>
       <image>
 <latex-image>
-\begin{tikzpicture}\figuredef\universal{(-4,-2.75) -- (4,-2.75) -- (4,2.75) -- (-4,2.75) -- cycle}
+\begin{tikzpicture}\figuredef\universal{(-4,-2.75) *doubledash* (4,-2.75) *doubledash* (4,2.75) *doubledash* (-4,2.75) *doubledash* cycle}
 \figuredef\firstcircle{(-1.25,0) circle (2cm)}
 \figuredef\secondcircle{(1.25,0) circle (2cm)}
 \draw[fill=gray!30] \universal;
@@ -240,7 +240,7 @@
       </image>
       <m>B^c</m>
     </sidebyside>
-  </figure>
+  </figure> -->
 
 
   <p>

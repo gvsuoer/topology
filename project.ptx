@@ -18,12 +18,14 @@
       <source>source/main.ptx</source>
       <publication>publication/publication.ptx</publication>
       <output-dir>output/print</output-dir>
+      <xsl>xsl/custom-latex.xsl</xsl>
     </target>
     <target name="print-latex">
       <format>latex</format>
       <source>source/main.ptx</source>
       <publication>publication/publication.ptx</publication>
       <output-dir>output/print-latex</output-dir>
+      <xsl>xsl/custom-latex.xsl</xsl>
     </target>
     <target name="subset">
       <!-- Usage: to build starting at XMLID, -->

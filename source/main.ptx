@@ -39,7 +39,6 @@
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -64,7 +63,7 @@
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -119,23 +118,17 @@
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
+<!-- \newcommand{\pbreaks}{1}
 \newcommand{\pbreak}{
-}
+} -->
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -148,23 +141,20 @@
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
+<!-- \renewcommand{\labelenumi}{(\arabic{enumi})} -->
+<!-- \newcommand{\xitem}{\ans \item \ansend} -->
+<!-- \newcommand{\obe}{\begin{oddenumerate}} -->
+<!-- \newcommand{\oee}{\end{oddenumerate}} -->
+<!-- \newcommand{\skipitems}[1]{
+} -->
+<!-- \renewcommand{\phi}{\varphi}
 \renewcommand{\textfraction}{0.05}
 \renewcommand{\topfraction}{0.95}
 \renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
+\renewcommand{\floatpagefraction}{0.35} -->
+<!-- \renewcommand{\MakeUppercase}[1]{#1} -->
 </macros>
 <latex-image-preamble>
 \usepackage{tikz}
