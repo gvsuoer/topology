@@ -140,107 +140,40 @@
     with subsets <m>A</m> and <m>B</m> as smaller containers
     (say circles),
     and shade the elements in a given set.
-    The Venn diagrams in <xref provisional="F_Venn"/>
+    The Venn diagrams in <xref ref="F_Venn"/>
     depict the sets <m>A</m>, <m>B</m>,
     <m>A \cup B</m>, <m>A \cap B</m>,
     <m>A^c</m>, and <m>B^c</m>.
   </p>
-  <!-- <figure xml:id="F_Venn">
+  <figure xml:id="F_Venn">
     <caption>Venn diagrams</caption>
+    <sbsgroup widths="">
+    
     <sidebyside>
-      <image xml:id="venn-a">
-<latex-image>
-\begin{tikzpicture}\figuredef\universal{(-4,-2.75) *doubledash* (4,-2.75) *doulbedash* (4,2.75) *doubledash* (-4,2.75) *doubledash* cycle}
-\figuredef\firstcircle{(-1.25,0) circle (2cm)}
-\figuredef\secondcircle{(1.25,0) circle (2cm)}
-\draw[fill=gray!30] \firstcircle;
-\draw[thick] \firstcircle;
-\draw[thick] \secondcircle;
-\draw[thick] \universal;
-\node at (-3.4,1.5) {\(A\)};
-\node at (3.4,1.5) {\(B\)};\end{tikzpicture}
-</latex-image>
-      </image>
-      <m>A</m>
-      <image>
-<latex-image>
-\begin{tikzpicture}\figuredef\universal{(-4,-2.75) *doubledash* (4,-2.75) *doubledash* (4,2.75) *doubledash* (-4,2.75) *doubledash* cycle}
-\figuredef\firstcircle{(-1.25,0) circle (2cm)}
-\figuredef\secondcircle{(1.25,0) circle (2cm)}
-\draw[fill=gray!30] \secondcircle;
-\draw[thick] \firstcircle;
-\draw[thick] \secondcircle;
-\draw[thick] \universal;
-\node at (-3.4,1.5) {\(A\)};
-\node at (3.4,1.5) {\(B\)};\end{tikzpicture}
-</latex-image>
-      </image>
-      <m>B</m>
-      <image>
-<latex-image>
-\begin{tikzpicture}\figuredef\universal{(-4,-2.75) *doubledash* (4,-2.75) *doubledash* (4,2.75) *doubledash* (-4,2.75) *doubledash* cycle}
-\figuredef\firstcircle{(-1.25,0) circle (2cm)}
-\figuredef\secondcircle{(1.25,0) circle (2cm)}
-\draw[fill=gray!30] \firstcircle;
-\draw[fill=gray!30] \secondcircle;
-\draw[thick] \firstcircle;
-\draw[thick] \secondcircle;
-\draw[thick] \universal;
-\node at (-3.4,1.5) {\(A\)};
-\node at (3.4,1.5) {\(B\)};\end{tikzpicture}
-</latex-image>
-      </image>
-      <m>A \cup B</m>
-      <image>
-<latex-image>
-\begin{tikzpicture}\figuredef\universal{(-4,-2.75) *doubledash* (4,-2.75) *doubledash* (4,2.75) *doubledash* (-4,2.75) *doubledash* cycle}
-\figuredef\firstcircle{(-1.25,0) circle (2cm)}
-\figuredef\secondcircle{(1.25,0) circle (2cm)}
-\draw[thick] \firstcircle;
-\draw[thick] \secondcircle;
-\draw[thick] \universal;
-\node at (-3.4,1.5) {\(A\)};
-\node at (3.4,1.5) {\(B\)};
-\draw[clip] \firstcircle;
-\draw[clip] \secondcircle;
-\fill[gray!30] (0,0) circle (2cm);
-\draw[thick] \firstcircle;
-\draw[thick] \secondcircle;\end{tikzpicture}
-</latex-image>
-      </image>
-      <m>A \cap B</m>
-      <image>
-<latex-image>
-\begin{tikzpicture}\figuredef\universal{(-4,-2.75) *doubledash* (4,-2.75) *doubledash* (4,2.75) *doubledash* (-4,2.75) *doubledash* cycle}
-\figuredef\firstcircle{(-1.25,0) circle (2cm)}
-\figuredef\secondcircle{(1.25,0) circle (2cm)}
-\draw[fill=gray!30] \universal;
-\draw[fill=white] \firstcircle;
-\draw[thick] \firstcircle;
-\draw[thick] \secondcircle;
-\draw[thick] \universal;
-\node at (-3.4,1.5) {\(A\)};
-\node at (3.4,1.5) {\(B\)};\end{tikzpicture}
-</latex-image>
-      </image>
-      <m>A^c</m>
-      <image>
-<latex-image>
-\begin{tikzpicture}\figuredef\universal{(-4,-2.75) *doubledash* (4,-2.75) *doubledash* (4,2.75) *doubledash* (-4,2.75) *doubledash* cycle}
-\figuredef\firstcircle{(-1.25,0) circle (2cm)}
-\figuredef\secondcircle{(1.25,0) circle (2cm)}
-\draw[fill=gray!30] \universal;
-\draw[fill=white] \secondcircle;
-\draw[thick] \firstcircle;
-\draw[thick] \secondcircle;
-\draw[thick] \universal;
-\node at (-3.4,1.5) {\(A\)};
-\node at (3.4,1.5) {\(B\)};\end{tikzpicture}
-</latex-image>
-      </image>
-      <m>B^c</m>
-    </sidebyside>
-  </figure> -->
+      <image xml:id="venn-a" source="Venn_Diagram_A" width="50%"/>
+      <image xml:id="venn-b" source="Venn_Diagram_B" width="50%"/>
+      <image xml:id="venn-c" source="Venn_Diagram_union" width="50%"/>
+      </sidebyside>
+
+      <sidebyside valign="top">
+        <p><me>A</me></p>
+        <p><me>B</me></p>
+        <p><me>A \cup B</me></p>
+      </sidebyside>
+
+      <sidebyside>
+        <image xml:id="venn-d" source="Venn_Diagram_intersection" width="50%"></image>
+        <image xml:id="venn-e" source="Venn_Diagram_A_complement" width="50%"></image>
+        <image xml:id="venn-f" source="Venn_Diagram_B_complement" width="50%"></image>
+      </sidebyside>
+
+      <sidebyside valign="top">
+        <p><me>A \cap B</me></p>
+        <p><me>A^{c}</me></p>
+        <p><me>B^{c}</me></p>
+      </sidebyside>
+    </sbsgroup>
+  </figure>
 
 
   <p>
