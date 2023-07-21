@@ -137,11 +137,11 @@ In the next activity we consider products of open balls and open sets in product
   </p>
 
   <definition>
+    <idx><h>product metric space</h></idx>
     <statement>
       <p>
         Let <m>(X_i, d_i)</m> be metric spaces for <m>i</m> from <m>1</m> to some positive integer <m>n</m>.
-        The product metric space
-            <idx><h>product metric space</h></idx>
+        The <term>product metric space</term>
         <m>(X,d)</m> is the Cartesian product
         <me>
           X = X_1 \times X_2 \times \cdots \times X_n = \prod_{i=1}^n X_i

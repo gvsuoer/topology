@@ -11,9 +11,10 @@
   </p>
 
   <definition>
+    <idx><h>closed set in a topological space</h></idx>
     <statement>
       <p>
-        A subset <m>C</m> of a topological space <m>X</m> is closed<idx><h>closed set in a topological space</h></idx> if its complement <m>X \setminus C</m> is open.
+        A subset <m>C</m> of a topological space <m>X</m> is <term>closed</term> if its complement <m>X \setminus C</m> is open.
       </p>
     </statement>
   </definition>

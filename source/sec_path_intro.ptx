@@ -24,7 +24,7 @@
     <statement>
       <p>
         Let <m>X</m> be a topological space.
-        A path
+        A <term>path</term>
         from point <m>a</m> to point <m>b</m> in <m>X</m> is a continuous function
         <m>p: [0,1] \to X</m> such that <m>p(0) = a</m> and <m>p(1)=b</m>.
       </p>
@@ -39,9 +39,8 @@
   <idx><h>path connected</h></idx>
     <statement>
       <p>
-        A subspace <m>A</m> of a topological space <m>X</m> is path connected
-        if, given any <m>a,
-        b \in A</m> there is a path in <m>A</m> from <m>a</m> to <m>b</m>.
+        A subspace <m>A</m> of a topological space <m>X</m> is <term>path connected</term>
+        if, given any <m>a, b \in A</m> there is a path in <m>A</m> from <m>a</m> to <m>b</m>.
       </p>
     </statement>
   </definition>

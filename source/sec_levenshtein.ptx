@@ -93,9 +93,10 @@
             and <m>m_s</m> that get us from <m>x</m> to <m>y</m>,
             so we want the smallest number.
             <definition>
+              <idx><h>metric</h><h>Levenshtein</h></idx>
               <statement>
                 <p>
-                  The Levenshtein distance<idx><h>metric</h><h>Levenshtein</h></idx>
+                  The <term>Levenshtein distance</term>
                   <m>d_L(x,y)</m> between strings <m>x</m> and <m>y</m> is
                   <me>
                     d_L(x,y) = \min\{m_d+m_i+m_s\}

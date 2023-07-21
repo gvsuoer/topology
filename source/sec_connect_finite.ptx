@@ -35,7 +35,7 @@
             <idx><h>minimal neighborhood</h></idx>
               <statement>
                 <p>
-                  For <m>x \in X</m>, the minimal neighborhood
+                  For <m>x \in X</m>, the <term>minimal neighborhood</term>
                   <m>U_x</m> of <m>x</m> is the intersection of all open sets that contain <m>x</m>.
                 </p>
               </statement>

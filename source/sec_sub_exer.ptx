@@ -87,10 +87,10 @@
         We state this more formally in the following definition.
       </p>
         <definition>
+          <idx><h>hereditary property</h></idx>
           <statement>
             <p>
-              A property <m>P</m> of a topological space <m>X</m> is hereditary
-          <idx><h>hereditary property</h></idx>
+              A property <m>P</m> of a topological space <m>X</m> is <term>hereditary</term>
               if every subspace of <m>X</m> also has property <m>P</m>.
             </p>
           </statement>

@@ -62,7 +62,7 @@
   <idx><h>metrically equivalent</h></idx>
     <statement>
       <p>
-        Two metric spaces <m>(X,d_X)</m> and <m>(Y,d_Y)</m> are metrically equivalent
+        Two metric spaces <m>(X,d_X)</m> and <m>(Y,d_Y)</m> are <term>metrically equivalent</term>
             
         if there is a bijection <m>f : X \to Y</m> such that
         <me>
@@ -92,7 +92,7 @@
   <idx><h>isometry</h></idx>
     <statement>
       <p>
-        A function <m>f</m> from a metric space <m>(X,d_X)</m> to a metric space <m>(Y, d_Y)</m> is an isometry
+        A function <m>f</m> from a metric space <m>(X,d_X)</m> to a metric space <m>(Y, d_Y)</m> is an <term>isometry</term>
         if <m>f</m> is a bijection and
         <men xml:id="eq_distance_preserving">
           d_Y(f(a),f(b)) = d_X(a,b)

@@ -95,7 +95,6 @@
             <p>
               If <m>p: X \to Y</m> is a quotient map,
               then the space <m>Y</m> is the <term>quotient space</term>
-                
               of <m>X</m> determined by <m>p</m>.
             </p>
           </li>

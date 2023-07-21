@@ -12,7 +12,7 @@
     <statement>
       <p>
         Let <m>A</m> be a subset of a topological space <m>X</m>.
-        A point <m>a \in A</m> is an interior point
+        A point <m>a \in A</m> is an <term>interior point</term>
         of <m>A</m> if <m>A</m> is a neighborhood of <m>a</m>.
       </p>
     </statement>
@@ -45,7 +45,7 @@
   <definition>
     <statement>
       <p>
-        The interior of a subset <m>A</m> of a topological space <m>X</m> is the set
+        The <term>interior</term> of a subset <m>A</m> of a topological space <m>X</m> is the set
         <me>
           \Int(A) = \{a \in A \mid a \text{ is an interior point of }  A\}
         </me>.

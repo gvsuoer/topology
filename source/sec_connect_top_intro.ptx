@@ -44,7 +44,7 @@
   <idx><h>connected space</h></idx>
     <statement>
       <p>
-        A topological space <m>(X,\tau)</m> is connected
+        A topological space <m>(X,\tau)</m> is <term>connected</term>
             
         if <m>X</m> cannot be written as the union of two disjoint,
         nonempty,

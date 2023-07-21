@@ -15,7 +15,7 @@
   <idx><h>closure of a set in a metric space</h></idx>
     <statement>
       <p>
-        The closure of a subset <m>A</m> of a metric space <m>X</m> is the set
+        The <term>closure</term> of a subset <m>A</m> of a metric space <m>X</m> is the set
         <me>
           \overline{A} = A \cup A'
         </me>.
@@ -133,7 +133,7 @@
   <definition>
     <statement>
       <p>
-        The boundary <m>\Bdry(A)</m> of a subset <m>A</m> of a metric space <m>X</m> is the set of all boundary points of <m>A</m>.
+        The <term>boundary</term> <m>\Bdry(A)</m> of a subset <m>A</m> of a metric space <m>X</m> is the set of all boundary points of <m>A</m>.
       </p>
     </statement>
   </definition>

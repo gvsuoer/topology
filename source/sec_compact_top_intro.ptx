@@ -69,10 +69,10 @@
   </p>
 
   <definition xml:id="def_compact">
+    <idx><h>compact subset</h></idx>
     <statement>
       <p>
-        A subset <m>A</m> of a topological space <m>X</m> is compact
-            <idx><h>compact subset</h></idx>
+        A subset <m>A</m> of a topological space <m>X</m> is <term>compact</term>
         if for every set <m>I</m> and every family of open sets <m>\{O_{\alpha}\}</m> with
         <m>\alpha \in I</m> such that <m>A \subseteq \bigcup_{\alpha \in I} O_{\alpha}</m>,
         there exists a finite subfamily
@@ -92,11 +92,11 @@
 <idx><h>cover</h><h>open</h></idx>
     <statement>
       <p>
-        A cover
+        A <term>cover</term>
         of a subset <m>A</m> of a topological space <m>X</m> is a collection
         <m>\{S_{\alpha}\}</m> of subsets of <m>X</m> for <m>\alpha</m> in some indexing set <m>I</m> so that <m>A \subseteq \bigcup_{\alpha \in I} S_{\alpha}</m>.
         In addition, if each set <m>S_{\alpha}</m> is an open set,
-        then the collection <m>\{S_{\alpha}\}</m> is an open cover
+        then the collection <m>\{S_{\alpha}\}</m> is an <term>open cover</term>
         for <m>A</m>.
       </p>
     </statement>
@@ -105,12 +105,12 @@
   <definition>
     <statement>
       <p>
-        A subcover
+        A <term>subcover</term>
         of a cover <m>\{S_{\alpha}\}_{\alpha \in I}</m> of a subset <m>A</m> of a topological space <m>X</m> is a collection
         <m>\{S_{\beta}\}</m> for <m>\beta \in J</m>,
         where <m>J</m> is a subset of <m>I</m> such that <m>A \subseteq \bigcup_{\beta \in J} S_{\beta}</m>.
         In addition, if <m>J</m> is a finite set,
-        the subcover <m>\{S_{\beta}\}_{\beta \in J}</m> is a finite subcover
+        the subcover <m>\{S_{\beta}\}_{\beta \in J}</m> is a <term>finite subcover</term>
         of <m>\{S_{\alpha}\}_{\alpha \in I}</m>.
       </p>
     </statement>

@@ -57,8 +57,7 @@
     <statement>
       <p>
         Let <m>S</m> be a nonempty subset of <m>\R</m>.
-        A lower bound
-            
+        A <term>lower bound</term>
         for <m>S</m> is a real number <m>m</m> such that
         <m>m \leq s</m> for all <m>s \in S</m>.
       </p>
@@ -78,11 +77,11 @@
   </p>
 
   <definition>
+    <idx><h>greatest lower bound</h></idx>
     <statement>
       <p>
         Let <m>S</m> be a nonempty subset of <m>\R</m> that is bounded below.
-        A greatest lower bound
-            <idx><h>greatest lower bound</h></idx>
+        A <term>greatest lower bound</term>
         for <m>S</m> is a real number <m>m</m> such that
         <ol>
           <li>

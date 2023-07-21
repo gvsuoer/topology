@@ -34,10 +34,11 @@
             of <m>d</m> to <m>A \times A</m> and can also be denoted by <m>d_A</m>.
           </p>
             <definition>
+              <idx><h>subspace of a metric space</h></idx>
               <statement>
                 <p>
                   Let <m>(X,d)</m> be a metric space.
-                  A subspace<idx><h>subspace of a metric space</h></idx> of <m>(X,d)</m> is a subset <m>A</m> of <m>X</m> together with the metric <m>d_A</m> from
+                  A <term>subspace</term> of <m>(X,d)</m> is a subset <m>A</m> of <m>X</m> together with the metric <m>d_A</m> from
                   <m>A \times A</m> to <m>\R</m> defined by
                   <me>
                     d_A(a_1,a_2) = d(a_1,a_2)

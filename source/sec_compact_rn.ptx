@@ -112,7 +112,7 @@
   <idx><h>bounded subset of <m>\R^n</m></h></idx>
     <statement>
       <p>
-        A subset <m>A</m> of <m>\R^n</m> is bounded if there exists <m>M \gt 0</m> such that <m>A \subseteq Q^n_M</m>, where
+        A subset <m>A</m> of <m>\R^n</m> is <term>bounded</term> if there exists <m>M \gt 0</m> such that <m>A \subseteq Q^n_M</m>, where
         <me>
           Q^n_M = \{(x_1,x_2, \ldots, x_n) \mid -M \leq x_i \leq M \text{ for every }  1 \leq i \leq n\}
         </me>.

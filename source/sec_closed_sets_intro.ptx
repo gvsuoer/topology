@@ -22,7 +22,7 @@
   <idx><h>closed subset of a metric space</h></idx>
     <statement>
       <p>
-        A subset <m>C</m> of a metric space <m>X</m> is closed if its complement <m>X \setminus C</m> is open.
+        A subset <m>C</m> of a metric space <m>X</m> is <term>closed</term> if its complement <m>X \setminus C</m> is open.
       </p>
     </statement>
   </definition>
@@ -44,7 +44,7 @@
       <p>
         Let <m>X</m> be a metric space,
         and let <m>A</m> be a subset of <m>X</m>.
-        A boundary point of <m>A</m> is a point <m>x \in X</m> such that every neighborhood of <m>x</m> contains a point in <m>A</m> and a point in <m>X \setminus A</m>.
+        A <term>boundary point</term> of <m>A</m> is a point <m>x \in X</m> such that every neighborhood of <m>x</m> contains a point in <m>A</m> and a point in <m>X \setminus A</m>.
       </p>
     </statement>
   </definition>

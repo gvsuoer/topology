@@ -13,8 +13,8 @@
 <idx><h>topological invariant</h></idx>
     <statement>
       <p>
-        A property of a topological space <m>X</m> is a topological property
-        (or topological invariant
+        A property of a topological space <m>X</m> is a <term>topological property</term>
+        (or <term>topological invariant</term>
         ) if every topological space homeomorphic to <m>X</m> has the same property.
       </p>
     </statement>

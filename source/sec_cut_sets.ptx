@@ -24,9 +24,9 @@
   <idx><h>cut point</h></idx>
     <statement>
       <p>
-        A subset <m>S</m> of a connected topological space <m>X</m> is a cut set
+        A subset <m>S</m> of a connected topological space <m>X</m> is a <term>cut set</term>
         of <m>X</m> if the set <m>X \setminus S</m> is disconnected.
-        A point <m>p</m> in a connected topological space <m>X</m> is a cut point
+        A point <m>p</m> in a connected topological space <m>X</m> is a <term>cut point</term>
         if <m>X \setminus \{p\}</m> is disconnected.
       </p>
     </statement>

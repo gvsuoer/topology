@@ -325,12 +325,12 @@
   </p>
 
   <definition>
+    <idx><h>separation</h></idx>
     <statement>
       <p>
         Let <m>X</m> be a topological space,
         and let <m>A</m> be a subset of <m>X</m>.
-        A separation
-            <idx><h>separation</h></idx>
+        A <term>separation</term>
         of <m>A</m> is a pair of nonempty open subsets <m>U</m> and <m>V</m> of <m>X</m> such that
         <ul>
           <li>

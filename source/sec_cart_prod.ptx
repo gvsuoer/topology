@@ -16,7 +16,7 @@
     <statement>
       <p>
         Let <m>A</m> and <m>B</m> are sets.
-        The Cartesian product
+        The <term>Cartesian product</term>
         of <m>A</m> and <m>B</m> is the set
         <me>
           A \times B = \{(a,b) \mid a \in A \text{ and }  b \in B\}

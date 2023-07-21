@@ -50,7 +50,7 @@
     <statement>
       <p>
         Let <m>(X,d)</m> be a metric space and let <m>A</m> and <m>B</m> be nonempty compact subsets of <m>X</m>.
-        Then distance <m>d(A,B)</m> from <m>A</m> to <m>B</m> is
+        Then <term>distance <m>d(A,B)</m> from <m>A</m> to <m>B</m></term> is
         <me>
           d(A,B) = \max_{a \in A} \left\{ \min_{b \in B} \{d(a,b)\} \right\}
         </me>.
@@ -81,11 +81,12 @@
             we can define the Hausdorff distance  in terms of <m>d</m> as follows.
           </p>
             <definition xml:id="def_Hausdorff_distance">
+              <idx><h>metric</h><h>Hausdorff</h></idx>
               <statement>
                 <p>
                   Let <m>(X,d)</m> be a metric space and <m>A</m> and <m>B</m> nonempty compact subsets of <m>X</m>.
-                  Then Hausdorff distance between <m>A</m> and <m>B</m>
-              <idx><h>metric</h><h>Hausdorff</h></idx>
+                  Then <term>Hausdorff distance between <m>A</m> and <m>B</m></term>
+              
                   is
                   <me>
                     h(A,B) = \max\{d(A,B), d(B,A)\}

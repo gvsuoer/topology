@@ -21,8 +21,7 @@
         Let <m>X</m> be a nonempty set.
         A set <m>\tau</m><fn>
         The symbol <m>\tau</m> is the Greek lowercase letter tau.
-        </fn> of subsets of <m>X</m> is said to a topology
-            
+        </fn> of subsets of <m>X</m> is said to be a <term>topology</term>
         on <m>X</m> if
         <ol>
           <li>

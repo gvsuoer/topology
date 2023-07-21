@@ -11,8 +11,8 @@
   <idx><h>component</h></idx>
     <statement>
       <p>
-        A subspace <m>C</m> of a topological space <m>X</m> is a component
-        (or connected component) of <m>X</m> if <m>C</m> is connected and there is no larger connected subspace of <m>X</m> that contains <m>C</m>.
+        A subspace <m>C</m> of a topological space <m>X</m> is a <term>component</term>
+        (or <term>connected component</term>) of <m>X</m> if <m>C</m> is connected and there is no larger connected subspace of <m>X</m> that contains <m>C</m>.
       </p>
     </statement>
   </definition>

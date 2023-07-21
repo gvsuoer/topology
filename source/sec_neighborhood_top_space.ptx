@@ -7,10 +7,11 @@
   </p>
 
   <definition>
+    <idx><h>neighborhood in a topological space</h></idx>
     <statement>
       <p>
         Let <m>(X, \tau)</m> be a topological space, and let <m>a \in X</m>.
-        A subset <m>N</m> of <m>X</m> is a neighborhood<idx><h>neighborhood in a topological space</h></idx> of <m>a</m> if <m>N</m> contains an open set that contains <m>a</m>.
+        A subset <m>N</m> of <m>X</m> is a <term>neighborhood</term> of <m>a</m> if <m>N</m> contains an open set that contains <m>a</m>.
       </p>
     </statement>
   </definition>

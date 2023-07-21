@@ -13,8 +13,8 @@
       <p>
         Let <m>(X, \tau)</m> be a topological space,
         and let <m>A</m> be a subset of <m>X</m>.
-        A boundary point of <m>A</m> is a point <m>x \in X</m> such that every neighborhood of <m>x</m> contains a point in <m>A</m> and a point in <m>X \setminus A</m>.
-        The boundary of <m>A</m> is the set
+        A <term>boundary point</term> of <m>A</m> is a point <m>x \in X</m> such that every neighborhood of <m>x</m> contains a point in <m>A</m> and a point in <m>X \setminus A</m>.
+        The <term>boundary</term> of <m>A</m> is the set
         <me>
           \Bdry(A) = \{x \in X \mid x \text{ is a boundary point of }  A\}
         </me>.

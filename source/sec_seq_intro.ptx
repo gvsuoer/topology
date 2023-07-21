@@ -129,7 +129,7 @@
     <title>Alternate Definition</title>
     <statement>
       <p>
-        A sequence <m>(a_n)</m> of real numbers has a limit <m>L</m> if,
+        A sequence <m>(a_n)</m> of real numbers has a <term>limit</term> <m>L</m> if,
         given any <m>\epsilon \gt 0</m> there exists a positive integer <m>N</m> (depending only on <m>\epsilon</m>) such that
         <me>
           d_E(a_n, L) \lt  \epsilon \ \text{ whenever }  \ n \geq N
@@ -147,7 +147,7 @@
   <idx><h>sequence in a metric space</h></idx>
     <statement>
       <p>
-        A sequence in a metric space <m>(X,d)</m> is a function <m>f: \Z^+ \to X</m>.
+        A <term>sequence</term> in a metric space <m>(X,d)</m> is a function <m>f: \Z^+ \to X</m>.
       </p>
     </statement>
   </definition>
@@ -166,7 +166,7 @@
     <statement>
       <p>
         Let <m>(X,d)</m> be a metric space.
-        A sequence <m>(a_n)</m> in <m>X</m> has a limit <m>L \in X</m> if,
+        A sequence <m>(a_n)</m> in <m>X</m> has a <term>limit</term> <m>L \in X</m> if,
         given any <m>\epsilon \gt 0</m> there exists a positive integer <m>N</m> (depending only on <m>\epsilon</m>) such that
         <me>
           d(a_n, L) \lt  \epsilon \ \text{ whenever }  \ n \geq N
