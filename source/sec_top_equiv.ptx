@@ -39,7 +39,7 @@
     <statement>
       <p>
         Let <m>(X,\tau_X)</m> and <m>(Y,\tau_Y)</m> be topological spaces.
-        A function <m>f: X \to Y</m> is a </term>homeomorphism</term>
+        A function <m>f: X \to Y</m> is a <term>homeomorphism</term>
         if <m>f</m> is a continuous bijection such that <m>f^{-1}</m> is also continuous.
       </p>
     </statement>

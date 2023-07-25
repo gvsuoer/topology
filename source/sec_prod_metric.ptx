@@ -56,7 +56,7 @@ for <m>(x,y)</m> and <m>(u,v)</m> in <m>X_1 \times X_2</m>. However, this <m>d</
 </p>
 
 <p>
-  Let <m>x</m> and <m>y</m> be defined as in Activity \ref{act:metric_space_products}, and let <m>z = (z_1, z_2)</m> be in <m>X_1 \times X_2</m>. Then
+  Let <m>x</m> and <m>y</m> be defined as in <xref ref="act_metric_space_products"/>, and let <m>z = (z_1, z_2)</m> be in <m>X_1 \times X_2</m>. Then
   <md>
 <mrow> d(x,z)^2 \amp =  d_1(x_1,z_1)^2 + d_2(x_2,z_2)^2 </mrow>
 	<mrow> \amp \leq \left(d_1(x_1,y_1) + d_1(y_1,z_1)\right)^2 + \left(d_2(x_2,y_2) + d_2(y_2,z_2)\right)^2 </mrow>

@@ -91,7 +91,7 @@
     Since every neighborhood <m>N</m> of a point <m>x \in X</m> must contain an open set <m>O</m> with <m>x \in O</m>,
     it follows that <m>U_x \subseteq O \subseteq N</m>.
     So every neighborhood of <m>x \in X</m> has <m>U_x</m> as a subset.
-    In addition, when <m>X</m> is finite, the set <m>U_x</m> is a finite intersection of open sets, so the sets <m>U_x</m> are open sets (this is not true in general in infinite topological spaces <mdash/> you are asked to find an example in Exercise (\ref{ex:U_x_not_open})).
+    In addition, when <m>X</m> is finite, the set <m>U_x</m> is a finite intersection of open sets, so the sets <m>U_x</m> are open sets (this is not true in general in infinite topological spaces <mdash/> you are asked to find an example in <xref ref="ex_U_x_not_open"/>).
     In <xref ref="act_minimal_nbhds"/>
     we saw that <m>U_x</m> was path connected for a particular <m>x</m> in one example.
     The next activity shows that this result is true in general in finite topological spaces.
