@@ -17,7 +17,7 @@
   <idx><h>relation</h></idx>
     <statement>
       <p>
-        A relation
+        A <term>relation</term>
         on a set <m>S</m> is a subset <m>R</m> of <m>S \times S</m>.
       </p>
     </statement>
@@ -68,7 +68,7 @@
   <idx><h>equivalence relation</h></idx>
     <statement>
       <p>
-        An equivalence relation
+        An <term>equivalence relation</term>
         is a relation on a set that is reflexive,
         symmetric, and transitive.
       </p>

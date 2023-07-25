@@ -37,11 +37,12 @@
               then we have what we call an open ball.
               We can make this same definition in any metric space.
               <definition xml:id="def_ms_open_ball">
+                <idx><h>open ball in a metric space</h></idx>
                 <statement>
                   <p>
                     Let <m>(Y, d_Y)</m> be a metric space.
                     For any positive real number <m>r</m>,
-                    the open ball centered at<idx><h>open ball in a metric space</h></idx> <m>b</m> of radius <m>r</m> in <m>(Y, d_Y)</m> is the the set
+                    the <term>open ball centered at <m>b</m> of radius</term> <m>r</m> in <m>(Y, d_Y)</m> is the the set
                     <me>
                       B(b,r) = \{y \in Y \mid d_Y(y,b) \lt  r\}
                     </me>.

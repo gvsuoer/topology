@@ -13,9 +13,9 @@
       <p>
         A function <m>f</m> from a topological space
         <m>(X, \tau_X)</m> to a topological space
-        <m>(Y, \tau_Y)</m> is continuous at a point <m>a \in X</m> if
+        <m>(Y, \tau_Y)</m> is <term>continuous at a point</term> <m>a \in X</m> if
         <m>f^{-1}(N)</m> is a neighborhood of <m>a</m> in <m>X</m> whenever <m>N</m> is a neighborhood of <m>f(a)</m> in <m>Y</m>.
-        The function <m>f</m> is continuous if <m>f</m> is continuous at each point in <m>X</m>.
+        The function <m>f</m> is continuous if <m>f</m> is <term>continuous</term> at each point in <m>X</m>.
       </p>
     </statement>
   </definition>
@@ -110,12 +110,12 @@
           <term>open</term> functions.
         </p>
           <definition>
+            <idx><h>function</h><h>open</h></idx>
+              <idx><h>open function</h></idx>
             <statement>
               <p>
                 Let <m>f: X \to Y</m> be a function from a topological space <m>X</m> to a topological space <m>Y</m>.
-                Then <m>f</m> is an open function
-              <idx><h>function</h><h>open</h></idx>
-              <idx><h>open function</h></idx>
+                Then <m>f</m> is an <term>open</term> function
                 if <m>f(U)</m> is open in <m>Y</m> whenever <m>U</m> is open in <m>X</m>.
               </p>
             </statement>

@@ -29,8 +29,7 @@
   <idx><h>finite set</h></idx>
     <statement>
       <p>
-        A set <m>A</m> is a finite set
-            <idx><h>finite set</h></idx>
+        A set <m>A</m> is a <term>finite</term> set
         if <m>A = \emptyset</m> or there is a bijection <m>f</m> mapping <m>A</m> to the set
         <m>\{1,2,3, \ldots,
         n\}</m> for some positive integer <m>n</m>.

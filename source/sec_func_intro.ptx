@@ -15,7 +15,7 @@
   <idx><h>function</h></idx>
     <statement>
       <p>
-        A function
+        A <term>function</term>
         <m>f</m> from a nonempty set <m>A</m> to a set <m>B</m> is a collection of ordered pairs <m>(a,b)</m> so that
         <ul>
           <li>
@@ -125,13 +125,16 @@
   </p>
 
   <definition>
+    <idx><h>function</h><h>injection</h></idx>
+    <idx><h>function</h><h>surjection</h></idx>
+    <idx><h>function</h><h>bijection</h></idx>
     <statement>
       <p>
         Let <m>f</m> be a function from a set <m>A</m> to a set <m>B</m>.
         <ol>
           <li>
             <p>
-              The function <m>f</m> is an <term>injection</term><idx><h>function</h><h>injection</h></idx> if,
+              The function <m>f</m> is an <term>injection</term> if,
               whenever <m>(a,b)</m> and <m>(a',b)</m> are in <m>f</m>,
               then <m>a=a'</m>.
               Alternatively, using the function notation,
@@ -140,7 +143,7 @@
           </li>
           <li>
             <p>
-              The function <m>f</m> is a <term>surjection</term><idx><h>function</h><h>surjection</h></idx> if,
+              The function <m>f</m> is a <term>surjection</term> if,
               whenever <m>b \in B</m>,
               then there is an <m>a \in A</m> so that <m>(a,b)</m> is in <m>f</m>.
               Alternatively, using the function notation,
@@ -149,7 +152,7 @@
           </li>
           <li>
             <p>
-              The function <m>f</m> is a <term>bijection</term><idx><h>function</h><h>bijection</h></idx> if <m>f</m> is both an injection and a surjection.
+              The function <m>f</m> is a <term>bijection</term> if <m>f</m> is both an injection and a surjection.
             </p>
           </li>
         </ol>
@@ -188,10 +191,11 @@
             Such a function is called a restriction.
           </p>
             <definition>
+              <idx><h>function</h><h>restriction</h></idx>
               <statement>
                 <p>
                   Let <m>f</m> be a function from a set <m>A</m> to a set <m>B</m> and let <m>C</m> be a subset of <m>A</m>.
-                  The restriction<idx><h>function</h><h>restriction</h></idx> of <m>f</m> to <m>C</m> is the function <m>F: C \to B</m> satisfying
+                  The <term>restriction</term> of <m>f</m> to <m>C</m> is the function <m>F: C \to B</m> satisfying
                   <me>
                     F(c) = f(c) \text{ for all }  c \in C
                   </me>.

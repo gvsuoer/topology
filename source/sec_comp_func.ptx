@@ -41,7 +41,7 @@
       <p>
         Let <m>A</m>, <m>B</m>, and <m>C</m> be nonempty sets,
         and let <m>f : A \to B</m> and <m>g : B \to C</m> be functions.
-        The composite of <m>f</m> and <m>g</m> is the function <m>g \circ f : A \to C</m> defined by
+        The <term>composite</term> of <m>f</m> and <m>g</m> is the function <m>g \circ f : A \to C</m> defined by
         <me>
           (g \circ f)(x) = g(f(x))
         </me>

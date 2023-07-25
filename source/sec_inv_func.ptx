@@ -24,11 +24,11 @@
     The idea of reversing the roles of the first and second coordinates is the basis for our definition of the inverse of a function.
   </p>
   <definition xml:id="sym_finverse">
+    <idx><h>function</h><h>inverse</h></idx>
     <statement>
       <p>
         Let <m>f : A \to B</m> be a function.
-        The inverse
-            <idx><h>function</h><h>inverse</h></idx>
+        The <term>inverse</term>
         of <m>f</m>, denoted by <m>f^{ - 1}</m>,
         is the set of ordered pairs
         <me>

@@ -434,7 +434,7 @@
         <idx><h>locally compact</h></idx>
           <statement>
             <p>
-              A topological space <m>X</m> is locally compact
+              A topological space <m>X</m> is <term>locally compact</term>
               if for each <m>x \in X</m> there is an open set <m>O</m> such that <m>p \in O</m> and <m>\overline{O}</m> is compact.
             </p>
           </statement>

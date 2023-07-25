@@ -9,7 +9,7 @@
   <idx><h>closure in topological spaces</h></idx>
     <statement>
       <p>
-        The closure of a subset <m>A</m> of a topological space <m>X</m> is the set
+        The <term>closure</term> of a subset <m>A</m> of a topological space <m>X</m> is the set
         <me>
           \overline{A} = A \cup A'
         </me>.

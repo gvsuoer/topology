@@ -59,8 +59,8 @@
     <statement>
       <p>
         Let <m>(X_{\alpha}, \tau_{\alpha})</m> be a collection of topological spaces for <m>\alpha</m> in some finite indexing set <m>I</m>.
-        The box topology
-        or product topology
+        The <term>box topology</term>
+        or <term>product topology</term>
         on the product <m>\Pi_{\alpha \in I} X_{\alpha}</m> is the topology with basis
         <me>
           \CB = \left\{ \Pi_{\alpha \in I} U_{\alpha} \mid U_{\alpha} \in \tau_{\alpha}  \text{ for each }  \alpha \in I \right\}

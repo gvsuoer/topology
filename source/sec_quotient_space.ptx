@@ -95,7 +95,6 @@
             <p>
               If <m>p: X \to Y</m> is a quotient map,
               then the space <m>Y</m> is the <term>quotient space</term>
-                
               of <m>X</m> determined by <m>p</m>.
             </p>
           </li>
@@ -239,7 +238,7 @@
             What does the quotient space <m>X/\ssim</m> look like?
           </p>
             <figure xml:id="F_Quotients_activity">
-              <caption>From left to right: the identifications for parts i., ii., and iii.</caption>
+              <caption>From left to right: the identifications for parts (i), (ii), and (iii)</caption>
               <sidebyside>
               <image width="50%" source="Mobius_identification"/> 
               <image width="50%" source="Torus_identification"/> 
@@ -273,13 +272,15 @@
               </statement>
             </task>
             <task>
+              <idx><h>M&#xf6;bius strip</h></idx>
               <statement>
                 <p>
                   <m>(x, y) \sim (x,y)</m> if
                   <m>0 \lt x \lt 1</m> and <m>0 \lt y \lt 1</m>,
                   <m>(x,0) \sim (x,1)</m> for <m>0 \lt x \lt 1</m>,
                   <m>(0,y) \sim (1,y)</m> for <m>0 \lt y \lt 1</m>,
-                  and <m>(0,0) \sim (0,1) \sim (1,0) \sim(1,1)</m>
+                  and <m>(0,0) \sim (0,1) \sim (1,0) \sim(1,1)</m>. 
+                  (This space is called a M&#xf6;bius strip.)
                 </p>
               </statement>
             </task>
@@ -298,6 +299,7 @@
   </activity>
 
   <p>
+    <idx><h>Klein bottle</h></idx>
     Many other interesting identification spaces can be made.
     For example,
     let <m>X = I \times I</m> and define <m>\sim</m> by <m>(x, y) \sim (x,y)</m> if

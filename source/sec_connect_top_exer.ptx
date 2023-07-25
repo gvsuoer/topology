@@ -158,11 +158,11 @@
         This is the idea of local connectedness.
       </p>
         <definition>
+          <idx><h>locally connected</h></idx>
           <statement>
             <p>
-              A topological space <m>X</m> is locally connected at a point <m>x \in X</m> if every neighborhood <m>U</m> of <m>x</m> contains an open connected neighborhood of <m>x</m>.
-              A topological space <m>X</m> is locally connected
-          <idx><h>locally connected</h></idx>
+              A topological space <m>X</m> is <term>locally connected at a point</term> <m>x \in X</m> if every neighborhood <m>U</m> of <m>x</m> contains an open connected neighborhood of <m>x</m>.
+              A topological space <m>X</m> is <term>locally connected</term>
               if <m>X</m> is locally connected at each point in <m>X</m>.
             </p>
           </statement>

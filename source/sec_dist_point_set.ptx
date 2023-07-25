@@ -72,7 +72,7 @@
       <p>
         Let <m>(X,d)</m> be a metric space,
         let <m>x \in X</m>, and let <m>A</m> be a nonempty subset of <m>X</m>.
-        The distance from <m>x</m> to <m>A</m> is
+        The <term>distance from <m>x</m> to <m>A</m></term> is
         <me>
           \inf\{d(x,a) \mid a \in A\}
         </me>.

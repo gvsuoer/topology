@@ -164,11 +164,11 @@
             <p>
               Let <m>\tau_1</m> and <m>\tau_2</m> be two topologies on a set <m>X</m>.
               If <m>\tau_1 \subseteq \tau_2</m>,
-              then <m>\tau_1</m> is a coarser
-              (or weaker)
+              then <m>\tau_1</m> is a <term>coarser</term>
+              (or <term>weaker</term>)
               topology than <m>\tau_2</m>.
-              We also say that <m>\tau_2</m> is a finer
-              (or stronger)
+              We also say that <m>\tau_2</m> is a <term>finer</term>
+              (or <term>stronger</term>)
               topology than <m>\tau_1</m>.
             </p>
           </statement>

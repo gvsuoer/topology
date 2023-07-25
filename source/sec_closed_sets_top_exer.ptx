@@ -486,7 +486,7 @@
   <exercise>
     <introduction>
       <p>
-        Let  <m>K = \left\{\frac{1}{k} \mid k \text{ is a positive integer} \right\}</m>. Let <m>\B</m> be the collection of all open intervals of the form <m>(a,b)</m> and all sets of the form <m>(a,b) \setminus K</m>, where <m>a \lt b</m> are real numbers as in Example \ref{exp:K_topology} on page \pageref{exp:K_topology}.  That <m>\B</m> generates a topology <m>\tau_K</m> on <m>\R</m> follows from the fact that <m>\tau_K</m> is finer than the Euclidean topology.
+        Let  <m>K = \left\{\frac{1}{k} \mid k \text{ is a positive integer} \right\}</m>. Let <m>\B</m> be the collection of all open intervals of the form <m>(a,b)</m> and all sets of the form <m>(a,b) \setminus K</m>, where <m>a \lt b</m> are real numbers as in <xref ref="exp_K_topology"/>.  That <m>\B</m> generates a topology <m>\tau_K</m> on <m>\R</m> follows from the fact that <m>\tau_K</m> is finer than the Euclidean topology.
       </p>
     </introduction>
     <task>

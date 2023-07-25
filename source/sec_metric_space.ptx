@@ -14,8 +14,7 @@
   <idx><h>metric</h></idx>
     <statement>
       <p>
-        A metric
-            
+        A <term>metric</term>
         on a space <m>X</m> is a function
         <m>d : X \times X \to \R^+ \cup \{0\}</m> that satisfies the properties:
         <ol>
@@ -55,8 +54,7 @@
   <idx><h>metric space</h></idx>
     <statement>
       <p>
-        A metric space
-            
+        A <term>metric space</term>
         is a pair <m>(X,d)</m>, where <m>d</m> is a metric on the space <m>X</m>.
       </p>
     </statement>

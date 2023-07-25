@@ -183,6 +183,8 @@
       </p>
     
     <definition>
+      <idx><h>digital path</h></idx>
+      <idx><h>digital arc</h></idx>
       <statement>
         <p>
           Let <m>X</m> be a topological space.
@@ -190,14 +192,12 @@
             <li>
               <p>
                 A <term>digital path</term>
-                  <idx><h>digital path</h></idx>
                 in <m>X</m> is the range of a continuous function from a digital interval to <m>X</m>.
               </p>
             </li>
             <li>
               <p>
                 A <term>digital arc</term>
-                  <idx><h>digital arc</h></idx>
                 in X is the range of a homeomorphism from a digital interval to <m>X</m>.
               </p>
             </li>
@@ -224,10 +224,10 @@
       we need a definition of a digital Jordan curve.
       </p>
       <definition>
+        <idx><h>digital Jordan curve</h></idx>
       <statement>
         <p>
-          A digital Jordan curve
-              <idx><h>digital Jordan curve</h></idx>
+          A <term>digital Jordan curve</term>
           is a finite connected set <m>J</m> with <m>|J| \geq 4</m> such that
           <m>J \setminus \{j\}</m> is a digital arc for each <m>j \in J</m>.
         </p>

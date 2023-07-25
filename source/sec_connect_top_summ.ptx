@@ -66,7 +66,7 @@
     <li>
       <p>
         A subset <m>S</m> of a connected topological space <m>X</m> is a cut set of <m>X</m> if the set <m>X \setminus S</m> is disconnected,
-        while a .point <m>p</m> in <m>X</m> is a cut point if <m>X \setminus \{p\}</m> is disconnected.
+        while a point <m>p</m> in <m>X</m> is a cut point if <m>X \setminus \{p\}</m> is disconnected.
         The property of being a cut set or a cut point is a topological invariant,
         so we can sometimes use cut sets and cut points to show that topological spaces are not homeomorphic.
       </p>

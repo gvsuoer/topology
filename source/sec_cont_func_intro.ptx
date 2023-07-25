@@ -122,7 +122,7 @@
   <definition xml:id="def_epsilon_delta_continuity">
     <statement>
       <p>
-        A function <m>f : \R \to \R</m> is continuous at a point <m>a</m> if,
+        A function <m>f : \R \to \R</m> is <term>continuous at a point <m>a</m></term> if,
         given any <m>\epsilon \gt 0</m>,
         there exists a <m>\delta \gt 0</m> so that
         <m>| x - a | \lt \delta</m> implies <m>| f(x) - f(a)| \lt \epsilon</m>.

@@ -65,7 +65,7 @@
   <idx><h>Hausdoff space</h></idx>
     <statement>
       <p>
-        A topological space <m>X</m> is a Hausdorff
+        A topological space <m>X</m> is a <term>Hausdorff</term>
         space if for each pair <m>x</m>,
         <m>y</m> of distinct points in <m>X</m>,
         there exists open sets <m>O_x</m> of <m>x</m> and <m>O_y</m> of <m>y</m> such that <m>O_x \cap O_y = \emptyset</m>.
@@ -207,6 +207,10 @@
   <definition>
   <idx><h><m>T_1</m>-space</h></idx>
 <idx><h>Frechet space</h></idx>
+<idx><h><m>T_2</m>-space</h></idx>
+<idx><h><m>T_3</m>-space</h></idx>
+<idx><h>normal topological space</h></idx>
+<idx><h><m>T_4</m>-space</h></idx>
     <statement>
       <p>
         Let <m>X</m> be a topological space.
@@ -222,7 +226,7 @@
           <li>
             <p>
               The space <m>X</m> is a <term><term>T</term><m>_2</m>-space</term>
-                <idx><h><m>T_2</m>-space</h></idx>
+                
               or a <term>Hausdorff space</term> if for every <m>x\neq y</m> in <m>X</m>,
               there exist disjoint open sets <m>U</m> and <m>V</m> such that <m>x\in U</m> and <m>y\in V</m>.
             </p>
@@ -232,17 +236,17 @@
               The space <m>X</m> is <term>regular</term><idx><h>regular topological space</h></idx> if for each closed set <m>C</m> of <m>X</m> and each point <m>x \in X \setminus C</m>,
               there exists disjoint open sets <m>U</m> and <m>V</m> in <m>X</m> such that <m>C \subseteq U</m> and <m>x \in V</m>.
               The space <m>X</m> is a <term><term>T</term><m>_3</m>-space</term>
-                <idx><h><m>T_3</m>-space</h></idx>
+                
               or a <term>regular Hausdorff space</term>
               if <m>X</m> is a regular <m>T_1</m> space.
             </p>
           </li>
           <li>
             <p>
-              The space <m>X</m> is a <term>normal</term><idx><h>normal topological space</h></idx> space if for each pair <m>C</m> and <m>D</m> of disjoint closed subsets of <m>X</m> there exist disjoint open sets <m>U</m> and <m>V</m> such that
+              The space <m>X</m> is a <term>normal</term> space if for each pair <m>C</m> and <m>D</m> of disjoint closed subsets of <m>X</m> there exist disjoint open sets <m>U</m> and <m>V</m> such that
               <m>C \subseteq U</m> and <m>D \subseteq V</m>.
-              The space <m>X</m> is a <term><term>T</term><m>_4</m>-space</term>
-                <idx><h><m>T_4</m>-space</h></idx>
+              The space <m>X</m> is a <term>T<m>_4</m>-space</term>
+                
               or a <term>normal Hausdorff space</term>
               if <m>X</m> is a normal <m>T_1</m> space.
             </p>

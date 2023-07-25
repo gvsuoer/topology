@@ -7,11 +7,12 @@
   </p>
 
   <definition>
+    <idx><h>limit point in a topological space</h></idx>
     <statement>
       <p>
         Let <m>X</m> be a topological space,
         and let <m>A</m> be a subset of <m>X</m>.
-        A limit point<idx><h>limit point in a topological space</h></idx> of <m>A</m> is a point <m>x \in X</m> such that every neighborhood of <m>x</m> contains a point in <m>A</m> different from <m>x</m>.
+        A <term>limit point</term> of <m>A</m> is a point <m>x \in X</m> such that every neighborhood of <m>x</m> contains a point in <m>A</m> different from <m>x</m>.
       </p>
     </statement>
   </definition>
@@ -124,7 +125,7 @@
   <idx><h>sequence in a topological space</h></idx>
     <statement>
       <p>
-        A sequence in a topological space <m>X</m> is a function <m>f: \Z^+</m> to <m>X</m>.
+        A <term>sequence</term> in a topological space <m>X</m> is a function <m>f: \Z^+</m> to <m>X</m>.
       </p>
     </statement>
   </definition>
@@ -147,7 +148,7 @@
   <idx><h>convergent sequence in a topological space</h></idx>
     <statement>
       <p>
-        A sequence <m>(x_n)</m> in a topological space <m>X</m> converges to the point <m>x \in X</m> if,
+        A sequence <m>(x_n)</m> in a topological space <m>X</m> <term>converges</term> to the point <m>x \in X</m> if,
         for each open set <m>O</m> that contains <m>x</m> there exists a positive integer <m>N</m> such that
         <m>x_n \in O</m> for all <m>n \geq N</m>.
       </p>

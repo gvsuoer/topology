@@ -89,11 +89,11 @@
       Use the Gluing Lemma to explain why the path product given in the following definition is actually a path from <m>p(0)</m> to <m>q(1)</m>.
     </p>
     <definition>
+      <idx><h>path product</h></idx>
       <statement>
         <p>
           Let <m>p</m> be a path from <m>a</m> to <m>b</m> and <m>q</m> a path from <m>b</m> to <m>c</m> in a space <m>X</m>.
-          The path product
-              <idx><h>path product</h></idx>
+          The <term>path product</term>
           <m>q*p</m> is the path in <m>X</m> defined by
           <me>
             (q*p)(x) = \begin{cases}p(2x) \amp \text{ for }  0 \leq x \leq \frac{1}{2} \\ q(2x-1) \amp \text{ for }  \frac{1}{2} \leq x \leq 1. \end{cases}
@@ -150,10 +150,10 @@
   </p>
 
   <definition>
+    <idx><h>path component</h></idx>
     <statement>
       <p>
-        The path component
-            <idx><h>path component</h></idx>
+        The <term>path component</term>
         of an element <m>a</m> in a topological space
         <m>(X, \tau)</m> is the largest path connected subset of <m>X</m> that contains <m>a</m>.
       </p>

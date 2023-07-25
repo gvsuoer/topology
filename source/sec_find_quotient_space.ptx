@@ -186,12 +186,12 @@
             Now we need to demonstrate that <m>f</m> is continuous.
             A collection of basic open sets in <m>S^1</m> can be found by intersecting <m>S^1</m> with open balls in <m>\R^2</m> as illustrated in <xref ref="F_S_1_basis"/>.
             We can see that the basic open sets are arcs of the form
-            <m>\wideparen{ab}</m> for <m>a</m> and <m>b</m> in <m>S^1</m>.
+            <m>\overset \frown{ab}</m> for <m>a</m> and <m>b</m> in <m>S^1</m>.
             Suppose <m>a = (\cos(2 \pi A), \sin(2 \pi A))</m> and
             <m>b = (\cos(2 \pi B), \sin(2 \pi B))</m> for angles <m>A</m> and <m>B</m>.
-            Then <m>f^{-1}(\wideparen{ab})</m> is the union of intervals <m>(A+2\pi k, B+2 \pi k)</m> for <m>k \in \Z</m>.
+            Then <m>f^{-1}(\overset \frown{ab})</m> is the union of intervals <m>(A+2\pi k, B+2 \pi k)</m> for <m>k \in \Z</m>.
             As a union of open intervals,
-            we have that <m>f^{-1}(\wideparen{ab})</m> is open in <m>X</m>.
+            we have that <m>f^{-1}(\overset \frown{ab})</m> is open in <m>X</m>.
             We have now found a continuous surjection from <m>X</m> to <m>Y</m> that respects the relation.
           </p>
         </li>
@@ -236,7 +236,7 @@
             Then <m>O = p^{-1}(\overline{O})</m> is open in <m>X</m>.
             Thus, <m>O</m> is a union of open intervals.
             Let <m>(a,b)</m> be an interval contained in <m>O</m>.
-            From the definition of <m>f</m> we have that <m>f(a,b)</m> is the open arc <m>\wideparen{f(a)f(b)}</m>,
+            From the definition of <m>f</m> we have that <m>f(a,b)</m> is the open arc <m>\overset \frown{f(a)f(b)}</m>,
             which is open in <m>Y</m>.
             So <m>f(O)</m> is a union of open arcs in <m>Y</m>,
             which makes <m>f(O)</m> open in <m>Y</m>.

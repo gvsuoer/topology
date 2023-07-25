@@ -45,7 +45,7 @@
             <statement>
               <p>
                 Let <m>(X,\tau)</m> be a topological space.
-                A subspace of
+                A <term>subspace</term> of
                 <m>(X,\tau)</m> is a nonempty subset <m>A</m> of <m>X</m> together with the topology
                 <me>
                   \tau_A = \{O \cap A \mid O \in \tau\}

@@ -46,6 +46,9 @@
             <p>
               a five point star
             </p>
+            <image source="star" width="10%">
+              <description>a five-pointed star</description>
+            </image>
           </statement>
         </task>
         <task>
