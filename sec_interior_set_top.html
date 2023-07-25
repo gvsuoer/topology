@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>The Interior of a Set in a Topological Space</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -603,21 +604,21 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_interior_set_top"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">The Interior of a Set in a Topological Space</span>
 </h2>
-<div class="para" id="p-1405">We have seen that topologies define the open sets in a topological space. As in metric spaces, open sets can be characterized in terms of their interior points. We defined interior points in metric spaces in terms of neighborhoods — the same holds true in topological spaces.</div>
+<div class="para" id="p-1411">We have seen that topologies define the open sets in a topological space. As in metric spaces, open sets can be characterized in terms of their interior points. We defined interior points in metric spaces in terms of neighborhoods — the same holds true in topological spaces.</div>
 <article class="definition definition-like" id="definition-41"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">12.8</span><span class="period">.</span>
-</h3> <div class="para" id="p-1406">Let <span class="process-math">\(A\)</span> be a subset of a topological space <span class="process-math">\(X\text{.}\)</span> A point <span class="process-math">\(a \in A\)</span> is an interior point of <span class="process-math">\(A\)</span> if <span class="process-math">\(A\)</span> is a neighborhood of <span class="process-math">\(a\text{.}\)</span>
-</div></article><div class="para" id="p-1407">Remember that a set is a neighborhood of a point if the set contains an open set that contains the point. By definition, every open set is a neighborhood of each of its points, so every point of an open set <span class="process-math">\(O\)</span> is an interior point of <span class="process-math">\(O\text{.}\)</span> Conversely, if every point of a set <span class="process-math">\(O\)</span> is an interior point, then <span class="process-math">\(O\)</span> is a neighborhood of each of its points and is open. This argument is summarized in the next theorem.</div>
+</h3> <div class="para" id="p-1412">Let <span class="process-math">\(A\)</span> be a subset of a topological space <span class="process-math">\(X\text{.}\)</span> A point <span class="process-math">\(a \in A\)</span> is an <dfn class="terminology">interior point</dfn> of <span class="process-math">\(A\)</span> if <span class="process-math">\(A\)</span> is a neighborhood of <span class="process-math">\(a\text{.}\)</span>
+</div></article><div class="para" id="p-1413">Remember that a set is a neighborhood of a point if the set contains an open set that contains the point. By definition, every open set is a neighborhood of each of its points, so every point of an open set <span class="process-math">\(O\)</span> is an interior point of <span class="process-math">\(O\text{.}\)</span> Conversely, if every point of a set <span class="process-math">\(O\)</span> is an interior point, then <span class="process-math">\(O\)</span> is a neighborhood of each of its points and is open. This argument is summarized in the next theorem.</div>
 <article class="theorem theorem-like" id="theorem-34"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">12.9</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-1408">Let <span class="process-math">\(X\)</span> be a topological space. A subset <span class="process-math">\(O\)</span> of <span class="process-math">\(X\)</span> is open if and only if every point of <span class="process-math">\(O\)</span> is an interior point of <span class="process-math">\(O\text{.}\)</span>
-</div></article><div class="para" id="p-1409">The collection of interior points in a set form a subset of that set, called the <dfn class="terminology">interior</dfn> of the set.</div>
+<div class="para" id="p-1414">Let <span class="process-math">\(X\)</span> be a topological space. A subset <span class="process-math">\(O\)</span> of <span class="process-math">\(X\)</span> is open if and only if every point of <span class="process-math">\(O\)</span> is an interior point of <span class="process-math">\(O\text{.}\)</span>
+</div></article><div class="para" id="p-1415">The collection of interior points in a set form a subset of that set, called the <dfn class="terminology">interior</dfn> of the set.</div>
 <article class="definition definition-like" id="definition-42"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">12.10</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-1410">
-<div class="para">The interior of a subset <span class="process-math">\(A\)</span> of a topological space <span class="process-math">\(X\)</span> is the set</div>
+<div class="para logical" id="p-1416">
+<div class="para">The <dfn class="terminology">interior</dfn> of a subset <span class="process-math">\(A\)</span> of a topological space <span class="process-math">\(X\)</span> is the set</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \Int(A) = \{a \in A \mid a \text{ is an interior point of }  A\}\text{.}
@@ -627,13 +628,13 @@ window.MathJax = {
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">12.9</span><span class="period">.</span>
 </h3>
 <article class="task exercise-like" id="task-573"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1411">Consider <span class="process-math">\((\R, \tau)\text{,}\)</span> where <span class="process-math">\(\tau\)</span> is the standard topology (by standard in this situation, we mean the metric topology determined by the Euclidean metric). Let <span class="process-math">\(A=(-\infty,0)\cup (1,2]\cup \{3\}\)</span> in <span class="process-math">\(\R\text{.}\)</span> What is <span class="process-math">\(\Int(A)\text{?}\)</span> What is the largest open subset of <span class="process-math">\(\R\)</span> contained in <span class="process-math">\(A\text{?}\)</span>
+<div class="para" id="p-1417">Consider <span class="process-math">\((\R, \tau)\text{,}\)</span> where <span class="process-math">\(\tau\)</span> is the standard topology (by standard in this situation, we mean the metric topology determined by the Euclidean metric). Let <span class="process-math">\(A=(-\infty,0)\cup (1,2]\cup \{3\}\)</span> in <span class="process-math">\(\R\text{.}\)</span> What is <span class="process-math">\(\Int(A)\text{?}\)</span> What is the largest open subset of <span class="process-math">\(\R\)</span> contained in <span class="process-math">\(A\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-574"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-1412">Consider <span class="process-math">\((\R, \tau)\text{,}\)</span> where <span class="process-math">\(\tau\)</span> is the discrete topology (the one where all subsets are open). Let <span class="process-math">\(A=(-\infty,0) \cup (1,2] \cup \{3\}\)</span> in <span class="process-math">\(\R\text{.}\)</span> What is <span class="process-math">\(\Int(A)\text{?}\)</span> What is the largest open subset of <span class="process-math">\(\R\)</span> contained in <span class="process-math">\(A\text{?}\)</span>
+<div class="para" id="p-1418">Consider <span class="process-math">\((\R, \tau)\text{,}\)</span> where <span class="process-math">\(\tau\)</span> is the discrete topology (the one where all subsets are open). Let <span class="process-math">\(A=(-\infty,0) \cup (1,2] \cup \{3\}\)</span> in <span class="process-math">\(\R\text{.}\)</span> What is <span class="process-math">\(\Int(A)\text{?}\)</span> What is the largest open subset of <span class="process-math">\(\R\)</span> contained in <span class="process-math">\(A\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-575"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-1413">Consider <span class="process-math">\((\R, \tau)\text{,}\)</span> where <span class="process-math">\(\tau\)</span> is the finite complement topology (the one where the open sets are the empty set along with all subsets <span class="process-math">\(O\)</span> of <span class="process-math">\(\R\)</span> such that <span class="process-math">\(\R \setminus O\)</span> is finite). Let <span class="process-math">\(A=(-\infty,0) \cup (1,2] \cup \{3\}\)</span> in <span class="process-math">\(\R\text{.}\)</span> What is <span class="process-math">\(\Int(A)\text{?}\)</span> What is the largest open subset of <span class="process-math">\(\R\)</span> contained in <span class="process-math">\(A\text{?}\)</span>
+<div class="para" id="p-1419">Consider <span class="process-math">\((\R, \tau)\text{,}\)</span> where <span class="process-math">\(\tau\)</span> is the finite complement topology (the one where the open sets are the empty set along with all subsets <span class="process-math">\(O\)</span> of <span class="process-math">\(\R\)</span> such that <span class="process-math">\(\R \setminus O\)</span> is finite). Let <span class="process-math">\(A=(-\infty,0) \cup (1,2] \cup \{3\}\)</span> in <span class="process-math">\(\R\text{.}\)</span> What is <span class="process-math">\(\Int(A)\text{?}\)</span> What is the largest open subset of <span class="process-math">\(\R\)</span> contained in <span class="process-math">\(A\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-576"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para logical" id="p-1414">
+<div class="para logical" id="p-1420">
 <div class="para">Let <span class="process-math">\(X = \{a,b,c,d\}\)</span> and let</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -642,26 +643,26 @@ window.MathJax = {
 </div>
 <div class="para">Assume that <span class="process-math">\(\tau\)</span> is a topology on <span class="process-math">\(X\text{.}\)</span> Let <span class="process-math">\(A = \{b,c,d\}\text{.}\)</span> What is <span class="process-math">\(\Int(A)\text{?}\)</span> What is the largest open subset of <span class="process-math">\(X\)</span> contained in <span class="process-math">\(A\text{?}\)</span>
 </div>
-</div></article></article><div class="para" id="p-1415">One might expect that the interior of a set is an open set, as it was in metric spaces. This is true, but we can say even more. In <a href="" class="xref" data-knowl="./knowl/act_interior.html" title="Activity 12.9">Activity 12.9</a> we saw that in our examples that <span class="process-math">\(\Int(A)\)</span> was the largest open subset of <span class="process-math">\(X\)</span> contained in <span class="process-math">\(A\text{.}\)</span> That this is always true is the subject of the next theorem.</div>
+</div></article></article><div class="para" id="p-1421">One might expect that the interior of a set is an open set, as it was in metric spaces. This is true, but we can say even more. In <a href="" class="xref" data-knowl="./knowl/act_interior.html" title="Activity 12.9">Activity 12.9</a> we saw that in our examples that <span class="process-math">\(\Int(A)\)</span> was the largest open subset of <span class="process-math">\(X\)</span> contained in <span class="process-math">\(A\text{.}\)</span> That this is always true is the subject of the next theorem.</div>
 <article class="theorem theorem-like" id="thm_Interior"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">12.11</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-1416">Let <span class="process-math">\((X,d)\)</span> be a topological space, and let <span class="process-math">\(A\)</span> be a subset of <span class="process-math">\(X\text{.}\)</span> The interior of <span class="process-math">\(A\)</span> is the largest open subset of <span class="process-math">\(X\)</span> contained in <span class="process-math">\(A\text{.}\)</span>
+<div class="para" id="p-1422">Let <span class="process-math">\((X,d)\)</span> be a topological space, and let <span class="process-math">\(A\)</span> be a subset of <span class="process-math">\(X\text{.}\)</span> The interior of <span class="process-math">\(A\)</span> is the largest open subset of <span class="process-math">\(X\)</span> contained in <span class="process-math">\(A\text{.}\)</span>
 </div></article><article class="proof" id="proof-19"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
-<div class="para" id="p-1417">Let <span class="process-math">\(X\)</span> be a topological space, and let <span class="process-math">\(A\)</span> be a subset of <span class="process-math">\(X\text{.}\)</span> We need to prove that <span class="process-math">\(\Int(A)\)</span> is an open set in <span class="process-math">\(X\text{,}\)</span> and that <span class="process-math">\(\Int(A)\)</span> is the largest open subset of <span class="process-math">\(X\)</span> contained in <span class="process-math">\(A\text{.}\)</span> First we demonstrate that <span class="process-math">\(\Int(A)\)</span> is an open set. Let <span class="process-math">\(a \in \Int(A)\text{.}\)</span> Then <span class="process-math">\(a\)</span> is an interior point of <span class="process-math">\(A\text{,}\)</span> so <span class="process-math">\(A\)</span> is a neighborhood of <span class="process-math">\(a\text{.}\)</span> This implies that there exists an open set <span class="process-math">\(O\)</span> containing <span class="process-math">\(a\)</span> so that <span class="process-math">\(O \subseteq A\text{.}\)</span> But <span class="process-math">\(O\)</span> is a neighborhood of each of its points, so every point in <span class="process-math">\(O\)</span> is an interior point of <span class="process-math">\(A\text{.}\)</span> It follows that <span class="process-math">\(O \subseteq \Int(A)\text{.}\)</span> Thus, <span class="process-math">\(\Int(A)\)</span> is a neighborhood of each of its points and, consequently, <span class="process-math">\(\Int(A)\)</span> is an open set.</div> <div class="para" id="p-1418">The proof that <span class="process-math">\(\Int(A)\)</span> is the largest open subset of <span class="process-math">\(X\)</span> contained in <span class="process-math">\(A\)</span> is left for the next activity.</div></article><article class="activity project-like" id="activity-61"><h3 class="heading">
+<div class="para" id="p-1423">Let <span class="process-math">\(X\)</span> be a topological space, and let <span class="process-math">\(A\)</span> be a subset of <span class="process-math">\(X\text{.}\)</span> We need to prove that <span class="process-math">\(\Int(A)\)</span> is an open set in <span class="process-math">\(X\text{,}\)</span> and that <span class="process-math">\(\Int(A)\)</span> is the largest open subset of <span class="process-math">\(X\)</span> contained in <span class="process-math">\(A\text{.}\)</span> First we demonstrate that <span class="process-math">\(\Int(A)\)</span> is an open set. Let <span class="process-math">\(a \in \Int(A)\text{.}\)</span> Then <span class="process-math">\(a\)</span> is an interior point of <span class="process-math">\(A\text{,}\)</span> so <span class="process-math">\(A\)</span> is a neighborhood of <span class="process-math">\(a\text{.}\)</span> This implies that there exists an open set <span class="process-math">\(O\)</span> containing <span class="process-math">\(a\)</span> so that <span class="process-math">\(O \subseteq A\text{.}\)</span> But <span class="process-math">\(O\)</span> is a neighborhood of each of its points, so every point in <span class="process-math">\(O\)</span> is an interior point of <span class="process-math">\(A\text{.}\)</span> It follows that <span class="process-math">\(O \subseteq \Int(A)\text{.}\)</span> Thus, <span class="process-math">\(\Int(A)\)</span> is a neighborhood of each of its points and, consequently, <span class="process-math">\(\Int(A)\)</span> is an open set.</div> <div class="para" id="p-1424">The proof that <span class="process-math">\(\Int(A)\)</span> is the largest open subset of <span class="process-math">\(X\)</span> contained in <span class="process-math">\(A\)</span> is left for the next activity.</div></article><article class="activity project-like" id="activity-61"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">12.10</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-157"><div class="para" id="p-1419">Let <span class="process-math">\((X,d)\)</span> be a topological space, and let <span class="process-math">\(A\)</span> be a subset of <span class="process-math">\(X\text{.}\)</span>
+<div class="introduction" id="introduction-157"><div class="para" id="p-1425">Let <span class="process-math">\((X,d)\)</span> be a topological space, and let <span class="process-math">\(A\)</span> be a subset of <span class="process-math">\(X\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-577"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1420">What will we have to show to prove that <span class="process-math">\(\Int(A)\)</span> is the largest open subset of <span class="process-math">\(X\)</span> contained in <span class="process-math">\(A\text{?}\)</span>
+<div class="para" id="p-1426">What will we have to show to prove that <span class="process-math">\(\Int(A)\)</span> is the largest open subset of <span class="process-math">\(X\)</span> contained in <span class="process-math">\(A\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-578"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-1421">Suppose that <span class="process-math">\(O\)</span> is an open subset of <span class="process-math">\(X\)</span> that is contained in <span class="process-math">\(A\text{,}\)</span> and let <span class="process-math">\(x \in O\text{.}\)</span> What does the fact that <span class="process-math">\(O\)</span> is open tell us? Then complete the proof that <span class="process-math">\(O \subseteq \Int(A)\text{.}\)</span>
-</div></article></article><div class="para" id="p-1422">One consequence of <a href="" class="xref" data-knowl="./knowl/thm_Interior.html" title="Theorem 12.11">Theorem 12.11</a> is the following.</div>
+<div class="para" id="p-1427">Suppose that <span class="process-math">\(O\)</span> is an open subset of <span class="process-math">\(X\)</span> that is contained in <span class="process-math">\(A\text{,}\)</span> and let <span class="process-math">\(x \in O\text{.}\)</span> What does the fact that <span class="process-math">\(O\)</span> is open tell us? Then complete the proof that <span class="process-math">\(O \subseteq \Int(A)\text{.}\)</span>
+</div></article></article><div class="para" id="p-1428">One consequence of <a href="" class="xref" data-knowl="./knowl/thm_Interior.html" title="Theorem 12.11">Theorem 12.11</a> is the following.</div>
 <article class="corollary theorem-like" id="corollary-6"><h3 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">12.12</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-1423">A subset <span class="process-math">\(O\)</span> of a topological space <span class="process-math">\(X\)</span> is open if and only if <span class="process-math">\(O = \Int(O)\text{.}\)</span>
+<div class="para" id="p-1429">A subset <span class="process-math">\(O\)</span> of a topological space <span class="process-math">\(X\)</span> is open if and only if <span class="process-math">\(O = \Int(O)\text{.}\)</span>
 </div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_neighborhood_top_space.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_top_space_summ.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

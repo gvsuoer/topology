@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>The Cardinality of a Set</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -603,13 +604,13 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_card_set"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">The Cardinality of a Set</span>
 </h2>
-<div class="para" id="p-313">How big is a set? When a set is finite, we can count the number of elements in the set and answer the question directly. When a set is infinite, the question is a little more complicated. For example, how big is <span class="process-math">\(\Z\text{?}\)</span> How big is <span class="process-math">\(\Q\text{?}\)</span> Since <span class="process-math">\(\Z\)</span> is a subset of <span class="process-math">\(\Q\text{,}\)</span> we might think that <span class="process-math">\(\Q\)</span> contains more elements than <span class="process-math">\(\Z\text{.}\)</span> But <span class="process-math">\(\Z\)</span> is infinite and how many more elements can we have than infinity? We won’t answer that question in this section, but it is an interesting one to consider.</div>
-<div class="para" id="p-314">If two finite sets have the same number of elements, then it should seem natural to say that the sets are of the same size. How do we extend this to infinite sets? If two finite sets have the same number of elements, then we can pair each element in one set with exactly one element in the other. This is exactly what a bijection does. So a set with <span class="process-math">\(n\)</span> elements can be paired with the set <span class="process-math">\(\{1, 2, \ldots, n\}\text{,}\)</span> where <span class="process-math">\(n\)</span> is a positive integer. This is how we can define a finite set.</div>
+<div class="para" id="p-319">How big is a set? When a set is finite, we can count the number of elements in the set and answer the question directly. When a set is infinite, the question is a little more complicated. For example, how big is <span class="process-math">\(\Z\text{?}\)</span> How big is <span class="process-math">\(\Q\text{?}\)</span> Since <span class="process-math">\(\Z\)</span> is a subset of <span class="process-math">\(\Q\text{,}\)</span> we might think that <span class="process-math">\(\Q\)</span> contains more elements than <span class="process-math">\(\Z\text{.}\)</span> But <span class="process-math">\(\Z\)</span> is infinite and how many more elements can we have than infinity? We won’t answer that question in this section, but it is an interesting one to consider.</div>
+<div class="para" id="p-320">If two finite sets have the same number of elements, then it should seem natural to say that the sets are of the same size. How do we extend this to infinite sets? If two finite sets have the same number of elements, then we can pair each element in one set with exactly one element in the other. This is exactly what a bijection does. So a set with <span class="process-math">\(n\)</span> elements can be paired with the set <span class="process-math">\(\{1, 2, \ldots, n\}\text{,}\)</span> where <span class="process-math">\(n\)</span> is a positive integer. This is how we can define a finite set.</div>
 <article class="definition definition-like" id="definition-8"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.12</span><span class="period">.</span>
-</h3> <div class="para" id="p-315">A set <span class="process-math">\(A\)</span> is a finite set  if <span class="process-math">\(A = \emptyset\)</span> or there is a bijection <span class="process-math">\(f\)</span> mapping <span class="process-math">\(A\)</span> to the set <span class="process-math">\(\{1,2,3, \ldots,
+</h3> <div class="para" id="p-321">A set <span class="process-math">\(A\)</span> is a <dfn class="terminology">finite</dfn> set if <span class="process-math">\(A = \emptyset\)</span> or there is a bijection <span class="process-math">\(f\)</span> mapping <span class="process-math">\(A\)</span> to the set <span class="process-math">\(\{1,2,3, \ldots,
 n\}\)</span> for some positive integer <span class="process-math">\(n\text{.}\)</span>
-</div></article><div class="para" id="p-316"> In the case that <span class="process-math">\(A = \emptyset\text{,}\)</span> we say that <span class="process-math">\(A\)</span> has <dfn class="terminology">cardinality</dfn> <span class="process-math">\(0\text{,}\)</span> and if there is a bijection from <span class="process-math">\(A\)</span> to the set <span class="process-math">\(\{1,2, \ldots,
+</div></article><div class="para" id="p-322"> In the case that <span class="process-math">\(A = \emptyset\text{,}\)</span> we say that <span class="process-math">\(A\)</span> has <dfn class="terminology">cardinality</dfn> <span class="process-math">\(0\text{,}\)</span> and if there is a bijection from <span class="process-math">\(A\)</span> to the set <span class="process-math">\(\{1,2, \ldots,
 n\}\text{,}\)</span> we say that <span class="process-math">\(A\)</span> has cardinality <span class="process-math">\(n\text{.}\)</span> If there is no positive integer <span class="process-math">\(n\)</span> such that there is a bijection from set <span class="process-math">\(A\)</span> to <span class="process-math">\(\{1,2, \ldots,
 n\}\)</span> we say that <span class="process-math">\(A\)</span> is an <dfn class="terminology">infinite</dfn> set and say that <span class="process-math">\(A\)</span> has infinite cardinality. We use the word <dfn class="terminology">cardinality</dfn> instead of number of elements because we can’t actually count the number of elements in an infinite set. We denote the cardinality of the set (the number of elements in the set) <span class="process-math">\(A\)</span> by <span class="process-math">\(|A|\text{.}\)</span> It is left to the homework to show that if <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are sets with <span class="process-math">\(|A|=n\)</span> and <span class="process-math">\(|B| = m\text{,}\)</span> then <span class="process-math">\(n=m\)</span> if and only if there is a bijection <span class="process-math">\(f: A \to B\text{.}\)</span> This tells us that cardinality is well defined. Since composites of bijections are bijections with inverses that are bijections, if there is a bijection from set <span class="process-math">\(A\)</span> to <span class="process-math">\(\{1,2, \ldots,
 n\}\)</span> and a bijection from a set <span class="process-math">\(B\)</span> to <span class="process-math">\(\{1,2, \ldots,

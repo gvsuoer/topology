@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Exercises</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -604,88 +605,88 @@ window.MathJax = {
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Exercises</span>
 </h2>
 <article class="exercise exercise-like" id="exercise-1"><h3 class="heading"><span class="codenumber">1<span class="period">.</span></span></h3>
-<div class="introduction" id="introduction-12"><div class="para" id="p-142">Let <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\)</span> be subsets of a set <span class="process-math">\(X\text{.}\)</span> Express each of the following sets in mathematical notation using the symbols <span class="process-math">\(\cup\text{,}\)</span> <span class="process-math">\(\cap\text{,}\)</span> and <span class="process-math">\(\setminus\text{.}\)</span>
+<div class="introduction" id="introduction-12"><div class="para" id="p-148">Let <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\)</span> be subsets of a set <span class="process-math">\(X\text{.}\)</span> Express each of the following sets in mathematical notation using the symbols <span class="process-math">\(\cup\text{,}\)</span> <span class="process-math">\(\cap\text{,}\)</span> and <span class="process-math">\(\setminus\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-41"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-143">The elements of <span class="process-math">\(X\)</span> that belong to <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> but not <span class="process-math">\(C\text{.}\)</span>
+<div class="para" id="p-149">The elements of <span class="process-math">\(X\)</span> that belong to <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> but not <span class="process-math">\(C\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-42"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-144">The elements of <span class="process-math">\(X\)</span> that belong to <span class="process-math">\(C\)</span> and either <span class="process-math">\(A\)</span> or <span class="process-math">\(B\text{.}\)</span>
+<div class="para" id="p-150">The elements of <span class="process-math">\(X\)</span> that belong to <span class="process-math">\(C\)</span> and either <span class="process-math">\(A\)</span> or <span class="process-math">\(B\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-43"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-145">The elements of <span class="process-math">\(X\)</span> that belong to <span class="process-math">\(A\)</span> but not to both <span class="process-math">\(B\)</span> and <span class="process-math">\(C\text{.}\)</span>
+<div class="para" id="p-151">The elements of <span class="process-math">\(X\)</span> that belong to <span class="process-math">\(A\)</span> but not to both <span class="process-math">\(B\)</span> and <span class="process-math">\(C\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-44"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="p-146">The elements of <span class="process-math">\(X\)</span> that belong to none of the sets <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\text{.}\)</span>
+<div class="para" id="p-152">The elements of <span class="process-math">\(X\)</span> that belong to none of the sets <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-45"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<div class="para" id="p-147">The elements of <span class="process-math">\(X\)</span> that fail to belong to at least two of the sets <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\text{.}\)</span>
+<div class="para" id="p-153">The elements of <span class="process-math">\(X\)</span> that fail to belong to at least two of the sets <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-46"><h4 class="heading"><span class="codenumber">(f)</span></h4>
-<div class="para" id="p-148">The elements of <span class="process-math">\(X\)</span> that fail to belong to at most one of the sets <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\text{.}\)</span>
+<div class="para" id="p-154">The elements of <span class="process-math">\(X\)</span> that fail to belong to at most one of the sets <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\text{.}\)</span>
 </div></article></article><article class="exercise exercise-like" id="exercise-2"><h3 class="heading"><span class="codenumber">2<span class="period">.</span></span></h3>
-<div class="introduction" id="introduction-13"><div class="para" id="p-149">Let <span class="process-math">\(X \subset Y \subset Z\text{.}\)</span> Prove or disprove.</div></div>
+<div class="introduction" id="introduction-13"><div class="para" id="p-155">Let <span class="process-math">\(X \subset Y \subset Z\text{.}\)</span> Prove or disprove.</div></div>
 <article class="task exercise-like" id="task-47"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-150"><span class="process-math">\(C_Y(X) \subset C_Z(X)\text{.}\)</span></div></article><article class="task exercise-like" id="task-48"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-151"><span class="process-math">\(Z \setminus (Y \setminus X) = X \cup (Z \setminus Y)\text{.}\)</span></div></article></article><article class="exercise exercise-like" id="ex_set_props"><h3 class="heading"><span class="codenumber">3<span class="period">.</span></span></h3>
-<div class="introduction" id="introduction-14"><div class="para" id="p-152">Let <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> be subsets of a universal set <span class="process-math">\(U\text{.}\)</span> Prove the associative and distributive laws. That is, prove each of the following.</div></div>
+<div class="para" id="p-156"><span class="process-math">\(C_Y(X) \subset C_Z(X)\text{.}\)</span></div></article><article class="task exercise-like" id="task-48"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-157"><span class="process-math">\(Z \setminus (Y \setminus X) = X \cup (Z \setminus Y)\text{.}\)</span></div></article></article><article class="exercise exercise-like" id="ex_set_props"><h3 class="heading"><span class="codenumber">3<span class="period">.</span></span></h3>
+<div class="introduction" id="introduction-14"><div class="para" id="p-158">Let <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> be subsets of a universal set <span class="process-math">\(U\text{.}\)</span> Prove the associative and distributive laws. That is, prove each of the following.</div></div>
 <article class="task exercise-like" id="task-49"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-153"><span class="process-math">\((A \cap B) \cap C = A \cap (B \cap C)\)</span></div></article><article class="task exercise-like" id="task-50"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-154"><span class="process-math">\((A \cup B) \cup C = A \cup (B \cup C)\)</span></div></article><article class="task exercise-like" id="task-51"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-155">
+<div class="para" id="p-159"><span class="process-math">\((A \cap B) \cap C = A \cap (B \cap C)\)</span></div></article><article class="task exercise-like" id="task-50"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-160"><span class="process-math">\((A \cup B) \cup C = A \cup (B \cup C)\)</span></div></article><article class="task exercise-like" id="task-51"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="p-161">
 <span class="process-math">\(A \cap (B \cup C) = (A \cap B) \cup (A \cap C)\)</span> \item<span class="process-math">\(A \cup (B \cap C) = (A \cup B) \cap (A \cup C)\)</span>
 </div></article></article><article class="exercise exercise-like" id="ex_DeMorgan"><h3 class="heading"><span class="codenumber">4<span class="period">.</span></span></h3>
-<div class="introduction" id="introduction-15"><div class="para" id="p-156">Prove DeMorgan’s Laws. That is, let <span class="process-math">\(\{A_{\alpha}\}\)</span> be a collection of sets indexed by a set <span class="process-math">\(I\)</span> in some universal set <span class="process-math">\(U\text{.}\)</span> Prove that</div></div>
+<div class="introduction" id="introduction-15"><div class="para" id="p-162">Prove DeMorgan’s Laws. That is, let <span class="process-math">\(\{A_{\alpha}\}\)</span> be a collection of sets indexed by a set <span class="process-math">\(I\)</span> in some universal set <span class="process-math">\(U\text{.}\)</span> Prove that</div></div>
 <article class="task exercise-like" id="task-52"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-157"><span class="process-math">\(\displaystyle \left(\bigcup_{\alpha \in I} A_{\alpha}\right)^c = \bigcap_{\alpha \in I} A_{\alpha}^c\)</span></div></article><article class="task exercise-like" id="task-53"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-158"><span class="process-math">\(\displaystyle \left(\bigcap_{\alpha \in I} A_{\alpha}\right)^c = \bigcup_{\alpha \in I} A_{\alpha}^c\)</span></div></article></article><article class="exercise exercise-like" id="exercise-5"><h3 class="heading"><span class="codenumber">5<span class="period">.</span></span></h3>
-<div class="para" id="p-159">What familiar set is <span class="process-math">\(\emptyset \times A\)</span> for any set <span class="process-math">\(A\text{?}\)</span> Explain.</div></article><article class="exercise exercise-like" id="ex_power_set"><h3 class="heading"><span class="codenumber">6<span class="period">.</span></span></h3>
-<div class="introduction" id="introduction-16"><div class="para" id="p-160">If <span class="process-math">\(A\)</span> is a set, the power set of <span class="process-math">\(A\text{,}\)</span> denoted <span class="process-math">\(2^A\)</span> is the collection of all subsets of <span class="process-math">\(A\text{.}\)</span>
+<div class="para" id="p-163"><span class="process-math">\(\displaystyle \left(\bigcup_{\alpha \in I} A_{\alpha}\right)^c = \bigcap_{\alpha \in I} A_{\alpha}^c\)</span></div></article><article class="task exercise-like" id="task-53"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-164"><span class="process-math">\(\displaystyle \left(\bigcap_{\alpha \in I} A_{\alpha}\right)^c = \bigcup_{\alpha \in I} A_{\alpha}^c\)</span></div></article></article><article class="exercise exercise-like" id="exercise-5"><h3 class="heading"><span class="codenumber">5<span class="period">.</span></span></h3>
+<div class="para" id="p-165">What familiar set is <span class="process-math">\(\emptyset \times A\)</span> for any set <span class="process-math">\(A\text{?}\)</span> Explain.</div></article><article class="exercise exercise-like" id="ex_power_set"><h3 class="heading"><span class="codenumber">6<span class="period">.</span></span></h3>
+<div class="introduction" id="introduction-16"><div class="para" id="p-166">If <span class="process-math">\(A\)</span> is a set, the power set of <span class="process-math">\(A\text{,}\)</span> denoted <span class="process-math">\(2^A\)</span> is the collection of all subsets of <span class="process-math">\(A\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-54"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-161">List the elements of <span class="process-math">\(\ds 2^{\{1,2\}}\text{.}\)</span>
+<div class="para" id="p-167">List the elements of <span class="process-math">\(\ds 2^{\{1,2\}}\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-55"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-162">If <span class="process-math">\(A\)</span> is a set with three elements, how many elements are in <span class="process-math">\(2^A\text{?}\)</span>
+<div class="para" id="p-168">If <span class="process-math">\(A\)</span> is a set with three elements, how many elements are in <span class="process-math">\(2^A\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-56"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-163">If <span class="process-math">\(A\)</span> is a set with <span class="process-math">\(n\)</span> elements, make a conjecture about the number of elements in <span class="process-math">\(2^A\text{.}\)</span> Prove your conjecture?</div></article></article><article class="exercise exercise-like" id="exercise-7"><h3 class="heading"><span class="codenumber">7<span class="period">.</span></span></h3>
-<div class="introduction" id="introduction-17"><div class="para" id="p-164">If <span class="process-math">\(A\)</span> is a set, the power set of <span class="process-math">\(A\text{,}\)</span> denoted <span class="process-math">\(2^A\)</span> is the collection of all subsets of <span class="process-math">\(A\text{.}\)</span> (See <a href="" class="xref" data-knowl="./knowl/ex_power_set.html" title="Exercise 6">Exercise 6</a>.) Critique each of the following statements. Doe the statement make sense or not? If not, explain why and then correct the statement to something that is true (and non-trivial).</div></div>
+<div class="para" id="p-169">If <span class="process-math">\(A\)</span> is a set with <span class="process-math">\(n\)</span> elements, make a conjecture about the number of elements in <span class="process-math">\(2^A\text{.}\)</span> Prove your conjecture?</div></article></article><article class="exercise exercise-like" id="exercise-7"><h3 class="heading"><span class="codenumber">7<span class="period">.</span></span></h3>
+<div class="introduction" id="introduction-17"><div class="para" id="p-170">If <span class="process-math">\(A\)</span> is a set, the power set of <span class="process-math">\(A\text{,}\)</span> denoted <span class="process-math">\(2^A\)</span> is the collection of all subsets of <span class="process-math">\(A\text{.}\)</span> (See <a href="" class="xref" data-knowl="./knowl/ex_power_set.html" title="Exercise 6">Exercise 6</a>.) Critique each of the following statements. Doe the statement make sense or not? If not, explain why and then correct the statement to something that is true (and non-trivial).</div></div>
 <article class="task exercise-like" id="task-57"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-165">If <span class="process-math">\(A\)</span> is a set, then <span class="process-math">\(A \in 2^A\text{.}\)</span>
+<div class="para" id="p-171">If <span class="process-math">\(A\)</span> is a set, then <span class="process-math">\(A \in 2^A\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-58"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-166">If <span class="process-math">\(A\)</span> is a set, then <span class="process-math">\(A \subset 2^A\text{.}\)</span>
+<div class="para" id="p-172">If <span class="process-math">\(A\)</span> is a set, then <span class="process-math">\(A \subset 2^A\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-59"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-167">If <span class="process-math">\(A\)</span> is a set, then <span class="process-math">\(\{A\} \subset 2^A\text{.}\)</span>
+<div class="para" id="p-173">If <span class="process-math">\(A\)</span> is a set, then <span class="process-math">\(\{A\} \subset 2^A\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-60"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="p-168">If <span class="process-math">\(A\)</span> is a set, then <span class="process-math">\(\emptyset \in 2^A\text{.}\)</span>
+<div class="para" id="p-174">If <span class="process-math">\(A\)</span> is a set, then <span class="process-math">\(\emptyset \in 2^A\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-61"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<div class="para" id="p-169">If <span class="process-math">\(A\)</span> is a set, then <span class="process-math">\(\emptyset \subset 2^A\text{.}\)</span>
+<div class="para" id="p-175">If <span class="process-math">\(A\)</span> is a set, then <span class="process-math">\(\emptyset \subset 2^A\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-62"><h4 class="heading"><span class="codenumber">(f)</span></h4>
-<div class="para" id="p-170">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are sets and <span class="process-math">\(A \subseteq B\text{,}\)</span> then <span class="process-math">\(2^A \subseteq 2^B\text{.}\)</span>
+<div class="para" id="p-176">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are sets and <span class="process-math">\(A \subseteq B\text{,}\)</span> then <span class="process-math">\(2^A \subseteq 2^B\text{.}\)</span>
 </div></article></article><article class="exercise exercise-like" id="exercise-8"><h3 class="heading"><span class="codenumber">8<span class="period">.</span></span></h3>
-<div class="para" id="p-171">Let <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> be sets, both of which have at least two distinct members. Prove that there is a subset <span class="process-math">\(W \subset A \times B\)</span> that is not the Cartesian product of a subset of <span class="process-math">\(A\)</span> with a subset of <span class="process-math">\(B\text{.}\)</span> [Thus, not every subset of a Cartesian product is the Cartesian product of a pair of subsets.]</div></article><article class="exercise exercise-like" id="exercise-9"><h3 class="heading"><span class="codenumber">9<span class="period">.</span></span></h3>
-<div class="para" id="p-172">Let <span class="process-math">\(I\)</span> be the set of real numbers that are greater than <span class="process-math">\(0\text{.}\)</span> For each <span class="process-math">\(x \in I\text{,}\)</span> let <span class="process-math">\(A_x\)</span> be the open interval <span class="process-math">\((0,x)\text{.}\)</span> Prove that <span class="process-math">\(\bigcap_{x \in I} A_x = \emptyset\text{,}\)</span> <span class="process-math">\(\bigcup_{x \in I} A_x = I\text{.}\)</span> For each <span class="process-math">\(x \in I\text{,}\)</span> let <span class="process-math">\(B_x\)</span> be the closed interval <span class="process-math">\([0,x]\text{.}\)</span> Prove that <span class="process-math">\(\bigcap_{x \in I} B_x = \{0\}\text{,}\)</span> <span class="process-math">\(\bigcup_{x \in I} B_x = I \cup \{0\}\text{.}\)</span>
+<div class="para" id="p-177">Let <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> be sets, both of which have at least two distinct members. Prove that there is a subset <span class="process-math">\(W \subset A \times B\)</span> that is not the Cartesian product of a subset of <span class="process-math">\(A\)</span> with a subset of <span class="process-math">\(B\text{.}\)</span> [Thus, not every subset of a Cartesian product is the Cartesian product of a pair of subsets.]</div></article><article class="exercise exercise-like" id="exercise-9"><h3 class="heading"><span class="codenumber">9<span class="period">.</span></span></h3>
+<div class="para" id="p-178">Let <span class="process-math">\(I\)</span> be the set of real numbers that are greater than <span class="process-math">\(0\text{.}\)</span> For each <span class="process-math">\(x \in I\text{,}\)</span> let <span class="process-math">\(A_x\)</span> be the open interval <span class="process-math">\((0,x)\text{.}\)</span> Prove that <span class="process-math">\(\bigcap_{x \in I} A_x = \emptyset\text{,}\)</span> <span class="process-math">\(\bigcup_{x \in I} A_x = I\text{.}\)</span> For each <span class="process-math">\(x \in I\text{,}\)</span> let <span class="process-math">\(B_x\)</span> be the closed interval <span class="process-math">\([0,x]\text{.}\)</span> Prove that <span class="process-math">\(\bigcap_{x \in I} B_x = \{0\}\text{,}\)</span> <span class="process-math">\(\bigcup_{x \in I} B_x = I \cup \{0\}\text{.}\)</span>
 </div></article><article class="exercise exercise-like" id="exercise-10"><h3 class="heading"><span class="codenumber">10<span class="period">.</span></span></h3>
 <div class="introduction" id="introduction-18">
-<div class="para" id="p-173">For each of the following, answer true if the statement is always true. If the statement is only sometimes true or never true, answer false and provide a concrete example to illustrate that the statement is false. If a statement is true, explain why. As an example of a true statement, consider the statement</div> <blockquote class="blockquote" id="blockquote-2"><div class="para" id="p-174">Let <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\)</span> be sets such that <span class="process-math">\(A \cap B = A \cap C\)</span> and <span class="process-math">\(A \cap B \neq \emptyset\text{.}\)</span>
-</div></blockquote> <div class="para" id="p-175">Then <span class="process-math">\(B \cap C \neq \emptyset\text{.}\)</span> We can justify the truth of this statement with a short argument. Since <span class="process-math">\(A \cap B \neq \emptyset\text{,}\)</span> there is an element <span class="process-math">\(x \in A \cap B\text{.}\)</span> Then <span class="process-math">\(x \in B\text{.}\)</span> Since <span class="process-math">\(A \cap B = A \cap C\text{,}\)</span> we also must have <span class="process-math">\(x \in A \cap C\text{,}\)</span> which implies that <span class="process-math">\(x \in C\text{.}\)</span> Thus, <span class="process-math">\(x \in B \cap C\)</span> and <span class="process-math">\(B \cap C \neq \emptyset\text{.}\)</span> As an example of a false statement, consider the statement</div> <blockquote class="blockquote" id="blockquote-3"><div class="para" id="p-176">Let <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\)</span> be sets such that <span class="process-math">\(A \cap B = A \cap C\text{.}\)</span>
-</div></blockquote> <div class="para" id="p-177">Then <span class="process-math">\(B = C\text{.}\)</span> We can show that this statement is false by providing a counterexample. For example, let <span class="process-math">\(A = \{0,1\}\text{,}\)</span> <span class="process-math">\(B=\{1\}\text{,}\)</span> and <span class="process-math">\(C = \{1,2\}\text{.}\)</span> Then <span class="process-math">\(A \cap B = \{1\} = A \cap C\text{,}\)</span> but <span class="process-math">\(B \neq C\text{.}\)</span>
+<div class="para" id="p-179">For each of the following, answer true if the statement is always true. If the statement is only sometimes true or never true, answer false and provide a concrete example to illustrate that the statement is false. If a statement is true, explain why. As an example of a true statement, consider the statement</div> <blockquote class="blockquote" id="blockquote-2"><div class="para" id="p-180">Let <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\)</span> be sets such that <span class="process-math">\(A \cap B = A \cap C\)</span> and <span class="process-math">\(A \cap B \neq \emptyset\text{.}\)</span>
+</div></blockquote> <div class="para" id="p-181">Then <span class="process-math">\(B \cap C \neq \emptyset\text{.}\)</span> We can justify the truth of this statement with a short argument. Since <span class="process-math">\(A \cap B \neq \emptyset\text{,}\)</span> there is an element <span class="process-math">\(x \in A \cap B\text{.}\)</span> Then <span class="process-math">\(x \in B\text{.}\)</span> Since <span class="process-math">\(A \cap B = A \cap C\text{,}\)</span> we also must have <span class="process-math">\(x \in A \cap C\text{,}\)</span> which implies that <span class="process-math">\(x \in C\text{.}\)</span> Thus, <span class="process-math">\(x \in B \cap C\)</span> and <span class="process-math">\(B \cap C \neq \emptyset\text{.}\)</span> As an example of a false statement, consider the statement</div> <blockquote class="blockquote" id="blockquote-3"><div class="para" id="p-182">Let <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\)</span> be sets such that <span class="process-math">\(A \cap B = A \cap C\text{.}\)</span>
+</div></blockquote> <div class="para" id="p-183">Then <span class="process-math">\(B = C\text{.}\)</span> We can show that this statement is false by providing a counterexample. For example, let <span class="process-math">\(A = \{0,1\}\text{,}\)</span> <span class="process-math">\(B=\{1\}\text{,}\)</span> and <span class="process-math">\(C = \{1,2\}\text{.}\)</span> Then <span class="process-math">\(A \cap B = \{1\} = A \cap C\text{,}\)</span> but <span class="process-math">\(B \neq C\text{.}\)</span>
 </div>
 </div>
 <article class="task exercise-like" id="task-63"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-178">If <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\)</span> are sets and <span class="process-math">\(A \subseteq B\)</span> and <span class="process-math">\(A \subseteq C\text{,}\)</span> then <span class="process-math">\(A \subseteq (B \cap C)\text{.}\)</span>
+<div class="para" id="p-184">If <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\)</span> are sets and <span class="process-math">\(A \subseteq B\)</span> and <span class="process-math">\(A \subseteq C\text{,}\)</span> then <span class="process-math">\(A \subseteq (B \cap C)\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-64"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-179">If <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\)</span> are sets and <span class="process-math">\(A \subseteq C\)</span> and <span class="process-math">\(B \subseteq C\text{,}\)</span> then <span class="process-math">\((A \cup B) \subseteq C\text{.}\)</span>
+<div class="para" id="p-185">If <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\)</span> are sets and <span class="process-math">\(A \subseteq C\)</span> and <span class="process-math">\(B \subseteq C\text{,}\)</span> then <span class="process-math">\((A \cup B) \subseteq C\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-65"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-180">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are subsets of a set <span class="process-math">\(X\)</span> and <span class="process-math">\(A \subseteq B\text{,}\)</span> then <span class="process-math">\((X \setminus A) \subseteq (X \setminus B)\text{.}\)</span>
+<div class="para" id="p-186">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are subsets of a set <span class="process-math">\(X\)</span> and <span class="process-math">\(A \subseteq B\text{,}\)</span> then <span class="process-math">\((X \setminus A) \subseteq (X \setminus B)\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-66"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="p-181">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are subsets of a set <span class="process-math">\(X\)</span> and <span class="process-math">\(A \subseteq B\text{,}\)</span> then <span class="process-math">\((X \setminus B) \subseteq (X \setminus A)\text{.}\)</span>
+<div class="para" id="p-187">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are subsets of a set <span class="process-math">\(X\)</span> and <span class="process-math">\(A \subseteq B\text{,}\)</span> then <span class="process-math">\((X \setminus B) \subseteq (X \setminus A)\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-67"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<div class="para" id="p-182">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are sets, then <span class="process-math">\((A \cup B) \setminus B = A\text{.}\)</span>
+<div class="para" id="p-188">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are sets, then <span class="process-math">\((A \cup B) \setminus B = A\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-68"><h4 class="heading"><span class="codenumber">(f)</span></h4>
-<div class="para" id="p-183">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are sets, then <span class="process-math">\(A \setminus (A \setminus B) = B\text{.}\)</span>
+<div class="para" id="p-189">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are sets, then <span class="process-math">\(A \setminus (A \setminus B) = B\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-69"><h4 class="heading"><span class="codenumber">(g)</span></h4>
-<div class="para" id="p-184">If <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\)</span> are sets, then <span class="process-math">\(A \cap (B \setminus C) = (A \cap B) \setminus (A \cap C)\text{.}\)</span>
+<div class="para" id="p-190">If <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\)</span> are sets, then <span class="process-math">\(A \cap (B \setminus C) = (A \cap B) \setminus (A \cap C)\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-70"><h4 class="heading"><span class="codenumber">(h)</span></h4>
-<div class="para" id="p-185">If <span class="process-math">\(A\)</span> and <span class="process-math">\(C\)</span> are subsets of a set <span class="process-math">\(X\text{,}\)</span> then <span class="process-math">\((A \setminus C) = A \cap (X \setminus C)\text{.}\)</span>
+<div class="para" id="p-191">If <span class="process-math">\(A\)</span> and <span class="process-math">\(C\)</span> are subsets of a set <span class="process-math">\(X\text{,}\)</span> then <span class="process-math">\((A \setminus C) = A \cap (X \setminus C)\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-71"><h4 class="heading"><span class="codenumber">(i)</span></h4>
-<div class="para" id="p-186">There are no elements of the set <span class="process-math">\(\{\emptyset\}\text{.}\)</span>
+<div class="para" id="p-192">There are no elements of the set <span class="process-math">\(\{\emptyset\}\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-72"><h4 class="heading"><span class="codenumber">(j)</span></h4>
-<div class="para" id="p-187">There are two distinct objects that belong to the set <span class="process-math">\(\{\emptyset, \{\emptyset\}\}\text{.}\)</span>
+<div class="para" id="p-193">There are two distinct objects that belong to the set <span class="process-math">\(\{\emptyset, \{\emptyset\}\}\text{.}\)</span>
 </div></article></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_sets_summ.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="chap_functions.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

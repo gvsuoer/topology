@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -12,8 +12,21 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para">
-<a href="" class="xref" data-knowl="./knowl/act_metric_space_products.html" title="Activity 11.3">Activity 11.3</a> provides three of the four items that are necessary to prove that <span class="process-math">\(d\)</span> as defined in <a href="" class="xref" data-knowl="./knowl/eq_product_metric.html" title="Equation 11.1">(11.1)</a> is a metric. We verify the last property, the triangle inequality, now.</div>
+<div class="para logical">
+<div class="para">If we have two metric spaces <span class="process-math">\((X, d_1)\)</span> and <span class="process-math">\((X_2 ,d_2)\text{,}\)</span> we might wonder if we can make the set <span class="process-math">\(X_1 \times X_2\)</span> into a metric space. A natural approach might be to define a function <span class="process-math">\(d : (X_1 \times X_2) \times (X_1 \times X_2) \to \R\)</span> by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d((x,y),(u,v)) = d_1(x,u)d_2(y,v)
+\end{equation*}
+</div>
+<div class="para">for <span class="process-math">\((x,y)\)</span> and <span class="process-math">\((u,v)\)</span> in <span class="process-math">\(X_1 \times X_2\text{.}\)</span> However, this <span class="process-math">\(d\)</span> does not define a metric. For example, if <span class="process-math">\(x \in X_1\)</span> and <span class="process-math">\(y \neq v\)</span> in <span class="process-math">\(X_2\text{,}\)</span> then <span class="process-math">\(d((x,y),(x,v)) = 0\)</span> even though <span class="process-math">\((x,y) \neq (x,v)\text{.}\)</span> To make a metric, we can take a clue from the Euclidean metric on <span class="process-math">\(\R \times \R\text{.}\)</span> On <span class="process-math">\(\R\text{,}\)</span> the metric has the form <span class="process-math">\(d_1(x,y) = |x-y|\text{,}\)</span> while on <span class="process-math">\(\R^2\)</span> the metric  is</div>
+<div class="displaymath process-math">
+\begin{align*}
+d_E((x_1,x_2), (y_1,y_2)) \amp = \sqrt{ (x_1-y_1)^2 + (x_2-y_2)^2}\\
+\amp = \sqrt{d_1(x_1,y_1)^2 + d_1(x_2,y_2)^2}\text{.}
+\end{align*}
+</div>
+</div>
 <span class="incontext"><a href="sec_prod_metric.html#p-1281" class="internal">in-context</a></span>
 </body>
 </html>

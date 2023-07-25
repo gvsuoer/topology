@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Unions, Intersections, and Complements of Sets</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -655,59 +656,95 @@ U \setminus A = \{x \in U \mid x \notin A\}\text{.}
 <div class="para" id="p-69">We can visualize these sets using Venn diagrams. A Venn diagram is a depiction of sets using geometric figures. For example, if <span class="process-math">\(U\)</span> is a set containing all other sets of interest (we call <span class="process-math">\(U\)</span> the <dfn class="terminology">universal</dfn> set), we can represent <span class="process-math">\(U\)</span> as a large container (say a rectangle) with subsets <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> as smaller containers (say circles), and shade the elements in a given set. The Venn diagrams in <a href="" class="xref" data-knowl="./knowl/F_Venn.html" title="Figure 1.2">Figure 1.2</a> depict the sets <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> <span class="process-math">\(A \cup B\text{,}\)</span> <span class="process-math">\(A \cap B\text{,}\)</span> <span class="process-math">\(A^c\text{,}\)</span> and <span class="process-math">\(B^c\text{.}\)</span>
 </div>
 <figure class="figure figure-like" id="F_Venn"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel top" style="width:8.333333333333334%;"><img src="generated/latex-image/venn-a.svg" role="img" class="contained"></div>
-<div class="sbspanel top" style="width:8.333333333333334%;"><img src="generated/latex-image/image-3.svg" role="img" class="contained"></div>
-<div class="sbspanel top" style="width:8.333333333333334%;"><img src="generated/latex-image/image-4.svg" role="img" class="contained"></div>
-<div class="sbspanel top" style="width:8.333333333333334%;"><img src="generated/latex-image/image-5.svg" role="img" class="contained"></div>
-<div class="sbspanel top" style="width:8.333333333333334%;"><img src="generated/latex-image/image-6.svg" role="img" class="contained"></div>
-<div class="sbspanel top" style="width:8.333333333333334%;"><img src="generated/latex-image/image-7.svg" role="img" class="contained"></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><img src="external/Venn_Diagram_A.svg" role="img" class="contained"></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><img src="external/Venn_Diagram_B.svg" role="img" class="contained"></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><img src="external/Venn_Diagram_union.svg" role="img" class="contained"></div>
 </div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2<span class="period">.</span></span><span class="space"> </span>Venn diagrams</figcaption></figure><div class="para" id="p-70">As we have discussed, to prove that two sets <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> are equal we prove that each is a subset of the other. The next example provides another illustration of the idea.</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:33.3333333333333%;"><div class="para logical" id="p-70"><div class="displaymath process-math">
+\begin{equation*}
+A
+\end{equation*}
+</div></div></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><div class="para logical" id="p-71"><div class="displaymath process-math">
+\begin{equation*}
+B
+\end{equation*}
+</div></div></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><div class="para logical" id="p-72"><div class="displaymath process-math">
+\begin{equation*}
+A \cup B
+\end{equation*}
+</div></div></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:33.3333333333333%;"><img src="external/Venn_Diagram_intersection.svg" role="img" class="contained"></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><img src="external/Venn_Diagram_A_complement.svg" role="img" class="contained"></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><img src="external/Venn_Diagram_B_complement.svg" role="img" class="contained"></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:33.3333333333333%;"><div class="para logical" id="p-73"><div class="displaymath process-math">
+\begin{equation*}
+A \cap B
+\end{equation*}
+</div></div></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><div class="para logical" id="p-74"><div class="displaymath process-math">
+\begin{equation*}
+A^{c}
+\end{equation*}
+</div></div></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><div class="para logical" id="p-75"><div class="displaymath process-math">
+\begin{equation*}
+B^{c}
+\end{equation*}
+</div></div></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2<span class="period">.</span></span><span class="space"> </span>Venn diagrams</figcaption></figure><div class="para" id="p-76">As we have discussed, to prove that two sets <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> are equal we prove that each is a subset of the other. The next example provides another illustration of the idea.</div>
 <article class="example example-like" id="ex_set_eq"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-71">Let <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\)</span> be sets. We will prove that <span class="process-math">\(A \cap (B \setminus C) = (A \cap B) \setminus (A \cap C)\text{.}\)</span>
-</div> <div class="para" id="p-72">To prove this set equality we must prove that <span class="process-math">\(A \cap (B \setminus C) \subseteq (A \cap B) \setminus (A \cap C)\)</span> and <span class="process-math">\((A \cap B) \setminus (A \cap C) \subseteq A \cap (B \setminus C)\text{.}\)</span> We start with <span class="process-math">\(A \cap (B \setminus C) \subseteq (A \cap B) \setminus (A \cap C)\text{.}\)</span>
-</div> <div class="para" id="p-73">To prove that <span class="process-math">\(A \cap (B \setminus C) \subseteq (A \cap B) \setminus (A \cap C)\text{,}\)</span> we need to demonstrate that every element in <span class="process-math">\(A \cap (B \setminus C)\)</span> is also in <span class="process-math">\((A \cap B) \setminus (A \cap C)\text{.}\)</span> To do this, we select an arbitrary element in <span class="process-math">\(A \cap (B \setminus C)\)</span> and show that this element is in <span class="process-math">\((A \cap B) \setminus (A \cap C)\text{.}\)</span> Let <span class="process-math">\(x \in A \cap (B \setminus C)\text{.}\)</span> Then <span class="process-math">\(x \in A\)</span> and <span class="process-math">\(x \in B \setminus C\text{.}\)</span> The fact that <span class="process-math">\(x \in B \setminus C\)</span> implies that <span class="process-math">\(x \in B\)</span> but <span class="process-math">\(x \notin C\text{.}\)</span> Therefore, <span class="process-math">\(x \in A\)</span> and <span class="process-math">\(x \in B\text{,}\)</span> but <span class="process-math">\(x \notin C\text{.}\)</span> This implies that <span class="process-math">\(x \in A\)</span> and <span class="process-math">\(x \in B\text{,}\)</span> but <span class="process-math">\(x \in A\)</span> and <span class="process-math">\(x \notin C\text{.}\)</span> So <span class="process-math">\(x \in A\)</span> and <span class="process-math">\(x \in B\text{,}\)</span> but <span class="process-math">\(x \notin A \cap C\text{.}\)</span> We conclude that <span class="process-math">\(x \in (A \cap B) \setminus (A \cap C)\text{.}\)</span> This proves that <span class="process-math">\(A \cap (B \setminus C) \subseteq (A \cap B) \setminus (A \cap C)\text{.}\)</span>
-</div> <div class="para" id="p-74">For the reverse containment, we let <span class="process-math">\(y \in (A \cap B) \setminus (A \cap C)\text{.}\)</span> So <span class="process-math">\(y \in A \cap B\)</span> but <span class="process-math">\(y \notin A \cap C\text{.}\)</span> Since <span class="process-math">\(y \in A \cap B\text{,}\)</span> we know that <span class="process-math">\(y \in A\)</span> and <span class="process-math">\(y \in B\text{.}\)</span> The fact that <span class="process-math">\(y \notin A \cap C\)</span> means that <span class="process-math">\(y \notin C\text{.}\)</span> So <span class="process-math">\(y \in A\text{,}\)</span> <span class="process-math">\(y \in B\text{,}\)</span> and <span class="process-math">\(y \notin C\text{.}\)</span> Thus, <span class="process-math">\(y \in A\)</span> and <span class="process-math">\(y \in B \setminus C\text{.}\)</span> We conclude that <span class="process-math">\(y \in A \cap (B \setminus C)\text{,}\)</span> which shows that <span class="process-math">\((A \cap B) \setminus (A \cap C) \subseteq A \cap (B \setminus C)\text{.}\)</span> The two containments, <span class="process-math">\(A \cap (B \setminus C) \subseteq (A \cap B) \setminus (A \cap C)\)</span> and <span class="process-math">\((A \cap B) \setminus (A \cap C) \subseteq A \cap (B \setminus C)\)</span> demonstrate that <span class="process-math">\(A \cap (B \setminus C) = (A \cap B) \setminus (A \cap C)\text{.}\)</span>
-</div></article><div class="para" id="p-75">We will use the ideas in <a href="" class="xref" data-knowl="./knowl/act_set_equality.html" title="Activity 1.3">Activity 1.3</a> and <a href="" class="xref" data-knowl="./knowl/ex_set_eq.html" title="Example 1.3">Example 1.3</a> to prove set equalities throughout this text. The next activity will provide some additional practice.</div>
+<div class="para" id="p-77">Let <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\)</span> be sets. We will prove that <span class="process-math">\(A \cap (B \setminus C) = (A \cap B) \setminus (A \cap C)\text{.}\)</span>
+</div> <div class="para" id="p-78">To prove this set equality we must prove that <span class="process-math">\(A \cap (B \setminus C) \subseteq (A \cap B) \setminus (A \cap C)\)</span> and <span class="process-math">\((A \cap B) \setminus (A \cap C) \subseteq A \cap (B \setminus C)\text{.}\)</span> We start with <span class="process-math">\(A \cap (B \setminus C) \subseteq (A \cap B) \setminus (A \cap C)\text{.}\)</span>
+</div> <div class="para" id="p-79">To prove that <span class="process-math">\(A \cap (B \setminus C) \subseteq (A \cap B) \setminus (A \cap C)\text{,}\)</span> we need to demonstrate that every element in <span class="process-math">\(A \cap (B \setminus C)\)</span> is also in <span class="process-math">\((A \cap B) \setminus (A \cap C)\text{.}\)</span> To do this, we select an arbitrary element in <span class="process-math">\(A \cap (B \setminus C)\)</span> and show that this element is in <span class="process-math">\((A \cap B) \setminus (A \cap C)\text{.}\)</span> Let <span class="process-math">\(x \in A \cap (B \setminus C)\text{.}\)</span> Then <span class="process-math">\(x \in A\)</span> and <span class="process-math">\(x \in B \setminus C\text{.}\)</span> The fact that <span class="process-math">\(x \in B \setminus C\)</span> implies that <span class="process-math">\(x \in B\)</span> but <span class="process-math">\(x \notin C\text{.}\)</span> Therefore, <span class="process-math">\(x \in A\)</span> and <span class="process-math">\(x \in B\text{,}\)</span> but <span class="process-math">\(x \notin C\text{.}\)</span> This implies that <span class="process-math">\(x \in A\)</span> and <span class="process-math">\(x \in B\text{,}\)</span> but <span class="process-math">\(x \in A\)</span> and <span class="process-math">\(x \notin C\text{.}\)</span> So <span class="process-math">\(x \in A\)</span> and <span class="process-math">\(x \in B\text{,}\)</span> but <span class="process-math">\(x \notin A \cap C\text{.}\)</span> We conclude that <span class="process-math">\(x \in (A \cap B) \setminus (A \cap C)\text{.}\)</span> This proves that <span class="process-math">\(A \cap (B \setminus C) \subseteq (A \cap B) \setminus (A \cap C)\text{.}\)</span>
+</div> <div class="para" id="p-80">For the reverse containment, we let <span class="process-math">\(y \in (A \cap B) \setminus (A \cap C)\text{.}\)</span> So <span class="process-math">\(y \in A \cap B\)</span> but <span class="process-math">\(y \notin A \cap C\text{.}\)</span> Since <span class="process-math">\(y \in A \cap B\text{,}\)</span> we know that <span class="process-math">\(y \in A\)</span> and <span class="process-math">\(y \in B\text{.}\)</span> The fact that <span class="process-math">\(y \notin A \cap C\)</span> means that <span class="process-math">\(y \notin C\text{.}\)</span> So <span class="process-math">\(y \in A\text{,}\)</span> <span class="process-math">\(y \in B\text{,}\)</span> and <span class="process-math">\(y \notin C\text{.}\)</span> Thus, <span class="process-math">\(y \in A\)</span> and <span class="process-math">\(y \in B \setminus C\text{.}\)</span> We conclude that <span class="process-math">\(y \in A \cap (B \setminus C)\text{,}\)</span> which shows that <span class="process-math">\((A \cap B) \setminus (A \cap C) \subseteq A \cap (B \setminus C)\text{.}\)</span> The two containments, <span class="process-math">\(A \cap (B \setminus C) \subseteq (A \cap B) \setminus (A \cap C)\)</span> and <span class="process-math">\((A \cap B) \setminus (A \cap C) \subseteq A \cap (B \setminus C)\)</span> demonstrate that <span class="process-math">\(A \cap (B \setminus C) = (A \cap B) \setminus (A \cap C)\text{.}\)</span>
+</div></article><div class="para" id="p-81">We will use the ideas in <a href="" class="xref" data-knowl="./knowl/act_set_equality.html" title="Activity 1.3">Activity 1.3</a> and <a href="" class="xref" data-knowl="./knowl/ex_set_eq.html" title="Example 1.3">Example 1.3</a> to prove set equalities throughout this text. The next activity will provide some additional practice.</div>
 <article class="activity project-like" id="act_sets_1"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-6"><div class="para" id="p-76">In this activity we work with unions, intersections, and complements of sets. Let <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> be sets.</div></div>
+<div class="introduction" id="introduction-6"><div class="para" id="p-82">In this activity we work with unions, intersections, and complements of sets. Let <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> be sets.</div></div>
 <article class="task exercise-like" id="task-23"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="introduction" id="introduction-7"><div class="para" id="p-77">Let <span class="process-math">\(A = \{1,2,3,4,5,6\}\)</span> and <span class="process-math">\(B = \{2,4,6,8,10\}\text{,}\)</span> with <span class="process-math">\(U = \{1,2,3,4,5,6,7,8,9,10\}\text{.}\)</span>
+<div class="introduction" id="introduction-7"><div class="para" id="p-83">Let <span class="process-math">\(A = \{1,2,3,4,5,6\}\)</span> and <span class="process-math">\(B = \{2,4,6,8,10\}\text{,}\)</span> with <span class="process-math">\(U = \{1,2,3,4,5,6,7,8,9,10\}\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-24"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="p-78">Determine the elements in <span class="process-math">\(A \cup B\)</span> and <span class="process-math">\(A \cap B\text{.}\)</span> What are the elements in <span class="process-math">\((A \cup B)^c\)</span> and <span class="process-math">\((A \cap B)^c\text{?}\)</span>
+<div class="para" id="p-84">Determine the elements in <span class="process-math">\(A \cup B\)</span> and <span class="process-math">\(A \cap B\text{.}\)</span> What are the elements in <span class="process-math">\((A \cup B)^c\)</span> and <span class="process-math">\((A \cap B)^c\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-25"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
-<div class="para" id="p-79">Determine the elements in <span class="process-math">\(A^{c} \cup B^{c}\)</span> and <span class="process-math">\(A^{c} \cap B^{c}\text{.}\)</span>
+<div class="para" id="p-85">Determine the elements in <span class="process-math">\(A^{c} \cup B^{c}\)</span> and <span class="process-math">\(A^{c} \cap B^{c}\text{.}\)</span>
 </div></article></article><article class="task exercise-like" id="task-26"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="introduction" id="introduction-8"><div class="para" id="p-80">Let <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> be arbitrary subsets of a universal set <span class="process-math">\(U\text{.}\)</span> There are connections between <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\)</span> and their complements, unions, and intersections.</div></div>
+<div class="introduction" id="introduction-8"><div class="para" id="p-86">Let <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> be arbitrary subsets of a universal set <span class="process-math">\(U\text{.}\)</span> There are connections between <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\)</span> and their complements, unions, and intersections.</div></div>
 <article class="task exercise-like" id="task-27"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="p-81">Use Venn diagrams to draw <span class="process-math">\((A \cup B)^c\)</span> and <span class="process-math">\((A \cap B)^c\text{.}\)</span>
+<div class="para" id="p-87">Use Venn diagrams to draw <span class="process-math">\((A \cup B)^c\)</span> and <span class="process-math">\((A \cap B)^c\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-28"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
-<div class="para" id="p-82">Use the Venn diagrams and the result of (a) to find and prove a relationship between <span class="process-math">\(A^c\text{,}\)</span> <span class="process-math">\(B^c\)</span> and <span class="process-math">\((A \cup B)^c\text{.}\)</span>
+<div class="para" id="p-88">Use the Venn diagrams and the result of (a) to find and prove a relationship between <span class="process-math">\(A^c\text{,}\)</span> <span class="process-math">\(B^c\)</span> and <span class="process-math">\((A \cup B)^c\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-29"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
-<div class="para" id="p-83">Use the Venn diagrams and the result of (a) to find and prove a relationship between <span class="process-math">\(A^c\text{,}\)</span> <span class="process-math">\(B^c\)</span> and <span class="process-math">\((A \cap B)^c\text{.}\)</span>
-</div></article></article></article><div class="para" id="p-84">In <a href="" class="xref" data-knowl="./knowl/act_sets_1.html" title="Activity 1.4">Activity 1.4</a> we worked with the union and intersection of two sets. There is no reason to restrict these definitions to only two sets, as the next activity illustrates.</div>
+<div class="para" id="p-89">Use the Venn diagrams and the result of (a) to find and prove a relationship between <span class="process-math">\(A^c\text{,}\)</span> <span class="process-math">\(B^c\)</span> and <span class="process-math">\((A \cap B)^c\text{.}\)</span>
+</div></article></article></article><div class="para" id="p-90">In <a href="" class="xref" data-knowl="./knowl/act_sets_1.html" title="Activity 1.4">Activity 1.4</a> we worked with the union and intersection of two sets. There is no reason to restrict these definitions to only two sets, as the next activity illustrates.</div>
 <article class="activity project-like" id="activity-4"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-9"><div class="para" id="p-85">To define an infinite collection of sets we often use what is called an <dfn class="terminology">indexing set</dfn>. An indexing set allows us to consider a collection of objects that are in one-to-one correspondence with a set like the positive integers, or even the real numbers. When using an indexing set, we generally make a statement such as ``let <span class="process-math">\(\{A_{\alpha}\}\)</span> for <span class="process-math">\(\alpha \in I\)</span> be a collection of sets indexed by some set <span class="process-math">\(I\)</span>". The collection <span class="process-math">\(\{A_{\alpha}\}_{\alpha \in I}\)</span> is called an <dfn class="terminology">indexed family of sets</dfn>.</div></div>
+<div class="introduction" id="introduction-9"><div class="para" id="p-91">To define an infinite collection of sets we often use what is called an <dfn class="terminology">indexing set</dfn>. An indexing set allows us to consider a collection of objects that are in one-to-one correspondence with a set like the positive integers, or even the real numbers. When using an indexing set, we generally make a statement such as ``let <span class="process-math">\(\{A_{\alpha}\}\)</span> for <span class="process-math">\(\alpha \in I\)</span> be a collection of sets indexed by some set <span class="process-math">\(I\)</span>". The collection <span class="process-math">\(\{A_{\alpha}\}_{\alpha \in I}\)</span> is called an <dfn class="terminology">indexed family of sets</dfn>.</div></div>
 <article class="task exercise-like" id="task-30"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="introduction" id="introduction-10"><div class="para" id="p-86">The set <span class="process-math">\(I\)</span> could be finite. As an example, let <span class="process-math">\(A_{n} = \{1, 2, 3, \ldots n\}\)</span> for <span class="process-math">\(n\)</span> in the set <span class="process-math">\(I = \{1,2,3, \ldots, 10\}\text{.}\)</span>
+<div class="introduction" id="introduction-10"><div class="para" id="p-92">The set <span class="process-math">\(I\)</span> could be finite. As an example, let <span class="process-math">\(A_{n} = \{1, 2, 3, \ldots n\}\)</span> for <span class="process-math">\(n\)</span> in the set <span class="process-math">\(I = \{1,2,3, \ldots, 10\}\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-31"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="p-87">What is <span class="process-math">\(A_5\text{?}\)</span> What is <span class="process-math">\(A_{8}\text{?}\)</span>
+<div class="para" id="p-93">What is <span class="process-math">\(A_5\text{?}\)</span> What is <span class="process-math">\(A_{8}\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-32"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
-<div class="para" id="p-88">How many sets are in the indexed family <span class="process-math">\(\{A_n\}_{n \in I}\text{?}\)</span>
+<div class="para" id="p-94">How many sets are in the indexed family <span class="process-math">\(\{A_n\}_{n \in I}\text{?}\)</span>
 </div></article></article><article class="task exercise-like" id="task-33"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-89">The indexing set can be infinite. For example, let <span class="process-math">\(A_{\alpha} = [0, |\alpha|)\)</span> for <span class="process-math">\(\alpha\)</span> in the set <span class="process-math">\(\R\)</span> (where <span class="process-math">\([a,b)\)</span> is the interval consisting of the real numbers <span class="process-math">\(x\)</span> such that <span class="process-math">\(a \leq x \lt b\)</span>). In this case, what is <span class="process-math">\(A_5\text{?}\)</span> What is <span class="process-math">\(A_{\pi}\text{?}\)</span> What is <span class="process-math">\(A_{-\frac{2}{3}}\text{?}\)</span>
+<div class="para" id="p-95">The indexing set can be infinite. For example, let <span class="process-math">\(A_{\alpha} = [0, |\alpha|)\)</span> for <span class="process-math">\(\alpha\)</span> in the set <span class="process-math">\(\R\)</span> (where <span class="process-math">\([a,b)\)</span> is the interval consisting of the real numbers <span class="process-math">\(x\)</span> such that <span class="process-math">\(a \leq x \lt b\)</span>). In this case, what is <span class="process-math">\(A_5\text{?}\)</span> What is <span class="process-math">\(A_{\pi}\text{?}\)</span> What is <span class="process-math">\(A_{-\frac{2}{3}}\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-34"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="introduction" id="introduction-11"><div class="para" id="p-90">We have defined the union and intersection of two sets. The same idea can be extended to define the union and intersection of an indexed collection of sets.</div></div>
+<div class="introduction" id="introduction-11"><div class="para" id="p-96">We have defined the union and intersection of two sets. The same idea can be extended to define the union and intersection of an indexed collection of sets.</div></div>
 <article class="task exercise-like" id="task-35"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para logical" id="p-91">
+<div class="para logical" id="p-97">
 <div class="para">Recall that if <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are sets, the intersection <span class="process-math">\(A \cap B\)</span> is the set <span class="process-math">\(\{x \mid x \in A \text{ and }  x \in B\}\text{.}\)</span> How can we extend this definition from two sets to any collection of sets? In other words, how do we <em class="emphasis">define</em>
 </div>
 <div class="displaymath process-math">
@@ -718,7 +755,7 @@ U \setminus A = \{x \in U \mid x \notin A\}\text{.}
 <div class="para">In the example in (b), what set is <span class="process-math">\(\ds \bigcap_{\alpha \in \R} A_{\alpha}\text{?}\)</span>
 </div>
 </div></article><article class="task exercise-like" id="task-36"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
-<div class="para logical" id="p-92">
+<div class="para logical" id="p-98">
 <div class="para">Recall that if <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are sets, the union <span class="process-math">\(A \cup B\)</span> is the set <span class="process-math">\(\{x \mid x \in A \text{ or }  x \in B\}\text{.}\)</span> How can we extend this definition from two sets to any collection of sets? In other words, how do we <em class="emphasis">define</em>
 </div>
 <div class="displaymath process-math">
@@ -728,25 +765,25 @@ U \setminus A = \{x \in U \mid x \notin A\}\text{.}
 </div>
 <div class="para">In the example in (b), what set is <span class="process-math">\(\ds \bigcup_{\alpha \in \R} A_{\alpha}\text{?}\)</span>
 </div>
-</div></article></article></article><div class="para" id="p-93">These properties <span class="process-math">\((A \cap B)^c = A^c \cup B^c\)</span> and <span class="process-math">\((A \cup B)^c = A^c \cap B^c\)</span> that we learned about in <a href="" class="xref" data-knowl="./knowl/act_sets_1.html" title="Activity 1.4">Activity 1.4</a> are called DeMorgan’s Laws. These laws apply to any union or intersection of sets, finite or infinite. The proofs are left for <a href="" class="xref" data-knowl="./knowl/ex_DeMorgan.html" title="Exercise 4">Exercise 4</a>.</div>
+</div></article></article></article><div class="para" id="p-99">These properties <span class="process-math">\((A \cap B)^c = A^c \cup B^c\)</span> and <span class="process-math">\((A \cup B)^c = A^c \cap B^c\)</span> that we learned about in <a href="" class="xref" data-knowl="./knowl/act_sets_1.html" title="Activity 1.4">Activity 1.4</a> are called DeMorgan’s Laws. These laws apply to any union or intersection of sets, finite or infinite. The proofs are left for <a href="" class="xref" data-knowl="./knowl/ex_DeMorgan.html" title="Exercise 4">Exercise 4</a>.</div>
 <article class="theorem theorem-like" id="theorem-1"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.4</span><span class="period">.</span><span class="space"> </span><span class="title">DeMorgan’s Laws.</span>
 </h3>
-<div class="para logical" id="p-94">
+<div class="para logical" id="p-100">
 <div class="para">Let <span class="process-math">\(\{A_{\alpha}\}\)</span> is a collection of sets indexed by a set <span class="process-math">\(I\)</span> in some universal set <span class="process-math">\(U\text{.}\)</span> Then</div>
 <ol class="decimal">
-<li id="li-20"><div class="para" id="p-95"><span class="process-math">\(\displaystyle \displaystyle \left(\bigcup_{\alpha \in I} A_{\alpha}\right)^c = \bigcap_{\alpha \in I} A_{\alpha}^c\)</span></div></li>
-<li id="li-21"><div class="para" id="p-96"><span class="process-math">\(\displaystyle \displaystyle \left(\bigcap_{\alpha \in I} A_{\alpha}\right)^c = \bigcup_{\alpha \in I} A_{\alpha}^c\)</span></div></li>
+<li id="li-20"><div class="para" id="p-101"><span class="process-math">\(\displaystyle \displaystyle \left(\bigcup_{\alpha \in I} A_{\alpha}\right)^c = \bigcap_{\alpha \in I} A_{\alpha}^c\)</span></div></li>
+<li id="li-21"><div class="para" id="p-102"><span class="process-math">\(\displaystyle \displaystyle \left(\bigcap_{\alpha \in I} A_{\alpha}\right)^c = \bigcup_{\alpha \in I} A_{\alpha}^c\)</span></div></li>
 </ol>
 </div></article><article class="activity project-like" id="activity-5"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6</span><span class="period">.</span>
 </h3>
 <article class="task exercise-like" id="task-37"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-97">Verify DeMorgan’s Laws in the specific case of <span class="process-math">\(A_{\alpha} = \{1, 2, 3, \ldots \alpha\}\)</span> in <span class="process-math">\(U = \Z\text{,}\)</span> where <span class="process-math">\(\alpha\)</span> is any element of the indexing set <span class="process-math">\(I = \Z^+\text{.}\)</span>
+<div class="para" id="p-103">Verify DeMorgan’s Laws in the specific case of <span class="process-math">\(A_{\alpha} = \{1, 2, 3, \ldots \alpha\}\)</span> in <span class="process-math">\(U = \Z\text{,}\)</span> where <span class="process-math">\(\alpha\)</span> is any element of the indexing set <span class="process-math">\(I = \Z^+\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-38"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-98">Why should the complement of a union be an intersection and why should the complement of an intersection be a union?</div>
+<div class="para" id="p-104">Why should the complement of a union be an intersection and why should the complement of an intersection be a union?</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-1" id="hint-1"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-1"><div class="hint solution-like"><div class="para" id="p-99">Consider the definitions of unions and intersections.</div></div></div>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-1" id="hint-1"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-1"><div class="hint solution-like"><div class="para" id="p-105">Consider the definitions of unions and intersections.</div></div></div>
 </div></article></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_intervals.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_cart_prod.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

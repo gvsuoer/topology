@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Components</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -603,40 +604,40 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_components"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">Components</span>
 </h2>
-<div class="para" id="p-2277">As <a href="" class="xref" data-knowl="./knowl/act_connected_subsets_R.html" title="Activity 18.6">Activity 18.6</a> demonstrates, spaces like <span class="process-math">\(A = (1,2) \cup (3,4)\)</span> are not connected. Even so, <span class="process-math">\(A\)</span> is made of two connected subsets <span class="process-math">\((1,2)\)</span> and <span class="process-math">\((3,4)\text{.}\)</span> These connected subsets are called <dfn class="terminology">components</dfn>.</div>
+<div class="para" id="p-2283">As <a href="" class="xref" data-knowl="./knowl/act_connected_subsets_R.html" title="Activity 18.6">Activity 18.6</a> demonstrates, spaces like <span class="process-math">\(A = (1,2) \cup (3,4)\)</span> are not connected. Even so, <span class="process-math">\(A\)</span> is made of two connected subsets <span class="process-math">\((1,2)\)</span> and <span class="process-math">\((3,4)\text{.}\)</span> These connected subsets are called <dfn class="terminology">components</dfn>.</div>
 <article class="definition definition-like" id="definition-74"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">18.9</span><span class="period">.</span>
-</h3> <div class="para" id="p-2278">A subspace <span class="process-math">\(C\)</span> of a topological space <span class="process-math">\(X\)</span> is a component (or connected component) of <span class="process-math">\(X\)</span> if <span class="process-math">\(C\)</span> is connected and there is no larger connected subspace of <span class="process-math">\(X\)</span> that contains <span class="process-math">\(C\text{.}\)</span>
-</div></article><div class="para" id="p-2279">As an example, if <span class="process-math">\(X = (1,2) \cup [4,10) \cup \{-1,15\}\text{,}\)</span> then the components of <span class="process-math">\(X\)</span> are <span class="process-math">\((1,2)\text{,}\)</span> <span class="process-math">\([4,10)\text{,}\)</span> <span class="process-math">\(\{-1\}\)</span> and <span class="process-math">\(\{15\}\text{.}\)</span> As the next activity shows, we can always partition a topological space into a disjoint union of compenents.</div>
+</h3> <div class="para" id="p-2284">A subspace <span class="process-math">\(C\)</span> of a topological space <span class="process-math">\(X\)</span> is a <dfn class="terminology">component</dfn> (or <dfn class="terminology">connected component</dfn>) of <span class="process-math">\(X\)</span> if <span class="process-math">\(C\)</span> is connected and there is no larger connected subspace of <span class="process-math">\(X\)</span> that contains <span class="process-math">\(C\text{.}\)</span>
+</div></article><div class="para" id="p-2285">As an example, if <span class="process-math">\(X = (1,2) \cup [4,10) \cup \{-1,15\}\text{,}\)</span> then the components of <span class="process-math">\(X\)</span> are <span class="process-math">\((1,2)\text{,}\)</span> <span class="process-math">\([4,10)\text{,}\)</span> <span class="process-math">\(\{-1\}\)</span> and <span class="process-math">\(\{15\}\text{.}\)</span> As the next activity shows, we can always partition a topological space into a disjoint union of compenents.</div>
 <article class="activity project-like" id="act_connected_compenent"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">18.7</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-261"><div class="para" id="p-2280">Let <span class="process-math">\((X, \tau)\)</span> be a nonempty topological space.</div></div>
+<div class="introduction" id="introduction-261"><div class="para" id="p-2286">Let <span class="process-math">\((X, \tau)\)</span> be a nonempty topological space.</div></div>
 <article class="task exercise-like" id="task-960"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-2281">Show that if <span class="process-math">\(x \in X\text{,}\)</span> then <span class="process-math">\(\{x\}\)</span> is connected.</div></article><article class="task exercise-like" id="task-961"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-2282">Suppose that <span class="process-math">\(X\)</span> is a topological space and <span class="process-math">\(\{A_{\alpha}\}\)</span> for <span class="process-math">\(\alpha\)</span> in some indexing set <span class="process-math">\(I\)</span> is a collection of connected subsets of <span class="process-math">\(X\text{.}\)</span> Let <span class="process-math">\(A = \bigcup_{\alpha \in I} A_{\alpha}\text{.}\)</span> Suppose that <span class="process-math">\(\bigcap_{\alpha \in I} A_{\alpha} \neq \emptyset\text{.}\)</span> Show that <span class="process-math">\(A\)</span> is a connected subset of <span class="process-math">\(X\text{.}\)</span>
+<div class="para" id="p-2287">Show that if <span class="process-math">\(x \in X\text{,}\)</span> then <span class="process-math">\(\{x\}\)</span> is connected.</div></article><article class="task exercise-like" id="task-961"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-2288">Suppose that <span class="process-math">\(X\)</span> is a topological space and <span class="process-math">\(\{A_{\alpha}\}\)</span> for <span class="process-math">\(\alpha\)</span> in some indexing set <span class="process-math">\(I\)</span> is a collection of connected subsets of <span class="process-math">\(X\text{.}\)</span> Let <span class="process-math">\(A = \bigcup_{\alpha \in I} A_{\alpha}\text{.}\)</span> Suppose that <span class="process-math">\(\bigcap_{\alpha \in I} A_{\alpha} \neq \emptyset\text{.}\)</span> Show that <span class="process-math">\(A\)</span> is a connected subset of <span class="process-math">\(X\text{.}\)</span>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-30" id="hint-30"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-30"><div class="hint solution-like"><div class="para" id="p-2283">Assume a separation and use <a href="" class="xref" data-knowl="./knowl/lem_separation_subset.html" title="Lemma 18.7">Lemma 18.7</a>.</div></div></div>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-30" id="hint-30"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-30"><div class="hint solution-like"><div class="para" id="p-2289">Assume a separation and use <a href="" class="xref" data-knowl="./knowl/lem_separation_subset.html" title="Lemma 18.7">Lemma 18.7</a>.</div></div></div>
 </div></article><article class="task exercise-like" id="task-962"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="introduction" id="introduction-262"><div class="para" id="p-2284">Part (a) shows that every element in <span class="process-math">\(x\)</span> belongs to some connected subset of <span class="process-math">\(X\text{.}\)</span> So we can write <span class="process-math">\(X\)</span> as a union of connected subsets. But there is probably overlap. To remove the overlap, we define the following relation <span class="process-math">\(\sim\)</span> on <span class="process-math">\(X\text{:}\)</span> For <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> in <span class="process-math">\(X\text{,}\)</span> <span class="process-math">\(x \sim y\)</span> if <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> are contained in the same connected subset of <span class="process-math">\(X\text{.}\)</span> As with any relation, we ask if <span class="process-math">\(\sim\)</span> is an equivalence relation.</div></div>
+<div class="introduction" id="introduction-262"><div class="para" id="p-2290">Part (a) shows that every element in <span class="process-math">\(x\)</span> belongs to some connected subset of <span class="process-math">\(X\text{.}\)</span> So we can write <span class="process-math">\(X\)</span> as a union of connected subsets. But there is probably overlap. To remove the overlap, we define the following relation <span class="process-math">\(\sim\)</span> on <span class="process-math">\(X\text{:}\)</span> For <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> in <span class="process-math">\(X\text{,}\)</span> <span class="process-math">\(x \sim y\)</span> if <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> are contained in the same connected subset of <span class="process-math">\(X\text{.}\)</span> As with any relation, we ask if <span class="process-math">\(\sim\)</span> is an equivalence relation.</div></div>
 <article class="task exercise-like" id="task-963"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="p-2285">Is <span class="process-math">\(\sim\)</span> a reflexive relation? Why or why not?</div></article><article class="task exercise-like" id="task-964"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
-<div class="para" id="p-2286">Is <span class="process-math">\(\sim\)</span> a symmetric relation? Why or why not?</div></article><article class="task exercise-like" id="task-965"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
-<div class="para" id="p-2287">Is <span class="process-math">\(\sim\)</span> a transitive relation? Why or why not?</div></article></article></article><div class="para logical" id="p-2288">
+<div class="para" id="p-2291">Is <span class="process-math">\(\sim\)</span> a reflexive relation? Why or why not?</div></article><article class="task exercise-like" id="task-964"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
+<div class="para" id="p-2292">Is <span class="process-math">\(\sim\)</span> a symmetric relation? Why or why not?</div></article><article class="task exercise-like" id="task-965"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
+<div class="para" id="p-2293">Is <span class="process-math">\(\sim\)</span> a transitive relation? Why or why not?</div></article></article></article><div class="para logical" id="p-2294">
 <div class="para">
 <a href="" class="xref" data-knowl="./knowl/act_connected_compenent.html" title="Activity 18.7">Activity 18.7</a> shows that the relation <span class="process-math">\(\sim\)</span> is an equivalence relation, and so partitions the underlying topological space <span class="process-math">\(X\)</span> into disjoint sets. If <span class="process-math">\(x \in X\text{,}\)</span> then the equivalence class of <span class="process-math">\(x\)</span> is a connected subset of <span class="process-math">\(X\text{.}\)</span> There can be no larger connected subset of <span class="process-math">\(X\)</span> that contains <span class="process-math">\(x\text{,}\)</span> since equivalence classes are disjoint or the same. So the equivalence classes are exactly the connected components of <span class="process-math">\(X\text{.}\)</span> The components of a topological space <span class="process-math">\(X\)</span> satisfy several properties.</div>
 <ul class="disc">
-<li id="li-343"><div class="para" id="p-2289">Each <span class="process-math">\(a \in X\)</span> is an element of exactly one connected component <span class="process-math">\(C_a\)</span> of <span class="process-math">\(X\text{.}\)</span>
+<li id="li-343"><div class="para" id="p-2295">Each <span class="process-math">\(a \in X\)</span> is an element of exactly one connected component <span class="process-math">\(C_a\)</span> of <span class="process-math">\(X\text{.}\)</span>
 </div></li>
-<li id="li-344"><div class="para" id="p-2290">A component <span class="process-math">\(C_a\)</span> contains all connected subsets of <span class="process-math">\(X\)</span> that contain <span class="process-math">\(a\text{.}\)</span> Thus, <span class="process-math">\(C_a\)</span> is the union of all connected subsets of <span class="process-math">\(X\)</span> that contain <span class="process-math">\(a\text{.}\)</span>
+<li id="li-344"><div class="para" id="p-2296">A component <span class="process-math">\(C_a\)</span> contains all connected subsets of <span class="process-math">\(X\)</span> that contain <span class="process-math">\(a\text{.}\)</span> Thus, <span class="process-math">\(C_a\)</span> is the union of all connected subsets of <span class="process-math">\(X\)</span> that contain <span class="process-math">\(a\text{.}\)</span>
 </div></li>
-<li id="li-345"><div class="para" id="p-2291">If <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are in <span class="process-math">\(X\text{,}\)</span> then either <span class="process-math">\(C_a = C_b\)</span> or <span class="process-math">\(C_a \cap C_b = \emptyset\text{.}\)</span>
+<li id="li-345"><div class="para" id="p-2297">If <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are in <span class="process-math">\(X\text{,}\)</span> then either <span class="process-math">\(C_a = C_b\)</span> or <span class="process-math">\(C_a \cap C_b = \emptyset\text{.}\)</span>
 </div></li>
-<li id="li-346"><div class="para" id="p-2292">Every connected subset of <span class="process-math">\(X\)</span> is a subset of a connected component.</div></li>
-<li id="li-347"><div class="para" id="p-2293">Every connected component of <span class="process-math">\(X\)</span> is a closed subset of <span class="process-math">\(X\text{.}\)</span>
+<li id="li-346"><div class="para" id="p-2298">Every connected subset of <span class="process-math">\(X\)</span> is a subset of a connected component.</div></li>
+<li id="li-347"><div class="para" id="p-2299">Every connected component of <span class="process-math">\(X\)</span> is a closed subset of <span class="process-math">\(X\text{.}\)</span>
 </div></li>
-<li id="li-348"><div class="para" id="p-2294">The space <span class="process-math">\(X\)</span> is connected if and only if <span class="process-math">\(X\)</span> has exactly one connected component.</div></li>
+<li id="li-348"><div class="para" id="p-2300">The space <span class="process-math">\(X\)</span> is connected if and only if <span class="process-math">\(X\)</span> has exactly one connected component.</div></li>
 </ul>
 </div></section></div>
 <div class="ptx-content-footer">

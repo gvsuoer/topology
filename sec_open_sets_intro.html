@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Introduction</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -603,30 +604,29 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_open_sets_intro"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">Introduction</span>
 </h2>
-<div class="para" id="p-847">Consider the interval <span class="process-math">\((a,b)\)</span> in <span class="process-math">\(\R\)</span> using the Euclidean metric. If <span class="process-math">\(m = \frac{a+b}{2}\text{,}\)</span> then <span class="process-math">\((a,b) = B\left(m,\frac{b-a}{2}\right)\text{,}\)</span> so every open interval is an open ball. As an open ball, an open interval <span class="process-math">\((a,b)\)</span> is a neighborhood of each of its points. This is the foundation for the definition of an open set in a metric space.</div>
-<div class="para" id="p-848">Recall that we defined a subset <span class="process-math">\(N\)</span> of <span class="process-math">\(X\)</span> to be neighborhood of point <span class="process-math">\(a\)</span> in a metric space <span class="process-math">\((X,d)\)</span> if <span class="process-math">\(N\)</span> contains an open ball <span class="process-math">\(B(a, \epsilon)\)</span> for some <span class="process-math">\(\epsilon \gt 0\text{.}\)</span> We saw that every open ball is a neighborhood of each of its points, and we will now extend that idea to define an <dfn class="terminology">open set</dfn> in a metric space.</div>
+<div class="para" id="p-853">Consider the interval <span class="process-math">\((a,b)\)</span> in <span class="process-math">\(\R\)</span> using the Euclidean metric. If <span class="process-math">\(m = \frac{a+b}{2}\text{,}\)</span> then <span class="process-math">\((a,b) = B\left(m,\frac{b-a}{2}\right)\text{,}\)</span> so every open interval is an open ball. As an open ball, an open interval <span class="process-math">\((a,b)\)</span> is a neighborhood of each of its points. This is the foundation for the definition of an open set in a metric space.</div>
+<div class="para" id="p-854">Recall that we defined a subset <span class="process-math">\(N\)</span> of <span class="process-math">\(X\)</span> to be neighborhood of point <span class="process-math">\(a\)</span> in a metric space <span class="process-math">\((X,d)\)</span> if <span class="process-math">\(N\)</span> contains an open ball <span class="process-math">\(B(a, \epsilon)\)</span> for some <span class="process-math">\(\epsilon \gt 0\text{.}\)</span> We saw that every open ball is a neighborhood of each of its points, and we will now extend that idea to define an <dfn class="terminology">open set</dfn> in a metric space.</div>
 <article class="definition definition-like" id="definition-23"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.1</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-849">A subset <span class="process-math">\(O\)</span> of a metric space <span class="process-math">\(X\)</span> is an open set if <span class="process-math">\(O\)</span> is a neighborhood of each of its points.</div></article><div class="para" id="p-850">So, by definition, any open ball is an open set. Also by definition, open sets are neighborhoods of each of their points. Open sets are different than non-open sets. For example, <span class="process-math">\((0,1)\)</span> is an open set in <span class="process-math">\(\R\)</span> using the Euclidean metric, but <span class="process-math">\([0,1)\)</span> is not. The reason <span class="process-math">\([0,1)\)</span> is not an open set is that there is no open ball centered at <span class="process-math">\(0\)</span> that is entirely contained in <span class="process-math">\([0,1)\text{.}\)</span> So <span class="process-math">\(0\)</span> has a different property than the other points in <span class="process-math">\([0,1)\text{.}\)</span> The set <span class="process-math">\([0,1)\)</span> is a neighborhood of each of the points in <span class="process-math">\((0,1)\text{,}\)</span> but is not a neighborhood of <span class="process-math">\(0\text{.}\)</span> We can think of the points in <span class="process-math">\((0,1)\)</span> as being in the interior of the set <span class="process-math">\([0,1)\text{.}\)</span> This leads to the next definition.</div>
+<div class="para" id="p-855">A subset <span class="process-math">\(O\)</span> of a metric space <span class="process-math">\(X\)</span> is an open set if <span class="process-math">\(O\)</span> is a neighborhood of each of its points.</div></article><div class="para" id="p-856">So, by definition, any open ball is an open set. Also by definition, open sets are neighborhoods of each of their points. Open sets are different than non-open sets. For example, <span class="process-math">\((0,1)\)</span> is an open set in <span class="process-math">\(\R\)</span> using the Euclidean metric, but <span class="process-math">\([0,1)\)</span> is not. The reason <span class="process-math">\([0,1)\)</span> is not an open set is that there is no open ball centered at <span class="process-math">\(0\)</span> that is entirely contained in <span class="process-math">\([0,1)\text{.}\)</span> So <span class="process-math">\(0\)</span> has a different property than the other points in <span class="process-math">\([0,1)\text{.}\)</span> The set <span class="process-math">\([0,1)\)</span> is a neighborhood of each of the points in <span class="process-math">\((0,1)\text{,}\)</span> but is not a neighborhood of <span class="process-math">\(0\text{.}\)</span> We can think of the points in <span class="process-math">\((0,1)\)</span> as being in the interior of the set <span class="process-math">\([0,1)\text{.}\)</span> This leads to the next definition.</div>
 <article class="definition definition-like" id="definition-24"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.2</span><span class="period">.</span>
-</h3>
-<div class="para" id="p-851">Let <span class="process-math">\(A\)</span> be a subset of a metric space <span class="process-math">\(X\text{.}\)</span> A point <span class="process-math">\(a \in A\)</span> is an interior point of <span class="process-math">\(A\)</span> if <span class="process-math">\(A\)</span> is a neighborhood of <span class="process-math">\(a\text{.}\)</span>
-</div></article><div class="para" id="p-852">As we will soon see, open sets can be characterized in terms of interior points.</div>
+</h3> <div class="para" id="p-857">Let <span class="process-math">\(A\)</span> be a subset of a metric space <span class="process-math">\(X\text{.}\)</span> A point <span class="process-math">\(a \in A\)</span> is an <dfn class="terminology">interior point</dfn> of <span class="process-math">\(A\)</span> if <span class="process-math">\(A\)</span> is a neighborhood of <span class="process-math">\(a\text{.}\)</span>
+</div></article><div class="para" id="p-858">As we will soon see, open sets can be characterized in terms of interior points.</div>
 <article class="exploration project-like" id="exploration-7"><h3 class="heading">
 <span class="type">Preview Activity</span><span class="space"> </span><span class="codenumber">8.1</span><span class="period">.</span>
 </h3>
 <article class="task exercise-like" id="task-344"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="introduction" id="introduction-93"><div class="para" id="p-853">Determine if the set <span class="process-math">\(A\)</span> is an open set in the metric space <span class="process-math">\((X,d)\text{.}\)</span> Explain your reasoning.</div></div>
+<div class="introduction" id="introduction-93"><div class="para" id="p-859">Determine if the set <span class="process-math">\(A\)</span> is an open set in the metric space <span class="process-math">\((X,d)\text{.}\)</span> Explain your reasoning.</div></div>
 <article class="task exercise-like" id="task-345"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="p-854">
+<div class="para" id="p-860">
 <span class="process-math">\(X = \R\text{,}\)</span> <span class="process-math">\(d = d_E\text{,}\)</span> the Euclidean metric, <span class="process-math">\(A = [0,0.5)\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-346"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
-<div class="para" id="p-855">
+<div class="para" id="p-861">
 <span class="process-math">\(X = \{x \in \R \mid 0 \leq x \leq 1\}\text{,}\)</span> <span class="process-math">\(d = d_E\text{,}\)</span> the Euclidean metric, <span class="process-math">\(A = [0,0.5)\text{.}\)</span> Assume that the Euclidean metric is a metric on <span class="process-math">\(X\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-347"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
-<div class="para logical" id="p-856">
+<div class="para logical" id="p-862">
 <div class="para">
 <span class="process-math">\(X = \{a,b,c,d\}\text{,}\)</span> <span class="process-math">\(d\)</span> is the discrete metric defined by</div>
 <div class="displaymath process-math">
@@ -638,7 +638,7 @@ d(x,y) = \begin{cases}0 \amp \text{ if }  x = y \\ 1 \amp \text{ if }  x \neq y,
 </div>
 </div></article></article><article class="task exercise-like" id="task-348"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <article class="task exercise-like" id="task-349"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para logical" id="p-857">
+<div class="para logical" id="p-863">
 <div class="para">What are the interior points of the following sets in <span class="process-math">\((\R, d_E)\text{?}\)</span> Explain.</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -646,8 +646,8 @@ d(x,y) = \begin{cases}0 \amp \text{ if }  x = y \\ 1 \amp \text{ if }  x \neq y,
 \end{equation*}
 </div>
 </div></article><article class="task exercise-like" id="task-350"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
-<div class="para" id="p-858">Let <span class="process-math">\(A = \{0, 1, 2\}\)</span> in <span class="process-math">\((\R, d_E)\text{.}\)</span> What are the interior points of <span class="process-math">\(A\text{?}\)</span> Explain.</div></article><article class="task exercise-like" id="task-351"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
-<div class="para" id="p-859">Let <span class="process-math">\(\Q\)</span> be the set of rational numbers in <span class="process-math">\((\R, d_E)\text{.}\)</span> What are the interior points of <span class="process-math">\(\Q\text{?}\)</span> Explain.</div></article></article></article></section></div>
+<div class="para" id="p-864">Let <span class="process-math">\(A = \{0, 1, 2\}\)</span> in <span class="process-math">\((\R, d_E)\text{.}\)</span> What are the interior points of <span class="process-math">\(A\text{?}\)</span> Explain.</div></article><article class="task exercise-like" id="task-351"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
+<div class="para" id="p-865">Let <span class="process-math">\(\Q\)</span> be the set of rational numbers in <span class="process-math">\((\R, d_E)\text{.}\)</span> What are the interior points of <span class="process-math">\(\Q\text{?}\)</span> Explain.</div></article></article></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="chap_open_sets.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_open_sets.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

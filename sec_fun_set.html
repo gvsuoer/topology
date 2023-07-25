@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Functions and Sets</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -603,7 +604,7 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_fun_set"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">Functions and Sets</span>
 </h2>
-<div class="para logical" id="p-299">
+<div class="para logical" id="p-305">
 <div class="para">We conclude this section with a connection between subsets and functions. A bit of notation first. If <span class="process-math">\(f\)</span> is a function from a set <span class="process-math">\(X\)</span> to a set <span class="process-math">\(Y\text{,}\)</span> and if <span class="process-math">\(A\)</span> is a subset of <span class="process-math">\(X\)</span> and <span class="process-math">\(B\)</span> is a subset of <span class="process-math">\(Y\text{,}\)</span> we define <span class="process-math">\(f(A)\)</span> and <span class="process-math">\(f^{-1}(B)\)</span> as</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -617,27 +618,27 @@ f^{-1}(B) = \{a \in A \mid f(a) \in B\}\text{.}
 \end{equation*}
 </div>
 </div>
-<div class="para" id="p-300">We call <span class="process-math">\(f(A)\)</span> the image of the set <span class="process-math">\(A\)</span> under <span class="process-math">\(f\)</span> and <span class="process-math">\(f^{-1}(B)\)</span> is the preimage of the set <span class="process-math">\(B\)</span> under <span class="process-math">\(f\text{.}\)</span> Note that <span class="process-math">\(f^{-1}(B)\)</span> is defined for any function, not just invertible functions. So it is important to recognize that the use of the notation <span class="process-math">\(f^{-1}(B)\)</span> does not imply that <span class="process-math">\(f\)</span> is invertible.</div>
-<div class="para" id="p-301">When we work with continuous functions in later sections, we will need to understand how a function behaves with respect to subsets. One result is in the following lemma.</div>
+<div class="para" id="p-306">We call <span class="process-math">\(f(A)\)</span> the image of the set <span class="process-math">\(A\)</span> under <span class="process-math">\(f\)</span> and <span class="process-math">\(f^{-1}(B)\)</span> is the preimage of the set <span class="process-math">\(B\)</span> under <span class="process-math">\(f\text{.}\)</span> Note that <span class="process-math">\(f^{-1}(B)\)</span> is defined for any function, not just invertible functions. So it is important to recognize that the use of the notation <span class="process-math">\(f^{-1}(B)\)</span> does not imply that <span class="process-math">\(f\)</span> is invertible.</div>
+<div class="para" id="p-307">When we work with continuous functions in later sections, we will need to understand how a function behaves with respect to subsets. One result is in the following lemma.</div>
 <article class="lemma theorem-like" id="lem_functions_subsets"><h3 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">2.11</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-302">
+<div class="para logical" id="p-308">
 <div class="para">Let <span class="process-math">\(f : X \to Y\)</span> be a function and let <span class="process-math">\(\{A_{\alpha}\}\)</span> be a collection of subsets of <span class="process-math">\(X\)</span> for <span class="process-math">\(\alpha\)</span> in some indexing set <span class="process-math">\(I\text{,}\)</span> and <span class="process-math">\(\{B_{\beta}\}\)</span> be a collection of subsets of <span class="process-math">\(Y\)</span> for <span class="process-math">\(\beta\)</span> in some indexing set <span class="process-math">\(J\text{.}\)</span> Then</div>
 <ol class="decimal">
-<li id="li-81"><div class="para" id="p-303">
+<li id="li-81"><div class="para" id="p-309">
 <span class="process-math">\(f\left(\bigcup_{\alpha \in I} A_{\alpha}\right) = \bigcup_{\alpha \in I} f(A_{\alpha})\)</span> and</div></li>
-<li id="li-82"><div class="para" id="p-304"><span class="process-math">\(f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right) = \bigcup_{\beta \in J} f^{-1}(B_{\beta})\text{.}\)</span></div></li>
+<li id="li-82"><div class="para" id="p-310"><span class="process-math">\(f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right) = \bigcup_{\beta \in J} f^{-1}(B_{\beta})\text{.}\)</span></div></li>
 </ol>
 </div></article><article class="proof" id="proof-1"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
-<div class="para" id="p-305">Let <span class="process-math">\(f : X \to Y\)</span> be a function and let <span class="process-math">\(\{A_{\alpha}\}\)</span> be a collection of subsets of <span class="process-math">\(X\)</span> for <span class="process-math">\(\alpha\)</span> in some indexing set <span class="process-math">\(I\text{.}\)</span> To prove part 1, we demonstrate the containment in both directions.</div> <div class="para" id="p-306">Let <span class="process-math">\(b \in f\left(\bigcup_{\alpha \in I} A_{\alpha}\right)\text{.}\)</span> Then <span class="process-math">\(b = f(a)\)</span> for some <span class="process-math">\(a \in \bigcup_{\alpha \in I} A_{\alpha}\text{.}\)</span> It follows that <span class="process-math">\(a \in A_{\rho}\)</span> for some <span class="process-math">\(\rho \in I\text{.}\)</span> Thus, <span class="process-math">\(b \in f(A_{\rho}) \subseteq \bigcup_{\alpha \in I} f(A_{\alpha})\text{.}\)</span> We conclude that <span class="process-math">\(f\left(\bigcup_{\alpha \in I} A_{\alpha}\right) \subseteq \bigcup_{\alpha \in I} f(A_{\alpha})\text{.}\)</span>
-</div> <div class="para" id="p-307">Now let <span class="process-math">\(b \in \bigcup_{\alpha \in I} f(A_{\alpha})\text{.}\)</span> Then <span class="process-math">\(b \in f(A_{\rho})\)</span> for some <span class="process-math">\(\rho \in I\text{.}\)</span> Since <span class="process-math">\(A_{\rho} \subseteq \bigcup_{\alpha \in I} A_{\alpha}\text{,}\)</span> it follows that <span class="process-math">\(b \in f\left(\bigcup_{\alpha \in I} A_{\alpha}\right)\text{.}\)</span> Thus, <span class="process-math">\(\bigcup_{\alpha \in I} f(A_{\alpha}) \subseteq f\left(\bigcup_{\alpha \in I} A_{\alpha}\right)\text{.}\)</span> The two containments prove part 1.</div> <div class="para" id="p-308">For part 2, we again demonstrate the containments in both directions. Let <span class="process-math">\(a \in f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right)\text{.}\)</span> Then <span class="process-math">\(f(a) \in \bigcup_{\beta \in J} B_{\beta}\text{.}\)</span> So there exists <span class="process-math">\(\mu \in J\)</span> such that <span class="process-math">\(f(a) \in B_{\mu}\text{.}\)</span> This implies that <span class="process-math">\(a \in f^{-1}(B_{\mu}) \subseteq \bigcup_{\beta \in J} f^{-1}(B_{\beta})\text{.}\)</span> We conclude that <span class="process-math">\(f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right) \subseteq \bigcup_{\beta \in J} f^{-1}(B_{\beta})\text{.}\)</span>
-</div> <div class="para" id="p-309">For the reverse containment, let <span class="process-math">\(a \in \bigcup_{\beta \in J} f^{-1}(B_{\beta})\text{.}\)</span> Then <span class="process-math">\(a \in f^{-1}(B_{\mu})\)</span> for some <span class="process-math">\(\mu \in J\text{.}\)</span> Thus, <span class="process-math">\(f(a) \in B_{\mu} \subseteq \bigcup_{\beta \in J} B_{\beta}\text{.}\)</span> So <span class="process-math">\(a \in f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right)\text{.}\)</span> Thus, <span class="process-math">\(\bigcup_{\beta \in J} f^{-1}(B_{\beta}) \subseteq f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right)\text{.}\)</span> The two containments verify part 2.</div></article><div class="para" id="p-310">At this point it is reasonable to ask if <a href="" class="xref" data-knowl="./knowl/lem_functions_subsets.html" title="Lemma 2.11">Lemma 2.11</a> would still hold if we replace unions with intersections. We leave that question for <a href="" class="xref" data-knowl="./knowl/ex_intersection_image.html" title="Exercise 7">Exercise 7</a>.</div>
-<div class="para" id="p-311">Another result is contained in the next activity.</div>
+<div class="para" id="p-311">Let <span class="process-math">\(f : X \to Y\)</span> be a function and let <span class="process-math">\(\{A_{\alpha}\}\)</span> be a collection of subsets of <span class="process-math">\(X\)</span> for <span class="process-math">\(\alpha\)</span> in some indexing set <span class="process-math">\(I\text{.}\)</span> To prove part 1, we demonstrate the containment in both directions.</div> <div class="para" id="p-312">Let <span class="process-math">\(b \in f\left(\bigcup_{\alpha \in I} A_{\alpha}\right)\text{.}\)</span> Then <span class="process-math">\(b = f(a)\)</span> for some <span class="process-math">\(a \in \bigcup_{\alpha \in I} A_{\alpha}\text{.}\)</span> It follows that <span class="process-math">\(a \in A_{\rho}\)</span> for some <span class="process-math">\(\rho \in I\text{.}\)</span> Thus, <span class="process-math">\(b \in f(A_{\rho}) \subseteq \bigcup_{\alpha \in I} f(A_{\alpha})\text{.}\)</span> We conclude that <span class="process-math">\(f\left(\bigcup_{\alpha \in I} A_{\alpha}\right) \subseteq \bigcup_{\alpha \in I} f(A_{\alpha})\text{.}\)</span>
+</div> <div class="para" id="p-313">Now let <span class="process-math">\(b \in \bigcup_{\alpha \in I} f(A_{\alpha})\text{.}\)</span> Then <span class="process-math">\(b \in f(A_{\rho})\)</span> for some <span class="process-math">\(\rho \in I\text{.}\)</span> Since <span class="process-math">\(A_{\rho} \subseteq \bigcup_{\alpha \in I} A_{\alpha}\text{,}\)</span> it follows that <span class="process-math">\(b \in f\left(\bigcup_{\alpha \in I} A_{\alpha}\right)\text{.}\)</span> Thus, <span class="process-math">\(\bigcup_{\alpha \in I} f(A_{\alpha}) \subseteq f\left(\bigcup_{\alpha \in I} A_{\alpha}\right)\text{.}\)</span> The two containments prove part 1.</div> <div class="para" id="p-314">For part 2, we again demonstrate the containments in both directions. Let <span class="process-math">\(a \in f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right)\text{.}\)</span> Then <span class="process-math">\(f(a) \in \bigcup_{\beta \in J} B_{\beta}\text{.}\)</span> So there exists <span class="process-math">\(\mu \in J\)</span> such that <span class="process-math">\(f(a) \in B_{\mu}\text{.}\)</span> This implies that <span class="process-math">\(a \in f^{-1}(B_{\mu}) \subseteq \bigcup_{\beta \in J} f^{-1}(B_{\beta})\text{.}\)</span> We conclude that <span class="process-math">\(f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right) \subseteq \bigcup_{\beta \in J} f^{-1}(B_{\beta})\text{.}\)</span>
+</div> <div class="para" id="p-315">For the reverse containment, let <span class="process-math">\(a \in \bigcup_{\beta \in J} f^{-1}(B_{\beta})\text{.}\)</span> Then <span class="process-math">\(a \in f^{-1}(B_{\mu})\)</span> for some <span class="process-math">\(\mu \in J\text{.}\)</span> Thus, <span class="process-math">\(f(a) \in B_{\mu} \subseteq \bigcup_{\beta \in J} B_{\beta}\text{.}\)</span> So <span class="process-math">\(a \in f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right)\text{.}\)</span> Thus, <span class="process-math">\(\bigcup_{\beta \in J} f^{-1}(B_{\beta}) \subseteq f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right)\text{.}\)</span> The two containments verify part 2.</div></article><div class="para" id="p-316">At this point it is reasonable to ask if <a href="" class="xref" data-knowl="./knowl/lem_functions_subsets.html" title="Lemma 2.11">Lemma 2.11</a> would still hold if we replace unions with intersections. We leave that question for <a href="" class="xref" data-knowl="./knowl/ex_intersection_image.html" title="Exercise 7">Exercise 7</a>.</div>
+<div class="para" id="p-317">Another result is contained in the next activity.</div>
 <article class="activity project-like" id="activity-13"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.8</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-312">Let <span class="process-math">\(X\text{,}\)</span> <span class="process-math">\(Y\text{,}\)</span> and <span class="process-math">\(Z\)</span> be sets, and let <span class="process-math">\(f: X \to Y\)</span> and <span class="process-math">\(g: Y \to Z\)</span> be functions. Let <span class="process-math">\(C\)</span> be a subset of <span class="process-math">\(Z\text{.}\)</span> There is a relationship between <span class="process-math">\((g \circ f)^{-1}(C)\)</span> and <span class="process-math">\(f^{-1}(g^{-1}(C))\text{.}\)</span> Find and prove this relationship.</div></article></section></div>
+<div class="para" id="p-318">Let <span class="process-math">\(X\text{,}\)</span> <span class="process-math">\(Y\text{,}\)</span> and <span class="process-math">\(Z\)</span> be sets, and let <span class="process-math">\(f: X \to Y\)</span> and <span class="process-math">\(g: Y \to Z\)</span> be functions. Let <span class="process-math">\(C\)</span> be a subset of <span class="process-math">\(Z\text{.}\)</span> There is a relationship between <span class="process-math">\((g \circ f)^{-1}(C)\)</span> and <span class="process-math">\(f^{-1}(g^{-1}(C))\text{.}\)</span> Find and prove this relationship.</div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_inv_func.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_card_set.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

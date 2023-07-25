@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Separation Axioms</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -603,19 +604,19 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_separation_ax"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">Separation Axioms</span>
 </h2>
-<div class="para" id="p-1590">As we have seen, sequences in topological spaces do not generally behave as we would expect them to. As a result, we look for conditions on topological spaces under which sequences do exhibit some regular behavior. In our preview activity we saw that it is possible in a topological space that single point sets do not have to be closed. In <a href="" class="xref" data-knowl="./knowl/act_TS_limits2.html" title="Activity 13.4">Activity 13.4</a>, we also saw that limits of sequences in topological spaces are not necessarily unique. This type of behavior limits the results that one can prove about such spaces. As a result, we define classes of topological spaces whose behaviors are closer to what our intuition suggests.</div>
+<div class="para" id="p-1596">As we have seen, sequences in topological spaces do not generally behave as we would expect them to. As a result, we look for conditions on topological spaces under which sequences do exhibit some regular behavior. In our preview activity we saw that it is possible in a topological space that single point sets do not have to be closed. In <a href="" class="xref" data-knowl="./knowl/act_TS_limits2.html" title="Activity 13.4">Activity 13.4</a>, we also saw that limits of sequences in topological spaces are not necessarily unique. This type of behavior limits the results that one can prove about such spaces. As a result, we define classes of topological spaces whose behaviors are closer to what our intuition suggests.</div>
 <article class="activity project-like" id="act_Hausdorff"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">13.7</span><span class="period">.</span>
 </h3>
 <article class="task exercise-like" id="task-652"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="introduction" id="introduction-176"><div class="para" id="p-1591">Consider a metric space <span class="process-math">\((X,d)\text{,}\)</span> and let <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> be distinct points in <span class="process-math">\(X\text{.}\)</span>
+<div class="introduction" id="introduction-176"><div class="para" id="p-1597">Consider a metric space <span class="process-math">\((X,d)\text{,}\)</span> and let <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> be distinct points in <span class="process-math">\(X\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-653"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="p-1592">Explain why <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> cannot both be limits of the same sequence if we can find disjoint open balls <span class="process-math">\(B(x,r)\)</span> centered at <span class="process-math">\(x\)</span> and <span class="process-math">\(B(y,s)\)</span> centered at <span class="process-math">\(y\)</span> such that <span class="process-math">\(B_x \cap B_y = \emptyset\text{.}\)</span>
+<div class="para" id="p-1598">Explain why <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> cannot both be limits of the same sequence if we can find disjoint open balls <span class="process-math">\(B(x,r)\)</span> centered at <span class="process-math">\(x\)</span> and <span class="process-math">\(B(y,s)\)</span> centered at <span class="process-math">\(y\)</span> such that <span class="process-math">\(B_x \cap B_y = \emptyset\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-654"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
-<div class="para" id="p-1593">Now show that we can find disjoint open balls <span class="process-math">\(B(x,r)\)</span> centered at <span class="process-math">\(x\)</span> and <span class="process-math">\(B(y,s)\)</span> centered at <span class="process-math">\(y\)</span> such that <span class="process-math">\(B(x,s) \cap B(y,r) = \emptyset\text{.}\)</span>
+<div class="para" id="p-1599">Now show that we can find disjoint open balls <span class="process-math">\(B(x,r)\)</span> centered at <span class="process-math">\(x\)</span> and <span class="process-math">\(B(y,s)\)</span> centered at <span class="process-math">\(y\)</span> such that <span class="process-math">\(B(x,s) \cap B(y,r) = \emptyset\text{.}\)</span>
 </div></article></article><article class="task exercise-like" id="task-655"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para logical" id="p-1594">
+<div class="para logical" id="p-1600">
 <div class="para">Return to our example from <a href="" class="xref" data-knowl="./knowl/act_TS_limits2.html" title="Activity 13.4">Activity 13.4</a> with <span class="process-math">\(X = \{a, b, c\}\)</span> and topology</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/act_TS_limits2.html">
 \begin{equation*}
@@ -624,53 +625,53 @@ window.MathJax = {
 </div>
 <div class="para">We saw that every point in <span class="process-math">\(X\)</span> is a limit of the constant sequence <span class="process-math">\((c)\text{.}\)</span> If <span class="process-math">\(x \neq c\)</span> in <span class="process-math">\(X\text{,}\)</span> Explain why there are no disjoint open sets <span class="process-math">\(O_x\)</span> containing <span class="process-math">\(x\)</span> and <span class="process-math">\(O_c\)</span> containing <span class="process-math">\(c\text{.}\)</span>
 </div>
-</div></article></article><div class="para" id="p-1595">It is the fact as described in <a href="" class="xref" data-knowl="./knowl/act_Hausdorff.html" title="Activity 13.7">Activity 13.7</a> that we can separate disjoint points by disjoint open sets that separates metric spaces from other spaces where limits are not unique. If we restrict ourselves to spaces where we can separate points like this, then we might expect to have unique limits. Such spaces are called <dfn class="terminology">Hausdorff</dfn> spaces.</div>
+</div></article></article><div class="para" id="p-1601">It is the fact as described in <a href="" class="xref" data-knowl="./knowl/act_Hausdorff.html" title="Activity 13.7">Activity 13.7</a> that we can separate disjoint points by disjoint open sets that separates metric spaces from other spaces where limits are not unique. If we restrict ourselves to spaces where we can separate points like this, then we might expect to have unique limits. Such spaces are called <dfn class="terminology">Hausdorff</dfn> spaces.</div>
 <article class="definition definition-like" id="definition-50"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">13.12</span><span class="period">.</span>
-</h3> <div class="para" id="p-1596">A topological space <span class="process-math">\(X\)</span> is a Hausdorff space if for each pair <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\)</span> of distinct points in <span class="process-math">\(X\text{,}\)</span> there exists open sets <span class="process-math">\(O_x\)</span> of <span class="process-math">\(x\)</span> and <span class="process-math">\(O_y\)</span> of <span class="process-math">\(y\)</span> such that <span class="process-math">\(O_x \cap O_y = \emptyset\text{.}\)</span>
-</div></article><div class="para" id="p-1597">
+</h3> <div class="para" id="p-1602">A topological space <span class="process-math">\(X\)</span> is a <dfn class="terminology">Hausdorff</dfn> space if for each pair <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\)</span> of distinct points in <span class="process-math">\(X\text{,}\)</span> there exists open sets <span class="process-math">\(O_x\)</span> of <span class="process-math">\(x\)</span> and <span class="process-math">\(O_y\)</span> of <span class="process-math">\(y\)</span> such that <span class="process-math">\(O_x \cap O_y = \emptyset\text{.}\)</span>
+</div></article><div class="para" id="p-1603">
 <a href="" class="xref" data-knowl="./knowl/act_Hausdorff.html" title="Activity 13.7">Activity 13.7</a> shows that every metric space is a Hausdorff space. Once we start imposing conditions on topological spaces, we restrict the number of spaces we consider.</div>
 <article class="activity project-like" id="activity-68"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">13.8</span><span class="period">.</span>
 </h3>
 <article class="task exercise-like" id="task-656"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1598">Let <span class="process-math">\(X\)</span> be any set and <span class="process-math">\(\tau\)</span> the discrete topology. Is <span class="process-math">\((X, \tau)\)</span> Hausdorff? Justify your answer.</div></article><article class="task exercise-like" id="task-657"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-1599">Let <span class="process-math">\((X, \tau)\)</span> be a Hausdorff topological space with <span class="process-math">\(X = \{x, x_1, x_2, \ldots,
+<div class="para" id="p-1604">Let <span class="process-math">\(X\)</span> be any set and <span class="process-math">\(\tau\)</span> the discrete topology. Is <span class="process-math">\((X, \tau)\)</span> Hausdorff? Justify your answer.</div></article><article class="task exercise-like" id="task-657"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-1605">Let <span class="process-math">\((X, \tau)\)</span> be a Hausdorff topological space with <span class="process-math">\(X = \{x, x_1, x_2, \ldots,
 x_n\}\)</span> a finite set. Is <span class="process-math">\(\{x\}\)</span> an open set? Explain. What does this say about the topology <span class="process-math">\(\tau\text{?}\)</span>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-20" id="hint-20"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-20"><div class="hint solution-like"><div class="para" id="p-1600">Is <span class="process-math">\(x\)</span> a limit point of <span class="process-math">\(\{x_1, x_2, \ldots, x_n\}\text{?}\)</span>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-20" id="hint-20"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-20"><div class="hint solution-like"><div class="para" id="p-1606">Is <span class="process-math">\(x\)</span> a limit point of <span class="process-math">\(\{x_1, x_2, \ldots, x_n\}\text{?}\)</span>
 </div></div></div>
 </div></article></article><article class="example example-like" id="exp_K_topology"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">13.13</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-1601">There are examples of Hausdorff spaces that are not the standard metric spaces. For example, Let <span class="process-math">\(K = \left\{\frac{1}{k} \mid k \text{ is a positive integer } \right\}\text{.}\)</span> We use <span class="process-math">\(K\)</span> to make a topology on <span class="process-math">\(\R\)</span> with basis all open intervals of the form <span class="process-math">\((a,b)\)</span> and all sets of the form <span class="process-math">\((a,b) \setminus K\text{,}\)</span> where <span class="process-math">\(a \lt b\)</span> are real numbers. This topology adds the extra intervals of the form <span class="process-math">\((a,b) \setminus K\)</span> to the standard open intervals to make a new topology. This topology is known as the <span class="process-math">\(K\)</span>-topology on <span class="process-math">\(\R\text{.}\)</span> Just as in <span class="process-math">\((\R, d_E)\text{,}\)</span> if <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> are distinct real numbers we can separate <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> with open intervals.</div></article><div class="para" id="p-1602">The reason we defined Hausdorff spaces is because they have familiar properties, as the next theorems illustrate.</div>
+<div class="para" id="p-1607">There are examples of Hausdorff spaces that are not the standard metric spaces. For example, Let <span class="process-math">\(K = \left\{\frac{1}{k} \mid k \text{ is a positive integer } \right\}\text{.}\)</span> We use <span class="process-math">\(K\)</span> to make a topology on <span class="process-math">\(\R\)</span> with basis all open intervals of the form <span class="process-math">\((a,b)\)</span> and all sets of the form <span class="process-math">\((a,b) \setminus K\text{,}\)</span> where <span class="process-math">\(a \lt b\)</span> are real numbers. This topology adds the extra intervals of the form <span class="process-math">\((a,b) \setminus K\)</span> to the standard open intervals to make a new topology. This topology is known as the <span class="process-math">\(K\)</span>-topology on <span class="process-math">\(\R\text{.}\)</span> Just as in <span class="process-math">\((\R, d_E)\text{,}\)</span> if <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> are distinct real numbers we can separate <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> with open intervals.</div></article><div class="para" id="p-1608">The reason we defined Hausdorff spaces is because they have familiar properties, as the next theorems illustrate.</div>
 <article class="theorem theorem-like" id="theorem-40"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">13.14</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-1603">Each single point subset of a Hausdorff topological space is closed.</div></article><article class="proof" id="proof-23"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
-<div class="para" id="p-1604">Let <span class="process-math">\(X\)</span> be a Hausdorff topological space, and let <span class="process-math">\(A = \{a\}\)</span> for some <span class="process-math">\(a \in X\text{.}\)</span> To show that <span class="process-math">\(A\)</span> is closed, we prove that <span class="process-math">\(X \setminus A\)</span> is open. Let <span class="process-math">\(x \in X \setminus A\text{.}\)</span> Then <span class="process-math">\(x \neq a\text{.}\)</span> So there exist open sets <span class="process-math">\(O_x\)</span> containing <span class="process-math">\(x\)</span> and <span class="process-math">\(O_a\)</span> containing <span class="process-math">\(a\)</span> such that <span class="process-math">\(O_x \cap O_a = \emptyset\text{.}\)</span> So <span class="process-math">\(a \notin O_x\)</span> and <span class="process-math">\(O_x \subseteq X \setminus A\text{.}\)</span> Thus, every point of <span class="process-math">\(X \setminus A\)</span> is an interior point and <span class="process-math">\(X \setminus A\)</span> is an open set. This verifies that <span class="process-math">\(A\)</span> is a closed set.</div></article><article class="theorem theorem-like" id="theorem-41"><h3 class="heading">
+<div class="para" id="p-1609">Each single point subset of a Hausdorff topological space is closed.</div></article><article class="proof" id="proof-23"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
+<div class="para" id="p-1610">Let <span class="process-math">\(X\)</span> be a Hausdorff topological space, and let <span class="process-math">\(A = \{a\}\)</span> for some <span class="process-math">\(a \in X\text{.}\)</span> To show that <span class="process-math">\(A\)</span> is closed, we prove that <span class="process-math">\(X \setminus A\)</span> is open. Let <span class="process-math">\(x \in X \setminus A\text{.}\)</span> Then <span class="process-math">\(x \neq a\text{.}\)</span> So there exist open sets <span class="process-math">\(O_x\)</span> containing <span class="process-math">\(x\)</span> and <span class="process-math">\(O_a\)</span> containing <span class="process-math">\(a\)</span> such that <span class="process-math">\(O_x \cap O_a = \emptyset\text{.}\)</span> So <span class="process-math">\(a \notin O_x\)</span> and <span class="process-math">\(O_x \subseteq X \setminus A\text{.}\)</span> Thus, every point of <span class="process-math">\(X \setminus A\)</span> is an interior point and <span class="process-math">\(X \setminus A\)</span> is an open set. This verifies that <span class="process-math">\(A\)</span> is a closed set.</div></article><article class="theorem theorem-like" id="theorem-41"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">13.15</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-1605">A sequence of points in a Hausdorff topological space can have at most one limit in the space.</div></article><article class="proof" id="proof-24"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
-<div class="para" id="p-1606">Let <span class="process-math">\(X\)</span> be a Hausdorff topological space, and let <span class="process-math">\((x_n)\)</span> be a sequence in <span class="process-math">\(X\text{.}\)</span> Suppose <span class="process-math">\((x_n)\)</span> converges to <span class="process-math">\(a \in X\)</span> and to <span class="process-math">\(b \in X\text{.}\)</span> Suppose <span class="process-math">\(a \neq b\text{.}\)</span> Then there exist open sets <span class="process-math">\(O_a\)</span> of <span class="process-math">\(a\)</span> and <span class="process-math">\(O_b\)</span> of <span class="process-math">\(b\)</span> such that <span class="process-math">\(O_a \cap O_b = \emptyset\text{.}\)</span> But the fact that <span class="process-math">\((x_n)\)</span> converges to <span class="process-math">\(a\)</span> implies that there is a positive integer <span class="process-math">\(N\)</span> such that <span class="process-math">\(x_n \in O_a\)</span> for all <span class="process-math">\(n \geq N\text{.}\)</span> But then <span class="process-math">\(x_n \notin O_b\)</span> for any <span class="process-math">\(n \geq N\text{.}\)</span> This contradicts the fact that <span class="process-math">\((x_n)\)</span> converges to <span class="process-math">\(b\text{.}\)</span> We conclude that <span class="process-math">\(a=b\)</span> and that the sequence <span class="process-math">\((x_n)\)</span> can have at most one limit in <span class="process-math">\(X\text{.}\)</span>
-</div></article><div class="para" id="p-1607">Hausdorff spaces are important because we can separate distinct points with disjoint open sets. It is also of interest to consider what other types of objects we can separate with disjoint open sets. For example, the indiscrete topology is quite bad in the sense that its open sets can’t distinguish between distinct points. That is, if <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> are distinct points in a space with the indiscrete topology, then every open set that contains <span class="process-math">\(x\)</span> also contains <span class="process-math">\(y\text{.}\)</span> By contrast, in a Hausdorff space we can separate distinct points with disjoint open sets. This is an example of what is called a “separation” property. Other types of separation properties describe different types of topological spaces. These separation properties determine what kind of objects we can separate with disjoint open sets — e.g., points, points and closed sets, closed sets and closed sets. The following are the most widely used separation properties. These properties rule out kinds of unwelcome properties that a topological space might have. For example, recall that limits of sequences are unique in Hausdorff spaces. (We traditionally call these separation properties “axioms” because we generally assume that our topological spaces have these properties. However, these are not axioms in the usual sense of the word, but rather properties.)</div>
+<div class="para" id="p-1611">A sequence of points in a Hausdorff topological space can have at most one limit in the space.</div></article><article class="proof" id="proof-24"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
+<div class="para" id="p-1612">Let <span class="process-math">\(X\)</span> be a Hausdorff topological space, and let <span class="process-math">\((x_n)\)</span> be a sequence in <span class="process-math">\(X\text{.}\)</span> Suppose <span class="process-math">\((x_n)\)</span> converges to <span class="process-math">\(a \in X\)</span> and to <span class="process-math">\(b \in X\text{.}\)</span> Suppose <span class="process-math">\(a \neq b\text{.}\)</span> Then there exist open sets <span class="process-math">\(O_a\)</span> of <span class="process-math">\(a\)</span> and <span class="process-math">\(O_b\)</span> of <span class="process-math">\(b\)</span> such that <span class="process-math">\(O_a \cap O_b = \emptyset\text{.}\)</span> But the fact that <span class="process-math">\((x_n)\)</span> converges to <span class="process-math">\(a\)</span> implies that there is a positive integer <span class="process-math">\(N\)</span> such that <span class="process-math">\(x_n \in O_a\)</span> for all <span class="process-math">\(n \geq N\text{.}\)</span> But then <span class="process-math">\(x_n \notin O_b\)</span> for any <span class="process-math">\(n \geq N\text{.}\)</span> This contradicts the fact that <span class="process-math">\((x_n)\)</span> converges to <span class="process-math">\(b\text{.}\)</span> We conclude that <span class="process-math">\(a=b\)</span> and that the sequence <span class="process-math">\((x_n)\)</span> can have at most one limit in <span class="process-math">\(X\text{.}\)</span>
+</div></article><div class="para" id="p-1613">Hausdorff spaces are important because we can separate distinct points with disjoint open sets. It is also of interest to consider what other types of objects we can separate with disjoint open sets. For example, the indiscrete topology is quite bad in the sense that its open sets can’t distinguish between distinct points. That is, if <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> are distinct points in a space with the indiscrete topology, then every open set that contains <span class="process-math">\(x\)</span> also contains <span class="process-math">\(y\text{.}\)</span> By contrast, in a Hausdorff space we can separate distinct points with disjoint open sets. This is an example of what is called a “separation” property. Other types of separation properties describe different types of topological spaces. These separation properties determine what kind of objects we can separate with disjoint open sets — e.g., points, points and closed sets, closed sets and closed sets. The following are the most widely used separation properties. These properties rule out kinds of unwelcome properties that a topological space might have. For example, recall that limits of sequences are unique in Hausdorff spaces. (We traditionally call these separation properties “axioms” because we generally assume that our topological spaces have these properties. However, these are not axioms in the usual sense of the word, but rather properties.)</div>
 <article class="definition definition-like" id="definition-51"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">13.16</span><span class="period">.</span>
-</h3> <div class="para logical" id="p-1608">
+</h3> <div class="para logical" id="p-1614">
 <div class="para">Let <span class="process-math">\(X\)</span> be a topological space.</div>
 <ol class="decimal">
-<li id="li-258"><div class="para" id="p-1609">The space <span class="process-math">\(X\)</span> is a <dfn class="terminology"><dfn class="terminology">T</dfn><span class="process-math">\(_1\)</span>-space</dfn> or <dfn class="terminology">Frechet space</dfn> if for every <span class="process-math">\(x\neq y\)</span> in <span class="process-math">\(X\text{,}\)</span> there exist an open set <span class="process-math">\(U\)</span> containing <span class="process-math">\(y\)</span> such that <span class="process-math">\(x \notin U\text{.}\)</span>
+<li id="li-258"><div class="para" id="p-1615">The space <span class="process-math">\(X\)</span> is a <dfn class="terminology"><dfn class="terminology">T</dfn><span class="process-math">\(_1\)</span>-space</dfn> or <dfn class="terminology">Frechet space</dfn> if for every <span class="process-math">\(x\neq y\)</span> in <span class="process-math">\(X\text{,}\)</span> there exist an open set <span class="process-math">\(U\)</span> containing <span class="process-math">\(y\)</span> such that <span class="process-math">\(x \notin U\text{.}\)</span>
 </div></li>
-<li id="li-259"><div class="para" id="p-1610">The space <span class="process-math">\(X\)</span> is a <dfn class="terminology"><dfn class="terminology">T</dfn><span class="process-math">\(_2\)</span>-space</dfn>  or a <dfn class="terminology">Hausdorff space</dfn> if for every <span class="process-math">\(x\neq y\)</span> in <span class="process-math">\(X\text{,}\)</span> there exist disjoint open sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> such that <span class="process-math">\(x\in U\)</span> and <span class="process-math">\(y\in V\text{.}\)</span>
+<li id="li-259"><div class="para" id="p-1616">The space <span class="process-math">\(X\)</span> is a <dfn class="terminology"><dfn class="terminology">T</dfn><span class="process-math">\(_2\)</span>-space</dfn> or a <dfn class="terminology">Hausdorff space</dfn> if for every <span class="process-math">\(x\neq y\)</span> in <span class="process-math">\(X\text{,}\)</span> there exist disjoint open sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> such that <span class="process-math">\(x\in U\)</span> and <span class="process-math">\(y\in V\text{.}\)</span>
 </div></li>
-<li id="li-260"><div class="para" id="p-1611">The space <span class="process-math">\(X\)</span> is <dfn class="terminology">regular</dfn> if for each closed set <span class="process-math">\(C\)</span> of <span class="process-math">\(X\)</span> and each point <span class="process-math">\(x \in X \setminus C\text{,}\)</span> there exists disjoint open sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> in <span class="process-math">\(X\)</span> such that <span class="process-math">\(C \subseteq U\)</span> and <span class="process-math">\(x \in V\text{.}\)</span> The space <span class="process-math">\(X\)</span> is a <dfn class="terminology"><dfn class="terminology">T</dfn><span class="process-math">\(_3\)</span>-space</dfn>  or a <dfn class="terminology">regular Hausdorff space</dfn> if <span class="process-math">\(X\)</span> is a regular <span class="process-math">\(T_1\)</span> space.</div></li>
-<li id="li-261"><div class="para" id="p-1612">The space <span class="process-math">\(X\)</span> is a <dfn class="terminology">normal</dfn> space if for each pair <span class="process-math">\(C\)</span> and <span class="process-math">\(D\)</span> of disjoint closed subsets of <span class="process-math">\(X\)</span> there exist disjoint open sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> such that <span class="process-math">\(C \subseteq U\)</span> and <span class="process-math">\(D \subseteq V\text{.}\)</span> The space <span class="process-math">\(X\)</span> is a <dfn class="terminology"><dfn class="terminology">T</dfn><span class="process-math">\(_4\)</span>-space</dfn>  or a <dfn class="terminology">normal Hausdorff space</dfn> if <span class="process-math">\(X\)</span> is a normal <span class="process-math">\(T_1\)</span> space.</div></li>
+<li id="li-260"><div class="para" id="p-1617">The space <span class="process-math">\(X\)</span> is <dfn class="terminology">regular</dfn> if for each closed set <span class="process-math">\(C\)</span> of <span class="process-math">\(X\)</span> and each point <span class="process-math">\(x \in X \setminus C\text{,}\)</span> there exists disjoint open sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> in <span class="process-math">\(X\)</span> such that <span class="process-math">\(C \subseteq U\)</span> and <span class="process-math">\(x \in V\text{.}\)</span> The space <span class="process-math">\(X\)</span> is a <dfn class="terminology"><dfn class="terminology">T</dfn><span class="process-math">\(_3\)</span>-space</dfn> or a <dfn class="terminology">regular Hausdorff space</dfn> if <span class="process-math">\(X\)</span> is a regular <span class="process-math">\(T_1\)</span> space.</div></li>
+<li id="li-261"><div class="para" id="p-1618">The space <span class="process-math">\(X\)</span> is a <dfn class="terminology">normal</dfn> space if for each pair <span class="process-math">\(C\)</span> and <span class="process-math">\(D\)</span> of disjoint closed subsets of <span class="process-math">\(X\)</span> there exist disjoint open sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> such that <span class="process-math">\(C \subseteq U\)</span> and <span class="process-math">\(D \subseteq V\text{.}\)</span> The space <span class="process-math">\(X\)</span> is a <dfn class="terminology">T<span class="process-math">\(_4\)</span>-space</dfn> or a <dfn class="terminology">normal Hausdorff space</dfn> if <span class="process-math">\(X\)</span> is a normal <span class="process-math">\(T_1\)</span> space.</div></li>
 </ol>
-</div></article><div class="para" id="p-1613">
+</div></article><div class="para" id="p-1619">
 <a href="" class="xref" data-knowl="./knowl/ex_Metric_space_regular.html" title="Exercise 16">Exercise 16</a> shows that every metric space is both regular and normal. The use of the variable <span class="process-math">\(T\)</span> comes from the German “Trennungsaxiome” for separation axioms. Note again that these are not technically axioms, but rather properties. An interesting question is why we insist that <span class="process-math">\(T_3\)</span> and <span class="process-math">\(T_4\)</span>-spaces also be <span class="process-math">\(T_1\text{.}\)</span> We want these axioms to provide more separation as the index increases. Consider a space <span class="process-math">\(X\)</span> with the indiscrete topology. In this space, nothing is separated. However, this space is vacuously regular and normal. To avoid this seeming incongruity, we insist on working only with <span class="process-math">\(T_1\)</span> spaces. Note that a space with the indiscrete topology is not <span class="process-math">\(T_1\text{.}\)</span>
 </div>
-<div class="para" id="p-1614">It is the case that every <span class="process-math">\(T_4\)</span>-space is <span class="process-math">\(T_3\text{,}\)</span> every <span class="process-math">\(T_3\)</span>-space is <span class="process-math">\(T_2\text{,}\)</span> and every <span class="process-math">\(T_2\)</span>-space is <span class="process-math">\(T_1\text{.}\)</span> Verification of these statements are left to <a href="" class="xref" data-knowl="./knowl/ex_T_1_2_3.html" title="Exercise 18">Exercise 18</a>. These properties are also all different. That is, there are <span class="process-math">\(T_1\)</span>-spaces that are not <span class="process-math">\(T_2\)</span> and <span class="process-math">\(T_2\)</span>-spaces that are not <span class="process-math">\(T_3\text{.}\)</span> These problems are given in <a href="" class="xref" data-knowl="./knowl/ex_not_T_1_2_3.html" title="Exercise 19">Exercise 19</a>. The fact that there are <span class="process-math">\(T_3\)</span>-spaces that are not <span class="process-math">\(T_4\)</span> is a bit difficult. An example is the <dfn class="terminology">Niemytzki plane</dfn>. The Niemytzki plane is the upper half plane <span class="process-math">\(X = \{(x,y) \in \R^2 \mid y \geq 0\}\text{.}\)</span> Let <span class="process-math">\(L\)</span> be the boundary of <span class="process-math">\(X\text{.}\)</span> That is, <span class="process-math">\(L = \{(x,y) \in \R^2 \mid y = 0\}\text{.}\)</span> A basis for the topology on <span class="process-math">\(X\)</span> consists of the standard open disks centered at points with <span class="process-math">\(y \gt 0\)</span> along with the open disks in <span class="process-math">\(X \setminus L\)</span> that are tangent to <span class="process-math">\(L\)</span> together with their points of tangency. We won’t verify that the Niemytzki plane is <span class="process-math">\(T_3\)</span> but not <span class="process-math">\(T_4\text{.}\)</span> The interested reader can find an accessible proof in the article “Another Proof that the Niemytzki Plane is not Normal” by David H. Vetterlein in the <span class="booktitle">Pi Mu Epsilon Journal</span>, Vol. 10, No. 2 (SPRING 1995), pp. 119-121.</div></section></div>
+<div class="para" id="p-1620">It is the case that every <span class="process-math">\(T_4\)</span>-space is <span class="process-math">\(T_3\text{,}\)</span> every <span class="process-math">\(T_3\)</span>-space is <span class="process-math">\(T_2\text{,}\)</span> and every <span class="process-math">\(T_2\)</span>-space is <span class="process-math">\(T_1\text{.}\)</span> Verification of these statements are left to <a href="" class="xref" data-knowl="./knowl/ex_T_1_2_3.html" title="Exercise 18">Exercise 18</a>. These properties are also all different. That is, there are <span class="process-math">\(T_1\)</span>-spaces that are not <span class="process-math">\(T_2\)</span> and <span class="process-math">\(T_2\)</span>-spaces that are not <span class="process-math">\(T_3\text{.}\)</span> These problems are given in <a href="" class="xref" data-knowl="./knowl/ex_not_T_1_2_3.html" title="Exercise 19">Exercise 19</a>. The fact that there are <span class="process-math">\(T_3\)</span>-spaces that are not <span class="process-math">\(T_4\)</span> is a bit difficult. An example is the <dfn class="terminology">Niemytzki plane</dfn>. The Niemytzki plane is the upper half plane <span class="process-math">\(X = \{(x,y) \in \R^2 \mid y \geq 0\}\text{.}\)</span> Let <span class="process-math">\(L\)</span> be the boundary of <span class="process-math">\(X\text{.}\)</span> That is, <span class="process-math">\(L = \{(x,y) \in \R^2 \mid y = 0\}\text{.}\)</span> A basis for the topology on <span class="process-math">\(X\)</span> consists of the standard open disks centered at points with <span class="process-math">\(y \gt 0\)</span> along with the open disks in <span class="process-math">\(X \setminus L\)</span> that are tangent to <span class="process-math">\(L\)</span> together with their points of tangency. We won’t verify that the Niemytzki plane is <span class="process-math">\(T_3\)</span> but not <span class="process-math">\(T_4\text{.}\)</span> The interested reader can find an accessible proof in the article “Another Proof that the Niemytzki Plane is not Normal” by David H. Vetterlein in the <span class="booktitle">Pi Mu Epsilon Journal</span>, Vol. 10, No. 2 (SPRING 1995), pp. 119-121.</div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_set_boundary.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_closed_sets_top_summ.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>The Closure of a Set</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -603,55 +604,55 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_set_closure"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">The Closure of a Set</span>
 </h2>
-<div class="para" id="p-1144">We have seen that the interior of a set is the largest open subset of that set. There is a similar result for closed sets. For example, let <span class="process-math">\(A = (0,1)\)</span> in <span class="process-math">\((\R, d_E)\text{.}\)</span> The set <span class="process-math">\(A\)</span> is an open set, but if we union <span class="process-math">\(A\)</span> with its limit points, we obtain the closed set <span class="process-math">\(C = [0,1]\text{.}\)</span> Moreover, The set <span class="process-math">\([0,1]\)</span> is the smallest closed set that contains <span class="process-math">\(A\text{.}\)</span> This leads to the idea of the <dfn class="terminology">closure</dfn> of a set.</div>
+<div class="para" id="p-1150">We have seen that the interior of a set is the largest open subset of that set. There is a similar result for closed sets. For example, let <span class="process-math">\(A = (0,1)\)</span> in <span class="process-math">\((\R, d_E)\text{.}\)</span> The set <span class="process-math">\(A\)</span> is an open set, but if we union <span class="process-math">\(A\)</span> with its limit points, we obtain the closed set <span class="process-math">\(C = [0,1]\text{.}\)</span> Moreover, The set <span class="process-math">\([0,1]\)</span> is the smallest closed set that contains <span class="process-math">\(A\text{.}\)</span> This leads to the idea of the <dfn class="terminology">closure</dfn> of a set.</div>
 <article class="definition definition-like" id="definition-33"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">10.9</span><span class="period">.</span>
-</h3> <div class="para logical" id="p-1145">
-<div class="para">The closure of a subset <span class="process-math">\(A\)</span> of a metric space <span class="process-math">\(X\)</span> is the set</div>
+</h3> <div class="para logical" id="p-1151">
+<div class="para">The <dfn class="terminology">closure</dfn> of a subset <span class="process-math">\(A\)</span> of a metric space <span class="process-math">\(X\)</span> is the set</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \overline{A} = A \cup A'\text{.}
 \end{equation*}
 </div>
-</div></article><div class="para" id="p-1146">In other words, the closure of a set is the collection of the elements of the set and the limit points of the set — those points that are on the “edge” of the set. The importance of the closure of a set <span class="process-math">\(A\)</span> is that the closure of <span class="process-math">\(A\)</span> is the smallest closed set that contains <span class="process-math">\(A\text{.}\)</span>
+</div></article><div class="para" id="p-1152">In other words, the closure of a set is the collection of the elements of the set and the limit points of the set — those points that are on the “edge” of the set. The importance of the closure of a set <span class="process-math">\(A\)</span> is that the closure of <span class="process-math">\(A\)</span> is the smallest closed set that contains <span class="process-math">\(A\text{.}\)</span>
 </div>
 <article class="theorem theorem-like" id="thm_closure_closed"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">10.10</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-1147">Let <span class="process-math">\(X\)</span> be a metric space and <span class="process-math">\(A\)</span> a subset of <span class="process-math">\(X\text{.}\)</span> The closure of <span class="process-math">\(A\)</span> is a closed set. Moreover, the closure of <span class="process-math">\(A\)</span> is the smallest closed subset of <span class="process-math">\(X\)</span> that contains <span class="process-math">\(A\text{.}\)</span>
+<div class="para" id="p-1153">Let <span class="process-math">\(X\)</span> be a metric space and <span class="process-math">\(A\)</span> a subset of <span class="process-math">\(X\text{.}\)</span> The closure of <span class="process-math">\(A\)</span> is a closed set. Moreover, the closure of <span class="process-math">\(A\)</span> is the smallest closed subset of <span class="process-math">\(X\)</span> that contains <span class="process-math">\(A\text{.}\)</span>
 </div></article><article class="proof" id="proof-13"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
-<div class="para" id="p-1148">Let <span class="process-math">\(X\)</span> be a metric space and <span class="process-math">\(A\)</span> a subset of <span class="process-math">\(X\text{.}\)</span> To prove that <span class="process-math">\(\overline{A}\)</span> is a closed set, we will prove that <span class="process-math">\(\overline{A}\)</span> contains its limit points. Let <span class="process-math">\(x \in \overline{A}'\text{.}\)</span> To show that <span class="process-math">\(x \in \overline{A}\text{,}\)</span> we proceed by contradiction and assume that <span class="process-math">\(x \notin \overline{A}\text{.}\)</span> This implies that <span class="process-math">\(x \notin A\)</span> and <span class="process-math">\(x \notin A'\text{.}\)</span> Since <span class="process-math">\(x \notin A'\text{,}\)</span> there exists a neighborhood <span class="process-math">\(N\)</span> of <span class="process-math">\(x\)</span> that contains no points of <span class="process-math">\(A\)</span> other than <span class="process-math">\(x\text{.}\)</span> But <span class="process-math">\(A \subseteq \overline{A}\)</span> and <span class="process-math">\(x \notin \overline{A}\text{,}\)</span> so it follows that <span class="process-math">\(N \cap A = \emptyset\text{.}\)</span> This implies that there is an open ball <span class="process-math">\(B \subseteq N\)</span> centered at <span class="process-math">\(x\)</span> so that <span class="process-math">\(B \cap A = \emptyset\text{.}\)</span> The fact that <span class="process-math">\(x \in \overline{A}'\)</span> means that <span class="process-math">\(B \cap \overline{A}\)</span> contains a point <span class="process-math">\(y\)</span> in <span class="process-math">\(\overline{A}\)</span> different from <span class="process-math">\(x\text{.}\)</span> Since <span class="process-math">\(B \cap A = \emptyset\text{,}\)</span> we must have <span class="process-math">\(y \in A'\text{.}\)</span> But this, and the fact that <span class="process-math">\(B\)</span> is a neighborhood of <span class="process-math">\(y\text{,}\)</span> means that <span class="process-math">\(B\)</span> must contain a point of <span class="process-math">\(A\)</span> different than <span class="process-math">\(y\text{.}\)</span> But <span class="process-math">\(B \cap A = \emptyset\text{,}\)</span> so we have reached a contradiction. We conclude that <span class="process-math">\(x \in \overline{A}\)</span> and <span class="process-math">\(\overline{A}' \subseteq \overline{A}\text{.}\)</span> This shows that <span class="process-math">\(\overline{A}\)</span> is a closed set.</div> <div class="para" id="p-1149">The proof that <span class="process-math">\(\overline{A}\)</span> is the smallest closed subset of <span class="process-math">\(X\)</span> that contains <span class="process-math">\(A\)</span> is left for the next activity.</div></article><article class="activity project-like" id="activity-46"><h3 class="heading">
+<div class="para" id="p-1154">Let <span class="process-math">\(X\)</span> be a metric space and <span class="process-math">\(A\)</span> a subset of <span class="process-math">\(X\text{.}\)</span> To prove that <span class="process-math">\(\overline{A}\)</span> is a closed set, we will prove that <span class="process-math">\(\overline{A}\)</span> contains its limit points. Let <span class="process-math">\(x \in \overline{A}'\text{.}\)</span> To show that <span class="process-math">\(x \in \overline{A}\text{,}\)</span> we proceed by contradiction and assume that <span class="process-math">\(x \notin \overline{A}\text{.}\)</span> This implies that <span class="process-math">\(x \notin A\)</span> and <span class="process-math">\(x \notin A'\text{.}\)</span> Since <span class="process-math">\(x \notin A'\text{,}\)</span> there exists a neighborhood <span class="process-math">\(N\)</span> of <span class="process-math">\(x\)</span> that contains no points of <span class="process-math">\(A\)</span> other than <span class="process-math">\(x\text{.}\)</span> But <span class="process-math">\(A \subseteq \overline{A}\)</span> and <span class="process-math">\(x \notin \overline{A}\text{,}\)</span> so it follows that <span class="process-math">\(N \cap A = \emptyset\text{.}\)</span> This implies that there is an open ball <span class="process-math">\(B \subseteq N\)</span> centered at <span class="process-math">\(x\)</span> so that <span class="process-math">\(B \cap A = \emptyset\text{.}\)</span> The fact that <span class="process-math">\(x \in \overline{A}'\)</span> means that <span class="process-math">\(B \cap \overline{A}\)</span> contains a point <span class="process-math">\(y\)</span> in <span class="process-math">\(\overline{A}\)</span> different from <span class="process-math">\(x\text{.}\)</span> Since <span class="process-math">\(B \cap A = \emptyset\text{,}\)</span> we must have <span class="process-math">\(y \in A'\text{.}\)</span> But this, and the fact that <span class="process-math">\(B\)</span> is a neighborhood of <span class="process-math">\(y\text{,}\)</span> means that <span class="process-math">\(B\)</span> must contain a point of <span class="process-math">\(A\)</span> different than <span class="process-math">\(y\text{.}\)</span> But <span class="process-math">\(B \cap A = \emptyset\text{,}\)</span> so we have reached a contradiction. We conclude that <span class="process-math">\(x \in \overline{A}\)</span> and <span class="process-math">\(\overline{A}' \subseteq \overline{A}\text{.}\)</span> This shows that <span class="process-math">\(\overline{A}\)</span> is a closed set.</div> <div class="para" id="p-1155">The proof that <span class="process-math">\(\overline{A}\)</span> is the smallest closed subset of <span class="process-math">\(X\)</span> that contains <span class="process-math">\(A\)</span> is left for the next activity.</div></article><article class="activity project-like" id="activity-46"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">10.9</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-131"><div class="para" id="p-1150">Let <span class="process-math">\((X,d)\)</span> be a metric space, and let <span class="process-math">\(A\)</span> be a subset of <span class="process-math">\(X\text{.}\)</span>
+<div class="introduction" id="introduction-131"><div class="para" id="p-1156">Let <span class="process-math">\((X,d)\)</span> be a metric space, and let <span class="process-math">\(A\)</span> be a subset of <span class="process-math">\(X\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-473"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1151">What will we have to show to prove that <span class="process-math">\(\overline{A}\)</span> is the smallest closed subset of <span class="process-math">\(X\)</span> that contains <span class="process-math">\(A\text{?}\)</span>
+<div class="para" id="p-1157">What will we have to show to prove that <span class="process-math">\(\overline{A}\)</span> is the smallest closed subset of <span class="process-math">\(X\)</span> that contains <span class="process-math">\(A\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-474"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-1152">Suppose that <span class="process-math">\(C\)</span> is a closed subset of <span class="process-math">\(X\)</span> that contains <span class="process-math">\(A\text{.}\)</span> To show that <span class="process-math">\(\overline{A} \subseteq C\text{,}\)</span> why is it enough to demonstrate that <span class="process-math">\(A' \subseteq C\text{?}\)</span>
+<div class="para" id="p-1158">Suppose that <span class="process-math">\(C\)</span> is a closed subset of <span class="process-math">\(X\)</span> that contains <span class="process-math">\(A\text{.}\)</span> To show that <span class="process-math">\(\overline{A} \subseteq C\text{,}\)</span> why is it enough to demonstrate that <span class="process-math">\(A' \subseteq C\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-475"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-1153">If <span class="process-math">\(x \in A'\text{,}\)</span> what can we say about <span class="process-math">\(x\text{?}\)</span>
+<div class="para" id="p-1159">If <span class="process-math">\(x \in A'\text{,}\)</span> what can we say about <span class="process-math">\(x\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-476"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="p-1154">Complete the proof that <span class="process-math">\(\overline{A} \subseteq C\text{.}\)</span>
-</div></article></article><div class="para" id="p-1155">One consequence of <a href="" class="xref" data-knowl="./knowl/thm_closure_closed.html" title="Theorem 10.10">Theorem 10.10</a> is the following.</div>
+<div class="para" id="p-1160">Complete the proof that <span class="process-math">\(\overline{A} \subseteq C\text{.}\)</span>
+</div></article></article><div class="para" id="p-1161">One consequence of <a href="" class="xref" data-knowl="./knowl/thm_closure_closed.html" title="Theorem 10.10">Theorem 10.10</a> is the following.</div>
 <article class="corollary theorem-like" id="corollary-5"><h3 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">10.11</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-1156">A subset <span class="process-math">\(C\)</span> of a metric space <span class="process-math">\(X\)</span> is closed if and only if <span class="process-math">\(C = \overline{C}\text{.}\)</span>
-</div></article><div class="para" id="p-1157">We can also characterize closed sets as sets that contain their boundaries.</div>
+<div class="para" id="p-1162">A subset <span class="process-math">\(C\)</span> of a metric space <span class="process-math">\(X\)</span> is closed if and only if <span class="process-math">\(C = \overline{C}\text{.}\)</span>
+</div></article><div class="para" id="p-1163">We can also characterize closed sets as sets that contain their boundaries.</div>
 <article class="definition definition-like" id="definition-34"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">10.12</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-1158">The boundary <span class="process-math">\(\Bdry(A)\)</span> of a subset <span class="process-math">\(A\)</span> of a metric space <span class="process-math">\(X\)</span> is the set of all boundary points of <span class="process-math">\(A\text{.}\)</span>
+<div class="para" id="p-1164">The <dfn class="terminology">boundary</dfn> <span class="process-math">\(\Bdry(A)\)</span> of a subset <span class="process-math">\(A\)</span> of a metric space <span class="process-math">\(X\)</span> is the set of all boundary points of <span class="process-math">\(A\text{.}\)</span>
 </div></article><article class="theorem theorem-like" id="thm_Closed_boundary"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">10.13</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-1159">A subset <span class="process-math">\(C\)</span> of a metric space <span class="process-math">\(X\)</span> is closed if and only if <span class="process-math">\(C\)</span> contains its boundary.</div></article><div class="para" id="p-1160">The proof of <a href="" class="xref" data-knowl="./knowl/thm_Closed_boundary.html" title="Theorem 10.13">Theorem 10.13</a> is left to <a href="" class="xref" data-knowl="./knowl/ex_closed_bounded.html" title="Exercise 10">Exercise 10</a>.</div>
-<div class="para" id="p-1161">Recall that a boundary point of a subset <span class="process-math">\(A\)</span> of a metric space <span class="process-math">\(X\)</span> is a point <span class="process-math">\(x \in X\)</span> such that every neighborhood of <span class="process-math">\(x\)</span> contains a point in <span class="process-math">\(A\)</span> and a point in <span class="process-math">\(X \setminus A\text{.}\)</span> The boundary points are those that are somehow “between” a set and its complement. For example if <span class="process-math">\(A = (0,1]\)</span> in <span class="process-math">\(\R\text{,}\)</span> the boundary of <span class="process-math">\(A\)</span> is the set <span class="process-math">\(\{0,1\}\text{.}\)</span> We also have that <span class="process-math">\(\overline{A} = [0,1]\text{,}\)</span> <span class="process-math">\(\R \setminus A = (-\infty, 0] \cup (1, \infty)\text{,}\)</span> and <span class="process-math">\(\overline{\R \setminus A} = (-\infty, 0] \cup [1, \infty)\text{.}\)</span> Notice that <span class="process-math">\(\Bdry(A) = \overline{A} \cap \overline{\R \setminus A}\text{.}\)</span> That this is always true is formalized in the next theorem.</div>
+<div class="para" id="p-1165">A subset <span class="process-math">\(C\)</span> of a metric space <span class="process-math">\(X\)</span> is closed if and only if <span class="process-math">\(C\)</span> contains its boundary.</div></article><div class="para" id="p-1166">The proof of <a href="" class="xref" data-knowl="./knowl/thm_Closed_boundary.html" title="Theorem 10.13">Theorem 10.13</a> is left to <a href="" class="xref" data-knowl="./knowl/ex_closed_bounded.html" title="Exercise 10">Exercise 10</a>.</div>
+<div class="para" id="p-1167">Recall that a boundary point of a subset <span class="process-math">\(A\)</span> of a metric space <span class="process-math">\(X\)</span> is a point <span class="process-math">\(x \in X\)</span> such that every neighborhood of <span class="process-math">\(x\)</span> contains a point in <span class="process-math">\(A\)</span> and a point in <span class="process-math">\(X \setminus A\text{.}\)</span> The boundary points are those that are somehow “between” a set and its complement. For example if <span class="process-math">\(A = (0,1]\)</span> in <span class="process-math">\(\R\text{,}\)</span> the boundary of <span class="process-math">\(A\)</span> is the set <span class="process-math">\(\{0,1\}\text{.}\)</span> We also have that <span class="process-math">\(\overline{A} = [0,1]\text{,}\)</span> <span class="process-math">\(\R \setminus A = (-\infty, 0] \cup (1, \infty)\text{,}\)</span> and <span class="process-math">\(\overline{\R \setminus A} = (-\infty, 0] \cup [1, \infty)\text{.}\)</span> Notice that <span class="process-math">\(\Bdry(A) = \overline{A} \cap \overline{\R \setminus A}\text{.}\)</span> That this is always true is formalized in the next theorem.</div>
 <article class="theorem theorem-like" id="thm_Bd_between"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">10.14</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-1162">
+<div class="para logical" id="p-1168">
 <div class="para">Let <span class="process-math">\(X\)</span> be a metric space and <span class="process-math">\(A\)</span> a subset of <span class="process-math">\(X\text{.}\)</span> Then</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -659,40 +660,40 @@ window.MathJax = {
 \end{equation*}
 </div>
 </div></article><article class="proof" id="proof-14"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
-<div class="para logical" id="p-1163">
+<div class="para logical" id="p-1169">
 <div class="para">Let <span class="process-math">\(X\)</span> be a metric space and <span class="process-math">\(A\)</span> a subset of <span class="process-math">\(X\text{.}\)</span> To prove <span class="process-math">\(\Bdry(A) = \overline{A} \cap \overline{X \setminus A}\)</span> we need to verify the containment in each direction. Let <span class="process-math">\(x \in \Bdry(A)\)</span> and let <span class="process-math">\(N\)</span> be a neighborhood of <span class="process-math">\(x\text{.}\)</span> Then <span class="process-math">\(N\)</span> contains a point in <span class="process-math">\(A\)</span> and a point in <span class="process-math">\(X \setminus A\text{.}\)</span> We consider the cases of <span class="process-math">\(x \in A\)</span> or <span class="process-math">\(x \notin A\text{.}\)</span>
 </div>
 <ul class="disc">
-<li id="li-187"><div class="para" id="p-1164">Suppose <span class="process-math">\(x \in A\text{.}\)</span> Then <span class="process-math">\(x \in \overline{A}\text{.}\)</span> Also, <span class="process-math">\(x \notin X \setminus A\text{,}\)</span> so <span class="process-math">\(N\)</span> must contain a point in <span class="process-math">\(X \setminus A\)</span> different from <span class="process-math">\(x\text{.}\)</span> That makes <span class="process-math">\(x\)</span> a limit point of <span class="process-math">\(X \setminus A\)</span> and so <span class="process-math">\(X \in \overline{A} \cap \overline{X \setminus A}\text{.}\)</span>
+<li id="li-187"><div class="para" id="p-1170">Suppose <span class="process-math">\(x \in A\text{.}\)</span> Then <span class="process-math">\(x \in \overline{A}\text{.}\)</span> Also, <span class="process-math">\(x \notin X \setminus A\text{,}\)</span> so <span class="process-math">\(N\)</span> must contain a point in <span class="process-math">\(X \setminus A\)</span> different from <span class="process-math">\(x\text{.}\)</span> That makes <span class="process-math">\(x\)</span> a limit point of <span class="process-math">\(X \setminus A\)</span> and so <span class="process-math">\(X \in \overline{A} \cap \overline{X \setminus A}\text{.}\)</span>
 </div></li>
-<li id="li-188"><div class="para" id="p-1165">Suppose <span class="process-math">\(x \notin A\text{.}\)</span> Then <span class="process-math">\(x \in X \setminus A \subseteq \overline{X \setminus A}\text{.}\)</span> Also, <span class="process-math">\(x \notin A\text{,}\)</span> so <span class="process-math">\(N\)</span> must contain a point in <span class="process-math">\(A\)</span> different from <span class="process-math">\(x\text{.}\)</span> That makes <span class="process-math">\(x\)</span> a limit point of <span class="process-math">\(A\)</span> and so <span class="process-math">\(X \in \overline{A} \cap \overline{X \setminus A}\text{.}\)</span>
+<li id="li-188"><div class="para" id="p-1171">Suppose <span class="process-math">\(x \notin A\text{.}\)</span> Then <span class="process-math">\(x \in X \setminus A \subseteq \overline{X \setminus A}\text{.}\)</span> Also, <span class="process-math">\(x \notin A\text{,}\)</span> so <span class="process-math">\(N\)</span> must contain a point in <span class="process-math">\(A\)</span> different from <span class="process-math">\(x\text{.}\)</span> That makes <span class="process-math">\(x\)</span> a limit point of <span class="process-math">\(A\)</span> and so <span class="process-math">\(X \in \overline{A} \cap \overline{X \setminus A}\text{.}\)</span>
 </div></li>
 </ul>
-</div> <div class="para" id="p-1166">In either case we have <span class="process-math">\(x \in \overline{A} \cap \overline{X \setminus A}\)</span> and so <span class="process-math">\(\Bdry(A) \subseteq \overline{A} \cap \overline{X \setminus A}\text{.}\)</span>
-</div> <div class="para" id="p-1167">For the reverse implication, refer to the next activity.</div></article><article class="activity project-like" id="activity-47"><h3 class="heading">
+</div> <div class="para" id="p-1172">In either case we have <span class="process-math">\(x \in \overline{A} \cap \overline{X \setminus A}\)</span> and so <span class="process-math">\(\Bdry(A) \subseteq \overline{A} \cap \overline{X \setminus A}\text{.}\)</span>
+</div> <div class="para" id="p-1173">For the reverse implication, refer to the next activity.</div></article><article class="activity project-like" id="activity-47"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">10.10</span><span class="period">.</span>
 </h3>
 <div class="introduction" id="introduction-132">
-<div class="para logical" id="p-1168">
+<div class="para logical" id="p-1174">
 <div class="para">Let <span class="process-math">\(X\)</span> be a metric space and <span class="process-math">\(A\)</span> a subset of <span class="process-math">\(X\text{.}\)</span> In this activity we prove that</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \overline{A} \cap \overline{X \setminus A} \subseteq \Bdry(A)\text{.}
 \end{equation*}
 </div>
-</div> <div class="para" id="p-1169">Let <span class="process-math">\(x \in \overline{A} \cap \overline{X \setminus A}\text{.}\)</span>
+</div> <div class="para" id="p-1175">Let <span class="process-math">\(x \in \overline{A} \cap \overline{X \setminus A}\text{.}\)</span>
 </div>
 </div>
 <article class="task exercise-like" id="task-477"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1170">What must be true about <span class="process-math">\(x\text{,}\)</span> given that <span class="process-math">\(x\)</span> is in the intersection of two sets?</div></article><article class="task exercise-like" id="task-478"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="introduction" id="introduction-133"><div class="para" id="p-1171">Let <span class="process-math">\(N\)</span> be a neighborhood of <span class="process-math">\(x\text{.}\)</span> As we did in the proof of <a href="" class="xref" data-knowl="./knowl/thm_Bd_between.html" title="Theorem 10.14">Theorem 10.14</a>, we consider the cases <span class="process-math">\(x \in A\)</span> and <span class="process-math">\(x \notin A\text{.}\)</span>
+<div class="para" id="p-1176">What must be true about <span class="process-math">\(x\text{,}\)</span> given that <span class="process-math">\(x\)</span> is in the intersection of two sets?</div></article><article class="task exercise-like" id="task-478"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="introduction" id="introduction-133"><div class="para" id="p-1177">Let <span class="process-math">\(N\)</span> be a neighborhood of <span class="process-math">\(x\text{.}\)</span> As we did in the proof of <a href="" class="xref" data-knowl="./knowl/thm_Bd_between.html" title="Theorem 10.14">Theorem 10.14</a>, we consider the cases <span class="process-math">\(x \in A\)</span> and <span class="process-math">\(x \notin A\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-479"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="p-1172">Suppose <span class="process-math">\(x \in A\text{.}\)</span> Why must <span class="process-math">\(N\)</span> contain a point in <span class="process-math">\(A\)</span> and a point not in <span class="process-math">\(A\text{?}\)</span> What does this tell us about <span class="process-math">\(x\text{?}\)</span>
+<div class="para" id="p-1178">Suppose <span class="process-math">\(x \in A\text{.}\)</span> Why must <span class="process-math">\(N\)</span> contain a point in <span class="process-math">\(A\)</span> and a point not in <span class="process-math">\(A\text{?}\)</span> What does this tell us about <span class="process-math">\(x\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-480"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
-<div class="para" id="p-1173">Suppose <span class="process-math">\(x \notin A\text{.}\)</span> Why must <span class="process-math">\(N\)</span> contain a point in <span class="process-math">\(A\)</span> and a point not in <span class="process-math">\(A\text{?}\)</span> What does this tell us about <span class="process-math">\(x\text{?}\)</span>
+<div class="para" id="p-1179">Suppose <span class="process-math">\(x \notin A\text{.}\)</span> Why must <span class="process-math">\(N\)</span> contain a point in <span class="process-math">\(A\)</span> and a point not in <span class="process-math">\(A\text{?}\)</span> What does this tell us about <span class="process-math">\(x\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-481"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
-<div class="para" id="p-1174">What can we conclude from parts i. and ii.?</div></article></article></article></section></div>
+<div class="para" id="p-1180">What can we conclude from parts (i) and (ii)?</div></article></article></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_limit_closed.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_closed_limits_seq.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

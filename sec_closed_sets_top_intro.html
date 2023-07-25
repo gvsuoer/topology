@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Introduction</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -603,36 +604,35 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_closed_sets_top_intro"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">Introduction</span>
 </h2>
-<div class="para" id="p-1521">We defined a closed set in a metric space to be the complement of an open set. Since a topology is defined in terms of open sets, we can make the same definition of closed set in a topological space. With the definition of closed set in hand, we can then ask if it is possible to define limit points, boundary, and closure in topological spaces and determine if there are corresponding properties for these ideas in topological spaces.</div>
+<div class="para" id="p-1527">We defined a closed set in a metric space to be the complement of an open set. Since a topology is defined in terms of open sets, we can make the same definition of closed set in a topological space. With the definition of closed set in hand, we can then ask if it is possible to define limit points, boundary, and closure in topological spaces and determine if there are corresponding properties for these ideas in topological spaces.</div>
 <article class="definition definition-like" id="definition-44"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">13.1</span><span class="period">.</span>
-</h3>
-<div class="para" id="p-1522">A subset <span class="process-math">\(C\)</span> of a topological space <span class="process-math">\(X\)</span> is closed if its complement <span class="process-math">\(X \setminus C\)</span> is open.</div></article><article class="exploration project-like" id="exploration-12"><h3 class="heading">
+</h3> <div class="para" id="p-1528">A subset <span class="process-math">\(C\)</span> of a topological space <span class="process-math">\(X\)</span> is <dfn class="terminology">closed</dfn> if its complement <span class="process-math">\(X \setminus C\)</span> is open.</div></article><article class="exploration project-like" id="exploration-12"><h3 class="heading">
 <span class="type">Preview Activity</span><span class="space"> </span><span class="codenumber">13.1</span><span class="period">.</span>
 </h3>
 <article class="task exercise-like" id="task-626"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="introduction" id="introduction-170"><div class="para" id="p-1523">List all of the closed sets in the indicated topological space.</div></div>
+<div class="introduction" id="introduction-170"><div class="para" id="p-1529">List all of the closed sets in the indicated topological space.</div></div>
 <article class="task exercise-like" id="task-627"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="p-1524">
+<div class="para" id="p-1530">
 <span class="process-math">\((X, \tau)\)</span> with <span class="process-math">\(X= \{a,b,c,d\}\)</span> and <span class="process-math">\(\tau = \{\emptyset, \{a\}, \{b\}, \{a,b\}, X \}\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-628"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
-<div class="para" id="p-1525">
+<div class="para" id="p-1531">
 <span class="process-math">\((X, \tau)\)</span> with <span class="process-math">\(X= \{a,b,c,d,e,f\}\)</span> and <span class="process-math">\(\tau = \{\emptyset,\{a\}, \{c,d\}, \{a,c,d\}, \{b,c,d,e,f\}, X\}\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-629"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
-<div class="para" id="p-1526">
+<div class="para" id="p-1532">
 <span class="process-math">\((X, \tau)\)</span> with <span class="process-math">\(X = \R\)</span> and <span class="process-math">\(\tau = \{\emptyset, \{0\}, \R\}\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-630"><h5 class="heading"><span class="codenumber">(iv)</span></h5>
-<div class="para" id="p-1527">
+<div class="para" id="p-1533">
 <span class="process-math">\((X, \tau)\)</span> with <span class="process-math">\(X = \{a,b,c\}\)</span> and <span class="process-math">\(\tau = \{\emptyset, \{a\}, \{b\},\{c\}, \{a,b\}, \{a,c\}, \{b,c\}, X \}\text{.}\)</span> (What is the name of this topology?)</div></article><article class="task exercise-like" id="task-631"><h5 class="heading"><span class="codenumber">(v)</span></h5>
-<div class="para" id="p-1528">
+<div class="para" id="p-1534">
 <span class="process-math">\((X, \tau)\)</span> with <span class="process-math">\(X=\Z^+\)</span> and <span class="process-math">\(\tau = \{\emptyset, X\}\)</span> (this topology is called the <dfn class="terminology">indiscrete</dfn> or <dfn class="terminology">trivial</dfn> topology).</div></article></article><article class="task exercise-like" id="task-632"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="introduction" id="introduction-171"><div class="para" id="p-1529">Using the examples from part (1), find (if possible), a set that is</div></div>
+<div class="introduction" id="introduction-171"><div class="para" id="p-1535">Using the examples from part (1), find (if possible), a set that is</div></div>
 <article class="task exercise-like" id="task-633"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="p-1530">both closed and open (if possible, find one that is not the entire set or the empty set)</div></article><article class="task exercise-like" id="task-634"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
-<div class="para" id="p-1531">closed but not open</div></article><article class="task exercise-like" id="task-635"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
-<div class="para" id="p-1532">open but not closed</div></article><article class="task exercise-like" id="task-636"><h5 class="heading"><span class="codenumber">(iv)</span></h5>
-<div class="para" id="p-1533">not open and not closed</div></article></article><article class="task exercise-like" id="task-637"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-1534">In <span class="process-math">\(\R^n\)</span> with the Euclidean metric, every single element set is closed. Does this property hold in the topological space <span class="process-math">\((X, \tau)\text{,}\)</span> where <span class="process-math">\(X = \{a, b, c\}\)</span> and <span class="process-math">\(\tau = \{\emptyset, \{a\}, \{a, b\}, \{a, c\}, X\}\text{?}\)</span> Explain.</div></article></article></section></div>
+<div class="para" id="p-1536">both closed and open (if possible, find one that is not the entire set or the empty set)</div></article><article class="task exercise-like" id="task-634"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
+<div class="para" id="p-1537">closed but not open</div></article><article class="task exercise-like" id="task-635"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
+<div class="para" id="p-1538">open but not closed</div></article><article class="task exercise-like" id="task-636"><h5 class="heading"><span class="codenumber">(iv)</span></h5>
+<div class="para" id="p-1539">not open and not closed</div></article></article><article class="task exercise-like" id="task-637"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="p-1540">In <span class="process-math">\(\R^n\)</span> with the Euclidean metric, every single element set is closed. Does this property hold in the topological space <span class="process-math">\((X, \tau)\text{,}\)</span> where <span class="process-math">\(X = \{a, b, c\}\)</span> and <span class="process-math">\(\tau = \{\emptyset, \{a\}, \{a, b\}, \{a, c\}, X\}\text{?}\)</span> Explain.</div></article></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="chap_Closed_sets_topology.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_union_inter_closed.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

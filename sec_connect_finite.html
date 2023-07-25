@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Path Connectedness and Connectedness in Finite Topological Spaces</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -603,23 +604,23 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_connect_finite"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">Path Connectedness and Connectedness in Finite Topological Spaces</span>
 </h2>
-<div class="para" id="p-2484">In this section we will demonstrate that connectedness and path connectedness are equivalent concepts in finite topological spaces. In the following section, we prove that path connectedness and connectedness are not equivalent in infinite topological spaces. Throughout this section, we assume that <span class="process-math">\(X\)</span> is a finite topological space. We begin with an example to motivate the main ideas.</div>
+<div class="para" id="p-2490">In this section we will demonstrate that connectedness and path connectedness are equivalent concepts in finite topological spaces. In the following section, we prove that path connectedness and connectedness are not equivalent in infinite topological spaces. Throughout this section, we assume that <span class="process-math">\(X\)</span> is a finite topological space. We begin with an example to motivate the main ideas.</div>
 <article class="activity project-like" id="act_minimal_nbhds"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">19.5</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-284"><div class="para" id="p-2485">Let <span class="process-math">\(X = \{a,b,c,d\}\)</span> and <span class="process-math">\(\tau = \{\emptyset, \{b\}, \{c\}, \{a,b\}, \{b,c\}, \{a,b,c\}, \{b,c,d\}, X\}\text{.}\)</span> Assume that <span class="process-math">\(\tau\)</span> is a topology on <span class="process-math">\(X\text{.}\)</span>
+<div class="introduction" id="introduction-284"><div class="para" id="p-2491">Let <span class="process-math">\(X = \{a,b,c,d\}\)</span> and <span class="process-math">\(\tau = \{\emptyset, \{b\}, \{c\}, \{a,b\}, \{b,c\}, \{a,b,c\}, \{b,c,d\}, X\}\text{.}\)</span> Assume that <span class="process-math">\(\tau\)</span> is a topology on <span class="process-math">\(X\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-1067"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-2486">Is <span class="process-math">\(X\)</span> connected? Explain.</div></article><article class="task exercise-like" id="task-1068"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-2487">For each <span class="process-math">\(x \in X\text{,}\)</span> let <span class="process-math">\(U_x\)</span> be the intersection of all open sets that contain <span class="process-math">\(x\)</span> (we call <span class="process-math">\(U_x\)</span> a <dfn class="terminology">minimal neighborhood</dfn> of <span class="process-math">\(x\)</span>).</div> <article class="definition definition-like" id="def_min_nghb"><h5 class="heading">
+<div class="para" id="p-2492">Is <span class="process-math">\(X\)</span> connected? Explain.</div></article><article class="task exercise-like" id="task-1068"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-2493">For each <span class="process-math">\(x \in X\text{,}\)</span> let <span class="process-math">\(U_x\)</span> be the intersection of all open sets that contain <span class="process-math">\(x\)</span> (we call <span class="process-math">\(U_x\)</span> a <dfn class="terminology">minimal neighborhood</dfn> of <span class="process-math">\(x\)</span>).</div> <article class="definition definition-like" id="def_min_nghb"><h5 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">19.11</span><span class="period">.</span>
-</h5> <div class="para" id="p-2488">For <span class="process-math">\(x \in X\text{,}\)</span> the minimal neighborhood <span class="process-math">\(U_x\)</span> of <span class="process-math">\(x\)</span> is the intersection of all open sets that contain <span class="process-math">\(x\text{.}\)</span>
-</div></article> <div class="para" id="p-2489">Find <span class="process-math">\(U_x\)</span> for each <span class="process-math">\(x \in X\text{.}\)</span>
+</h5> <div class="para" id="p-2494">For <span class="process-math">\(x \in X\text{,}\)</span> the <dfn class="terminology">minimal neighborhood</dfn> <span class="process-math">\(U_x\)</span> of <span class="process-math">\(x\)</span> is the intersection of all open sets that contain <span class="process-math">\(x\text{.}\)</span>
+</div></article> <div class="para" id="p-2495">Find <span class="process-math">\(U_x\)</span> for each <span class="process-math">\(x \in X\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-1069"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="introduction" id="introduction-285"><div class="para" id="p-2490">We will see that the minimal neighborhoods of <span class="process-math">\(X\)</span> are path connected. Here we will illustrate with <span class="process-math">\(U_d\text{.}\)</span>
+<div class="introduction" id="introduction-285"><div class="para" id="p-2496">We will see that the minimal neighborhoods of <span class="process-math">\(X\)</span> are path connected. Here we will illustrate with <span class="process-math">\(U_d\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-1070"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para logical" id="p-2491">
+<div class="para logical" id="p-2497">
 <div class="para">Let <span class="process-math">\(p : [0,1] \to X\)</span> be defined by</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -629,7 +630,7 @@ p(t) = \begin{cases}b \amp \text{ if }  0 \leq t \lt  \frac{1}{2} \\ d \amp \tex
 <div class="para">Show that <span class="process-math">\(p\)</span> is a path in <span class="process-math">\(U_d\)</span> from <span class="process-math">\(b\)</span> to <span class="process-math">\(d\text{.}\)</span>
 </div>
 </div></article><article class="task exercise-like" id="task-1071"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
-<div class="para logical" id="p-2492">
+<div class="para logical" id="p-2498">
 <div class="para">Let <span class="process-math">\(p : [0,1] \to X\)</span> be defined by</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -639,64 +640,64 @@ p(t) = \begin{cases}c \amp \text{ if }  0 \leq t \lt  \frac{1}{2} \\ d \amp \tex
 <div class="para">Show that <span class="process-math">\(p\)</span> is a path in <span class="process-math">\(U_d\)</span> from <span class="process-math">\(c\)</span> to <span class="process-math">\(d\text{.}\)</span>
 </div>
 </div></article><article class="task exercise-like" id="task-1072"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
-<div class="para" id="p-2493">Explain why <span class="process-math">\(U_d\)</span> is path connected.</div></article></article></article><div class="para" id="p-2494">The terminology in <a href="" class="xref" data-knowl="./knowl/def_min_nghb.html" title="Definition 19.11">Definition 19.11</a> is apt. Since every neighborhood <span class="process-math">\(N\)</span> of a point <span class="process-math">\(x \in X\)</span> must contain an open set <span class="process-math">\(O\)</span> with <span class="process-math">\(x \in O\text{,}\)</span> it follows that <span class="process-math">\(U_x \subseteq O \subseteq N\text{.}\)</span> So every neighborhood of <span class="process-math">\(x \in X\)</span> has <span class="process-math">\(U_x\)</span> as a subset. In addition, when <span class="process-math">\(X\)</span> is finite, the set <span class="process-math">\(U_x\)</span> is a finite intersection of open sets, so the sets <span class="process-math">\(U_x\)</span> are open sets (this is not true in general in infinite topological spaces — you are asked to find an example in Exercise (\ref{ex:U_x_not_open})). In <a href="" class="xref" data-knowl="./knowl/act_minimal_nbhds.html" title="Activity 19.5">Activity 19.5</a> we saw that <span class="process-math">\(U_x\)</span> was path connected for a particular <span class="process-math">\(x\)</span> in one example. The next activity shows that this result is true in general in finite topological spaces.</div>
+<div class="para" id="p-2499">Explain why <span class="process-math">\(U_d\)</span> is path connected.</div></article></article></article><div class="para" id="p-2500">The terminology in <a href="" class="xref" data-knowl="./knowl/def_min_nghb.html" title="Definition 19.11">Definition 19.11</a> is apt. Since every neighborhood <span class="process-math">\(N\)</span> of a point <span class="process-math">\(x \in X\)</span> must contain an open set <span class="process-math">\(O\)</span> with <span class="process-math">\(x \in O\text{,}\)</span> it follows that <span class="process-math">\(U_x \subseteq O \subseteq N\text{.}\)</span> So every neighborhood of <span class="process-math">\(x \in X\)</span> has <span class="process-math">\(U_x\)</span> as a subset. In addition, when <span class="process-math">\(X\)</span> is finite, the set <span class="process-math">\(U_x\)</span> is a finite intersection of open sets, so the sets <span class="process-math">\(U_x\)</span> are open sets (this is not true in general in infinite topological spaces — you are asked to find an example in <a href="" class="xref" data-knowl="./knowl/ex_U_x_not_open.html" title="Exercise 1">Exercise 1</a>). In <a href="" class="xref" data-knowl="./knowl/act_minimal_nbhds.html" title="Activity 19.5">Activity 19.5</a> we saw that <span class="process-math">\(U_x\)</span> was path connected for a particular <span class="process-math">\(x\)</span> in one example. The next activity shows that this result is true in general in finite topological spaces.</div>
 <article class="activity project-like" id="activity-103"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">19.6</span><span class="period">.</span>
 </h3>
 <div class="introduction" id="introduction-286">
-<div class="para logical" id="p-2495">
+<div class="para logical" id="p-2501">
 <div class="para">Let <span class="process-math">\(X\)</span> be a finite topological space, and let <span class="process-math">\(x \in X\text{.}\)</span> In this activity we demonstrate that <span class="process-math">\(U_x\)</span> is path connected. Let <span class="process-math">\(y \in U_x\)</span> and define <span class="process-math">\(p : [0,1] \to X\)</span> by</div>
 <div class="displaymath process-math">
 \begin{equation*}
 p(t) = \begin{cases}y \amp \text{ if }  0 \leq t \lt  \frac{1}{2} \\ x \amp \text{ if }  \frac{1}{2} \leq t \leq 1. \end{cases}
 \end{equation*}
 </div>
-</div> <div class="para" id="p-2496">To prove that <span class="process-math">\(p\)</span> is continuous, let <span class="process-math">\(O\)</span> be an open set in <span class="process-math">\(X\text{.}\)</span> We either have <span class="process-math">\(x \in O\)</span> or <span class="process-math">\(x \notin O\text{.}\)</span>
+</div> <div class="para" id="p-2502">To prove that <span class="process-math">\(p\)</span> is continuous, let <span class="process-math">\(O\)</span> be an open set in <span class="process-math">\(X\text{.}\)</span> We either have <span class="process-math">\(x \in O\)</span> or <span class="process-math">\(x \notin O\text{.}\)</span>
 </div>
 </div>
 <article class="task exercise-like" id="task-1073"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-2497">Suppose <span class="process-math">\(x \in O\text{.}\)</span> Why must <span class="process-math">\(y\)</span> also be in <span class="process-math">\(O\text{?}\)</span> What, then, is <span class="process-math">\(p^{-1}(O)\text{?}\)</span>
+<div class="para" id="p-2503">Suppose <span class="process-math">\(x \in O\text{.}\)</span> Why must <span class="process-math">\(y\)</span> also be in <span class="process-math">\(O\text{?}\)</span> What, then, is <span class="process-math">\(p^{-1}(O)\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-1074"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="introduction" id="introduction-287"><div class="para" id="p-2498">Now suppose <span class="process-math">\(x \notin O\text{.}\)</span> There are two cases to consider.</div></div>
+<div class="introduction" id="introduction-287"><div class="para" id="p-2504">Now suppose <span class="process-math">\(x \notin O\text{.}\)</span> There are two cases to consider.</div></div>
 <article class="task exercise-like" id="task-1075"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="p-2499">What is <span class="process-math">\(p^{-1}(O)\)</span> if <span class="process-math">\(y \in O\text{?}\)</span>
+<div class="para" id="p-2505">What is <span class="process-math">\(p^{-1}(O)\)</span> if <span class="process-math">\(y \in O\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-1076"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
-<div class="para" id="p-2500">What is <span class="process-math">\(p^{-1}(O)\)</span> if <span class="process-math">\(y \notin O\text{?}\)</span>
+<div class="para" id="p-2506">What is <span class="process-math">\(p^{-1}(O)\)</span> if <span class="process-math">\(y \notin O\text{?}\)</span>
 </div></article></article><article class="task exercise-like" id="task-1077"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-2501">Explain why <span class="process-math">\(p\)</span> is a path from <span class="process-math">\(y\)</span> to <span class="process-math">\(x\text{.}\)</span>
+<div class="para" id="p-2507">Explain why <span class="process-math">\(p\)</span> is a path from <span class="process-math">\(y\)</span> to <span class="process-math">\(x\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-1078"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="p-2502">Show that we can find a path between any two points in <span class="process-math">\(U_x\text{.}\)</span> Conclude that <span class="process-math">\(U_x\)</span> is path connected.</div></article></article><div class="para" id="p-2503">The sets <span class="process-math">\(U_x\)</span> collectively form the space <span class="process-math">\(X\text{,}\)</span> and each of the <span class="process-math">\(U_x\)</span> is a path connected subspace. So every point in <span class="process-math">\(X\)</span> is contained in some neighborhood with a path connected subset containing <span class="process-math">\(x\text{.}\)</span> Spaces with this property are called <dfn class="terminology">locally path connected</dfn>.</div>
+<div class="para" id="p-2508">Show that we can find a path between any two points in <span class="process-math">\(U_x\text{.}\)</span> Conclude that <span class="process-math">\(U_x\)</span> is path connected.</div></article></article><div class="para" id="p-2509">The sets <span class="process-math">\(U_x\)</span> collectively form the space <span class="process-math">\(X\text{,}\)</span> and each of the <span class="process-math">\(U_x\)</span> is a path connected subspace. So every point in <span class="process-math">\(X\)</span> is contained in some neighborhood with a path connected subset containing <span class="process-math">\(x\text{.}\)</span> Spaces with this property are called <dfn class="terminology">locally path connected</dfn>.</div>
 <article class="definition definition-like" id="definition-82"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">19.12</span><span class="period">.</span>
-</h3> <div class="para" id="p-2504">A topological space <span class="process-math">\((X, \tau)\)</span> is <dfn class="terminology">locally path connected at</dfn> <span class="process-math">\(x\)</span> if every neighborhood of <span class="process-math">\(x\)</span> contains a path connected open neighborhood with <span class="process-math">\(x\)</span> as an element. The space <span class="process-math">\((X, \tau)\)</span> is <dfn class="terminology">locally path connected</dfn> if <span class="process-math">\(X\)</span> is locally path connected at every point.</div></article><div class="para" id="p-2505">If <span class="process-math">\(X\)</span> is a finite topological space, for any <span class="process-math">\(x \in X\)</span> the set <span class="process-math">\(U_x\)</span> is the smallest open set containing <span class="process-math">\(x\text{.}\)</span> This means that any neighborhood of <span class="process-math">\(N\)</span> of <span class="process-math">\(x\)</span> will contain <span class="process-math">\(U_x\)</span> as a subset. Thus, a finite topological space is locally path connected (this is not true in general of infinite topological spaces, see <a href="" class="xref" data-knowl="./knowl/ex_PC_harmonic_broom.html" title="Exercise 4">Exercise 4</a> for example). One consequence of a locally path connected space is the following.</div>
+</h3> <div class="para" id="p-2510">A topological space <span class="process-math">\((X, \tau)\)</span> is <dfn class="terminology">locally path connected at</dfn> <span class="process-math">\(x\)</span> if every neighborhood of <span class="process-math">\(x\)</span> contains a path connected open neighborhood with <span class="process-math">\(x\)</span> as an element. The space <span class="process-math">\((X, \tau)\)</span> is <dfn class="terminology">locally path connected</dfn> if <span class="process-math">\(X\)</span> is locally path connected at every point.</div></article><div class="para" id="p-2511">If <span class="process-math">\(X\)</span> is a finite topological space, for any <span class="process-math">\(x \in X\)</span> the set <span class="process-math">\(U_x\)</span> is the smallest open set containing <span class="process-math">\(x\text{.}\)</span> This means that any neighborhood of <span class="process-math">\(N\)</span> of <span class="process-math">\(x\)</span> will contain <span class="process-math">\(U_x\)</span> as a subset. Thus, a finite topological space is locally path connected (this is not true in general of infinite topological spaces, see <a href="" class="xref" data-knowl="./knowl/ex_PC_harmonic_broom.html" title="Exercise 4">Exercise 4</a> for example). One consequence of a locally path connected space is the following.</div>
 <article class="lemma theorem-like" id="lem_open_PC"><h3 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">19.13</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-2506">A space <span class="process-math">\(X\)</span> is locally path connected if and only if for every open set <span class="process-math">\(O\)</span> of <span class="process-math">\(X\text{,}\)</span> each path component of <span class="process-math">\(O\)</span> is open in <span class="process-math">\(X\text{.}\)</span>
+<div class="para" id="p-2512">A space <span class="process-math">\(X\)</span> is locally path connected if and only if for every open set <span class="process-math">\(O\)</span> of <span class="process-math">\(X\text{,}\)</span> each path component of <span class="process-math">\(O\)</span> is open in <span class="process-math">\(X\text{.}\)</span>
 </div></article><article class="proof" id="proof-36"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
-<div class="para" id="p-2507">Let <span class="process-math">\(X\)</span> be a locally path connected topological space. We first show that for every open set <span class="process-math">\(O\)</span> in <span class="process-math">\(X\text{,}\)</span> every path component of <span class="process-math">\(O\)</span> is open in <span class="process-math">\(X\text{.}\)</span> Let <span class="process-math">\(O\)</span> be an open set in <span class="process-math">\(X\)</span> and let <span class="process-math">\(P\)</span> be a path component of <span class="process-math">\(O\text{.}\)</span> Let <span class="process-math">\(p \in P\text{.}\)</span> Since <span class="process-math">\(X\)</span> is locally path connected, the neighborhood <span class="process-math">\(O\)</span> of <span class="process-math">\(x\)</span> contains an open path connected neighborhood <span class="process-math">\(Q\)</span> of <span class="process-math">\(p\text{.}\)</span> The fact that <span class="process-math">\(p \in Q\)</span> and <span class="process-math">\(P\)</span> is a path component of <span class="process-math">\(O\)</span> implies that <span class="process-math">\(Q \subseteq P\text{.}\)</span> Thus, <span class="process-math">\(P\)</span> contains a neighborhood of <span class="process-math">\(p\)</span> and <span class="process-math">\(P\)</span> is open.</div> <div class="para" id="p-2508">Now we show that if for every open set <span class="process-math">\(O\)</span> in <span class="process-math">\(X\)</span> the path components of <span class="process-math">\(O\)</span> are open in <span class="process-math">\(X\text{,}\)</span> then <span class="process-math">\(X\)</span> is locally path connected. Let <span class="process-math">\(x \in X\)</span> and let <span class="process-math">\(N\)</span> be a neighborhood of <span class="process-math">\(x\text{.}\)</span> Then <span class="process-math">\(N\)</span> contains an open set <span class="process-math">\(U\)</span> with <span class="process-math">\(x \in U\text{.}\)</span> Let <span class="process-math">\(P\)</span> be the path component in <span class="process-math">\(U\)</span> that contains <span class="process-math">\(x\text{.}\)</span> Now <span class="process-math">\(P\)</span> is path connected and, by hypothesis, <span class="process-math">\(P\)</span> is open in <span class="process-math">\(X\)</span> and so is an open path connected neighborhood of <span class="process-math">\(x\text{.}\)</span> Thus, <span class="process-math">\(N\)</span> contains a path connected neighborhood of <span class="process-math">\(x\)</span> and <span class="process-math">\(X\)</span> is locally path connected at every point.</div></article><div class="para" id="p-2509">Since <span class="process-math">\(X\)</span> is open in <span class="process-math">\(X\)</span> whenever <span class="process-math">\(X\)</span> is a topological space, a natural corollary of <a href="" class="xref" data-knowl="./knowl/lem_open_PC.html" title="Lemma 19.13">Lemma 19.13</a> is the following.</div>
+<div class="para" id="p-2513">Let <span class="process-math">\(X\)</span> be a locally path connected topological space. We first show that for every open set <span class="process-math">\(O\)</span> in <span class="process-math">\(X\text{,}\)</span> every path component of <span class="process-math">\(O\)</span> is open in <span class="process-math">\(X\text{.}\)</span> Let <span class="process-math">\(O\)</span> be an open set in <span class="process-math">\(X\)</span> and let <span class="process-math">\(P\)</span> be a path component of <span class="process-math">\(O\text{.}\)</span> Let <span class="process-math">\(p \in P\text{.}\)</span> Since <span class="process-math">\(X\)</span> is locally path connected, the neighborhood <span class="process-math">\(O\)</span> of <span class="process-math">\(x\)</span> contains an open path connected neighborhood <span class="process-math">\(Q\)</span> of <span class="process-math">\(p\text{.}\)</span> The fact that <span class="process-math">\(p \in Q\)</span> and <span class="process-math">\(P\)</span> is a path component of <span class="process-math">\(O\)</span> implies that <span class="process-math">\(Q \subseteq P\text{.}\)</span> Thus, <span class="process-math">\(P\)</span> contains a neighborhood of <span class="process-math">\(p\)</span> and <span class="process-math">\(P\)</span> is open.</div> <div class="para" id="p-2514">Now we show that if for every open set <span class="process-math">\(O\)</span> in <span class="process-math">\(X\)</span> the path components of <span class="process-math">\(O\)</span> are open in <span class="process-math">\(X\text{,}\)</span> then <span class="process-math">\(X\)</span> is locally path connected. Let <span class="process-math">\(x \in X\)</span> and let <span class="process-math">\(N\)</span> be a neighborhood of <span class="process-math">\(x\text{.}\)</span> Then <span class="process-math">\(N\)</span> contains an open set <span class="process-math">\(U\)</span> with <span class="process-math">\(x \in U\text{.}\)</span> Let <span class="process-math">\(P\)</span> be the path component in <span class="process-math">\(U\)</span> that contains <span class="process-math">\(x\text{.}\)</span> Now <span class="process-math">\(P\)</span> is path connected and, by hypothesis, <span class="process-math">\(P\)</span> is open in <span class="process-math">\(X\)</span> and so is an open path connected neighborhood of <span class="process-math">\(x\text{.}\)</span> Thus, <span class="process-math">\(N\)</span> contains a path connected neighborhood of <span class="process-math">\(x\)</span> and <span class="process-math">\(X\)</span> is locally path connected at every point.</div></article><div class="para" id="p-2515">Since <span class="process-math">\(X\)</span> is open in <span class="process-math">\(X\)</span> whenever <span class="process-math">\(X\)</span> is a topological space, a natural corollary of <a href="" class="xref" data-knowl="./knowl/lem_open_PC.html" title="Lemma 19.13">Lemma 19.13</a> is the following.</div>
 <article class="corollary theorem-like" id="corollary-12"><h3 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">19.14</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-2510">Let <span class="process-math">\(X\)</span> be a locally path connected topological space. Then every path component of <span class="process-math">\(X\)</span> is open in <span class="process-math">\(X\text{.}\)</span>
-</div></article><div class="para" id="p-2511">Since there are only finitely many open sets in the finite space <span class="process-math">\(X\text{,}\)</span> any arbitrary intersection of open sets in <span class="process-math">\(X\)</span> just reduces to a finite intersection. So the intersection of any collection of open sets in <span class="process-math">\(X\)</span> is again an open set in <span class="process-math">\(X\text{.}\)</span> We will show that <span class="process-math">\(X\)</span> is a union of path connected components, which will ultimately allow us to prove that if <span class="process-math">\(X\)</span> is connected, then <span class="process-math">\(X\)</span> is also path connected.</div>
+<div class="para" id="p-2516">Let <span class="process-math">\(X\)</span> be a locally path connected topological space. Then every path component of <span class="process-math">\(X\)</span> is open in <span class="process-math">\(X\text{.}\)</span>
+</div></article><div class="para" id="p-2517">Since there are only finitely many open sets in the finite space <span class="process-math">\(X\text{,}\)</span> any arbitrary intersection of open sets in <span class="process-math">\(X\)</span> just reduces to a finite intersection. So the intersection of any collection of open sets in <span class="process-math">\(X\)</span> is again an open set in <span class="process-math">\(X\text{.}\)</span> We will show that <span class="process-math">\(X\)</span> is a union of path connected components, which will ultimately allow us to prove that if <span class="process-math">\(X\)</span> is connected, then <span class="process-math">\(X\)</span> is also path connected.</div>
 <article class="activity project-like" id="activity-104"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">19.7</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-288"><div class="para" id="p-2512">Let <span class="process-math">\(X\)</span> be a locally path connected topological space. In this activity we will prove that the components and path components of <span class="process-math">\(X\)</span> are the same.</div></div>
+<div class="introduction" id="introduction-288"><div class="para" id="p-2518">Let <span class="process-math">\(X\)</span> be a locally path connected topological space. In this activity we will prove that the components and path components of <span class="process-math">\(X\)</span> are the same.</div></div>
 <article class="task exercise-like" id="task-1079"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-2513">Let <span class="process-math">\(x \in X\text{,}\)</span> and let <span class="process-math">\(C\)</span> be the component of <span class="process-math">\(X\)</span> containing <span class="process-math">\(x\)</span> and <span class="process-math">\(P\)</span> be the path component of <span class="process-math">\(X\)</span> containing <span class="process-math">\(x\text{.}\)</span> Show that <span class="process-math">\(P \subseteq C\text{.}\)</span>
+<div class="para" id="p-2519">Let <span class="process-math">\(x \in X\text{,}\)</span> and let <span class="process-math">\(C\)</span> be the component of <span class="process-math">\(X\)</span> containing <span class="process-math">\(x\)</span> and <span class="process-math">\(P\)</span> be the path component of <span class="process-math">\(X\)</span> containing <span class="process-math">\(x\text{.}\)</span> Show that <span class="process-math">\(P \subseteq C\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-1080"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-2514">To complete the proof that <span class="process-math">\(P = C\text{,}\)</span> proceed by contradiction and assume that <span class="process-math">\(C \neq P\text{.}\)</span> Let <span class="process-math">\(Q\)</span> be the union of all path components of <span class="process-math">\(X\)</span> that are different from <span class="process-math">\(P\)</span> and that intersect <span class="process-math">\(C\text{.}\)</span> Each such path component is connected, and is therefore a subset of <span class="process-math">\(C\text{.}\)</span> So <span class="process-math">\(C = P \cup Q\text{.}\)</span> Explain why <span class="process-math">\(P\)</span> and <span class="process-math">\(Q\)</span> form a separation of <span class="process-math">\(C\text{.}\)</span>
+<div class="para" id="p-2520">To complete the proof that <span class="process-math">\(P = C\text{,}\)</span> proceed by contradiction and assume that <span class="process-math">\(C \neq P\text{.}\)</span> Let <span class="process-math">\(Q\)</span> be the union of all path components of <span class="process-math">\(X\)</span> that are different from <span class="process-math">\(P\)</span> and that intersect <span class="process-math">\(C\text{.}\)</span> Each such path component is connected, and is therefore a subset of <span class="process-math">\(C\text{.}\)</span> So <span class="process-math">\(C = P \cup Q\text{.}\)</span> Explain why <span class="process-math">\(P\)</span> and <span class="process-math">\(Q\)</span> form a separation of <span class="process-math">\(C\text{.}\)</span>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-33" id="hint-33"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-33"><div class="hint solution-like"><div class="para" id="p-2515">How do we use the fact that <span class="process-math">\(X\)</span> is locally path connected?</div></div></div>
-</div></article></article><div class="para" id="p-2516">We can now complete our main result of this section.</div>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-33" id="hint-33"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-33"><div class="hint solution-like"><div class="para" id="p-2521">How do we use the fact that <span class="process-math">\(X\)</span> is locally path connected?</div></div></div>
+</div></article></article><div class="para" id="p-2522">We can now complete our main result of this section.</div>
 <article class="theorem theorem-like" id="theorem-63"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">19.15</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-2517">Let <span class="process-math">\(X\)</span> be a finite topological space. Then <span class="process-math">\(X\)</span> is connected if and only if <span class="process-math">\(X\)</span> is path connected.</div></article><article class="proof" id="proof-37"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
-<div class="para" id="p-2518">Let <span class="process-math">\(X\)</span> be a finite topological space. <a href="" class="xref" data-knowl="./knowl/thm_pctoc.html" title="Theorem 19.10">Theorem 19.10</a> demonstrates that if <span class="process-math">\(X\)</span> is path connected, then <span class="process-math">\(X\)</span> is connected. For the reverse implication, assume that <span class="process-math">\(X\)</span> is path connected. Then <span class="process-math">\(X\)</span> is composed of a single path component, <span class="process-math">\(P=X\text{.}\)</span> Since the path components and components of <span class="process-math">\(X\)</span> are the same, we conclude that <span class="process-math">\(P= X\)</span> is a component of <span class="process-math">\(X\)</span> and that <span class="process-math">\(X\)</span> is connected.</div></article></section></div>
+<div class="para" id="p-2523">Let <span class="process-math">\(X\)</span> be a finite topological space. Then <span class="process-math">\(X\)</span> is connected if and only if <span class="process-math">\(X\)</span> is path connected.</div></article><article class="proof" id="proof-37"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
+<div class="para" id="p-2524">Let <span class="process-math">\(X\)</span> be a finite topological space. <a href="" class="xref" data-knowl="./knowl/thm_pctoc.html" title="Theorem 19.10">Theorem 19.10</a> demonstrates that if <span class="process-math">\(X\)</span> is path connected, then <span class="process-math">\(X\)</span> is connected. For the reverse implication, assume that <span class="process-math">\(X\)</span> is path connected. Then <span class="process-math">\(X\)</span> is composed of a single path component, <span class="process-math">\(P=X\text{.}\)</span> Since the path components and components of <span class="process-math">\(X\)</span> are the same, we conclude that <span class="process-math">\(P= X\)</span> is a component of <span class="process-math">\(X\)</span> and that <span class="process-math">\(X\)</span> is connected.</div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_connectedness.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_connect_infinite.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

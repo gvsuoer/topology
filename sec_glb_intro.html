@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Introduction</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -603,8 +604,8 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_glb_intro"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">Introduction</span>
 </h2>
-<div class="para" id="p-567">The real numbers have a special property that allows us to, among other things, define the distance between a point and a set in a metric space. It also allows us to define distances between subsets of certain types of metric spaces, which creates a whole new metric space whose elements are the subsets of the metric space. We will examine that property of the real numbers in this activity.</div>
-<div class="para logical" id="p-568">
+<div class="para" id="p-573">The real numbers have a special property that allows us to, among other things, define the distance between a point and a set in a metric space. It also allows us to define distances between subsets of certain types of metric spaces, which creates a whole new metric space whose elements are the subsets of the metric space. We will examine that property of the real numbers in this activity.</div>
+<div class="para logical" id="p-574">
 <div class="para">We begin by considering the problem of defining the distance between a real number and an interval in <span class="process-math">\(\R\)</span> with the Euclidean metric <span class="process-math">\(d_E\)</span> defined by</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -612,7 +613,7 @@ d_E(x,y) = | x-y |\text{.}
 \end{equation*}
 </div>
 </div>
-<div class="para logical" id="p-569">
+<div class="para logical" id="p-575">
 <div class="para">Let <span class="process-math">\(x = 1\)</span> and let <span class="process-math">\(A\)</span> be the closed interval <span class="process-math">\([-1,0]\text{.}\)</span> It is natural to suggest that the distance between the point <span class="process-math">\(x\)</span> and the set <span class="process-math">\(A\text{,}\)</span> denoted <span class="process-math">\(d_E(x,A)\text{,}\)</span> should be the distance from the point <span class="process-math">\(x\)</span> to the point in <span class="process-math">\(A\)</span> closest to <span class="process-math">\(x\text{.}\)</span> So in this case we would say</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -620,37 +621,36 @@ d(x,A) = d(x,[-1,0]) = d_E(x,0) = 1\text{.}
 \end{equation*}
 </div>
 </div>
-<div class="para" id="p-570">This might lead us to suggest that the distance from a point <span class="process-math">\(x\)</span> to a set <span class="process-math">\(A\text{,}\)</span> denoted by <span class="process-math">\(d(x,A)\)</span> is the minimum distance from the point to any point in the set, or <span class="process-math">\(d(x,A) = \min\{d_E(x,a) \mid a \in A\}\text{.}\)</span>
+<div class="para" id="p-576">This might lead us to suggest that the distance from a point <span class="process-math">\(x\)</span> to a set <span class="process-math">\(A\text{,}\)</span> denoted by <span class="process-math">\(d(x,A)\)</span> is the minimum distance from the point to any point in the set, or <span class="process-math">\(d(x,A) = \min\{d_E(x,a) \mid a \in A\}\text{.}\)</span>
 </div>
-<div class="para" id="p-571">What if we changed the set <span class="process-math">\(A\)</span> to be the open interval <span class="process-math">\((-1,0)\text{?}\)</span> What then should <span class="process-math">\(d(x,A)\)</span> be, or should this distance even exist? If we think of the distance between a point and a set as measuring how far we have to travel from the point until we reach the set, then in the case of <span class="process-math">\(x=1\)</span> and <span class="process-math">\(A=(-1,0)\text{,}\)</span> as soon as we travel a distance more than 1 from <span class="process-math">\(x\)</span> in the direction of <span class="process-math">\(A\text{,}\)</span> we reach the set <span class="process-math">\(A\text{.}\)</span> So we might intuitively say that <span class="process-math">\(d_E(x,(-1,0)) = 1\)</span> as well. But we cannot define this distance as a distance from <span class="process-math">\(x\)</span> to a point in <span class="process-math">\(A\)</span> since <span class="process-math">\(0 \notin A\text{.}\)</span> We need a different way to formulate the notion of a distance from a point to a set.</div>
-<div class="para" id="p-572">In a case like this, with <span class="process-math">\(x=1\)</span> and <span class="process-math">\(A = (-1,0)\text{,}\)</span> we can examine the set <span class="process-math">\(T=\{d_E(x,a) \mid a \in A\}\)</span> and notice some facts about this set. For example, the set <span class="process-math">\(T\)</span> is a subset of the nonnegative real numbers. Also, in this example there are no numbers in <span class="process-math">\(T\)</span> that are smaller than 1. Because of this property, we will call the number 1 a <dfn class="terminology">lower bound</dfn> for <span class="process-math">\(T\text{.}\)</span> More generally,</div>
+<div class="para" id="p-577">What if we changed the set <span class="process-math">\(A\)</span> to be the open interval <span class="process-math">\((-1,0)\text{?}\)</span> What then should <span class="process-math">\(d(x,A)\)</span> be, or should this distance even exist? If we think of the distance between a point and a set as measuring how far we have to travel from the point until we reach the set, then in the case of <span class="process-math">\(x=1\)</span> and <span class="process-math">\(A=(-1,0)\text{,}\)</span> as soon as we travel a distance more than 1 from <span class="process-math">\(x\)</span> in the direction of <span class="process-math">\(A\text{,}\)</span> we reach the set <span class="process-math">\(A\text{.}\)</span> So we might intuitively say that <span class="process-math">\(d_E(x,(-1,0)) = 1\)</span> as well. But we cannot define this distance as a distance from <span class="process-math">\(x\)</span> to a point in <span class="process-math">\(A\)</span> since <span class="process-math">\(0 \notin A\text{.}\)</span> We need a different way to formulate the notion of a distance from a point to a set.</div>
+<div class="para" id="p-578">In a case like this, with <span class="process-math">\(x=1\)</span> and <span class="process-math">\(A = (-1,0)\text{,}\)</span> we can examine the set <span class="process-math">\(T=\{d_E(x,a) \mid a \in A\}\)</span> and notice some facts about this set. For example, the set <span class="process-math">\(T\)</span> is a subset of the nonnegative real numbers. Also, in this example there are no numbers in <span class="process-math">\(T\)</span> that are smaller than 1. Because of this property, we will call the number 1 a <dfn class="terminology">lower bound</dfn> for <span class="process-math">\(T\text{.}\)</span> More generally,</div>
 <article class="definition definition-like" id="definition-14"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.1</span><span class="period">.</span>
-</h3> <div class="para" id="p-573">Let <span class="process-math">\(S\)</span> be a nonempty subset of <span class="process-math">\(\R\text{.}\)</span> A lower bound for <span class="process-math">\(S\)</span> is a real number <span class="process-math">\(m\)</span> such that <span class="process-math">\(m \leq s\)</span> for all <span class="process-math">\(s \in S\text{.}\)</span>
-</div></article><div class="para" id="p-574">If a subset <span class="process-math">\(S\)</span> of <span class="process-math">\(\R\)</span> has a lower bound, we say that <span class="process-math">\(S\)</span> is <dfn class="terminology">bounded below</dfn>. So the set <span class="process-math">\(T = \{d_E(1,a) \mid a \in (-1,0)\}\)</span> is bounded below by 1. The set <span class="process-math">\(T\)</span> is also bounded below by 0.5 and 0. In fact, any number less than 1 is a lower bound for <span class="process-math">\(T\text{.}\)</span> The critical idea, though, is that no number larger than 1 is a lower bound for <span class="process-math">\(T\text{.}\)</span> Because of this we call 1 a <dfn class="terminology">greatest lower bound</dfn> of <span class="process-math">\(T\text{.}\)</span> More generally,</div>
+</h3> <div class="para" id="p-579">Let <span class="process-math">\(S\)</span> be a nonempty subset of <span class="process-math">\(\R\text{.}\)</span> A <dfn class="terminology">lower bound</dfn> for <span class="process-math">\(S\)</span> is a real number <span class="process-math">\(m\)</span> such that <span class="process-math">\(m \leq s\)</span> for all <span class="process-math">\(s \in S\text{.}\)</span>
+</div></article><div class="para" id="p-580">If a subset <span class="process-math">\(S\)</span> of <span class="process-math">\(\R\)</span> has a lower bound, we say that <span class="process-math">\(S\)</span> is <dfn class="terminology">bounded below</dfn>. So the set <span class="process-math">\(T = \{d_E(1,a) \mid a \in (-1,0)\}\)</span> is bounded below by 1. The set <span class="process-math">\(T\)</span> is also bounded below by 0.5 and 0. In fact, any number less than 1 is a lower bound for <span class="process-math">\(T\text{.}\)</span> The critical idea, though, is that no number larger than 1 is a lower bound for <span class="process-math">\(T\text{.}\)</span> Because of this we call 1 a <dfn class="terminology">greatest lower bound</dfn> of <span class="process-math">\(T\text{.}\)</span> More generally,</div>
 <article class="definition definition-like" id="definition-15"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.2</span><span class="period">.</span>
-</h3>
-<div class="para logical" id="p-575">
-<div class="para">Let <span class="process-math">\(S\)</span> be a nonempty subset of <span class="process-math">\(\R\)</span> that is bounded below. A greatest lower bound  for <span class="process-math">\(S\)</span> is a real number <span class="process-math">\(m\)</span> such that</div>
+</h3> <div class="para logical" id="p-581">
+<div class="para">Let <span class="process-math">\(S\)</span> be a nonempty subset of <span class="process-math">\(\R\)</span> that is bounded below. A <dfn class="terminology">greatest lower bound</dfn> for <span class="process-math">\(S\)</span> is a real number <span class="process-math">\(m\)</span> such that</div>
 <ol class="decimal">
-<li id="li-124"><div class="para" id="p-576">
+<li id="li-124"><div class="para" id="p-582">
 <span class="process-math">\(m\)</span> is a lower bound for <span class="process-math">\(S\)</span> and</div></li>
-<li id="li-125"><div class="para" id="p-577">if <span class="process-math">\(k\)</span> is a lower bound for <span class="process-math">\(S\text{,}\)</span> then <span class="process-math">\(m \geq k\text{.}\)</span>
+<li id="li-125"><div class="para" id="p-583">if <span class="process-math">\(k\)</span> is a lower bound for <span class="process-math">\(S\text{,}\)</span> then <span class="process-math">\(m \geq k\text{.}\)</span>
 </div></li>
 </ol>
-</div></article><div class="para" id="p-578"> A greatest lower bound is also called an <dfn class="terminology">infimum</dfn>. We might now use this idea of a greatest lower bound to define the distance between <span class="process-math">\(1\)</span> and <span class="process-math">\(A = (-1,0)\)</span> as the greatest lower bound of the set <span class="process-math">\(\{d_E(1,a) \mid a \in (-1,0)\}\text{.}\)</span> However, there are questions we need to address before we can do so. One question is whether or not every nonempty subset of <span class="process-math">\(\R\)</span> that is bounded below has an infimum. The answer to this question is yes, and we will take this result as an axiom of the real number system (often called the <dfn class="terminology">completeness axiom</dfn>).</div>
+</div></article><div class="para" id="p-584"> A greatest lower bound is also called an <dfn class="terminology">infimum</dfn>. We might now use this idea of a greatest lower bound to define the distance between <span class="process-math">\(1\)</span> and <span class="process-math">\(A = (-1,0)\)</span> as the greatest lower bound of the set <span class="process-math">\(\{d_E(1,a) \mid a \in (-1,0)\}\text{.}\)</span> However, there are questions we need to address before we can do so. One question is whether or not every nonempty subset of <span class="process-math">\(\R\)</span> that is bounded below has an infimum. The answer to this question is yes, and we will take this result as an axiom of the real number system (often called the <dfn class="terminology">completeness axiom</dfn>).</div>
 <article class="exploration project-like" id="exploration-4"><h3 class="heading">
 <span class="type">Preview Activity</span><span class="space"> </span><span class="codenumber">5.1</span><span class="period">.</span>
 </h3>
 <article class="task exercise-like" id="task-228"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-579">Does every subset of <span class="process-math">\(\R\)</span> have a lower bound? Explain. (When a subset of <span class="process-math">\(\R\)</span> has a lower bound we say that the set is <dfn class="terminology">bounded below</dfn>.)</div></article><article class="task exercise-like" id="task-229"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="introduction" id="introduction-58"><div class="para" id="p-580">Which of the following subsets <span class="process-math">\(S\)</span> of <span class="process-math">\(\R\)</span> are bounded below? If the set is bounded below, what is its infimum?</div></div>
+<div class="para" id="p-585">Does every subset of <span class="process-math">\(\R\)</span> have a lower bound? Explain. (When a subset of <span class="process-math">\(\R\)</span> has a lower bound we say that the set is <dfn class="terminology">bounded below</dfn>.)</div></article><article class="task exercise-like" id="task-229"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="introduction" id="introduction-58"><div class="para" id="p-586">Which of the following subsets <span class="process-math">\(S\)</span> of <span class="process-math">\(\R\)</span> are bounded below? If the set is bounded below, what is its infimum?</div></div>
 <article class="task exercise-like" id="task-230"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="p-581"><span class="process-math">\(S = \{x \mid 3x^2-12x+3 \lt 0\}\)</span></div></article><article class="task exercise-like" id="task-231"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
-<div class="para" id="p-582"><span class="process-math">\(S = \{3x^3-1 \mid x \in \R\}\)</span></div></article><article class="task exercise-like" id="task-232"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
-<div class="para" id="p-583"><span class="process-math">\(S = \{2^r+3^s \mid r, s \in \Z^+\}\)</span></div></article></article><article class="task exercise-like" id="task-233"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-584">How would you define a least upper bound of a subset <span class="process-math">\(S\)</span> of <span class="process-math">\(\R\text{?}\)</span>
+<div class="para" id="p-587"><span class="process-math">\(S = \{x \mid 3x^2-12x+3 \lt 0\}\)</span></div></article><article class="task exercise-like" id="task-231"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
+<div class="para" id="p-588"><span class="process-math">\(S = \{3x^3-1 \mid x \in \R\}\)</span></div></article><article class="task exercise-like" id="task-232"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
+<div class="para" id="p-589"><span class="process-math">\(S = \{2^r+3^s \mid r, s \in \Z^+\}\)</span></div></article></article><article class="task exercise-like" id="task-233"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="p-590">How would you define a least upper bound of a subset <span class="process-math">\(S\)</span> of <span class="process-math">\(\R\text{?}\)</span>
 </div></article></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="chap_glb.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_dist_point_set.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

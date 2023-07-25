@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Projections and Continuous Functions on Products</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -603,17 +604,17 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_proj_cont_prod"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">Projections and Continuous Functions on Products</span>
 </h2>
-<div class="para" id="p-2593">Given topological spaces <span class="process-math">\((X_1, \tau_1)\)</span> and <span class="process-math">\((X_2, \tau_2)\text{,}\)</span> we define <span class="process-math">\(\pi_1: X_1 \times X_2 \to X_1\)</span> and <span class="process-math">\(\pi_2: X_1 \times X_2 \to X_2\)</span> by <span class="process-math">\(\pi_1((x,y)) = x\)</span> and <span class="process-math">\(\pi_2((x,y)) = y\text{.}\)</span> These functions <span class="process-math">\(\pi_1\)</span> and <span class="process-math">\(\pi_2\)</span> are the <dfn class="terminology">projections</dfn>  of <span class="process-math">\(X_1 \times X_2\)</span> onto <span class="process-math">\(X_1\)</span> and <span class="process-math">\(X_2\text{,}\)</span> respectively. These projection functions can help us determine when a function <span class="process-math">\(f\)</span> from a topological space <span class="process-math">\(Y\)</span> to <span class="process-math">\(X_1 \times X_2\)</span> is continuous.</div>
+<div class="para" id="p-2599">Given topological spaces <span class="process-math">\((X_1, \tau_1)\)</span> and <span class="process-math">\((X_2, \tau_2)\text{,}\)</span> we define <span class="process-math">\(\pi_1: X_1 \times X_2 \to X_1\)</span> and <span class="process-math">\(\pi_2: X_1 \times X_2 \to X_2\)</span> by <span class="process-math">\(\pi_1((x,y)) = x\)</span> and <span class="process-math">\(\pi_2((x,y)) = y\text{.}\)</span> These functions <span class="process-math">\(\pi_1\)</span> and <span class="process-math">\(\pi_2\)</span> are the <dfn class="terminology">projections</dfn>  of <span class="process-math">\(X_1 \times X_2\)</span> onto <span class="process-math">\(X_1\)</span> and <span class="process-math">\(X_2\text{,}\)</span> respectively. These projection functions can help us determine when a function <span class="process-math">\(f\)</span> from a topological space <span class="process-math">\(Y\)</span> to <span class="process-math">\(X_1 \times X_2\)</span> is continuous.</div>
 <article class="activity project-like" id="act_projection_continuous"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">20.6</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-297"><div class="para" id="p-2594">Let <span class="process-math">\((X_1, \tau_1)\)</span> and <span class="process-math">\((X_2, \tau_2)\)</span> be topological spaces and let <span class="process-math">\(O_1\)</span> be an open set in <span class="process-math">\(X_1\text{.}\)</span>
+<div class="introduction" id="introduction-297"><div class="para" id="p-2600">Let <span class="process-math">\((X_1, \tau_1)\)</span> and <span class="process-math">\((X_2, \tau_2)\)</span> be topological spaces and let <span class="process-math">\(O_1\)</span> be an open set in <span class="process-math">\(X_1\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-1105"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-2595">Determine which set is <span class="process-math">\(\pi_1^{-1}(O_1)\text{.}\)</span> Verify your conjecture.</div></article><article class="task exercise-like" id="task-1106"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-2596">Explain why <span class="process-math">\(\pi_1\)</span> is continuous.</div></article></article><div class="para" id="p-2597">The same argument as in <a href="" class="xref" data-knowl="./knowl/act_projection_continuous.html" title="Activity 20.6">Activity 20.6</a> shows that <span class="process-math">\(\pi_2\)</span> is also a continuous function. In general, if <span class="process-math">\(X = \Pi_{i=1}^n X_{i}\)</span> is a finite product of topological spaces, then the projection <span class="process-math">\(\pi_{k}: X \to X_{k}\)</span> is a continuous function for each <span class="process-math">\(k\text{,}\)</span> where <span class="process-math">\(\pi_k((x_1,x_2, \ldots, x_n)) = x_k\text{.}\)</span>
+<div class="para" id="p-2601">Determine which set is <span class="process-math">\(\pi_1^{-1}(O_1)\text{.}\)</span> Verify your conjecture.</div></article><article class="task exercise-like" id="task-1106"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-2602">Explain why <span class="process-math">\(\pi_1\)</span> is continuous.</div></article></article><div class="para" id="p-2603">The same argument as in <a href="" class="xref" data-knowl="./knowl/act_projection_continuous.html" title="Activity 20.6">Activity 20.6</a> shows that <span class="process-math">\(\pi_2\)</span> is also a continuous function. In general, if <span class="process-math">\(X = \Pi_{i=1}^n X_{i}\)</span> is a finite product of topological spaces, then the projection <span class="process-math">\(\pi_{k}: X \to X_{k}\)</span> is a continuous function for each <span class="process-math">\(k\text{,}\)</span> where <span class="process-math">\(\pi_k((x_1,x_2, \ldots, x_n)) = x_k\text{.}\)</span>
 </div>
-<div class="para logical" id="p-2598">
+<div class="para logical" id="p-2604">
 <div class="para">Let <span class="process-math">\(O = \Pi_{i=1}^n O_i\)</span> be a basic open set in <span class="process-math">\(X = \Pi_{i=1}^n X_i\text{,}\)</span> where <span class="process-math">\(X_i\)</span> is a topological space for each <span class="process-math">\(i\text{.}\)</span> We can extend the result of <a href="" class="xref" data-knowl="./knowl/act_projection_continuous.html" title="Activity 20.6">Activity 20.6</a> to see that</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/act_projection_continuous.html">
 \begin{equation*}
@@ -621,7 +622,7 @@ window.MathJax = {
 \end{equation*}
 </div>
 </div>
-<div class="para logical" id="p-2599">
+<div class="para logical" id="p-2605">
 <div class="para">So</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -629,11 +630,11 @@ window.MathJax = {
 \end{equation*}
 </div>
 </div>
-<div class="para" id="p-2600">So each basic open set is a finite intersection of sets of the form <span class="process-math">\(\pi_i^{-1}(O_i)\)</span> where <span class="process-math">\(O_i\)</span> is open in <span class="process-math">\(X_i\text{.}\)</span> When this happens, we call the collection of sets of the form <span class="process-math">\(\pi_i^{-1}(O_i)\)</span> a <dfn class="terminology">subbasis</dfn> of the topology.</div>
+<div class="para" id="p-2606">So each basic open set is a finite intersection of sets of the form <span class="process-math">\(\pi_i^{-1}(O_i)\)</span> where <span class="process-math">\(O_i\)</span> is open in <span class="process-math">\(X_i\text{.}\)</span> When this happens, we call the collection of sets of the form <span class="process-math">\(\pi_i^{-1}(O_i)\)</span> a <dfn class="terminology">subbasis</dfn> of the topology.</div>
 <article class="definition definition-like" id="def_subbasis"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">20.2</span><span class="period">.</span>
-</h3> <div class="para" id="p-2601">Let <span class="process-math">\((X, \tau)\)</span> be a topological space. A subset <span class="process-math">\(\CS\)</span> of <span class="process-math">\(\tau\)</span> is a <dfn class="terminology">subbasis</dfn> or <dfn class="terminology">subbase</dfn> for <span class="process-math">\(\tau\)</span> if the set of all finite intersections of elements of <span class="process-math">\(\CS\)</span> is a basis for <span class="process-math">\(\tau\text{.}\)</span>
-</div></article><div class="para logical" id="p-2602">
+</h3> <div class="para" id="p-2607">Let <span class="process-math">\((X, \tau)\)</span> be a topological space. A subset <span class="process-math">\(\CS\)</span> of <span class="process-math">\(\tau\)</span> is a <dfn class="terminology">subbasis</dfn> or <dfn class="terminology">subbase</dfn> for <span class="process-math">\(\tau\)</span> if the set of all finite intersections of elements of <span class="process-math">\(\CS\)</span> is a basis for <span class="process-math">\(\tau\text{.}\)</span>
+</div></article><div class="para logical" id="p-2608">
 <div class="para">As an example, since finite intersections of intervals of the form <span class="process-math">\((-\infty,b)\)</span> and <span class="process-math">\((a, \infty)\)</span> give all intervals of the form <span class="process-math">\((a,b)\text{,}\)</span> the collection <span class="process-math">\(\CS = \{(-\infty,b), (a, \infty) \mid a, b \in \R\}\)</span> is a subbasis for the standard topology on <span class="process-math">\(\R\text{.}\)</span> Note that this collection itself is not a basis for the standard topology on <span class="process-math">\(\R\text{.}\)</span> If <span class="process-math">\(X = \Pi_{i=1}^n X_i\)</span> is a product of topological space, then another example of a subbasis is the collection</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -641,8 +642,8 @@ window.MathJax = {
 \end{equation*}
 </div>
 </div>
-<div class="para" id="p-2603">This set is a subbasis for the product topology on <span class="process-math">\(X\)</span> (the verification of this is left to <a href="" class="xref" data-knowl="./knowl/ex_subbasis.html" title="Exercise 1">Exercise 1</a>).</div>
-<div class="para logical" id="p-2604">
+<div class="para" id="p-2609">This set is a subbasis for the product topology on <span class="process-math">\(X\)</span> (the verification of this is left to <a href="" class="xref" data-knowl="./knowl/ex_subbasis.html" title="Exercise 1">Exercise 1</a>).</div>
+<div class="para logical" id="p-2610">
 <div class="para"> We note here that there is another topology, called the <dfn class="terminology">product topology</dfn>, on <span class="process-math">\(X\)</span> with subbasis <span class="process-math">\(S = \bigcup_{\alpha \in I} S_{\alpha}\text{,}\)</span> where</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -650,27 +651,27 @@ S_{\alpha} = \{\pi_{\alpha}^{-1}(U_{\alpha}) \mid U_{\alpha} \text{ is open in }
 \end{equation*}
 </div>
 </div>
-<div class="para" id="p-2605">For reasons we won’t go into, the product topology is preferred to the box topology for infinite products (many important theorems that hold for finite products will not hold for infinite products using the box topology, but will hold using the product topology). However, the product topology and the box topology are the same for finite products, and since we won’t consider infinite products here we will not worry about the distinction. For our purposes we will use the terms “box topology” and “product topology” interchangeably.</div>
-<div class="para" id="p-2606">As we have discussed before, it can often be easier to define a topology using a basis or subbasis than it is to describe all of the sets in the topology. As we might expect, since the continuity of a function can be determined by the inverse image of basis elements, the continuity of a function can also be determined by the inverse image of subbasis elements.</div>
+<div class="para" id="p-2611">For reasons we won’t go into, the product topology is preferred to the box topology for infinite products (many important theorems that hold for finite products will not hold for infinite products using the box topology, but will hold using the product topology). However, the product topology and the box topology are the same for finite products, and since we won’t consider infinite products here we will not worry about the distinction. For our purposes we will use the terms “box topology” and “product topology” interchangeably.</div>
+<div class="para" id="p-2612">As we have discussed before, it can often be easier to define a topology using a basis or subbasis than it is to describe all of the sets in the topology. As we might expect, since the continuity of a function can be determined by the inverse image of basis elements, the continuity of a function can also be determined by the inverse image of subbasis elements.</div>
 <article class="activity project-like" id="activity-110"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">20.7</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-2607">Prove <a href="" class="xref" data-knowl="./knowl/thm_subbasis_continuous.html" title="Theorem 20.3">Theorem 20.3</a>.</div> <article class="theorem theorem-like" id="thm_subbasis_continuous"><h4 class="heading">
+<div class="para" id="p-2613">Prove <a href="" class="xref" data-knowl="./knowl/thm_subbasis_continuous.html" title="Theorem 20.3">Theorem 20.3</a>.</div> <article class="theorem theorem-like" id="thm_subbasis_continuous"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">20.3</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-2608">Let <span class="process-math">\((X, \tau_X)\)</span> and <span class="process-math">\((Y, \tau_Y)\)</span> be topological spaces, let <span class="process-math">\(\CS\)</span> be a subbasis for <span class="process-math">\(\tau_Y\text{,}\)</span> and let <span class="process-math">\(f: X \to Y\)</span> be a function. If <span class="process-math">\(f^{-1}(S)\)</span> is open in <span class="process-math">\(X\)</span> for each <span class="process-math">\(S \in \CS\text{,}\)</span> then <span class="process-math">\(f\)</span> is continuous.</div></article><div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-34" id="hint-34"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-34"><div class="hint solution-like"><div class="para" id="p-2609">Recall that <span class="process-math">\(f\)</span> is continuous if <span class="process-math">\(f^{-1}(B)\)</span> is open in <span class="process-math">\(X\)</span> for each basic open set <span class="process-math">\(B\text{.}\)</span>
+<div class="para" id="p-2614">Let <span class="process-math">\((X, \tau_X)\)</span> and <span class="process-math">\((Y, \tau_Y)\)</span> be topological spaces, let <span class="process-math">\(\CS\)</span> be a subbasis for <span class="process-math">\(\tau_Y\text{,}\)</span> and let <span class="process-math">\(f: X \to Y\)</span> be a function. If <span class="process-math">\(f^{-1}(S)\)</span> is open in <span class="process-math">\(X\)</span> for each <span class="process-math">\(S \in \CS\text{,}\)</span> then <span class="process-math">\(f\)</span> is continuous.</div></article><div class="solutions">
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-34" id="hint-34"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-34"><div class="hint solution-like"><div class="para" id="p-2615">Recall that <span class="process-math">\(f\)</span> is continuous if <span class="process-math">\(f^{-1}(B)\)</span> is open in <span class="process-math">\(X\)</span> for each basic open set <span class="process-math">\(B\text{.}\)</span>
 </div></div></div>
-</div></article><div class="para" id="p-2610">Now suppose that <span class="process-math">\(X_1\text{,}\)</span> <span class="process-math">\(X_2\text{,}\)</span> and <span class="process-math">\(Y\)</span> are topological spaces, and that <span class="process-math">\(f: Y \to X_1 \times X_2\)</span> is a function. Then <span class="process-math">\(\pi_1 \circ f\)</span> maps <span class="process-math">\(Y\)</span> to <span class="process-math">\(X_1\)</span> and <span class="process-math">\(\pi_2 \circ f\)</span> maps <span class="process-math">\(Y\)</span> to <span class="process-math">\(X_2\text{.}\)</span> Since the composition of continuous functions is continuous, we can see that if <span class="process-math">\(f\)</span> is continuous so are <span class="process-math">\(\pi_1\circ f\)</span> and <span class="process-math">\(\pi_2 \circ f\text{.}\)</span> To determine if <span class="process-math">\(f\)</span> is a continuous function, it would be useful to know if the converse is true. A key idea in the proof is the result of <a href="" class="xref" data-knowl="./knowl/ex_inverse_composite_sets.html" title="Exercise 9">Exercise 9</a> that if <span class="process-math">\(R\text{,}\)</span> <span class="process-math">\(S\text{,}\)</span> and <span class="process-math">\(T\)</span> are sets, and <span class="process-math">\(g: R \to S\)</span> and <span class="process-math">\(h : S \to T\)</span> are functions, then <span class="process-math">\((h \circ g)^{-1}(O) = g^{-1}(h^{-1}(O)\)</span> for any subset <span class="process-math">\(O\)</span> of <span class="process-math">\(T\text{.}\)</span>
+</div></article><div class="para" id="p-2616">Now suppose that <span class="process-math">\(X_1\text{,}\)</span> <span class="process-math">\(X_2\text{,}\)</span> and <span class="process-math">\(Y\)</span> are topological spaces, and that <span class="process-math">\(f: Y \to X_1 \times X_2\)</span> is a function. Then <span class="process-math">\(\pi_1 \circ f\)</span> maps <span class="process-math">\(Y\)</span> to <span class="process-math">\(X_1\)</span> and <span class="process-math">\(\pi_2 \circ f\)</span> maps <span class="process-math">\(Y\)</span> to <span class="process-math">\(X_2\text{.}\)</span> Since the composition of continuous functions is continuous, we can see that if <span class="process-math">\(f\)</span> is continuous so are <span class="process-math">\(\pi_1\circ f\)</span> and <span class="process-math">\(\pi_2 \circ f\text{.}\)</span> To determine if <span class="process-math">\(f\)</span> is a continuous function, it would be useful to know if the converse is true. A key idea in the proof is the result of <a href="" class="xref" data-knowl="./knowl/ex_inverse_composite_sets.html" title="Exercise 9">Exercise 9</a> that if <span class="process-math">\(R\text{,}\)</span> <span class="process-math">\(S\text{,}\)</span> and <span class="process-math">\(T\)</span> are sets, and <span class="process-math">\(g: R \to S\)</span> and <span class="process-math">\(h : S \to T\)</span> are functions, then <span class="process-math">\((h \circ g)^{-1}(O) = g^{-1}(h^{-1}(O)\)</span> for any subset <span class="process-math">\(O\)</span> of <span class="process-math">\(T\text{.}\)</span>
 </div>
-<div class="para" id="p-2611">Now we can use projections to determine when functions to product spaces are continuous.</div>
+<div class="para" id="p-2617">Now we can use projections to determine when functions to product spaces are continuous.</div>
 <article class="theorem theorem-like" id="thm_prod_continuity"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">20.4</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-2612">Let <span class="process-math">\(X_i\)</span> for <span class="process-math">\(i\)</span> from <span class="process-math">\(1\)</span> to <span class="process-math">\(n\)</span> and <span class="process-math">\(Y\)</span> be topological spaces, and let <span class="process-math">\(f: Y \to \Pi_{i=1}^n X_i\)</span> be a function. Then <span class="process-math">\(f\)</span> is continuous if and only if <span class="process-math">\(\pi_i \circ f\)</span> is continuous for each <span class="process-math">\(i\text{.}\)</span>
+<div class="para" id="p-2618">Let <span class="process-math">\(X_i\)</span> for <span class="process-math">\(i\)</span> from <span class="process-math">\(1\)</span> to <span class="process-math">\(n\)</span> and <span class="process-math">\(Y\)</span> be topological spaces, and let <span class="process-math">\(f: Y \to \Pi_{i=1}^n X_i\)</span> be a function. Then <span class="process-math">\(f\)</span> is continuous if and only if <span class="process-math">\(\pi_i \circ f\)</span> is continuous for each <span class="process-math">\(i\text{.}\)</span>
 </div></article><article class="proof" id="proof-39"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
-<div class="para" id="p-2613">Let <span class="process-math">\(X_i\)</span> for <span class="process-math">\(i\)</span> from <span class="process-math">\(1\)</span> to <span class="process-math">\(n\)</span> and <span class="process-math">\(Y\)</span> be topological spaces, and let <span class="process-math">\(f: Y \to \Pi X_i\)</span> be a function. If <span class="process-math">\(f\)</span> is continuous, the facts that each <span class="process-math">\(\pi_i\)</span> is continuous and that composites of continuous functions are continuous show that <span class="process-math">\(\pi_i \circ f\)</span> is continuous for each <span class="process-math">\(i\text{.}\)</span>
-</div> <div class="para logical" id="p-2614">
+<div class="para" id="p-2619">Let <span class="process-math">\(X_i\)</span> for <span class="process-math">\(i\)</span> from <span class="process-math">\(1\)</span> to <span class="process-math">\(n\)</span> and <span class="process-math">\(Y\)</span> be topological spaces, and let <span class="process-math">\(f: Y \to \Pi X_i\)</span> be a function. If <span class="process-math">\(f\)</span> is continuous, the facts that each <span class="process-math">\(\pi_i\)</span> is continuous and that composites of continuous functions are continuous show that <span class="process-math">\(\pi_i \circ f\)</span> is continuous for each <span class="process-math">\(i\text{.}\)</span>
+</div> <div class="para logical" id="p-2620">
 <div class="para">Now suppose that <span class="process-math">\(\pi_i \circ f\)</span> is continuous for each <span class="process-math">\(i\text{.}\)</span> Recall that</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/thm_subbasis_continuous.html ./knowl/ex_inverse_composite_sets.html">
 \begin{equation*}

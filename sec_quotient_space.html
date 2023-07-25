@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Quotient Spaces</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -604,11 +605,11 @@ window.MathJax = {
 <section class="section" id="sec_quotient_space"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">Quotient Spaces</span>
 </h2>
-<div class="para" id="p-1919">As we saw in our preview activity, if we have a surjection <span class="process-math">\(p\)</span> from a topological space <span class="process-math">\((X,\tau)\)</span> to a set <span class="process-math">\(Y\text{,}\)</span> we were able to define a topology on <span class="process-math">\(Y\)</span> by making the open sets the sets <span class="process-math">\(U \subseteq Y\)</span> such that <span class="process-math">\(p^{-1}(U)\)</span> is open in <span class="process-math">\(X\text{.}\)</span> This is how we will create what is called the <dfn class="terminology">quotient topology</dfn>. Before we can define the quotient topology, we need to know that this construction always makes a topology.</div>
+<div class="para" id="p-1925">As we saw in our preview activity, if we have a surjection <span class="process-math">\(p\)</span> from a topological space <span class="process-math">\((X,\tau)\)</span> to a set <span class="process-math">\(Y\text{,}\)</span> we were able to define a topology on <span class="process-math">\(Y\)</span> by making the open sets the sets <span class="process-math">\(U \subseteq Y\)</span> such that <span class="process-math">\(p^{-1}(U)\)</span> is open in <span class="process-math">\(X\text{.}\)</span> This is how we will create what is called the <dfn class="terminology">quotient topology</dfn>. Before we can define the quotient topology, we need to know that this construction always makes a topology.</div>
 <article class="activity project-like" id="act_quot_topology"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">16.2</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-219"><div class="para logical" id="p-1920">
+<div class="introduction" id="introduction-219"><div class="para logical" id="p-1926">
 <div class="para">Let <span class="process-math">\((X,\tau_X)\)</span> be a topological space, let <span class="process-math">\(Y\)</span> be a set, and let <span class="process-math">\(p: X \to Y\)</span> be a surjection. Let</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -617,24 +618,24 @@ window.MathJax = {
 </div>
 </div></div>
 <article class="task exercise-like" id="task-814"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1921">Why are <span class="process-math">\(\emptyset\)</span> and <span class="process-math">\(Y\)</span> in <span class="process-math">\(\tau_Y\text{?}\)</span>
+<div class="para" id="p-1927">Why are <span class="process-math">\(\emptyset\)</span> and <span class="process-math">\(Y\)</span> in <span class="process-math">\(\tau_Y\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-815"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="introduction" id="introduction-220"><div class="para" id="p-1922">Let <span class="process-math">\(\left\{U_{\beta}\right\}\)</span> be a collection of sets in <span class="process-math">\(\tau_Y\)</span> for <span class="process-math">\(\beta\)</span> in some indexing set <span class="process-math">\(J\text{.}\)</span>
+<div class="introduction" id="introduction-220"><div class="para" id="p-1928">Let <span class="process-math">\(\left\{U_{\beta}\right\}\)</span> be a collection of sets in <span class="process-math">\(\tau_Y\)</span> for <span class="process-math">\(\beta\)</span> in some indexing set <span class="process-math">\(J\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-816"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="p-1923">Show that <span class="process-math">\(\bigcup_{\beta \in J} U_{\beta}\)</span> is in <span class="process-math">\(\tau_Y\text{.}\)</span>
+<div class="para" id="p-1929">Show that <span class="process-math">\(\bigcup_{\beta \in J} U_{\beta}\)</span> is in <span class="process-math">\(\tau_Y\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-817"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
-<div class="para" id="p-1924">If <span class="process-math">\(J\)</span> is finite, show that <span class="process-math">\(\bigcap_{\beta \in J} U_{\beta}\)</span> is in <span class="process-math">\(\tau_Y\text{.}\)</span>
+<div class="para" id="p-1930">If <span class="process-math">\(J\)</span> is finite, show that <span class="process-math">\(\bigcap_{\beta \in J} U_{\beta}\)</span> is in <span class="process-math">\(\tau_Y\text{.}\)</span>
 </div></article></article><article class="task exercise-like" id="task-818"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-1925">What conclusion can we draw about <span class="process-math">\(\tau_Y\text{?}\)</span>
-</div></article></article><div class="para" id="p-1926">
+<div class="para" id="p-1931">What conclusion can we draw about <span class="process-math">\(\tau_Y\text{?}\)</span>
+</div></article></article><div class="para" id="p-1932">
 <a href="" class="xref" data-knowl="./knowl/act_quot_topology.html" title="Activity 16.2">Activity 16.2</a> allows us to define the quotient topology.</div>
 <article class="definition definition-like" id="definition-64"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">16.1</span><span class="period">.</span>
-</h3> <div class="para logical" id="p-1927">
+</h3> <div class="para logical" id="p-1933">
 <div class="para">Let <span class="process-math">\((X,\tau_X)\)</span> be a topological space, let <span class="process-math">\(Y\)</span> be a set, and let <span class="process-math">\(p: X \to Y\)</span> be a surjection.</div>
 <ol class="decimal">
-<li id="li-305"><div class="para logical" id="p-1928">
+<li id="li-305"><div class="para logical" id="p-1934">
 <div class="para">The <dfn class="terminology">quotient topology</dfn> on <span class="process-math">\(Y\)</span> is the set</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -642,16 +643,16 @@ window.MathJax = {
 \end{equation*}
 </div>
 </div></li>
-<li id="li-306"><div class="para" id="p-1929">Any function <span class="process-math">\(p: X \to Y\)</span> is a <dfn class="terminology">quotient map</dfn> if <span class="process-math">\(p\)</span> is surjective and for <span class="process-math">\(U \subseteq Y\text{,}\)</span> <span class="process-math">\(U\)</span> is open in <span class="process-math">\(Y\)</span> if and only if <span class="process-math">\(p^{-1}(U)\)</span> is open in <span class="process-math">\(X\text{.}\)</span>
+<li id="li-306"><div class="para" id="p-1935">Any function <span class="process-math">\(p: X \to Y\)</span> is a <dfn class="terminology">quotient map</dfn> if <span class="process-math">\(p\)</span> is surjective and for <span class="process-math">\(U \subseteq Y\text{,}\)</span> <span class="process-math">\(U\)</span> is open in <span class="process-math">\(Y\)</span> if and only if <span class="process-math">\(p^{-1}(U)\)</span> is open in <span class="process-math">\(X\text{.}\)</span>
 </div></li>
-<li id="li-307"><div class="para" id="p-1930">If <span class="process-math">\(p: X \to Y\)</span> is a quotient map, then the space <span class="process-math">\(Y\)</span> is the <dfn class="terminology">quotient space</dfn> of <span class="process-math">\(X\)</span> determined by <span class="process-math">\(p\text{.}\)</span>
+<li id="li-307"><div class="para" id="p-1936">If <span class="process-math">\(p: X \to Y\)</span> is a quotient map, then the space <span class="process-math">\(Y\)</span> is the <dfn class="terminology">quotient space</dfn> of <span class="process-math">\(X\)</span> determined by <span class="process-math">\(p\text{.}\)</span>
 </div></li>
 </ol>
 </div></article><article class="activity project-like" id="activity-78"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">16.3</span><span class="period">.</span>
 </h3>
 <article class="task exercise-like" id="task-819"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para logical" id="p-1931">
+<div class="para logical" id="p-1937">
 <div class="para">Let <span class="process-math">\(X=\R\)</span> with standard topology, let <span class="process-math">\(Y=\{-1,0,1\}\text{,}\)</span> and define <span class="process-math">\(p:X \to Y\)</span> by</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -660,7 +661,7 @@ p(x) = \begin{cases}1\amp \text{ if }  x&gt;0 \\ 0 \amp \text{ if }  x=0 \\ -1 \
 </div>
 <div class="para">Find all of the open sets in the quotient topology.</div>
 </div></article><article class="task exercise-like" id="task-820"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para logical" id="p-1932">
+<div class="para logical" id="p-1938">
 <div class="para">Let <span class="process-math">\(X=\R\)</span> with standard topology, let <span class="process-math">\(Y=[0,1)\text{,}\)</span> and define <span class="process-math">\(p:X \to Y\)</span> by</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -670,49 +671,48 @@ p(x) = x-\lfloor x\rfloor\text{,}
 <div class="para">where <span class="process-math">\(\lfloor x\rfloor\)</span> is the largest integer less than or equal to <span class="process-math">\(x\text{,}\)</span> (For example <span class="process-math">\(\lfloor 1.2 \rfloor = 1\text{,}\)</span> and so <span class="process-math">\(p(1.2) = 1.2 - 1 = 0.2\text{.}\)</span> The function defined by <span class="process-math">\(\lfloor x\rfloor\)</span> is also called the <dfn class="terminology">floor</dfn> function. Be careful, note that <span class="process-math">\(\lfloor -0.7 \rfloor = -1\text{.}\)</span>)  Determine the sets in the quotient topology.</div>
 </div> <figure class="figure figure-like" id="F_floor"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/floor.svg" role="img" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">16.2<span class="period">.</span></span><span class="space"> </span>The graph of <span class="process-math">\(p(x) = x - \lfloor x\rfloor\text{.}\)</span></figcaption></figure><div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-24" id="hint-24"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-24"><div class="hint solution-like"><div class="para" id="p-1933">The graph of <span class="process-math">\(p\)</span> on <span class="process-math">\([-2,2]\)</span> is shown in <a href="" class="xref" data-knowl="./knowl/F_floor.html" title="Figure 16.2">Figure 16.2</a>.</div></div></div>
-</div></article></article><div class="para" id="p-1934">Another perspective of the quotient topology utilizes the fact that any equivalence relation <span class="process-math">\(\sim\)</span> on a set <span class="process-math">\(X\)</span> partitions <span class="process-math">\(X\)</span> into a union of disjoint equivalence classes <span class="process-math">\([x] = \{y \in X \mid y \sim x\}\text{.}\)</span> There is a natural surjection <span class="process-math">\(q\)</span> from <span class="process-math">\(X\)</span> to the space of equivalence classes given by <span class="process-math">\(q(x) = [x]\text{.}\)</span> We investigate this perspective in the next activity.</div>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-24" id="hint-24"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-24"><div class="hint solution-like"><div class="para" id="p-1939">The graph of <span class="process-math">\(p\)</span> on <span class="process-math">\([-2,2]\)</span> is shown in <a href="" class="xref" data-knowl="./knowl/F_floor.html" title="Figure 16.2">Figure 16.2</a>.</div></div></div>
+</div></article></article><div class="para" id="p-1940">Another perspective of the quotient topology utilizes the fact that any equivalence relation <span class="process-math">\(\sim\)</span> on a set <span class="process-math">\(X\)</span> partitions <span class="process-math">\(X\)</span> into a union of disjoint equivalence classes <span class="process-math">\([x] = \{y \in X \mid y \sim x\}\text{.}\)</span> There is a natural surjection <span class="process-math">\(q\)</span> from <span class="process-math">\(X\)</span> to the space of equivalence classes given by <span class="process-math">\(q(x) = [x]\text{.}\)</span> We investigate this perspective in the next activity.</div>
 <article class="activity project-like" id="act_quotient_er"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">16.4</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-1935">
+<div class="para logical" id="p-1941">
 <div class="para">Let <span class="process-math">\(X = \{a,b,c,d,e,f\}\)</span> and let <span class="process-math">\(\tau = \{\emptyset, \{a\}, \{b\}, \{a, b\}, \{a, b, c\}, \{a, b, c, d\}, X\}\text{.}\)</span> Then <span class="process-math">\((X, \tau)\)</span> is a topological space. Let <span class="process-math">\(A = \{a, b, c\}\)</span> and <span class="process-math">\(B = \{d,e,f\}\text{.}\)</span> Define a relation <span class="process-math">\(\sim\)</span> on <span class="process-math">\(X\)</span> such that <span class="process-math">\(x \sim y\)</span> if <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> are both in <span class="process-math">\(A\)</span> or both in <span class="process-math">\(B\text{.}\)</span> Assume that <span class="process-math">\(\sim\)</span> is an equivalence relation. The sets <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are the equivalence classes for this relation. That is <span class="process-math">\(A = [a] = [b] = [c]\)</span> and <span class="process-math">\(B = [d] = [e] = [f]\text{.}\)</span> Let <span class="process-math">\(X^* = \{A,B\}\text{.}\)</span> Then we can define <span class="process-math">\(p : X \to X^*\)</span> by sending <span class="process-math">\(x \in X\)</span> to the set to which it belongs. That is, <span class="process-math">\(p(x) = [x]\)</span> for <span class="process-math">\(x \in X\text{,}\)</span> or</div>
 <div class="displaymath process-math">
 \begin{equation*}
 p(a) = A, p(b) = A, p(c) = A, p(d) = B, p(e) = B, \text{ and }  p(f) = B\text{.}
 \end{equation*}
 </div>
-</div> <div class="para" id="p-1936">Determine the sets in the quotient topology on <span class="process-math">\(X^*\text{.}\)</span>
-</div></article><div class="para" id="p-1937">The partition of <span class="process-math">\(X\)</span> in <a href="" class="xref" data-knowl="./knowl/act_quotient_er.html" title="Activity 16.4">Activity 16.4</a> into the disjoint union of sets <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> defines an equivalence relation on <span class="process-math">\(X\)</span> where <span class="process-math">\(x \sim y\)</span> if <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> are both in the same set <span class="process-math">\(A\)</span> or <span class="process-math">\(B\text{.}\)</span> That is, <span class="process-math">\(a \sim b \sim c\)</span> and <span class="process-math">\(d \sim e \sim f\text{.}\)</span> In this context, the sets <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are equivalence classes — <span class="process-math">\(A = [a]\)</span> and <span class="process-math">\(B = [d]\text{,}\)</span> where <span class="process-math">\([x]\)</span> is the equivalence class of <span class="process-math">\(x\text{.}\)</span> This leads to a general construction.</div>
-<div class="para" id="p-1938"> If <span class="process-math">\((X, \tau)\)</span> is a topological space and <span class="process-math">\(\sim\)</span> is an equivalence relation on <span class="process-math">\(X\text{,}\)</span> we can let <span class="process-math">\(X/\ssim\)</span> be the set of distinct equivalence classes of <span class="process-math">\(X\)</span> under <span class="process-math">\(\sim\text{.}\)</span> Then <span class="process-math">\(p: X \to X/\ssim\)</span> defined by <span class="process-math">\(p(x) = [x]\)</span> is a surjection and <span class="process-math">\(X/\ssim\)</span> has the quotient topology. The space <span class="process-math">\(X/\ssim\)</span> is called a <dfn class="terminology">quotient space</dfn>. The space <span class="process-math">\(X/\ssim\)</span> is also called an <dfn class="terminology">identification</dfn> space because the equivalence relation identifies points in the set to be thought of as the same. This allows us to visualize quotient spaces as resulting from gluing or collapsing parts of the space <span class="process-math">\(X\text{.}\)</span>
+</div> <div class="para" id="p-1942">Determine the sets in the quotient topology on <span class="process-math">\(X^*\text{.}\)</span>
+</div></article><div class="para" id="p-1943">The partition of <span class="process-math">\(X\)</span> in <a href="" class="xref" data-knowl="./knowl/act_quotient_er.html" title="Activity 16.4">Activity 16.4</a> into the disjoint union of sets <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> defines an equivalence relation on <span class="process-math">\(X\)</span> where <span class="process-math">\(x \sim y\)</span> if <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> are both in the same set <span class="process-math">\(A\)</span> or <span class="process-math">\(B\text{.}\)</span> That is, <span class="process-math">\(a \sim b \sim c\)</span> and <span class="process-math">\(d \sim e \sim f\text{.}\)</span> In this context, the sets <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are equivalence classes — <span class="process-math">\(A = [a]\)</span> and <span class="process-math">\(B = [d]\text{,}\)</span> where <span class="process-math">\([x]\)</span> is the equivalence class of <span class="process-math">\(x\text{.}\)</span> This leads to a general construction.</div>
+<div class="para" id="p-1944"> If <span class="process-math">\((X, \tau)\)</span> is a topological space and <span class="process-math">\(\sim\)</span> is an equivalence relation on <span class="process-math">\(X\text{,}\)</span> we can let <span class="process-math">\(X/\ssim\)</span> be the set of distinct equivalence classes of <span class="process-math">\(X\)</span> under <span class="process-math">\(\sim\text{.}\)</span> Then <span class="process-math">\(p: X \to X/\ssim\)</span> defined by <span class="process-math">\(p(x) = [x]\)</span> is a surjection and <span class="process-math">\(X/\ssim\)</span> has the quotient topology. The space <span class="process-math">\(X/\ssim\)</span> is called a <dfn class="terminology">quotient space</dfn>. The space <span class="process-math">\(X/\ssim\)</span> is also called an <dfn class="terminology">identification</dfn> space because the equivalence relation identifies points in the set to be thought of as the same. This allows us to visualize quotient spaces as resulting from gluing or collapsing parts of the space <span class="process-math">\(X\text{.}\)</span>
 </div>
 <figure class="figure figure-like" id="F_Quotient_tube"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/Cylinder_identification.svg" role="img" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">16.3<span class="period">.</span></span><span class="space"> </span>A tube as the identification space <span class="process-math">\(X/\ssim\text{.}\)</span></figcaption></figure><article class="example example-like" id="example-9"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">16.4</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-1939">Let <span class="process-math">\(I = [0,1]\)</span> and let <span class="process-math">\(X = I \times I\)</span> with standard topology. Define a relation <span class="process-math">\(\sim\)</span> on <span class="process-math">\(X\)</span> by <span class="process-math">\((x,y) \sim (x,y)\)</span> if <span class="process-math">\(0 \lt y \lt 1\)</span> and <span class="process-math">\(0 \leq x \leq 1\text{,}\)</span> <span class="process-math">\((x,0) \sim (x,1)\)</span> if <span class="process-math">\(0 \leq x \leq 1\text{.}\)</span> It is straightforward to show that <span class="process-math">\(\sim\)</span> is an equivalence relation. Let us consider what the identification space <span class="process-math">\(X/\ssim\)</span> looks like. The space <span class="process-math">\(I \times I\)</span> is the unit square as shown in <a href="" class="xref" data-knowl="./knowl/F_Quotient_tube.html" title="Figure 16.3">Figure 16.3</a>. All points in the interior of the square are identified only with themselves. However, the top side and bottom side are identified with each other in the same direction. Think of <span class="process-math">\(X\)</span> as a piece of paper. We roll up the sides of the square to make the top and bottom sides coincide. The result is that <span class="process-math">\(X/\ssim\)</span> is the cylinder as shown in <a href="" class="xref" data-knowl="./knowl/F_Quotient_tube.html" title="Figure 16.3">Figure 16.3</a>.</div></article><article class="activity project-like" id="activity-80"><h3 class="heading">
+<div class="para" id="p-1945">Let <span class="process-math">\(I = [0,1]\)</span> and let <span class="process-math">\(X = I \times I\)</span> with standard topology. Define a relation <span class="process-math">\(\sim\)</span> on <span class="process-math">\(X\)</span> by <span class="process-math">\((x,y) \sim (x,y)\)</span> if <span class="process-math">\(0 \lt y \lt 1\)</span> and <span class="process-math">\(0 \leq x \leq 1\text{,}\)</span> <span class="process-math">\((x,0) \sim (x,1)\)</span> if <span class="process-math">\(0 \leq x \leq 1\text{.}\)</span> It is straightforward to show that <span class="process-math">\(\sim\)</span> is an equivalence relation. Let us consider what the identification space <span class="process-math">\(X/\ssim\)</span> looks like. The space <span class="process-math">\(I \times I\)</span> is the unit square as shown in <a href="" class="xref" data-knowl="./knowl/F_Quotient_tube.html" title="Figure 16.3">Figure 16.3</a>. All points in the interior of the square are identified only with themselves. However, the top side and bottom side are identified with each other in the same direction. Think of <span class="process-math">\(X\)</span> as a piece of paper. We roll up the sides of the square to make the top and bottom sides coincide. The result is that <span class="process-math">\(X/\ssim\)</span> is the cylinder as shown in <a href="" class="xref" data-knowl="./knowl/F_Quotient_tube.html" title="Figure 16.3">Figure 16.3</a>.</div></article><article class="activity project-like" id="activity-80"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">16.5</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-221"><div class="para" id="p-1940">Quotient spaces can be difficult to describe. This activity presents a few more examples.</div></div>
+<div class="introduction" id="introduction-221"><div class="para" id="p-1946">Quotient spaces can be difficult to describe. This activity presents a few more examples.</div></div>
 <article class="task exercise-like" id="task-821"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1941">Let <span class="process-math">\(X = [0, 1]\)</span> with standard topology and define an equivalence relation <span class="process-math">\(\sim\)</span> on <span class="process-math">\(X\)</span> by <span class="process-math">\(0 \sim 1\)</span> and <span class="process-math">\(x \sim x\)</span> for all <span class="process-math">\(x\)</span> not equal to <span class="process-math">\(0\)</span> or <span class="process-math">\(1\text{.}\)</span> What does the quotient space <span class="process-math">\(X/\ssim\)</span> look like?</div> <figure class="figure figure-like" id="F_Quotients_activity"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="para" id="p-1947">Let <span class="process-math">\(X = [0, 1]\)</span> with standard topology and define an equivalence relation <span class="process-math">\(\sim\)</span> on <span class="process-math">\(X\)</span> by <span class="process-math">\(0 \sim 1\)</span> and <span class="process-math">\(x \sim x\)</span> for all <span class="process-math">\(x\)</span> not equal to <span class="process-math">\(0\)</span> or <span class="process-math">\(1\text{.}\)</span> What does the quotient space <span class="process-math">\(X/\ssim\)</span> look like?</div> <figure class="figure figure-like" id="F_Quotients_activity"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel top" style="width:33.3333333333333%;"><img src="external/Mobius_identification.svg" role="img" class="contained"></div>
 <div class="sbspanel top" style="width:33.3333333333333%;"><img src="external/Torus_identification.svg" role="img" class="contained"></div>
 <div class="sbspanel top" style="width:33.3333333333333%;"><img src="external/Quotient_sphere_1.svg" role="img" class="contained"></div>
 </div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">16.5<span class="period">.</span></span><span class="space"> </span>From left to right: the identifications for parts i., ii., and iii.</figcaption></figure><div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-25" id="hint-25"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-25"><div class="hint solution-like"><div class="para" id="p-1942">Think about the relation <span class="process-math">\(\sim\)</span> as gluing the points <span class="process-math">\(0\)</span> and <span class="process-math">\(1\)</span> together.</div></div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">16.5<span class="period">.</span></span><span class="space"> </span>From left to right: the identifications for parts (i), (ii), and (iii)</figcaption></figure><div class="solutions">
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-25" id="hint-25"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-25"><div class="hint solution-like"><div class="para" id="p-1948">Think about the relation <span class="process-math">\(\sim\)</span> as gluing the points <span class="process-math">\(0\)</span> and <span class="process-math">\(1\)</span> together.</div></div></div>
 </div></article><article class="task exercise-like" id="task-822"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="introduction" id="introduction-222"><div class="para" id="p-1943">Describe quotient spaces of <span class="process-math">\(X = I \times I\)</span> with standard topology given by the following equivalence relations <span class="process-math">\(\sim\text{.}\)</span> Depictions of the identifications are shown in <a href="" class="xref" data-knowl="./knowl/F_Quotients_activity.html" title="Figure 16.5">Figure 16.5</a>. (Here <span class="process-math">\(I\)</span> is the closed interval <span class="process-math">\([0,1]\text{.}\)</span>)</div></div>
+<div class="introduction" id="introduction-222"><div class="para" id="p-1949">Describe quotient spaces of <span class="process-math">\(X = I \times I\)</span> with standard topology given by the following equivalence relations <span class="process-math">\(\sim\text{.}\)</span> Depictions of the identifications are shown in <a href="" class="xref" data-knowl="./knowl/F_Quotients_activity.html" title="Figure 16.5">Figure 16.5</a>. (Here <span class="process-math">\(I\)</span> is the closed interval <span class="process-math">\([0,1]\text{.}\)</span>)</div></div>
 <article class="task exercise-like" id="task-823"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="p-1944">
+<div class="para" id="p-1950">
 <span class="process-math">\((x, y) \sim (x,y)\)</span> if <span class="process-math">\(0 \lt y \lt 1\)</span> and <span class="process-math">\(0 \leq x \leq 1\)</span> and <span class="process-math">\((x,0) \sim (1-x,0)\)</span> when <span class="process-math">\(0 \leq x \leq 1\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-824"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
-<div class="para" id="p-1945">
-<span class="process-math">\((x, y) \sim (x,y)\)</span> if <span class="process-math">\(0 \lt x \lt 1\)</span> and <span class="process-math">\(0 \lt y \lt 1\text{,}\)</span> <span class="process-math">\((x,0) \sim (x,1)\)</span> for <span class="process-math">\(0 \lt x \lt 1\text{,}\)</span> <span class="process-math">\((0,y) \sim (1,y)\)</span> for <span class="process-math">\(0 \lt y \lt 1\text{,}\)</span> and <span class="process-math">\((0,0) \sim (0,1) \sim (1,0) \sim(1,1)\)</span>
-</div></article><article class="task exercise-like" id="task-825"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
-<div class="para" id="p-1946">
-<span class="process-math">\((x, y) \sim (x,y)\)</span> if <span class="process-math">\(0 \lt x \lt 1\)</span> and <span class="process-math">\(0 \lt y \lt 1\)</span> and <span class="process-math">\((x,y) \sim (u,v)\)</span> if <span class="process-math">\((x,y)\)</span> and <span class="process-math">\((u,v)\)</span> are boundary points.</div></article></article></article><div class="para" id="p-1947">Many other interesting identification spaces can be made. For example, let <span class="process-math">\(X = I \times I\)</span> and define <span class="process-math">\(\sim\)</span> by <span class="process-math">\((x, y) \sim (x,y)\)</span> if <span class="process-math">\(0 \lt x \lt 1\)</span> and <span class="process-math">\(0 \lt y \lt 1\text{,}\)</span> <span class="process-math">\((0, y) \sim (1, y)\)</span> for <span class="process-math">\(0 \lt y \lt 1\text{,}\)</span> <span class="process-math">\((x,0) \sim (1-x,1)\)</span> for <span class="process-math">\(0 \lt x \lt 1\text{.}\)</span> This identification is illustrated in <a href="" class="xref" data-knowl="./knowl/F_Klein_bottle.html" title="Figure 16.6">Figure 16.6</a>. The resulting identification space <span class="process-math">\(X/\ssim\)</span> is a Klein bottle. A nice illustration of this can be seen at <a class="external" href="https://plus.maths.org/content/introducing-klein-bottle" target="_blank">maths.org</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-5" id="fn-5"><sup> 5 </sup></a>.</div>
+<div class="para" id="p-1951">
+<span class="process-math">\((x, y) \sim (x,y)\)</span> if <span class="process-math">\(0 \lt x \lt 1\)</span> and <span class="process-math">\(0 \lt y \lt 1\text{,}\)</span> <span class="process-math">\((x,0) \sim (x,1)\)</span> for <span class="process-math">\(0 \lt x \lt 1\text{,}\)</span> <span class="process-math">\((0,y) \sim (1,y)\)</span> for <span class="process-math">\(0 \lt y \lt 1\text{,}\)</span> and <span class="process-math">\((0,0) \sim (0,1) \sim (1,0) \sim(1,1)\text{.}\)</span> (This space is called a Möbius strip.)</div></article><article class="task exercise-like" id="task-825"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
+<div class="para" id="p-1952">
+<span class="process-math">\((x, y) \sim (x,y)\)</span> if <span class="process-math">\(0 \lt x \lt 1\)</span> and <span class="process-math">\(0 \lt y \lt 1\)</span> and <span class="process-math">\((x,y) \sim (u,v)\)</span> if <span class="process-math">\((x,y)\)</span> and <span class="process-math">\((u,v)\)</span> are boundary points.</div></article></article></article><div class="para" id="p-1953"> Many other interesting identification spaces can be made. For example, let <span class="process-math">\(X = I \times I\)</span> and define <span class="process-math">\(\sim\)</span> by <span class="process-math">\((x, y) \sim (x,y)\)</span> if <span class="process-math">\(0 \lt x \lt 1\)</span> and <span class="process-math">\(0 \lt y \lt 1\text{,}\)</span> <span class="process-math">\((0, y) \sim (1, y)\)</span> for <span class="process-math">\(0 \lt y \lt 1\text{,}\)</span> <span class="process-math">\((x,0) \sim (1-x,1)\)</span> for <span class="process-math">\(0 \lt x \lt 1\text{.}\)</span> This identification is illustrated in <a href="" class="xref" data-knowl="./knowl/F_Klein_bottle.html" title="Figure 16.6">Figure 16.6</a>. The resulting identification space <span class="process-math">\(X/\ssim\)</span> is a Klein bottle. A nice illustration of this can be seen at <a class="external" href="https://plus.maths.org/content/introducing-klein-bottle" target="_blank">maths.org</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-5" id="fn-5"><sup> 5 </sup></a>.</div>
 <figure class="figure figure-like" id="F_Klein_bottle"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="external/Klein_identification.svg" role="img" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">16.6<span class="period">.</span></span><span class="space"> </span>Identifications for the Klein Bottle.</figcaption></figure></section><div class="hidden-content tex2jax_ignore" id="hk-fn-5"><div class="fn"><code class="code-inline tex2jax_ignore">plus.maths.org/content/introducing-klein-bottle</code></div></div>
 </div>

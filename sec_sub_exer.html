@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Exercises</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -604,38 +605,37 @@ window.MathJax = {
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Exercises</span>
 </h2>
 <article class="exercise exercise-like" id="exercise-172"><h3 class="heading"><span class="codenumber">1<span class="period">.</span></span></h3>
-<div class="para" id="p-1888">Let <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> be topological spaces and <span class="process-math">\(f: X \to Y\)</span> be a continuous function. If <span class="process-math">\(A\)</span> is a subspace of <span class="process-math">\(X\text{,}\)</span> prove that <span class="process-math">\(f|_A : A \to Y\)</span> is also continuous.</div></article><article class="exercise exercise-like" id="exercise-173"><h3 class="heading"><span class="codenumber">2<span class="period">.</span></span></h3>
-<div class="para" id="p-1889">Let <span class="process-math">\(X\)</span> be a topological space, let <span class="process-math">\(A\)</span> be a subspace of <span class="process-math">\(X\text{,}\)</span> and let <span class="process-math">\(B\)</span> be a subspace of <span class="process-math">\(A\text{.}\)</span> Show that the subspace topology that <span class="process-math">\(B\)</span> inherits from <span class="process-math">\(A\)</span> is the same as the subspace topology that <span class="process-math">\(B\)</span> inherits from <span class="process-math">\(X\text{.}\)</span>
+<div class="para" id="p-1894">Let <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> be topological spaces and <span class="process-math">\(f: X \to Y\)</span> be a continuous function. If <span class="process-math">\(A\)</span> is a subspace of <span class="process-math">\(X\text{,}\)</span> prove that <span class="process-math">\(f|_A : A \to Y\)</span> is also continuous.</div></article><article class="exercise exercise-like" id="exercise-173"><h3 class="heading"><span class="codenumber">2<span class="period">.</span></span></h3>
+<div class="para" id="p-1895">Let <span class="process-math">\(X\)</span> be a topological space, let <span class="process-math">\(A\)</span> be a subspace of <span class="process-math">\(X\text{,}\)</span> and let <span class="process-math">\(B\)</span> be a subspace of <span class="process-math">\(A\text{.}\)</span> Show that the subspace topology that <span class="process-math">\(B\)</span> inherits from <span class="process-math">\(A\)</span> is the same as the subspace topology that <span class="process-math">\(B\)</span> inherits from <span class="process-math">\(X\text{.}\)</span>
 </div></article><article class="exercise exercise-like" id="exercise-174"><h3 class="heading"><span class="codenumber">3<span class="period">.</span></span></h3>
-<div class="introduction" id="introduction-215"><div class="para" id="p-1890">Let <span class="process-math">\(A\)</span> be a subspace of a topological space <span class="process-math">\(X\)</span> and let <span class="process-math">\(B\)</span> be a subset of <span class="process-math">\(A\text{.}\)</span>
+<div class="introduction" id="introduction-215"><div class="para" id="p-1896">Let <span class="process-math">\(A\)</span> be a subspace of a topological space <span class="process-math">\(X\)</span> and let <span class="process-math">\(B\)</span> be a subset of <span class="process-math">\(A\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-801"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1891">Prove that a point <span class="process-math">\(x\)</span> in <span class="process-math">\(A\)</span> is a limit point of <span class="process-math">\(B\)</span> in the subspace topology for <span class="process-math">\(A\)</span> if and only if <span class="process-math">\(x\)</span> is a limit point of <span class="process-math">\(B\)</span> in the topology on <span class="process-math">\(X\text{.}\)</span>
+<div class="para" id="p-1897">Prove that a point <span class="process-math">\(x\)</span> in <span class="process-math">\(A\)</span> is a limit point of <span class="process-math">\(B\)</span> in the subspace topology for <span class="process-math">\(A\)</span> if and only if <span class="process-math">\(x\)</span> is a limit point of <span class="process-math">\(B\)</span> in the topology on <span class="process-math">\(X\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-802"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-1892">Prove that the closure of <span class="process-math">\(B\)</span> in the subspace topology for <span class="process-math">\(A\)</span> is equal to <span class="process-math">\(\overline{B} \cap A\text{,}\)</span> where <span class="process-math">\(\overline{B}\)</span> is the closure of <span class="process-math">\(B\)</span> in <span class="process-math">\(X\text{.}\)</span>
+<div class="para" id="p-1898">Prove that the closure of <span class="process-math">\(B\)</span> in the subspace topology for <span class="process-math">\(A\)</span> is equal to <span class="process-math">\(\overline{B} \cap A\text{,}\)</span> where <span class="process-math">\(\overline{B}\)</span> is the closure of <span class="process-math">\(B\)</span> in <span class="process-math">\(X\text{.}\)</span>
 </div></article></article><article class="exercise exercise-like" id="ex_R_intervals"><h3 class="heading"><span class="codenumber">4<span class="period">.</span></span></h3>
-<div class="para" id="p-1893">Show that <span class="process-math">\(\R\)</span> is homeomorphic, with the standard topology, to any interval of the form <span class="process-math">\((a,\infty)\)</span> or <span class="process-math">\((-\infty,b)\text{.}\)</span>
+<div class="para" id="p-1899">Show that <span class="process-math">\(\R\)</span> is homeomorphic, with the standard topology, to any interval of the form <span class="process-math">\((a,\infty)\)</span> or <span class="process-math">\((-\infty,b)\text{.}\)</span>
 </div></article><article class="exercise exercise-like" id="exercise-176"><h3 class="heading"><span class="codenumber">5<span class="period">.</span></span></h3>
-<div class="introduction" id="introduction-216"><div class="para" id="p-1894">Let <span class="process-math">\(X\)</span> be a topological space.</div></div>
+<div class="introduction" id="introduction-216"><div class="para" id="p-1900">Let <span class="process-math">\(X\)</span> be a topological space.</div></div>
 <article class="task exercise-like" id="task-803"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1895">Let <span class="process-math">\(O\)</span> be an open subset of <span class="process-math">\(X\text{.}\)</span> Prove that a subset <span class="process-math">\(A\)</span> of <span class="process-math">\(O\)</span> is open in <span class="process-math">\(O\)</span> if and only if <span class="process-math">\(A\)</span> is open in <span class="process-math">\(X\text{.}\)</span>
+<div class="para" id="p-1901">Let <span class="process-math">\(O\)</span> be an open subset of <span class="process-math">\(X\text{.}\)</span> Prove that a subset <span class="process-math">\(A\)</span> of <span class="process-math">\(O\)</span> is open in <span class="process-math">\(O\)</span> if and only if <span class="process-math">\(A\)</span> is open in <span class="process-math">\(X\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-804"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-1896">Let <span class="process-math">\(C\)</span> be a closed subset of <span class="process-math">\(X\text{.}\)</span> Prove that a subset <span class="process-math">\(B\)</span> of <span class="process-math">\(C\)</span> is closed in <span class="process-math">\(C\)</span> if and only if <span class="process-math">\(B\)</span> is closed in <span class="process-math">\(X\text{.}\)</span>
+<div class="para" id="p-1902">Let <span class="process-math">\(C\)</span> be a closed subset of <span class="process-math">\(X\text{.}\)</span> Prove that a subset <span class="process-math">\(B\)</span> of <span class="process-math">\(C\)</span> is closed in <span class="process-math">\(C\)</span> if and only if <span class="process-math">\(B\)</span> is closed in <span class="process-math">\(X\text{.}\)</span>
 </div></article></article><article class="exercise exercise-like" id="exercise-177"><h3 class="heading"><span class="codenumber">6<span class="period">.</span></span></h3>
-<div class="para" id="p-1897">A property of a topological space is said to be hereditary if that property is inherited by every subspace. We state this more formally in the following definition.</div> <article class="definition definition-like" id="definition-63"><h4 class="heading">
+<div class="para" id="p-1903">A property of a topological space is said to be hereditary if that property is inherited by every subspace. We state this more formally in the following definition.</div> <article class="definition definition-like" id="definition-63"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">15.3</span><span class="period">.</span>
-</h4>
-<div class="para" id="p-1898">A property <span class="process-math">\(P\)</span> of a topological space <span class="process-math">\(X\)</span> is hereditary  if every subspace of <span class="process-math">\(X\)</span> also has property <span class="process-math">\(P\text{.}\)</span>
-</div></article> <div class="para" id="p-1899">Show that properties <span class="process-math">\(T_1\text{,}\)</span> <span class="process-math">\(T_2\text{,}\)</span> and <span class="process-math">\(T_3\)</span> are hereditary. (The separation axioms <span class="process-math">\(T_i\)</span> are found in <a href="chap_Closed_sets_topology.html" class="internal" title="Chapter 13: Closed Sets in Topological Spaces">Chapter 13</a>.) The fact that <span class="process-math">\(T_4\)</span> is not hereditary is somewhat difficult. One example is the Tychonoff plank (which is normal) with the Deleted Tychonoff plank (which is not normal) as subspace. An interested reader can consult <span class="booktitle">Counterexamples in Topology (2nd ed.)</span>, Lynn Arthur Steen and J. Arthur Seebach, Jr., Dover Publications, 1978.</div></article><article class="exercise exercise-like" id="exercise-178"><h3 class="heading"><span class="codenumber">7<span class="period">.</span></span></h3>
-<div class="para" id="p-1900">Suppose that <span class="process-math">\(f : X \to Y\)</span> is a homeomorphism from a topological space <span class="process-math">\(X\)</span> to a topological space <span class="process-math">\(Y\text{.}\)</span> Let <span class="process-math">\(a \in X\text{.}\)</span> Must the subspace <span class="process-math">\(X' = X \setminus \{a\}\)</span> of <span class="process-math">\(X\)</span> be homeomorphic to the subspace <span class="process-math">\(Y' = Y \setminus \{f(a)\}\)</span> of <span class="process-math">\(Y\text{?}\)</span> Prove your conjecture.</div></article><article class="exercise exercise-like" id="exercise-179"><h3 class="heading"><span class="codenumber">8<span class="period">.</span></span></h3>
-<div class="introduction" id="introduction-217"><div class="para" id="p-1901">For each of the following, answer true if the statement is always true. If the statement is only sometimes true or never true, answer false and provide a concrete example to illustrate that the statement is false. If a statement is true, explain why.</div></div>
+</h4> <div class="para" id="p-1904">A property <span class="process-math">\(P\)</span> of a topological space <span class="process-math">\(X\)</span> is <dfn class="terminology">hereditary</dfn> if every subspace of <span class="process-math">\(X\)</span> also has property <span class="process-math">\(P\text{.}\)</span>
+</div></article> <div class="para" id="p-1905">Show that properties <span class="process-math">\(T_1\text{,}\)</span> <span class="process-math">\(T_2\text{,}\)</span> and <span class="process-math">\(T_3\)</span> are hereditary. (The separation axioms <span class="process-math">\(T_i\)</span> are found in <a href="chap_Closed_sets_topology.html" class="internal" title="Chapter 13: Closed Sets in Topological Spaces">Chapter 13</a>.) The fact that <span class="process-math">\(T_4\)</span> is not hereditary is somewhat difficult. One example is the Tychonoff plank (which is normal) with the Deleted Tychonoff plank (which is not normal) as subspace. An interested reader can consult <span class="booktitle">Counterexamples in Topology (2nd ed.)</span>, Lynn Arthur Steen and J. Arthur Seebach, Jr., Dover Publications, 1978.</div></article><article class="exercise exercise-like" id="exercise-178"><h3 class="heading"><span class="codenumber">7<span class="period">.</span></span></h3>
+<div class="para" id="p-1906">Suppose that <span class="process-math">\(f : X \to Y\)</span> is a homeomorphism from a topological space <span class="process-math">\(X\)</span> to a topological space <span class="process-math">\(Y\text{.}\)</span> Let <span class="process-math">\(a \in X\text{.}\)</span> Must the subspace <span class="process-math">\(X' = X \setminus \{a\}\)</span> of <span class="process-math">\(X\)</span> be homeomorphic to the subspace <span class="process-math">\(Y' = Y \setminus \{f(a)\}\)</span> of <span class="process-math">\(Y\text{?}\)</span> Prove your conjecture.</div></article><article class="exercise exercise-like" id="exercise-179"><h3 class="heading"><span class="codenumber">8<span class="period">.</span></span></h3>
+<div class="introduction" id="introduction-217"><div class="para" id="p-1907">For each of the following, answer true if the statement is always true. If the statement is only sometimes true or never true, answer false and provide a concrete example to illustrate that the statement is false. If a statement is true, explain why.</div></div>
 <article class="task exercise-like" id="task-805"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1902">If <span class="process-math">\(X\)</span> has the discrete topology, then every subspace of <span class="process-math">\(X\)</span> has the discrete topology.</div></article><article class="task exercise-like" id="task-806"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-1903">If <span class="process-math">\(X\)</span> is a topological space that does not have the discrete topology, then no subspace of <span class="process-math">\(X\)</span> has the discrete topology.</div></article><article class="task exercise-like" id="task-807"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-1904">If <span class="process-math">\(f : X \to Y\)</span> is a continuous function between topological spaces <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\text{,}\)</span> and <span class="process-math">\(X\)</span> is Hausdorff, then the subspace <span class="process-math">\(f(X)\)</span> of <span class="process-math">\(Y\)</span> is Hausdorff.</div></article><article class="task exercise-like" id="task-808"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="p-1905">If <span class="process-math">\(A\)</span> is a subspace of a topological space <span class="process-math">\(X\)</span> and <span class="process-math">\(B\)</span> is a subset of <span class="process-math">\(X\text{,}\)</span> then the closure of <span class="process-math">\(B \cap A\)</span> in the subspace topology for <span class="process-math">\(A\)</span> equals <span class="process-math">\(\overline{B} \cap A\text{,}\)</span> where <span class="process-math">\(\overline{B}\)</span> is the closure of <span class="process-math">\(B\)</span> in <span class="process-math">\(X\text{.}\)</span>
+<div class="para" id="p-1908">If <span class="process-math">\(X\)</span> has the discrete topology, then every subspace of <span class="process-math">\(X\)</span> has the discrete topology.</div></article><article class="task exercise-like" id="task-806"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-1909">If <span class="process-math">\(X\)</span> is a topological space that does not have the discrete topology, then no subspace of <span class="process-math">\(X\)</span> has the discrete topology.</div></article><article class="task exercise-like" id="task-807"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="p-1910">If <span class="process-math">\(f : X \to Y\)</span> is a continuous function between topological spaces <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\text{,}\)</span> and <span class="process-math">\(X\)</span> is Hausdorff, then the subspace <span class="process-math">\(f(X)\)</span> of <span class="process-math">\(Y\)</span> is Hausdorff.</div></article><article class="task exercise-like" id="task-808"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="p-1911">If <span class="process-math">\(A\)</span> is a subspace of a topological space <span class="process-math">\(X\)</span> and <span class="process-math">\(B\)</span> is a subset of <span class="process-math">\(X\text{,}\)</span> then the closure of <span class="process-math">\(B \cap A\)</span> in the subspace topology for <span class="process-math">\(A\)</span> equals <span class="process-math">\(\overline{B} \cap A\text{,}\)</span> where <span class="process-math">\(\overline{B}\)</span> is the closure of <span class="process-math">\(B\)</span> in <span class="process-math">\(X\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-809"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<div class="para" id="p-1906">If <span class="process-math">\(A\)</span> is a subspace of a topological space <span class="process-math">\(X\)</span> and <span class="process-math">\(C\)</span> is a subset of <span class="process-math">\(X\text{,}\)</span> then the interior of <span class="process-math">\(C \cap A\)</span> in the subspace topology for <span class="process-math">\(A\)</span> equals <span class="process-math">\(\Int(C) \cap A\text{,}\)</span> where <span class="process-math">\(\Int(C)\)</span> is the interior of <span class="process-math">\(C\)</span> in <span class="process-math">\(X\text{.}\)</span>
+<div class="para" id="p-1912">If <span class="process-math">\(A\)</span> is a subspace of a topological space <span class="process-math">\(X\)</span> and <span class="process-math">\(C\)</span> is a subset of <span class="process-math">\(X\text{,}\)</span> then the interior of <span class="process-math">\(C \cap A\)</span> in the subspace topology for <span class="process-math">\(A\)</span> equals <span class="process-math">\(\Int(C) \cap A\text{,}\)</span> where <span class="process-math">\(\Int(C)\)</span> is the interior of <span class="process-math">\(C\)</span> in <span class="process-math">\(X\text{.}\)</span>
 </div></article></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_sub_summ.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="chap_quotients.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

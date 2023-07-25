@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Summary</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -603,28 +604,28 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_glb_summ"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">Summary</span>
 </h2>
-<div class="para logical" id="p-598">
+<div class="para logical" id="p-604">
 <div class="para">Important ideas that we discussed in this section include the following.</div>
 <ul class="disc">
-<li id="li-126"><div class="para logical" id="p-599">
+<li id="li-126"><div class="para logical" id="p-605">
 <div class="para">A lower bound or a nonempty subset <span class="process-math">\(S\)</span> of <span class="process-math">\(\R\)</span> that is bounded below is a real number <span class="process-math">\(m\)</span> such that <span class="process-math">\(m \leq s\)</span> for all <span class="process-math">\(s \in S\text{.}\)</span> A greatest lower bound (or infimum) for a nonempty subset <span class="process-math">\(S\)</span> of <span class="process-math">\(\R\)</span> that is bounded below is a real number <span class="process-math">\(m\)</span> such that</div>
 <ol class="lower-roman">
-<li id="li-127"><div class="para" id="p-600">
+<li id="li-127"><div class="para" id="p-606">
 <span class="process-math">\(m\)</span> is a lower bound for <span class="process-math">\(S\)</span> and</div></li>
-<li id="li-128"><div class="para" id="p-601">if <span class="process-math">\(k\)</span> is a lower bound for <span class="process-math">\(S\text{,}\)</span> then <span class="process-math">\(m \geq k\text{.}\)</span>
+<li id="li-128"><div class="para" id="p-607">if <span class="process-math">\(k\)</span> is a lower bound for <span class="process-math">\(S\text{,}\)</span> then <span class="process-math">\(m \geq k\text{.}\)</span>
 </div></li>
 </ol>
 </div></li>
-<li id="li-129"><div class="para logical" id="p-602">
+<li id="li-129"><div class="para logical" id="p-608">
 <div class="para">An upper bound for a nonempty subset <span class="process-math">\(S\)</span> of <span class="process-math">\(\R\)</span> that is bounded above is a real number <span class="process-math">\(M\)</span> such that <span class="process-math">\(M \geq s\)</span> for all <span class="process-math">\(s \in S\text{.}\)</span> A least upper bound (or supremum) for a nonempty subset <span class="process-math">\(S\)</span> of <span class="process-math">\(\R\)</span> that is bounded above is a real number <span class="process-math">\(M\)</span> such that</div>
 <ol class="lower-roman">
-<li id="li-130"><div class="para" id="p-603">
+<li id="li-130"><div class="para" id="p-609">
 <span class="process-math">\(M\)</span> is an upper bound for <span class="process-math">\(S\)</span> and</div></li>
-<li id="li-131"><div class="para" id="p-604">if <span class="process-math">\(k\)</span> is an upper bound for <span class="process-math">\(s\text{,}\)</span> then <span class="process-math">\(M \leq k\text{.}\)</span>
+<li id="li-131"><div class="para" id="p-610">if <span class="process-math">\(k\)</span> is an upper bound for <span class="process-math">\(s\text{,}\)</span> then <span class="process-math">\(M \leq k\text{.}\)</span>
 </div></li>
 </ol>
 </div></li>
-<li id="li-132"><div class="para" id="p-605">The distance from a point <span class="process-math">\(x\)</span> to a set <span class="process-math">\(A\)</span> in a metric space <span class="process-math">\((X,d)\)</span> is <span class="process-math">\(d(x,A) = \inf \{d(x,a) \mid a \in A\}\text{.}\)</span> There may be no point <span class="process-math">\(a \in A\)</span> such that <span class="process-math">\(d(x,A) = d(x,a)\text{,}\)</span> so it is necessary to use an infimum to define this distance.</div></li>
+<li id="li-132"><div class="para" id="p-611">The distance from a point <span class="process-math">\(x\)</span> to a set <span class="process-math">\(A\)</span> in a metric space <span class="process-math">\((X,d)\)</span> is <span class="process-math">\(d(x,A) = \inf \{d(x,a) \mid a \in A\}\text{.}\)</span> There may be no point <span class="process-math">\(a \in A\)</span> such that <span class="process-math">\(d(x,A) = d(x,a)\text{,}\)</span> so it is necessary to use an infimum to define this distance.</div></li>
 </ul>
 </div></section></div>
 <div class="ptx-content-footer">

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,13 +13,11 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\((X, d_X)\)</span> and <span class="process-math">\((Y, d_Y)\)</span> be metric spaces. We can make the Cartesian product <span class="process-math">\(X \times Y\)</span> into a metric space by defining a metric <span class="process-math">\(d'\)</span> on <span class="process-math">\(X \times Y\)</span> as follows. If <span class="process-math">\((x_1, y_2)\)</span> and <span class="process-math">\((x_2, y_2)\)</span> are in <span class="process-math">\(X \times Y\text{,}\)</span> then</div>
+<div class="para">Let <span class="process-math">\(\Z\)</span> be the set of integers and let <span class="process-math">\(p\)</span> be a prime. For each pair of distinct integers <span class="process-math">\(m\)</span> and <span class="process-math">\(n\)</span> there is an integer <span class="process-math">\(t = t(m,n)\)</span> such that <span class="process-math">\(|m-n| = k \times p^t\text{,}\)</span> where <span class="process-math">\(p\)</span> does not divide <span class="process-math">\(k\text{.}\)</span> For example, if <span class="process-math">\(p=5\text{,}\)</span> <span class="process-math">\(m = 34\text{,}\)</span> and <span class="process-math">\(n = 7\text{,}\)</span> then <span class="process-math">\(m-n = 27 = 27 \times 5^0\text{.}\)</span> So <span class="process-math">\(t(43,7) = 27\text{.}\)</span> However, if <span class="process-math">\(m = 54\)</span> and <span class="process-math">\(n = 4\text{,}\)</span> then <span class="process-math">\(m-n = 50 = 2 \times 5^2\text{.}\)</span> So <span class="process-math">\(t(54,4) = 2\text{.}\)</span> Define <span class="process-math">\(d: \Z \times \Z \to \R\)</span> by</div>
 <div class="displaymath process-math">
 \begin{equation*}
-d'((x_1,y_1), (x_2, y_2)) = \max\{d_X(x_1,x_2), d_Y(y_1,y_2)\}\text{.}
+d(m,n) = \begin{cases}0 \amp \text{ if }  m=n \\ \frac{1}{p^t} \amp \text{ if }  m \neq n. \end{cases}
 \end{equation*}
-</div>
-<div class="para">You may assume without proof that <span class="process-math">\(d'\)</span> is a metric on <span class="process-math">\(X \times Y\text{.}\)</span>
 </div>
 </div>
 <span class="incontext"><a href="sec_metric_space_exer.html#p-527" class="internal">in-context</a></span>

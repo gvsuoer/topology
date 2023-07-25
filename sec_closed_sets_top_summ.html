@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Summary</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -603,19 +604,19 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_closed_sets_top_summ"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">Summary</span>
 </h2>
-<div class="para logical" id="p-1615">
+<div class="para logical" id="p-1621">
 <div class="para">Important ideas that we discussed in this section include the following.</div>
 <ul class="disc">
-<li id="li-262"><div class="para" id="p-1616">A subset <span class="process-math">\(C\)</span> of a topological space <span class="process-math">\(X\)</span> is closed if <span class="process-math">\(X \setminus C\)</span> is open.</div></li>
-<li id="li-263"><div class="para" id="p-1617">Any intersection of closed sets is closed, while unions of finitely many closed sets are closed.</div></li>
-<li id="li-264"><div class="para" id="p-1618">A sequence in a topological space <span class="process-math">\(X\)</span> is a function <span class="process-math">\(f: \Z^+\)</span> to <span class="process-math">\(X\text{.}\)</span>
+<li id="li-262"><div class="para" id="p-1622">A subset <span class="process-math">\(C\)</span> of a topological space <span class="process-math">\(X\)</span> is closed if <span class="process-math">\(X \setminus C\)</span> is open.</div></li>
+<li id="li-263"><div class="para" id="p-1623">Any intersection of closed sets is closed, while unions of finitely many closed sets are closed.</div></li>
+<li id="li-264"><div class="para" id="p-1624">A sequence in a topological space <span class="process-math">\(X\)</span> is a function <span class="process-math">\(f: \Z^+\)</span> to <span class="process-math">\(X\text{.}\)</span>
 </div></li>
-<li id="li-265"><div class="para" id="p-1619">A sequence <span class="process-math">\((x_n)\)</span> in a topological space <span class="process-math">\(X\)</span> converges to a point <span class="process-math">\(x\)</span> in <span class="process-math">\(X\)</span> if for each open set <span class="process-math">\(O\)</span> containing <span class="process-math">\(x\text{,}\)</span> there exists a positive integer <span class="process-math">\(N\)</span> such that <span class="process-math">\(x_n \in O\)</span> for all <span class="process-math">\(n \geq N\text{.}\)</span>
+<li id="li-265"><div class="para" id="p-1625">A sequence <span class="process-math">\((x_n)\)</span> in a topological space <span class="process-math">\(X\)</span> converges to a point <span class="process-math">\(x\)</span> in <span class="process-math">\(X\)</span> if for each open set <span class="process-math">\(O\)</span> containing <span class="process-math">\(x\text{,}\)</span> there exists a positive integer <span class="process-math">\(N\)</span> such that <span class="process-math">\(x_n \in O\)</span> for all <span class="process-math">\(n \geq N\text{.}\)</span>
 </div></li>
-<li id="li-266"><div class="para" id="p-1620">If a sequence <span class="process-math">\((x_n)\)</span> in a topological space <span class="process-math">\(X\)</span> converges to a point <span class="process-math">\(x\text{,}\)</span> then <span class="process-math">\(x\)</span> is a limit of the sequence <span class="process-math">\((x_n)\text{.}\)</span>
+<li id="li-266"><div class="para" id="p-1626">If a sequence <span class="process-math">\((x_n)\)</span> in a topological space <span class="process-math">\(X\)</span> converges to a point <span class="process-math">\(x\text{,}\)</span> then <span class="process-math">\(x\)</span> is a limit of the sequence <span class="process-math">\((x_n)\text{.}\)</span>
 </div></li>
-<li id="li-267"><div class="para" id="p-1621">A limit point of a subset <span class="process-math">\(A\)</span> of a topological space <span class="process-math">\(X\)</span> is a point <span class="process-math">\(x \in X\)</span> such that every neighborhood of <span class="process-math">\(x\)</span> contains a point in <span class="process-math">\(A\)</span> different from <span class="process-math">\(x\text{.}\)</span> A subset <span class="process-math">\(C\)</span> of a topological space <span class="process-math">\(X\)</span> is closed if and only if <span class="process-math">\(C\)</span> contains all of its limit points.</div></li>
-<li id="li-268"><div class="para logical" id="p-1622">
+<li id="li-267"><div class="para" id="p-1627">A limit point of a subset <span class="process-math">\(A\)</span> of a topological space <span class="process-math">\(X\)</span> is a point <span class="process-math">\(x \in X\)</span> such that every neighborhood of <span class="process-math">\(x\)</span> contains a point in <span class="process-math">\(A\)</span> different from <span class="process-math">\(x\text{.}\)</span> A subset <span class="process-math">\(C\)</span> of a topological space <span class="process-math">\(X\)</span> is closed if and only if <span class="process-math">\(C\)</span> contains all of its limit points.</div></li>
+<li id="li-268"><div class="para logical" id="p-1628">
 <div class="para">A boundary point of a subset <span class="process-math">\(A\)</span> of a topological space <span class="process-math">\(X\)</span> is a point <span class="process-math">\(x \in X\)</span> such that every neighborhood of <span class="process-math">\(x\)</span> contains a point in <span class="process-math">\(A\)</span> and a point in <span class="process-math">\(X \setminus A\text{.}\)</span> The boundary of <span class="process-math">\(A\)</span> is the set</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -624,17 +625,17 @@ window.MathJax = {
 </div>
 <div class="para">A subset <span class="process-math">\(C\)</span> of <span class="process-math">\(X\)</span> is closed if and only if <span class="process-math">\(C\)</span> contains its boundary.</div>
 </div></li>
-<li id="li-269"><div class="para" id="p-1623">A topological space <span class="process-math">\(X\)</span> is Hausdorff if we can separate distinct points with open sets in the space. That is, if for each pair <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\)</span> of distinct points in <span class="process-math">\(X\text{,}\)</span> there exists open sets <span class="process-math">\(O_x\)</span> of <span class="process-math">\(x\)</span> and <span class="process-math">\(O_y\)</span> of <span class="process-math">\(y\)</span> such that <span class="process-math">\(O_x \cap O_y = \emptyset\text{.}\)</span> Hausdorff spaces are important because sequences have unique limits in Hausdorff spaces and single point sets are closed.</div></li>
-<li id="li-270"><div class="para logical" id="p-1624">
+<li id="li-269"><div class="para" id="p-1629">A topological space <span class="process-math">\(X\)</span> is Hausdorff if we can separate distinct points with open sets in the space. That is, if for each pair <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\)</span> of distinct points in <span class="process-math">\(X\text{,}\)</span> there exists open sets <span class="process-math">\(O_x\)</span> of <span class="process-math">\(x\)</span> and <span class="process-math">\(O_y\)</span> of <span class="process-math">\(y\)</span> such that <span class="process-math">\(O_x \cap O_y = \emptyset\text{.}\)</span> Hausdorff spaces are important because sequences have unique limits in Hausdorff spaces and single point sets are closed.</div></li>
+<li id="li-270"><div class="para logical" id="p-1630">
 <div class="para">Separation axioms tell us what kinds of objects can be separated by open sets.</div>
 <ul class="circle">
-<li id="li-271"><div class="para" id="p-1625">In a <span class="process-math">\(T_1\)</span>-space, we can separate two distinct points with one open set. That is, given distinct points <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> in a <span class="process-math">\(T_1\)</span> topological space <span class="process-math">\(X\text{,}\)</span> there is an open set <span class="process-math">\(U\)</span> that separates <span class="process-math">\(y\)</span> from <span class="process-math">\(x\)</span> in the sense that <span class="process-math">\(y \in U\)</span> but <span class="process-math">\(x \notin U\text{.}\)</span>
+<li id="li-271"><div class="para" id="p-1631">In a <span class="process-math">\(T_1\)</span>-space, we can separate two distinct points with one open set. That is, given distinct points <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> in a <span class="process-math">\(T_1\)</span> topological space <span class="process-math">\(X\text{,}\)</span> there is an open set <span class="process-math">\(U\)</span> that separates <span class="process-math">\(y\)</span> from <span class="process-math">\(x\)</span> in the sense that <span class="process-math">\(y \in U\)</span> but <span class="process-math">\(x \notin U\text{.}\)</span>
 </div></li>
-<li id="li-272"><div class="para" id="p-1626">In a <span class="process-math">\(T_2\)</span>-space <span class="process-math">\(X\)</span> we can separate points more distinctly. That is, if <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> are different points in <span class="process-math">\(X\text{,}\)</span> there exist disjoint open sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> such that <span class="process-math">\(x \in U\)</span> and <span class="process-math">\(y \in V\text{.}\)</span>
+<li id="li-272"><div class="para" id="p-1632">In a <span class="process-math">\(T_2\)</span>-space <span class="process-math">\(X\)</span> we can separate points more distinctly. That is, if <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> are different points in <span class="process-math">\(X\text{,}\)</span> there exist disjoint open sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> such that <span class="process-math">\(x \in U\)</span> and <span class="process-math">\(y \in V\text{.}\)</span>
 </div></li>
-<li id="li-273"><div class="para" id="p-1627">In a <span class="process-math">\(T_3\)</span>-space <span class="process-math">\(X\)</span> we can separate a point from a closed set that does not contain that point. That is, if <span class="process-math">\(C\)</span> is a closed subset of <span class="process-math">\(X\)</span> and <span class="process-math">\(x\)</span> is a point not in <span class="process-math">\(C\text{,}\)</span> there exists disjoint open sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> in <span class="process-math">\(X\)</span> such that <span class="process-math">\(C \subseteq U\)</span> and <span class="process-math">\(x \in V\text{.}\)</span>
+<li id="li-273"><div class="para" id="p-1633">In a <span class="process-math">\(T_3\)</span>-space <span class="process-math">\(X\)</span> we can separate a point from a closed set that does not contain that point. That is, if <span class="process-math">\(C\)</span> is a closed subset of <span class="process-math">\(X\)</span> and <span class="process-math">\(x\)</span> is a point not in <span class="process-math">\(C\text{,}\)</span> there exists disjoint open sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> in <span class="process-math">\(X\)</span> such that <span class="process-math">\(C \subseteq U\)</span> and <span class="process-math">\(x \in V\text{.}\)</span>
 </div></li>
-<li id="li-274"><div class="para" id="p-1628">In a <span class="process-math">\(T_4\)</span>-space <span class="process-math">\(X\)</span> we can separate disjoint closed sets. That is, if <span class="process-math">\(C\)</span> and <span class="process-math">\(D\)</span> are disjoint closed subsets of <span class="process-math">\(X\text{,}\)</span> there exist disjoint open sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> such that <span class="process-math">\(C \subseteq U\)</span> and <span class="process-math">\(D \subseteq V\text{.}\)</span>
+<li id="li-274"><div class="para" id="p-1634">In a <span class="process-math">\(T_4\)</span>-space <span class="process-math">\(X\)</span> we can separate disjoint closed sets. That is, if <span class="process-math">\(C\)</span> and <span class="process-math">\(D\)</span> are disjoint closed subsets of <span class="process-math">\(X\text{,}\)</span> there exist disjoint open sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> such that <span class="process-math">\(C \subseteq U\)</span> and <span class="process-math">\(D \subseteq V\text{.}\)</span>
 </div></li>
 </ul>
 </div></li>

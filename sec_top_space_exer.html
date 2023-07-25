@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Exercises</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -605,61 +606,61 @@ window.MathJax = {
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Exercises</span>
 </h2>
 <article class="exercise exercise-like" id="exercise-126"><h3 class="heading"><span class="codenumber">1<span class="period">.</span></span></h3>
-<div class="introduction" id="introduction-158"><div class="para" id="p-1436">You may wonder why we can’t define a basis for a topology on a set <span class="process-math">\(X\)</span> to be any collection of subsets whose union is <span class="process-math">\(X\text{.}\)</span> Consider the example of <span class="process-math">\(X = \{a,b,c\}\)</span> and <span class="process-math">\(S = \{\{a\}, \{c\}, \{a,b\}, \{b,c\}\}\text{.}\)</span>
+<div class="introduction" id="introduction-158"><div class="para" id="p-1442">You may wonder why we can’t define a basis for a topology on a set <span class="process-math">\(X\)</span> to be any collection of subsets whose union is <span class="process-math">\(X\text{.}\)</span> Consider the example of <span class="process-math">\(X = \{a,b,c\}\)</span> and <span class="process-math">\(S = \{\{a\}, \{c\}, \{a,b\}, \{b,c\}\}\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-579"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1437">Determine the collection of all of the unions of elements of <span class="process-math">\(S\text{.}\)</span>
+<div class="para" id="p-1443">Determine the collection of all of the unions of elements of <span class="process-math">\(S\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-580"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-1438">Explain why the collection of unions of the elements of <span class="process-math">\(S\text{,}\)</span> along with the empty set, is not a topology on <span class="process-math">\(X\text{.}\)</span> What property of a basis is not satisfied?</div></article></article><article class="exercise exercise-like" id="ex_aZ_top"><h3 class="heading"><span class="codenumber">2<span class="period">.</span></span></h3>
-<div class="introduction" id="introduction-159"><div class="para" id="p-1439">For each integer <span class="process-math">\(a\text{,}\)</span> let <span class="process-math">\(a\Z = \{ka \mid k \in \Z\}\text{.}\)</span> That is, <span class="process-math">\(a\Z\)</span> is the set of all integer multiples of <span class="process-math">\(a\text{.}\)</span>
+<div class="para" id="p-1444">Explain why the collection of unions of the elements of <span class="process-math">\(S\text{,}\)</span> along with the empty set, is not a topology on <span class="process-math">\(X\text{.}\)</span> What property of a basis is not satisfied?</div></article></article><article class="exercise exercise-like" id="ex_aZ_top"><h3 class="heading"><span class="codenumber">2<span class="period">.</span></span></h3>
+<div class="introduction" id="introduction-159"><div class="para" id="p-1445">For each integer <span class="process-math">\(a\text{,}\)</span> let <span class="process-math">\(a\Z = \{ka \mid k \in \Z\}\text{.}\)</span> That is, <span class="process-math">\(a\Z\)</span> is the set of all integer multiples of <span class="process-math">\(a\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-581"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1440">Show that <span class="process-math">\(\{a\Z \mid a \in \Z\}\)</span> is a basis for a topology <span class="process-math">\(\tau\)</span> on <span class="process-math">\(\Z\text{.}\)</span>
+<div class="para" id="p-1446">Show that <span class="process-math">\(\{a\Z \mid a \in \Z\}\)</span> is a basis for a topology <span class="process-math">\(\tau\)</span> on <span class="process-math">\(\Z\text{.}\)</span>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-16" id="hint-16"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-16"><div class="hint solution-like"><div class="para" id="p-1441">What set is <span class="process-math">\(m\Z \cap n\Z\text{?}\)</span>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-16" id="hint-16"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-16"><div class="hint solution-like"><div class="para" id="p-1447">What set is <span class="process-math">\(m\Z \cap n\Z\text{?}\)</span>
 </div></div></div>
 </div></article><article class="task exercise-like" id="task-582"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-1442">Is the set of positive integers an open set in the topological space <span class="process-math">\((\Z, \tau)\text{?}\)</span> Explain.</div></article><article class="task exercise-like" id="task-583"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-1443">Is the set of odd integers open in the topological space <span class="process-math">\((\Z, \tau)\text{?}\)</span> Explain.</div></article><article class="task exercise-like" id="task-584"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="p-1444">Is the set <span class="process-math">\(\{0\} \cup \{x \in Z \mid |x| \geq 5\}\)</span> open in the topological space <span class="process-math">\((\Z, \tau)\text{?}\)</span> Explain.</div></article></article><article class="exercise exercise-like" id="exercise-128"><h3 class="heading"><span class="codenumber">3<span class="period">.</span></span></h3>
-<div class="introduction" id="introduction-160"><div class="para" id="p-1445">This exercise is a generalization of <a href="" class="xref" data-knowl="./knowl/ex_aZ_top.html" title="Exercise 2">Exercise 2</a>. Let <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> be integers with <span class="process-math">\(a \neq 0\text{.}\)</span> Let <span class="process-math">\(A_{a,b} = a\Z+b = \{ak + b \mid k \in \Z\}\text{.}\)</span>
+<div class="para" id="p-1448">Is the set of positive integers an open set in the topological space <span class="process-math">\((\Z, \tau)\text{?}\)</span> Explain.</div></article><article class="task exercise-like" id="task-583"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="p-1449">Is the set of odd integers open in the topological space <span class="process-math">\((\Z, \tau)\text{?}\)</span> Explain.</div></article><article class="task exercise-like" id="task-584"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="p-1450">Is the set <span class="process-math">\(\{0\} \cup \{x \in Z \mid |x| \geq 5\}\)</span> open in the topological space <span class="process-math">\((\Z, \tau)\text{?}\)</span> Explain.</div></article></article><article class="exercise exercise-like" id="exercise-128"><h3 class="heading"><span class="codenumber">3<span class="period">.</span></span></h3>
+<div class="introduction" id="introduction-160"><div class="para" id="p-1451">This exercise is a generalization of <a href="" class="xref" data-knowl="./knowl/ex_aZ_top.html" title="Exercise 2">Exercise 2</a>. Let <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> be integers with <span class="process-math">\(a \neq 0\text{.}\)</span> Let <span class="process-math">\(A_{a,b} = a\Z+b = \{ak + b \mid k \in \Z\}\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-585"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1446">Show that <span class="process-math">\(\{A_{a,b} \mid a, b \in \Z, a \neq 0\}\)</span> is a basis for a topology <span class="process-math">\(\tau\)</span> on <span class="process-math">\(\Z\text{.}\)</span>
+<div class="para" id="p-1452">Show that <span class="process-math">\(\{A_{a,b} \mid a, b \in \Z, a \neq 0\}\)</span> is a basis for a topology <span class="process-math">\(\tau\)</span> on <span class="process-math">\(\Z\text{.}\)</span>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-17" id="hint-17"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-17"><div class="hint solution-like"><div class="para" id="p-1447">If <span class="process-math">\(B_1 = A_{a_1,b_1}\)</span> and <span class="process-math">\(B_2 = A_{a_2,b_2}\text{,}\)</span> and if <span class="process-math">\(x \in B_1 \cap B_2\text{,}\)</span> what can we say about <span class="process-math">\(A_{a_1a_2,x}\text{?}\)</span>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-17" id="hint-17"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-17"><div class="hint solution-like"><div class="para" id="p-1453">If <span class="process-math">\(B_1 = A_{a_1,b_1}\)</span> and <span class="process-math">\(B_2 = A_{a_2,b_2}\text{,}\)</span> and if <span class="process-math">\(x \in B_1 \cap B_2\text{,}\)</span> what can we say about <span class="process-math">\(A_{a_1a_2,x}\text{?}\)</span>
 </div></div></div>
 </div></article><article class="task exercise-like" id="task-586"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="introduction" id="introduction-161"><div class="para" id="p-1448">Let <span class="process-math">\(f : \Z \to \Z\)</span> be defined by <span class="process-math">\(f(n) = n + (-1)^n\text{.}\)</span>
+<div class="introduction" id="introduction-161"><div class="para" id="p-1454">Let <span class="process-math">\(f : \Z \to \Z\)</span> be defined by <span class="process-math">\(f(n) = n + (-1)^n\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-587"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="p-1449">Prove that <span class="process-math">\(f\)</span> is a bijection.</div></article><article class="task exercise-like" id="task-588"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
-<div class="para" id="p-1450">If <span class="process-math">\(O\)</span> is an open set in <span class="process-math">\(\Z\text{,}\)</span> is <span class="process-math">\(f(O)\)</span> an open set?</div></article><article class="task exercise-like" id="task-589"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
-<div class="para" id="p-1451">If <span class="process-math">\(U\)</span> is an open set in <span class="process-math">\(\Z\text{,}\)</span> is <span class="process-math">\(f^{-1}(U)\)</span> an open set?</div>
+<div class="para" id="p-1455">Prove that <span class="process-math">\(f\)</span> is a bijection.</div></article><article class="task exercise-like" id="task-588"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
+<div class="para" id="p-1456">If <span class="process-math">\(O\)</span> is an open set in <span class="process-math">\(\Z\text{,}\)</span> is <span class="process-math">\(f(O)\)</span> an open set?</div></article><article class="task exercise-like" id="task-589"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
+<div class="para" id="p-1457">If <span class="process-math">\(U\)</span> is an open set in <span class="process-math">\(\Z\text{,}\)</span> is <span class="process-math">\(f^{-1}(U)\)</span> an open set?</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-18" id="hint-18"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-18"><div class="hint solution-like"><div class="para" id="p-1452">What is <span class="process-math">\(f^{-1}\text{?}\)</span>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-18" id="hint-18"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-18"><div class="hint solution-like"><div class="para" id="p-1458">What is <span class="process-math">\(f^{-1}\text{?}\)</span>
 </div></div></div>
 </div></article></article></article><article class="exercise exercise-like" id="ex_coarse_topology_example"><h3 class="heading"><span class="codenumber">4<span class="period">.</span></span></h3>
-<div class="introduction" id="introduction-162"><div class="para" id="p-1453">Let <span class="process-math">\(\B = \{(-x,x) \mid x \in \R^+\}\text{.}\)</span>
+<div class="introduction" id="introduction-162"><div class="para" id="p-1459">Let <span class="process-math">\(\B = \{(-x,x) \mid x \in \R^+\}\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-590"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1454">Show that <span class="process-math">\(\B\)</span> is a basis for a topology <span class="process-math">\(\tau\)</span> on <span class="process-math">\(\R\text{.}\)</span>
+<div class="para" id="p-1460">Show that <span class="process-math">\(\B\)</span> is a basis for a topology <span class="process-math">\(\tau\)</span> on <span class="process-math">\(\R\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-591"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-1455">Every basis set is open in <span class="process-math">\((\R, \tau_E)\text{.}\)</span> So we can ask it the topology <span class="process-math">\(\tau\)</span> is different than the Euclidean topology generated by all open intervals in <span class="process-math">\(\R\text{.}\)</span> Show that there are intervals of the form <span class="process-math">\((a,b)\)</span> that are open in <span class="process-math">\((\R, d_E)\)</span> that are not open sets in <span class="process-math">\(\tau\text{.}\)</span>
+<div class="para" id="p-1461">Every basis set is open in <span class="process-math">\((\R, \tau_E)\text{.}\)</span> So we can ask it the topology <span class="process-math">\(\tau\)</span> is different than the Euclidean topology generated by all open intervals in <span class="process-math">\(\R\text{.}\)</span> Show that there are intervals of the form <span class="process-math">\((a,b)\)</span> that are open in <span class="process-math">\((\R, d_E)\)</span> that are not open sets in <span class="process-math">\(\tau\text{.}\)</span>
 </div></article></article><article class="exercise exercise-like" id="exercise-130"><h3 class="heading"><span class="codenumber">5<span class="period">.</span></span></h3>
 <div class="introduction" id="introduction-163">
-<div class="para" id="p-1456">Let <span class="process-math">\(X = \{a,b,c\}\text{,}\)</span> and let <span class="process-math">\(\tau_1 = \{\emptyset, \{a\}, \{a,b,c\}\}\)</span> and <span class="process-math">\(\tau_2 = \{\emptyset, \{a\}, \{b\}, \{a,b\}, \{a,b,c\}\}\text{.}\)</span> Both <span class="process-math">\(\tau_1\)</span> and <span class="process-math">\(\tau_2\)</span> are topologies in <span class="process-math">\(X\text{,}\)</span> but every element in <span class="process-math">\(\tau_1\)</span> is also an element in <span class="process-math">\(\tau_2\text{.}\)</span> Then this happens we say that <span class="process-math">\(\tau_1\)</span> is a weaker topology than <span class="process-math">\(\tau_2\text{.}\)</span> <a href="" class="xref" data-knowl="./knowl/ex_coarse_topology_example.html" title="Exercise 4">Exercise 4</a> provides an example. More formally,</div> <article class="definition definition-like" id="def_weaker_topologies"><h4 class="heading">
+<div class="para" id="p-1462">Let <span class="process-math">\(X = \{a,b,c\}\text{,}\)</span> and let <span class="process-math">\(\tau_1 = \{\emptyset, \{a\}, \{a,b,c\}\}\)</span> and <span class="process-math">\(\tau_2 = \{\emptyset, \{a\}, \{b\}, \{a,b\}, \{a,b,c\}\}\text{.}\)</span> Both <span class="process-math">\(\tau_1\)</span> and <span class="process-math">\(\tau_2\)</span> are topologies in <span class="process-math">\(X\text{,}\)</span> but every element in <span class="process-math">\(\tau_1\)</span> is also an element in <span class="process-math">\(\tau_2\text{.}\)</span> Then this happens we say that <span class="process-math">\(\tau_1\)</span> is a weaker topology than <span class="process-math">\(\tau_2\text{.}\)</span> <a href="" class="xref" data-knowl="./knowl/ex_coarse_topology_example.html" title="Exercise 4">Exercise 4</a> provides an example. More formally,</div> <article class="definition definition-like" id="def_weaker_topologies"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">12.13</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-1457">Let <span class="process-math">\(\tau_1\)</span> and <span class="process-math">\(\tau_2\)</span> be two topologies on a set <span class="process-math">\(X\text{.}\)</span> If <span class="process-math">\(\tau_1 \subseteq \tau_2\text{,}\)</span> then <span class="process-math">\(\tau_1\)</span> is a coarser (or weaker) topology than <span class="process-math">\(\tau_2\text{.}\)</span> We also say that <span class="process-math">\(\tau_2\)</span> is a finer (or stronger) topology than <span class="process-math">\(\tau_1\text{.}\)</span>
+<div class="para" id="p-1463">Let <span class="process-math">\(\tau_1\)</span> and <span class="process-math">\(\tau_2\)</span> be two topologies on a set <span class="process-math">\(X\text{.}\)</span> If <span class="process-math">\(\tau_1 \subseteq \tau_2\text{,}\)</span> then <span class="process-math">\(\tau_1\)</span> is a <dfn class="terminology">coarser</dfn> (or <dfn class="terminology">weaker</dfn>) topology than <span class="process-math">\(\tau_2\text{.}\)</span> We also say that <span class="process-math">\(\tau_2\)</span> is a <dfn class="terminology">finer</dfn> (or <dfn class="terminology">stronger</dfn>) topology than <span class="process-math">\(\tau_1\text{.}\)</span>
 </div></article>
 </div>
 <article class="task exercise-like" id="task-592"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1458">What is the weakest topology on any set?</div></article><article class="task exercise-like" id="task-593"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-1459">What is the strongest topology on any set?</div></article><article class="task exercise-like" id="task-594"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para logical" id="p-1460">
+<div class="para" id="p-1464">What is the weakest topology on any set?</div></article><article class="task exercise-like" id="task-593"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-1465">What is the strongest topology on any set?</div></article><article class="task exercise-like" id="task-594"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para logical" id="p-1466">
 <div class="para">If a topology on <span class="process-math">\(X\)</span> contains all single point sets, then every subset is open and our our topology is the discrete topology. Also, if a topology on <span class="process-math">\(X\)</span> contains all two-point sets, then if <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\text{,}\)</span> and <span class="process-math">\(z\)</span> are in <span class="process-math">\(X\)</span> it follows that <span class="process-math">\(\{x,y\} \cap \{x,z\} = \{x\}\)</span> is in the topology and we again have the.discrete topology. Consider the topology</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -668,17 +669,17 @@ window.MathJax = {
 </div>
 <div class="para">The only sets not in <span class="process-math">\(\sigma\)</span> are <span class="process-math">\(\{c\}\)</span> and <span class="process-math">\(\{b,c\}\text{,}\)</span> but adding either set to <span class="process-math">\(\sigma\)</span> will produce the discrete topology. So <span class="process-math">\(\sigma\)</span> is a strongest topology possible other than the discrete topology.</div>
 </div></article><article class="task exercise-like" id="task-595"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="p-1461">Let <span class="process-math">\(X = \{a,b,c\}\text{.}\)</span> Are there any topologies <span class="process-math">\(\sigma\)</span> on <span class="process-math">\(X\)</span> such that <span class="process-math">\(\sigma\)</span> is not the discrete topology but there are no stronger topologies on <span class="process-math">\(X\)</span> other than the discrete topology? Explain.</div></article><article class="task exercise-like" id="task-596"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<div class="para" id="p-1462">Let <span class="process-math">\(X = \{a,b,c\}\text{.}\)</span> Are there any topologies <span class="process-math">\(\gamma\)</span> on <span class="process-math">\(X\)</span> such that <span class="process-math">\(\gamma\)</span> is not the indiscrete topology but there are no weaker topologies on <span class="process-math">\(X\)</span> other than the indiscrete topology? Explain.</div></article><article class="task exercise-like" id="task-597"><h4 class="heading"><span class="codenumber">(f)</span></h4>
-<div class="introduction" id="introduction-164"><div class="para" id="p-1463">In general, there may be many different bases for a given topology, and two different bases can have the same cardinality. This is not the case for finite topological space. Let <span class="process-math">\(X\)</span> be a finite set and let <span class="process-math">\(\tau\)</span> be a topology on <span class="process-math">\(X\text{.}\)</span> In this exercise we will show that there is a minimal basis for the topology <span class="process-math">\(\tau\text{.}\)</span> That is, there is a basis <span class="process-math">\(\B_{\text{ min } }\)</span> of <span class="process-math">\(\tau\)</span> such that if <span class="process-math">\(\B\)</span> is any other basis for <span class="process-math">\(\tau\text{,}\)</span> then <span class="process-math">\(\B_{\text{ min } } \subseteq \B\text{.}\)</span>
+<div class="para" id="p-1467">Let <span class="process-math">\(X = \{a,b,c\}\text{.}\)</span> Are there any topologies <span class="process-math">\(\sigma\)</span> on <span class="process-math">\(X\)</span> such that <span class="process-math">\(\sigma\)</span> is not the discrete topology but there are no stronger topologies on <span class="process-math">\(X\)</span> other than the discrete topology? Explain.</div></article><article class="task exercise-like" id="task-596"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para" id="p-1468">Let <span class="process-math">\(X = \{a,b,c\}\text{.}\)</span> Are there any topologies <span class="process-math">\(\gamma\)</span> on <span class="process-math">\(X\)</span> such that <span class="process-math">\(\gamma\)</span> is not the indiscrete topology but there are no weaker topologies on <span class="process-math">\(X\)</span> other than the indiscrete topology? Explain.</div></article><article class="task exercise-like" id="task-597"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<div class="introduction" id="introduction-164"><div class="para" id="p-1469">In general, there may be many different bases for a given topology, and two different bases can have the same cardinality. This is not the case for finite topological space. Let <span class="process-math">\(X\)</span> be a finite set and let <span class="process-math">\(\tau\)</span> be a topology on <span class="process-math">\(X\text{.}\)</span> In this exercise we will show that there is a minimal basis for the topology <span class="process-math">\(\tau\text{.}\)</span> That is, there is a basis <span class="process-math">\(\B_{\text{ min } }\)</span> of <span class="process-math">\(\tau\)</span> such that if <span class="process-math">\(\B\)</span> is any other basis for <span class="process-math">\(\tau\text{,}\)</span> then <span class="process-math">\(\B_{\text{ min } } \subseteq \B\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-598"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="p-1464">If <span class="process-math">\(x \in X\text{,}\)</span> let <span class="process-math">\(U_x\)</span> be the intersection of all open sets that contain <span class="process-math">\(x\text{.}\)</span> Explain why <span class="process-math">\(U_x\)</span> is an open set.</div></article><article class="task exercise-like" id="task-599"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
-<div class="para" id="p-1465">Let <span class="process-math">\(\B_{\text{min}} = \{U_x \mid x \in X\}\text{.}\)</span> Show that <span class="process-math">\(\B_{\text{min}}\)</span> is a basis for <span class="process-math">\(\tau\text{.}\)</span>
+<div class="para" id="p-1470">If <span class="process-math">\(x \in X\text{,}\)</span> let <span class="process-math">\(U_x\)</span> be the intersection of all open sets that contain <span class="process-math">\(x\text{.}\)</span> Explain why <span class="process-math">\(U_x\)</span> is an open set.</div></article><article class="task exercise-like" id="task-599"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
+<div class="para" id="p-1471">Let <span class="process-math">\(\B_{\text{min}} = \{U_x \mid x \in X\}\text{.}\)</span> Show that <span class="process-math">\(\B_{\text{min}}\)</span> is a basis for <span class="process-math">\(\tau\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-600"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
-<div class="para" id="p-1466">Show that if <span class="process-math">\(\B\)</span> is a basis for <span class="process-math">\(\tau\text{,}\)</span> then <span class="process-math">\(\B_{\text{min}} \subseteq \B\text{.}\)</span>
+<div class="para" id="p-1472">Show that if <span class="process-math">\(\B\)</span> is a basis for <span class="process-math">\(\tau\text{,}\)</span> then <span class="process-math">\(\B_{\text{min}} \subseteq \B\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-601"><h5 class="heading"><span class="codenumber">(iv)</span></h5>
-<div class="para logical" id="p-1467">
+<div class="para logical" id="p-1473">
 <div class="para">Let <span class="process-math">\(X = \{a,b,c,d\}\)</span> and let</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -688,38 +689,38 @@ window.MathJax = {
 <div class="para">You may assume that <span class="process-math">\(\tau\)</span> is a topology on <span class="process-math">\(X\text{.}\)</span> Find the unique minimal basis for <span class="process-math">\(\tau\text{.}\)</span>
 </div>
 </div></article></article><article class="task exercise-like" id="task-602"><h4 class="heading"><span class="codenumber">(g)</span></h4>
-<div class="para logical" id="p-1468">
+<div class="para logical" id="p-1474">
 <div class="para">Below is a list of <span class="process-math">\(9\)</span> distinct topologies on <span class="process-math">\(X = \{a,b,c\}\text{.}\)</span> Each topology lies in one or more sequences of topologies ordered by coarseness. For each topology <span class="process-math">\(\tau\text{,}\)</span> list the longest sequence(s) of topologies that start <span class="process-math">\(\{\emptyset, X\} \subset \tau\text{,}\)</span> ordered by coarseness.</div>
 <ol class="decimal">
-<li id="li-237"><div class="para" id="p-1469"><span class="process-math">\(\displaystyle \{\emptyset, X\}\)</span></div></li>
-<li id="li-238"><div class="para" id="p-1470"><span class="process-math">\(\displaystyle \{\emptyset, \{a\}, X\}\)</span></div></li>
-<li id="li-239"><div class="para" id="p-1471"><span class="process-math">\(\displaystyle \{\emptyset, \{a,b\}, X\}\)</span></div></li>
-<li id="li-240"><div class="para" id="p-1472"><span class="process-math">\(\displaystyle \{\emptyset, \{a\}, \{a,b\}, X\}\)</span></div></li>
-<li id="li-241"><div class="para" id="p-1473"><span class="process-math">\(\displaystyle \{\emptyset, \{a\}, \{b,c\}, X\}\)</span></div></li>
-<li id="li-242"><div class="para" id="p-1474"><span class="process-math">\(\displaystyle \{\emptyset, \{a\}, \{b\}, \{a,b\}, X\}\)</span></div></li>
-<li id="li-243"><div class="para" id="p-1475"><span class="process-math">\(\displaystyle \{\emptyset, \{b\}, \{a,b\}, \{b,c\}, X\}\)</span></div></li>
-<li id="li-244"><div class="para" id="p-1476"><span class="process-math">\(\displaystyle \{\emptyset, \{b\}, \{c\}, \{b,c\}, \{a,c\}, X\}\)</span></div></li>
-<li id="li-245"><div class="para" id="p-1477"><span class="process-math">\(\displaystyle \{\emptyset, \{a\}, \{b\}, \{a,b\}, \{b,c\}, X\}\)</span></div></li>
-<li id="li-246"><div class="para" id="p-1478">the discrete topology</div></li>
+<li id="li-237"><div class="para" id="p-1475"><span class="process-math">\(\displaystyle \{\emptyset, X\}\)</span></div></li>
+<li id="li-238"><div class="para" id="p-1476"><span class="process-math">\(\displaystyle \{\emptyset, \{a\}, X\}\)</span></div></li>
+<li id="li-239"><div class="para" id="p-1477"><span class="process-math">\(\displaystyle \{\emptyset, \{a,b\}, X\}\)</span></div></li>
+<li id="li-240"><div class="para" id="p-1478"><span class="process-math">\(\displaystyle \{\emptyset, \{a\}, \{a,b\}, X\}\)</span></div></li>
+<li id="li-241"><div class="para" id="p-1479"><span class="process-math">\(\displaystyle \{\emptyset, \{a\}, \{b,c\}, X\}\)</span></div></li>
+<li id="li-242"><div class="para" id="p-1480"><span class="process-math">\(\displaystyle \{\emptyset, \{a\}, \{b\}, \{a,b\}, X\}\)</span></div></li>
+<li id="li-243"><div class="para" id="p-1481"><span class="process-math">\(\displaystyle \{\emptyset, \{b\}, \{a,b\}, \{b,c\}, X\}\)</span></div></li>
+<li id="li-244"><div class="para" id="p-1482"><span class="process-math">\(\displaystyle \{\emptyset, \{b\}, \{c\}, \{b,c\}, \{a,c\}, X\}\)</span></div></li>
+<li id="li-245"><div class="para" id="p-1483"><span class="process-math">\(\displaystyle \{\emptyset, \{a\}, \{b\}, \{a,b\}, \{b,c\}, X\}\)</span></div></li>
+<li id="li-246"><div class="para" id="p-1484">the discrete topology</div></li>
 </ol>
 </div></article></article><article class="exercise exercise-like" id="exercise-131"><h3 class="heading"><span class="codenumber">6<span class="period">.</span></span></h3>
-<div class="introduction" id="introduction-165"><div class="para" id="p-1479">Find all of the topologies on <span class="process-math">\(X\)</span> if</div></div>
+<div class="introduction" id="introduction-165"><div class="para" id="p-1485">Find all of the topologies on <span class="process-math">\(X\)</span> if</div></div>
 <article class="task exercise-like" id="task-603"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1480">
+<div class="para" id="p-1486">
 <span class="process-math">\(X\)</span> is a single point set</div></article><article class="task exercise-like" id="task-604"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-1481">
+<div class="para" id="p-1487">
 <span class="process-math">\(X\)</span> is a two point set</div></article><article class="task exercise-like" id="task-605"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-1482">
+<div class="para" id="p-1488">
 <span class="process-math">\(X\)</span> is a three point set.</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-19" id="hint-19"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-19"><div class="hint solution-like"><div class="para" id="p-1483">there are 29 distinct topologies</div></div></div>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-19" id="hint-19"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-19"><div class="hint solution-like"><div class="para" id="p-1489">there are 29 distinct topologies</div></div></div>
 </div></article></article><article class="exercise exercise-like" id="exercise-132"><h3 class="heading"><span class="codenumber">7<span class="period">.</span></span></h3>
-<div class="para" id="p-1484">For each <span class="process-math">\(n \in \Z^+\text{,}\)</span> let <span class="process-math">\(O_n = \{n, n+1, n+2, \ldots\}\text{.}\)</span> Let <span class="process-math">\(\tau = \{\emptyset, O_1, O_2, O_3, \ldots\}\text{.}\)</span> Show that <span class="process-math">\((\Z^+, \tau)\)</span> is a topological space.</div></article><article class="exercise exercise-like" id="exercise-133"><h3 class="heading"><span class="codenumber">8<span class="period">.</span></span></h3>
-<div class="para" id="p-1485">Let <span class="process-math">\(A, B\)</span> be two subsets in a topological space <span class="process-math">\(X\text{.}\)</span> What can you say about the relationships between <span class="process-math">\(\Int(A\cap B), \Int(A\cup B)\)</span> and <span class="process-math">\(\Int(A)\cap \Int(B), \Int(A)\cup \Int(B)\text{,}\)</span> respectively? Verify your results.</div></article><article class="exercise exercise-like" id="ex_particular_point_topology"><h3 class="heading"><span class="codenumber">9<span class="period">.</span></span></h3>
-<div class="para" id="p-1486">Let <span class="process-math">\(X\)</span> be a nonempty set and let <span class="process-math">\(p\)</span> be an element in <span class="process-math">\(X\text{.}\)</span> Let <span class="process-math">\(\tau_p\)</span> be the collection of subsets of <span class="process-math">\(X\)</span> consisting of <span class="process-math">\(\emptyset\text{,}\)</span> <span class="process-math">\(X\text{,}\)</span> and all of the subsets of <span class="process-math">\(X\)</span> that contain <span class="process-math">\(p\text{.}\)</span> Show that <span class="process-math">\(\tau_p\)</span> is a topology on <span class="process-math">\(X\text{.}\)</span> (This topology is called the <dfn class="terminology">particular point topology</dfn>). </div></article><article class="exercise exercise-like" id="ex_excluded_point_topology"><h3 class="heading"><span class="codenumber">10<span class="period">.</span></span></h3>
-<div class="para" id="p-1487">Let <span class="process-math">\(X\)</span> be a nonempty set and let <span class="process-math">\(p\)</span> be an element in <span class="process-math">\(X\text{.}\)</span> Let <span class="process-math">\(\tau_{\overline{p}}\)</span> be the collection of subsets of <span class="process-math">\(X\)</span> consisting of <span class="process-math">\(\emptyset\text{,}\)</span> <span class="process-math">\(X\text{,}\)</span> and all of the subsets of <span class="process-math">\(X\)</span> that do not contain <span class="process-math">\(p\text{.}\)</span> Show that <span class="process-math">\(\tau_{\overline{p}}\)</span> is a topology on <span class="process-math">\(X\text{.}\)</span> (This topology is called the <dfn class="terminology">excluded point topology</dfn>.)</div></article><article class="exercise exercise-like" id="ex_digital_line_topology"><h3 class="heading"><span class="codenumber">11<span class="period">.</span></span></h3>
+<div class="para" id="p-1490">For each <span class="process-math">\(n \in \Z^+\text{,}\)</span> let <span class="process-math">\(O_n = \{n, n+1, n+2, \ldots\}\text{.}\)</span> Let <span class="process-math">\(\tau = \{\emptyset, O_1, O_2, O_3, \ldots\}\text{.}\)</span> Show that <span class="process-math">\((\Z^+, \tau)\)</span> is a topological space.</div></article><article class="exercise exercise-like" id="exercise-133"><h3 class="heading"><span class="codenumber">8<span class="period">.</span></span></h3>
+<div class="para" id="p-1491">Let <span class="process-math">\(A, B\)</span> be two subsets in a topological space <span class="process-math">\(X\text{.}\)</span> What can you say about the relationships between <span class="process-math">\(\Int(A\cap B), \Int(A\cup B)\)</span> and <span class="process-math">\(\Int(A)\cap \Int(B), \Int(A)\cup \Int(B)\text{,}\)</span> respectively? Verify your results.</div></article><article class="exercise exercise-like" id="ex_particular_point_topology"><h3 class="heading"><span class="codenumber">9<span class="period">.</span></span></h3>
+<div class="para" id="p-1492">Let <span class="process-math">\(X\)</span> be a nonempty set and let <span class="process-math">\(p\)</span> be an element in <span class="process-math">\(X\text{.}\)</span> Let <span class="process-math">\(\tau_p\)</span> be the collection of subsets of <span class="process-math">\(X\)</span> consisting of <span class="process-math">\(\emptyset\text{,}\)</span> <span class="process-math">\(X\text{,}\)</span> and all of the subsets of <span class="process-math">\(X\)</span> that contain <span class="process-math">\(p\text{.}\)</span> Show that <span class="process-math">\(\tau_p\)</span> is a topology on <span class="process-math">\(X\text{.}\)</span> (This topology is called the <dfn class="terminology">particular point topology</dfn>). </div></article><article class="exercise exercise-like" id="ex_excluded_point_topology"><h3 class="heading"><span class="codenumber">10<span class="period">.</span></span></h3>
+<div class="para" id="p-1493">Let <span class="process-math">\(X\)</span> be a nonempty set and let <span class="process-math">\(p\)</span> be an element in <span class="process-math">\(X\text{.}\)</span> Let <span class="process-math">\(\tau_{\overline{p}}\)</span> be the collection of subsets of <span class="process-math">\(X\)</span> consisting of <span class="process-math">\(\emptyset\text{,}\)</span> <span class="process-math">\(X\text{,}\)</span> and all of the subsets of <span class="process-math">\(X\)</span> that do not contain <span class="process-math">\(p\text{.}\)</span> Show that <span class="process-math">\(\tau_{\overline{p}}\)</span> is a topology on <span class="process-math">\(X\text{.}\)</span> (This topology is called the <dfn class="terminology">excluded point topology</dfn>.)</div></article><article class="exercise exercise-like" id="ex_digital_line_topology"><h3 class="heading"><span class="codenumber">11<span class="period">.</span></span></h3>
 <div class="introduction" id="introduction-166">
-<div class="para logical" id="p-1488">
+<div class="para logical" id="p-1494">
 <div class="para">One application of topology is in digital image displays, such as a computer screen. A digital image display is a rectangular array of pixels and can be modeled using a digital plane. In this exercise we consider a simplification of the digital plane — the digital line — which we consider as an infinite length one-dimensional collection of pixels. For each <span class="process-math">\(n \in \Z\)</span> we define</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/F_Digital_line.html">
 \begin{equation*}
@@ -728,20 +729,20 @@ B(n) = \begin{cases}\{n\}  \amp \text{ if \(n\) is odd } , \\ \{n-1,n,n+1\}  \am
 </div>
 <div class="para">The sets <span class="process-math">\(B(n)\)</span> are illustrated in <a href="" class="xref" data-knowl="./knowl/F_Digital_line.html" title="Figure 12.14">Figure 12.14</a>.</div>
 </div> <figure class="figure figure-like" id="F_Digital_line"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/Digital_line.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">12.14<span class="period">.</span></span><span class="space"> </span>The digital line topology.</figcaption></figure> <div class="para" id="p-1489">In this exercise we explore the collection <span class="process-math">\(\B = \{B(n)\}\text{.}\)</span>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">12.14<span class="period">.</span></span><span class="space"> </span>The digital line topology.</figcaption></figure> <div class="para" id="p-1495">In this exercise we explore the collection <span class="process-math">\(\B = \{B(n)\}\text{.}\)</span>
 </div>
 </div>
 <article class="task exercise-like" id="task-606"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1490">Show that the collection <span class="process-math">\(\B = \{B(n)\}\)</span> is a basis for a topology on <span class="process-math">\(\Z\text{.}\)</span> (The resulting topology is called the <dfn class="terminology">digital line topology</dfn> <span class="process-math">\(\tau_{dl}\text{.}\)</span><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-4" id="fn-4"><sup> 4 </sup></a> The digital line models a one-dimensional array of pixels, where the even integers are the pixels and the odd integers are boundaries between the pixels. Information about the <dfn class="terminology">digital plane</dfn> can be found in <a href="chap_Product_topology.html" class="internal" title="Chapter 20: Products of Topological Spaces">Chapter 20</a>.)</div></article><article class="task exercise-like" id="task-607"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="introduction" id="introduction-167"><div class="para" id="p-1491">Determine which of the following sets are open in the digital line topology:</div></div>
+<div class="para" id="p-1496">Show that the collection <span class="process-math">\(\B = \{B(n)\}\)</span> is a basis for a topology on <span class="process-math">\(\Z\text{.}\)</span> (The resulting topology is called the <dfn class="terminology">digital line topology</dfn> <span class="process-math">\(\tau_{dl}\text{.}\)</span><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-4" id="fn-4"><sup> 4 </sup></a> The digital line models a one-dimensional array of pixels, where the even integers are the pixels and the odd integers are boundaries between the pixels. Information about the <dfn class="terminology">digital plane</dfn> can be found in <a href="chap_Product_topology.html" class="internal" title="Chapter 20: Products of Topological Spaces">Chapter 20</a>.)</div></article><article class="task exercise-like" id="task-607"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="introduction" id="introduction-167"><div class="para" id="p-1497">Determine which of the following sets are open in the digital line topology:</div></div>
 <article class="task exercise-like" id="task-608"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="p-1492"><span class="process-math">\(\{0\}\)</span></div></article><article class="task exercise-like" id="task-609"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
-<div class="para" id="p-1493"><span class="process-math">\(\{1\}\)</span></div></article><article class="task exercise-like" id="task-610"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
-<div class="para" id="p-1494"><span class="process-math">\(\{0, 2\}\)</span></div></article><article class="task exercise-like" id="task-611"><h5 class="heading"><span class="codenumber">(iv)</span></h5>
-<div class="para" id="p-1495"><span class="process-math">\(\{1, 2, 3, 4, 5\}\)</span></div></article><article class="task exercise-like" id="task-612"><h5 class="heading"><span class="codenumber">(v)</span></h5>
-<div class="para" id="p-1496"><span class="process-math">\(\Z^+\)</span></div></article><article class="task exercise-like" id="task-613"><h5 class="heading"><span class="codenumber">(vi)</span></h5>
-<div class="para" id="p-1497">The set of odd integers.</div></article></article></article><article class="exercise exercise-like" id="ex_TS_Zariski"><h3 class="heading"><span class="codenumber">12<span class="period">.</span></span></h3>
-<div class="introduction" id="introduction-168"><div class="para logical" id="p-1498">
+<div class="para" id="p-1498"><span class="process-math">\(\{0\}\)</span></div></article><article class="task exercise-like" id="task-609"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
+<div class="para" id="p-1499"><span class="process-math">\(\{1\}\)</span></div></article><article class="task exercise-like" id="task-610"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
+<div class="para" id="p-1500"><span class="process-math">\(\{0, 2\}\)</span></div></article><article class="task exercise-like" id="task-611"><h5 class="heading"><span class="codenumber">(iv)</span></h5>
+<div class="para" id="p-1501"><span class="process-math">\(\{1, 2, 3, 4, 5\}\)</span></div></article><article class="task exercise-like" id="task-612"><h5 class="heading"><span class="codenumber">(v)</span></h5>
+<div class="para" id="p-1502"><span class="process-math">\(\Z^+\)</span></div></article><article class="task exercise-like" id="task-613"><h5 class="heading"><span class="codenumber">(vi)</span></h5>
+<div class="para" id="p-1503">The set of odd integers.</div></article></article></article><article class="exercise exercise-like" id="ex_TS_Zariski"><h3 class="heading"><span class="codenumber">12<span class="period">.</span></span></h3>
+<div class="introduction" id="introduction-168"><div class="para logical" id="p-1504">
 <div class="para">Let <span class="process-math">\(n\)</span> be a positive integer and let <span class="process-math">\(\mathcal{P}_n\)</span> be the collection of all polynomials in <span class="process-math">\(n\)</span> real variables <span class="process-math">\(x_1\text{,}\)</span> <span class="process-math">\(x_2\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\(x_n\text{.}\)</span> As a specific example, the polynomial</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -757,20 +758,20 @@ Z(f) = \{(x_1, x_2, \ldots, x_n) \mid f(x_1,x_2, \ldots, x_n) = 0\}\text{.}
 <div class="para">Note that <span class="process-math">\(Z(f)\)</span> is a subset of <span class="process-math">\(\R^n\text{.}\)</span> For example, if <span class="process-math">\(n=2\)</span> and <span class="process-math">\(f(x_1,x_2) = x_1^2 - x_2\)</span> then <span class="process-math">\(Z(f)\)</span> is the set of ordered pairs in <span class="process-math">\(\R^2\)</span> satisfying <span class="process-math">\(x_1^2-x_2 = 0\text{,}\)</span> or <span class="process-math">\(x_2 = x_1^2\text{.}\)</span> This is the graph of the parabola <span class="process-math">\(y=x^2\)</span> in the plane.</div>
 </div></div>
 <article class="task exercise-like" id="task-614"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1499">Describe <span class="process-math">\(Z(f)\)</span> in <span class="process-math">\(\R^2\)</span> if <span class="process-math">\(f(x_1,x_2) = x_1^2 - 1\text{.}\)</span>
+<div class="para" id="p-1505">Describe <span class="process-math">\(Z(f)\)</span> in <span class="process-math">\(\R^2\)</span> if <span class="process-math">\(f(x_1,x_2) = x_1^2 - 1\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-615"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-1500">If <span class="process-math">\(E\)</span> is a set of polynomials in <span class="process-math">\(\mathcal{P}_n\text{,}\)</span> we let <span class="process-math">\(Z(E) = \bigcap_{f \in E} Z(f)\)</span> be the set of common zeros of all of the polynomials in <span class="process-math">\(E\text{.}\)</span> Describe <span class="process-math">\(Z(E)\)</span> if <span class="process-math">\(E = \{x_1+x_2+x_3, x_1-x_2-x_3, 3x_1+x_2+x_3\}\)</span> in <span class="process-math">\(\R^3\text{.}\)</span>
+<div class="para" id="p-1506">If <span class="process-math">\(E\)</span> is a set of polynomials in <span class="process-math">\(\mathcal{P}_n\text{,}\)</span> we let <span class="process-math">\(Z(E) = \bigcap_{f \in E} Z(f)\)</span> be the set of common zeros of all of the polynomials in <span class="process-math">\(E\text{.}\)</span> Describe <span class="process-math">\(Z(E)\)</span> if <span class="process-math">\(E = \{x_1+x_2+x_3, x_1-x_2-x_3, 3x_1+x_2+x_3\}\)</span> in <span class="process-math">\(\R^3\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-616"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-1501">Let <span class="process-math">\(\mathcal{B}\)</span> be the set of complements of the sets <span class="process-math">\(Z(f)\)</span> for <span class="process-math">\(f \in \mathcal{P}_n\text{.}\)</span> Show that <span class="process-math">\(\mathcal{B}\)</span> is a basis for a topology on <span class="process-math">\(\R^n\text{.}\)</span> The resulting topology is called the <dfn class="terminology">Zariski</dfn> topology.</div></article><article class="task exercise-like" id="task-617"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="p-1502">Is the set <span class="process-math">\(S = \{(x_1,x_2) \in \R^2 \mid x_1 = 0 \text{ or } x_2 = 0\}\)</span> an open set in <span class="process-math">\(\R^2\)</span> with the Zariski topology? Explain.</div></article><article class="task exercise-like" id="task-618"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<div class="para" id="p-1503">Explain why the Zariski topology when <span class="process-math">\(n=1\)</span> is just the cofinite topology on <span class="process-math">\(\R\text{.}\)</span> That is, show that every set that is open in the cofinite topology is open in the Zariski topology and that every set that is open in the Zaariski topology is open in the cofinite topology.</div></article></article><article class="exercise exercise-like" id="exercise-138"><h3 class="heading"><span class="codenumber">13<span class="period">.</span></span></h3>
-<div class="introduction" id="introduction-169"><div class="para" id="p-1504">For each of the following, answer true if the statement is always true. If the statement is only sometimes true or never true, answer false and provide a concrete example to illustrate that the statement is false. If a statement is true, explain why.</div></div>
+<div class="para" id="p-1507">Let <span class="process-math">\(\mathcal{B}\)</span> be the set of complements of the sets <span class="process-math">\(Z(f)\)</span> for <span class="process-math">\(f \in \mathcal{P}_n\text{.}\)</span> Show that <span class="process-math">\(\mathcal{B}\)</span> is a basis for a topology on <span class="process-math">\(\R^n\text{.}\)</span> The resulting topology is called the <dfn class="terminology">Zariski</dfn> topology.</div></article><article class="task exercise-like" id="task-617"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="p-1508">Is the set <span class="process-math">\(S = \{(x_1,x_2) \in \R^2 \mid x_1 = 0 \text{ or } x_2 = 0\}\)</span> an open set in <span class="process-math">\(\R^2\)</span> with the Zariski topology? Explain.</div></article><article class="task exercise-like" id="task-618"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para" id="p-1509">Explain why the Zariski topology when <span class="process-math">\(n=1\)</span> is just the cofinite topology on <span class="process-math">\(\R\text{.}\)</span> That is, show that every set that is open in the cofinite topology is open in the Zariski topology and that every set that is open in the Zaariski topology is open in the cofinite topology.</div></article></article><article class="exercise exercise-like" id="exercise-138"><h3 class="heading"><span class="codenumber">13<span class="period">.</span></span></h3>
+<div class="introduction" id="introduction-169"><div class="para" id="p-1510">For each of the following, answer true if the statement is always true. If the statement is only sometimes true or never true, answer false and provide a concrete example to illustrate that the statement is false. If a statement is true, explain why.</div></div>
 <article class="task exercise-like" id="task-619"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1505">The set <span class="process-math">\(\{\emptyset, \{a,b\}, \{a,b,d,f\}, \{d,f\},X\}\)</span> is a topology on the set <span class="process-math">\(X = \{a,b,c,d,e,f\}\text{.}\)</span>
+<div class="para" id="p-1511">The set <span class="process-math">\(\{\emptyset, \{a,b\}, \{a,b,d,f\}, \{d,f\},X\}\)</span> is a topology on the set <span class="process-math">\(X = \{a,b,c,d,e,f\}\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-620"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-1506">The set <span class="process-math">\(\Z\)</span> is an open subset of <span class="process-math">\(\R\)</span> using the finite complement topology <span class="process-math">\(\tau_{FC}\)</span> on <span class="process-math">\(\R\text{.}\)</span>
+<div class="para" id="p-1512">The set <span class="process-math">\(\Z\)</span> is an open subset of <span class="process-math">\(\R\)</span> using the finite complement topology <span class="process-math">\(\tau_{FC}\)</span> on <span class="process-math">\(\R\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-621"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para logical" id="p-1507">
+<div class="para logical" id="p-1513">
 <div class="para">The set <span class="process-math">\(\mathcal{B} = \{\{b\},\{c\}, \{a,b\}, \{b,c,d\}\}\)</span> is a basis for the topology <span class="process-math">\(\tau\)</span> on the set <span class="process-math">\(X = \{a,b,c,d\}\text{,}\)</span> where</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -778,8 +779,8 @@ Z(f) = \{(x_1, x_2, \ldots, x_n) \mid f(x_1,x_2, \ldots, x_n) = 0\}\text{.}
 \end{equation*}
 </div>
 </div></article><article class="task exercise-like" id="task-622"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="p-1508">Let <span class="process-math">\(X\)</span> be a nonempty set. If <span class="process-math">\(\tau\)</span> is the discrete topology, then the topological set <span class="process-math">\((X,\tau)\)</span> is metrizable.</div></article><article class="task exercise-like" id="task-623"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<div class="para logical" id="p-1509">
+<div class="para" id="p-1514">Let <span class="process-math">\(X\)</span> be a nonempty set. If <span class="process-math">\(\tau\)</span> is the discrete topology, then the topological set <span class="process-math">\((X,\tau)\)</span> is metrizable.</div></article><article class="task exercise-like" id="task-623"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para logical" id="p-1515">
 <div class="para">The point <span class="process-math">\(b\)</span> is an interior point of the subset <span class="process-math">\(A = \{a,b,d\}\)</span> in the topological space <span class="process-math">\((X,\tau)\text{,}\)</span> where <span class="process-math">\(X = \{a,b,c,d\}\)</span> and</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -787,9 +788,9 @@ Z(f) = \{(x_1, x_2, \ldots, x_n) \mid f(x_1,x_2, \ldots, x_n) = 0\}\text{.}
 \end{equation*}
 </div>
 </div></article><article class="task exercise-like" id="task-624"><h4 class="heading"><span class="codenumber">(f)</span></h4>
-<div class="para" id="p-1510">If <span class="process-math">\(\tau_1\)</span> and <span class="process-math">\(\tau_2\)</span> are topologies on a space <span class="process-math">\(X\text{,}\)</span> then <span class="process-math">\(\tau_1 \cup \tau_2\)</span> is also a topology on <span class="process-math">\(X\text{.}\)</span>
+<div class="para" id="p-1516">If <span class="process-math">\(\tau_1\)</span> and <span class="process-math">\(\tau_2\)</span> are topologies on a space <span class="process-math">\(X\text{,}\)</span> then <span class="process-math">\(\tau_1 \cup \tau_2\)</span> is also a topology on <span class="process-math">\(X\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-625"><h4 class="heading"><span class="codenumber">(g)</span></h4>
-<div class="para" id="p-1511">If <span class="process-math">\(\tau_1\)</span> and <span class="process-math">\(\tau_2\)</span> are topologies on a space <span class="process-math">\(X\text{,}\)</span> then <span class="process-math">\(\tau_1 \cap \tau_2\)</span> is also a topology on <span class="process-math">\(X\text{.}\)</span>
+<div class="para" id="p-1517">If <span class="process-math">\(\tau_1\)</span> and <span class="process-math">\(\tau_2\)</span> are topologies on a space <span class="process-math">\(X\text{,}\)</span> then <span class="process-math">\(\tau_1 \cap \tau_2\)</span> is also a topology on <span class="process-math">\(X\text{.}\)</span>
 </div></article></article></section><div class="hidden-content tex2jax_ignore" id="hk-fn-4"><div class="fn">This digital line topology has applications in digital processing — see <span class="booktitle">Introduction to Topology: Pure and Applied</span> by Colin Adams and Robert Franzosa , Pearson Education, Inc., 2008,  Sections 1.4 and 11.3. The set <span class="process-math">\(\Z\)</span> with the digital line topology is called the <dfn class="terminology">digital line</dfn>.</div></div>
 </div>
 <div class="ptx-content-footer">

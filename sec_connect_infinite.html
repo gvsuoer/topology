@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Path Connectedness and Connectedness in Infinite Topological Spaces</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -603,7 +604,7 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_connect_infinite"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">Path Connectedness and Connectedness in Infinite Topological Spaces</span>
 </h2>
-<div class="para logical" id="p-2519">
+<div class="para logical" id="p-2525">
 <div class="para">Given that connectedness and path connectedness are equivalent in finite topological spaces, a reasonable question now is whether the converse of <a href="" class="xref" data-knowl="./knowl/thm_pctoc.html" title="Theorem 19.10">Theorem 19.10</a> is true in arbitrary topological spaces. As we will see, the answer is no. To find a counterexample, we need to look in an infinite topological space. There are many examples, but a standard example to consider is the <dfn class="terminology">topologist’s sine curve</dfn>. This curve <span class="process-math">\(S\)</span> is defined as the union of the sets</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/thm_pctoc.html">
 \begin{equation*}
@@ -611,9 +612,9 @@ S_1 = \{(0,y) \mid -1 \leq y \leq 1\}  \ \text{ and }  \ S_2 = \left\{ \left(x,\
 \end{equation*}
 </div>
 </div>
-<div class="para" id="p-2520">A picture of <span class="process-math">\(S\)</span> is shown in <a href="" class="xref" data-knowl="./knowl/F_T_sin.html" title="Figure 19.16">Figure 19.16</a>.</div>
+<div class="para" id="p-2526">A picture of <span class="process-math">\(S\)</span> is shown in <a href="" class="xref" data-knowl="./knowl/F_T_sin.html" title="Figure 19.16">Figure 19.16</a>.</div>
 <figure class="figure figure-like" id="F_T_sin"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/T_sin.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">19.16<span class="period">.</span></span><span class="space"> </span>The topologist’s sine curve.</figcaption></figure><div class="para logical" id="p-2521">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">19.16<span class="period">.</span></span><span class="space"> </span>The topologist’s sine curve.</figcaption></figure><div class="para logical" id="p-2527">
 <div class="para">To understand if <span class="process-math">\(S\)</span> is connected, let us consider the relationship between <span class="process-math">\(S\)</span> and <span class="process-math">\(S_2\text{.}\)</span> <a href="" class="xref" data-knowl="./knowl/F_T_sin.html" title="Figure 19.16">Figure 19.16</a> seems to indicate that <span class="process-math">\(S = \overline{S_2}\text{.}\)</span> To see if this is true, let <span class="process-math">\(q=(0,y) \in S_1\text{,}\)</span> and let <span class="process-math">\(N\)</span> be a neighborhood of <span class="process-math">\(q\text{.}\)</span> Then there is an <span class="process-math">\(\epsilon \gt 0\)</span> such that <span class="process-math">\(B = B(q, \epsilon) \subseteq N\text{.}\)</span> Choose <span class="process-math">\(K \in \Z^+\)</span> such that <span class="process-math">\(\frac{1}{\arcsin(y)+2 \pi K} \lt  \epsilon\text{,}\)</span> and let <span class="process-math">\(z = \frac{1}{\arcsin(y)+2 \pi K}\text{.}\)</span> Then</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/F_T_sin.html ./knowl/thm_connected_limitpoints.html" id="md-26">
 \begin{align*}
@@ -626,24 +627,24 @@ d_E\left(q,\left(z, \sin\left(\frac{1}{z}\right)\right)\right) \amp =  d_E\left(
 </div>
 <div class="para">and so <span class="process-math">\(\left(z, \arcsin(z)\right) \in B(q, \epsilon)\)</span> and every neighborhood of <span class="process-math">\(q\)</span> contains a point in <span class="process-math">\(S_2\text{.}\)</span> Therefore, <span class="process-math">\(S_1 \subseteq S_2' \subseteq \overline{S_2}\)</span> and <span class="process-math">\(\overline{S_2} = S\)</span> in <span class="process-math">\(S\text{.}\)</span> The fact that <span class="process-math">\(S\)</span> is connected follows from <a href="" class="xref" data-knowl="./knowl/thm_connected_limitpoints.html" title="Theorem 18.8">Theorem 18.8</a>.</div>
 </div>
-<div class="para" id="p-2522">Now that we know that <span class="process-math">\(S\)</span> is connected, the following theorem demonstrates that <span class="process-math">\(S\)</span> is a connected space that is not path connected.</div>
+<div class="para" id="p-2528">Now that we know that <span class="process-math">\(S\)</span> is connected, the following theorem demonstrates that <span class="process-math">\(S\)</span> is a connected space that is not path connected.</div>
 <article class="theorem theorem-like" id="theorem-64"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">19.17</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-2523">The topologist’s sine curve is connected but not path connected.</div></article><article class="proof" id="proof-38"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
-<div class="para logical" id="p-2524">
+<div class="para" id="p-2529">The topologist’s sine curve is connected but not path connected.</div></article><article class="proof" id="proof-38"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
+<div class="para logical" id="p-2530">
 <div class="para">We know that <span class="process-math">\(S\)</span> is connected, so it remains to show that <span class="process-math">\(S\)</span> is not path connected. The sets <span class="process-math">\(S_1\)</span> and <span class="process-math">\(S_2\)</span> are connected (as continuous images of the interval <span class="process-math">\([0,1]\)</span> and <span class="process-math">\((0,1]\text{,}\)</span> respectively). We will prove that there is no path <span class="process-math">\(p\)</span> in <span class="process-math">\(S\)</span> from <span class="process-math">\(p(0) = (0,0)\)</span> to <span class="process-math">\(p(1) =  b\)</span> for any point <span class="process-math">\(b \in S_2\)</span> by contradiction. Assume the existence of such a path <span class="process-math">\(p\text{.}\)</span> Let <span class="process-math">\(U = p^{-1}(S_1)\)</span> and <span class="process-math">\(V = p^{-1}(S_2)\text{.}\)</span> Then</div>
 <div class="displaymath process-math" id="eq_TSC_1">
 \begin{equation}
 [0,1] = p^{-1}(S) = p^{-1}(S_1 \cup S_2) = p^{-1}(S_1) \cup p^{-1}(S_2) = U \cup V\text{.}\tag{19.2}
 \end{equation}
 </div>
-</div> <div class="para" id="p-2525">Note that <span class="process-math">\(S_2\)</span> is an open subset of <span class="process-math">\(S\text{,}\)</span> since <span class="process-math">\(S_2 = \left( \bigcup_{z = (x,y) \in S_2} B\left(z, \frac{x}{2}\right)\right) \cap S\text{.}\)</span> So the continuity of <span class="process-math">\(p\)</span> implies that <span class="process-math">\(V\)</span> is an open subset of <span class="process-math">\([0,1]\text{.}\)</span> Also, the fact that <span class="process-math">\(p(0) \in S_1\)</span> means that <span class="process-math">\(U \neq \emptyset\text{,}\)</span> and the fact that <span class="process-math">\(p(1) \in S_2\)</span> means that <span class="process-math">\(V \neq \emptyset\text{.}\)</span> If we demonstrate that <span class="process-math">\(U\)</span> is an open subset of <span class="process-math">\([0,1]\text{,}\)</span> then Equation <a href="" class="xref" data-knowl="./knowl/eq_TSC_1.html" title="Equation 19.2">(19.2)</a> will imply that <span class="process-math">\([0,1]\)</span> is not connected, a contradiction. So we proceed to prove that <span class="process-math">\(U\)</span> is open in <span class="process-math">\([0,1]\text{.}\)</span>
-</div> <div class="para" id="p-2526">Let <span class="process-math">\(x \in U\text{,}\)</span> and so <span class="process-math">\(p(x)\)</span> in <span class="process-math">\(S_1\text{.}\)</span> The set <span class="process-math">\(O = B_S\left(p(x), \frac{1}{2}\right) \cap S\)</span> is open in <span class="process-math">\(S\text{.}\)</span> The continuity of <span class="process-math">\(p\)</span> then tells us that <span class="process-math">\(p^{-1}(O)\)</span> is open in <span class="process-math">\([0,1]\text{.}\)</span> So there is a <span class="process-math">\(\delta \gt 0\)</span> such that the open ball <span class="process-math">\(B=B_{[0,1]}(x, \delta)\)</span> is a subset of <span class="process-math">\(p^{-1}(O)\text{.}\)</span> We will prove that <span class="process-math">\(p(B) \subseteq S_1\text{.}\)</span> This will imply that <span class="process-math">\(B \subseteq U\)</span> and so <span class="process-math">\(U\)</span> is a neighborhood of each of its points, and <span class="process-math">\(U\)</span> is therefore an open set.</div> <figure class="figure figure-like" id="F_TSC_O"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/O_set.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">19.18<span class="period">.</span></span><span class="space"> </span>The set <span class="process-math">\(O\text{.}\)</span></figcaption></figure> <div class="para" id="p-2527">Every element in <span class="process-math">\(B\)</span> is mapped into <span class="process-math">\(O\)</span> by the path <span class="process-math">\(p\text{.}\)</span> The set <span class="process-math">\(O\)</span> is complicated, consisting of infinitely many sub-curves of the curve <span class="process-math">\(S_2\text{,}\)</span> along with points in <span class="process-math">\(S_1\text{,}\)</span> as illustrated in <a href="" class="xref" data-knowl="./knowl/F_TSC_O.html" title="Figure 19.18">Figure 19.18</a>. To simplify our analysis, let us consider the projection onto the <span class="process-math">\(x\)</span>-axis. The function <span class="process-math">\(P_x : \R^2 \to \R\)</span> defined by <span class="process-math">\(P_x(x,y) = x\)</span> is a continuous function. Let <span class="process-math">\(I = P_x(p(B))\text{.}\)</span> Since <span class="process-math">\(p(B) \subseteq O\text{,}\)</span> we know that <span class="process-math">\(I \subseteq P_x(O)\text{.}\)</span> Let <span class="process-math">\(Z = P_x(O)\text{.}\)</span> So <span class="process-math">\(I \subseteq Z\text{.}\)</span> Since <span class="process-math">\(B\)</span> is a connected set (<span class="process-math">\(B\)</span> is an interval), we know that <span class="process-math">\(p(B)\)</span> is a connected set. The fact that <span class="process-math">\(P_x\)</span> is continuous means that <span class="process-math">\(I = P_x(p(B))\)</span> is connected as well. Now <span class="process-math">\(I\)</span> is a bounded subset of <span class="process-math">\(\R\text{,}\)</span> so <span class="process-math">\(I\)</span> must be a bounded interval. Recall that <span class="process-math">\(x \in B\)</span> and so <span class="process-math">\(p(x) \in p(B)\text{.}\)</span> The fact that <span class="process-math">\(p(x) \in S_1\)</span> tells us that <span class="process-math">\(0 = P_x(p(x)) \in P_x(p(B)) = I\text{.}\)</span> So <span class="process-math">\(I \neq \emptyset\text{.}\)</span> There are two possibilities for <span class="process-math">\(I\text{:}\)</span> either <span class="process-math">\(I = \{0\}\text{,}\)</span> or <span class="process-math">\(I\)</span> is an interval of positive length. We consider the cases.</div> <div class="para" id="p-2528">Suppose <span class="process-math">\(I = \{0\}\text{.}\)</span> Then the projection of <span class="process-math">\(p(B)\)</span> onto the <span class="process-math">\(x\)</span>-axis is the single point <span class="process-math">\(0\)</span> and <span class="process-math">\(p(B) \subseteq S_1\)</span> as desired. Suppose that <span class="process-math">\(I\)</span> is an interval of the form <span class="process-math">\([0,d]\)</span> or <span class="process-math">\([0,d)\)</span> for some positive number <span class="process-math">\(d\text{.}\)</span> The structure of <span class="process-math">\(O\)</span> would indicate that there must be some gaps in the set <span class="process-math">\(Z\text{,}\)</span> the projection of <span class="process-math">\(O\)</span> onto the <span class="process-math">\(x\)</span>-axis. This implies that <span class="process-math">\(I\)</span> cannot be a connected interval. We proceed to show this. In other words, we will prove that <span class="process-math">\(I \setminus Z \neq \emptyset\)</span> (which is impossible since <span class="process-math">\(I \subseteq Z\)</span>). Remember that <span class="process-math">\(p(x) \in S_1\text{,}\)</span> so let <span class="process-math">\(p(x) = (0, q)\text{.}\)</span> We consider what happens if <span class="process-math">\(q \lt \frac{1}{2}\)</span> and when <span class="process-math">\(q \geq \frac{1}{2}\text{.}\)</span>
-</div> <div class="para" id="p-2529">Suppose <span class="process-math">\(q \lt \frac{1}{2}\text{.}\)</span> Then the ball <span class="process-math">\(B_S\left(p(x), \frac{1}{2}\right)\)</span> contains only points with <span class="process-math">\(y\)</span> value less than 1. Let <span class="process-math">\(N \in \Z^+\)</span> so that <span class="process-math">\(t=\frac{1}{\pi/2+2N\pi} \lt d\text{.}\)</span> Then <span class="process-math">\(t \in I\text{.}\)</span> But <span class="process-math">\(\sin\left(\frac{1}{t}\right) = \sin(\pi/2 + 2N\pi) = \sin(\pi/2) = 1\text{,}\)</span> and so <span class="process-math">\(\left(t,\sin\left(\frac{1}{t}\right)\right)\)</span> is not in <span class="process-math">\(O\text{.}\)</span> Thus, <span class="process-math">\(t \notin Z\text{.}\)</span> Thus we have found a point in <span class="process-math">\(I \setminus Z\text{.}\)</span>
-</div> <div class="para" id="p-2530">Finally, suppose <span class="process-math">\(q \geq \frac{1}{2}\text{.}\)</span> Then the ball <span class="process-math">\(B_S\left(p(x), \frac{1}{2}\right)\)</span> contains only points with <span class="process-math">\(y\)</span> value greater than <span class="process-math">\(-1\text{.}\)</span> Let <span class="process-math">\(N \in \Z^+\)</span> so that <span class="process-math">\(t=\frac{1}{3\pi/2+2N\pi} \lt d\text{.}\)</span> Then <span class="process-math">\(t \in I\text{.}\)</span> But <span class="process-math">\(\sin\left(\frac{1}{t}\right) = \sin(3\pi/2 + 2N\pi) = \sin(3\pi/2) = -1\text{,}\)</span> and so <span class="process-math">\(t \notin Z\text{.}\)</span> Thus we have found a point in <span class="process-math">\(I \setminus Z\text{.}\)</span>
-</div> <div class="para" id="p-2531">We conclude that there can be no path in <span class="process-math">\(S\)</span> from <span class="process-math">\((0,0)\)</span> to any point in <span class="process-math">\(S_2\text{,}\)</span> completing our proof that <span class="process-math">\(S\)</span> is not path connected. (In fact, the argument given shows that there is no path in <span class="process-math">\(S\)</span> from any point in <span class="process-math">\(S_1\)</span> to any point in <span class="process-math">\(S_2\text{.}\)</span>
+</div> <div class="para" id="p-2531">Note that <span class="process-math">\(S_2\)</span> is an open subset of <span class="process-math">\(S\text{,}\)</span> since <span class="process-math">\(S_2 = \left( \bigcup_{z = (x,y) \in S_2} B\left(z, \frac{x}{2}\right)\right) \cap S\text{.}\)</span> So the continuity of <span class="process-math">\(p\)</span> implies that <span class="process-math">\(V\)</span> is an open subset of <span class="process-math">\([0,1]\text{.}\)</span> Also, the fact that <span class="process-math">\(p(0) \in S_1\)</span> means that <span class="process-math">\(U \neq \emptyset\text{,}\)</span> and the fact that <span class="process-math">\(p(1) \in S_2\)</span> means that <span class="process-math">\(V \neq \emptyset\text{.}\)</span> If we demonstrate that <span class="process-math">\(U\)</span> is an open subset of <span class="process-math">\([0,1]\text{,}\)</span> then Equation <a href="" class="xref" data-knowl="./knowl/eq_TSC_1.html" title="Equation 19.2">(19.2)</a> will imply that <span class="process-math">\([0,1]\)</span> is not connected, a contradiction. So we proceed to prove that <span class="process-math">\(U\)</span> is open in <span class="process-math">\([0,1]\text{.}\)</span>
+</div> <div class="para" id="p-2532">Let <span class="process-math">\(x \in U\text{,}\)</span> and so <span class="process-math">\(p(x)\)</span> in <span class="process-math">\(S_1\text{.}\)</span> The set <span class="process-math">\(O = B_S\left(p(x), \frac{1}{2}\right) \cap S\)</span> is open in <span class="process-math">\(S\text{.}\)</span> The continuity of <span class="process-math">\(p\)</span> then tells us that <span class="process-math">\(p^{-1}(O)\)</span> is open in <span class="process-math">\([0,1]\text{.}\)</span> So there is a <span class="process-math">\(\delta \gt 0\)</span> such that the open ball <span class="process-math">\(B=B_{[0,1]}(x, \delta)\)</span> is a subset of <span class="process-math">\(p^{-1}(O)\text{.}\)</span> We will prove that <span class="process-math">\(p(B) \subseteq S_1\text{.}\)</span> This will imply that <span class="process-math">\(B \subseteq U\)</span> and so <span class="process-math">\(U\)</span> is a neighborhood of each of its points, and <span class="process-math">\(U\)</span> is therefore an open set.</div> <figure class="figure figure-like" id="F_TSC_O"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/O_set.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">19.18<span class="period">.</span></span><span class="space"> </span>The set <span class="process-math">\(O\text{.}\)</span></figcaption></figure> <div class="para" id="p-2533">Every element in <span class="process-math">\(B\)</span> is mapped into <span class="process-math">\(O\)</span> by the path <span class="process-math">\(p\text{.}\)</span> The set <span class="process-math">\(O\)</span> is complicated, consisting of infinitely many sub-curves of the curve <span class="process-math">\(S_2\text{,}\)</span> along with points in <span class="process-math">\(S_1\text{,}\)</span> as illustrated in <a href="" class="xref" data-knowl="./knowl/F_TSC_O.html" title="Figure 19.18">Figure 19.18</a>. To simplify our analysis, let us consider the projection onto the <span class="process-math">\(x\)</span>-axis. The function <span class="process-math">\(P_x : \R^2 \to \R\)</span> defined by <span class="process-math">\(P_x(x,y) = x\)</span> is a continuous function. Let <span class="process-math">\(I = P_x(p(B))\text{.}\)</span> Since <span class="process-math">\(p(B) \subseteq O\text{,}\)</span> we know that <span class="process-math">\(I \subseteq P_x(O)\text{.}\)</span> Let <span class="process-math">\(Z = P_x(O)\text{.}\)</span> So <span class="process-math">\(I \subseteq Z\text{.}\)</span> Since <span class="process-math">\(B\)</span> is a connected set (<span class="process-math">\(B\)</span> is an interval), we know that <span class="process-math">\(p(B)\)</span> is a connected set. The fact that <span class="process-math">\(P_x\)</span> is continuous means that <span class="process-math">\(I = P_x(p(B))\)</span> is connected as well. Now <span class="process-math">\(I\)</span> is a bounded subset of <span class="process-math">\(\R\text{,}\)</span> so <span class="process-math">\(I\)</span> must be a bounded interval. Recall that <span class="process-math">\(x \in B\)</span> and so <span class="process-math">\(p(x) \in p(B)\text{.}\)</span> The fact that <span class="process-math">\(p(x) \in S_1\)</span> tells us that <span class="process-math">\(0 = P_x(p(x)) \in P_x(p(B)) = I\text{.}\)</span> So <span class="process-math">\(I \neq \emptyset\text{.}\)</span> There are two possibilities for <span class="process-math">\(I\text{:}\)</span> either <span class="process-math">\(I = \{0\}\text{,}\)</span> or <span class="process-math">\(I\)</span> is an interval of positive length. We consider the cases.</div> <div class="para" id="p-2534">Suppose <span class="process-math">\(I = \{0\}\text{.}\)</span> Then the projection of <span class="process-math">\(p(B)\)</span> onto the <span class="process-math">\(x\)</span>-axis is the single point <span class="process-math">\(0\)</span> and <span class="process-math">\(p(B) \subseteq S_1\)</span> as desired. Suppose that <span class="process-math">\(I\)</span> is an interval of the form <span class="process-math">\([0,d]\)</span> or <span class="process-math">\([0,d)\)</span> for some positive number <span class="process-math">\(d\text{.}\)</span> The structure of <span class="process-math">\(O\)</span> would indicate that there must be some gaps in the set <span class="process-math">\(Z\text{,}\)</span> the projection of <span class="process-math">\(O\)</span> onto the <span class="process-math">\(x\)</span>-axis. This implies that <span class="process-math">\(I\)</span> cannot be a connected interval. We proceed to show this. In other words, we will prove that <span class="process-math">\(I \setminus Z \neq \emptyset\)</span> (which is impossible since <span class="process-math">\(I \subseteq Z\)</span>). Remember that <span class="process-math">\(p(x) \in S_1\text{,}\)</span> so let <span class="process-math">\(p(x) = (0, q)\text{.}\)</span> We consider what happens if <span class="process-math">\(q \lt \frac{1}{2}\)</span> and when <span class="process-math">\(q \geq \frac{1}{2}\text{.}\)</span>
+</div> <div class="para" id="p-2535">Suppose <span class="process-math">\(q \lt \frac{1}{2}\text{.}\)</span> Then the ball <span class="process-math">\(B_S\left(p(x), \frac{1}{2}\right)\)</span> contains only points with <span class="process-math">\(y\)</span> value less than 1. Let <span class="process-math">\(N \in \Z^+\)</span> so that <span class="process-math">\(t=\frac{1}{\pi/2+2N\pi} \lt d\text{.}\)</span> Then <span class="process-math">\(t \in I\text{.}\)</span> But <span class="process-math">\(\sin\left(\frac{1}{t}\right) = \sin(\pi/2 + 2N\pi) = \sin(\pi/2) = 1\text{,}\)</span> and so <span class="process-math">\(\left(t,\sin\left(\frac{1}{t}\right)\right)\)</span> is not in <span class="process-math">\(O\text{.}\)</span> Thus, <span class="process-math">\(t \notin Z\text{.}\)</span> Thus we have found a point in <span class="process-math">\(I \setminus Z\text{.}\)</span>
+</div> <div class="para" id="p-2536">Finally, suppose <span class="process-math">\(q \geq \frac{1}{2}\text{.}\)</span> Then the ball <span class="process-math">\(B_S\left(p(x), \frac{1}{2}\right)\)</span> contains only points with <span class="process-math">\(y\)</span> value greater than <span class="process-math">\(-1\text{.}\)</span> Let <span class="process-math">\(N \in \Z^+\)</span> so that <span class="process-math">\(t=\frac{1}{3\pi/2+2N\pi} \lt d\text{.}\)</span> Then <span class="process-math">\(t \in I\text{.}\)</span> But <span class="process-math">\(\sin\left(\frac{1}{t}\right) = \sin(3\pi/2 + 2N\pi) = \sin(3\pi/2) = -1\text{,}\)</span> and so <span class="process-math">\(t \notin Z\text{.}\)</span> Thus we have found a point in <span class="process-math">\(I \setminus Z\text{.}\)</span>
+</div> <div class="para" id="p-2537">We conclude that there can be no path in <span class="process-math">\(S\)</span> from <span class="process-math">\((0,0)\)</span> to any point in <span class="process-math">\(S_2\text{,}\)</span> completing our proof that <span class="process-math">\(S\)</span> is not path connected. (In fact, the argument given shows that there is no path in <span class="process-math">\(S\)</span> from any point in <span class="process-math">\(S_1\)</span> to any point in <span class="process-math">\(S_2\text{.}\)</span>
 </div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_connect_finite.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_path_summ.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>The Boundary of a Set</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -603,26 +604,26 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_set_boundary"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">The Boundary of a Set</span>
 </h2>
-<div class="para" id="p-1579">In addition to limit points, we also defined boundary points in metric spaces. Recall that a boundary point of a set <span class="process-math">\(A\)</span> in a metric space <span class="process-math">\(X\)</span> could be considered to be any point in <span class="process-math">\(\overline{A} \cap \overline{X \setminus A}\text{.}\)</span> We make the same definition in a topological space.</div>
+<div class="para" id="p-1585">In addition to limit points, we also defined boundary points in metric spaces. Recall that a boundary point of a set <span class="process-math">\(A\)</span> in a metric space <span class="process-math">\(X\)</span> could be considered to be any point in <span class="process-math">\(\overline{A} \cap \overline{X \setminus A}\text{.}\)</span> We make the same definition in a topological space.</div>
 <article class="definition definition-like" id="definition-49"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">13.10</span><span class="period">.</span>
-</h3> <div class="para logical" id="p-1580">
-<div class="para">Let <span class="process-math">\((X, \tau)\)</span> be a topological space, and let <span class="process-math">\(A\)</span> be a subset of <span class="process-math">\(X\text{.}\)</span> A boundary point of <span class="process-math">\(A\)</span> is a point <span class="process-math">\(x \in X\)</span> such that every neighborhood of <span class="process-math">\(x\)</span> contains a point in <span class="process-math">\(A\)</span> and a point in <span class="process-math">\(X \setminus A\text{.}\)</span> The boundary of <span class="process-math">\(A\)</span> is the set</div>
+</h3> <div class="para logical" id="p-1586">
+<div class="para">Let <span class="process-math">\((X, \tau)\)</span> be a topological space, and let <span class="process-math">\(A\)</span> be a subset of <span class="process-math">\(X\text{.}\)</span> A <dfn class="terminology">boundary point</dfn> of <span class="process-math">\(A\)</span> is a point <span class="process-math">\(x \in X\)</span> such that every neighborhood of <span class="process-math">\(x\)</span> contains a point in <span class="process-math">\(A\)</span> and a point in <span class="process-math">\(X \setminus A\text{.}\)</span> The <dfn class="terminology">boundary</dfn> of <span class="process-math">\(A\)</span> is the set</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \Bdry(A) = \{x \in X \mid x \text{ is a boundary point of }  A\}\text{.}
 \end{equation*}
 </div>
-</div></article><div class="para" id="p-1581">As with metric spaces, the boundary points of a set <span class="process-math">\(A\)</span> are those points that are “between” <span class="process-math">\(A\)</span> and its complement.</div>
+</div></article><div class="para" id="p-1587">As with metric spaces, the boundary points of a set <span class="process-math">\(A\)</span> are those points that are “between” <span class="process-math">\(A\)</span> and its complement.</div>
 <article class="activity project-like" id="act_TS_bl_examples"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">13.6</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-175"><div class="para" id="p-1582">Find the boundaries of the following sets</div></div>
+<div class="introduction" id="introduction-175"><div class="para" id="p-1588">Find the boundaries of the following sets</div></div>
 <article class="task exercise-like" id="task-648"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1583">
+<div class="para" id="p-1589">
 <span class="process-math">\(\{c,d\}\)</span> in <span class="process-math">\((X, \tau)\)</span> with <span class="process-math">\(X= \{a,b,c,d\}\)</span> and <span class="process-math">\(\tau = \{\emptyset, \{a\}, \{b\}, \{a,b\}, X \}\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-649"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para logical" id="p-1584">
+<div class="para logical" id="p-1590">
 <div class="para">
 <span class="process-math">\(\{a,b\}\)</span> in the set <span class="process-math">\(X= \{a,b,c,d,e,f\}\)</span> with topology</div>
 <div class="displaymath process-math">
@@ -631,15 +632,15 @@ window.MathJax = {
 \end{equation*}
 </div>
 </div></article><article class="task exercise-like" id="task-650"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-1585">
+<div class="para" id="p-1591">
 <span class="process-math">\(\{a,b\} \subset X\)</span> where <span class="process-math">\(X = \{a,b,c\}\)</span> in the discrete topology.</div></article><article class="task exercise-like" id="task-651"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="p-1586">
+<div class="para" id="p-1592">
 <span class="process-math">\(\Z\)</span> in <span class="process-math">\(\R\)</span> with the finite complement topology <span class="process-math">\(\tau_{FC}\text{.}\)</span>
-</div></article></article><div class="para" id="p-1587">Just as with metric spaces, we can characterize the closed sets as the sets that contain their boundary.</div>
+</div></article></article><div class="para" id="p-1593">Just as with metric spaces, we can characterize the closed sets as the sets that contain their boundary.</div>
 <article class="theorem theorem-like" id="thm_TS_Closed_boundary"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">13.11</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-1588">A subset <span class="process-math">\(C\)</span> of a topological space <span class="process-math">\(X\)</span> is closed if and only if <span class="process-math">\(C\)</span> contains its boundary.</div></article><div class="para" id="p-1589">The proof of <a href="" class="xref" data-knowl="./knowl/thm_TS_Closed_boundary.html" title="Theorem 13.11">Theorem 13.11</a> is left to <a href="" class="xref" data-knowl="./knowl/ex_TS_Closed_boundary.html" title="Exercise 10">Exercise 10</a>.</div></section></div>
+<div class="para" id="p-1594">A subset <span class="process-math">\(C\)</span> of a topological space <span class="process-math">\(X\)</span> is closed if and only if <span class="process-math">\(C\)</span> contains its boundary.</div></article><div class="para" id="p-1595">The proof of <a href="" class="xref" data-knowl="./knowl/thm_TS_Closed_boundary.html" title="Theorem 13.11">Theorem 13.11</a> is left to <a href="" class="xref" data-knowl="./knowl/ex_TS_Closed_boundary.html" title="Exercise 10">Exercise 10</a>.</div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_top_closure.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_separation_ax.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Continuity and Closed Sets</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -603,43 +604,43 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_cont_closed_sets"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">Continuity and Closed Sets</span>
 </h2>
-<div class="para" id="p-1107">Recall that we showed that a function <span class="process-math">\(f\)</span> from a metric space <span class="process-math">\((X,d_X)\)</span> to a metric space <span class="process-math">\((Y,d_Y)\)</span> is continuous if and only if <span class="process-math">\(f^{-1}(O)\)</span> is open for every open set <span class="process-math">\(O\)</span> in <span class="process-math">\(Y\text{.}\)</span> We might conjecture that a similar result holds for closed sets. Since closed sets are complements of open sets, to make this connection we will want to know how <span class="process-math">\(X \setminus f^{-1}(B)\)</span> is related to <span class="process-math">\(f^{-1}(Y \setminus B)\)</span> for <span class="process-math">\(B \subset Y\text{.}\)</span>
+<div class="para" id="p-1113">Recall that we showed that a function <span class="process-math">\(f\)</span> from a metric space <span class="process-math">\((X,d_X)\)</span> to a metric space <span class="process-math">\((Y,d_Y)\)</span> is continuous if and only if <span class="process-math">\(f^{-1}(O)\)</span> is open for every open set <span class="process-math">\(O\)</span> in <span class="process-math">\(Y\text{.}\)</span> We might conjecture that a similar result holds for closed sets. Since closed sets are complements of open sets, to make this connection we will want to know how <span class="process-math">\(X \setminus f^{-1}(B)\)</span> is related to <span class="process-math">\(f^{-1}(Y \setminus B)\)</span> for <span class="process-math">\(B \subset Y\text{.}\)</span>
 </div>
 <article class="activity project-like" id="act_CS_1"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">10.4</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-124"><div class="para" id="p-1108">Let <span class="process-math">\(f\)</span> be a function <span class="process-math">\(f\)</span> from a metric space <span class="process-math">\((X,d_X)\)</span> to a metric space <span class="process-math">\((Y,d_Y)\text{,}\)</span> and let <span class="process-math">\(B\)</span> be a subset of <span class="process-math">\(Y\text{.}\)</span>
+<div class="introduction" id="introduction-124"><div class="para" id="p-1114">Let <span class="process-math">\(f\)</span> be a function <span class="process-math">\(f\)</span> from a metric space <span class="process-math">\((X,d_X)\)</span> to a metric space <span class="process-math">\((Y,d_Y)\text{,}\)</span> and let <span class="process-math">\(B\)</span> be a subset of <span class="process-math">\(Y\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-456"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="introduction" id="introduction-125"><div class="para" id="p-1109">Let <span class="process-math">\(x \in X \setminus f^{-1}(B)\text{.}\)</span>
+<div class="introduction" id="introduction-125"><div class="para" id="p-1115">Let <span class="process-math">\(x \in X \setminus f^{-1}(B)\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-457"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="p-1110">What does this tell us about <span class="process-math">\(f(x)\text{?}\)</span>
+<div class="para" id="p-1116">What does this tell us about <span class="process-math">\(f(x)\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-458"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
-<div class="para" id="p-1111">What can we conclude about the relationship between <span class="process-math">\(X \setminus f^{-1}(B)\)</span> and <span class="process-math">\(f^{-1}(Y \setminus B)\text{?}\)</span>
+<div class="para" id="p-1117">What can we conclude about the relationship between <span class="process-math">\(X \setminus f^{-1}(B)\)</span> and <span class="process-math">\(f^{-1}(Y \setminus B)\text{?}\)</span>
 </div></article></article><article class="task exercise-like" id="task-459"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="introduction" id="introduction-126"><div class="para" id="p-1112">Let <span class="process-math">\(x \in f^{-1}(Y \setminus B)\text{.}\)</span>
+<div class="introduction" id="introduction-126"><div class="para" id="p-1118">Let <span class="process-math">\(x \in f^{-1}(Y \setminus B)\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-460"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="p-1113">What does this tell us about <span class="process-math">\(f(x)\text{?}\)</span>
+<div class="para" id="p-1119">What does this tell us about <span class="process-math">\(f(x)\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-461"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
-<div class="para" id="p-1114">What can we conclude about the relationship between <span class="process-math">\(X \setminus f^{-1}(B)\)</span> and <span class="process-math">\(f^{-1}(Y \setminus B)\text{?}\)</span>
+<div class="para" id="p-1120">What can we conclude about the relationship between <span class="process-math">\(X \setminus f^{-1}(B)\)</span> and <span class="process-math">\(f^{-1}(Y \setminus B)\text{?}\)</span>
 </div></article></article><article class="task exercise-like" id="task-462"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-1115">What is the relationship between <span class="process-math">\(X \setminus f^{-1}(B)\)</span> and <span class="process-math">\(f^{-1}(Y \setminus B)\text{?}\)</span>
-</div></article></article><div class="para" id="p-1116">Now we can consider the issue of continuity and closed sets.</div>
+<div class="para" id="p-1121">What is the relationship between <span class="process-math">\(X \setminus f^{-1}(B)\)</span> and <span class="process-math">\(f^{-1}(Y \setminus B)\text{?}\)</span>
+</div></article></article><div class="para" id="p-1122">Now we can consider the issue of continuity and closed sets.</div>
 <article class="activity project-like" id="act_CS_2"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">10.5</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-127"><div class="para" id="p-1117">Let <span class="process-math">\(f\)</span> be a function from a metric space <span class="process-math">\((X,d_X)\)</span> to a metric space <span class="process-math">\((Y,d_Y)\text{.}\)</span>
+<div class="introduction" id="introduction-127"><div class="para" id="p-1123">Let <span class="process-math">\(f\)</span> be a function from a metric space <span class="process-math">\((X,d_X)\)</span> to a metric space <span class="process-math">\((Y,d_Y)\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-463"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1118">Assume that <span class="process-math">\(f\)</span> is continuous and that <span class="process-math">\(C\)</span> is a closed set in <span class="process-math">\(Y\text{.}\)</span> How does the result of <a href="" class="xref" data-knowl="./knowl/act_CS_1.html" title="Activity 10.4">Activity 10.4</a> tell us that <span class="process-math">\(f^{-1}(C)\)</span> is closed in <span class="process-math">\(X\text{?}\)</span>
+<div class="para" id="p-1124">Assume that <span class="process-math">\(f\)</span> is continuous and that <span class="process-math">\(C\)</span> is a closed set in <span class="process-math">\(Y\text{.}\)</span> How does the result of <a href="" class="xref" data-knowl="./knowl/act_CS_1.html" title="Activity 10.4">Activity 10.4</a> tell us that <span class="process-math">\(f^{-1}(C)\)</span> is closed in <span class="process-math">\(X\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-464"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-1119">Now assume that <span class="process-math">\(f^{-1}(C)\)</span> is closed in <span class="process-math">\(X\)</span> whenever <span class="process-math">\(C\)</span> is closed in <span class="process-math">\(Y\text{.}\)</span> How does the result of <a href="" class="xref" data-knowl="./knowl/act_CS_1.html" title="Activity 10.4">Activity 10.4</a> tell us that <span class="process-math">\(f\)</span> is a continuous function?</div></article></article><div class="para" id="p-1120">The result of <a href="" class="xref" data-knowl="./knowl/act_CS_2.html" title="Activity 10.5">Activity 10.5</a> is summarized in the following theorem.</div>
+<div class="para" id="p-1125">Now assume that <span class="process-math">\(f^{-1}(C)\)</span> is closed in <span class="process-math">\(X\)</span> whenever <span class="process-math">\(C\)</span> is closed in <span class="process-math">\(Y\text{.}\)</span> How does the result of <a href="" class="xref" data-knowl="./knowl/act_CS_1.html" title="Activity 10.4">Activity 10.4</a> tell us that <span class="process-math">\(f\)</span> is a continuous function?</div></article></article><div class="para" id="p-1126">The result of <a href="" class="xref" data-knowl="./knowl/act_CS_2.html" title="Activity 10.5">Activity 10.5</a> is summarized in the following theorem.</div>
 <article class="theorem theorem-like" id="thm_closed_sets_continuity_MS"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">10.5</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-1121">Let <span class="process-math">\(f\)</span> be a function from a metric space <span class="process-math">\((X,d_X)\)</span> to a metric space <span class="process-math">\((Y,d_Y)\text{.}\)</span> Then <span class="process-math">\(f\)</span> is continuous if and only if <span class="process-math">\(f^{-1}(C)\)</span> is closed in <span class="process-math">\(X\)</span> whenever <span class="process-math">\(C\)</span> is a closed set in <span class="process-math">\(Y\text{.}\)</span>
+<div class="para" id="p-1127">Let <span class="process-math">\(f\)</span> be a function from a metric space <span class="process-math">\((X,d_X)\)</span> to a metric space <span class="process-math">\((Y,d_Y)\text{.}\)</span> Then <span class="process-math">\(f\)</span> is continuous if and only if <span class="process-math">\(f^{-1}(C)\)</span> is closed in <span class="process-math">\(X\)</span> whenever <span class="process-math">\(C\)</span> is a closed set in <span class="process-math">\(Y\text{.}\)</span>
 </div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_closed_sets_metric.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_limit_bound_iso_seq.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

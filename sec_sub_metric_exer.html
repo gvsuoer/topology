@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Exercises</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -604,24 +605,24 @@ window.MathJax = {
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Exercises</span>
 </h2>
 <article class="exercise exercise-like" id="exercise-117"><h3 class="heading"><span class="codenumber">1<span class="period">.</span></span></h3>
-<div class="introduction" id="introduction-148"><div class="para" id="p-1298">Determine if the following sets <span class="process-math">\(S\)</span> are open in the subspace <span class="process-math">\(A\)</span> of the topological space <span class="process-math">\((\R, d_E)\text{.}\)</span>
+<div class="introduction" id="introduction-148"><div class="para" id="p-1304">Determine if the following sets <span class="process-math">\(S\)</span> are open in the subspace <span class="process-math">\(A\)</span> of the topological space <span class="process-math">\((\R, d_E)\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-535"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1299">
+<div class="para" id="p-1305">
 <span class="process-math">\(S = [1,2)\)</span> in <span class="process-math">\(A = [1,3]\)</span>
 </div></article><article class="task exercise-like" id="task-536"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-1300">
+<div class="para" id="p-1306">
 <span class="process-math">\(S = \{1, 2\}\)</span> in <span class="process-math">\(A = \Q\)</span>
 </div></article><article class="task exercise-like" id="task-537"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-1301">
+<div class="para" id="p-1307">
 <span class="process-math">\(S = \{1,2\}\)</span> in <span class="process-math">\(A = \Z\)</span>
 </div></article></article><article class="exercise exercise-like" id="exercise-118"><h3 class="heading"><span class="codenumber">2<span class="period">.</span></span></h3>
-<div class="para" id="p-1302">Let <span class="process-math">\(O\)</span> be an open set in a metric space <span class="process-math">\((X,d)\text{.}\)</span> Show that a subset <span class="process-math">\(U\)</span> of <span class="process-math">\(O\)</span> is open in <span class="process-math">\((O, d|_O)\)</span> if and only if <span class="process-math">\(U\)</span> is open in <span class="process-math">\((X,d)\text{.}\)</span>
+<div class="para" id="p-1308">Let <span class="process-math">\(O\)</span> be an open set in a metric space <span class="process-math">\((X,d)\text{.}\)</span> Show that a subset <span class="process-math">\(U\)</span> of <span class="process-math">\(O\)</span> is open in <span class="process-math">\((O, d|_O)\)</span> if and only if <span class="process-math">\(U\)</span> is open in <span class="process-math">\((X,d)\text{.}\)</span>
 </div></article><article class="exercise exercise-like" id="exercise-119"><h3 class="heading"><span class="codenumber">3<span class="period">.</span></span></h3>
-<div class="para" id="p-1303">Let <span class="process-math">\((X,d_X)\)</span> and <span class="process-math">\((Y, d_Y)\)</span> be metric spaces, and let <span class="process-math">\(f : X \to Y\)</span> be a continuous function. If <span class="process-math">\(A\)</span> is a subspace of <span class="process-math">\(X\text{,}\)</span> must the restriction <span class="process-math">\(f|_A\)</span> of <span class="process-math">\(f\)</span> to <span class="process-math">\(A\)</span> mapping <span class="process-math">\(A\)</span> to <span class="process-math">\(Y\)</span> be continuous? Give a proof that the restriction is continuous, or an example to show that the restriction need not be continuous.</div></article><article class="exercise exercise-like" id="ex_relatively_closed_ms"><h3 class="heading"><span class="codenumber">4<span class="period">.</span></span></h3>
-<div class="para" id="p-1304">Prove <a href="" class="xref" data-knowl="./knowl/thm_relatively_closed_ms.html" title="Theorem 11.3">Theorem 11.3</a>. That is, let <span class="process-math">\((X,d)\)</span> be a metric space and <span class="process-math">\(A\)</span> a subset of <span class="process-math">\(X\text{.}\)</span> Prove that a subset <span class="process-math">\(C_A\)</span> of <span class="process-math">\(A\)</span> is closed in <span class="process-math">\(A\)</span> if and only if there is a closed set <span class="process-math">\(C_X\)</span> in <span class="process-math">\(X\)</span> so that <span class="process-math">\(C_A = C_X \cap A\text{.}\)</span>
+<div class="para" id="p-1309">Let <span class="process-math">\((X,d_X)\)</span> and <span class="process-math">\((Y, d_Y)\)</span> be metric spaces, and let <span class="process-math">\(f : X \to Y\)</span> be a continuous function. If <span class="process-math">\(A\)</span> is a subspace of <span class="process-math">\(X\text{,}\)</span> must the restriction <span class="process-math">\(f|_A\)</span> of <span class="process-math">\(f\)</span> to <span class="process-math">\(A\)</span> mapping <span class="process-math">\(A\)</span> to <span class="process-math">\(Y\)</span> be continuous? Give a proof that the restriction is continuous, or an example to show that the restriction need not be continuous.</div></article><article class="exercise exercise-like" id="ex_relatively_closed_ms"><h3 class="heading"><span class="codenumber">4<span class="period">.</span></span></h3>
+<div class="para" id="p-1310">Prove <a href="" class="xref" data-knowl="./knowl/thm_relatively_closed_ms.html" title="Theorem 11.3">Theorem 11.3</a>. That is, let <span class="process-math">\((X,d)\)</span> be a metric space and <span class="process-math">\(A\)</span> a subset of <span class="process-math">\(X\text{.}\)</span> Prove that a subset <span class="process-math">\(C_A\)</span> of <span class="process-math">\(A\)</span> is closed in <span class="process-math">\(A\)</span> if and only if there is a closed set <span class="process-math">\(C_X\)</span> in <span class="process-math">\(X\)</span> so that <span class="process-math">\(C_A = C_X \cap A\text{.}\)</span>
 </div></article><article class="exercise exercise-like" id="exercise-121"><h3 class="heading"><span class="codenumber">5<span class="period">.</span></span></h3>
-<div class="para logical" id="p-1305">
+<div class="para logical" id="p-1311">
 <div class="para">Let <span class="process-math">\((X,d_X)\)</span> and <span class="process-math">\((Y,d_Y)\)</span> be metric spaces. Prove or disprove: the function <span class="process-math">\(d: X \times Y \to \R\)</span> defined by</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -631,7 +632,7 @@ d((x_1,y_1), (x_2,y_2)) = d_X(x_1,x_2) + d_Y(y_1,y_2)
 <div class="para">is a metric on <span class="process-math">\(X \times Y\text{.}\)</span>
 </div>
 </div></article><article class="exercise exercise-like" id="ex_prod_metric"><h3 class="heading"><span class="codenumber">6<span class="period">.</span></span></h3>
-<div class="para logical" id="p-1306">
+<div class="para logical" id="p-1312">
 <div class="para">Let <span class="process-math">\((X_i, d_i)\)</span> be metric spaces for <span class="process-math">\(i\)</span> from <span class="process-math">\(1\)</span> to some positive integer <span class="process-math">\(n\text{.}\)</span> Let <span class="process-math">\(d: \prod_{i=1}^n X_i \to \R\)</span> be defined</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -642,11 +643,11 @@ d(x,y) = \sqrt{\sum_{i=1}^n d_i(x_i,y_i)^2}
 x_n)\)</span> and <span class="process-math">\(y = (y_1, y_2, \ldots, y_n)\)</span> are in <span class="process-math">\(X\text{.}\)</span> Show that <span class="process-math">\(d\)</span> is a metric on <span class="process-math">\(\prod_{i=1}^n X_i\text{.}\)</span>
 </div>
 </div></article><article class="exercise exercise-like" id="ex_Subspace_monotone_convergence"><h3 class="heading"><span class="codenumber">7<span class="period">.</span></span></h3>
-<div class="para" id="p-1307">Let <span class="process-math">\((x_n)\)</span> be a non-decreasing sequence of real numbers that is bounded above. That is, <span class="process-math">\(x_n \leq x_{n+1}\)</span> for every <span class="process-math">\(n\)</span> and there is a positive real number <span class="process-math">\(K\)</span> such that <span class="process-math">\(x_n \leq K\)</span> for every <span class="process-math">\(n\text{.}\)</span> Show that the sequence <span class="process-math">\((x_n)\)</span> converges.</div></article><article class="exercise exercise-like" id="exercise-124"><h3 class="heading"><span class="codenumber">8<span class="period">.</span></span></h3>
-<div class="introduction" id="introduction-149"><div class="para" id="p-1308">It is possible to consider infinite products as metric spaces. One important example is a Hilbert space <span class="process-math">\(H\text{,}\)</span> which consists of all infinite sequences <span class="process-math">\((x_n)\)</span> where <span class="process-math">\(x_n \in \R\)</span> for every <span class="process-math">\(n\)</span> and <span class="process-math">\(\sum_{k = 1}^{\infty} x_k^2\)</span> is finite. Hilbert space has important applications in physics, particularly in quantum mechanics.</div></div>
+<div class="para" id="p-1313">Let <span class="process-math">\((x_n)\)</span> be a non-decreasing sequence of real numbers that is bounded above. That is, <span class="process-math">\(x_n \leq x_{n+1}\)</span> for every <span class="process-math">\(n\)</span> and there is a positive real number <span class="process-math">\(K\)</span> such that <span class="process-math">\(x_n \leq K\)</span> for every <span class="process-math">\(n\text{.}\)</span> Show that the sequence <span class="process-math">\((x_n)\)</span> converges.</div></article><article class="exercise exercise-like" id="exercise-124"><h3 class="heading"><span class="codenumber">8<span class="period">.</span></span></h3>
+<div class="introduction" id="introduction-149"><div class="para" id="p-1314">It is possible to consider infinite products as metric spaces. One important example is a Hilbert space <span class="process-math">\(H\text{,}\)</span> which consists of all infinite sequences <span class="process-math">\((x_n)\)</span> where <span class="process-math">\(x_n \in \R\)</span> for every <span class="process-math">\(n\)</span> and <span class="process-math">\(\sum_{k = 1}^{\infty} x_k^2\)</span> is finite. Hilbert space has important applications in physics, particularly in quantum mechanics.</div></div>
 <article class="task exercise-like" id="task-538"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1309">Give two distinct elements in <span class="process-math">\(H\)</span> and one infinite sequence that is not in <span class="process-math">\(H\text{.}\)</span> Explain your examples.</div></article><article class="task exercise-like" id="task-539"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para logical" id="p-1310">
+<div class="para" id="p-1315">Give two distinct elements in <span class="process-math">\(H\)</span> and one infinite sequence that is not in <span class="process-math">\(H\text{.}\)</span> Explain your examples.</div></article><article class="task exercise-like" id="task-539"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="p-1316">
 <div class="para">We define the norm of an element <span class="process-math">\(x = (x_n)\)</span> in <span class="process-math">\(H\)</span> as</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -668,22 +669,22 @@ d(x,y) = \sqrt{\sum_{k=1}^{\infty} (x_k-y_k)^2}\text{.}
 <div class="para">One potential problem with this function <span class="process-math">\(d\)</span> is that we need to know that if <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> are in <span class="process-math">\(H\text{,}\)</span> then <span class="process-math">\(x-y \in H\text{.}\)</span> That is, show that if <span class="process-math">\(\sum_{k=1}^{\infty} x_k^2\)</span> and <span class="process-math">\(\sum_{k=1}^{\infty} y_k^2\)</span> are finite, then <span class="process-math">\(\sum_{k=1}^{\infty} (x_k-y_k)^2\)</span> is also finite.</div>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-14" id="hint-14"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-14"><div class="hint solution-like"><div class="para" id="p-1311">Consider a finite sum and use <a href="" class="xref" data-knowl="./knowl/ex_Subspace_monotone_convergence.html" title="Exercise 7">Exercise 7</a>.</div></div></div>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-14" id="hint-14"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-14"><div class="hint solution-like"><div class="para" id="p-1317">Consider a finite sum and use <a href="" class="xref" data-knowl="./knowl/ex_Subspace_monotone_convergence.html" title="Exercise 7">Exercise 7</a>.</div></div></div>
 </div></article><article class="task exercise-like" id="task-540"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-1312">Show that <span class="process-math">\(d\)</span> is a metric on <span class="process-math">\(H\text{.}\)</span>
+<div class="para" id="p-1318">Show that <span class="process-math">\(d\)</span> is a metric on <span class="process-math">\(H\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-541"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="p-1313">Let <span class="process-math">\(E^m = \{(x_n) \in H \mid x_k = 0 \text{ for } k &gt; m\}\text{.}\)</span> Let <span class="process-math">\(f: E^m \to \R^m\)</span> be defined by <span class="process-math">\(f((x_n)_{n=1}^{\infty}) = (x_n)_{n=1}^m\text{.}\)</span> Show that <span class="process-math">\(f\)</span> is a bijection such that <span class="process-math">\(d((x_n), (y_n)) = d_E(f((x_n)),
+<div class="para" id="p-1319">Let <span class="process-math">\(E^m = \{(x_n) \in H \mid x_k = 0 \text{ for } k &gt; m\}\text{.}\)</span> Let <span class="process-math">\(f: E^m \to \R^m\)</span> be defined by <span class="process-math">\(f((x_n)_{n=1}^{\infty}) = (x_n)_{n=1}^m\text{.}\)</span> Show that <span class="process-math">\(f\)</span> is a bijection such that <span class="process-math">\(d((x_n), (y_n)) = d_E(f((x_n)),
 f((y_n)))\)</span> for any elements <span class="process-math">\((x_n)\text{,}\)</span> <span class="process-math">\((y_n)\)</span> in <span class="process-math">\(H\text{.}\)</span> So <span class="process-math">\(E^m\)</span> is essentially the same as <span class="process-math">\(\R^m\)</span> and so we can consider the space <span class="process-math">\(\R^m\)</span> as embedded in <span class="process-math">\(H\)</span> as a subspace of <span class="process-math">\(H\)</span> for every <span class="process-math">\(m \in \Z^+\text{.}\)</span>
 </div></article></article><article class="exercise exercise-like" id="exercise-125"><h3 class="heading"><span class="codenumber">9<span class="period">.</span></span></h3>
-<div class="introduction" id="introduction-150"><div class="para" id="p-1314">For each of the following, answer true if the statement is always true. If the statement is only sometimes true or never true, answer false and provide a concrete example to illustrate that the statement is false. If a statement is true, explain why.</div></div>
+<div class="introduction" id="introduction-150"><div class="para" id="p-1320">For each of the following, answer true if the statement is always true. If the statement is only sometimes true or never true, answer false and provide a concrete example to illustrate that the statement is false. If a statement is true, explain why.</div></div>
 <article class="task exercise-like" id="task-542"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1315">If <span class="process-math">\(d\)</span> is the discrete metric on a metric space <span class="process-math">\(X\text{,}\)</span> then for any subspace <span class="process-math">\(A\)</span> of <span class="process-math">\(X\text{,}\)</span> the restriction of <span class="process-math">\(d\)</span> to <span class="process-math">\(A\)</span> is the discrete metric.</div></article><article class="task exercise-like" id="task-543"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-1316">If <span class="process-math">\(d\)</span> is a metric on a space <span class="process-math">\(X\)</span> that is not the discrete metric, and if <span class="process-math">\(A\)</span> is a subset of <span class="process-math">\(X\text{,}\)</span> then <span class="process-math">\(d|_A\)</span> cannot be the discrete metric.</div></article><article class="task exercise-like" id="task-544"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-1317">Let <span class="process-math">\(A\)</span> be a subspace of a metric space <span class="process-math">\((X,d)\text{.}\)</span> If a sequence <span class="process-math">\((a_n)\)</span> is in <span class="process-math">\(A\)</span> and <span class="process-math">\(\lim a_n = a\)</span> for some <span class="process-math">\(a \in A\text{,}\)</span> then <span class="process-math">\(\lim a_n = a\)</span> in <span class="process-math">\(X\text{.}\)</span>
+<div class="para" id="p-1321">If <span class="process-math">\(d\)</span> is the discrete metric on a metric space <span class="process-math">\(X\text{,}\)</span> then for any subspace <span class="process-math">\(A\)</span> of <span class="process-math">\(X\text{,}\)</span> the restriction of <span class="process-math">\(d\)</span> to <span class="process-math">\(A\)</span> is the discrete metric.</div></article><article class="task exercise-like" id="task-543"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-1322">If <span class="process-math">\(d\)</span> is a metric on a space <span class="process-math">\(X\)</span> that is not the discrete metric, and if <span class="process-math">\(A\)</span> is a subset of <span class="process-math">\(X\text{,}\)</span> then <span class="process-math">\(d|_A\)</span> cannot be the discrete metric.</div></article><article class="task exercise-like" id="task-544"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="p-1323">Let <span class="process-math">\(A\)</span> be a subspace of a metric space <span class="process-math">\((X,d)\text{.}\)</span> If a sequence <span class="process-math">\((a_n)\)</span> is in <span class="process-math">\(A\)</span> and <span class="process-math">\(\lim a_n = a\)</span> for some <span class="process-math">\(a \in A\text{,}\)</span> then <span class="process-math">\(\lim a_n = a\)</span> in <span class="process-math">\(X\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-545"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="p-1318">Let <span class="process-math">\(A\)</span> be a subspace of a metric space <span class="process-math">\((X,d)\text{.}\)</span> If a sequence <span class="process-math">\((a_n)\)</span> is in <span class="process-math">\(A\)</span> and <span class="process-math">\(\lim a_n = a\)</span> for some <span class="process-math">\(a \in X\text{,}\)</span> then <span class="process-math">\(\lim a_n = a\)</span> in <span class="process-math">\(A\text{.}\)</span>
+<div class="para" id="p-1324">Let <span class="process-math">\(A\)</span> be a subspace of a metric space <span class="process-math">\((X,d)\text{.}\)</span> If a sequence <span class="process-math">\((a_n)\)</span> is in <span class="process-math">\(A\)</span> and <span class="process-math">\(\lim a_n = a\)</span> for some <span class="process-math">\(a \in X\text{,}\)</span> then <span class="process-math">\(\lim a_n = a\)</span> in <span class="process-math">\(A\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-546"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<div class="para logical" id="p-1319">
+<div class="para logical" id="p-1325">
 <div class="para">If <span class="process-math">\((X,d_X)\)</span> and <span class="process-math">\((Y, d_Y)\)</span> are metric spaces, then the function <span class="process-math">\(d: X \times Y \to \R\)</span> defined by</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -693,7 +694,7 @@ d((x_1,y_1), (x_2,y_2)) = \max\{d_X(x_1,x_2), d_Y(y_1,y_2)\}
 <div class="para">is a metric on <span class="process-math">\(X \times Y\text{.}\)</span>
 </div>
 </div></article><article class="task exercise-like" id="task-547"><h4 class="heading"><span class="codenumber">(f)</span></h4>
-<div class="para logical" id="p-1320">
+<div class="para logical" id="p-1326">
 <div class="para">If <span class="process-math">\((X,d_X)\)</span> and <span class="process-math">\((Y, d_Y)\)</span> are metric spaces, then the function <span class="process-math">\(d: X \times Y \to \R\)</span> defined by</div>
 <div class="displaymath process-math">
 \begin{equation*}

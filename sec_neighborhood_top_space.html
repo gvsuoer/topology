@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Neighborhoods in Topological Spaces</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -603,36 +604,35 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_neighborhood_top_space"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">Neighborhoods in Topological Spaces</span>
 </h2>
-<div class="para" id="p-1391">Recall that we defined a neighborhood of a point <span class="process-math">\(a\)</span> in a metric space to be a subset of the space that contains an open ball centered at <span class="process-math">\(X\text{.}\)</span> Every open ball is an open set, so we can extend the idea of neighborhood to topological spaces.</div>
+<div class="para" id="p-1397">Recall that we defined a neighborhood of a point <span class="process-math">\(a\)</span> in a metric space to be a subset of the space that contains an open ball centered at <span class="process-math">\(X\text{.}\)</span> Every open ball is an open set, so we can extend the idea of neighborhood to topological spaces.</div>
 <article class="definition definition-like" id="definition-40"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">12.6</span><span class="period">.</span>
-</h3>
-<div class="para" id="p-1392">Let <span class="process-math">\((X, \tau)\)</span> be a topological space, and let <span class="process-math">\(a \in X\text{.}\)</span> A subset <span class="process-math">\(N\)</span> of <span class="process-math">\(X\)</span> is a neighborhood of <span class="process-math">\(a\)</span> if <span class="process-math">\(N\)</span> contains an open set that contains <span class="process-math">\(a\text{.}\)</span>
-</div></article><div class="para" id="p-1393">Let’s look at some examples.</div>
+</h3> <div class="para" id="p-1398">Let <span class="process-math">\((X, \tau)\)</span> be a topological space, and let <span class="process-math">\(a \in X\text{.}\)</span> A subset <span class="process-math">\(N\)</span> of <span class="process-math">\(X\)</span> is a <dfn class="terminology">neighborhood</dfn> of <span class="process-math">\(a\)</span> if <span class="process-math">\(N\)</span> contains an open set that contains <span class="process-math">\(a\text{.}\)</span>
+</div></article><div class="para" id="p-1399">Let’s look at some examples.</div>
 <article class="activity project-like" id="activity-58"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">12.7</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-155"><div class="para" id="p-1394">Let <span class="process-math">\(X = \{a,b,c,d\}\)</span> and let <span class="process-math">\(\tau = \{\emptyset, \{a\}, \{b\}, \{a,b\}, X \}\text{.}\)</span>
+<div class="introduction" id="introduction-155"><div class="para" id="p-1400">Let <span class="process-math">\(X = \{a,b,c,d\}\)</span> and let <span class="process-math">\(\tau = \{\emptyset, \{a\}, \{b\}, \{a,b\}, X \}\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-568"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1395">Find all of the neighborhoods of the point <span class="process-math">\(a\text{.}\)</span>
+<div class="para" id="p-1401">Find all of the neighborhoods of the point <span class="process-math">\(a\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-569"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-1396">Find all of the neighborhoods of the point <span class="process-math">\(c\text{.}\)</span>
-</div></article></article><div class="para" id="p-1397">In metric spaces, an open set was a neighborhood of each of its points. This is also true in topological spaces.</div>
+<div class="para" id="p-1402">Find all of the neighborhoods of the point <span class="process-math">\(c\text{.}\)</span>
+</div></article></article><div class="para" id="p-1403">In metric spaces, an open set was a neighborhood of each of its points. This is also true in topological spaces.</div>
 <article class="theorem theorem-like" id="theorem-33"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">12.7</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-1398">Let <span class="process-math">\((X, \tau)\)</span> be a topological space. A subset <span class="process-math">\(O\)</span> of <span class="process-math">\(X\)</span> is open if and only if <span class="process-math">\(O\)</span> is a neighborhood of each of its points.</div></article><article class="proof" id="proof-18"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
-<div class="para" id="p-1399">Let <span class="process-math">\((X, \tau)\)</span> be a topological space, and let <span class="process-math">\(O\)</span> be a subset of <span class="process-math">\(X\text{.}\)</span> First we demonstrate that if <span class="process-math">\(O\)</span> is open, then <span class="process-math">\(O\)</span> is a neighborhood of each of its points. Assume that <span class="process-math">\(O\)</span> is an open set, and let <span class="process-math">\(a \in O\text{.}\)</span> Then <span class="process-math">\(O\)</span> contains the open set <span class="process-math">\(O\)</span> that contains <span class="process-math">\(a\text{,}\)</span> so <span class="process-math">\(O\)</span> is a neighborhood of <span class="process-math">\(a\text{.}\)</span>
-</div> <div class="para" id="p-1400">The reverse containment is the subject of the next activity.</div></article><article class="activity project-like" id="activity-59"><h3 class="heading">
+<div class="para" id="p-1404">Let <span class="process-math">\((X, \tau)\)</span> be a topological space. A subset <span class="process-math">\(O\)</span> of <span class="process-math">\(X\)</span> is open if and only if <span class="process-math">\(O\)</span> is a neighborhood of each of its points.</div></article><article class="proof" id="proof-18"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
+<div class="para" id="p-1405">Let <span class="process-math">\((X, \tau)\)</span> be a topological space, and let <span class="process-math">\(O\)</span> be a subset of <span class="process-math">\(X\text{.}\)</span> First we demonstrate that if <span class="process-math">\(O\)</span> is open, then <span class="process-math">\(O\)</span> is a neighborhood of each of its points. Assume that <span class="process-math">\(O\)</span> is an open set, and let <span class="process-math">\(a \in O\text{.}\)</span> Then <span class="process-math">\(O\)</span> contains the open set <span class="process-math">\(O\)</span> that contains <span class="process-math">\(a\text{,}\)</span> so <span class="process-math">\(O\)</span> is a neighborhood of <span class="process-math">\(a\text{.}\)</span>
+</div> <div class="para" id="p-1406">The reverse containment is the subject of the next activity.</div></article><article class="activity project-like" id="activity-59"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">12.8</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-156"><div class="para" id="p-1401">Let <span class="process-math">\((X, \tau)\)</span> be a topological space. Let <span class="process-math">\(O\)</span> be a subset of <span class="process-math">\(X\text{.}\)</span> Assume <span class="process-math">\(O\)</span> is a neighborhood of each of its points.</div></div>
+<div class="introduction" id="introduction-156"><div class="para" id="p-1407">Let <span class="process-math">\((X, \tau)\)</span> be a topological space. Let <span class="process-math">\(O\)</span> be a subset of <span class="process-math">\(X\text{.}\)</span> Assume <span class="process-math">\(O\)</span> is a neighborhood of each of its points.</div></div>
 <article class="task exercise-like" id="task-570"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1402">What do we need to do to show that <span class="process-math">\(O\)</span> is an open set?</div></article><article class="task exercise-like" id="task-571"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-1403">Let <span class="process-math">\(a \in O\text{.}\)</span> Why must there exist an open set <span class="process-math">\(O_a\)</span> such that <span class="process-math">\(a \in O_a \subseteq O\text{?}\)</span>
+<div class="para" id="p-1408">What do we need to do to show that <span class="process-math">\(O\)</span> is an open set?</div></article><article class="task exercise-like" id="task-571"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-1409">Let <span class="process-math">\(a \in O\text{.}\)</span> Why must there exist an open set <span class="process-math">\(O_a\)</span> such that <span class="process-math">\(a \in O_a \subseteq O\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-572"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-1404">Complete the proof that <span class="process-math">\(O\)</span> is an open set.</div></article></article></section></div>
+<div class="para" id="p-1410">Complete the proof that <span class="process-math">\(O\)</span> is an open set.</div></article></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_metric_top_space.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_interior_set_top.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

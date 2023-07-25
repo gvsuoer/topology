@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Neighborhoods</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -603,33 +604,32 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_neighborhoods"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">Neighborhoods</span>
 </h2>
-<div class="para" id="p-771">We are familiar with the idea of open intervals in <span class="process-math">\(\R\text{.}\)</span> We next introduce the idea of an open neighborhood of a point and characterize continuity in terms of neighborhoods. This is the next step in developing the notation of continuity in topological spaces.</div>
-<div class="para" id="p-772">The open ball <span class="process-math">\(B(a, \delta)\)</span> in a metric space <span class="process-math">\((X,d)\)</span> is also called the <dfn class="terminology"><span class="process-math">\(\delta\)</span>-neighborhood</dfn> around <span class="process-math">\(a\text{.}\)</span> A neighborhood of a point can be thought of as any set that envelops that point.</div>
+<div class="para" id="p-777">We are familiar with the idea of open intervals in <span class="process-math">\(\R\text{.}\)</span> We next introduce the idea of an open neighborhood of a point and characterize continuity in terms of neighborhoods. This is the next step in developing the notation of continuity in topological spaces.</div>
+<div class="para" id="p-778">The open ball <span class="process-math">\(B(a, \delta)\)</span> in a metric space <span class="process-math">\((X,d)\)</span> is also called the <dfn class="terminology"><span class="process-math">\(\delta\)</span>-neighborhood</dfn> around <span class="process-math">\(a\text{.}\)</span> A neighborhood of a point can be thought of as any set that envelops that point.</div>
 <article class="definition definition-like" id="definition-22"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.2</span><span class="period">.</span>
-</h3>
-<div class="para" id="p-773">Let <span class="process-math">\((X, d_X)\)</span> be a metric space, and let <span class="process-math">\(a \in X\text{.}\)</span> A subset <span class="process-math">\(N\)</span> of <span class="process-math">\(X\)</span> is a neighborhood of <span class="process-math">\(a\)</span> if there exists a <span class="process-math">\(\delta \gt 0\)</span> such that <span class="process-math">\(B(a, \delta) \subseteq N\text{.}\)</span>
+</h3> <div class="para" id="p-779">Let <span class="process-math">\((X, d_X)\)</span> be a metric space, and let <span class="process-math">\(a \in X\text{.}\)</span> A subset <span class="process-math">\(N\)</span> of <span class="process-math">\(X\)</span> is a <dfn class="terminology">neighborhood</dfn> of <span class="process-math">\(a\)</span> if there exists a <span class="process-math">\(\delta \gt 0\)</span> such that <span class="process-math">\(B(a, \delta) \subseteq N\text{.}\)</span>
 </div></article><article class="example example-like" id="exp_neighborhood_MS"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">7.3</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-774"><ul class="disc">
-<li id="li-142"><div class="para" id="p-775">In <span class="process-math">\(\R\)</span> with the Euclidean metric, the set <span class="process-math">\(\R^+\)</span> (the positive real numbers) is a neighborhood of <span class="process-math">\(a=1\)</span> because the open ball <span class="process-math">\(B(1,0.5)\)</span> is completely contained in <span class="process-math">\(\R^+\text{.}\)</span>
+<div class="para logical" id="p-780"><ul class="disc">
+<li id="li-142"><div class="para" id="p-781">In <span class="process-math">\(\R\)</span> with the Euclidean metric, the set <span class="process-math">\(\R^+\)</span> (the positive real numbers) is a neighborhood of <span class="process-math">\(a=1\)</span> because the open ball <span class="process-math">\(B(1,0.5)\)</span> is completely contained in <span class="process-math">\(\R^+\text{.}\)</span>
 </div></li>
-<li id="li-143"><div class="para" id="p-776">In <span class="process-math">\(\R\)</span> with the Euclidean metric, the set <span class="process-math">\(\Z\)</span> is not a neighborhood of <span class="process-math">\(a=1\)</span> because any open ball centered at <span class="process-math">\(a=1\)</span> will contain some non-integers.</div></li>
-<li id="li-144"><div class="para" id="p-777">In <span class="process-math">\(\R\)</span> with the discrete metric, the set <span class="process-math">\(\Z\)</span> is a neighborhood of <span class="process-math">\(a=1\)</span> because the open ball <span class="process-math">\(B(a,1) = \{a\}\text{.}\)</span>
+<li id="li-143"><div class="para" id="p-782">In <span class="process-math">\(\R\)</span> with the Euclidean metric, the set <span class="process-math">\(\Z\)</span> is not a neighborhood of <span class="process-math">\(a=1\)</span> because any open ball centered at <span class="process-math">\(a=1\)</span> will contain some non-integers.</div></li>
+<li id="li-144"><div class="para" id="p-783">In <span class="process-math">\(\R\)</span> with the discrete metric, the set <span class="process-math">\(\Z\)</span> is a neighborhood of <span class="process-math">\(a=1\)</span> because the open ball <span class="process-math">\(B(a,1) = \{a\}\text{.}\)</span>
 </div></li>
-</ul></div></article><div class="para" id="p-778">As another example, the open ball <span class="process-math">\(B(a, \delta)\)</span> is a neighborhood of <span class="process-math">\(a\text{.}\)</span> We can say even more about open balls.</div>
+</ul></div></article><div class="para" id="p-784">As another example, the open ball <span class="process-math">\(B(a, \delta)\)</span> is a neighborhood of <span class="process-math">\(a\text{.}\)</span> We can say even more about open balls.</div>
 <article class="activity project-like" id="activity-26"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.2</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-86"><div class="para" id="p-779">Let <span class="process-math">\((X, d)\)</span> be a metric space, let <span class="process-math">\(a \in X\text{,}\)</span> and let <span class="process-math">\(\delta \gt 0\text{.}\)</span> In this activity we ask the question, is <span class="process-math">\(B(a, \delta)\)</span> a neighborhood of each of its points?</div></div>
+<div class="introduction" id="introduction-86"><div class="para" id="p-785">Let <span class="process-math">\((X, d)\)</span> be a metric space, let <span class="process-math">\(a \in X\text{,}\)</span> and let <span class="process-math">\(\delta \gt 0\text{.}\)</span> In this activity we ask the question, is <span class="process-math">\(B(a, \delta)\)</span> a neighborhood of each of its points?</div></div>
 <article class="task exercise-like" id="task-316"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-780">Let <span class="process-math">\(b \in B(a, \delta)\text{.}\)</span> What do we have to do to show that <span class="process-math">\(B(a, \delta)\)</span> is a neighborhood of <span class="process-math">\(b\text{?}\)</span>
+<div class="para" id="p-786">Let <span class="process-math">\(b \in B(a, \delta)\text{.}\)</span> What do we have to do to show that <span class="process-math">\(B(a, \delta)\)</span> is a neighborhood of <span class="process-math">\(b\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-317"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-781">Use <a href="" class="xref" data-knowl="./knowl/F_Open_ball_neighborhood.html" title="Figure 7.4">Figure 7.4</a> to help show that <span class="process-math">\(B(a, \delta)\)</span> is a neighborhood of <span class="process-math">\(b\text{.}\)</span>
+<div class="para" id="p-787">Use <a href="" class="xref" data-knowl="./knowl/F_Open_ball_neighborhood.html" title="Figure 7.4">Figure 7.4</a> to help show that <span class="process-math">\(B(a, \delta)\)</span> is a neighborhood of <span class="process-math">\(b\text{.}\)</span>
 </div> <figure class="figure figure-like" id="F_Open_ball_neighborhood"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/Open_ball_neighborhood.svg" role="img" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.4<span class="period">.</span></span><span class="space"> </span><span class="process-math">\(B(a, \delta)\)</span> as a neighborhood of <span class="process-math">\(b\text{.}\)</span></figcaption></figure></article><article class="task exercise-like" id="task-318"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-782">Is the converse true? That is, if a set is a neighborhood of each of its points, is the set an open ball? No proof is necessary, but a convincing argument is in order.</div></article></article></section></div>
+<div class="para" id="p-788">Is the converse true? That is, if a set is a neighborhood of each of its points, is the set an open ball? No proof is necessary, but a convincing argument is in order.</div></article></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_open_balls_intro.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_cont_neighborhoods.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -11,8 +11,28 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para">If <span class="process-math">\(B_1\)</span> is an open ball in <span class="process-math">\(X_1\)</span> and <span class="process-math">\(B_2\)</span> is an open ball in <span class="process-math">\(X_2\text{,}\)</span> is <span class="process-math">\(B_1 \times B_2\)</span> an open set in <span class="process-math">\(X_1 \times X_2\text{?}\)</span> Explain.</div>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para logical">
+<div class="para">Let <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> be defined as in <a href="" class="xref" data-knowl="./knowl/act_metric_space_products.html" title="Activity 11.3">Activity 11.3</a>, and let <span class="process-math">\(z = (z_1, z_2)\)</span> be in <span class="process-math">\(X_1 \times X_2\text{.}\)</span> Then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/act_metric_space_products.html">
+\begin{align*}
+d(x,z)^2 \amp =  d_1(x_1,z_1)^2 + d_2(x_2,z_2)^2 \\
+\amp \leq \left(d_1(x_1,y_1) + d_1(y_1,z_1)\right)^2 + \left(d_2(x_2,y_2) + d_2(y_2,z_2)\right)^2 \\
+\amp = \left(d_1(x_1,y_1)^2 + d_2(x_2,y_2)^2\right) + 2\left(d_1(x_1,y_1)d_1(y_1,z_1) + d_2(x_2,y_2)d_2(y_2,z_2) \right) \\
+\amp \qquad + \left(d_1(y_1,z_1)^2 + d_2(y_2,z_2)^2\right)\\
+\amp = d(x,y)^2 + 2\left(d_1(x_1,y_1)d_1(y_1,z_1) + d_2(x_2,y_2)d_2(y_2,z_2)\right) + d(y,z)^2 \\
+\amp \leq d(x,y)^2 + d(y,z)^2\text{.}
+\end{align*}
+</div>
+<div class="para">Since all terms are non-negative we conclude that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/act_metric_space_products.html">
+\begin{align*}
+d(x,z) \leq \sqrt{d(x,y)^2 + d(y,z)^2} \amp \leq \sqrt{d(x,y)^2 + 2 d(x,y)d(y,z) + d(y,z)^2} \\
+\amp = \sqrt{\left(d(x,y)+d(y,z)\right)^2} \\
+\amp = d(x,y) + d(y,z)\text{.}
+\end{align*}
+</div>
+</div>
 <span class="incontext"><a href="sec_prod_metric.html#p-1288" class="internal">in-context</a></span>
 </body>
 </html>

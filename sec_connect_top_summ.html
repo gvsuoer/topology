@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Summary</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -603,27 +604,27 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_connect_top_summ"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">Summary</span>
 </h2>
-<div class="para logical" id="p-2327">
+<div class="para logical" id="p-2333">
 <div class="para">Important ideas that we discussed in this section include the following.</div>
 <ul class="disc">
-<li id="li-349"><div class="para" id="p-2328">A topological space <span class="process-math">\((X,\tau)\)</span> is <dfn class="terminology">connected</dfn>  if <span class="process-math">\(X\)</span> cannot be written as the union of two disjoint, nonempty, open subsets. A subset <span class="process-math">\(A\)</span> of a topological space topological space <span class="process-math">\((X,\tau)\)</span> is connected if <span class="process-math">\(A\)</span> is connected in the subspace topology.</div></li>
-<li id="li-350"><div class="para logical" id="p-2329">
+<li id="li-349"><div class="para" id="p-2334">A topological space <span class="process-math">\((X,\tau)\)</span> is <dfn class="terminology">connected</dfn>  if <span class="process-math">\(X\)</span> cannot be written as the union of two disjoint, nonempty, open subsets. A subset <span class="process-math">\(A\)</span> of a topological space topological space <span class="process-math">\((X,\tau)\)</span> is connected if <span class="process-math">\(A\)</span> is connected in the subspace topology.</div></li>
+<li id="li-350"><div class="para logical" id="p-2335">
 <div class="para">A separation of a subset <span class="process-math">\(A\)</span> of a topological space <span class="process-math">\(X\)</span> is a pair of nonempty open subsets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> of <span class="process-math">\(X\)</span> such that</div>
 <ul class="circle">
-<li id="li-351"><div class="para" id="p-2330"><span class="process-math">\(A \subseteq (U \cup V)\text{,}\)</span></div></li>
-<li id="li-352"><div class="para" id="p-2331"><span class="process-math">\(U \cap A \neq \emptyset\text{,}\)</span></div></li>
-<li id="li-353"><div class="para" id="p-2332">
+<li id="li-351"><div class="para" id="p-2336"><span class="process-math">\(A \subseteq (U \cup V)\text{,}\)</span></div></li>
+<li id="li-352"><div class="para" id="p-2337"><span class="process-math">\(U \cap A \neq \emptyset\text{,}\)</span></div></li>
+<li id="li-353"><div class="para" id="p-2338">
 <span class="process-math">\(V \cap A \neq \emptyset\text{,}\)</span> and</div></li>
-<li id="li-354"><div class="para" id="p-2333"><span class="process-math">\(U \cap V \cap A = \emptyset\text{.}\)</span></div></li>
+<li id="li-354"><div class="para" id="p-2339"><span class="process-math">\(U \cap V \cap A = \emptyset\text{.}\)</span></div></li>
 </ul>
 <div class="para">Showing that a set has a separation can be a convenient way to show that the set is disconnected.</div>
 </div></li>
-<li id="li-355"><div class="para" id="p-2334">The connected subsets of <span class="process-math">\(\R\)</span> are the intervals and the single point sets.</div></li>
-<li id="li-356"><div class="para" id="p-2335">A subspace <span class="process-math">\(C\)</span> of a topological space <span class="process-math">\(X\)</span> is a connected component of <span class="process-math">\(X\)</span> if <span class="process-math">\(C\)</span> is connected and there is no larger connected subspace of <span class="process-math">\(X\)</span> that contains <span class="process-math">\(C\text{.}\)</span>
+<li id="li-355"><div class="para" id="p-2340">The connected subsets of <span class="process-math">\(\R\)</span> are the intervals and the single point sets.</div></li>
+<li id="li-356"><div class="para" id="p-2341">A subspace <span class="process-math">\(C\)</span> of a topological space <span class="process-math">\(X\)</span> is a connected component of <span class="process-math">\(X\)</span> if <span class="process-math">\(C\)</span> is connected and there is no larger connected subspace of <span class="process-math">\(X\)</span> that contains <span class="process-math">\(C\text{.}\)</span>
 </div></li>
-<li id="li-357"><div class="para" id="p-2336">One application of connectedness is the Intermediate Value Theorem that tells us that if <span class="process-math">\(A\)</span> is a connected subset of a topological space <span class="process-math">\(X\)</span> and if <span class="process-math">\(f : A \to \R\)</span> is a continuous function, then for any <span class="process-math">\(a,b \in A\)</span> and any <span class="process-math">\(y \in \R\)</span> between <span class="process-math">\(f(a)\)</span> and <span class="process-math">\(f(b)\text{,}\)</span> there is a point <span class="process-math">\(x \in A\)</span> such that <span class="process-math">\(f(x) = y\text{.}\)</span>
+<li id="li-357"><div class="para" id="p-2342">One application of connectedness is the Intermediate Value Theorem that tells us that if <span class="process-math">\(A\)</span> is a connected subset of a topological space <span class="process-math">\(X\)</span> and if <span class="process-math">\(f : A \to \R\)</span> is a continuous function, then for any <span class="process-math">\(a,b \in A\)</span> and any <span class="process-math">\(y \in \R\)</span> between <span class="process-math">\(f(a)\)</span> and <span class="process-math">\(f(b)\text{,}\)</span> there is a point <span class="process-math">\(x \in A\)</span> such that <span class="process-math">\(f(x) = y\text{.}\)</span>
 </div></li>
-<li id="li-358"><div class="para" id="p-2337">A subset <span class="process-math">\(S\)</span> of a connected topological space <span class="process-math">\(X\)</span> is a cut set of <span class="process-math">\(X\)</span> if the set <span class="process-math">\(X \setminus S\)</span> is disconnected, while a .point <span class="process-math">\(p\)</span> in <span class="process-math">\(X\)</span> is a cut point if <span class="process-math">\(X \setminus \{p\}\)</span> is disconnected. The property of being a cut set or a cut point is a topological invariant, so we can sometimes use cut sets and cut points to show that topological spaces are not homeomorphic.</div></li>
+<li id="li-358"><div class="para" id="p-2343">A subset <span class="process-math">\(S\)</span> of a connected topological space <span class="process-math">\(X\)</span> is a cut set of <span class="process-math">\(X\)</span> if the set <span class="process-math">\(X \setminus S\)</span> is disconnected, while a point <span class="process-math">\(p\)</span> in <span class="process-math">\(X\)</span> is a cut point if <span class="process-math">\(X \setminus \{p\}\)</span> is disconnected. The property of being a cut set or a cut point is a topological invariant, so we can sometimes use cut sets and cut points to show that topological spaces are not homeomorphic.</div></li>
 </ul>
 </div></section></div>
 <div class="ptx-content-footer">

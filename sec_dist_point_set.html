@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>The Distance from a Point to a Set</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -603,39 +604,39 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_dist_point_set"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">The Distance from a Point to a Set</span>
 </h2>
-<div class="para" id="p-585">Metrics are used to establish separation between objects. Topological spaces can be placed into different categories based on how well certain types of sets can be separated. We have defined metrics as measuring distances between points in a metric space, and in this activity we extend that idea to measure the distance between a point and a subset in a metric space. However, there are two questions we need to address before we can do so. The first we mentioned in our preview activity. We will assume the <dfn class="terminology">completeness axiom</dfn> of the reals, that is that any subset of <span class="process-math">\(\R\)</span> that is bounded below always has a greatest lower bound. The second question is whether or not a greatest lower bound is unique.</div>
+<div class="para" id="p-591">Metrics are used to establish separation between objects. Topological spaces can be placed into different categories based on how well certain types of sets can be separated. We have defined metrics as measuring distances between points in a metric space, and in this activity we extend that idea to measure the distance between a point and a subset in a metric space. However, there are two questions we need to address before we can do so. The first we mentioned in our preview activity. We will assume the <dfn class="terminology">completeness axiom</dfn> of the reals, that is that any subset of <span class="process-math">\(\R\)</span> that is bounded below always has a greatest lower bound. The second question is whether or not a greatest lower bound is unique.</div>
 <article class="activity project-like" id="activity-21"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.2</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-59"><div class="para" id="p-586">Let <span class="process-math">\(S\)</span> be a subset of <span class="process-math">\(\R\)</span> that is bounded below, and assume that <span class="process-math">\(S\)</span> has a greatest lower bound. In this activity we will show that the infimum of <span class="process-math">\(S\)</span> is unique.</div></div>
+<div class="introduction" id="introduction-59"><div class="para" id="p-592">Let <span class="process-math">\(S\)</span> be a subset of <span class="process-math">\(\R\)</span> that is bounded below, and assume that <span class="process-math">\(S\)</span> has a greatest lower bound. In this activity we will show that the infimum of <span class="process-math">\(S\)</span> is unique.</div></div>
 <article class="task exercise-like" id="task-234"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-587">What method can we use to prove that there is only one greatest lower bound for <span class="process-math">\(S\text{?}\)</span>
+<div class="para" id="p-593">What method can we use to prove that there is only one greatest lower bound for <span class="process-math">\(S\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-235"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-588">Suppose <span class="process-math">\(m\)</span> and <span class="process-math">\(m'\)</span> are both greatest lower bounds for <span class="process-math">\(S\text{.}\)</span> Why are <span class="process-math">\(m\)</span> and <span class="process-math">\(m'\)</span> both lower bounds for <span class="process-math">\(S\text{?}\)</span>
+<div class="para" id="p-594">Suppose <span class="process-math">\(m\)</span> and <span class="process-math">\(m'\)</span> are both greatest lower bounds for <span class="process-math">\(S\text{.}\)</span> Why are <span class="process-math">\(m\)</span> and <span class="process-math">\(m'\)</span> both lower bounds for <span class="process-math">\(S\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-236"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-589">What two things does the second property of a greatest lower bound tell us about the relationship between <span class="process-math">\(m\)</span> and <span class="process-math">\(m'\text{?}\)</span>
+<div class="para" id="p-595">What two things does the second property of a greatest lower bound tell us about the relationship between <span class="process-math">\(m\)</span> and <span class="process-math">\(m'\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-237"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="p-590">Why must the greatest lower bound of <span class="process-math">\(S\)</span> be unique?</div></article></article><div class="para" id="p-591">With the existence and uniqueness of greatest lower bounds considered, we can now say that any nonempty subset <span class="process-math">\(S\)</span> of <span class="process-math">\(\R\)</span> that is bounded below has a unique greatest lower bound. We use the notation <span class="process-math">\(\glb(S)\)</span> (or <span class="process-math">\(\inf(S)\)</span> for <dfn class="terminology">infimum</dfn> of <span class="process-math">\(S\)</span>) for the greatest lower bound of <span class="process-math">\(S\text{.}\)</span> There is also a <dfn class="terminology">least upper bound</dfn>  (<span class="process-math">\(\lub(S)\text{,}\)</span> or <span class="process-math">\(\sup(S)\)</span> for <dfn class="terminology">supremum</dfn>  ) of a subset <span class="process-math">\(S\)</span> of <span class="process-math">\(\R\)</span> that is bounded above.</div>
-<div class="para" id="p-592">Now we can formally define the distance between a point and a subset in a metric space.</div>
+<div class="para" id="p-596">Why must the greatest lower bound of <span class="process-math">\(S\)</span> be unique?</div></article></article><div class="para" id="p-597">With the existence and uniqueness of greatest lower bounds considered, we can now say that any nonempty subset <span class="process-math">\(S\)</span> of <span class="process-math">\(\R\)</span> that is bounded below has a unique greatest lower bound. We use the notation <span class="process-math">\(\glb(S)\)</span> (or <span class="process-math">\(\inf(S)\)</span> for <dfn class="terminology">infimum</dfn> of <span class="process-math">\(S\)</span>) for the greatest lower bound of <span class="process-math">\(S\text{.}\)</span> There is also a <dfn class="terminology">least upper bound</dfn>  (<span class="process-math">\(\lub(S)\text{,}\)</span> or <span class="process-math">\(\sup(S)\)</span> for <dfn class="terminology">supremum</dfn>  ) of a subset <span class="process-math">\(S\)</span> of <span class="process-math">\(\R\)</span> that is bounded above.</div>
+<div class="para" id="p-598">Now we can formally define the distance between a point and a subset in a metric space.</div>
 <article class="definition definition-like" id="definition-16"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.3</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-593">
-<div class="para">Let <span class="process-math">\((X,d)\)</span> be a metric space, let <span class="process-math">\(x \in X\text{,}\)</span> and let <span class="process-math">\(A\)</span> be a nonempty subset of <span class="process-math">\(X\text{.}\)</span> The distance from <span class="process-math">\(x\)</span> to <span class="process-math">\(A\)</span> is</div>
+<div class="para logical" id="p-599">
+<div class="para">Let <span class="process-math">\((X,d)\)</span> be a metric space, let <span class="process-math">\(x \in X\text{,}\)</span> and let <span class="process-math">\(A\)</span> be a nonempty subset of <span class="process-math">\(X\text{.}\)</span> The <dfn class="terminology">distance from <span class="process-math">\(x\)</span> to <span class="process-math">\(A\)</span></dfn> is</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \inf\{d(x,a) \mid a \in A\}\text{.}
 \end{equation*}
 </div>
-</div></article><div class="para" id="p-594">We denote the distance from <span class="process-math">\(x\)</span> to <span class="process-math">\(A\)</span> by <span class="process-math">\(d(x,A)\text{.}\)</span> When calculating these distances, it must be understood what the underlying metric is.</div>
+</div></article><div class="para" id="p-600">We denote the distance from <span class="process-math">\(x\)</span> to <span class="process-math">\(A\)</span> by <span class="process-math">\(d(x,A)\text{.}\)</span> When calculating these distances, it must be understood what the underlying metric is.</div>
 <article class="activity project-like" id="activity-22"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.3</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-60"><div class="para" id="p-595">There are a couple of facts about the distance between a point and a set that we examine in this activity. Let <span class="process-math">\((X,d)\)</span> be a metric space, let <span class="process-math">\(x \in X\text{,}\)</span> and let <span class="process-math">\(A\)</span> be a nonempty subset of <span class="process-math">\(X\)</span>
+<div class="introduction" id="introduction-60"><div class="para" id="p-601">There are a couple of facts about the distance between a point and a set that we examine in this activity. Let <span class="process-math">\((X,d)\)</span> be a metric space, let <span class="process-math">\(x \in X\text{,}\)</span> and let <span class="process-math">\(A\)</span> be a nonempty subset of <span class="process-math">\(X\)</span>
 </div></div>
 <article class="task exercise-like" id="task-238"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-596">Why must <span class="process-math">\(d(x,A)\)</span> exist?</div></article><article class="task exercise-like" id="task-239"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-597">If <span class="process-math">\(d(x,A) = 0\text{,}\)</span> must <span class="process-math">\(x \in A\text{?}\)</span>
+<div class="para" id="p-602">Why must <span class="process-math">\(d(x,A)\)</span> exist?</div></article><article class="task exercise-like" id="task-239"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-603">If <span class="process-math">\(d(x,A) = 0\text{,}\)</span> must <span class="process-math">\(x \in A\text{?}\)</span>
 </div></article></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_glb_intro.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_glb_summ.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

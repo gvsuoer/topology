@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Exercises</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -605,7 +606,7 @@ window.MathJax = {
 </h2>
 <article class="exercise exercise-like" id="ex_subbasis"><h3 class="heading"><span class="codenumber">1<span class="period">.</span></span></h3>
 <article class="task exercise-like" id="task-1110"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para logical" id="p-2642">
+<div class="para logical" id="p-2648">
 <div class="para">Let <span class="process-math">\((Y_1, \tau_1)\)</span> and <span class="process-math">\((Y_2, \tau_2)\)</span> be topological spaces, where <span class="process-math">\(Y_1 = \{a,b,c\}\)</span> with <span class="process-math">\(\tau_1 = \{\emptyset, \{a\}, \{b,c\}, Y_1\}\)</span> and <span class="process-math">\(Y_2 = \{1,2\}\)</span> with <span class="process-math">\(\tau_2 = \{\emptyset, \{1\}, Y_2\}\text{.}\)</span> Find all of the sets of the form</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -615,7 +616,7 @@ window.MathJax = {
 <div class="para">and verify that these sets generate the product topology on <span class="process-math">\(Y_1 \times Y_2\text{.}\)</span>
 </div>
 </div></article><article class="task exercise-like" id="task-1111"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para logical" id="p-2643">
+<div class="para logical" id="p-2649">
 <div class="para">Let <span class="process-math">\(X_{i}\)</span> for <span class="process-math">\(i\)</span> from <span class="process-math">\(1\)</span> to <span class="process-math">\(n\)</span> be topological spaces and let <span class="process-math">\(X = \Pi_{i=1}^n X_i\text{.}\)</span> Show that the collection</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -625,9 +626,9 @@ window.MathJax = {
 <div class="para">is a subbasis for the box topology on <span class="process-math">\(X\text{.}\)</span>
 </div>
 </div></article></article><article class="exercise exercise-like" id="exercise-242"><h3 class="heading"><span class="codenumber">2<span class="period">.</span></span></h3>
-<div class="introduction" id="introduction-299"><div class="para" id="p-2644">Let <span class="process-math">\(X\)</span> be the set of real numbers with the standard Euclidean metric topology and let <span class="process-math">\(Y\)</span> be the real numbers with the discrete topology.</div></div>
+<div class="introduction" id="introduction-299"><div class="para" id="p-2650">Let <span class="process-math">\(X\)</span> be the set of real numbers with the standard Euclidean metric topology and let <span class="process-math">\(Y\)</span> be the real numbers with the discrete topology.</div></div>
 <article class="task exercise-like" id="task-1112"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para logical" id="p-2645">
+<div class="para logical" id="p-2651">
 <div class="para">Explain why the set of all “horizontal intervals” of the form</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -637,17 +638,17 @@ I= (a,b) \times \{c\} = \{(x,c) \mid a \lt  x \lt  b\}
 <div class="para">is a base for the product topology on <span class="process-math">\(X \times Y\text{.}\)</span>
 </div>
 </div></article><article class="task exercise-like" id="task-1113"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="introduction" id="introduction-300"><div class="para" id="p-2646">Find the interior and closure of each of the following subsets of <span class="process-math">\(X \times Y\text{.}\)</span>
+<div class="introduction" id="introduction-300"><div class="para" id="p-2652">Find the interior and closure of each of the following subsets of <span class="process-math">\(X \times Y\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-1114"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="p-2647"><span class="process-math">\(A = \{(x,0) \mid 0 \leq x \lt 1\}\)</span></div></article><article class="task exercise-like" id="task-1115"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
-<div class="para" id="p-2648"><span class="process-math">\(B = \{(0,y) \mid 0 \leq y \lt 1\}\)</span></div></article><article class="task exercise-like" id="task-1116"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
-<div class="para" id="p-2649"><span class="process-math">\(C = \{(x,y) \mid 0 \leq x \lt 1, 0 \leq y \lt 1\}\)</span></div></article></article></article><article class="exercise exercise-like" id="ex_product_closure"><h3 class="heading"><span class="codenumber">3<span class="period">.</span></span></h3>
-<div class="introduction" id="introduction-301"><div class="para" id="p-2650">Let <span class="process-math">\(X_1\)</span> and <span class="process-math">\(X_2\)</span> be topological space and let <span class="process-math">\(A_1\)</span> be a subset of <span class="process-math">\(X_1\)</span> and <span class="process-math">\(A_2\)</span> a subset of <span class="process-math">\(X_2\text{.}\)</span> Assume the product topology on <span class="process-math">\(X_1 \times X_2\text{.}\)</span> Prove each of the following.</div></div>
+<div class="para" id="p-2653"><span class="process-math">\(A = \{(x,0) \mid 0 \leq x \lt 1\}\)</span></div></article><article class="task exercise-like" id="task-1115"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
+<div class="para" id="p-2654"><span class="process-math">\(B = \{(0,y) \mid 0 \leq y \lt 1\}\)</span></div></article><article class="task exercise-like" id="task-1116"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
+<div class="para" id="p-2655"><span class="process-math">\(C = \{(x,y) \mid 0 \leq x \lt 1, 0 \leq y \lt 1\}\)</span></div></article></article></article><article class="exercise exercise-like" id="ex_product_closure"><h3 class="heading"><span class="codenumber">3<span class="period">.</span></span></h3>
+<div class="introduction" id="introduction-301"><div class="para" id="p-2656">Let <span class="process-math">\(X_1\)</span> and <span class="process-math">\(X_2\)</span> be topological space and let <span class="process-math">\(A_1\)</span> be a subset of <span class="process-math">\(X_1\)</span> and <span class="process-math">\(A_2\)</span> a subset of <span class="process-math">\(X_2\text{.}\)</span> Assume the product topology on <span class="process-math">\(X_1 \times X_2\text{.}\)</span> Prove each of the following.</div></div>
 <article class="task exercise-like" id="task-1117"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-2651"><span class="process-math">\(\overline{A_1 \times A_2} = \overline{A_1} \times \overline{A_2}\)</span></div></article><article class="task exercise-like" id="task-1118"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-2652"><span class="process-math">\(\Int(A_1 \times A_2) \subseteq \Int{A_1} \times \Int{A_2}\)</span></div></article></article><article class="exercise exercise-like" id="ex_unions_cross_products"><h3 class="heading"><span class="codenumber">4<span class="period">.</span></span></h3>
-<div class="para logical" id="p-2653">
+<div class="para" id="p-2657"><span class="process-math">\(\overline{A_1 \times A_2} = \overline{A_1} \times \overline{A_2}\)</span></div></article><article class="task exercise-like" id="task-1118"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-2658"><span class="process-math">\(\Int(A_1 \times A_2) \subseteq \Int{A_1} \times \Int{A_2}\)</span></div></article></article><article class="exercise exercise-like" id="ex_unions_cross_products"><h3 class="heading"><span class="codenumber">4<span class="period">.</span></span></h3>
+<div class="para logical" id="p-2659">
 <div class="para">Let <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> be topological spaces and let <span class="process-math">\(\{U_{\alpha}\}_{\alpha \in I}\)</span> and <span class="process-math">\(\{V_{\beta}\}_{\beta \in J}\)</span> be collections of open sets in <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\text{,}\)</span> respectively, for some indexing sets <span class="process-math">\(I\)</span> and <span class="process-math">\(J\text{.}\)</span> Show that</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -656,7 +657,7 @@ I= (a,b) \times \{c\} = \{(x,c) \mid a \lt  x \lt  b\}
 </div>
 </div></article><article class="exercise exercise-like" id="exercise-245"><h3 class="heading"><span class="codenumber">5<span class="period">.</span></span></h3>
 <article class="task exercise-like" id="task-1119"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para logical" id="p-2654">
+<div class="para logical" id="p-2660">
 <div class="para">If <span class="process-math">\(S_1\text{,}\)</span> <span class="process-math">\(S_2\text{,}\)</span> <span class="process-math">\(T_1\text{,}\)</span> and <span class="process-math">\(T_2\)</span> are sets, show that</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -664,31 +665,31 @@ I= (a,b) \times \{c\} = \{(x,c) \mid a \lt  x \lt  b\}
 \end{equation*}
 </div>
 </div></article><article class="task exercise-like" id="task-1120"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-2655">If <span class="process-math">\(\CB_X\)</span> is a base for a topology <span class="process-math">\(\tau_X\)</span> on a space <span class="process-math">\(X\)</span> and <span class="process-math">\(\CB_Y\)</span> is a base for a topology <span class="process-math">\(\tau_Y\)</span> on a space <span class="process-math">\(Y\text{,}\)</span> show that <span class="process-math">\(\CB_X \times \CB_Y\)</span> is a base for the product topology on <span class="process-math">\(X \times Y\text{.}\)</span>
+<div class="para" id="p-2661">If <span class="process-math">\(\CB_X\)</span> is a base for a topology <span class="process-math">\(\tau_X\)</span> on a space <span class="process-math">\(X\)</span> and <span class="process-math">\(\CB_Y\)</span> is a base for a topology <span class="process-math">\(\tau_Y\)</span> on a space <span class="process-math">\(Y\text{,}\)</span> show that <span class="process-math">\(\CB_X \times \CB_Y\)</span> is a base for the product topology on <span class="process-math">\(X \times Y\text{.}\)</span>
 </div></article></article><article class="exercise exercise-like" id="ex_connected_product"><h3 class="heading"><span class="codenumber">6<span class="period">.</span></span></h3>
-<div class="para" id="p-2656">Prove that the product of any finite number of connected spaces is connected.</div></article><article class="exercise exercise-like" id="ex_compact_product"><h3 class="heading"><span class="codenumber">7<span class="period">.</span></span></h3>
-<div class="para" id="p-2657">Prove that the product of any finite number of compact spaces is compact.</div></article><article class="exercise exercise-like" id="ex_path_connected_product"><h3 class="heading"><span class="codenumber">8<span class="period">.</span></span></h3>
+<div class="para" id="p-2662">Prove that the product of any finite number of connected spaces is connected.</div></article><article class="exercise exercise-like" id="ex_compact_product"><h3 class="heading"><span class="codenumber">7<span class="period">.</span></span></h3>
+<div class="para" id="p-2663">Prove that the product of any finite number of compact spaces is compact.</div></article><article class="exercise exercise-like" id="ex_path_connected_product"><h3 class="heading"><span class="codenumber">8<span class="period">.</span></span></h3>
 <article class="task exercise-like" id="task-1121"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-2658">Prove that if <span class="process-math">\((X_1, \tau_1)\)</span> and <span class="process-math">\((X_2, \tau_2)\)</span> are path connected topological spaces, then <span class="process-math">\(X_1 \times X_2\)</span> with the product topology is a path connected topological space.</div></article><article class="task exercise-like" id="task-1122"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-2659">Prove that the product of any finite number of path connected spaces is path connected.</div></article></article><article class="exercise exercise-like" id="exercise-249"><h3 class="heading"><span class="codenumber">9<span class="period">.</span></span></h3>
-<div class="para" id="p-2660">Let <span class="process-math">\(X_1\)</span> and <span class="process-math">\(X_2\)</span> be topological spaces and <span class="process-math">\(X = X_1 \times X_2\text{.}\)</span> Is it true that if <span class="process-math">\(X\)</span> is compact, then both <span class="process-math">\(X_1\)</span> and <span class="process-math">\(X_2\)</span> are compact. Prove your answer.</div></article><article class="exercise exercise-like" id="ex_projection_open"><h3 class="heading"><span class="codenumber">10<span class="period">.</span></span></h3>
-<div class="para" id="p-2661">Let <span class="process-math">\(X_1\)</span> and <span class="process-math">\(X_2\)</span> be topological spaces and let <span class="process-math">\(\pi_i : X_1 \times X_2 \to X_i\)</span> be the projection mapping. We have shown that <span class="process-math">\(\pi_i\)</span> is continuous. Now show that <span class="process-math">\(\pi_i\)</span> is an open map for <span class="process-math">\(i\)</span> equal 1 and 2. Assume the standard product topology.</div></article><article class="exercise exercise-like" id="exercise-251"><h3 class="heading"><span class="codenumber">11<span class="period">.</span></span></h3>
-<div class="para" id="p-2662">Let <span class="process-math">\(X_1\)</span> and <span class="process-math">\(X_2\)</span> be topological spaces with cardinalities at least 2. Let <span class="process-math">\(X = X_1 \times X_2\text{.}\)</span> Prove that the product space topology on <span class="process-math">\(X = X_1 \times X_2\)</span> is the discrete topology if and only if the topologies on <span class="process-math">\(X_1\)</span> and <span class="process-math">\(X_2\)</span> are the discrete topologies.</div></article><article class="exercise exercise-like" id="exercise-252"><h3 class="heading"><span class="codenumber">12<span class="period">.</span></span></h3>
-<div class="introduction" id="introduction-302"><div class="para" id="p-2663">For each of the following, answer true if the statement is always true. If the statement is only sometimes true or never true, answer false and provide a concrete example to illustrate that the statement is false. If a statement is true, explain why. Throughout, let <span class="process-math">\(X_1\)</span> and <span class="process-math">\(X_2\)</span> be topological spaces and <span class="process-math">\(X = X_1 \times X_2\)</span> with the product topology.</div></div>
+<div class="para" id="p-2664">Prove that if <span class="process-math">\((X_1, \tau_1)\)</span> and <span class="process-math">\((X_2, \tau_2)\)</span> are path connected topological spaces, then <span class="process-math">\(X_1 \times X_2\)</span> with the product topology is a path connected topological space.</div></article><article class="task exercise-like" id="task-1122"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-2665">Prove that the product of any finite number of path connected spaces is path connected.</div></article></article><article class="exercise exercise-like" id="exercise-249"><h3 class="heading"><span class="codenumber">9<span class="period">.</span></span></h3>
+<div class="para" id="p-2666">Let <span class="process-math">\(X_1\)</span> and <span class="process-math">\(X_2\)</span> be topological spaces and <span class="process-math">\(X = X_1 \times X_2\text{.}\)</span> Is it true that if <span class="process-math">\(X\)</span> is compact, then both <span class="process-math">\(X_1\)</span> and <span class="process-math">\(X_2\)</span> are compact. Prove your answer.</div></article><article class="exercise exercise-like" id="ex_projection_open"><h3 class="heading"><span class="codenumber">10<span class="period">.</span></span></h3>
+<div class="para" id="p-2667">Let <span class="process-math">\(X_1\)</span> and <span class="process-math">\(X_2\)</span> be topological spaces and let <span class="process-math">\(\pi_i : X_1 \times X_2 \to X_i\)</span> be the projection mapping. We have shown that <span class="process-math">\(\pi_i\)</span> is continuous. Now show that <span class="process-math">\(\pi_i\)</span> is an open map for <span class="process-math">\(i\)</span> equal 1 and 2. Assume the standard product topology.</div></article><article class="exercise exercise-like" id="exercise-251"><h3 class="heading"><span class="codenumber">11<span class="period">.</span></span></h3>
+<div class="para" id="p-2668">Let <span class="process-math">\(X_1\)</span> and <span class="process-math">\(X_2\)</span> be topological spaces with cardinalities at least 2. Let <span class="process-math">\(X = X_1 \times X_2\text{.}\)</span> Prove that the product space topology on <span class="process-math">\(X = X_1 \times X_2\)</span> is the discrete topology if and only if the topologies on <span class="process-math">\(X_1\)</span> and <span class="process-math">\(X_2\)</span> are the discrete topologies.</div></article><article class="exercise exercise-like" id="exercise-252"><h3 class="heading"><span class="codenumber">12<span class="period">.</span></span></h3>
+<div class="introduction" id="introduction-302"><div class="para" id="p-2669">For each of the following, answer true if the statement is always true. If the statement is only sometimes true or never true, answer false and provide a concrete example to illustrate that the statement is false. If a statement is true, explain why. Throughout, let <span class="process-math">\(X_1\)</span> and <span class="process-math">\(X_2\)</span> be topological spaces and <span class="process-math">\(X = X_1 \times X_2\)</span> with the product topology.</div></div>
 <article class="task exercise-like" id="task-1123"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-2664">If <span class="process-math">\(A_1 \subseteq X_1\)</span> and <span class="process-math">\(A_2 \subseteq X_2\text{,}\)</span> then <span class="process-math">\((X_1 \times X_2) \setminus (A_1 \times A_2) = (X_1 \setminus A_1) \times (X_2 \setminus A_2)\text{.}\)</span>
+<div class="para" id="p-2670">If <span class="process-math">\(A_1 \subseteq X_1\)</span> and <span class="process-math">\(A_2 \subseteq X_2\text{,}\)</span> then <span class="process-math">\((X_1 \times X_2) \setminus (A_1 \times A_2) = (X_1 \setminus A_1) \times (X_2 \setminus A_2)\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-1124"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-2665">If <span class="process-math">\(A_1 \subseteq X_1\)</span> and <span class="process-math">\(A_2 \subseteq X_2\text{,}\)</span> then <span class="process-math">\(\Bdry(A_1 \times A_2) \subseteq \Bdry{A_1} \times \Bdry{A_2}\text{.}\)</span>
+<div class="para" id="p-2671">If <span class="process-math">\(A_1 \subseteq X_1\)</span> and <span class="process-math">\(A_2 \subseteq X_2\text{,}\)</span> then <span class="process-math">\(\Bdry(A_1 \times A_2) \subseteq \Bdry{A_1} \times \Bdry{A_2}\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-1125"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-2666">If <span class="process-math">\(A_1 \subseteq X_1\)</span> and <span class="process-math">\(A_2 \subseteq X_2\text{,}\)</span> then <span class="process-math">\(\Bdry{A_1} \times \Bdry{A_2} \subseteq \Bdry(A_1 \times A_2)\text{.}\)</span>
+<div class="para" id="p-2672">If <span class="process-math">\(A_1 \subseteq X_1\)</span> and <span class="process-math">\(A_2 \subseteq X_2\text{,}\)</span> then <span class="process-math">\(\Bdry{A_1} \times \Bdry{A_2} \subseteq \Bdry(A_1 \times A_2)\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-1126"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="p-2667">If <span class="process-math">\(O_1\)</span> is an open subset of <span class="process-math">\(X_1\)</span> and <span class="process-math">\(O_2\)</span> is an open subset of <span class="process-math">\(X_2\text{,}\)</span> then <span class="process-math">\(O_1 \times O_2\)</span> is an open subset of <span class="process-math">\(X_1 \times X_2\text{.}\)</span>
+<div class="para" id="p-2673">If <span class="process-math">\(O_1\)</span> is an open subset of <span class="process-math">\(X_1\)</span> and <span class="process-math">\(O_2\)</span> is an open subset of <span class="process-math">\(X_2\text{,}\)</span> then <span class="process-math">\(O_1 \times O_2\)</span> is an open subset of <span class="process-math">\(X_1 \times X_2\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-1127"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<div class="para" id="p-2668">If <span class="process-math">\(O_1\)</span> is a subset of <span class="process-math">\(X_1\)</span> and <span class="process-math">\(O_2\)</span> is a subset of <span class="process-math">\(X_2\)</span> and <span class="process-math">\(O_1 \times O_2\)</span> is an open subset of <span class="process-math">\(X_1 \times X_2\text{,}\)</span> then <span class="process-math">\(O_1\)</span> is an open subset of <span class="process-math">\(X_1\)</span> and <span class="process-math">\(O_2\)</span> is an open subset of <span class="process-math">\(X_2\text{.}\)</span>
+<div class="para" id="p-2674">If <span class="process-math">\(O_1\)</span> is a subset of <span class="process-math">\(X_1\)</span> and <span class="process-math">\(O_2\)</span> is a subset of <span class="process-math">\(X_2\)</span> and <span class="process-math">\(O_1 \times O_2\)</span> is an open subset of <span class="process-math">\(X_1 \times X_2\text{,}\)</span> then <span class="process-math">\(O_1\)</span> is an open subset of <span class="process-math">\(X_1\)</span> and <span class="process-math">\(O_2\)</span> is an open subset of <span class="process-math">\(X_2\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-1128"><h4 class="heading"><span class="codenumber">(f)</span></h4>
-<div class="para" id="p-2669">If <span class="process-math">\(C_1\)</span> is a closed subset of <span class="process-math">\(X_1\)</span> and <span class="process-math">\(C_2\)</span> is a closed subset of <span class="process-math">\(X_2\text{,}\)</span> then <span class="process-math">\(C_1 \times C_2\)</span> is a closed subset of <span class="process-math">\(X_1 \times X_2\text{.}\)</span>
+<div class="para" id="p-2675">If <span class="process-math">\(C_1\)</span> is a closed subset of <span class="process-math">\(X_1\)</span> and <span class="process-math">\(C_2\)</span> is a closed subset of <span class="process-math">\(X_2\text{,}\)</span> then <span class="process-math">\(C_1 \times C_2\)</span> is a closed subset of <span class="process-math">\(X_1 \times X_2\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-1129"><h4 class="heading"><span class="codenumber">(g)</span></h4>
-<div class="para" id="p-2670">If <span class="process-math">\(C_1\)</span> is a subset of <span class="process-math">\(X_1\)</span> and <span class="process-math">\(C_2\)</span> is a subset of <span class="process-math">\(X_2\)</span> and <span class="process-math">\(C_1 \times C_2\)</span> is a closed subset of <span class="process-math">\(X_1 \times X_2\text{,}\)</span> then <span class="process-math">\(C_1\)</span> is a closed subset of <span class="process-math">\(X_1\)</span> and <span class="process-math">\(C_2\)</span> is a closed subset of <span class="process-math">\(X_2\text{.}\)</span>
+<div class="para" id="p-2676">If <span class="process-math">\(C_1\)</span> is a subset of <span class="process-math">\(X_1\)</span> and <span class="process-math">\(C_2\)</span> is a subset of <span class="process-math">\(X_2\)</span> and <span class="process-math">\(C_1 \times C_2\)</span> is a closed subset of <span class="process-math">\(X_1 \times X_2\text{,}\)</span> then <span class="process-math">\(C_1\)</span> is a closed subset of <span class="process-math">\(X_1\)</span> and <span class="process-math">\(C_2\)</span> is a closed subset of <span class="process-math">\(X_2\text{.}\)</span>
 </div></article></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_prod_top_summ.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_prod_top_app.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

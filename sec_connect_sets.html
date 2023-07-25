@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Connected Sets</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -603,73 +604,73 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_connect_sets"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">Connected Sets</span>
 </h2>
-<div class="para" id="p-2218">As we learned in our preview activity, connected sets are those sets that cannot be separated into a union of disjoint open sets. Another characterization of connectedness is established in the next activity.</div>
+<div class="para" id="p-2224">As we learned in our preview activity, connected sets are those sets that cannot be separated into a union of disjoint open sets. Another characterization of connectedness is established in the next activity.</div>
 <article class="activity project-like" id="activity-89"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">18.2</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-256"><div class="para" id="p-2219">Let <span class="process-math">\((X, \tau)\)</span> be a topological space.</div></div>
+<div class="introduction" id="introduction-256"><div class="para" id="p-2225">Let <span class="process-math">\((X, \tau)\)</span> be a topological space.</div></div>
 <article class="task exercise-like" id="task-944"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-2220">Assume that <span class="process-math">\(X\)</span> is a connected space, and let <span class="process-math">\(A\)</span> be a subset of <span class="process-math">\(X\)</span> that is both open and closed. What happens if we combine <span class="process-math">\(A\)</span> and <span class="process-math">\(X \setminus A\text{?}\)</span> What does the fact that <span class="process-math">\(X\)</span> is connected tell us about <span class="process-math">\(A\text{?}\)</span>
+<div class="para" id="p-2226">Assume that <span class="process-math">\(X\)</span> is a connected space, and let <span class="process-math">\(A\)</span> be a subset of <span class="process-math">\(X\)</span> that is both open and closed. What happens if we combine <span class="process-math">\(A\)</span> and <span class="process-math">\(X \setminus A\text{?}\)</span> What does the fact that <span class="process-math">\(X\)</span> is connected tell us about <span class="process-math">\(A\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-945"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-2221">Now assume that the only subsets of <span class="process-math">\(X\)</span> that are both open and closed are <span class="process-math">\(\emptyset\)</span> and <span class="process-math">\(X\text{.}\)</span> Must it follow that <span class="process-math">\(X\)</span> is connected? Prove your assertion.</div></article><article class="task exercise-like" id="task-946"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-2222">Summarize the result of this activity into a theorem of the form “A topological space <span class="process-math">\((X, \tau)\)</span> is connected if and only if ...”.</div></article></article><div class="para" id="p-2223">A standard example of a connected topological space is the metric space <span class="process-math">\((\R, d_E)\text{.}\)</span>
+<div class="para" id="p-2227">Now assume that the only subsets of <span class="process-math">\(X\)</span> that are both open and closed are <span class="process-math">\(\emptyset\)</span> and <span class="process-math">\(X\text{.}\)</span> Must it follow that <span class="process-math">\(X\)</span> is connected? Prove your assertion.</div></article><article class="task exercise-like" id="task-946"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="p-2228">Summarize the result of this activity into a theorem of the form “A topological space <span class="process-math">\((X, \tau)\)</span> is connected if and only if ...”.</div></article></article><div class="para" id="p-2229">A standard example of a connected topological space is the metric space <span class="process-math">\((\R, d_E)\text{.}\)</span>
 </div>
 <article class="theorem theorem-like" id="thm_R_connected"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">18.2</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-2224">The metric space <span class="process-math">\((\R, d_E)\)</span> is a connected topological space.</div></article><article class="proof" id="proof-29"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
-<div class="para" id="p-2225">We proceed by contradiction and assume that there are nonempty open sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> such that <span class="process-math">\(\R = U \cup V\)</span> and <span class="process-math">\(U \cap V = \emptyset\text{.}\)</span> Let <span class="process-math">\(a \in U\)</span> and <span class="process-math">\(b \in V\text{.}\)</span> Since <span class="process-math">\(U \cap V = \emptyset\text{,}\)</span> we know that <span class="process-math">\(a \neq b\text{.}\)</span> Without loss of generality we can assume <span class="process-math">\(a \lt b\text{.}\)</span> Let <span class="process-math">\(U' = U \cap [a,b]\)</span> and let <span class="process-math">\(V' = V \cap [a,b]\text{.}\)</span> The set <span class="process-math">\(V'\)</span> is bounded below by <span class="process-math">\(a\text{,}\)</span> so <span class="process-math">\(x = \inf\{v \mid v \in V'\}\)</span> exists. Since <span class="process-math">\(\R = U \cup V\)</span> it must be the case that <span class="process-math">\(x \in U\)</span> or <span class="process-math">\(x \in V\text{.}\)</span>
-</div> <div class="para" id="p-2226">Suppose <span class="process-math">\(x \in U\text{.}\)</span> The fact that <span class="process-math">\(U\)</span> is an open set implies that there exists <span class="process-math">\(\epsilon \gt 0\)</span> such that <span class="process-math">\(B(x, \epsilon) \subseteq U\text{.}\)</span> But then <span class="process-math">\(B(x, \epsilon) \cap V = \emptyset\)</span> and so <span class="process-math">\(d(x,v) \geq \epsilon\)</span> for every <span class="process-math">\(v \in V\text{.}\)</span> This means that <span class="process-math">\(x+\epsilon \lt v\)</span> for every <span class="process-math">\(v \in V'\text{,}\)</span> contradicting the fact that <span class="process-math">\(x\)</span> is the greatest lower bound. We conclude that <span class="process-math">\(x \notin U\text{.}\)</span>
-</div> <div class="para" id="p-2227">It follows that <span class="process-math">\(x \in V\text{.}\)</span> Since <span class="process-math">\(a \in U\text{,}\)</span> we know that <span class="process-math">\(x \neq a\text{.}\)</span> The fact that <span class="process-math">\(V\)</span> is an open set tells us that there exists <span class="process-math">\(\delta \gt 0\)</span> such that <span class="process-math">\(B(x, \delta) \subseteq V\text{.}\)</span> We can choose <span class="process-math">\(\delta\)</span> to ensure that <span class="process-math">\(\delta \lt x-a\text{.}\)</span> Since <span class="process-math">\(x &gt; a\text{,}\)</span> the interval <span class="process-math">\((x-\delta,
+<div class="para" id="p-2230">The metric space <span class="process-math">\((\R, d_E)\)</span> is a connected topological space.</div></article><article class="proof" id="proof-29"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
+<div class="para" id="p-2231">We proceed by contradiction and assume that there are nonempty open sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> such that <span class="process-math">\(\R = U \cup V\)</span> and <span class="process-math">\(U \cap V = \emptyset\text{.}\)</span> Let <span class="process-math">\(a \in U\)</span> and <span class="process-math">\(b \in V\text{.}\)</span> Since <span class="process-math">\(U \cap V = \emptyset\text{,}\)</span> we know that <span class="process-math">\(a \neq b\text{.}\)</span> Without loss of generality we can assume <span class="process-math">\(a \lt b\text{.}\)</span> Let <span class="process-math">\(U' = U \cap [a,b]\)</span> and let <span class="process-math">\(V' = V \cap [a,b]\text{.}\)</span> The set <span class="process-math">\(V'\)</span> is bounded below by <span class="process-math">\(a\text{,}\)</span> so <span class="process-math">\(x = \inf\{v \mid v \in V'\}\)</span> exists. Since <span class="process-math">\(\R = U \cup V\)</span> it must be the case that <span class="process-math">\(x \in U\)</span> or <span class="process-math">\(x \in V\text{.}\)</span>
+</div> <div class="para" id="p-2232">Suppose <span class="process-math">\(x \in U\text{.}\)</span> The fact that <span class="process-math">\(U\)</span> is an open set implies that there exists <span class="process-math">\(\epsilon \gt 0\)</span> such that <span class="process-math">\(B(x, \epsilon) \subseteq U\text{.}\)</span> But then <span class="process-math">\(B(x, \epsilon) \cap V = \emptyset\)</span> and so <span class="process-math">\(d(x,v) \geq \epsilon\)</span> for every <span class="process-math">\(v \in V\text{.}\)</span> This means that <span class="process-math">\(x+\epsilon \lt v\)</span> for every <span class="process-math">\(v \in V'\text{,}\)</span> contradicting the fact that <span class="process-math">\(x\)</span> is the greatest lower bound. We conclude that <span class="process-math">\(x \notin U\text{.}\)</span>
+</div> <div class="para" id="p-2233">It follows that <span class="process-math">\(x \in V\text{.}\)</span> Since <span class="process-math">\(a \in U\text{,}\)</span> we know that <span class="process-math">\(x \neq a\text{.}\)</span> The fact that <span class="process-math">\(V\)</span> is an open set tells us that there exists <span class="process-math">\(\delta \gt 0\)</span> such that <span class="process-math">\(B(x, \delta) \subseteq V\text{.}\)</span> We can choose <span class="process-math">\(\delta\)</span> to ensure that <span class="process-math">\(\delta \lt x-a\text{.}\)</span> Since <span class="process-math">\(x &gt; a\text{,}\)</span> the interval <span class="process-math">\((x-\delta,
 x)\)</span> is a subset of <span class="process-math">\(V'\text{,}\)</span> and so <span class="process-math">\(x\)</span> is not a lower bound for <span class="process-math">\(V\text{.}\)</span>
-</div> <div class="para" id="p-2228">Each possibility leads to a contradiction, so we conclude that the sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> cannot exist. Therefore, <span class="process-math">\((\R, d_E)\)</span> is a connected topological space.</div></article><div class="para" id="p-2229">As you might expect, connectedness is a topological property.</div>
+</div> <div class="para" id="p-2234">Each possibility leads to a contradiction, so we conclude that the sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> cannot exist. Therefore, <span class="process-math">\((\R, d_E)\)</span> is a connected topological space.</div></article><div class="para" id="p-2235">As you might expect, connectedness is a topological property.</div>
 <article class="activity project-like" id="activity-90"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">18.3</span><span class="period">.</span>
 </h3>
 <div class="introduction" id="introduction-257">
-<div class="para" id="p-2230">Let <span class="process-math">\((X, \tau_X)\)</span> and <span class="process-math">\((Y, \tau_Y)\)</span> be topological spaces, and let <span class="process-math">\(f : X \to Y\)</span> be a continuous function. Assume that <span class="process-math">\(X\)</span> is a connected subset of <span class="process-math">\(X\text{.}\)</span> Our goal is to prove that <span class="process-math">\(f(X)\)</span> is a connected subspace of <span class="process-math">\(Y\text{.}\)</span>
-</div> <div class="para" id="p-2231">Let <span class="process-math">\(Z = f(X)\)</span> and define <span class="process-math">\(g: X \to Z\)</span> by <span class="process-math">\(g(x) = f(x)\text{.}\)</span> Then <span class="process-math">\(g\)</span> is a continuous function that maps <span class="process-math">\(X\)</span> onto <span class="process-math">\(Z\text{.}\)</span> So we consider <span class="process-math">\(g\)</span> instead of <span class="process-math">\(f\text{.}\)</span>
+<div class="para" id="p-2236">Let <span class="process-math">\((X, \tau_X)\)</span> and <span class="process-math">\((Y, \tau_Y)\)</span> be topological spaces, and let <span class="process-math">\(f : X \to Y\)</span> be a continuous function. Assume that <span class="process-math">\(X\)</span> is a connected subset of <span class="process-math">\(X\text{.}\)</span> Our goal is to prove that <span class="process-math">\(f(X)\)</span> is a connected subspace of <span class="process-math">\(Y\text{.}\)</span>
+</div> <div class="para" id="p-2237">Let <span class="process-math">\(Z = f(X)\)</span> and define <span class="process-math">\(g: X \to Z\)</span> by <span class="process-math">\(g(x) = f(x)\text{.}\)</span> Then <span class="process-math">\(g\)</span> is a continuous function that maps <span class="process-math">\(X\)</span> onto <span class="process-math">\(Z\text{.}\)</span> So we consider <span class="process-math">\(g\)</span> instead of <span class="process-math">\(f\text{.}\)</span>
 </div>
 </div>
 <article class="task exercise-like" id="task-947"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-2232">Assume to the contrary that <span class="process-math">\(Z\)</span> is not connected. What do we then assume about <span class="process-math">\(Z\text{?}\)</span>
+<div class="para" id="p-2238">Assume to the contrary that <span class="process-math">\(Z\)</span> is not connected. What do we then assume about <span class="process-math">\(Z\text{?}\)</span>
 </div></article><article class="task exercise-like" id="task-948"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="introduction" id="introduction-258"><div class="para" id="p-2233">Suppose that <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> are disjoint nonempty open sets in <span class="process-math">\(Z\)</span> such that <span class="process-math">\(U \cup V = Z\text{.}\)</span> Let <span class="process-math">\(R = g^{-1}(U)\)</span> and <span class="process-math">\(S = g^{-1}(V)\text{.}\)</span>
+<div class="introduction" id="introduction-258"><div class="para" id="p-2239">Suppose that <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> are disjoint nonempty open sets in <span class="process-math">\(Z\)</span> such that <span class="process-math">\(U \cup V = Z\text{.}\)</span> Let <span class="process-math">\(R = g^{-1}(U)\)</span> and <span class="process-math">\(S = g^{-1}(V)\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-949"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="p-2234">Explain why <span class="process-math">\(R\)</span> and <span class="process-math">\(S\)</span> are open sets in <span class="process-math">\(X\text{.}\)</span>
+<div class="para" id="p-2240">Explain why <span class="process-math">\(R\)</span> and <span class="process-math">\(S\)</span> are open sets in <span class="process-math">\(X\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-950"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
-<div class="para" id="p-2235">Show that <span class="process-math">\(R \cup S = X\text{.}\)</span> (Hint: <span class="process-math">\(X = g^{-1}(Z)\text{.}\)</span>)</div></article><article class="task exercise-like" id="task-951"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
-<div class="para" id="p-2236">Show <span class="process-math">\(R\)</span> and <span class="process-math">\(S\)</span> are nonempty sets.</div>
+<div class="para" id="p-2241">Show that <span class="process-math">\(R \cup S = X\text{.}\)</span> (Hint: <span class="process-math">\(X = g^{-1}(Z)\text{.}\)</span>)</div></article><article class="task exercise-like" id="task-951"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
+<div class="para" id="p-2242">Show <span class="process-math">\(R\)</span> and <span class="process-math">\(S\)</span> are nonempty sets.</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-29" id="hint-29"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-29"><div class="hint solution-like"><div class="para" id="p-2237">Use the fact that <span class="process-math">\(g\)</span> is a surjection.</div></div></div>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-29" id="hint-29"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-29"><div class="hint solution-like"><div class="para" id="p-2243">Use the fact that <span class="process-math">\(g\)</span> is a surjection.</div></div></div>
 </div></article><article class="task exercise-like" id="task-952"><h5 class="heading"><span class="codenumber">(iv)</span></h5>
-<div class="para" id="p-2238">Now show that <span class="process-math">\(R \cap S = \emptyset\text{.}\)</span> (Hint: <span class="process-math">\(R \cap S = g^{-1}(U) \cap g^{-1}(V)\text{.}\)</span>)</div></article></article><article class="task exercise-like" id="task-953"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-2239">Explain how we have proved the following.</div> <article class="theorem theorem-like" id="thm_connected_invariant"><h5 class="heading">
+<div class="para" id="p-2244">Now show that <span class="process-math">\(R \cap S = \emptyset\text{.}\)</span> (Hint: <span class="process-math">\(R \cap S = g^{-1}(U) \cap g^{-1}(V)\text{.}\)</span>)</div></article></article><article class="task exercise-like" id="task-953"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="p-2245">Explain how we have proved the following.</div> <article class="theorem theorem-like" id="thm_connected_invariant"><h5 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">18.3</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-2240">Let <span class="process-math">\((X, \tau_X)\)</span> and <span class="process-math">\((Y, \tau_Y)\)</span> be topological spaces, and let <span class="process-math">\(f : X \to Y\)</span> be a continuous function. If <span class="process-math">\(X\)</span> is connected, then <span class="process-math">\(f(X)\)</span> is connected.</div></article></article></article><div class="para" id="p-2241">The fact that connectedness is preserved by continuous functions means that connectedness is a property that is shared by any homeomorphic topological spaces, as the next corollary indicates.</div>
+<div class="para" id="p-2246">Let <span class="process-math">\((X, \tau_X)\)</span> and <span class="process-math">\((Y, \tau_Y)\)</span> be topological spaces, and let <span class="process-math">\(f : X \to Y\)</span> be a continuous function. If <span class="process-math">\(X\)</span> is connected, then <span class="process-math">\(f(X)\)</span> is connected.</div></article></article></article><div class="para" id="p-2247">The fact that connectedness is preserved by continuous functions means that connectedness is a property that is shared by any homeomorphic topological spaces, as the next corollary indicates.</div>
 <article class="corollary theorem-like" id="corollary-10"><h3 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">18.4</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-2242">Let <span class="process-math">\((X, \tau_X)\)</span> and <span class="process-math">\((Y, \tau_Y)\)</span> be homeomorphic topological spaces. Then <span class="process-math">\(X\)</span> is connected if and only if <span class="process-math">\(Y\)</span> is connected.</div></article><article class="proof" id="proof-30"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
-<div class="para" id="p-2243">Let <span class="process-math">\((X, \tau_X)\)</span> and <span class="process-math">\((Y, \tau_Y)\)</span> be topological spaces and let <span class="process-math">\(f: X \to Y\)</span> be a homeomorphism. Assume that <span class="process-math">\(X\)</span> is connected. Since <span class="process-math">\(f\)</span> is continuous, <a href="" class="xref" data-knowl="./knowl/thm_connected_invariant.html" title="Theorem 18.3">Theorem 18.3</a> shows that <span class="process-math">\(f(X) = Y\)</span> is connected. The reverse implication follows from the fact that <span class="process-math">\(f^{-1}\)</span> is a homeomorphism.</div></article><div class="para" id="p-2244">Recall that <span class="process-math">\((\R,d_E)\)</span> is homeomorphic to the topological subspaces <span class="process-math">\((a,b)\text{,}\)</span> <span class="process-math">\((-\infty,
+<div class="para" id="p-2248">Let <span class="process-math">\((X, \tau_X)\)</span> and <span class="process-math">\((Y, \tau_Y)\)</span> be homeomorphic topological spaces. Then <span class="process-math">\(X\)</span> is connected if and only if <span class="process-math">\(Y\)</span> is connected.</div></article><article class="proof" id="proof-30"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
+<div class="para" id="p-2249">Let <span class="process-math">\((X, \tau_X)\)</span> and <span class="process-math">\((Y, \tau_Y)\)</span> be topological spaces and let <span class="process-math">\(f: X \to Y\)</span> be a homeomorphism. Assume that <span class="process-math">\(X\)</span> is connected. Since <span class="process-math">\(f\)</span> is continuous, <a href="" class="xref" data-knowl="./knowl/thm_connected_invariant.html" title="Theorem 18.3">Theorem 18.3</a> shows that <span class="process-math">\(f(X) = Y\)</span> is connected. The reverse implication follows from the fact that <span class="process-math">\(f^{-1}\)</span> is a homeomorphism.</div></article><div class="para" id="p-2250">Recall that <span class="process-math">\((\R,d_E)\)</span> is homeomorphic to the topological subspaces <span class="process-math">\((a,b)\text{,}\)</span> <span class="process-math">\((-\infty,
 b)\text{,}\)</span> and <span class="process-math">\((a,\infty)\)</span> for any <span class="process-math">\(a, b \in \R\text{.}\)</span> The fact that <span class="process-math">\((\R, d_E)\)</span> is connected (<a href="" class="xref" data-knowl="./knowl/thm_R_connected.html" title="Theorem 18.2">Theorem 18.2</a>) allows us to conclude that all open intervals are connected. It would seem natural that all closed (or half-closed) intervals should also be connected. We address this question next. Before we get to this result, we consider an alternate formulation of connected subsets.</div>
-<div class="para" id="p-2245">Consider the set <span class="process-math">\(A = (-1,0) \cup (4,5)\)</span> in <span class="process-math">\(\R\text{.}\)</span> Let <span class="process-math">\(U = (-2,3)\)</span> and <span class="process-math">\(V=(2,6)\)</span> in <span class="process-math">\(\R\text{.}\)</span> Note that <span class="process-math">\(U' = U \cap A = (-1,0)\)</span> and <span class="process-math">\(V' = V \cap A = (4,5)\text{,}\)</span> and so <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> are open sets in <span class="process-math">\(\R\)</span> that separate the set <span class="process-math">\(A\)</span> into two disjoint pieces. We know that <span class="process-math">\(U'\)</span> and <span class="process-math">\(V'\)</span> are open in <span class="process-math">\(A\)</span> and <span class="process-math">\(A = U' \cup V'\)</span> with <span class="process-math">\(U' \cap V' = \emptyset\text{.}\)</span> So to show that a subset of a topological space <span class="process-math">\(X\)</span> is not connected, this example suggests that it suffices to find nonempty open sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> in <span class="process-math">\(X\)</span> with <span class="process-math">\(U \cap V \cap A = \emptyset\)</span> and <span class="process-math">\(A \subseteq (U \cup V)\text{.}\)</span> Note that it is not necessary to have <span class="process-math">\(U \cap V = \emptyset\text{.}\)</span> That this works in general is the result of the next theorem.</div>
+<div class="para" id="p-2251">Consider the set <span class="process-math">\(A = (-1,0) \cup (4,5)\)</span> in <span class="process-math">\(\R\text{.}\)</span> Let <span class="process-math">\(U = (-2,3)\)</span> and <span class="process-math">\(V=(2,6)\)</span> in <span class="process-math">\(\R\text{.}\)</span> Note that <span class="process-math">\(U' = U \cap A = (-1,0)\)</span> and <span class="process-math">\(V' = V \cap A = (4,5)\text{,}\)</span> and so <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> are open sets in <span class="process-math">\(\R\)</span> that separate the set <span class="process-math">\(A\)</span> into two disjoint pieces. We know that <span class="process-math">\(U'\)</span> and <span class="process-math">\(V'\)</span> are open in <span class="process-math">\(A\)</span> and <span class="process-math">\(A = U' \cup V'\)</span> with <span class="process-math">\(U' \cap V' = \emptyset\text{.}\)</span> So to show that a subset of a topological space <span class="process-math">\(X\)</span> is not connected, this example suggests that it suffices to find nonempty open sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> in <span class="process-math">\(X\)</span> with <span class="process-math">\(U \cap V \cap A = \emptyset\)</span> and <span class="process-math">\(A \subseteq (U \cup V)\text{.}\)</span> Note that it is not necessary to have <span class="process-math">\(U \cap V = \emptyset\text{.}\)</span> That this works in general is the result of the next theorem.</div>
 <article class="theorem theorem-like" id="thm_conn_subset"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">18.5</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-2246">
+<div class="para logical" id="p-2252">
 <div class="para">Let <span class="process-math">\(X\)</span> be a topological space. A subset <span class="process-math">\(A\)</span> of <span class="process-math">\(X\)</span> is disconnected if and only if there exist open sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> in <span class="process-math">\(X\)</span> with</div>
 <ul class="disc">
-<li id="li-335"><div class="para" id="p-2247"><span class="process-math">\(A \subseteq (U \cup V)\text{,}\)</span></div></li>
-<li id="li-336"><div class="para" id="p-2248"><span class="process-math">\(U \cap A \neq \emptyset\text{,}\)</span></div></li>
-<li id="li-337"><div class="para" id="p-2249">
+<li id="li-335"><div class="para" id="p-2253"><span class="process-math">\(A \subseteq (U \cup V)\text{,}\)</span></div></li>
+<li id="li-336"><div class="para" id="p-2254"><span class="process-math">\(U \cap A \neq \emptyset\text{,}\)</span></div></li>
+<li id="li-337"><div class="para" id="p-2255">
 <span class="process-math">\(V \cap A \neq \emptyset\text{,}\)</span> and</div></li>
-<li id="li-338"><div class="para" id="p-2250"><span class="process-math">\(U \cap V \cap A = \emptyset\text{.}\)</span></div></li>
+<li id="li-338"><div class="para" id="p-2256"><span class="process-math">\(U \cap V \cap A = \emptyset\text{.}\)</span></div></li>
 </ul>
 </div></article><article class="proof" id="proof-31"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
-<div class="para logical" id="p-2251">
+<div class="para logical" id="p-2257">
 <div class="para">Let <span class="process-math">\(X\)</span> be a topological space, and let <span class="process-math">\(A\)</span> be a subset of <span class="process-math">\(X\text{.}\)</span> We first assume that <span class="process-math">\(A\)</span> is disconnected and show that there are open sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> in <span class="process-math">\(X\)</span> that satisfy the given conditions. Since <span class="process-math">\(A\)</span> is disconnected, there are nonempty open sets <span class="process-math">\(U'\)</span> and <span class="process-math">\(V'\)</span> in <span class="process-math">\(A\)</span> such that <span class="process-math">\(U' \cup V' = A\)</span> and <span class="process-math">\(U' \cap V' = \emptyset\text{.}\)</span> Since <span class="process-math">\(U'\)</span> and <span class="process-math">\(V'\)</span> are open in <span class="process-math">\(A\text{,}\)</span> there exist open sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> in <span class="process-math">\(X\)</span> so that <span class="process-math">\(U' = U \cap A\)</span> and <span class="process-math">\(V' = V \cap A\text{.}\)</span> Now</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -682,23 +683,22 @@ A = U' \cup V' = (U \cap A) \cup (V \cap A) = (U \cup V) \cap A\text{,}
 U \cap V \cap A = (U \cap A) \cap (V \cap A) = U' \cap V' = \emptyset\text{.}
 \end{equation*}
 </div>
-</div> <div class="para" id="p-2252">So we have found sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> that satisfy the conditions of our theorem.</div> <div class="para" id="p-2253">The proof of the reverse implication is left to the next activity.</div></article><article class="activity project-like" id="activity-91"><h3 class="heading">
+</div> <div class="para" id="p-2258">So we have found sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> that satisfy the conditions of our theorem.</div> <div class="para" id="p-2259">The proof of the reverse implication is left to the next activity.</div></article><article class="activity project-like" id="activity-91"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">18.4</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-2254">Let <span class="process-math">\(X\)</span> be a topological space, and let <span class="process-math">\(A\)</span> be a subset of <span class="process-math">\(X\text{.}\)</span> Assume that there exist open sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> in <span class="process-math">\(X\)</span> with <span class="process-math">\(A \subseteq U \cup V\text{,}\)</span> <span class="process-math">\(U \cap A \neq \emptyset\text{,}\)</span> <span class="process-math">\(V \cap A \neq \emptyset\text{,}\)</span> and <span class="process-math">\(U \cap V \cap A = \emptyset\text{.}\)</span> Prove that <span class="process-math">\(A\)</span> is disconnected.</div></article><div class="para" id="p-2255">The conditions in <a href="" class="xref" data-knowl="./knowl/thm_conn_subset.html" title="Theorem 18.5">Theorem 18.5</a> provide a convenient way to show that a set is disconnected, and so any pair of sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> that satisfy the conditions of <a href="" class="xref" data-knowl="./knowl/thm_conn_subset.html" title="Theorem 18.5">Theorem 18.5</a> is given a special name.</div>
+<div class="para" id="p-2260">Let <span class="process-math">\(X\)</span> be a topological space, and let <span class="process-math">\(A\)</span> be a subset of <span class="process-math">\(X\text{.}\)</span> Assume that there exist open sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> in <span class="process-math">\(X\)</span> with <span class="process-math">\(A \subseteq U \cup V\text{,}\)</span> <span class="process-math">\(U \cap A \neq \emptyset\text{,}\)</span> <span class="process-math">\(V \cap A \neq \emptyset\text{,}\)</span> and <span class="process-math">\(U \cap V \cap A = \emptyset\text{.}\)</span> Prove that <span class="process-math">\(A\)</span> is disconnected.</div></article><div class="para" id="p-2261">The conditions in <a href="" class="xref" data-knowl="./knowl/thm_conn_subset.html" title="Theorem 18.5">Theorem 18.5</a> provide a convenient way to show that a set is disconnected, and so any pair of sets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> that satisfy the conditions of <a href="" class="xref" data-knowl="./knowl/thm_conn_subset.html" title="Theorem 18.5">Theorem 18.5</a> is given a special name.</div>
 <article class="definition definition-like" id="definition-73"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">18.6</span><span class="period">.</span>
-</h3>
-<div class="para logical" id="p-2256">
-<div class="para">Let <span class="process-math">\(X\)</span> be a topological space, and let <span class="process-math">\(A\)</span> be a subset of <span class="process-math">\(X\text{.}\)</span> A separation  of <span class="process-math">\(A\)</span> is a pair of nonempty open subsets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> of <span class="process-math">\(X\)</span> such that</div>
+</h3> <div class="para logical" id="p-2262">
+<div class="para">Let <span class="process-math">\(X\)</span> be a topological space, and let <span class="process-math">\(A\)</span> be a subset of <span class="process-math">\(X\text{.}\)</span> A <dfn class="terminology">separation</dfn> of <span class="process-math">\(A\)</span> is a pair of nonempty open subsets <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> of <span class="process-math">\(X\)</span> such that</div>
 <ul class="disc">
-<li id="li-339"><div class="para" id="p-2257"><span class="process-math">\(A \subseteq (U \cup V)\text{,}\)</span></div></li>
-<li id="li-340"><div class="para" id="p-2258"><span class="process-math">\(U \cap A \neq \emptyset\text{,}\)</span></div></li>
-<li id="li-341"><div class="para" id="p-2259">
+<li id="li-339"><div class="para" id="p-2263"><span class="process-math">\(A \subseteq (U \cup V)\text{,}\)</span></div></li>
+<li id="li-340"><div class="para" id="p-2264"><span class="process-math">\(U \cap A \neq \emptyset\text{,}\)</span></div></li>
+<li id="li-341"><div class="para" id="p-2265">
 <span class="process-math">\(V \cap A \neq \emptyset\text{,}\)</span> and</div></li>
-<li id="li-342"><div class="para" id="p-2260"><span class="process-math">\(U \cap V \cap A = \emptyset\text{.}\)</span></div></li>
+<li id="li-342"><div class="para" id="p-2266"><span class="process-math">\(U \cap V \cap A = \emptyset\text{.}\)</span></div></li>
 </ul>
-</div></article><div class="para" id="p-2261">If <span class="process-math">\(X\)</span> is a disconnected topological space, then a separation of <span class="process-math">\(X\)</span> is a pair <span class="process-math">\(U\text{,}\)</span> <span class="process-math">\(V\)</span> of disjoint nonempty open sets such that <span class="process-math">\(U \cup V = X\text{.}\)</span>
+</div></article><div class="para" id="p-2267">If <span class="process-math">\(X\)</span> is a disconnected topological space, then a separation of <span class="process-math">\(X\)</span> is a pair <span class="process-math">\(U\text{,}\)</span> <span class="process-math">\(V\)</span> of disjoint nonempty open sets such that <span class="process-math">\(U \cup V = X\text{.}\)</span>
 </div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_connect_top_intro.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_connect_subset_rn.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Open and Closed Sets in Subspaces</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -215,7 +240,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -240,7 +264,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -295,23 +319,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -324,23 +340,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -603,20 +604,20 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_open_closed_sub"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">Open and Closed Sets in Subspaces</span>
 </h2>
-<div class="para" id="p-1262">We saw in our preview activity that a subspace does not necessarily inherit the properties of the larger space. For example, a subset of a subspace might be open in the subspace, but not open in the larger space. However, there is a connection between the open subsets in a subspace and the open sets in the larger space.</div>
+<div class="para" id="p-1268">We saw in our preview activity that a subspace does not necessarily inherit the properties of the larger space. For example, a subset of a subspace might be open in the subspace, but not open in the larger space. However, there is a connection between the open subsets in a subspace and the open sets in the larger space.</div>
 <article class="theorem theorem-like" id="thm_relatively_open_ms"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">11.2</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-1263">Let <span class="process-math">\((X,d)\)</span> be a metric space and <span class="process-math">\(A\)</span> a subset of <span class="process-math">\(X\text{.}\)</span> A subset <span class="process-math">\(O_A\)</span> of <span class="process-math">\(A\)</span> is open in <span class="process-math">\(A\)</span> if and only if there is an open set <span class="process-math">\(O_X\)</span> in <span class="process-math">\(X\)</span> so that <span class="process-math">\(O_A = O_X \cap A\text{.}\)</span>
+<div class="para" id="p-1269">Let <span class="process-math">\((X,d)\)</span> be a metric space and <span class="process-math">\(A\)</span> a subset of <span class="process-math">\(X\text{.}\)</span> A subset <span class="process-math">\(O_A\)</span> of <span class="process-math">\(A\)</span> is open in <span class="process-math">\(A\)</span> if and only if there is an open set <span class="process-math">\(O_X\)</span> in <span class="process-math">\(X\)</span> so that <span class="process-math">\(O_A = O_X \cap A\text{.}\)</span>
 </div></article><article class="proof" id="proof-16"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
-<div class="para logical" id="p-1264">
+<div class="para logical" id="p-1270">
 <div class="para">Let <span class="process-math">\((X,d)\)</span> be a metric space and <span class="process-math">\(A\)</span> a subset of <span class="process-math">\(X\text{.}\)</span> Let <span class="process-math">\(O_A\)</span> be an open subset of <span class="process-math">\(A\text{.}\)</span> So for each <span class="process-math">\(a \in A\)</span> there is a <span class="process-math">\(\delta_a \gt 0\)</span> so that <span class="process-math">\(B_A(a, \delta_a) \subseteq O_A\text{,}\)</span> where <span class="process-math">\(B_A(a, \delta_a)\)</span> is the open ball in <span class="process-math">\(A\)</span> centered at <span class="process-math">\(a\)</span> of radius <span class="process-math">\(\delta_a\text{.}\)</span> Then, <span class="process-math">\(O_A~=~\bigcup_{a \in O_A}~B_A(a, \delta_a)\text{.}\)</span> Now let <span class="process-math">\(B_X(a, \delta_a)\)</span> be the open ball in <span class="process-math">\(X\)</span> centered at <span class="process-math">\(a\)</span> of radius <span class="process-math">\(\delta_a\text{,}\)</span> and let <span class="process-math">\(O_X = \bigcup_{a \in O_A} B_X(a, \delta_a)\text{.}\)</span> Note that</div>
 <div class="displaymath process-math">
 \begin{equation*}
 B_A(a, \delta_a)~=~B_X(a, \delta_a)~\cap~A\text{.}
 \end{equation*}
 </div>
-</div> <div class="para logical" id="p-1265">
+</div> <div class="para logical" id="p-1271">
 <div class="para">As a union of open balls in <span class="process-math">\(X\text{,}\)</span> the set <span class="process-math">\(O_X\)</span> is open in <span class="process-math">\(X\text{.}\)</span> Now</div>
 <div class="displaymath process-math" id="md-17">
 \begin{align*}
@@ -624,22 +625,22 @@ O_X \cap A = \left(\bigcup_{a \in O_A} B_X(a, \delta_a) \right) \cap A \amp = \b
 \amp = \bigcup_{a \in O_A} B_A(a, \delta_a) = O_A\text{.}
 \end{align*}
 </div>
-</div> <div class="para" id="p-1266">So there is an open set <span class="process-math">\(O_X\)</span> in <span class="process-math">\(X\)</span> such that <span class="process-math">\(O_A = O_X \cap A\text{.}\)</span>
-</div> <div class="para" id="p-1267">For the reverse implication, see the following activity.</div></article><article class="activity project-like" id="activity-50"><h3 class="heading">
+</div> <div class="para" id="p-1272">So there is an open set <span class="process-math">\(O_X\)</span> in <span class="process-math">\(X\)</span> such that <span class="process-math">\(O_A = O_X \cap A\text{.}\)</span>
+</div> <div class="para" id="p-1273">For the reverse implication, see the following activity.</div></article><article class="activity project-like" id="activity-50"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">11.2</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-145"><div class="para" id="p-1268">Let <span class="process-math">\((X,d)\)</span> be a metric space and <span class="process-math">\(A\)</span> a subset of <span class="process-math">\(X\text{.}\)</span> Suppose that <span class="process-math">\(O_A = A \cap O_X\)</span> for some set <span class="process-math">\(O_X\)</span> that is open in <span class="process-math">\(X\text{.}\)</span> In this activity we will prove that <span class="process-math">\(O_A\)</span> is an open subset of <span class="process-math">\(A\text{.}\)</span>
+<div class="introduction" id="introduction-145"><div class="para" id="p-1274">Let <span class="process-math">\((X,d)\)</span> be a metric space and <span class="process-math">\(A\)</span> a subset of <span class="process-math">\(X\text{.}\)</span> Suppose that <span class="process-math">\(O_A = A \cap O_X\)</span> for some set <span class="process-math">\(O_X\)</span> that is open in <span class="process-math">\(X\text{.}\)</span> In this activity we will prove that <span class="process-math">\(O_A\)</span> is an open subset of <span class="process-math">\(A\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-525"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-1269">Let <span class="process-math">\(a \in O_A\text{.}\)</span> Explain why there must exist a <span class="process-math">\(\delta \gt 0\)</span> such that <span class="process-math">\(B_X(a, \delta)\text{,}\)</span> the open ball in <span class="process-math">\(X\)</span> of radius <span class="process-math">\(\delta\)</span> around <span class="process-math">\(a\)</span> in <span class="process-math">\(X\text{,}\)</span> is a subset of <span class="process-math">\(O_X\text{.}\)</span>
+<div class="para" id="p-1275">Let <span class="process-math">\(a \in O_A\text{.}\)</span> Explain why there must exist a <span class="process-math">\(\delta \gt 0\)</span> such that <span class="process-math">\(B_X(a, \delta)\text{,}\)</span> the open ball in <span class="process-math">\(X\)</span> of radius <span class="process-math">\(\delta\)</span> around <span class="process-math">\(a\)</span> in <span class="process-math">\(X\text{,}\)</span> is a subset of <span class="process-math">\(O_X\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-526"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-1270">What would be a natural candidate for an open ball in <span class="process-math">\(A\)</span> centered at <span class="process-math">\(a\)</span> that is contained in <span class="process-math">\(A\text{?}\)</span> Prove your conjecture.</div></article><article class="task exercise-like" id="task-527"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-1271">What conclusion can we draw?</div></article></article><div class="para" id="p-1272">We might now wonder about closed sets in a subspace. If <span class="process-math">\(X\)</span> is a metric space and <span class="process-math">\(A\)</span> is a subspace, then by definition a subset <span class="process-math">\(C_A\)</span> of <span class="process-math">\(A\)</span> is closed if and only if <span class="process-math">\(C_A = A \setminus O_A\)</span> for some set <span class="process-math">\(O_A\)</span> that is open in <span class="process-math">\(A\text{.}\)</span> The analogy of <a href="" class="xref" data-knowl="./knowl/thm_relatively_open_ms.html" title="Theorem 11.2">Theorem 11.2</a> is true for closed sets in subspaces.</div>
+<div class="para" id="p-1276">What would be a natural candidate for an open ball in <span class="process-math">\(A\)</span> centered at <span class="process-math">\(a\)</span> that is contained in <span class="process-math">\(A\text{?}\)</span> Prove your conjecture.</div></article><article class="task exercise-like" id="task-527"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="p-1277">What conclusion can we draw?</div></article></article><div class="para" id="p-1278">We might now wonder about closed sets in a subspace. If <span class="process-math">\(X\)</span> is a metric space and <span class="process-math">\(A\)</span> is a subspace, then by definition a subset <span class="process-math">\(C_A\)</span> of <span class="process-math">\(A\)</span> is closed if and only if <span class="process-math">\(C_A = A \setminus O_A\)</span> for some set <span class="process-math">\(O_A\)</span> that is open in <span class="process-math">\(A\text{.}\)</span> The analogy of <a href="" class="xref" data-knowl="./knowl/thm_relatively_open_ms.html" title="Theorem 11.2">Theorem 11.2</a> is true for closed sets in subspaces.</div>
 <article class="theorem theorem-like" id="thm_relatively_closed_ms"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">11.3</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-1273">Let <span class="process-math">\((X,d)\)</span> be a metric space and <span class="process-math">\(A\)</span> a subset of <span class="process-math">\(X\text{.}\)</span> A subset <span class="process-math">\(C_A\)</span> of <span class="process-math">\(A\)</span> is closed in <span class="process-math">\(A\)</span> if and only if there is a closed set <span class="process-math">\(C_X\)</span> in <span class="process-math">\(X\)</span> so that <span class="process-math">\(C_A = C_X \cap A\text{.}\)</span>
-</div></article><div class="para" id="p-1274">The proof is left to <a href="" class="xref" data-knowl="./knowl/ex_relatively_closed_ms.html" title="Exercise 4">Exercise 4</a>.</div></section></div>
+<div class="para" id="p-1279">Let <span class="process-math">\((X,d)\)</span> be a metric space and <span class="process-math">\(A\)</span> a subset of <span class="process-math">\(X\text{.}\)</span> A subset <span class="process-math">\(C_A\)</span> of <span class="process-math">\(A\)</span> is closed in <span class="process-math">\(A\)</span> if and only if there is a closed set <span class="process-math">\(C_X\)</span> in <span class="process-math">\(X\)</span> so that <span class="process-math">\(C_A = C_X \cap A\text{.}\)</span>
+</div></article><div class="para" id="p-1280">The proof is left to <a href="" class="xref" data-knowl="./knowl/ex_relatively_closed_ms.html" title="Exercise 4">Exercise 4</a>.</div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_sub_metric_intro.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_prod_metric.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

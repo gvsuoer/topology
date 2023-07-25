@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Index</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Topology">
 <meta property="book:author" content="Steven Schlicker">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -218,7 +243,6 @@ window.MathJax = {
 \newcommand{\notequalwhy}{\stackrel{\cqupmath}{\neq}}
 \newcommand{\Ker}{\text{Ker}}
 \newcommand{\Image}{\text{Im}}
-\renewcommand{\qedsymbol}{\blacksquare}
 \newcommand{\polyp}{p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots a_2x^2 + a_1x + a_0}
 \newcommand{\GL}{\text{GL}}
 \newcommand{\SL}{\text{SL}}
@@ -243,7 +267,7 @@ window.MathJax = {
 \newcommand{\CS}{\mathcal{S}}
 \newcommand{\CC}{\mathcal{C}}
 \newcommand{\CB}{\mathcal{B}}
-\newcommand{\CD}{\mathcal{D}}
+\renewcommand{\CD}{\mathcal{D}}
 \newcommand{\CP}{\mathcal{P}}
 \newcommand{\CQ}{\mathcal{Q}}
 \newcommand{\CW}{\mathcal{W}}
@@ -298,23 +322,15 @@ window.MathJax = {
 \newcommand{\Span}{\text{Span}}
 \newcommand{\Range}{\text{Range}}
 \newcommand{\Domain}{\text{Domain}}
-\newcommand{\ExampleIntro}{ What follows are worked examples that use the concepts from this section.}
-\newcommand{\ExampleSolution}{ \textbf{Example Solution. }}
-\newcommand{\ActivitySolution}{ \textbf{Activity Solution. }}
-\newcommand{\ExerciseSolution}{ \textbf{Exercise Solution. }}
 \newcommand{\gr}{\varphi}
 \newcommand{\grc}{\overline{\varphi}}
 \newcommand{\hthin}{\hlinewd{.1pt}}
 \newcommand{\hthick}{\hlinewd{.7pt}}
-\newcommand{\pbreaks}{1}
-\newcommand{\pbreak}{
-}
+
 \newcommand{\lint}{\underline{}
 \int}
 \newcommand{\uint}{ \underline{}
 \int}
-\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
-\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bei}{\begin{numlist2}}
@@ -327,23 +343,8 @@ window.MathJax = {
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\btl}{\begin{thmlist}}
 \newcommand{\etl}{\end{thmlist}}
-\newcommand{\solution}{ \textbf{Solution. }}
 \renewcommand{\be}{\begin{enumerate}}
 \renewcommand{\ee}{\end{enumerate}}
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\newcommand{\xitem}{\ans \item \ansend}
-\newcommand{\obe}{\begin{oddenumerate}}
-\newcommand{\oee}{\end{oddenumerate}}
-\newcommand{\skipitems}[1]{
-}
-\renewcommand{\phi}{\varphi}
-\newcommand{\section}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
-\newcommand{\csubsection}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\floatpagefraction}{0.35}
-\renewcommand{\MakeUppercase}[1]{#1}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -614,13 +615,13 @@ window.MathJax = {
 <span class="process-math">\(T_1\)</span>-space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-51.html" title="Definition 13.16">Definition</a></span>
 </div>
 <div class="indexitem">
-<span class="process-math">\(T_2\)</span>-space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/li-259.html" title="Item 2">Item</a></span>
+<span class="process-math">\(T_2\)</span>-space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-51.html" title="Definition 13.16">Definition</a></span>
 </div>
 <div class="indexitem">
-<span class="process-math">\(T_3\)</span>-space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/li-260.html" title="Item 3">Item</a></span>
+<span class="process-math">\(T_3\)</span>-space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-51.html" title="Definition 13.16">Definition</a></span>
 </div>
 <div class="indexitem">
-<span class="process-math">\(T_4\)</span>-space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/li-261.html" title="Item 4">Item</a></span>
+<span class="process-math">\(T_4\)</span>-space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-51.html" title="Definition 13.16">Definition</a></span>
 </div>
 </div>
 <div class="indexletter" id="indexletter-a">
@@ -630,10 +631,10 @@ window.MathJax = {
 </div>
 </div>
 <div class="indexletter" id="indexletter-b">
-<div class="indexitem">basic open set<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1378.html" title="Paragraph">Paragraph</a></span>
+<div class="indexitem">basic open set<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1384.html" title="Paragraph">Paragraph</a></span>
 </div>
 <div class="indexitem">basis</div>
-<div class="subindexitem">elements<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1378.html" title="Paragraph">Paragraph</a></span>
+<div class="subindexitem">elements<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1384.html" title="Paragraph">Paragraph</a></span>
 </div>
 <div class="subindexitem">for a topology<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def_basis_topology.html" title="Definition 12.4">Definition</a></span>
 </div>
@@ -649,7 +650,7 @@ window.MathJax = {
 </div>
 </div>
 <div class="indexletter" id="indexletter-c">
-<div class="indexitem">cardinality of a set<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-316.html" title="Paragraph">Paragraph</a></span>
+<div class="indexitem">cardinality of a set<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-322.html" title="Paragraph">Paragraph</a></span>
 </div>
 <div class="indexitem">Cartesian product<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-2.html" title="Definition 1.5">Definition</a></span>
 </div>
@@ -683,7 +684,7 @@ window.MathJax = {
 </div>
 <div class="indexitem">convergent sequence in a topological space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-47.html" title="Definition 13.6">Definition</a></span>
 </div>
-<div class="indexitem">coordinate space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1293.html" title="Paragraph">Paragraph</a></span>
+<div class="indexitem">coordinate space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1299.html" title="Paragraph">Paragraph</a></span>
 </div>
 <div class="indexitem">cover<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-66.html" title="Definition 17.2">Definition</a></span>
 </div>
@@ -695,37 +696,37 @@ window.MathJax = {
 </div>
 </div>
 <div class="indexletter" id="indexletter-d">
-<div class="indexitem">derived set<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1549.html" title="Paragraph">Paragraph</a></span>
+<div class="indexitem">derived set<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1555.html" title="Paragraph">Paragraph</a></span>
 </div>
-<div class="indexitem">digital arc<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/li-386.html" title="Item">Item</a></span>
+<div class="indexitem">digital arc<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-85.html" title="Definition 20.12">Definition</a></span>
 </div>
 <div class="indexitem">digital Jordan curve<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-86.html" title="Definition 20.13">Definition</a></span>
 </div>
 <div class="indexitem">digital line topology<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/ex_digital_line_topology.html" title="Exercise 11">Exercise</a></span>
 </div>
-<div class="indexitem">digital path<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/li-385.html" title="Item">Item</a></span>
+<div class="indexitem">digital path<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-85.html" title="Definition 20.12">Definition</a></span>
 </div>
 </div>
 <div class="indexletter" id="indexletter-e"><div class="indexitem">equivalence relation<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-60.html" title="Definition 14.12">Definition</a></span>
 </div></div>
 <div class="indexletter" id="indexletter-f">
-<div class="indexitem">factor space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1293.html" title="Paragraph">Paragraph</a></span>
+<div class="indexitem">factor space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1299.html" title="Paragraph">Paragraph</a></span>
 </div>
-<div class="indexitem">finite set<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-8.html" title="Definition 2.12">Definition</a> <a href="" class="xref" data-knowl="./knowl/definition-8.html" title="Definition 2.12">Definition</a></span>
+<div class="indexitem">finite set<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-8.html" title="Definition 2.12">Definition</a></span>
 </div>
 <div class="indexitem">Frechet space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-51.html" title="Definition 13.16">Definition</a></span>
 </div>
 <div class="indexitem">function<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def_function.html" title="Definition 2.1">Definition</a></span>
 </div>
-<div class="subindexitem">bijection<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/li-71.html" title="Item 3">Item</a></span>
+<div class="subindexitem">bijection<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-4.html" title="Definition 2.2">Definition</a></span>
 </div>
 <div class="subindexitem">codomain<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/li-65.html" title="Item">Item</a></span>
 </div>
 <div class="subindexitem">domain<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/li-64.html" title="Item">Item</a></span>
 </div>
-<div class="subindexitem">identity<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-236.html" title="Paragraph">Paragraph</a></span>
+<div class="subindexitem">identity<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-242.html" title="Paragraph">Paragraph</a></span>
 </div>
-<div class="subindexitem">injection<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/li-69.html" title="Item 1">Item</a></span>
+<div class="subindexitem">injection<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-4.html" title="Definition 2.2">Definition</a></span>
 </div>
 <div class="subindexitem">inverse<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/sym_finverse.html" title="Definition 2.6">Definition</a></span>
 </div>
@@ -735,13 +736,13 @@ window.MathJax = {
 </div>
 <div class="subindexitem">restriction<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-5.html" title="Definition 2.3">Definition</a></span>
 </div>
-<div class="subindexitem">surjection<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/li-70.html" title="Item 2">Item</a></span>
+<div class="subindexitem">surjection<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-4.html" title="Definition 2.2">Definition</a></span>
 </div>
 </div>
 <div class="indexletter" id="indexletter-g">
 <div class="indexitem">Gluing Lemma<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/lemma-6.html" title="Lemma 19.6: The Gluing Lemma">Lemma</a></span>
 </div>
-<div class="indexitem">Golomb space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1351.html" title="Paragraph">Paragraph</a></span>
+<div class="indexitem">Golomb space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1357.html" title="Paragraph">Paragraph</a></span>
 </div>
 <div class="indexitem">greatest lower bound<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-15.html" title="Definition 5.2">Definition</a></span>
 </div>
@@ -753,13 +754,13 @@ window.MathJax = {
 </div>
 <div class="indexitem">Hilbert space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/exercise-124.html" title="Exercise 8">Exercise</a></span>
 </div>
-<div class="indexitem">homeomorphic spaces<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1743.html" title="Paragraph">Paragraph</a></span>
+<div class="indexitem">homeomorphic spaces<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1749.html" title="Paragraph">Paragraph</a></span>
 </div>
 <div class="indexitem">homeomorphism<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def_Homeomorphism.html" title="Definition 14.9">Definition</a></span>
 </div>
 </div>
 <div class="indexletter" id="indexletter-i">
-<div class="indexitem">identification space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1938.html" title="Paragraph">Paragraph</a></span>
+<div class="indexitem">identification space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1944.html" title="Paragraph">Paragraph</a></span>
 </div>
 <div class="indexitem">identity function<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/act_id_constant_continuous.html" title="Activity 6.2">Activity</a></span>
 </div>
@@ -769,7 +770,7 @@ window.MathJax = {
 </div>
 <div class="indexitem">induced topology<span class="indexknowl">, <a href="sec_subspace_top.html" class="internal" title="Section: The Subspace Topology">Section</a></span>
 </div>
-<div class="indexitem">infimum<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-578.html" title="Paragraph">Paragraph</a></span>
+<div class="indexitem">infimum<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-584.html" title="Paragraph">Paragraph</a></span>
 </div>
 <div class="indexitem">interior of a set<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-25.html" title="Definition 8.9">Definition</a></span>
 </div>
@@ -786,12 +787,14 @@ window.MathJax = {
 <div class="indexitem">isometry<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-56.html" title="Definition 14.6">Definition</a></span>
 </div>
 </div>
+<div class="indexletter" id="indexletter-k"><div class="indexitem">Klein bottle<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1953.html" title="Paragraph">Paragraph</a></span>
+</div></div>
 <div class="indexletter" id="indexletter-l">
-<div class="indexitem">least upper bound<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-591.html" title="Paragraph">Paragraph</a></span>
+<div class="indexitem">least upper bound<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-597.html" title="Paragraph">Paragraph</a></span>
 </div>
 <div class="indexitem">limit of a sequence in a metric space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-29.html" title="Definition 9.6">Definition</a></span>
 </div>
-<div class="indexitem">limit of a sequence in a topological space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1563.html" title="Paragraph">Paragraph</a></span>
+<div class="indexitem">limit of a sequence in a topological space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1569.html" title="Paragraph">Paragraph</a></span>
 </div>
 <div class="indexitem">limit of a sequence of real numbers<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def_sequence_limit_real.html" title="Definition 9.1">Definition</a></span>
 </div>
@@ -809,9 +812,9 @@ window.MathJax = {
 <div class="indexletter" id="indexletter-m">
 <div class="indexitem">metric<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-9.html" title="Definition 3.4">Definition</a></span>
 </div>
-<div class="subindexitem">discrete<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-486.html" title="Paragraph">Paragraph</a></span>
+<div class="subindexitem">discrete<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-492.html" title="Paragraph">Paragraph</a></span>
 </div>
-<div class="subindexitem">Euclidean<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-450.html" title="Paragraph">Paragraph</a></span>
+<div class="subindexitem">Euclidean<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-456.html" title="Paragraph">Paragraph</a></span>
 </div>
 <div class="subindexitem">Hamming<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-12.html" title="Definition 4.1">Definition</a></span>
 </div>
@@ -819,7 +822,7 @@ window.MathJax = {
 </div>
 <div class="subindexitem">Levenshtein<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-13.html" title="Definition 4.2">Definition</a></span>
 </div>
-<div class="subindexitem">max<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-448.html" title="Paragraph">Paragraph</a></span>
+<div class="subindexitem">max<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-454.html" title="Paragraph">Paragraph</a></span>
 </div>
 <div class="subindexitem">taxicab<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/exploration-3.html" title="Preview Activity 3.1">Preview Activity</a></span>
 </div>
@@ -829,9 +832,11 @@ window.MathJax = {
 </div>
 <div class="indexitem">metrically equivalent<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def_MS_metric_equivalence.html" title="Definition 14.5">Definition</a></span>
 </div>
-<div class="indexitem">metrizable topological space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1390.html" title="Paragraph">Paragraph</a></span>
+<div class="indexitem">metrizable topological space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1396.html" title="Paragraph">Paragraph</a></span>
 </div>
 <div class="indexitem">minimal neighborhood<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def_min_nghb.html" title="Definition 19.11">Definition</a></span>
+</div>
+<div class="indexitem">Möbius strip<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/activity-80.html" title="Activity 16.5">Activity</a></span>
 </div>
 </div>
 <div class="indexletter" id="indexletter-n">
@@ -839,7 +844,7 @@ window.MathJax = {
 </div>
 <div class="indexitem">neighborhood in a topological space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-40.html" title="Definition 12.6">Definition</a></span>
 </div>
-<div class="indexitem">normal topological space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/li-261.html" title="Item 4">Item</a></span>
+<div class="indexitem">normal topological space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-51.html" title="Definition 13.16">Definition</a></span>
 </div>
 </div>
 <div class="indexletter" id="indexletter-o">
@@ -849,7 +854,7 @@ window.MathJax = {
 </div>
 <div class="indexitem">open set in a metric space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-23.html" title="Definition 8.1">Definition</a></span>
 </div>
-<div class="indexitem">open sets in a topological space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1333.html" title="Paragraph">Paragraph</a></span>
+<div class="indexitem">open sets in a topological space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1339.html" title="Paragraph">Paragraph</a></span>
 </div>
 </div>
 <div class="indexletter" id="indexletter-p">
@@ -867,19 +872,19 @@ window.MathJax = {
 </div>
 <div class="indexitem">preimage of an element<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/li-68.html" title="Item">Item</a></span>
 </div>
-<div class="indexitem">product metric<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1293.html" title="Paragraph">Paragraph</a></span>
+<div class="indexitem">product metric<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1299.html" title="Paragraph">Paragraph</a></span>
 </div>
 <div class="indexitem">product metric space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-36.html" title="Definition 11.4">Definition</a></span>
 </div>
-<div class="indexitem">product topology<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def_box_topology.html" title="Definition 20.1">Definition</a> <a href="" class="xref" data-knowl="./knowl/p-2604.html" title="Paragraph">Paragraph</a></span>
+<div class="indexitem">product topology<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def_box_topology.html" title="Definition 20.1">Definition</a> <a href="" class="xref" data-knowl="./knowl/p-2610.html" title="Paragraph">Paragraph</a></span>
 </div>
-<div class="indexitem">projection functions<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-2593.html" title="Paragraph">Paragraph</a></span>
+<div class="indexitem">projection functions<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-2599.html" title="Paragraph">Paragraph</a></span>
 </div>
 </div>
 <div class="indexletter" id="indexletter-q">
 <div class="indexitem">quotient map<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-64.html" title="Definition 16.1">Definition</a></span>
 </div>
-<div class="indexitem">quotient space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-64.html" title="Definition 16.1">Definition</a> <a href="" class="xref" data-knowl="./knowl/p-1938.html" title="Paragraph">Paragraph</a></span>
+<div class="indexitem">quotient space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-64.html" title="Definition 16.1">Definition</a> <a href="" class="xref" data-knowl="./knowl/p-1944.html" title="Paragraph">Paragraph</a></span>
 </div>
 <div class="indexitem">quotient topology<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-64.html" title="Definition 16.1">Definition</a></span>
 </div>
@@ -935,7 +940,7 @@ window.MathJax = {
 </div>
 <div class="indexitem">subspace topology<span class="indexknowl">, <a href="sec_subspace_top.html" class="internal" title="Section: The Subspace Topology">Section</a></span>
 </div>
-<div class="indexitem">supremum<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-591.html" title="Paragraph">Paragraph</a></span>
+<div class="indexitem">supremum<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-597.html" title="Paragraph">Paragraph</a></span>
 </div>
 </div>
 <div class="indexletter" id="indexletter-t">
@@ -943,7 +948,7 @@ window.MathJax = {
 </div>
 <div class="indexitem">topological property<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-61.html" title="Definition 14.13">Definition</a></span>
 </div>
-<div class="indexitem">topological space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1333.html" title="Paragraph">Paragraph</a></span>
+<div class="indexitem">topological space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-1339.html" title="Paragraph">Paragraph</a></span>
 </div>
 <div class="indexitem">topologically equivalent<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/def_MS_topological_equivalence.html" title="Definition 14.8">Definition</a></span>
 </div>
@@ -975,7 +980,7 @@ window.MathJax = {
 </div>
 <div class="indexitem">topology generated by a basis<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/definition-39.html" title="Definition 12.5">Definition</a></span>
 </div>
-<div class="indexitem">triangle inequality<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-433.html" title="Paragraph">Paragraph</a></span>
+<div class="indexitem">triangle inequality<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-439.html" title="Paragraph">Paragraph</a></span>
 </div>
 </div>
 <div class="indexletter" id="indexletter-z"><div class="indexitem">Zariski topology<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/ex_TS_Zariski.html" title="Exercise 12">Exercise</a></span>
