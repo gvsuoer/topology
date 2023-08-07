@@ -44,11 +44,11 @@
         <task>
           <statement>
             <p>
-              a five point star
+              a five point star &#9734;
             </p>
-            <image source="star" width="10%">
+            <!-- <image source="star" width="10%">
               <description>a five-pointed star</description>
-            </image>
+            </image> -->
           </statement>
         </task>
         <task>
