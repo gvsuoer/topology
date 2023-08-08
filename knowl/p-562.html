@@ -13,19 +13,13 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">To compare these words, we have to be able to change letters, and add or delete letters. If <span class="process-math">\(x = x_1x_2 \cdots x_n\)</span> is a string of letters, we allow the following operations:</div>
-<dl class="description-list">
-<dt>a deletion:</dt>
-<dd><div class="para">replace <span class="process-math">\(x\)</span> with <span class="process-math">\(x_1 \cdots x_{i-1}x_{i+1} \cdots x_n\)</span> for some <span class="process-math">\(i\text{,}\)</span>
-</div></dd>
-<dt>an insertion:</dt>
-<dd><div class="para">replace <span class="process-math">\(x\)</span> with <span class="process-math">\(x_1 \cdots x_{i}yx_{i+1} \cdots x_n\text{,}\)</span> where <span class="process-math">\(y\)</span> is an allowable letter and <span class="process-math">\(0 \leq i \leq n\text{,}\)</span>
-</div></dd>
-<dt>a substitution:</dt>
-<dd><div class="para">replace <span class="process-math">\(x\)</span> with <span class="process-math">\(x_1 \cdots x_{i-1}yx_{i+1} \cdots x_n\text{,}\)</span> where <span class="process-math">\(y\)</span> is an allowable letter and <span class="process-math">\(1 \leq i \leq n\text{.}\)</span>
-</div></dd>
-</dl>
+<div class="para">Recall that for each <span class="process-math">\(i\)</span> both <span class="process-math">\(x_i\)</span> and <span class="process-math">\(y_i\)</span> are either 0 or 1. So</div>
+<div class="displaymath process-math">
+\begin{equation*}
+| x_i-y_i | = \begin{cases}0 \amp \text{ if }  x_i=y_i \\ 1 \amp \text{ if }  x_i \neq y_i. \end{cases}
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec_levenshtein.html#p-562" class="internal">in-context</a></span>
+</div>
+<span class="incontext"><a href="sec_hamming.html#p-562" class="internal">in-context</a></span>
 </body>
 </html>

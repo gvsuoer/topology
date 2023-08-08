@@ -604,12 +604,12 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_path_connect_equiv"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">Path Connectedness as an Equivalence Relation</span>
 </h2>
-<div class="para" id="p-2471">We saw that we could define an equivalence relation using connected subsets of a topological space, which partitions the space into a disjoint union of connected components. We might expect to be able to do something similar with path connectedness. The main difficulty will be transitivity. As illustrated in <a href="" class="xref" data-knowl="./knowl/F_path_transitive.html" title="Figure 19.5">Figure 19.5</a>, if we have a path <span class="process-math">\(p\)</span> from <span class="process-math">\(a\)</span> to <span class="process-math">\(b\)</span> and a path <span class="process-math">\(q\)</span> from <span class="process-math">\(b\)</span> to <span class="process-math">\(c\text{,}\)</span> it appears that we can just follow the path <span class="process-math">\(p\)</span> from <span class="process-math">\(a\)</span> to <span class="process-math">\(b\text{,}\)</span> then path <span class="process-math">\(q\)</span> from <span class="process-math">\(b\)</span> to <span class="process-math">\(c\)</span> to have a path from <span class="process-math">\(a\)</span> to <span class="process-math">\(c\text{.}\)</span> But there are two problems to consider: how do we define this path as a function from <span class="process-math">\([0,1]\)</span> into our space, and how do we know the resulting function is continuous. The next lemma will help.</div>
+<div class="para" id="p-2479">We saw that we could define an equivalence relation using connected subsets of a topological space, which partitions the space into a disjoint union of connected components. We might expect to be able to do something similar with path connectedness. The main difficulty will be transitivity. As illustrated in <a href="" class="xref" data-knowl="./knowl/F_path_transitive.html" title="Figure 19.5">Figure 19.5</a>, if we have a path <span class="process-math">\(p\)</span> from <span class="process-math">\(a\)</span> to <span class="process-math">\(b\)</span> and a path <span class="process-math">\(q\)</span> from <span class="process-math">\(b\)</span> to <span class="process-math">\(c\text{,}\)</span> it appears that we can just follow the path <span class="process-math">\(p\)</span> from <span class="process-math">\(a\)</span> to <span class="process-math">\(b\text{,}\)</span> then path <span class="process-math">\(q\)</span> from <span class="process-math">\(b\)</span> to <span class="process-math">\(c\)</span> to have a path from <span class="process-math">\(a\)</span> to <span class="process-math">\(c\text{.}\)</span> But there are two problems to consider: how do we define this path as a function from <span class="process-math">\([0,1]\)</span> into our space, and how do we know the resulting function is continuous. The next lemma will help.</div>
 <figure class="figure figure-like" id="F_path_transitive"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/path_transitive.svg" role="img" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">19.5<span class="period">.</span></span><span class="space"> </span>A path from <span class="process-math">\(a\)</span> to <span class="process-math">\(c\text{.}\)</span></figcaption></figure><article class="lemma theorem-like" id="lemma-6"><h3 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">19.6</span><span class="period">.</span><span class="space"> </span><span class="title">The Gluing Lemma.</span>
 </h3>
-<div class="para logical" id="p-2472">
+<div class="para logical" id="p-2480">
 <div class="para">Let <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> be closed subsets of a space <span class="process-math">\(X = A \cup B\text{,}\)</span> and let <span class="process-math">\(f:A \to Y\)</span> and <span class="process-math">\(g: B \to Y\)</span> be continuous functions into a space <span class="process-math">\(Y\)</span> such that <span class="process-math">\(f(x)=g(x)\)</span> for all <span class="process-math">\(x \in (A \cap B)\text{.}\)</span> Then the function <span class="process-math">\(h:X \to Y\)</span> defined by</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -619,14 +619,14 @@ h(x) = \begin{cases}f(x) \amp \text{ if }  x \in A \\ g(x) \amp \text{ if }  x \
 <div class="para">is continuous.</div>
 </div> <figure class="figure figure-like" id="F_Gluing_Lemma"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/Gluing_Lemma.svg" role="img" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">19.7<span class="period">.</span></span><span class="space"> </span>The Gluing Lemma.</figcaption></figure></article><article class="proof" id="proof-34"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
-<div class="para logical" id="p-2473">
+<div class="para logical" id="p-2481">
 <div class="para">Let <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> be closed subsets of a space <span class="process-math">\(X = A \cup B\text{,}\)</span> and let <span class="process-math">\(f:A \to Y\)</span> and <span class="process-math">\(g: B \to Y\)</span> be continuous functions into a space <span class="process-math">\(Y\)</span> such that <span class="process-math">\(f(x)=g(x)\)</span> for all <span class="process-math">\(x \in (A \cap B)\)</span> as illustrated in <a href="" class="xref" data-knowl="./knowl/F_Gluing_Lemma.html" title="Figure 19.7">Figure 19.7</a>. Define <span class="process-math">\(h: X \to Y\)</span> by</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/F_Gluing_Lemma.html">
 \begin{equation*}
 h(x) = \begin{cases}f(x) \amp \text{ if }  x \in A \\ g(x) \amp \text{ if }  x \in B. \end{cases}
 \end{equation*}
 </div>
-</div> <div class="para logical" id="p-2474">
+</div> <div class="para logical" id="p-2482">
 <div class="para">To show that <span class="process-math">\(h\)</span> is continuous, let <span class="process-math">\(C\)</span> be a closed subset of <span class="process-math">\(Y\text{.}\)</span> Then</div>
 <div class="displaymath process-math" id="md-25">
 \begin{align*}
@@ -634,7 +634,7 @@ h^{-1}(C) = \{x \in X \mid h(x) \in C\} \amp = \{x \in A \mid f(x) \in C\} \cup 
 \amp = f^{-1}(C) \cup g^{-1}(C)\text{.}
 \end{align*}
 </div>
-</div> <div class="para logical" id="p-2475">
+</div> <div class="para logical" id="p-2483">
 <div class="para">Since <span class="process-math">\(f\)</span> is continuous, <span class="process-math">\(f^{-1}(C)\)</span> is closed in the subspace topology on <span class="process-math">\(A\)</span> and since <span class="process-math">\(g\)</span> is continuous <span class="process-math">\(g^{-1}(C)\)</span> is closed in the subspace topology on <span class="process-math">\(B\text{.}\)</span> So <span class="process-math">\(f^{-1}(C) = A \cap D\)</span> and <span class="process-math">\(g^{-1}(C) = B \cap E\)</span> for some closed sets <span class="process-math">\(D\)</span> and <span class="process-math">\(E\)</span> of <span class="process-math">\(X\text{.}\)</span> The fact that <span class="process-math">\(A\)</span> is closed in <span class="process-math">\(X\)</span> implies that <span class="process-math">\(A \cap D\)</span> is closed in <span class="process-math">\(X\text{.}\)</span> Similarly, the fact that <span class="process-math">\(B\)</span> is closed in <span class="process-math">\(X\)</span> implies that <span class="process-math">\(B \cap E\)</span> is closed in <span class="process-math">\(X\text{.}\)</span> Thus,</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -642,26 +642,26 @@ h^{-1}(C) = f^{-1}(C) \cup g^{-1}(C) = (A \cap D) \cup (B \cap E)
 \end{equation*}
 </div>
 <div class="para">is a finite union of closed sets in <span class="process-math">\(X\)</span> and so is closed in <span class="process-math">\(X\text{.}\)</span> Since <span class="process-math">\(h^{-1}(C)\)</span> is closed for every closed set in <span class="process-math">\(Y\text{,}\)</span> it follows that <span class="process-math">\(h\)</span> is continuous.</div>
-</div></article><div class="para" id="p-2476">We can use the Gluing Lemma to create a path from <span class="process-math">\(a\)</span> to <span class="process-math">\(c\)</span> given a path from <span class="process-math">\(a\)</span> to <span class="process-math">\(b\)</span> and a path from <span class="process-math">\(b\)</span> to <span class="process-math">\(c\text{.}\)</span>
+</div></article><div class="para" id="p-2484">We can use the Gluing Lemma to create a path from <span class="process-math">\(a\)</span> to <span class="process-math">\(c\)</span> given a path from <span class="process-math">\(a\)</span> to <span class="process-math">\(b\)</span> and a path from <span class="process-math">\(b\)</span> to <span class="process-math">\(c\text{.}\)</span>
 </div>
 <article class="activity project-like" id="activity-100"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">19.3</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-2477">Use the Gluing Lemma to explain why the path product given in the following definition is actually a path from <span class="process-math">\(p(0)\)</span> to <span class="process-math">\(q(1)\text{.}\)</span>
+<div class="para" id="p-2485">Use the Gluing Lemma to explain why the path product given in the following definition is actually a path from <span class="process-math">\(p(0)\)</span> to <span class="process-math">\(q(1)\text{.}\)</span>
 </div> <article class="definition definition-like" id="definition-79"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">19.8</span><span class="period">.</span>
-</h4> <div class="para logical" id="p-2478">
+</h4> <div class="para logical" id="p-2486">
 <div class="para">Let <span class="process-math">\(p\)</span> be a path from <span class="process-math">\(a\)</span> to <span class="process-math">\(b\)</span> and <span class="process-math">\(q\)</span> a path from <span class="process-math">\(b\)</span> to <span class="process-math">\(c\)</span> in a space <span class="process-math">\(X\text{.}\)</span> The <dfn class="terminology">path product</dfn> <span class="process-math">\(q*p\)</span> is the path in <span class="process-math">\(X\)</span> defined by</div>
 <div class="displaymath process-math">
 \begin{equation*}
 (q*p)(x) = \begin{cases}p(2x) \amp \text{ for }  0 \leq x \leq \frac{1}{2} \\ q(2x-1) \amp \text{ for }  \frac{1}{2} \leq x \leq 1. \end{cases}
 \end{equation*}
 </div>
-</div></article></article><div class="para" id="p-2479">Now we can show that path connectedness defines an equivalence relation on a topological space.</div>
+</div></article></article><div class="para" id="p-2487">Now we can show that path connectedness defines an equivalence relation on a topological space.</div>
 <article class="activity project-like" id="activity-101"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">19.4</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-283"><div class="para logical" id="p-2480">
+<div class="introduction" id="introduction-283"><div class="para logical" id="p-2488">
 <div class="para">Let <span class="process-math">\((X,\tau)\)</span> be a topological space. Define a relation on <span class="process-math">\(X\)</span> as follows:</div>
 <div class="displaymath process-math" id="eq_path_equivalence">
 \begin{equation}
@@ -670,13 +670,13 @@ a \sim b \text{ if there is a path in }  X \text{ from }  a \text{ to }  b\text{
 </div>
 </div></div>
 <article class="task exercise-like" id="task-1064"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-2481">Explain why <span class="process-math">\(\sim\)</span> is a reflexive relation.</div></article><article class="task exercise-like" id="task-1065"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-2482">Explain why <span class="process-math">\(\sim\)</span> is a symmetric relation.</div></article><article class="task exercise-like" id="task-1066"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-2483">Explain why <span class="process-math">\(\sim\)</span> is a transitive relation.</div></article></article><div class="para" id="p-2484">Since <span class="process-math">\(\sim\)</span> as defined in <a href="" class="xref" data-knowl="./knowl/eq_path_equivalence.html" title="Equation 19.1">(19.1)</a> is an equivalence relation, the relation partitions <span class="process-math">\(X\)</span> into a union of disjoint equivalence classes. The equivalence class of an element <span class="process-math">\([a]\)</span> is called a <dfn class="terminology">path component</dfn> of <span class="process-math">\(X\text{,}\)</span> and is the largest path connected subset of <span class="process-math">\(X\)</span> that contains <span class="process-math">\(a\text{.}\)</span>
+<div class="para" id="p-2489">Explain why <span class="process-math">\(\sim\)</span> is a reflexive relation.</div></article><article class="task exercise-like" id="task-1065"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-2490">Explain why <span class="process-math">\(\sim\)</span> is a symmetric relation.</div></article><article class="task exercise-like" id="task-1066"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="p-2491">Explain why <span class="process-math">\(\sim\)</span> is a transitive relation.</div></article></article><div class="para" id="p-2492">Since <span class="process-math">\(\sim\)</span> as defined in <a href="" class="xref" data-knowl="./knowl/eq_path_equivalence.html" title="Equation 19.1">(19.1)</a> is an equivalence relation, the relation partitions <span class="process-math">\(X\)</span> into a union of disjoint equivalence classes. The equivalence class of an element <span class="process-math">\([a]\)</span> is called a <dfn class="terminology">path component</dfn> of <span class="process-math">\(X\text{,}\)</span> and is the largest path connected subset of <span class="process-math">\(X\)</span> that contains <span class="process-math">\(a\text{.}\)</span>
 </div>
 <article class="definition definition-like" id="definition-80"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">19.9</span><span class="period">.</span>
-</h3> <div class="para" id="p-2485">The <dfn class="terminology">path component</dfn> of an element <span class="process-math">\(a\)</span> in a topological space <span class="process-math">\((X, \tau)\)</span> is the largest path connected subset of <span class="process-math">\(X\)</span> that contains <span class="process-math">\(a\text{.}\)</span>
+</h3> <div class="para" id="p-2493">The <dfn class="terminology">path component</dfn> of an element <span class="process-math">\(a\)</span> in a topological space <span class="process-math">\((X, \tau)\)</span> is the largest path connected subset of <span class="process-math">\(X\)</span> that contains <span class="process-math">\(a\text{.}\)</span>
 </div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_path_connect.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_connectedness.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

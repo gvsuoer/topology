@@ -11,15 +11,44 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\((Y, d_Y)\)</span> be a metric space. For any positive real number <span class="process-math">\(r\text{,}\)</span> the <dfn class="terminology">open ball centered at <span class="process-math">\(b\)</span> of radius</dfn> <span class="process-math">\(r\)</span> in <span class="process-math">\((Y, d_Y)\)</span> is the the set</div>
+<div class="para">The Euclidean, taxicab, and max metric are all metrics on <span class="process-math">\(\R^n\text{,}\)</span> so they all provide ways to measure distances between points in <span class="process-math">\(\R^n\text{.}\)</span> These metric are different in how they define the distances.</div>
+<ul class="circle">
+<li><div class="para logical">
+<div class="para">The Euclidean metric is the standard metric that we have used through our mathematical careers. For elements <span class="process-math">\(x = (x_1, x_2, \ldots,
+x_n)\)</span> and <span class="process-math">\(y = (y_1, y_2, \ldots,
+y_n)\)</span> in <span class="process-math">\(\R^n\text{,}\)</span> the Euclidean metric <span class="process-math">\(d_E\)</span> is defined as</div>
 <div class="displaymath process-math">
-\begin{equation*}
-B(b,r) = \{y \in Y \mid d_Y(y,b) \lt  r\}\text{.}
-\end{equation*}
+\begin{align*}
+d_E(x,y) \amp =  \sqrt{(x_1-y_1)^2 + (x_2-y_2)^2 + \cdots (x_n-y_n)^2}\\
+\amp = \sqrt{\sum_{i=1}^n (x_i-y_i)^2}\text{.}
+\end{align*}
 </div>
+<div class="para">With this metric, the unit circle in <span class="process-math">\(\R^2\)</span> (the set of points a distance <span class="process-math">\(1\)</span> from the origin) is the standard unit circle we know from Euclidean geometry.</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">The taxicab metric <span class="process-math">\(d_T\)</span> is defined as</div>
+<div class="displaymath process-math">
+\begin{align*}
+d_T(x,y) \amp = |x_1-y_1| + |x_2-y_2| + \cdots + |x_n-y_n|\\
+\amp = \sum_{i=1}^n |x_i-y_i|\text{.}
+\end{align*}
 </div>
-<span class="incontext"><a href="sec_metric_space_exer.html#p-507" class="internal">in-context</a></span>
+<div class="para">The unit circle in <span class="process-math">\(\R^2\)</span> using the taxicab metric is the square with vertices <span class="process-math">\((1,0)\text{,}\)</span> <span class="process-math">\((0,1)\text{,}\)</span> <span class="process-math">\((-1,0)\text{,}\)</span> and <span class="process-math">\((0,-1)\)</span> when viewed in Euclidean geometry.</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">The max metric <span class="process-math">\(d_M\)</span> is defined by</div>
+<div class="displaymath process-math">
+\begin{align*}
+d_M(x,y) \amp = \max\{| x_1-y_1 |, | x_2-y_2 |, |x_3-y_3|, \ldots, |x_n-y_n| \}\\
+\amp = \max_{1 \leq i \leq n} \{|x_i-y_i|\}\text{.}
+\end{align*}
+</div>
+<div class="para">Under the max metric, the unit circle in <span class="process-math">\(\R^2\)</span> is the square with vertices <span class="process-math">\((1,1)\text{,}\)</span> <span class="process-math">\((-1,1)\text{,}\)</span> <span class="process-math">\((-1,-1)\text{,}\)</span> and <span class="process-math">\((1,-1)\)</span> when viewed in Euclidean geometry.</div>
+</div></li>
+</ul>
+</div>
+<span class="incontext"><a href="sec_metric_space_summ.html#p-507" class="internal">in-context</a></span>
 </body>
 </html>

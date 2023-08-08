@@ -13,12 +13,49 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
+<div class="para">Important ideas that we discussed in this section include the following.</div>
+<ul class="disc">
+<li><div class="para">A function <span class="process-math">\(f\)</span> from a nonempty set <span class="process-math">\(A\)</span> to a set <span class="process-math">\(B\)</span> is a collection of ordered pairs <span class="process-math">\((a,b)\)</span> so that for each <span class="process-math">\(a \in A\)</span> there is a pair <span class="process-math">\((a,b)\)</span> in <span class="process-math">\(f\text{,}\)</span> and if <span class="process-math">\((a,b)\)</span> and <span class="process-math">\((a,b')\)</span> are in <span class="process-math">\(f\text{,}\)</span> then <span class="process-math">\(b=b'\text{.}\)</span> If <span class="process-math">\(f\)</span> is a function we use the notation <span class="process-math">\(f(a) = b\)</span> to indicate that <span class="process-math">\((a,b) \in f\text{.}\)</span>
+</div></li>
+<li><div class="para">If <span class="process-math">\(f\)</span> is a function from <span class="process-math">\(A\)</span> to <span class="process-math">\(B\text{,}\)</span> the set <span class="process-math">\(A\)</span> is the domain of the function.</div></li>
+<li><div class="para logical">
+<div class="para">If <span class="process-math">\(f\)</span> is a function from <span class="process-math">\(A\)</span> to <span class="process-math">\(B\text{,}\)</span> the set <span class="process-math">\(B\)</span> is the codomain of the function. The set</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\{f(a) \mid a \in A\}
+\end{equation*}
+</div>
+<div class="para">is the range of the function. So the range of a function is a subset of the codomain.</div>
+</div></li>
+<li><div class="para">A function <span class="process-math">\(f\)</span> from a set <span class="process-math">\(A\)</span> to a set <span class="process-math">\(B\)</span> is an injection if, whenever <span class="process-math">\(f(a) = f(a')\)</span> for <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(a' \in A\text{,}\)</span> then <span class="process-math">\(a = a'\text{.}\)</span> The function <span class="process-math">\(f\)</span> is a surjection if, whenever <span class="process-math">\(b \in B\text{,}\)</span> then there is an <span class="process-math">\(a \in A\)</span> so that <span class="process-math">\(f(a)=b\text{.}\)</span>
+</div></li>
+<li><div class="para">If <span class="process-math">\(f\)</span> is a function from a set <span class="process-math">\(A\)</span> to a set <span class="process-math">\(B\)</span> and if <span class="process-math">\(g\)</span> is a function from <span class="process-math">\(B\)</span> to a set <span class="process-math">\(C\text{,}\)</span> then the composite <span class="process-math">\(g \circ f\)</span> is a function from <span class="process-math">\(A\)</span> to <span class="process-math">\(C\)</span> defined by <span class="process-math">\((g \circ f)(a) = g(f(a))\)</span> for every <span class="process-math">\(a \in A\text{.}\)</span>
+</div></li>
+<li><div class="para">A function <span class="process-math">\(f\)</span> from a set <span class="process-math">\(A\)</span> to a set <span class="process-math">\(B\)</span> is a bijection if <span class="process-math">\(f\)</span> is both a surjection and injection. When <span class="process-math">\(f\)</span> is a bijection from <span class="process-math">\(A\)</span> to <span class="process-math">\(B\text{,}\)</span> then <span class="process-math">\(f\)</span> has an inverse <span class="process-math">\(f^{-1}\)</span> defined by <span class="process-math">\(f^{-1}(b) = a\)</span> when <span class="process-math">\(f(a) = b\text{.}\)</span>
+</div></li>
+<li><div class="para logical">
+<div class="para">If <span class="process-math">\(f\)</span> is a function from a set <span class="process-math">\(A\)</span> to a set <span class="process-math">\(B\text{,}\)</span> and if <span class="process-math">\(C\)</span> is a subset of <span class="process-math">\(A\text{,}\)</span> then image of <span class="process-math">\(C\)</span> under <span class="process-math">\(f\)</span> is the set</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(C) = \{f(c) \mid c \in C\}\text{,}
+\end{equation*}
+</div>
+<div class="para">and if <span class="process-math">\(D\)</span> is a subset of <span class="process-math">\(Y\text{,}\)</span> the inverse image of <span class="process-math">\(D\)</span> is the set</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f^{-1}(D) = \{a \in A \mid f(a) \in D\}\text{.}
+\end{equation*}
+</div>
+</div></li>
+<li><div class="para logical">
 <div class="para">Important properties that relate images and inverse images of sets and set unions are the following. If <span class="process-math">\(f\)</span> is a function from a set <span class="process-math">\(X\)</span> to a set <span class="process-math">\(Y\text{,}\)</span> and if <span class="process-math">\(\{A_{\alpha}\}\)</span> is a collection of subsets of <span class="process-math">\(X\)</span> for <span class="process-math">\(\alpha\)</span> in some indexing set <span class="process-math">\(I\text{,}\)</span> and <span class="process-math">\(\{B_{\beta}\}\)</span> be a collection of subsets of <span class="process-math">\(Y\)</span> for <span class="process-math">\(\beta\)</span> in some indexing set <span class="process-math">\(J\text{,}\)</span> then</div>
 <ol class="lower-roman">
 <li><div class="para">
 <span class="process-math">\(f\left(\bigcup_{\alpha \in I} A_{\alpha}\right) = \bigcup_{\alpha \in I} f(A_{\alpha})\)</span> and</div></li>
 <li><div class="para"><span class="process-math">\(f^{-1}\left(\bigcup_{\beta \in J} B_{\beta}\right) = \bigcup_{\beta \in J} f^{-1}(B_{\beta})\text{.}\)</span></div></li>
 </ol>
+</div></li>
+</ul>
 </div>
 <span class="incontext"><a href="sec_func_summ.html#p-331" class="internal">in-context</a></span>
 </body>

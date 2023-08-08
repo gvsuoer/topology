@@ -11,15 +11,17 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Define <span class="process-math">\(d: \R \times \R \to \R\)</span> as</div>
+<div class="para">Explain why there exist positive numbers <span class="process-math">\(\delta_1\text{,}\)</span> <span class="process-math">\(\delta_2\text{,}\)</span> <span class="process-math">\(\delta_3\text{,}\)</span> and <span class="process-math">\(\delta_4\)</span> such that</div>
 <div class="displaymath process-math">
-\begin{equation*}
-d(x,y) = \min\{|x-y|,1\}\text{.}
-\end{equation*}
+\begin{align*}
+|f(x)-f(a)| \lt  \sqrt{\frac{\epsilon}{3}} \amp \text{ when }  |x-a| \lt  \delta_1\\
+|g(x)-g(a)| \lt   \sqrt{\frac{\epsilon}{3}}  \amp \text{ when }  |x-a| \lt  \delta_2\\
+|f(x)-f(a)| \lt  \frac{\epsilon}{3(1+|g(a)|)}  \amp \text{ when }  |x-a| \lt  \delta_3\\
+|g(x)-g(a)| \lt  \frac{\epsilon}{3(1+|f(a)|)}  \amp \text{ when }  |x-a| \lt  \delta_4\text{.}
+\end{align*}
 </div>
-<div class="para">Prove that <span class="process-math">\(d\)</span> is a metric.</div>
 </div>
 <span class="incontext"><a href="sec_cont_func_exer.html#p-746" class="internal">in-context</a></span>
 </body>

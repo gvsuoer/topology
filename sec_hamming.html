@@ -604,11 +604,11 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_hamming"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">The Hamming Metric</span>
 </h2>
-<div class="para" id="p-552">In our society, a great deal of information is communicated electronically. Bank transactions, television programs, military communications, cell phone calls, digital images, and almost any interchange one can think of either can be or is digitized and transmitted electronically. In many situations we need to compare one set of data to another (e.g., Internet searches for text strings or image matches, DNA strands), and metrics are often used for this purpose. Computers work in a binary system, that is they recognize only zeros and ones. So a digital text message is a string of zeros and ones. That is, a digital message is a collection of elements in the space <span class="process-math">\(X^n\)</span> for some positive integer <span class="process-math">\(n\text{,}\)</span> where <span class="process-math">\(X = \{0,1\}\text{.}\)</span> Each element in <span class="process-math">\(X^n\)</span> is called a <dfn class="terminology">word</dfn> - that is, a word is an element in <span class="process-math">\(X^n\)</span> denoted in the form <span class="process-math">\((x_1, x_1, \ldots,
+<div class="para" id="p-560">In our society, a great deal of information is communicated electronically. Bank transactions, television programs, military communications, cell phone calls, digital images, and almost any interchange one can think of either can be or is digitized and transmitted electronically. In many situations we need to compare one set of data to another (e.g., Internet searches for text strings or image matches, DNA strands), and metrics are often used for this purpose. Computers work in a binary system, that is they recognize only zeros and ones. So a digital text message is a string of zeros and ones. That is, a digital message is a collection of elements in the space <span class="process-math">\(X^n\)</span> for some positive integer <span class="process-math">\(n\text{,}\)</span> where <span class="process-math">\(X = \{0,1\}\text{.}\)</span> Each element in <span class="process-math">\(X^n\)</span> is called a <dfn class="terminology">word</dfn> - that is, a word is an element in <span class="process-math">\(X^n\)</span> denoted in the form <span class="process-math">\((x_1, x_1, \ldots,
 x_n)\text{.}\)</span> Just like in the English language, where not every combination of letters corresponds to words that make sense, not every word is recognizable as part of an intelligible message. We might, for example, code the letters of the alphabet by assigning numbers 1-26 to the letters, then make them elements of <span class="process-math">\(X^n\)</span> by converting to binary. The collection of all intelligible words is called a <dfn class="terminology">code</dfn>. So a code is just some subset of <span class="process-math">\(X^n\)</span> that all parties agree are sensible words. The words in a code are called <dfn class="terminology">code words</dfn>. To deal with problems that occur in transmitting digital messages, like scrambling (<dfn class="terminology">encoding</dfn>) messages, unscrambling (<dfn class="terminology">decoding</dfn>) messages, and detecting and correcting errors in messages, it is useful to have a way to measure distance between words. One way is to use the Hamming metric.</div>
 <article class="definition definition-like" id="definition-12"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.1</span><span class="period">.</span>
-</h3> <div class="para logical" id="p-553">
+</h3> <div class="para logical" id="p-561">
 <div class="para">Let <span class="process-math">\(x = (x_1, x_2, \ldots,
 x_n)\)</span> and <span class="process-math">\(y = (y_1, y_2, \ldots,
 y_n)\)</span> be words in <span class="process-math">\(X^n\text{.}\)</span> The <dfn class="terminology">Hamming distance</dfn> <span class="process-math">\(d_H\)</span> between <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> is</div>
@@ -617,7 +617,7 @@ y_n)\)</span> be words in <span class="process-math">\(X^n\text{.}\)</span> The 
 d_H(x,y) = \sum_{i=1}^n | x_i-y_i |\text{.}
 \end{equation*}
 </div>
-</div></article><div class="para logical" id="p-554">
+</div></article><div class="para logical" id="p-562">
 <div class="para">Recall that for each <span class="process-math">\(i\)</span> both <span class="process-math">\(x_i\)</span> and <span class="process-math">\(y_i\)</span> are either 0 or 1. So</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -625,13 +625,13 @@ d_H(x,y) = \sum_{i=1}^n | x_i-y_i |\text{.}
 \end{equation*}
 </div>
 </div>
-<div class="para" id="p-555">In other words, <span class="process-math">\(d_H(x,y)\)</span> counts the number of components at which <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> are different.</div>
+<div class="para" id="p-563">In other words, <span class="process-math">\(d_H(x,y)\)</span> counts the number of components at which <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> are different.</div>
 <article class="activity project-like" id="activity-19"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1</span><span class="period">.</span>
 </h3>
 <article class="task exercise-like" id="task-220"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-556">Explain why <span class="process-math">\(d_H\)</span> is a metric.</div></article><article class="task exercise-like" id="task-221"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para logical" id="p-557">
+<div class="para" id="p-564">Explain why <span class="process-math">\(d_H\)</span> is a metric.</div></article><article class="task exercise-like" id="task-221"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="p-565">
 <div class="para">Suppose we create a code</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -649,7 +649,7 @@ c_7 \amp = (0,0,1,1,0,0) \amp c_8 \amp = (0,0,1,1,1,1) \amp \amp
 <div class="para">That is, the words <span class="process-math">\(c_1\text{,}\)</span> <span class="process-math">\(c_2\text{,}\)</span> <span class="process-math">\(c_3\text{,}\)</span> <span class="process-math">\(c_4\text{,}\)</span> <span class="process-math">\(c_5\text{,}\)</span> <span class="process-math">\(c_6\text{,}\)</span> <span class="process-math">\(c_7\text{,}\)</span> <span class="process-math">\(c_8\)</span> are the only words that can comprise a message. Find <span class="process-math">\(d_H(c_2, c_8)\text{.}\)</span>
 </div>
 </div></article><article class="task exercise-like" id="task-222"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="introduction" id="introduction-57"><div class="para logical" id="p-558">
+<div class="introduction" id="introduction-57"><div class="para logical" id="p-566">
 <div class="para">Suppose we are on the receiving end of the message</div>
 <div class="displaymath process-math" id="eq_message">
 \begin{equation}
@@ -658,8 +658,8 @@ c_7 \amp = (0,0,1,1,0,0) \amp c_8 \amp = (0,0,1,1,1,1) \amp \amp
 </div>
 </div></div>
 <article class="task exercise-like" id="task-223"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="p-559">How do we know that an error has occurred in transmission of the message we received?</div></article><article class="task exercise-like" id="task-224"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
-<div class="para" id="p-560">To correct the errors in this received message, we replace the incorrect words with the code word(s) in <span class="process-math">\(C\)</span> closest to them. Correct this message. (Note that there may be more than one possible substitution. Find all of the possibilities.)</div></article></article></article></section></div>
+<div class="para" id="p-567">How do we know that an error has occurred in transmission of the message we received?</div></article><article class="task exercise-like" id="task-224"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
+<div class="para" id="p-568">To correct the errors in this received message, we replace the incorrect words with the code word(s) in <span class="process-math">\(C\)</span> closest to them. Correct this message. (Note that there may be more than one possible substitution. Find all of the possibilities.)</div></article></article></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_met_space_app.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_levenshtein.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

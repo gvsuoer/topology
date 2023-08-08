@@ -12,7 +12,13 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para">Now suppose that <span class="process-math">\(X_1\text{,}\)</span> <span class="process-math">\(X_2\text{,}\)</span> and <span class="process-math">\(Y\)</span> are topological spaces, and that <span class="process-math">\(f: Y \to X_1 \times X_2\)</span> is a function. Then <span class="process-math">\(\pi_1 \circ f\)</span> maps <span class="process-math">\(Y\)</span> to <span class="process-math">\(X_1\)</span> and <span class="process-math">\(\pi_2 \circ f\)</span> maps <span class="process-math">\(Y\)</span> to <span class="process-math">\(X_2\text{.}\)</span> Since the composition of continuous functions is continuous, we can see that if <span class="process-math">\(f\)</span> is continuous so are <span class="process-math">\(\pi_1\circ f\)</span> and <span class="process-math">\(\pi_2 \circ f\text{.}\)</span> To determine if <span class="process-math">\(f\)</span> is a continuous function, it would be useful to know if the converse is true. A key idea in the proof is the result of <a href="" class="xref" data-knowl="./knowl/ex_inverse_composite_sets.html" title="Exercise 9">Exercise 9</a> that if <span class="process-math">\(R\text{,}\)</span> <span class="process-math">\(S\text{,}\)</span> and <span class="process-math">\(T\)</span> are sets, and <span class="process-math">\(g: R \to S\)</span> and <span class="process-math">\(h : S \to T\)</span> are functions, then <span class="process-math">\((h \circ g)^{-1}(O) = g^{-1}(h^{-1}(O)\)</span> for any subset <span class="process-math">\(O\)</span> of <span class="process-math">\(T\text{.}\)</span>
+<div class="para logical">
+<div class="para">As an example, since finite intersections of intervals of the form <span class="process-math">\((-\infty,b)\)</span> and <span class="process-math">\((a, \infty)\)</span> give all intervals of the form <span class="process-math">\((a,b)\text{,}\)</span> the collection <span class="process-math">\(\CS = \{(-\infty,b), (a, \infty) \mid a, b \in \R\}\)</span> is a subbasis for the standard topology on <span class="process-math">\(\R\text{.}\)</span> Note that this collection itself is not a basis for the standard topology on <span class="process-math">\(\R\text{.}\)</span> If <span class="process-math">\(X = \Pi_{i=1}^n X_i\)</span> is a product of topological space, then another example of a subbasis is the collection</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\CS = \bigcup_{i=1}^n \{\pi_i^{-1}(O_i) \mid O_i \text{ is open in }  X_i\}\text{.}
+\end{equation*}
+</div>
 </div>
 <span class="incontext"><a href="sec_proj_cont_prod.html#p-2616" class="internal">in-context</a></span>
 </body>

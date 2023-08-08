@@ -11,8 +11,16 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para">Use an open cover for <span class="process-math">\(C\)</span> and the fact that <span class="process-math">\(C\)</span> is closed to make an open cover for <span class="process-math">\(X\text{.}\)</span>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para logical">
+<div class="para">Let <span class="process-math">\(Q'_0\)</span> be one of these sub-cubes. The collection <span class="process-math">\(\{O_{\alpha} \cap Q'_0\}_{\alpha \in I}\)</span> is an open cover of <span class="process-math">\(Q'_0\)</span> in the subspace topology. If each of these open covers has a finite sub-cover, then we can take the union of all of the <span class="process-math">\(O_{\alpha}\)</span>s over all of the finite sub-covers to obtain a finite sub-cover of <span class="process-math">\(\{O_{\alpha}\}_{\alpha \in I}\)</span> for <span class="process-math">\(Q_0\text{.}\)</span> Since our cover <span class="process-math">\(\{O_{\alpha}\}_{\alpha \in I}\)</span> for <span class="process-math">\(Q_0\)</span> has no finite sub-cover, we conclude that there is one sub-cube, <span class="process-math">\(Q_1\text{,}\)</span> for which the open cover <span class="process-math">\(\{O_{\alpha} \cap Q_1\}_{\alpha \in I}\)</span> has no finite sub-cover. Now we repeat the process and partition <span class="process-math">\(Q_1\)</span> into <span class="process-math">\(2^n\)</span> uniform sub-cubes of side length <span class="process-math">\(\frac{M}{2}= \frac{2M}{2^2}\text{.}\)</span> The same argument we just made tells us that there is a sub-cube <span class="process-math">\(Q_2\)</span> of <span class="process-math">\(Q_1\)</span> for which the open cover <span class="process-math">\(\{O_{\alpha} \cap Q_2\}_{\alpha \in I}\)</span> has no finite sub-cover (an illustration for the <span class="process-math">\(n=2\)</span> case is shown at middle in <a href="" class="xref" data-knowl="./knowl/F_Cubes.html" title="Figure 17.11">Figure 17.11</a>). We proceed inductively to obtain an infinite nested sequence</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/F_Cubes.html">
+\begin{equation*}
+Q_0 \supset Q_1 \supset Q_2 \supset Q_3 \supset \cdots \supset Q_k \supset \cdots
+\end{equation*}
+</div>
+<div class="para">of cubes such that for each <span class="process-math">\(k \in \Z\text{,}\)</span> the lengths of the sides of cube <span class="process-math">\(Q_k\)</span> are <span class="process-math">\(\frac{M}{2^{k-1}} = \frac{2M}{2^{k}}\)</span> and the open cover <span class="process-math">\(\{O_{\alpha} \cap Q_k\}_{\alpha \in I}\)</span> of <span class="process-math">\(Q_k\)</span> has no finite sub-cover. Now we show that <span class="process-math">\(\bigcap_{k=1}^{\infty} Q_k \neq \emptyset\text{.}\)</span>
+</div>
 </div>
 <span class="incontext"><a href="sec_compact_rn.html#p-2095" class="internal">in-context</a></span>
 </body>

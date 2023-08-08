@@ -604,8 +604,8 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_comp_func"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber"></span> <span class="title">Composites of Functions</span>
 </h2>
-<div class="para" id="p-243">In our past mathematical experiences, we have often added and multiplied functions together (e.g., if <span class="process-math">\(f(x) = x^2\)</span> and <span class="process-math">\(g(x) = x+1\)</span> map from <span class="process-math">\(\R\)</span> to <span class="process-math">\(\R\text{,}\)</span> then <span class="process-math">\((fg)(x) = x^2(x+1)\)</span> and <span class="process-math">\((f+g)(x) = x^2+(x+1)\)</span>). In topology, we generally don’t care about any algebraic structure a set might have, so we will move away from sums and products, and focus on compositions of functions.</div>
-<div class="para logical" id="p-244">
+<div class="para" id="p-251">In our past mathematical experiences, we have often added and multiplied functions together (e.g., if <span class="process-math">\(f(x) = x^2\)</span> and <span class="process-math">\(g(x) = x+1\)</span> map from <span class="process-math">\(\R\)</span> to <span class="process-math">\(\R\text{,}\)</span> then <span class="process-math">\((fg)(x) = x^2(x+1)\)</span> and <span class="process-math">\((f+g)(x) = x^2+(x+1)\)</span>). In topology, we generally don’t care about any algebraic structure a set might have, so we will move away from sums and products, and focus on compositions of functions.</div>
+<div class="para logical" id="p-252">
 <div class="para">The basic idea of function composition is that, when possible, the output of a function <span class="process-math">\(f\)</span> is used as the input of a function <span class="process-math">\(g\text{.}\)</span> The resulting function can be referred to as “<span class="process-math">\(f\)</span> followed by <span class="process-math">\(g\)</span>” and is called the composite of <span class="process-math">\(f\)</span> with <span class="process-math">\(g\text{.}\)</span> The notation we use is <span class="process-math">\(g \circ f\)</span> (note the order — <span class="process-math">\(f\)</span> is applied first). For example, if</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -619,10 +619,10 @@ f(x) = 3x^2 + 2 \text{ and }  g(x) = \sin(x)\text{,}
 \end{equation*}
 </div>
 </div>
-<div class="para" id="p-245">In this case, <span class="process-math">\(f(x)\text{,}\)</span> the output of the function <span class="process-math">\(f\text{,}\)</span> was used as the input for the function <span class="process-math">\(g\text{.}\)</span> This idea motivates the formal definition of the composition of two functions.</div>
+<div class="para" id="p-253">In this case, <span class="process-math">\(f(x)\text{,}\)</span> the output of the function <span class="process-math">\(f\text{,}\)</span> was used as the input for the function <span class="process-math">\(g\text{.}\)</span> This idea motivates the formal definition of the composition of two functions.</div>
 <article class="definition definition-like" id="definition-6"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.4</span><span class="period">.</span>
-</h3> <div class="para logical" id="p-246">
+</h3> <div class="para logical" id="p-254">
 <div class="para">Let <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\)</span> be nonempty sets, and let <span class="process-math">\(f : A \to B\)</span> and <span class="process-math">\(g : B \to C\)</span> be functions. The <dfn class="terminology">composite</dfn> of <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> is the function <span class="process-math">\(g \circ f : A \to C\)</span> defined by</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -631,12 +631,12 @@ f(x) = 3x^2 + 2 \text{ and }  g(x) = \sin(x)\text{,}
 </div>
 <div class="para">for all <span class="process-math">\(x \in A\)</span>
 </div>
-</div></article><div class="para" id="p-247">We refer to the function <span class="process-math">\(g \circ f\)</span> as a composite function, and we read <span class="process-math">\((g \circ f)(x)\)</span> as “<span class="process-math">\(g\)</span> of <span class="process-math">\(f\)</span>” of <span class="process-math">\(x\text{.}\)</span>
+</div></article><div class="para" id="p-255">We refer to the function <span class="process-math">\(g \circ f\)</span> as a composite function, and we read <span class="process-math">\((g \circ f)(x)\)</span> as “<span class="process-math">\(g\)</span> of <span class="process-math">\(f\)</span>” of <span class="process-math">\(x\text{.}\)</span>
 </div>
 <article class="activity project-like" id="act_functions_1"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-23"><div class="para logical" id="p-248">
+<div class="introduction" id="introduction-23"><div class="para logical" id="p-256">
 <div class="para">Let <span class="process-math">\(A = \{1, 2, 3\}\text{,}\)</span> <span class="process-math">\(B = \{a, b, c, d\}\text{,}\)</span> and <span class="process-math">\(C = \{\alpha, \beta, \gamma\}\text{.}\)</span> Define <span class="process-math">\(f : A \to B\text{,}\)</span> <span class="process-math">\(g : A \to B\text{,}\)</span> and <span class="process-math">\(h : B \to C\)</span> by</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -655,17 +655,17 @@ h(a) = \gamma, \ h(b) = \alpha, \ h(c) = \beta,  \ h(d) = \alpha\text{.}
 </div>
 </div></div>
 <article class="task exercise-like" id="task-82"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-249">Find the images of the elements in <span class="process-math">\(A\)</span> under the function <span class="process-math">\(h \circ f\text{.}\)</span>
+<div class="para" id="p-257">Find the images of the elements in <span class="process-math">\(A\)</span> under the function <span class="process-math">\(h \circ f\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-83"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-250">Find the images of the elements in <span class="process-math">\(A\)</span> under the function <span class="process-math">\(h \circ g\text{.}\)</span>
+<div class="para" id="p-258">Find the images of the elements in <span class="process-math">\(A\)</span> under the function <span class="process-math">\(h \circ g\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-84"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-251">Are any of <span class="process-math">\(f\text{,}\)</span> <span class="process-math">\(g\text{,}\)</span> and <span class="process-math">\(h\)</span> injections? Are any of <span class="process-math">\(f\text{,}\)</span> <span class="process-math">\(g\text{,}\)</span> and <span class="process-math">\(h\)</span> surjections?</div></article><article class="task exercise-like" id="task-85"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="p-252">Is <span class="process-math">\(h \circ f\)</span> an injection? Is <span class="process-math">\(h \circ f\)</span> a surjection? Explain.</div></article><article class="task exercise-like" id="task-86"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<div class="para" id="p-253">Is <span class="process-math">\(h \circ g\)</span> an injection? Is <span class="process-math">\(h \circ g\)</span> a surjection? Explain.</div></article></article><div class="para" id="p-254">In <a href="" class="xref" data-knowl="./knowl/act_functions_1.html" title="Activity 2.2">Activity 2.2</a>, we asked questions about whether certain composite functions were injections and/or surjections. In mathematics, it is typical to explore whether certain properties of an object transfer to related objects. In particular, we might want to know whether or not the composite of two injective functions is also an injection. (Of course, we could ask a similar question for surjections.) These questions are explored in the next activity.</div>
+<div class="para" id="p-259">Are any of <span class="process-math">\(f\text{,}\)</span> <span class="process-math">\(g\text{,}\)</span> and <span class="process-math">\(h\)</span> injections? Are any of <span class="process-math">\(f\text{,}\)</span> <span class="process-math">\(g\text{,}\)</span> and <span class="process-math">\(h\)</span> surjections?</div></article><article class="task exercise-like" id="task-85"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="p-260">Is <span class="process-math">\(h \circ f\)</span> an injection? Is <span class="process-math">\(h \circ f\)</span> a surjection? Explain.</div></article><article class="task exercise-like" id="task-86"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para" id="p-261">Is <span class="process-math">\(h \circ g\)</span> an injection? Is <span class="process-math">\(h \circ g\)</span> a surjection? Explain.</div></article></article><div class="para" id="p-262">In <a href="" class="xref" data-knowl="./knowl/act_functions_1.html" title="Activity 2.2">Activity 2.2</a>, we asked questions about whether certain composite functions were injections and/or surjections. In mathematics, it is typical to explore whether certain properties of an object transfer to related objects. In particular, we might want to know whether or not the composite of two injective functions is also an injection. (Of course, we could ask a similar question for surjections.) These questions are explored in the next activity.</div>
 <article class="activity project-like" id="act_composition2"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-24"><div class="para logical" id="p-255">
+<div class="introduction" id="introduction-24"><div class="para logical" id="p-263">
 <div class="para">Let the sets <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> <span class="process-math">\(C\text{,}\)</span> and <span class="process-math">\(D\)</span> be as follows:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -674,27 +674,27 @@ A = \{ a, b, c \},  B = \{p, q, r\},  C = \{u, v, w, x \},  \text{ and }   D = \
 </div>
 </div></div>
 <article class="task exercise-like" id="task-87"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-256">Construct a function <span class="process-math">\(f : A \to B\)</span> that is an injection and a function <span class="process-math">\(g : B \to C\)</span> that is an injection. In this case, is the composite function <span class="process-math">\(g \circ f : A \to C\)</span> an injection? Explain.</div></article><article class="task exercise-like" id="task-88"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-257">Construct a function <span class="process-math">\(f : A \to B\)</span> that is a surjection and a function <span class="process-math">\(g : B \to D\)</span> that is a surjection. In this case, is the composite function <span class="process-math">\(g \circ f : A \to D\)</span> a surjection? Explain.</div></article><article class="task exercise-like" id="task-89"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-258">Construct a function <span class="process-math">\(f : A \to B\)</span> that is a bijection and a function <span class="process-math">\(g : B \to A\)</span> that is a bijection. In this case, is the composite function <span class="process-math">\(g \circ f : A \to A\)</span> a bijection? Explain.</div></article></article><div class="para" id="p-259">In <a href="" class="xref" data-knowl="./knowl/act_composition2.html" title="Activity 2.3">Activity 2.3</a>, we explored some properties of composite functions related to injections, surjections, and bijections. The following theorem summarizes the results that these explorations were intended to illustrate.</div>
+<div class="para" id="p-264">Construct a function <span class="process-math">\(f : A \to B\)</span> that is an injection and a function <span class="process-math">\(g : B \to C\)</span> that is an injection. In this case, is the composite function <span class="process-math">\(g \circ f : A \to C\)</span> an injection? Explain.</div></article><article class="task exercise-like" id="task-88"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-265">Construct a function <span class="process-math">\(f : A \to B\)</span> that is a surjection and a function <span class="process-math">\(g : B \to D\)</span> that is a surjection. In this case, is the composite function <span class="process-math">\(g \circ f : A \to D\)</span> a surjection? Explain.</div></article><article class="task exercise-like" id="task-89"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="p-266">Construct a function <span class="process-math">\(f : A \to B\)</span> that is a bijection and a function <span class="process-math">\(g : B \to A\)</span> that is a bijection. In this case, is the composite function <span class="process-math">\(g \circ f : A \to A\)</span> a bijection? Explain.</div></article></article><div class="para" id="p-267">In <a href="" class="xref" data-knowl="./knowl/act_composition2.html" title="Activity 2.3">Activity 2.3</a>, we explored some properties of composite functions related to injections, surjections, and bijections. The following theorem summarizes the results that these explorations were intended to illustrate.</div>
 <article class="theorem theorem-like" id="thm_compositefunctions"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.5</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-260">
+<div class="para logical" id="p-268">
 <div class="para">Let <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\)</span> be nonempty sets, and assume that <span class="process-math">\(f : A \to B\)</span> and <span class="process-math">\(g : B \to C\text{.}\)</span>
 </div>
 <ol class="decimal">
-<li id="thm_compositefunctions1"><div class="para" id="p-261">If <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are both injections, then <span class="process-math">\((g \circ f) : A \to C\)</span> is an injection.</div></li>
-<li id="thm_compositefunctions2"><div class="para" id="p-262">If <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are both surjections, then <span class="process-math">\((g \circ f) : A \to C\)</span> is a surjection.</div></li>
-<li id="thm_compositefunctions3"><div class="para" id="p-263">If <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are both bijections, then <span class="process-math">\((g \circ f) : A \to C\)</span> is a bijection.</div></li>
+<li id="thm_compositefunctions1"><div class="para" id="p-269">If <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are both injections, then <span class="process-math">\((g \circ f) : A \to C\)</span> is an injection.</div></li>
+<li id="thm_compositefunctions2"><div class="para" id="p-270">If <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are both surjections, then <span class="process-math">\((g \circ f) : A \to C\)</span> is a surjection.</div></li>
+<li id="thm_compositefunctions3"><div class="para" id="p-271">If <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are both bijections, then <span class="process-math">\((g \circ f) : A \to C\)</span> is a bijection.</div></li>
 </ol>
 </div></article><article class="activity project-like" id="activity-9"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4</span><span class="period">.</span>
 </h3>
 <article class="task exercise-like" id="task-90"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="p-264">Prove part (1) of <a href="" class="xref" data-knowl="./knowl/thm_compositefunctions.html" title="Theorem 2.5">Theorem 2.5</a>.</div></article><article class="task exercise-like" id="task-91"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="p-265">Prove part (2) of <a href="" class="xref" data-knowl="./knowl/thm_compositefunctions.html" title="Theorem 2.5">Theorem 2.5</a>.</div></article><article class="task exercise-like" id="task-92"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="p-266">Why is the proof of part (3) of <a href="" class="xref" data-knowl="./knowl/thm_compositefunctions.html" title="Theorem 2.5">Theorem 2.5</a> a direct consequence of parts (1) and (2)?</div></article></article></section></div>
+<div class="para" id="p-272">Prove part (1) of <a href="" class="xref" data-knowl="./knowl/thm_compositefunctions.html" title="Theorem 2.5">Theorem 2.5</a>.</div></article><article class="task exercise-like" id="task-91"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="p-273">Prove part (2) of <a href="" class="xref" data-knowl="./knowl/thm_compositefunctions.html" title="Theorem 2.5">Theorem 2.5</a>.</div></article><article class="task exercise-like" id="task-92"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="p-274">Why is the proof of part (3) of <a href="" class="xref" data-knowl="./knowl/thm_compositefunctions.html" title="Theorem 2.5">Theorem 2.5</a> a direct consequence of parts (1) and (2)?</div></article></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec_func_intro.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_inv_func.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

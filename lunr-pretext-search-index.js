@@ -7,7 +7,7 @@ var ptx_lunr_docs = [
   "type": "Preface",
   "number": "",
   "title": "Preface",
-  "body": " Preface   A Free and Open-Source Topology Text  Mathematics is for everyone whether as a gateway to other fields or as background for higher level mathematics. I made this textbook available to everyone for free download for their own non-commercial use. It could be especially useful for instructors who are looking for an inquiry-based textbook, as a supplemental resource to accompany their course, or for someone interested in learning some topology on their own. If an instructor would like to make changes to any of the files to better suit their students' needs, source files for the text are available by making a request to the author.  This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. The graphic   shows that the work is licensed with the Creative Commons, that the work may be used for free by any party so long as attribution is given to the author(s), that the work and its derivatives are used in the spirit of share and share alike, and that no party may sell this work or any of its derivatives for profit. Full details may be found by visiting the Creative Commons website. or sending a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.    Goals  Over many years I have taught topology I developed pre- and in-class activities that I used to supplement the texts I had adopted. Eventually I had enough material to eliminate the reliance on outside texts and could rely on the activities. This book is built on those activities and is intended as a one semester introduction to point-set topology. The emphasis for this book is to have students be active learners and to help develop their intuition through working activities and examples. Although it is difficult to capture the essence of active learning in a textbook, this book is an attempt to do just that.  The goals for these materials are several.   To carefully introduce the ideas behind the definitions and theorems to help students develop intuition and understand the logic behind them.    To help students understand that mathematics is not done as it is often presented. I expect students to experiment through examples, make conjectures, and then refine or prove their conjectures. I believe it is important for students to learn that definitions and theorems don't pop up completely formed in the minds of most mathematicians but are the result of much thought and work.    To help students develop their communication skills in mathematics. Students are expected to read and complete activities before class and come prepared with questions. Students regularly work in groups and present their work in class. Outside of class students work pre-class activities that are designed to help review previous material and to prepare them for the discussion of new material. In addition, students also individually write solutions to exercises on which they receive significant feedback. Communication skills are essential in any discipline and a heavy focus is placed on their development.       Layout  Each section of the book contains preview activities, in-class activities, and exercises. The various types of activities serve different purposes.   Preview activities are designed for students to complete before class to motivate the upcoming topic and prepare them with the background and information they need for the class activities and discussion.    The in-class activities engage students in common intellectual experiences. These activities are used to provide motivation for the material, opportunities for students to prove substantial course material on their own, or examples to help reinforce the meanings of definitions or theorems and their proofs. The ultimate goal is to help students develop their intuition for and understanding of abstract concepts. Students often complete these in-class activities, then present their results to the entire class.     Each section contains a collection of exercises. The exercises occur at a variety of levels of difficulty and most force students to extend their knowledge in different ways. While there are some standard, classic problems that are included in the exercises, many problems are open ended and expect a student to develop and then verify conjectures.    Organization  This text begins by formally introducing sets and functions. Although these topics are familiar to students, it is my experience that the level of understanding of sets and functions for most students is not yet sufficiently deep enough to ensure success with functions throughout the course. focuses on metric spaces. It is my belief and my experience that students better understand the abstract concepts of neighborhoods, open sets, continuity, etc., if they are first experienced in a more familiar, concrete context like metric spaces. Metric spaces are easier for students to grasp than general topological spaces as they provide a notion of distance that is comforting to students. Metric spaces also allow one to introduce and motivate important topological concepts in a more familiar context. For example, by first encountering continuity of functions in a metric space setting, and revisiting the idea from different perspectives, the definition of continuity in the more abstract setting of topological spaces seems more accessible and natural. This perspective was also noted by Felix Hausdorff, who is considered as one of the founders of modern topology. His text Grundzüge der Mengenlehre (Fundamentals of Set Theory) (Felix Hausdorff, Leipzig, Von Veit, 1914. Translated to English as Set Theory by John R. Aumann et al, New York, Chelsea PublishingCompany, 1957) provided one of the first systematic treatments of topological spaces. As Hausdorff writes (p. 210) concerning the introduction of the concepts of topology following topics of basic set theory,   A quite generally worded theory of this nature would of course cause considerable complications, and deliver few positive results. But among the special examples that occupy a heightened interest belongs, apart from the theory of a [totally] ordered sets, especially the theory of point-sets in space, in fact here the foundational relationship is again a function of pairs of elements, namely the distance between two points: a function which however now is capable of infinitely many values.     To the Instructor  While this text is intended as a one semester introduction to point-set topology, there is more material in the text than my students have been able to comfortably digest in a single semester. With that in mind, some care should be taken to ensure that what you feel are the most important topics are ones that are discussed. As mentioned earlier, I think students really benefit from a thorough review and discussion of sets and functions in the first two sections. From there, the sections build on each other. However, one can omit on Applications of Metric Spaces without loss of continuity. My goal for a single semester course is to be sure that we can investigate compactness and connectedness. With this in mind, it is possible to omit on quotient spaces if time is tight.    Acknowledgments  The Grand Valley Steve University libraries provided a grant to support my colleagues, John Golden and Clark Wells, to review a draft version of this text. Their thorough reading and comments on the draft have made for a much better book. I am also indebted to my students who have all been test subjects for earlier versions of this material. Without their hard work and suggestions, this book would not exist.    To the Student  I have endeavored to keep the prerequisite material to a minimum for this text. The first two sections discuss sets and functions. Most of this material should be review for the reader, but the importance of these ideas in the subsequent sections makes it a good idea to spend time on these sections. That being said, it will be very helpful for the reader to have some background in reading and writing mathematical proofs.  The objectives of this book and its inquiry-based format place the responsibility of learning the material where it belongs on your shoulders. It is imperative that you engage in the material by completing the preview activities and the in-class activities in order to develop your intuition and understanding of the material. If you do this, and ask questions when you have them, your probability of success will be greatly enhanced. Good luck!   "
+  "body": " Preface   A Free and Open-Source Topology Text  Mathematics is for everyone whether as a gateway to other fields or as background for higher level mathematics. I made this textbook available to everyone for free download for their own non-commercial use. It could be especially useful for instructors who are looking for an inquiry-based textbook, as a supplemental resource to accompany their course, or for someone interested in learning some topology on their own. If an instructor would like to make changes to any of the files to better suit their students' needs, source files for the text are available by making a request to the author.  This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. The graphic   shows that the work is licensed with the Creative Commons, that the work may be used for free by any party so long as attribution is given to the author(s), that the work and its derivatives are used in the spirit of share and share alike, and that no party may sell this work or any of its derivatives for profit. Full details may be found by visiting the Creative Commons website. or sending a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.    Goals  Over many years I have taught topology I developed pre- and in-class activities that I used to supplement the texts I had adopted. Eventually I had enough material to eliminate the reliance on outside texts and could rely on the activities. This book is built on those activities and is intended as a one semester introduction to point-set topology. The emphasis for this book is to have students be active learners and to help develop their intuition through working activities and examples. Although it is difficult to capture the essence of active learning in a textbook, this book is an attempt to do just that.  The goals for these materials are several.   To carefully introduce the ideas behind the definitions and theorems to help students develop intuition and understand the logic behind them.    To help students understand that mathematics is not done as it is often presented. I expect students to experiment through examples, make conjectures, and then refine or prove their conjectures. I believe it is important for students to learn that definitions and theorems don't pop up completely formed in the minds of most mathematicians but are the result of much thought and work.    To help students develop their communication skills in mathematics. Students are expected to read and complete activities before class and come prepared with questions. Students regularly work in groups and present their work in class. Outside of class students work pre-class activities that are designed to help review previous material and to prepare them for the discussion of new material. In addition, students also individually write solutions to exercises on which they receive significant feedback. Communication skills are essential in any discipline and a heavy focus is placed on their development.       Layout  Each section of the book contains preview activities, in-class activities, and exercises. The various types of activities serve different purposes.   Preview activities are designed for students to complete before class to motivate the upcoming topic and prepare them with the background and information they need for the class activities and discussion.    The in-class activities engage students in common intellectual experiences. These activities are used to provide motivation for the material, opportunities for students to prove substantial course material on their own, or examples to help reinforce the meanings of definitions or theorems and their proofs. The ultimate goal is to help students develop their intuition for and understanding of abstract concepts. Students often complete these in-class activities, then present their results to the entire class.     Each section contains a collection of exercises. The exercises occur at a variety of levels of difficulty and most force students to extend their knowledge in different ways. While there are some standard, classic problems that are included in the exercises, many problems are open ended and expect a student to develop and then verify conjectures.    Organization  This text begins by formally introducing sets and functions. Although these topics are familiar to students, it is my experience that the level of understanding of sets and functions for most students is not yet sufficiently deep enough to ensure success with functions throughout the course. focuses on metric spaces. It is my belief and my experience that students better understand the abstract concepts of neighborhoods, open sets, continuity, etc., if they are first experienced in a more familiar, concrete context like metric spaces. Metric spaces are easier for students to grasp than general topological spaces as they provide a notion of distance that is comforting to students. Metric spaces also allow one to introduce and motivate important topological concepts in a more familiar context. For example, by first encountering continuity of functions in a metric space setting, and revisiting the idea from different perspectives, the definition of continuity in the more abstract setting of topological spaces seems more accessible and natural. This perspective was also noted by Felix Hausdorff, who is considered as one of the founders of modern topology. His text Grundzüge der Mengenlehre (Fundamentals of Set Theory) (Felix Hausdorff, Leipzig, Von Veit, 1914. Translated to English as Set Theory by John R. Aumann et al, New York, Chelsea PublishingCompany, 1957) provided one of the first systematic treatments of topological spaces. As Hausdorff writes (p. 210) concerning the introduction of the concepts of topology following topics of basic set theory,   A quite generally worded theory of this nature would of course cause considerable complications, and deliver few positive results. But among the special examples that occupy a heightened interest belongs, apart from the theory of a [totally] ordered sets, especially the theory of point-sets in space, in fact here the foundational relationship is again a function of pairs of elements, namely the distance between two points: a function which however now is capable of infinitely many values.     To the Instructor  While this text is intended as a one semester introduction to point-set topology, there is more material in the text than my students have been able to comfortably digest in a single semester. With that in mind, some care should be taken to ensure that what you feel are the most important topics are ones that are discussed. As mentioned earlier, I think students really benefit from a thorough review and discussion of sets and functions in the first two sections. From there, the sections build on each other. However, one can omit on Applications of Metric Spaces without loss of continuity. My goal for a single semester course is to be sure that we can investigate compactness and connectedness. With this in mind, it is possible to omit on quotient spaces if time is tight.    Acknowledgments  The Grand Valley Steve University libraries provided a grant to support my colleagues, John Golden and Clark Wells, to review a draft version of this text. Their thorough reading and comments on the draft have made for a much better book. I am also indebted to my students who have all been test subjects for earlier versions of this material. Without their hard work and suggestions, this book would not exist.  The HTML version of the text is possible because of the work of Rob Beezer and the PreTeXt team for the development of the PreTeXt platform. David Farmer at the American Institute of Mathematics provided an initial PreTeXt conversion. From this version, Ian Curtis, Editorial Assistant for the GVSU Libraries, as part of the Accelerating Open Educational Resources Initiative at Grand Valley State University , invested a significant amount of time and effort to create the PreTeXt version that you see. This work was conducted with support from the University Libraries and the GVSU President's Innovation Fund.  The code used to generate this book can be found in the GVSU OER GitHub repository . This includes the PreTeXt XML files, figures, customization files (XSL), and the output (HTML and PDF). Contributors are encouraged to submit an issue or a pull request with changes, especially regarding accessibility (as mentioned below in ).    Accessibility  In creating this PreTeXt version we (the author and the Grand Valley State University Libraries) strive to ensure our tools, devices, services, and environments are available to and usable by as many people as possible.  The web version of Topology: An Inquiry-Based Approach incorporates the following features to support accessibility:   All content can be navigated by use of a keyboard    Links, headings, and tables have been designed to work with screen readers    Mathematics in PreTeXt are rendered with MathJax so they can be understood by people using screen readers and\/or other assistive devices     We are always looking for how we can make our resources more accessible. If you are having problems accessing this resource, please contact us by email to let us know.    To the Student  I have endeavored to keep the prerequisite material to a minimum for this text. The first two sections discuss sets and functions. Most of this material should be review for the reader, but the importance of these ideas in the subsequent sections makes it a good idea to spend time on these sections. That being said, it will be very helpful for the reader to have some background in reading and writing mathematical proofs.  The objectives of this book and its inquiry-based format place the responsibility of learning the material where it belongs on your shoulders. It is imperative that you engage in the material by completing the preview activities and the in-class activities in order to develop your intuition and understanding of the material. If you do this, and ask questions when you have them, your probability of success will be greatly enhanced. Good luck!   "
 },
 {
   "id": "sec_sets_intro",
@@ -34,7 +34,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "The Basic Idea of Topology",
-  "body": " The Basic Idea of Topology  If you like geometry, you will probably like topology. Geometry is the study of objects with certain attributes (e.g., shape and size), while topology is more general than geometry. In topology, we aren't concerned about the attributes (shape and size) of an object, only about those characteristics that don't change when we transform the object in different ways (any way that doesn't involve tearing or poking holes the object). There are lots of really interesting theorems in topology for example, the Hairy Ball Theorem which states that if you have a ball with hair all over it (think of a tribble from Star Trek if that isn't too old of a reference), it is impossible to comb the hairs continuously and have all the hairs lay flat. Some hair must be sticking straight up!    Take a pipe cleaner, a rubber band, or a piece of string and make a square from it. You are allowed to change the square by moving parts of the square without breaking it or lifting it off the surface it is on. To which of the following shapes can you transform your square? Explain.   a circle   the letter S    a five point star   a five-pointed star    the letter D     Now take some play-doh (if you don't have any play-doh, just use your imagination). Use the play-doh (or your imagination) to determine which of the following shape can be transformed into others without breaking or making holes.   a filled square   a doughnut   a bowl   a coffee mug with handle    This idea of transforming one set into another as we explored in is formally done with functions. As we progress through this subject, we will need to have more rigorous definitions of functions and sets. We begin with sets and discuss functions in .  "
+  "body": " The Basic Idea of Topology  If you like geometry, you will probably like topology. Geometry is the study of objects with certain attributes (e.g., shape and size), while topology is more general than geometry. In topology, we aren't concerned about the attributes (shape and size) of an object, only about those characteristics that don't change when we transform the object in different ways (any way that doesn't involve tearing or poking holes the object). There are lots of really interesting theorems in topology for example, the Hairy Ball Theorem which states that if you have a ball with hair all over it (think of a tribble from Star Trek if that isn't too old of a reference), it is impossible to comb the hairs continuously and have all the hairs lay flat. Some hair must be sticking straight up!    Take a pipe cleaner, a rubber band, or a piece of string and make a square from it. You are allowed to change the square by moving parts of the square without breaking it or lifting it off the surface it is on. To which of the following shapes can you transform your square? Explain.   a circle   the letter S    a five point star ☆    the letter D     Now take some play-doh (if you don't have any play-doh, just use your imagination). Use the play-doh (or your imagination) to determine which of the following shape can be transformed into others without breaking or making holes.   a filled square   a doughnut   a bowl   a coffee mug with handle    This idea of transforming one set into another as we explored in is formally done with functions. As we progress through this subject, we will need to have more rigorous definitions of functions and sets. We begin with sets and discuss functions in .  "
 },
 {
   "id": "act_rubber_sheet",
@@ -43,7 +43,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "1.2",
   "title": "",
-  "body": "  Take a pipe cleaner, a rubber band, or a piece of string and make a square from it. You are allowed to change the square by moving parts of the square without breaking it or lifting it off the surface it is on. To which of the following shapes can you transform your square? Explain.   a circle   the letter S    a five point star   a five-pointed star    the letter D     Now take some play-doh (if you don't have any play-doh, just use your imagination). Use the play-doh (or your imagination) to determine which of the following shape can be transformed into others without breaking or making holes.   a filled square   a doughnut   a bowl   a coffee mug with handle   "
+  "body": "  Take a pipe cleaner, a rubber band, or a piece of string and make a square from it. You are allowed to change the square by moving parts of the square without breaking it or lifting it off the surface it is on. To which of the following shapes can you transform your square? Explain.   a circle   the letter S    a five point star ☆    the letter D     Now take some play-doh (if you don't have any play-doh, just use your imagination). Use the play-doh (or your imagination) to determine which of the following shape can be transformed into others without breaking or making holes.   a filled square   a doughnut   a bowl   a coffee mug with handle   "
 },
 {
   "id": "sec_intervals",
@@ -64,18 +64,18 @@ var ptx_lunr_docs = [
   "body": " interval   A subset of is an interval if for all , , and in (allowing for or to be ) with , if and are in , then is in .   "
 },
 {
-  "id": "p-54",
+  "id": "p-62",
   "level": "2",
-  "url": "sec_intervals.html#p-54",
+  "url": "sec_intervals.html#p-62",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "open closed half-open half-closed "
 },
 {
-  "id": "p-55",
+  "id": "p-63",
   "level": "2",
-  "url": "sec_intervals.html#p-55",
+  "url": "sec_intervals.html#p-63",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -91,9 +91,9 @@ var ptx_lunr_docs = [
   "body": " Unions, Intersections, and Complements of Sets  In mathematics, the collection of points that make up a string or a blob of play-doh as in is represented as a set. Topology is then the study of these sets and what properties of the sets don't change when transformations are applied to the sets. To study topology we will need a solid understanding of sets and different operations on sets.   set What we saw in is what is called a paradox . Our original attempt to define a set led to an impossible situation since both and lead to contradictions. This paradox is called Russell's paradox after Bertrand Russell, although it was apparently known before Russell. The moral of the story is that we need to be careful when making definitions. A set might seem like a simple object, and in our experi≈ence usually is, but formally defining a set can be problematic. As a result, we won't state a formal definition, but rather take a set to be a collection of objects that doesn't lead to a paradox. The objects are called the elements of the set. (In axiomatic set theory, a set is taken to be an undefined primitive much as a point is undefined in Euclidean geometry.)  In order to effectively work with sets, we need to have an understanding what it means for two sets to be equal.    What should it mean for two sets to be equal? If and are sets, how do we prove that ? (This is question that requires discussion, which is different than a question that only asks for a computation or an example. Activities throughout this text will ask both types of questions.)    Let and . Is ? If yes, prove your answer. If no, prove any containment that you can.    Let and . Is ? If yes, prove your answer. If no, prove any containment that you can.    Let and . Is ? If yes, prove your answer. If no, prove any containment that you can.    Once we have the notion of a set, we can build new sets from existing ones. For example, we define the union, intersection, set difference, and complement of a set as follows.   set union  The union of sets and is the set defined as .    The intersection  set intersection of sets and is the set defined as .    Let and be sets. The set difference  set difference  is the set .    Let be a subset of a set . The complement  set complement of in is the set . The complement of a set in a set is also denoted by , (if the set is understood), , or even .     We can visualize these sets using Venn diagrams. A Venn diagram is a depiction of sets using geometric figures. For example, if is a set containing all other sets of interest (we call the universal set), we can represent as a large container (say a rectangle) with subsets and as smaller containers (say circles), and shade the elements in a given set. The Venn diagrams in depict the sets , , , , , and .   Venn diagrams                         As we have discussed, to prove that two sets and are equal we prove that each is a subset of the other. The next example provides another illustration of the idea.    Let , , and be sets. We will prove that .  To prove this set equality we must prove that and . We start with .  To prove that , we need to demonstrate that every element in is also in . To do this, we select an arbitrary element in and show that this element is in . Let . Then and . The fact that implies that but . Therefore, and , but . This implies that and , but and . So and , but . We conclude that . This proves that .  For the reverse containment, we let . So but . Since , we know that and . The fact that means that . So , , and . Thus, and . We conclude that , which shows that . The two containments, and demonstrate that .    We will use the ideas in and to prove set equalities throughout this text. The next activity will provide some additional practice.    In this activity we work with unions, intersections, and complements of sets. Let and be sets.    Let and , with .   Determine the elements in and . What are the elements in and ?   Determine the elements in and .    Let and be arbitrary subsets of a universal set . There are connections between , and their complements, unions, and intersections.   Use Venn diagrams to draw and .   Use the Venn diagrams and the result of (a) to find and prove a relationship between , and .   Use the Venn diagrams and the result of (a) to find and prove a relationship between , and .    In we worked with the union and intersection of two sets. There is no reason to restrict these definitions to only two sets, as the next activity illustrates.   indexed family of sets   To define an infinite collection of sets we often use what is called an indexing set . An indexing set allows us to consider a collection of objects that are in one-to-one correspondence with a set like the positive integers, or even the real numbers. When using an indexing set, we generally make a statement such as ``let for be a collection of sets indexed by some set \". The collection is called an indexed family of sets .    The set could be finite. As an example, let for in the set .   What is ? What is ?   How many sets are in the indexed family ?    The indexing set can be infinite. For example, let for in the set (where is the interval consisting of the real numbers such that ). In this case, what is ? What is ? What is ?    We have defined the union and intersection of two sets. The same idea can be extended to define the union and intersection of an indexed collection of sets.  set arbitrary intersection  Recall that if and are sets, the intersection is the set . How can we extend this definition from two sets to any collection of sets? In other words, how do we define  In the example in (b), what set is ?  set arbitrary union  Recall that if and are sets, the union is the set . How can we extend this definition from two sets to any collection of sets? In other words, how do we define  In the example in (b), what set is ?    These properties and that we learned about in are called DeMorgan's Laws. These laws apply to any union or intersection of sets, finite or infinite. The proofs are left for .   DeMorgan's Laws   Let is a collection of sets indexed by a set in some universal set . Then                  Verify DeMorgan's Laws in the specific case of in , where is any element of the indexing set .    Why should the complement of a union be an intersection and why should the complement of an intersection be a union?   Consider the definitions of unions and intersections.    "
 },
 {
-  "id": "p-58",
+  "id": "p-66",
   "level": "2",
-  "url": "sec_union_int_comp.html#p-58",
+  "url": "sec_union_int_comp.html#p-66",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -109,18 +109,18 @@ var ptx_lunr_docs = [
   "body": "  What should it mean for two sets to be equal? If and are sets, how do we prove that ? (This is question that requires discussion, which is different than a question that only asks for a computation or an example. Activities throughout this text will ask both types of questions.)    Let and . Is ? If yes, prove your answer. If no, prove any containment that you can.    Let and . Is ? If yes, prove your answer. If no, prove any containment that you can.    Let and . Is ? If yes, prove your answer. If no, prove any containment that you can.   "
 },
 {
-  "id": "p-64",
+  "id": "p-72",
   "level": "2",
-  "url": "sec_union_int_comp.html#p-64",
+  "url": "sec_union_int_comp.html#p-72",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "union intersection set difference complement "
 },
 {
-  "id": "p-69",
+  "id": "p-77",
   "level": "2",
-  "url": "sec_union_int_comp.html#p-69",
+  "url": "sec_union_int_comp.html#p-77",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -190,9 +190,9 @@ var ptx_lunr_docs = [
   "body": " Cartesian Products of Sets  The final operation on sets that we discuss is the Cartesian product (or cross product ). This is an operation that we have seen before. When we draw the graph of a line in the plane, we plot the points . These points are ordered pairs of real numbers. We can extend this idea to any sets.   Cartesian product   Let and are sets. The Cartesian product of and is the set .    In other words, the Cartesian product of and is the set of ordered pairs with coming from and coming from . Note that the order is important.    List all of the elements in .    If has elements and has elements, how many elements does the set have? Explain.    There is no reason to restrict ourselves to a Cartesian product of just two sets. This is an idea that we have encountered before. The Cartesian product is the standard real plane that we denote as and the Cartesian product is the three-dimensional real space denoted as . If we have an indexed collection of sets, with running through the set of positive integers, then we can define the Cartesian product of the sets as the set of infinite sequences , where for each . We denote this cartesian product as .  The capital pi ( ) is used to represent a product an an analog of the capital sigma ( ) that is used to represent a sum. We will study sequences in more detail later.  To conclude this section we summarize some properties of sets. Many of these properties can be extended to arbitrary collections of sets. Most of the proofs are straightforward. The associative and distributive laws are left for .    Let , , and be subsets of a universal set .   Properties of the Empty Set                            Properties of the Universal Set                            Idempotent Laws                  Commutative Laws                  Associative Laws                  Distributive Laws                  Basic Properties                  Subsets and Complements          "
 },
 {
-  "id": "p-106",
+  "id": "p-114",
   "level": "2",
-  "url": "sec_cart_prod.html#p-106",
+  "url": "sec_cart_prod.html#p-114",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -352,9 +352,9 @@ var ptx_lunr_docs = [
   "body": " function   A function  from a nonempty set to a set is a collection of ordered pairs so that   for each there is a pair in , and    if and are in , then .      "
 },
 {
-  "id": "p-210",
+  "id": "p-218",
   "level": "2",
-  "url": "sec_func_intro.html#p-210",
+  "url": "sec_func_intro.html#p-218",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -379,9 +379,9 @@ var ptx_lunr_docs = [
   "body": "  We often define functions with rules, but functions can also be defined by tables or graphs. We will work with functions defined by rules in this activity. The goal of this activity is to illustrate why the domain and the codomain are just as important as the rule defining the outputs when want to determine if a function is one-to-one and\/or onto. As an example, let . (Note that is the function and is the image of under .) Notice that .  This observation is enough to prove that the function is not an injection since we can see that there exist two different inputs that produce the same output.  Since , we know that for all . This implies that the function is not a surjection. For example, is in the codomain of and for all in the domain of .    We can change the domain of a function so that the function is defined on a subset of the original domain. Such a function is called a restriction.   function restriction   Let be a function from a set to a set and let be a subset of . The restriction of to is the function satisfying .    A notation used for the restriction is also . We also call an extension of . Let be defined by , and let , where is the set of positive real numbers. So has the same codomain as , but a different domain.   Show that is an injection.   Is a surjection? Justify your conclusion.    Let , and let be defined by . Notice that the function uses the same formula as the function and has the same domain as , but has a different codomain than .   Explain why is not an injection.   Is a surjection? Justify your conclusion.    Let . Define by .   Prove or disprove: the function is an injection.   Prove or disprove: the function is a surjection.   "
 },
 {
-  "id": "p-242",
+  "id": "p-250",
   "level": "2",
-  "url": "sec_func_intro.html#p-242",
+  "url": "sec_func_intro.html#p-250",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -487,9 +487,9 @@ var ptx_lunr_docs = [
   "body": "   is a biconditional statement, so we need to prove both directions. Let and be nonempty sets, and let .    Assume that is a bijection. We will prove that is a function, that is that satisfies the conditions of .   Let . What property does have that ensures that for some ? What conclusion can we draw about ?   Now let , and assume that . What does this tell us about elements that must be in ? What property of ensures that ? What conclusion can we draw about ?    Now assume that is a function from to . We will prove that is a bijection.   What does it take to prove that is an injection? Use the fact that is a function to prove that is an injection.   What does it take to prove that is a surjection? Use the fact that is a function to prove that is a surjection.   "
 },
 {
-  "id": "p-287",
+  "id": "p-295",
   "level": "2",
-  "url": "sec_inv_func.html#p-287",
+  "url": "sec_inv_func.html#p-295",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -577,9 +577,9 @@ var ptx_lunr_docs = [
   "body": " finite set   A set is a finite set if or there is a bijection mapping to the set for some positive integer .   "
 },
 {
-  "id": "p-322",
+  "id": "p-330",
   "level": "2",
-  "url": "sec_card_set.html#p-322",
+  "url": "sec_card_set.html#p-330",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -793,9 +793,9 @@ var ptx_lunr_docs = [
   "body": " Metric Spaces  For most of our mathematical careers our mathematics has taken place in , where we measure the distance between points and with the standard Euclidean distance . In our preview activity we saw that the function satisfies many of the same properties as . These properties allow us to use or as distance functions. We call any distance function a metric , and any space on which a metric is defined is called a metric space .   metric   A metric on a space is a function that satisfies the properties:    for all ,     if and only if in ,     for all , and     for all .       Properties 1 and 2 of a metric say that a metric is positive definite , while property 3 states that a metric is symmetric . Property 4 of the definition is usually the most difficult property to verify for a metric and is called the triangle inequality . triangle inequality    metric space   A metric space is a pair , where is a metric on the space .    When the metric is clear from the context, we just refer to as the metric space.    For each of the following, determine if is a metric space. If is a metric space, explain why. If is not a metric space, determine which properties of a metric satisfies and which it does not. If is a metric space, give a geometric description of the unit circle (the set of all points in a distance from the zero element) in the space.     , .     ,      ,      , the set of all continuous functions on the interval , .    It should be noted that not all metric spaces are infinite. We discuss one metric on a finite space in the following example.    Let and define with the entries in Table .   Table of values for a function                             By definition we have for all with if and only if . Since the table is symmetric around the diagonal, we can see that for all . The only item to verify is the triangle inequality. If , then for any . If , then and .  That leaves three cases to consider, when , , and are distinct. Now .  So is a metric on .     shows that even finite sets can be metric spaces. In fact, we can make a finite metric space by taking any finite subset of a metric space and use as a metric the restriction of to . illustrates this by letting , , and in . Then is the restriction of the Euclidean metric to the set . Another way to construct a finite metric space is to start with a finite set of points and make a graph with the points as vertices. Construct edges so that the graph is connected (that is, there is a path from any one vertex to any other) and give weights to the edges as illustrated in . We then define a metric on by letting be the length of a shortest path between vertices and in the graph. For example, in this example.   A graph to define a metric.    Just as with the Euclidean and taxicab metrics, item (c) in can be extended to as follows. If and are in , then the maximum distance from to is defined as .   metric max The metric is called the max metric. In the following section we prove that the Euclidean metric is in fact a metric. Proofs that and are metrics are left to and .  "
 },
 {
-  "id": "p-433",
+  "id": "p-441",
   "level": "2",
-  "url": "sec_metric_space.html#p-433",
+  "url": "sec_metric_space.html#p-441",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -811,9 +811,9 @@ var ptx_lunr_docs = [
   "body": " metric   A metric on a space is a function that satisfies the properties:    for all ,     if and only if in ,     for all , and     for all .      "
 },
 {
-  "id": "p-439",
+  "id": "p-447",
   "level": "2",
-  "url": "sec_metric_space.html#p-439",
+  "url": "sec_metric_space.html#p-447",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -856,9 +856,9 @@ var ptx_lunr_docs = [
   "body": " A graph to define a metric.   "
 },
 {
-  "id": "p-454",
+  "id": "p-462",
   "level": "2",
-  "url": "sec_metric_space.html#p-454",
+  "url": "sec_metric_space.html#p-462",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -874,9 +874,9 @@ var ptx_lunr_docs = [
   "body": " The Euclidean Metric on  The metric space that is most familiar to us is the metric space , where    metric Euclidean The metric called the standard or Euclidean metric on .  We can generalize this Euclidean metric from to any dimensional real space. Let be a positive integer and let and be in . We define by .  In the next activity we will show that satisfies the first three properties of a metric.    Let and be in .    Show that .    Show that .    Show that if , then .    Show that if , then .    Proving that the triangle inequality is satisfied is often the most difficult part of proving that a function is a metric. We will work through this proof with the help of the Cauchy-Schwarz Inequality.   Cauchy-Schwarz Inequality  Cauchy-Schwarz Inequality   Let be a positive integer and , be in . Then .      Before we prove the Cauchy-Schwarz Inequality, let us analyze it in two specific situations.    Let and in . Verify the Cauchy-Schwarz Inequality in this case.    Let and in . Verify the Cauchy-Schwarz Inequality in this case.    Now we prove the Cauchy-Schwarz Inequality.   Let be a positive integer and , be in . To verify it suffices to show that .  This is difficult to do directly, but there is a nice trick one can use. Consider the expression .  (All of our sums are understood to be from 1 to , so we will omit the limits on the sums for the remainder of the proof.) Now .  To interpret this last expression more clearly, let , and . The inequality defined by can then be written in the form .  So we have a quadratic that is never negative. This implies that the quadratic can have at most one real zero. The quadratic formula gives the roots of as .  If , then has two real roots. Therefore, in order for to have at most one real zero we must have or .  This establishes the Cauchy-Schwarz Inequality.   One consequence of the Cauchy-Schwarz Inequality that we will need to show that is a metric is the following.    Let be a positive integer and , be in . Then .      Before we prove the corollary, let us analyze it in two specific situations.    Let and in . Verify in this case.    Let and in . Verify in this case.    Now we prove .   Let be a positive integer and , be in . Now .  Taking the square roots of both sides yields the desired inequality.   We can now complete the proof that is a metric.   Let be a positive integer and , , and be in . Use to show that .   This concludes our proof that the Euclidean metric is in fact a metric.  We have seen several metrics in this section, some of which are given special names. Let and    The Euclidean metric , where .    The Taxicab metric , where .    The max metric , where .     We have only shown that and are metrics on , but similar arguments apply in . Proofs are left to and . In addition, the discrete metric  metric discrete  makes any set into a metric space. The proof is left to .  "
 },
 {
-  "id": "p-456",
+  "id": "p-464",
   "level": "2",
-  "url": "sec_euclid_rn.html#p-456",
+  "url": "sec_euclid_rn.html#p-464",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -955,9 +955,9 @@ var ptx_lunr_docs = [
   "body": " Let be a positive integer and , , and be in . Use to show that .  "
 },
 {
-  "id": "p-492",
+  "id": "p-500",
   "level": "2",
-  "url": "sec_euclid_rn.html#p-492",
+  "url": "sec_euclid_rn.html#p-500",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1126,9 +1126,9 @@ var ptx_lunr_docs = [
   "body": " The Hamming Metric  In our society, a great deal of information is communicated electronically. Bank transactions, television programs, military communications, cell phone calls, digital images, and almost any interchange one can think of either can be or is digitized and transmitted electronically. In many situations we need to compare one set of data to another (e.g., Internet searches for text strings or image matches, DNA strands), and metrics are often used for this purpose. Computers work in a binary system, that is they recognize only zeros and ones. So a digital text message is a string of zeros and ones. That is, a digital message is a collection of elements in the space for some positive integer , where . Each element in is called a word - that is, a word is an element in denoted in the form . Just like in the English language, where not every combination of letters corresponds to words that make sense, not every word is recognizable as part of an intelligible message. We might, for example, code the letters of the alphabet by assigning numbers 1-26 to the letters, then make them elements of by converting to binary. The collection of all intelligible words is called a code . So a code is just some subset of that all parties agree are sensible words. The words in a code are called code words . To deal with problems that occur in transmitting digital messages, like scrambling ( encoding ) messages, unscrambling ( decoding ) messages, and detecting and correcting errors in messages, it is useful to have a way to measure distance between words. One way is to use the Hamming metric.   metric Hamming   Let and be words in . The Hamming distance  between and is .    Recall that for each both and are either 0 or 1. So   In other words, counts the number of components at which and are different.    Explain why is a metric.    Suppose we create a code in , where That is, the words , , , , , , , are the only words that can comprise a message. Find .    Suppose we are on the receiving end of the message .   How do we know that an error has occurred in transmission of the message we received?   To correct the errors in this received message, we replace the incorrect words with the code word(s) in closest to them. Correct this message. (Note that there may be more than one possible substitution. Find all of the possibilities.)    "
 },
 {
-  "id": "p-552",
+  "id": "p-560",
   "level": "2",
-  "url": "sec_hamming.html#p-552",
+  "url": "sec_hamming.html#p-560",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1180,9 +1180,9 @@ var ptx_lunr_docs = [
   "body": " Introduction  The real numbers have a special property that allows us to, among other things, define the distance between a point and a set in a metric space. It also allows us to define distances between subsets of certain types of metric spaces, which creates a whole new metric space whose elements are the subsets of the metric space. We will examine that property of the real numbers in this activity.  We begin by considering the problem of defining the distance between a real number and an interval in with the Euclidean metric defined by .  Let and let be the closed interval . It is natural to suggest that the distance between the point and the set , denoted , should be the distance from the point to the point in closest to . So in this case we would say .  This might lead us to suggest that the distance from a point to a set , denoted by is the minimum distance from the point to any point in the set, or .  What if we changed the set to be the open interval ? What then should be, or should this distance even exist? If we think of the distance between a point and a set as measuring how far we have to travel from the point until we reach the set, then in the case of and , as soon as we travel a distance more than 1 from in the direction of , we reach the set . So we might intuitively say that as well. But we cannot define this distance as a distance from to a point in since . We need a different way to formulate the notion of a distance from a point to a set.  In a case like this, with and , we can examine the set and notice some facts about this set. For example, the set is a subset of the nonnegative real numbers. Also, in this example there are no numbers in that are smaller than 1. Because of this property, we will call the number 1 a lower bound for . More generally,   lower bound   Let be a nonempty subset of . A lower bound for is a real number such that for all .    If a subset of has a lower bound, we say that is bounded below . So the set is bounded below by 1. The set is also bounded below by 0.5 and 0. In fact, any number less than 1 is a lower bound for . The critical idea, though, is that no number larger than 1 is a lower bound for . Because of this we call 1 a greatest lower bound of . More generally,   greatest lower bound   Let be a nonempty subset of that is bounded below. A greatest lower bound for is a real number such that    is a lower bound for and    if is a lower bound for , then .        infimum A greatest lower bound is also called an infimum . We might now use this idea of a greatest lower bound to define the distance between and as the greatest lower bound of the set . However, there are questions we need to address before we can do so. One question is whether or not every nonempty subset of that is bounded below has an infimum. The answer to this question is yes, and we will take this result as an axiom of the real number system (often called the completeness axiom ).    Does every subset of have a lower bound? Explain. (When a subset of has a lower bound we say that the set is bounded below .)    Which of the following subsets of are bounded below? If the set is bounded below, what is its infimum?                How would you define a least upper bound of a subset of ?    "
 },
 {
-  "id": "p-578",
+  "id": "p-586",
   "level": "2",
-  "url": "sec_glb_intro.html#p-578",
+  "url": "sec_glb_intro.html#p-586",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1198,9 +1198,9 @@ var ptx_lunr_docs = [
   "body": " lower bound   Let be a nonempty subset of . A lower bound for is a real number such that for all .   "
 },
 {
-  "id": "p-580",
+  "id": "p-588",
   "level": "2",
-  "url": "sec_glb_intro.html#p-580",
+  "url": "sec_glb_intro.html#p-588",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1216,9 +1216,9 @@ var ptx_lunr_docs = [
   "body": " greatest lower bound   Let be a nonempty subset of that is bounded below. A greatest lower bound for is a real number such that    is a lower bound for and    if is a lower bound for , then .      "
 },
 {
-  "id": "p-584",
+  "id": "p-592",
   "level": "2",
-  "url": "sec_glb_intro.html#p-584",
+  "url": "sec_glb_intro.html#p-592",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1243,9 +1243,9 @@ var ptx_lunr_docs = [
   "body": " The Distance from a Point to a Set  Metrics are used to establish separation between objects. Topological spaces can be placed into different categories based on how well certain types of sets can be separated. We have defined metrics as measuring distances between points in a metric space, and in this activity we extend that idea to measure the distance between a point and a subset in a metric space. However, there are two questions we need to address before we can do so. The first we mentioned in our preview activity. We will assume the completeness axiom of the reals, that is that any subset of that is bounded below always has a greatest lower bound. The second question is whether or not a greatest lower bound is unique.    Let be a subset of that is bounded below, and assume that has a greatest lower bound. In this activity we will show that the infimum of is unique.    What method can we use to prove that there is only one greatest lower bound for ?    Suppose and are both greatest lower bounds for . Why are and both lower bounds for ?    What two things does the second property of a greatest lower bound tell us about the relationship between and ?    Why must the greatest lower bound of be unique?    With the existence and uniqueness of greatest lower bounds considered, we can now say that any nonempty subset of that is bounded below has a unique greatest lower bound. We use the notation (or for infimum of ) for the greatest lower bound of . There is also a least upper bound  least upper bound ( , or for supremum  supremum ) of a subset of that is bounded above.  Now we can formally define the distance between a point and a subset in a metric space.    Let be a metric space, let , and let be a nonempty subset of . The distance from to is .    We denote the distance from to by . When calculating these distances, it must be understood what the underlying metric is.    There are a couple of facts about the distance between a point and a set that we examine in this activity. Let be a metric space, let , and let be a nonempty subset of     Why must exist?    If , must ?    "
 },
 {
-  "id": "p-591",
+  "id": "p-599",
   "level": "2",
-  "url": "sec_dist_point_set.html#p-591",
+  "url": "sec_dist_point_set.html#p-599",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1261,9 +1261,9 @@ var ptx_lunr_docs = [
   "body": "  Let be a subset of that is bounded below, and assume that has a greatest lower bound. In this activity we will show that the infimum of is unique.    What method can we use to prove that there is only one greatest lower bound for ?    Suppose and are both greatest lower bounds for . Why are and both lower bounds for ?    What two things does the second property of a greatest lower bound tell us about the relationship between and ?    Why must the greatest lower bound of be unique?   "
 },
 {
-  "id": "p-597",
+  "id": "p-605",
   "level": "2",
-  "url": "sec_dist_point_set.html#p-597",
+  "url": "sec_dist_point_set.html#p-605",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1729,9 +1729,9 @@ var ptx_lunr_docs = [
   "body": " Neighborhoods  -neighborhood of a point in a metric space  We are familiar with the idea of open intervals in . We next introduce the idea of an open neighborhood of a point and characterize continuity in terms of neighborhoods. This is the next step in developing the notation of continuity in topological spaces.  The open ball in a metric space is also called the -neighborhood around . A neighborhood of a point can be thought of as any set that envelops that point.   neighborhood in a metric space   Let be a metric space, and let . A subset of is a neighborhood of if there exists a such that .         In with the Euclidean metric, the set (the positive real numbers) is a neighborhood of because the open ball is completely contained in .    In with the Euclidean metric, the set is not a neighborhood of because any open ball centered at will contain some non-integers.    In with the discrete metric, the set is a neighborhood of because the open ball .       As another example, the open ball is a neighborhood of . We can say even more about open balls.    Let be a metric space, let , and let . In this activity we ask the question, is a neighborhood of each of its points?    Let . What do we have to do to show that is a neighborhood of ?    Use to help show that is a neighborhood of .   as a neighborhood of .      Is the converse true? That is, if a set is a neighborhood of each of its points, is the set an open ball? No proof is necessary, but a convincing argument is in order.    "
 },
 {
-  "id": "p-778",
+  "id": "p-786",
   "level": "2",
-  "url": "sec_neighborhoods.html#p-778",
+  "url": "sec_neighborhoods.html#p-786",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1783,9 +1783,9 @@ var ptx_lunr_docs = [
   "body": "  Let be a function from a metric space to a metric space that is continuous at . Using the notation from the paragraph above, in this activity we determine if must equal for some .  Define by , where we use the Euclidean metric throughout. Assume that is a continuous function. Then is continuous at .    What is ?    What is ?    Is an open ball centered at ? Explain.   "
 },
 {
-  "id": "p-796",
+  "id": "p-804",
   "level": "2",
-  "url": "sec_cont_neighborhoods.html#p-796",
+  "url": "sec_cont_neighborhoods.html#p-804",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1945,9 +1945,9 @@ var ptx_lunr_docs = [
   "body": " Introduction  Consider the interval in using the Euclidean metric. If , then , so every open interval is an open ball. As an open ball, an open interval is a neighborhood of each of its points. This is the foundation for the definition of an open set in a metric space.  Recall that we defined a subset of to be neighborhood of point in a metric space if contains an open ball for some . We saw that every open ball is a neighborhood of each of its points, and we will now extend that idea to define an open set in a metric space.    A subset of a metric space is an open set open set in a metric space if is a neighborhood of each of its points.    So, by definition, any open ball is an open set. Also by definition, open sets are neighborhoods of each of their points. Open sets are different than non-open sets. For example, is an open set in using the Euclidean metric, but is not. The reason is not an open set is that there is no open ball centered at that is entirely contained in . So has a different property than the other points in . The set is a neighborhood of each of the points in , but is not a neighborhood of . We can think of the points in as being in the interior of the set . This leads to the next definition.   interior point in a subset of a metric space   Let be a subset of a metric space . A point is an interior point of if is a neighborhood of .    As we will soon see, open sets can be characterized in terms of interior points.    Determine if the set is an open set in the metric space . Explain your reasoning.    , , the Euclidean metric, .    , , the Euclidean metric, . Assume that the Euclidean metric is a metric on .    , is the discrete metric defined by and .    What are the interior points of the following sets in ? Explain. .   Let in . What are the interior points of ? Explain.   Let be the set of rational numbers in . What are the interior points of ? Explain.    "
 },
 {
-  "id": "p-854",
+  "id": "p-862",
   "level": "2",
-  "url": "sec_open_sets_intro.html#p-854",
+  "url": "sec_open_sets_intro.html#p-862",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2017,9 +2017,9 @@ var ptx_lunr_docs = [
   "body": "  Let be a metric space. To prove the remaining implication of , assume that a subset of is a union of open balls.    What do we need to show to prove that is an open set?    Let . Why is there an open ball in that contains ?    Complete the proof to show that is an open set.   "
 },
 {
-  "id": "p-879",
+  "id": "p-887",
   "level": "2",
-  "url": "sec_open_sets.html#p-879",
+  "url": "sec_open_sets.html#p-887",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2116,9 +2116,9 @@ var ptx_lunr_docs = [
   "body": "  Let be a metric space. A subset of is open if and only if every point of is an interior point of .   "
 },
 {
-  "id": "p-919",
+  "id": "p-927",
   "level": "2",
-  "url": "sec_interior_set.html#p-919",
+  "url": "sec_interior_set.html#p-927",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2314,9 +2314,9 @@ var ptx_lunr_docs = [
   "body": " limit of a sequence of real numbers   A sequence of real numbers has a limit  if, given any there exists a positive integer (depending only on ) such that .   "
 },
 {
-  "id": "p-979",
+  "id": "p-987",
   "level": "2",
-  "url": "sec_seq_intro.html#p-979",
+  "url": "sec_seq_intro.html#p-987",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2359,9 +2359,9 @@ var ptx_lunr_docs = [
   "body": " limit of a sequence in a metric space   Let be a metric space. A sequence in has a limit  if, given any there exists a positive integer (depending only on ) such that .   "
 },
 {
-  "id": "p-993",
+  "id": "p-1001",
   "level": "2",
-  "url": "sec_seq_intro.html#p-993",
+  "url": "sec_seq_intro.html#p-1001",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2557,9 +2557,9 @@ var ptx_lunr_docs = [
   "body": " boundary point in a metric space   Let be a metric space, and let be a subset of . A boundary point of is a point such that every neighborhood of contains a point in and a point in .   "
 },
 {
-  "id": "p-1081",
+  "id": "p-1089",
   "level": "2",
-  "url": "sec_closed_sets_intro.html#p-1081",
+  "url": "sec_closed_sets_intro.html#p-1089",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2602,9 +2602,9 @@ var ptx_lunr_docs = [
   "body": "  Let be a metric space.    Is closed in ? Explain.    Is closed in ? Explain.   "
 },
 {
-  "id": "p-1102",
+  "id": "p-1110",
   "level": "2",
-  "url": "sec_closed_sets_metric.html#p-1102",
+  "url": "sec_closed_sets_metric.html#p-1110",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2746,9 +2746,9 @@ var ptx_lunr_docs = [
   "body": " The Closure of a Set  We have seen that the interior of a set is the largest open subset of that set. There is a similar result for closed sets. For example, let in . The set is an open set, but if we union with its limit points, we obtain the closed set . Moreover, The set is the smallest closed set that contains . This leads to the idea of the closure of a set.   closure of a set in a metric space   The closure of a subset of a metric space is the set .    In other words, the closure of a set is the collection of the elements of the set and the limit points of the set those points that are on the edge of the set. The importance of the closure of a set is that the closure of is the smallest closed set that contains .    Let be a metric space and a subset of . The closure of is a closed set. Moreover, the closure of is the smallest closed subset of that contains .    Let be a metric space and a subset of . To prove that is a closed set, we will prove that contains its limit points. Let . To show that , we proceed by contradiction and assume that . This implies that and . Since , there exists a neighborhood of that contains no points of other than . But and , so it follows that . This implies that there is an open ball centered at so that . The fact that means that contains a point in different from . Since , we must have . But this, and the fact that is a neighborhood of , means that must contain a point of different than . But , so we have reached a contradiction. We conclude that and . This shows that is a closed set.  The proof that is the smallest closed subset of that contains is left for the next activity.      Let be a metric space, and let be a subset of .    What will we have to show to prove that is the smallest closed subset of that contains ?    Suppose that is a closed subset of that contains . To show that , why is it enough to demonstrate that ?    If , what can we say about ?    Complete the proof that .    One consequence of is the following.    A subset of a metric space is closed if and only if .    We can also characterize closed sets as sets that contain their boundaries.    The boundary  of a subset of a metric space is the set of all boundary points of .      A subset of a metric space is closed if and only if contains its boundary.    The proof of is left to .  Recall that a boundary point of a subset of a metric space is a point such that every neighborhood of contains a point in and a point in . The boundary points are those that are somehow between a set and its complement. For example if in , the boundary of is the set . We also have that , , and . Notice that . That this is always true is formalized in the next theorem.    Let be a metric space and a subset of . Then .    Let be a metric space and a subset of . To prove we need to verify the containment in each direction. Let and let be a neighborhood of . Then contains a point in and a point in . We consider the cases of or .   Suppose . Then . Also, , so must contain a point in different from . That makes a limit point of and so .    Suppose . Then . Also, , so must contain a point in different from . That makes a limit point of and so .     In either case we have and so .  For the reverse implication, refer to the next activity.      Let be a metric space and a subset of . In this activity we prove that .  Let .    What must be true about , given that is in the intersection of two sets?    Let be a neighborhood of . As we did in the proof of , we consider the cases and .   Suppose . Why must contain a point in and a point not in ? What does this tell us about ?   Suppose . Why must contain a point in and a point not in ? What does this tell us about ?   What can we conclude from parts (i) and (ii)?    "
 },
 {
-  "id": "p-1150",
+  "id": "p-1158",
   "level": "2",
-  "url": "sec_set_closure.html#p-1150",
+  "url": "sec_set_closure.html#p-1158",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -3025,9 +3025,9 @@ var ptx_lunr_docs = [
   "body": " Introduction  Let be a metric space, and let be a subset of . We can make into a metric space itself in a very straightforward manner. When we do so, we say that is a subspace of .    Let be a metric space, and let be a subset of . To make the subset into a metric space, we need to define a metric on . For us to consider as a subspace of , we want the metric on to agree with the metric on . So we define by for all . Note that and are different functions because they have different domains.    Show that is a metric on . Since is a metric on it follows that is a metric space. The metric is the restriction of to and can also be denoted by .   subspace of a metric space   Let be a metric space. A subspace of is a subset of together with the metric from to defined by for all .    We might wonder what, if any, properties of the space are inherited by a subspace.    Let and let . Let . Is the set open in ? Is the set open in ? Explain.    Let and let . What are the open subsets of ? Explain.    Let , let (the -axis in ), and let . Note that and we can consider as a subspace of and , and as a subspace of .   Explain why is a closed subset of .   Explain why is an open subset of .   Is an open subset of ? Explain    "
 },
 {
-  "id": "p-1257",
+  "id": "p-1265",
   "level": "2",
-  "url": "sec_sub_metric_intro.html#p-1257",
+  "url": "sec_sub_metric_intro.html#p-1265",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -3115,9 +3115,9 @@ var ptx_lunr_docs = [
   "body": " product metric space   Let be metric spaces for from to some positive integer . The product metric space  is the Cartesian product with metric defined by when and are in .   "
 },
 {
-  "id": "p-1299",
+  "id": "p-1307",
   "level": "2",
-  "url": "sec_prod_metric.html#p-1299",
+  "url": "sec_prod_metric.html#p-1307",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -3232,9 +3232,9 @@ var ptx_lunr_docs = [
   "body": " Introduction  Many of the properties that we introduced in metric spaces (continuity, limit points, boundary) could be phrased in terms of the open sets in the space. With that in mind, we can broaden our concept of space by eliminating the metric and just defining the opens sets in the space. This produces what are called topological spaces .  Recall that the open sets in a metric space satisfied certain properties, including that the arbitrary union of open sets is open and any finite intersection of opens sets is open. We will now take these properties as our axioms in defining topological spaces.   topology   Let be a nonempty set. A set The symbol is the Greek lowercase letter tau. of subsets of is said to be a topology on if    and belong to ,    any union of sets in is a set in , and    any finite intersection of sets in is a set in .        topological space  open sets in a topological space A topological space is then any set on which a topology is defined. If is the space and a topology on , we denote the topological space as . The elements of are called the open sets in the topological space. When the topology is clear from the context, we simple refer to as the topological space. Some examples are in order.    Suppose . Is the set a topology on ? Justify your response.    Suppose . Is the collection of subsets consisting of a topology on ? Justify your response. If not, what is the smallest collection of subsets of that need to be added to to make a topology on ?    Suppose . Is the collection of subsets consisting of a topology on ? Justify your response. If not, what is the smallest collection of subsets of that need to be added to to make a topology on ?.    Suppose . Is the collection of subsets consisting of a topology on ? Justify your response. If not, what is the smallest collection of subsets of that need to be added to to make a topology on ?    Let be the collection of finite subsets of . Let . First, list three members of and three sets that are not in . Next, is a topology on ? Justify your response.    Let . Is a topology on ? Justify your response.    Let be a set and let . Is a topology on ? Justify your response.    Let be a set and let be the collection of all subsets of . Is a topology on ? Justify your response.    "
 },
 {
-  "id": "p-1333",
+  "id": "p-1341",
   "level": "2",
-  "url": "sec_top_space_intro.html#p-1333",
+  "url": "sec_top_space_intro.html#p-1341",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -3250,9 +3250,9 @@ var ptx_lunr_docs = [
   "body": " topology   Let be a nonempty set. A set The symbol is the Greek lowercase letter tau. of subsets of is said to be a topology on if    and belong to ,    any union of sets in is a set in , and    any finite intersection of sets in is a set in .      "
 },
 {
-  "id": "p-1339",
+  "id": "p-1347",
   "level": "2",
-  "url": "sec_top_space_intro.html#p-1339",
+  "url": "sec_top_space_intro.html#p-1347",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -3277,9 +3277,9 @@ var ptx_lunr_docs = [
   "body": " Examples of Topologies  In our preview activity we saw several examples of topologies. Suppose is a nonempty set.   topology discrete  The topology consisting of all subsets of is called the discrete topology .    topology indiscrete  The topology is the indiscrete topology .    topology metric  If is a metric space, then the collection consisting of unions of all open balls is a topology called the metric topology . This result tells us that every metric space is topological space under the metric topology. We will see later than not every topological space is a metric space.     The discrete and indiscrete topologies are topologies that can be defined on any set and are often used to use to generate examples. Another topology that can be defined on any set is in the next activity.     Let be any set and let consist of the empty set along with all subsets of such that is finite.    Prove that is a topology on . (The topology is called the finite complement topology topology finite complement or the cofinite topology . topology cofinite     Explain why is the discrete topology when is finite.    "
 },
 {
-  "id": "p-1348",
+  "id": "p-1356",
   "level": "2",
-  "url": "sec_exam_top.html#p-1348",
+  "url": "sec_exam_top.html#p-1356",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -3304,18 +3304,18 @@ var ptx_lunr_docs = [
   "body": " Bases for Topologies  It can be difficult to completely describe the open sets in a topology. Instead, we can describe the topology using a collection of sets that generate the topology. For example, if is a metric space then the collection of open sets in forms a topology on , called the metric topology. We also saw that in a metric space, every open set in is a union of open balls. For that reason we called the collection of open balls a basis for the open sets in . We can do the same thing in any topological space. As a non-trivial example, an interesting topology defined on the positive integers is due to S.W. Golomb. One can use this topology to prove that there are infinitely many primes. This topology also makes the positive integers into a connected Hausdorff space (more on these concepts later). The Golomb topology is defined as follows. If and are coprime integers in (that is, and have no common positive factors other than 1 so that the greatest common divisor of and is ), let .   Golomb space The collection of sets is a basis for the Golomb topology, and the topological space is called the Golomb space . It is an exercise in number theory to prove that the sets form a basis for a topology, so we will not go into the details.   Let and let . You may assume that is a topology on . Explain why any nonempty open set in the topological space can be written in terms of arbitrary unions and finite intersections of , , and .    shows that, just like the open balls in a metric space, a topology can have a collection of subsets whose unions make up all of the open sets in the topology. We do need to take a little care, though. A basis will generate the collection of open sets for a topology, so the basis sets we start with should themselves be open sets. In addition, every element in the topological space should be an element of one of the basis sets, and since the basis elements are to produce all of the open sets in the topology, every set in the topology (except the empty set) should be a union of sets in a basis. It also must be the case that we can ensure that any finite intersection of sets in the topology remains a set in the topology when we write the sets in the topology in terms of the sets in a basis. To make the last two conditions happen, we will see that it is enough to insist that for any point in the intersection of basis elements, there is another basis element in that intersection that contains the point. This is summarized in .    Let be a set and let be a collection of subsets of such that   For each , there is a set in that contains .    If is an element of for some , then there is a set such that .     Then the set that consists of the empty set and unions of elements of is a topology on .    Before we prove , we will need to know one fact about the set .    Let be a set and a collection of subsets of such that    For each , there is a set in that contains .    If is an element of for some , then there is a set such that .  Let , , , be in . Our goal in this activity is to extend property 2 and show that if , then there is a set such that and .   Since the statement we want to prove depends on a positive integer , we will use mathematical induction. Explain why the and cases are true.   What is the inductive hypothesis and what do we want to prove in the inductive step?   Use the inductive hypothesis and condition 2 to complete the proof of the following lemma.    Let be a set and a collection of subsets of such that   For each , there is a set in that contains .    If is an element of for some , then there is a set such that .     Let , , , be in . If , then there is a set such that and .     Now we can prove .   Let be a topological space, and let and satisfy the given conditions. By definition, . For each there is a set such that . Then , and . To complete our proof that is a topology on , we need to demonstrate that is closed under arbitrary unions and finite intersections. We first consider unions. Let be a collection of sets in for in some indexing set . By definition, each is empty or is a union of elements of . So either is empty, or is a union of sets in . Thus, and is closed under arbitrary unions.  Now we show that is closed under finite intersections. Let be a positive integer and let a collection of sets in for . Let . If for any , then is in . So suppose that for each between and . Let . Then for each . For every between and , the fact that is a union of elements in implies that there exists with . Thus, .   shows that there is a set such that and . Since is an arbitrary element of , we must have . But each is subset of , so . It follows that and . Therefore, is a topology on .   Any collection of sets as given in is given a special name.   basis for a topology   Let be a set. A set is a basis for a topology (or just a basis ) on if   For each , there is a set in that contains .    If is an element of for some , then there is a set such that .        basis elements  basic open set The elements of a basis are called basis elements or the basic open sets . A basis for a topology on a set defines a topology on as shown in .  Note that because of property (1) of , the union of the sets in the basis must contain . In other words, the sets in a basis cover the space. The second property ensures that if a point is in the intersection of two basic open sets, then there is a smaller basic open set that contains .   topology generated by a basis   Let be a basis for a topology on a set . The topology generated by contains the empty set and all arbitrary unions of basis elements.    When the topology for a space is clear from the context, we also call a basis for the topology a basis for .    Let and .   Is the set a basis for ? If not, add the smallest number of sets that you can to to make a basis for this topology.   Is the set a basis for ? If not, add the smallest number of sets that you can to to make a basis for this topology.    Let and let have the discrete topology (the topology consisting of all subsets of ). Is a basis for in the the discrete topology? If not, add the smallest number of sets that you can to to make a basis for this topology.    Find a basis for the discrete topology on any set .    "
 },
 {
-  "id": "p-1356",
+  "id": "p-1364",
   "level": "2",
-  "url": "sec_base_top.html#p-1356",
+  "url": "sec_base_top.html#p-1364",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "metric basis "
 },
 {
-  "id": "p-1357",
+  "id": "p-1365",
   "level": "2",
-  "url": "sec_base_top.html#p-1357",
+  "url": "sec_base_top.html#p-1365",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -3367,9 +3367,9 @@ var ptx_lunr_docs = [
   "body": " basis for a topology   Let be a set. A set is a basis for a topology (or just a basis ) on if   For each , there is a set in that contains .    If is an element of for some , then there is a set such that .      "
 },
 {
-  "id": "p-1384",
+  "id": "p-1392",
   "level": "2",
-  "url": "sec_base_top.html#p-1384",
+  "url": "sec_base_top.html#p-1392",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -3403,9 +3403,9 @@ var ptx_lunr_docs = [
   "body": " Metric Spaces and Topological Spaces  topology metric  Every metric space is a topological space, where the topology is the collection of open sets defined by the metric. This topology is called the metric topology . A natural question to ask is whether every topological space is a metric space. That is, given a topological space, can we define a metric on the space so that the open sets are exactly the sets in the topology? For example, any space with the discrete topology is a metric space with the discrete metric.    Let and . Explain why there cannot be a metric so that the open sets in the metric topology are the sets in .    Assume that such a metric exists and consider the open balls centered at .     metrizable topological space We conclude that every metric space is a topological space, but not every topological space is a metric space. The topological spaces that can be realized as metric spaces are called metrizable .  "
 },
 {
-  "id": "p-1393",
+  "id": "p-1401",
   "level": "2",
-  "url": "sec_metric_top_space.html#p-1393",
+  "url": "sec_metric_top_space.html#p-1401",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -3421,9 +3421,9 @@ var ptx_lunr_docs = [
   "body": "  Let and . Explain why there cannot be a metric so that the open sets in the metric topology are the sets in .    Assume that such a metric exists and consider the open balls centered at .   "
 },
 {
-  "id": "p-1396",
+  "id": "p-1404",
   "level": "2",
-  "url": "sec_metric_top_space.html#p-1396",
+  "url": "sec_metric_top_space.html#p-1404",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -3502,9 +3502,9 @@ var ptx_lunr_docs = [
   "body": "  Let be a topological space. A subset of is open if and only if every point of is an interior point of .   "
 },
 {
-  "id": "p-1415",
+  "id": "p-1423",
   "level": "2",
-  "url": "sec_interior_set_top.html#p-1415",
+  "url": "sec_interior_set_top.html#p-1423",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -3727,9 +3727,9 @@ var ptx_lunr_docs = [
   "body": " Unions and Intersections of Closed Sets  clopen set in a topological space  Now we have defined open and closed sets in topological spaces. In our preview activity we saw that a set can be both open and closed. As we did in metric spaces, we will call any set that is both open and closed a clopen (for closed-open) set.  By definition, any union and any finite intersection of open sets in a topological space is open, so the fact that closed sets are complements of open sets implies the following theorem.    Let be a topological space.   Any intersection of closed sets in is a closed set in .    Any finite union of closed sets in is a closed set in .       Let be a topological space. To prove part 1, assume that is a collection of closed set in for in some indexing set . Then .  The latter is an arbitrary union of open sets and so it an open set. By definition, then, is a closed set.  For part 2, assume that , , , are closed sets in for some . To show that is a closed set, we will show that is an open set. Now is a finite intersection of open sets, and so is an open set. Therefore, is a closed set.     tells us that any intersection of closed sets is closed, but only finite unions of closed sets are closed. How do we know that non-finite unions of closed sets aren't necessarily closed?    Let be a topological space with the finite complement topology . That is, a non-empty set is open in if is finite.    What must be true about the cardinality of the closed sets in ?    Let . Is the set a closed set in ? Explain.    "
 },
 {
-  "id": "p-1541",
+  "id": "p-1549",
   "level": "2",
-  "url": "sec_union_inter_closed.html#p-1541",
+  "url": "sec_union_inter_closed.html#p-1549",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -3772,9 +3772,9 @@ var ptx_lunr_docs = [
   "body": " limit point in a topological space   Let be a topological space, and let be a subset of . A limit point of is a point such that every neighborhood of contains a point in different from .   "
 },
 {
-  "id": "p-1555",
+  "id": "p-1563",
   "level": "2",
-  "url": "sec_limit_points.html#p-1555",
+  "url": "sec_limit_points.html#p-1563",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -3817,9 +3817,9 @@ var ptx_lunr_docs = [
   "body": " convergent sequence in a topological space   A sequence in a topological space  converges to the point if, for each open set that contains there exists a positive integer such that for all .   "
 },
 {
-  "id": "p-1569",
+  "id": "p-1577",
   "level": "2",
-  "url": "sec_limit_points.html#p-1569",
+  "url": "sec_limit_points.html#p-1577",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -3934,9 +3934,9 @@ var ptx_lunr_docs = [
   "body": "  Consider a metric space , and let and be distinct points in .   Explain why and cannot both be limits of the same sequence if we can find disjoint open balls centered at and centered at such that .   Now show that we can find disjoint open balls centered at and centered at such that .    Return to our example from with and topology . We saw that every point in is a limit of the constant sequence . If in , Explain why there are no disjoint open sets containing and containing .   "
 },
 {
-  "id": "p-1601",
+  "id": "p-1609",
   "level": "2",
-  "url": "sec_separation_ax.html#p-1601",
+  "url": "sec_separation_ax.html#p-1609",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -3997,9 +3997,9 @@ var ptx_lunr_docs = [
   "body": " -space  Frechet space  -space  -space  normal topological space  -space   Let be a topological space.   The space is a T -space or Frechet space if for every in , there exist an open set containing such that .    The space is a T -space or a Hausdorff space if for every in , there exist disjoint open sets and such that and .    The space is regular regular topological space if for each closed set of and each point , there exists disjoint open sets and in such that and . The space is a T -space or a regular Hausdorff space if is a regular space.    The space is a normal space if for each pair and of disjoint closed subsets of there exist disjoint open sets and such that and . The space is a T -space or a normal Hausdorff space if is a normal space.      "
 },
 {
-  "id": "p-1620",
+  "id": "p-1628",
   "level": "2",
-  "url": "sec_separation_ax.html#p-1620",
+  "url": "sec_separation_ax.html#p-1628",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4276,9 +4276,9 @@ var ptx_lunr_docs = [
   "body": "  We might consider two metric spaces and to be equivalent if we can find a bijection between the two sets and that preserves the metric properties. That is, find a bijective function such that for all . In other words, preserves distances.    Let and , with both and the Euclidean metric. Is it possible to find a bijection that preserves the metric properties? Explain.    Now let and , where is defined by and . You may assume that is a metric. Is it possible to find a bijection that preserves the metric properties? Explain.   "
 },
 {
-  "id": "p-1738",
+  "id": "p-1746",
   "level": "2",
-  "url": "sec_metric_equiv.html#p-1738",
+  "url": "sec_metric_equiv.html#p-1746",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4294,9 +4294,9 @@ var ptx_lunr_docs = [
   "body": " metrically equivalent   Two metric spaces and are metrically equivalent if there is a bijection such that for all .   "
 },
 {
-  "id": "p-1741",
+  "id": "p-1749",
   "level": "2",
-  "url": "sec_metric_equiv.html#p-1741",
+  "url": "sec_metric_equiv.html#p-1749",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4312,9 +4312,9 @@ var ptx_lunr_docs = [
   "body": " isometry   A function from a metric space to a metric space is an isometry if is a bijection and for all .   "
 },
 {
-  "id": "p-1743",
+  "id": "p-1751",
   "level": "2",
-  "url": "sec_metric_equiv.html#p-1743",
+  "url": "sec_metric_equiv.html#p-1751",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4348,9 +4348,9 @@ var ptx_lunr_docs = [
   "body": " topologically equivalent   Two topological spaces and are topologically equivalent if there is a continuous bijection such that is also continuous.   "
 },
 {
-  "id": "p-1747",
+  "id": "p-1755",
   "level": "2",
-  "url": "sec_top_equiv.html#p-1747",
+  "url": "sec_top_equiv.html#p-1755",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4366,9 +4366,9 @@ var ptx_lunr_docs = [
   "body": " homeomorphism   Let and be topological spaces. A function is a homeomorphism if is a continuous bijection such that is also continuous.   "
 },
 {
-  "id": "p-1749",
+  "id": "p-1757",
   "level": "2",
-  "url": "sec_top_equiv.html#p-1749",
+  "url": "sec_top_equiv.html#p-1757",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4411,9 +4411,9 @@ var ptx_lunr_docs = [
   "body": " relation   A relation on a set is a subset of .   "
 },
 {
-  "id": "p-1760",
+  "id": "p-1768",
   "level": "2",
-  "url": "sec_relations.html#p-1760",
+  "url": "sec_relations.html#p-1768",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4438,9 +4438,9 @@ var ptx_lunr_docs = [
   "body": "  Explain why metric equivalence is an equivalence relation.    Explain why topological equivalence is an equivalence relation.   "
 },
 {
-  "id": "p-1768",
+  "id": "p-1776",
   "level": "2",
-  "url": "sec_relations.html#p-1768",
+  "url": "sec_relations.html#p-1776",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4456,9 +4456,9 @@ var ptx_lunr_docs = [
   "body": " Topological Invariants  Homeomorphic topological spaces are essentially the same from a topological perspective, and they share many properties, but not all. The properties they share are called topological invariants or topological properties .   topological property  topological invariant   A property of a topological space is a topological property (or topological invariant ) if every topological space homeomorphic to has the same property.      Which of the following are topological invariants? That is for topological spaces and , if and are homeomorphic space and has the property, does it follow that must also have that property?     has the indiscrete topology     has the discrete topology     has the finite complement topology     contains the number 2     contains exactly 13 elements    "
 },
 {
-  "id": "p-1769",
+  "id": "p-1777",
   "level": "2",
-  "url": "sec_top_invar.html#p-1769",
+  "url": "sec_top_invar.html#p-1777",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4645,9 +4645,9 @@ var ptx_lunr_docs = [
   "body": " The Subspace Topology  subspace topology  induced topology  relative topology  relatively open set  In our preview activity, we saw that the intersection of the open sets in a topological space with any nonempty subset of forms a topology for . We then have as a subspace of .  The topology in is called the subspace topology , the induced topology , or the relative topology . In our preview activity we saw that sets that are open in a subspace of a topological space need not be open in . So we call the sets in  relatively open .  Once we have defined relatively open sets, we can then consider how to define relatively closed sets.    Let be a topological space, and let be a subset of .   relatively closed set  Recall that a subset of a topological space is closed if its complement is open. Given that is a topological space, how is a closed set in defined? Such a set will be called relatively closed .    Recall that a subset of is relatively open if and only if for some open subset of . With this in mind, how might we expect a relatively closed set in to be related to a closed set in ? State and prove a theorem for this result.    "
 },
 {
-  "id": "p-1868",
+  "id": "p-1876",
   "level": "2",
-  "url": "sec_subspace_top.html#p-1868",
+  "url": "sec_subspace_top.html#p-1876",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4798,9 +4798,9 @@ var ptx_lunr_docs = [
   "body": " Introduction  We are familiar with the word quotient when working with rational numbers. That is, the fraction is the quotient of by , and the set of rational numbers is the collection of all defined quotients of integers. The word quotient seems to have come from the latin word quotiens , which can be translated as how often or how many times . We can think of the fraction as dividing a unit ( into two pieces. So we often apply the word quotient to any kind of construction that divides a set into pieces. Another familiar quotient construction is the set , the set of quotients of integers after we divide by . Another way to think of is as a quotient , where is the set of multiples of and two integers and are identified with each other (or are equivalent ) if . This defines the relation of congruence module on , and the elements of are the equivalence classes for this relation. We make similar constructions in many branches of mathematics by defining an equivalence relation on a set, and we then divide the set into pieces (the equivalence classes) and call the set of equivalence classes a quotient space . We explore the concept of quotient spaces of topological spaces in this section.  As an example, take the interval in and bend it to be able to glue the endpoints together. The resulting object is a circle. By identifying the endpoints and of the interval, we are able to create a new topological space. We can view this gluing or identifying of points in the space in a formal way that allows us to recognize the resulting space as a quotient space.  "
 },
 {
-  "id": "p-1916",
+  "id": "p-1924",
   "level": "2",
-  "url": "sec_quotients.html#p-1916",
+  "url": "sec_quotients.html#p-1924",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4816,9 +4816,9 @@ var ptx_lunr_docs = [
   "body": " The Quotient Topology  Given a topological space and a surjection from to a set , we can use the topology on to define a topology on . This topology on identifies points in through the function . The resulting function on is called a quotient topology. The quotient topology gives us a way of creating a topological space which models gluing and collapsing parts of a topological space.    Let and let . Let and define by .  Our goal in this activity is to define a topology on that is related to the topology on via .    We know the sets in that are open. So let us consider the sets in such that is open in . Define to be this set. That is . Find all of the sets in .    Show that is a topology on .    Explain why is continuous.    Show that is the largest topology on for which is continuous. That is, if is a topology on with , then is not continuous.    "
 },
 {
-  "id": "p-1918",
+  "id": "p-1926",
   "level": "2",
-  "url": "sec_quotient_top.html#p-1918",
+  "url": "sec_quotient_top.html#p-1926",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4843,9 +4843,9 @@ var ptx_lunr_docs = [
   "body": " Quotient Spaces  As we saw in our preview activity, if we have a surjection from a topological space to a set , we were able to define a topology on by making the open sets the sets such that is open in . This is how we will create what is called the quotient topology . Before we can define the quotient topology, we need to know that this construction always makes a topology.    Let be a topological space, let be a set, and let be a surjection. Let .    Why are and in ?    Let be a collection of sets in for in some indexing set .   Show that is in .   If is finite, show that is in .    What conclusion can we draw about ?     allows us to define the quotient topology.   quotient topology  quotient map  quotient space   Let be a topological space, let be a set, and let be a surjection.   The quotient topology on is the set .    Any function is a quotient map if is surjective and for , is open in if and only if is open in .    If is a quotient map, then the space is the quotient space of determined by .         Let with standard topology, let , and define by Find all of the open sets in the quotient topology.    Let with standard topology, let , and define by , where is the largest integer less than or equal to , (For example , and so . The function defined by is also called the floor function. Be careful, note that .) Determine the sets in the quotient topology.   The graph of .     The graph of on is shown in .    Another perspective of the quotient topology utilizes the fact that any equivalence relation on a set partitions into a union of disjoint equivalence classes . There is a natural surjection from to the space of equivalence classes given by . We investigate this perspective in the next activity.   Let and let . Then is a topological space. Let and . Define a relation on such that if and are both in or both in . Assume that is an equivalence relation. The sets and are the equivalence classes for this relation. That is and . Let . Then we can define by sending to the set to which it belongs. That is, for , or .  Determine the sets in the quotient topology on .   The partition of in into the disjoint union of sets and defines an equivalence relation on where if and are both in the same set or . That is, and . In this context, the sets and are equivalence classes  and , where is the equivalence class of . This leads to a general construction.   quotient space  identification space If is a topological space and is an equivalence relation on , we can let be the set of distinct equivalence classes of under . Then defined by is a surjection and has the quotient topology. The space is called a quotient space . The space is also called an identification space because the equivalence relation identifies points in the set to be thought of as the same. This allows us to visualize quotient spaces as resulting from gluing or collapsing parts of the space .   A tube as the identification space .      Let and let with standard topology. Define a relation on by if and , if . It is straightforward to show that is an equivalence relation. Let us consider what the identification space looks like. The space is the unit square as shown in . All points in the interior of the square are identified only with themselves. However, the top side and bottom side are identified with each other in the same direction. Think of as a piece of paper. We roll up the sides of the square to make the top and bottom sides coincide. The result is that is the cylinder as shown in .      Quotient spaces can be difficult to describe. This activity presents a few more examples.    Let with standard topology and define an equivalence relation on by and for all not equal to or . What does the quotient space look like?   From left to right: the identifications for parts (i), (ii), and (iii)         Think about the relation as gluing the points and together.    Describe quotient spaces of with standard topology given by the following equivalence relations . Depictions of the identifications are shown in . (Here is the closed interval .)    if and and when .  Möbius strip   if and , for , for , and . (This space is called a Möbius strip.)    if and and if and are boundary points.     Klein bottle Many other interesting identification spaces can be made. For example, let and define by if and , for , for . This identification is illustrated in . The resulting identification space is a Klein bottle. A nice illustration of this can be seen at maths.org .   Identifications for the Klein Bottle.    "
 },
 {
-  "id": "p-1925",
+  "id": "p-1933",
   "level": "2",
-  "url": "sec_quotient_space.html#p-1925",
+  "url": "sec_quotient_space.html#p-1933",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4888,9 +4888,9 @@ var ptx_lunr_docs = [
   "body": " Let and let . Then is a topological space. Let and . Define a relation on such that if and are both in or both in . Assume that is an equivalence relation. The sets and are the equivalence classes for this relation. That is and . Let . Then we can define by sending to the set to which it belongs. That is, for , or .  Determine the sets in the quotient topology on .  "
 },
 {
-  "id": "p-1944",
+  "id": "p-1952",
   "level": "2",
-  "url": "sec_quotient_space.html#p-1944",
+  "url": "sec_quotient_space.html#p-1952",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -5131,9 +5131,9 @@ var ptx_lunr_docs = [
   "body": " Introduction  Closed and bounded intervals have important properties in calculus. Recall, for example, that every real-valued function that is continuous on a closed interval attains a maximum and minimum value on that interval. The question we want to address in this section is if there is a corresponding characterization for subsets of topological spaces that ensure that continuous real-valued functions with domains in topological spaces attain maximum and minimum values. The property that we will develop is called compactness.  The word compact might bring to mind a notion of smallness, but we need to be careful with the term. We might think that the interval is small, but is homeomorphic to , which is not small. Similarly, we might think that the interval is large, but this interval is homeomorphic to the small interval . As a result, the concept of compactness does not correspond to size, but rather structure, in a way. We will expand on this idea in this section.  Since a topology defines open sets, topological properties are often defined in terms of open sets. Let us consider an example to see if we can tease out some of the details we will need to get a useful notion of compactness. Consider the open interval in . Suppose we write as a union of open balls. For example, let for and . Notice that . Any collection of open sets whose union contains is called an open cover of . Working with a larger number of sets is generally more complicated than working with a smaller number, so it is reasonable to ask if we can reduce the number of sets in our open cover of and still cover . In particular, working with a finite collection of sets is preferable to working with an infinite number of sets (we can exhaustively check all of the possibilities in a finite setting if necessary). Notice that for each , so we can eliminate many of the sets in this cover. However, if we eliminate enough sets so that we are left with only finitely many, then there will be a maximum value of so that remains in our collection. But then will not be in the union of our remaining collection of sets. As a result, we cannot find a finite collection of the whose union contains . Note that there may be some collections of open sets that cover of for which there is a finite subcollection of sets that also cover . For example, if we let , then , and . The main point is that there is at least one collection of open sets that covers for which there is no finite subcollection of sets that covers .  Let's apply the same idea now to the set . Suppose we extend our open cover to be an open cover of the closed interval by including two additional open balls in : and . Now the sets , , and form a finite collection of sets that covers . So even though the interval is larger than in the sense that we can represent in a more efficient (that is finite) way in terms of open sets than we can the interval . This is the basic idea behind compactness.   compact subset   A subset of a topological space is compact if for every set and every family of open sets with such that , there exists a finite subfamily such that .    If is a topological space and is a compact subset of , then we say that is a compact topological space . There is some terminology associated with .   cover  cover open   A cover of a subset of a topological space is a collection of subsets of for in some indexing set so that . In addition, if each set is an open set, then the collection is an open cover for .      A subcover of a cover of a subset of a topological space is a collection for , where is a subset of such that . In addition, if is a finite set, the subcover is a finite subcover of .    So the sets , , and in our previous example form a finite subcover of the open cover .  Using the terminology we have now established, we can restate the definition of compactness in the following way: a subset of a topological space is compact if every open cover of has a finite subcover of .    Determine if the subset of the topological space is compact. Either prove is compact by starting with an arbitrary infinite cover and demonstrating that there is a finite subcover, or find a specific infinite cover and prove that there is no finite subcover.     in with the Euclidean topology. Generalize this example.     in with the Euclidean topology.     in with the Euclidean topology.     in with the Euclidean topology.     in with the finite complement topology.     in with the Euclidean topology.    There are two perspectives by which we can look at compactness. If is a topological space and is a subset of , then tells us what it means for to be compact as a subset of . From this perspective, we use open sets in to make open covers of . We can also consider as a subspace of using the subspace topology . From this perspective we can examine the compactness of using relatively open sets for open covers. tells us that these two perspectives are equivalent, so we will use whatever perspective is appropriate for a given situation.  "
 },
 {
-  "id": "p-2038",
+  "id": "p-2046",
   "level": "2",
-  "url": "sec_compact_top_intro.html#p-2038",
+  "url": "sec_compact_top_intro.html#p-2046",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -5149,9 +5149,9 @@ var ptx_lunr_docs = [
   "body": " compact subset   A subset of a topological space is compact if for every set and every family of open sets with such that , there exists a finite subfamily such that .   "
 },
 {
-  "id": "p-2041",
+  "id": "p-2049",
   "level": "2",
-  "url": "sec_compact_top_intro.html#p-2041",
+  "url": "sec_compact_top_intro.html#p-2049",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -5266,9 +5266,9 @@ var ptx_lunr_docs = [
   "body": " bounded subset of   A subset of is bounded if there exists such that , where .   "
 },
 {
-  "id": "p-2083",
+  "id": "p-2091",
   "level": "2",
-  "url": "sec_compact_rn.html#p-2083",
+  "url": "sec_compact_rn.html#p-2091",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -5518,9 +5518,9 @@ var ptx_lunr_docs = [
   "body": " An Application of Compactness: Fractals  Introduced by Felix Hausdorff in the early 20th century as a way to measure the distance between sets, the Hausdorff metric (also called the Pompeiu-Hausdorff metric) has since been widely studied and has many applications. For example, the United States military has used the Hausdorff distance in target recognition procedures. In addition, the Hausdorff metric has been used in image matching and visual recognition by robots, medicine, image analysis, and astronomy.  The basic idea in these applications is that we need a way to compare two shapes. For example, if a manufacturer needs to mill a specific product based on a template, there is usually some tolerance that is allowed. So the manufacturer needs a way to compare the milled parts to the template to determine if the tolerance has been met or exceeded.  The Hausdorff metric is also familiar to fractal aficionados for describing the convergence of sequences of compact sets to their attractors in iterated function systems. The variety of applications of this metric make it one that is worth studying.  To define the Hausdorff metric, we begin with the distance from a point in a metric space to a subset of as .  Since images will be represented as compact sets, we restrict ourselves to compact subsets of a metric space. In this case the infimum becomes a minimum and we have .  We now extend that idea to define the distance from one subset of to another. Let and be nonempty compact subsets of . To find the distance from the set to the set , it seems reasonable to consider how far each point in is from the set . Then the distance from to should measure how far we have to travel to get from any point in to .    Let be a metric space and let and be nonempty compact subsets of . Then distance from to is .    Note: since and are compact, is guaranteed to exist.    A problem with as in is that is not symmetric. Find examples of compact subsets and of with the Euclidean metric such that .    Even though the function in is not a metric, we can define the Hausdorff distance in terms of as follows.   metric Hausdorff   Let be a metric space and and nonempty compact subsets of . Then Hausdorff distance between and is .    Let be the circle in centered at the origin with radius 1, let be the inscribed square, and let as shown in .   Sets , , and .    Determine , , and , and verify that .    It may be surprising that as in is actually a metric, but it is. The underlying space is the collection of nonempty compact subsets of which we denote at . Prove the following theorem.    Let be a metric space. The Hausdorff distance function is a metric on .      One fun application of the Hausdorff metric is in fractal geometry. You may be familiar with objects like the Sierpinski triangle or the Koch curve. These objects are limits of sequences of sets in . We illustrate with the Sierpinski triangle. Start with three points , , and that form the vertices of an equilateral triangle . For =1,2, or 3, let . For =1,2, or 3, we define by . Then , when applied to , contracts by a factor of 2 and then translates the image of so that the vertex of and the th vertex of the image of coincide. Such a map is called a contraction mapping with contraction factor equal to . Define to be . Then is the set of all points half way between any point in and , or is a triangle half the size of the original translated to the vertex of the original. Let . Both and are shown in . We can continue this procedure replacing with . In other words, for = 1, 2, and 3, let . Then let . A picture of is shown in . We can continue this procedure, each time replacing with . A picture of is shown in .   for equal to 0, 1, 2, and 8.                     To continue this process, we need to take a limit. But the are sets in , so the limit is taken with respect to the Hausdorff metric.   Assume that the length of a side of is . Determine . Then find for an arbitrary positive integer .   The Sierpinski triangle will exist if the sequence converges to a set (which would be the Sierpinski triangle). The question of convergence is not a trivial one.   Consider the sequence , where for . Note that each is a rational number. Explain why the terms in this sequence get arbitrarily close together, but the sequence does not converge in . Explain why the sequence converges in .  Cauchy sequence  A sequence in a metric space is a Cauchy sequence if given there exists such that whenever . Every convergent sequence is a Cauchy sequence. A metric space is said to be complete metric space complete if every Cauchy sequence in converges to an element in . For example, is complete while is not. Although we will not prove it, the metric space is complete. Show that the sequence is a Cauchy sequence in . The limit of this sequence is the famous Sierpinski triangle. The picture of in is a close approximation of the Sierpinski triangle.    "
 },
 {
-  "id": "p-2184",
+  "id": "p-2192",
   "level": "2",
-  "url": "sec_fractals.html#p-2184",
+  "url": "sec_fractals.html#p-2192",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -5689,9 +5689,9 @@ var ptx_lunr_docs = [
   "body": " Components  As demonstrates, spaces like are not connected. Even so, is made of two connected subsets and . These connected subsets are called components .   component   A subspace of a topological space is a component (or connected component ) of if is connected and there is no larger connected subspace of that contains .    As an example, if , then the components of are , , and . As the next activity shows, we can always partition a topological space into a disjoint union of compenents.    Let be a nonempty topological space.    Show that if , then is connected.    Suppose that is a topological space and for in some indexing set is a collection of connected subsets of . Let . Suppose that . Show that is a connected subset of .   Assume a separation and use .    Part (a) shows that every element in belongs to some connected subset of . So we can write as a union of connected subsets. But there is probably overlap. To remove the overlap, we define the following relation on : For and in , if and are contained in the same connected subset of . As with any relation, we ask if is an equivalence relation.   Is a reflexive relation? Why or why not?   Is a symmetric relation? Why or why not?   Is a transitive relation? Why or why not?     shows that the relation is an equivalence relation, and so partitions the underlying topological space into disjoint sets. If , then the equivalence class of is a connected subset of . There can be no larger connected subset of that contains , since equivalence classes are disjoint or the same. So the equivalence classes are exactly the connected components of . The components of a topological space satisfy several properties.   Each is an element of exactly one connected component of .    A component contains all connected subsets of that contain . Thus, is the union of all connected subsets of that contain .    If and are in , then either or .    Every connected subset of is a subset of a connected component.    Every connected component of is a closed subset of .    The space is connected if and only if has exactly one connected component.     "
 },
 {
-  "id": "p-2283",
+  "id": "p-2291",
   "level": "2",
-  "url": "sec_components.html#p-2283",
+  "url": "sec_components.html#p-2291",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -5725,9 +5725,9 @@ var ptx_lunr_docs = [
   "body": " Cut Sets  It can be difficult to determine if two topological spaces are homeomorphic. We can sometimes use topological invariants to determine if spaces are not homeomorphic. For example, if is connected and is not, then and are not homeomorphic. But just because two spaces are connected, it does not automatically follow that the spaces are homeomorphic. For example consider the spaces and . Both are connected subsets of . If we remove a point, say 1, from the set the resulting space is no longer connected. The same result is true if we remove any point from . However, if we remove the point from the resulting space is connected. So the spaces and are fundamentally different in this respect, and so are not homeomorphic. Any set that we can remove from a connected set to obtain a disconnected set is called a cut set .   cut set  cut point   A subset of a connected topological space is a cut set of if the set is disconnected. A point in a connected topological space is a cut point if is disconnected.      The point is a cut point of the space . In fact, every point in is a cut point of .    Let in . That is, is the closed disk of radius in the plane. The set has no cut points. However, if , then consists of two connected components: the open ball and the annulus as illustrated in . So is a cut set of .   The disk and cut set .      Once we have a new property, we then ask if that property is a topological invariant.    Let and be connected topological spaces and let be a homeomorphism. If is a cut set, then is a cut set of .    Let and be topological spaces with a homeomorphism. Let be a cut set of . Let and form a separation of . We will demonstrate that and form a separation of , which will prove that is a cut set of . Since is continuous, the sets and are open sets in . Next we prove that . Let . Since is a surjection, there exists an with . The fact that means that . So . If , then and if , then . So .  Now we demonstrate that and . Since and form a separation of , we know that and . Let . Then and . So and the fact that is an injection implies that . Thus, . The same argument shows that implies that . So and .  Finally, we show that . Suppose . Let such that . Since is an injection, we know that means . so . The fact that means that . Thus, . So . We then have . It follows that . Therefore, and form a separation of and is a cut set of .      Use the idea of cut sets\/points to explain why the unit circle in is not homeomorphic to the interval in . Note: the unit circle is the set . Draw pictures to illustrate your explanation. (A formal proof is not necessary, but you need to provide a convincing justification.)    Consider the following subsets of in the subspace topology: . Is homeomorphic to ? (A formal proof is not necessary, but you need to provide a convincing justification.)    We have seen that topological equivalence is an equivalence relation, which partitions the collection of all topological spaces into disjoint homeomorphism classes. Topological invariants can then help us identify the classes to which different spaces belong. In general, though, it can be more difficult to prove that two spaces are homeomorphic than not homeomorphic.   Consider the spaces , in , in , the line segment in between the points and , the space determined by the letter { X}, and the space determined by the letter { Y} in . Identify the distinct homeomorphism classes determined by these six spaces. No formal proofs are necessary, but you need to give convincing arguments.   "
 },
 {
-  "id": "p-2301",
+  "id": "p-2309",
   "level": "2",
-  "url": "sec_cut_sets.html#p-2301",
+  "url": "sec_cut_sets.html#p-2309",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -5824,9 +5824,9 @@ var ptx_lunr_docs = [
   "body": " Summary  Important ideas that we discussed in this section include the following.   A topological space is connected  connected space if cannot be written as the union of two disjoint, nonempty, open subsets. A subset of a topological space topological space is connected if is connected in the subspace topology.    A separation of a subset of a topological space is a pair of nonempty open subsets and of such that    ,     ,     , and     .   Showing that a set has a separation can be a convenient way to show that the set is disconnected.    The connected subsets of are the intervals and the single point sets.    A subspace of a topological space is a connected component of if is connected and there is no larger connected subspace of that contains .    One application of connectedness is the Intermediate Value Theorem that tells us that if is a connected subset of a topological space and if is a continuous function, then for any and any between and , there is a point such that .    A subset of a connected topological space is a cut set of if the set is disconnected, while a point in is a cut point if is disconnected. The property of being a cut set or a cut point is a topological invariant, so we can sometimes use cut sets and cut points to show that topological spaces are not homeomorphic.     "
 },
 {
-  "id": "p-2333",
+  "id": "p-2341",
   "level": "2",
-  "url": "sec_connect_top_summ.html#p-2333",
+  "url": "sec_connect_top_summ.html#p-2341",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -6049,9 +6049,9 @@ var ptx_lunr_docs = [
   "body": " Introduction  We defined connectedness in terms of separability by open sets. There are other ways to look at connectedness. For example, the subset is connected in because we can draw a line segment (which we will call a path ) between any two points in and remain in the set . So we might alternatively consider a topological space to be connected if there is always a path from one point in the spaced to another. Although this is a new notion of connectedness, we will see that path connectedness and connectedness are related.  Intuitively, a space is path connected if there is a path in the space between any two points in the space. To formalize this idea, we need to define what we mean by a path. Simply put, a path is a continuous curve between two points. We can therefore define a path as a continuous function.   path   Let be a topological space. A path from point to point in is a continuous function such that and .    With the notion of path, we can now define path connectedness.   path connected   A subspace of a topological space is path connected if, given any there is a path in from to .      Is with the Euclidean metric topology path connected? Explain.    Is with the finite complement topology path connected? Explain.    Let in with and . Is connected? Is path connected? Explain.    "
 },
 {
-  "id": "p-2455",
+  "id": "p-2463",
   "level": "2",
-  "url": "sec_path_intro.html#p-2455",
+  "url": "sec_path_intro.html#p-2463",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -6157,9 +6157,9 @@ var ptx_lunr_docs = [
   "body": "  Let be a topological space. Define a relation on as follows: .    Explain why is a reflexive relation.    Explain why is a symmetric relation.    Explain why is a transitive relation.   "
 },
 {
-  "id": "p-2484",
+  "id": "p-2492",
   "level": "2",
-  "url": "sec_path_connect_equiv.html#p-2484",
+  "url": "sec_path_connect_equiv.html#p-2492",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -6220,9 +6220,9 @@ var ptx_lunr_docs = [
   "body": "  Let be a finite topological space, and let . In this activity we demonstrate that is path connected. Let and define by   To prove that is continuous, let be an open set in . We either have or .    Suppose . Why must also be in ? What, then, is ?    Now suppose . There are two cases to consider.   What is if ?   What is if ?    Explain why is a path from to .    Show that we can find a path between any two points in . Conclude that is path connected.   "
 },
 {
-  "id": "p-2509",
+  "id": "p-2517",
   "level": "2",
-  "url": "sec_connect_finite.html#p-2509",
+  "url": "sec_connect_finite.html#p-2517",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -6283,9 +6283,9 @@ var ptx_lunr_docs = [
   "body": " Path Connectedness and Connectedness in Infinite Topological Spaces  topologist's sine curve  Given that connectedness and path connectedness are equivalent in finite topological spaces, a reasonable question now is whether the converse of is true in arbitrary topological spaces. As we will see, the answer is no. To find a counterexample, we need to look in an infinite topological space. There are many examples, but a standard example to consider is the topologist's sine curve . This curve is defined as the union of the sets .  A picture of is shown in .   The topologist's sine curve.    To understand if is connected, let us consider the relationship between and . seems to indicate that . To see if this is true, let , and let be a neighborhood of . Then there is an such that . Choose such that , and let . Then , and so and every neighborhood of contains a point in . Therefore, and in . The fact that is connected follows from .  Now that we know that is connected, the following theorem demonstrates that is a connected space that is not path connected.    The topologist's sine curve is connected but not path connected.    We know that is connected, so it remains to show that is not path connected. The sets and are connected (as continuous images of the interval and , respectively). We will prove that there is no path in from to for any point by contradiction. Assume the existence of such a path . Let and . Then .  Note that is an open subset of , since . So the continuity of implies that is an open subset of . Also, the fact that means that , and the fact that means that . If we demonstrate that is an open subset of , then Equation will imply that is not connected, a contradiction. So we proceed to prove that is open in .  Let , and so in . The set is open in . The continuity of then tells us that is open in . So there is a such that the open ball is a subset of . We will prove that . This will imply that and so is a neighborhood of each of its points, and is therefore an open set.   The set .    Every element in is mapped into by the path . The set is complicated, consisting of infinitely many sub-curves of the curve , along with points in , as illustrated in . To simplify our analysis, let us consider the projection onto the -axis. The function defined by is a continuous function. Let . Since , we know that . Let . So . Since is a connected set ( is an interval), we know that is a connected set. The fact that is continuous means that is connected as well. Now is a bounded subset of , so must be a bounded interval. Recall that and so . The fact that tells us that . So . There are two possibilities for : either , or is an interval of positive length. We consider the cases.  Suppose . Then the projection of onto the -axis is the single point and as desired. Suppose that is an interval of the form or for some positive number . The structure of would indicate that there must be some gaps in the set , the projection of onto the -axis. This implies that cannot be a connected interval. We proceed to show this. In other words, we will prove that (which is impossible since ). Remember that , so let . We consider what happens if and when .  Suppose . Then the ball contains only points with value less than 1. Let so that . Then . But , and so is not in . Thus, . Thus we have found a point in .  Finally, suppose . Then the ball contains only points with value greater than . Let so that . Then . But , and so . Thus we have found a point in .  We conclude that there can be no path in from to any point in , completing our proof that is not path connected. (In fact, the argument given shows that there is no path in from any point in to any point in .    "
 },
 {
-  "id": "p-2525",
+  "id": "p-2533",
   "level": "2",
-  "url": "sec_connect_infinite.html#p-2525",
+  "url": "sec_connect_infinite.html#p-2533",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -6445,9 +6445,9 @@ var ptx_lunr_docs = [
   "body": " Let and be topological spaces, and let be as defined in . Prove that is a basis for a topology on .  "
 },
 {
-  "id": "p-2584",
+  "id": "p-2592",
   "level": "2",
-  "url": "sec_top_prod_space.html#p-2584",
+  "url": "sec_top_prod_space.html#p-2592",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -6508,9 +6508,9 @@ var ptx_lunr_docs = [
   "body": " Projections and Continuous Functions on Products  Given topological spaces and , we define and by and . These functions and are the projections  projection functions of onto and , respectively. These projection functions can help us determine when a function from a topological space to is continuous.    Let and be topological spaces and let be an open set in .    Determine which set is . Verify your conjecture.    Explain why is continuous.    The same argument as in shows that is also a continuous function. In general, if is a finite product of topological spaces, then the projection is a continuous function for each , where .  Let be a basic open set in , where is a topological space for each . We can extend the result of to see that .  So .  So each basic open set is a finite intersection of sets of the form where is open in . When this happens, we call the collection of sets of the form a subbasis of the topology.   subbasis  subbase   Let be a topological space. A subset of is a subbasis or subbase for if the set of all finite intersections of elements of is a basis for .    As an example, since finite intersections of intervals of the form and give all intervals of the form , the collection is a subbasis for the standard topology on . Note that this collection itself is not a basis for the standard topology on . If is a product of topological space, then another example of a subbasis is the collection .  This set is a subbasis for the product topology on (the verification of this is left to ).   product topology We note here that there is another topology, called the product topology , on with subbasis , where .  For reasons we won't go into, the product topology is preferred to the box topology for infinite products (many important theorems that hold for finite products will not hold for infinite products using the box topology, but will hold using the product topology). However, the product topology and the box topology are the same for finite products, and since we won't consider infinite products here we will not worry about the distinction. For our purposes we will use the terms box topology and product topology interchangeably.  As we have discussed before, it can often be easier to define a topology using a basis or subbasis than it is to describe all of the sets in the topology. As we might expect, since the continuity of a function can be determined by the inverse image of basis elements, the continuity of a function can also be determined by the inverse image of subbasis elements.    Prove .    Let and be topological spaces, let be a subbasis for , and let be a function. If is open in for each , then is continuous.      Recall that is continuous if is open in for each basic open set .    Now suppose that , , and are topological spaces, and that is a function. Then maps to and maps to . Since the composition of continuous functions is continuous, we can see that if is continuous so are and . To determine if is a continuous function, it would be useful to know if the converse is true. A key idea in the proof is the result of that if , , and are sets, and and are functions, then for any subset of .  Now we can use projections to determine when functions to product spaces are continuous.    Let for from to and be topological spaces, and let be a function. Then is continuous if and only if is continuous for each .    Let for from to and be topological spaces, and let be a function. If is continuous, the facts that each is continuous and that composites of continuous functions are continuous show that is continuous for each .  Now suppose that is continuous for each . Recall that is a subbasis for the product topology on . To prove that is continuous, tells us that it is enough to show that is open for each in . Let be an open set in . tells us that , which is open in because is continuous. Therefore, is continuous.    "
 },
 {
-  "id": "p-2599",
+  "id": "p-2607",
   "level": "2",
-  "url": "sec_proj_cont_prod.html#p-2599",
+  "url": "sec_proj_cont_prod.html#p-2607",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -6526,9 +6526,9 @@ var ptx_lunr_docs = [
   "body": "  Let and be topological spaces and let be an open set in .    Determine which set is . Verify your conjecture.    Explain why is continuous.   "
 },
 {
-  "id": "p-2606",
+  "id": "p-2614",
   "level": "2",
-  "url": "sec_proj_cont_prod.html#p-2606",
+  "url": "sec_proj_cont_prod.html#p-2614",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -6544,9 +6544,9 @@ var ptx_lunr_docs = [
   "body": " subbasis  subbase   Let be a topological space. A subset of is a subbasis or subbase for if the set of all finite intersections of elements of is a basis for .   "
 },
 {
-  "id": "p-2610",
+  "id": "p-2618",
   "level": "2",
-  "url": "sec_proj_cont_prod.html#p-2610",
+  "url": "sec_proj_cont_prod.html#p-2618",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",

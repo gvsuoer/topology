@@ -12,7 +12,14 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">Let <span class="process-math">\((X,d)\)</span> be a metric space and <span class="process-math">\(A\)</span> a subset of <span class="process-math">\(X\text{.}\)</span> A subset <span class="process-math">\(C_A\)</span> of <span class="process-math">\(A\)</span> is closed in <span class="process-math">\(A\)</span> if and only if there is a closed set <span class="process-math">\(C_X\)</span> in <span class="process-math">\(X\)</span> so that <span class="process-math">\(C_A = C_X \cap A\text{.}\)</span>
+<div class="para logical">
+<div class="para">As a union of open balls in <span class="process-math">\(X\text{,}\)</span> the set <span class="process-math">\(O_X\)</span> is open in <span class="process-math">\(X\text{.}\)</span> Now</div>
+<div class="displaymath process-math">
+\begin{align*}
+O_X \cap A = \left(\bigcup_{a \in O_A} B_X(a, \delta_a) \right) \cap A \amp = \bigcup_{a \in O_A} \left( B_X(a, \delta_a) \cap A \right)\\
+\amp = \bigcup_{a \in O_A} B_A(a, \delta_a) = O_A\text{.}
+\end{align*}
+</div>
 </div>
 <span class="incontext"><a href="sec_open_closed_sub.html#p-1279" class="internal">in-context</a></span>
 </body>
