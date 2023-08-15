@@ -3,7 +3,18 @@
 !.gitignore
 
 # don't track unpublished builds
-output
+output/web
+output/latex/external
+output/latex/generated
+*.aux
+*.idx
+*.ilg
+*.ind
+*.log
+*.out
+*.synctex.gz
+*.toc
+
 
 # don't track assets generated from source
 generated-assets
