@@ -37,7 +37,8 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
 
 <xsl:param name="latex.preamble.late">
   <xsl:text>%This should load all the style information that ptx does not.&#xa;</xsl:text>
-  <xsl:text>\usepackage{setspace}</xsl:text>
+  <!-- <xsl:text>\usepackage{setspace}&#xa;</xsl:text>
+  <xsl:text>\usepackage{unicode-math}&#xa;</xsl:text> -->
   <xsl:text>% Add line break before and after some elements&#xa;</xsl:text>
   
   <xsl:text>\AtBeginEnvironment{example}{\vskip\baselineskip}&#xa;</xsl:text>

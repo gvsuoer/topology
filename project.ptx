@@ -24,7 +24,7 @@
       <format>latex</format>
       <source>source/main.ptx</source>
       <publication>publication/publication.ptx</publication>
-      <output-dir>output/print-latex</output-dir>
+      <output-dir>output/latex</output-dir>
       <xsl>xsl/custom-latex.xsl</xsl>
     </target>
     <target name="subset">

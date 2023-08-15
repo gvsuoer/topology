@@ -168,9 +168,10 @@
 \usetikzlibrary{through,intersections,decorations,shadows,fadings}
 \usepackage{pgfplots}
 </latex-image-preamble>
-<!-- <latex-preamble>
-  <package>yhmath</package>
-</latex-preamble> -->
+<latex-preamble>
+  <package>setspace</package>
+  <package>unicode-math</package>
+</latex-preamble>
 <rename element="objectives">Focus Questions</rename>
 <rename element="exploration">Preview Activity</rename>
   </docinfo>
